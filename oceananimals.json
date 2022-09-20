@@ -1,0 +1,315 @@
+{
+    "animals": [
+    {   "id": 0,
+        "nickname": "Anemone",
+        "name": "Sandalled anemone",
+        "scientific name": "Actinothoe sphyrodeta",
+        "kingdom": "Animalia",
+        "Phylum": "Cnidaria",
+        "Class": "Hexacorallia",
+        "Order": "Actinaria"
+    },
+    {
+        "id": 1,
+        "nickname": "Angel Fish",
+        "name": "Angel Fish",
+        "scientific name": "Pterophyllum",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Actinopterygii",
+        "Order": "Cichliformes"
+    },
+    {   "id": 2,
+        "nickname": "Cod",
+        "name": "Atlantic Cod",
+        "scientific name": "Gadus morhua",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Actinopterygii",
+        "Order": "Gadiformes"
+    },
+    {
+        "id": 3,
+        "nickname": "Dolphin",
+        "name": "Atlantic Spotted Dolphin",
+        "scientific name": "Stenella frontalis",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Mammalia",
+        "Order": "Cetacea",
+        "Family": "Delphinidae"
+    },
+    {
+        "id": 4,
+        "nickname": "Blue Whale",
+        "name": "Blue Whale",
+        "scientific name": "Balaenoptera musculus",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Mammalia",
+        "Order": "Cetacea"
+    },
+    {
+        "id": 5,
+        "nickname": "Clown Fish",
+        "name": "Anemone fish",
+        "scientific name": "Amphiprion ocellaris",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Actinopterygii",
+        "Order": "Pomacentridae"
+    },
+    {   "id": 6,
+        "nickname": "Coral",
+        "name": "Sea fan",
+        "scientific name": "Iciligorgia schrammi",
+        "kingdom": "Animalia",
+        "Phylum": "Cnidaria",
+        "Class": "Anthozoa",
+        "Order": "Alcyonaria"
+    },
+    {
+        "id": 7,
+        "nickname": "Crab",
+        "name": "Atlantic red crab",
+        "scientific name": "Chaceon quinquedens",
+        "kingdom": "Animalia",
+        "Phylum": "Arthropoda",
+        "Class": "Crustacea",
+        "Order": "Decapoda"
+    },
+    {
+        "id": 8,
+        "nickname": "Dumbo octopus",
+        "name": "Dumbo octopus",
+        "scientific name": "Grimpoteuthis umbellata",
+        "kingdom": "Animalia",
+        "Phylum": "Mollusca",
+        "Class": "Cephalopoda",
+        "Order": "Octopoda"
+    },
+    {
+        "id": 9,
+        "nickname": "Marine Eel",
+        "name": "Green Moray",
+        "scientific name": "Gymnothorax funebris",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Actinopterygii",
+        "Order": "Anguilliformes"
+    },
+    {
+        "id": 10,
+        "nickname": "Marine Eel",
+        "name": "Green Moray",
+        "scientific name": "Gymnothorax funebris",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Actinopterygii",
+        "Order": "Anguilliformes"
+    },
+    {
+        "id": 11,
+        "nickname": "Green Sea Turtle",
+        "name": "Green Sea Turtle",
+        "scientific name": "Chelonia mydas",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Reptilia",
+        "Order": "Testudines"
+    },
+    {
+        "id": 12,
+        "nickname": "Humpback Whale",
+        "name": "Humpback Whale",
+        "scientific name": "Megaptera novaeangliae",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Mammalia",
+        "Order": "Artiodactyla"
+    },
+    {
+        "id": 13,
+        "nickname": "Killer Whale",
+        "name": "Killer whale",
+        "scientific name": "Orcinus orca",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Mammalia",
+        "Order": "Cetacea",
+        "Family": "Delphinidae"
+    },
+    {
+        "id": 14,
+        "nickname": "Narwhale",
+        "name": "Narwhal",
+        "scientific name": "Monodon monoceros",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Mammalia",
+        "Infraorder": "Cetacea",
+        "Order": "Artiodactyla",
+        "Family": "Monodontidae"
+    },
+    {
+        "id": 15,
+        "nickname": "Nautilus",
+        "name": "Nautilus",
+        "scientific name": "Monodon monoceros",
+        "kingdom": "Animalia",
+        "Phylum": "Mollusca",
+        "Class": "Cephalopoda",
+        "Order": "Nautilida",
+        "Family": "Nautilidae"
+    },
+    {
+        "id": 16,
+        "nickname": "Octopus",
+        "name": "Octopus",
+        "scientific name": "Octopoda",
+        "kingdom": "Animalia",
+        "Phylum": "Mollusca",
+        "Class": "Cephalopoda",
+        "Order": "Octopoda"
+    },
+    {
+        "id": 17,
+        "nickname": "Olive Turtle",
+        "name": "Olive Ridley Turtle",
+        "scientific name": "Lepidochelys olivacea",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Reptilia",
+        "Order": "Testudines"
+    },
+    {
+        "id": 18,
+        "nickname": "Oyster",
+        "name": "Oyster",
+        "scientific name": "Argopecten irradians",
+        "kingdom": "Animalia",
+        "Phylum": "Mollusca",
+        "Class": "Bivalvia",
+        "Order": "Pectinida"
+    },
+    {
+        "id": 19,
+        "nickname": "Ray",
+        "name": "Sting Ray",
+        "scientific name": "Hypanus americanus",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Chondrichthyes",
+        "Order": "Myliobatiformes"
+    },
+    {
+        "id": 20,
+        "nickname": "Sea Horse",
+        "name": "Sea Horse",
+        "scientific name": "Hippocampus heptagonus",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Actinopterygii",
+        "Order": "Syngnathiformes"
+    },
+    {   "id": 21,
+        "nickname": "Sea Urchin",
+        "name": "Sea Urchin",
+        "scientific name": "Tripneustes ventricosus",
+        "kingdom": "Animalia",
+        "Phylum": "Echinodermata",
+        "Class": "Echinoidea",
+        "Order": "Arbacioida"
+    },
+    {   "id": 22,
+        "nickname": "Seal",
+        "name": "Seal",
+        "scientific name": "Halichoerus grypus",
+        "kingdom": "Animalia",
+        "Phylum": "Mammalia",
+        "Class": "Pinnipedia",
+        "Order": "Carnivora"
+    },
+
+    {
+        "id": 23,
+        "nickname": "Seaweed",
+        "name": "Seaweed",
+        "scientific name": "Ulva lactuca",
+        "kingdom": "Plantae",
+        "Phylum": "Chlorophyta",
+        "Class": "Ulvophyceae",
+        "Order": "Ulvales"
+        
+    },
+    {
+        "id": 24,
+        "nickname": "White Shark",
+        "name": "Shark",
+        "scientific name": "Carcharodon carcharias",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Chondrichthyes",
+        "Order": "Lamniformes"
+    },
+    {
+        "id": 25,
+        "nickname": "Shrimp",
+        "name": "Shrimp",
+        "scientific name": "Farfantepenaeus brasiliensis",
+        "kingdom": "Animalia",
+        "Phylum": "Arthropoda",
+        "Class": "Malacostraca",
+        "Order": "Decapoda"
+    },
+    {
+        "id": 26,
+        "nickname": "Squid",
+        "name": "Giant Squid",
+        "scientific name": "Sepioteuthis sepioidea",
+        "kingdom": "Animalia",
+        "Phylum": "Mollusca",
+        "Class": "Cephalopoda",
+        "Order": "Decapodiformes"
+    },
+    {
+        "id": 27,
+        "nickname": "Starfish",
+        "name": "Sea Star",
+        "scientific name": "Fromia monilis",
+        "kingdom": "Animalia",
+        "Phylum": "Echinodermata",
+        "Class": "Asteroidea",
+        "Order": "Spinulosida"
+    },
+    {
+        "id": 28,
+        "nickname": "Sword Fish",
+        "name": "Sword Fish",
+        "scientific name": "Xiphias gladius",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Actinopterygii",
+        "Order": "Istiophoriformes"
+    },
+    {
+        "id": 29,
+        "nickname": "Tuna Fish",
+        "name": "Tuna Fish",
+        "scientific name": "Thunnus thynnus",
+        "kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Actinopterygii",
+        "Order": "Scombriformes"
+    }
+    {
+        "id": 30,
+        "nickname": "Jellyfish",
+        "name": "Jellyfish",
+        "scientific name": "Pelagia noctiluca",
+        "kingdom": "Animalia",
+        "Phylum": "Cnidaria",
+        "Class": "Scyphozoa",
+        "Order": "Semaeostomeae"
+    }
+]}
