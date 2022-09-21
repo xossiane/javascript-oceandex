@@ -1,315 +1,1405 @@
 {
-    "animals": [
-    {   "id": 0,
-        "nickname": "Anemone",
-        "name": "Sandalled anemone",
-        "scientific name": "Actinothoe sphyrodeta",
-        "kingdom": "Animalia",
-        "Phylum": "Cnidaria",
-        "Class": "Hexacorallia",
-        "Order": "Actinaria"
+  "animals": [
+    {
+      "id": 0,
+      "nickname": "Anemone",
+      "name": "Sandalled anemone",
+      "kingdom": "Animalia",
+      "phylum": "Cnidaria",
+      "class": "Hexacorallia",
+      "order": "Actinaria",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+              "scientificName": "Actinothoe sphyrodeta",
+              "description": "An octopus is a soft-bodied, eight-limbed mollusc of the order Octopoda. It consists of some 300 species and is grouped within the class Cephalopoda with squids, cuttlefish, and nautiloids.",
+              "height": "1cm - 10cm",
+              "weight": "1g - 500kg"
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "egg - larvae - juvenile - adult"
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "Octopuses tend to be solitary, though they do interact with other octopuses at times. Some species of octopuses hunt at night, while others only hunt at dusk and dawn. When scared, octopuses will shoot a dark liquid, sometimes called ink, at the thing that scared them. This will temporarily blind and confuse a potential attacker, giving the octopus time to swim away. The ink can also dull the attacker’s smelling and tasting abilities, according to the Smithsonian article.",
+              "curiositiesImage": "link"
+            }
+          ],
+          "locationText": "Atlantic Ocean",
+          "locationImage": "link",
+          "diet": [
+            {
+              "smallFish": "Small fish",
+              "smallFishImage": "link",
+              "clam": "Clam",
+              "clamImage": "link",
+              "crab": "Crab",
+              "crabImage": "link"
+            }
+          ]
+        }
+      ]
+      
     },
     {
-        "id": 1,
-        "nickname": "Angel Fish",
-        "name": "Angel Fish",
-        "scientific name": "Pterophyllum",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Actinopterygii",
-        "Order": "Cichliformes"
-    },
-    {   "id": 2,
-        "nickname": "Cod",
-        "name": "Atlantic Cod",
-        "scientific name": "Gadus morhua",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Actinopterygii",
-        "Order": "Gadiformes"
-    },
-    {
-        "id": 3,
-        "nickname": "Dolphin",
-        "name": "Atlantic Spotted Dolphin",
-        "scientific name": "Stenella frontalis",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Mammalia",
-        "Order": "Cetacea",
-        "Family": "Delphinidae"
-    },
-    {
-        "id": 4,
-        "nickname": "Blue Whale",
-        "name": "Blue Whale",
-        "scientific name": "Balaenoptera musculus",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Mammalia",
-        "Order": "Cetacea"
-    },
-    {
-        "id": 5,
-        "nickname": "Clown Fish",
-        "name": "Anemone fish",
-        "scientific name": "Amphiprion ocellaris",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Actinopterygii",
-        "Order": "Pomacentridae"
-    },
-    {   "id": 6,
-        "nickname": "Coral",
-        "name": "Sea fan",
-        "scientific name": "Iciligorgia schrammi",
-        "kingdom": "Animalia",
-        "Phylum": "Cnidaria",
-        "Class": "Anthozoa",
-        "Order": "Alcyonaria"
+      "id": 1,
+      "nickname": "Angel Fish",
+      "name": "Angel Fish",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Actinopterygii",
+      "order": "Cichliformes",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Pterophyllum",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 7,
-        "nickname": "Crab",
-        "name": "Atlantic red crab",
-        "scientific name": "Chaceon quinquedens",
-        "kingdom": "Animalia",
-        "Phylum": "Arthropoda",
-        "Class": "Crustacea",
-        "Order": "Decapoda"
+      "id": 2,
+      "nickname": "Cod",
+      "name": "Atlantic Cod",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Actinopterygii",
+      "icon": "link",
+      "order": "Gadiformes",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Gadus morhua",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 8,
-        "nickname": "Dumbo octopus",
-        "name": "Dumbo octopus",
-        "scientific name": "Grimpoteuthis umbellata",
-        "kingdom": "Animalia",
-        "Phylum": "Mollusca",
-        "Class": "Cephalopoda",
-        "Order": "Octopoda"
+      "id": 3,
+      "nickname": "Dolphin",
+      "name": "Atlantic Spotted Dolphin",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Cetacea",
+      "family": "Delphinidae",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Stenella frontalis",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 9,
-        "nickname": "Marine Eel",
-        "name": "Green Moray",
-        "scientific name": "Gymnothorax funebris",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Actinopterygii",
-        "Order": "Anguilliformes"
+      "id": 4,
+      "nickname": "Blue Whale",
+      "name": "Blue Whale",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Cetacea",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Balaenoptera musculus",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 10,
-        "nickname": "Marine Eel",
-        "name": "Green Moray",
-        "scientific name": "Gymnothorax funebris",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Actinopterygii",
-        "Order": "Anguilliformes"
+      "id": 5,
+      "nickname": "Clown Fish",
+      "name": "Anemone fish",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Actinopterygii",
+      "order": "Pomacentridae",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Amphiprion ocellaris",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 11,
-        "nickname": "Green Sea Turtle",
-        "name": "Green Sea Turtle",
-        "scientific name": "Chelonia mydas",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Reptilia",
-        "Order": "Testudines"
+      "id": 6,
+      "nickname": "Coral",
+      "name": "Sea fan",
+      "kingdom": "Animalia",
+      "phylum": "Cnidaria",
+      "class": "Anthozoa",
+      "order": "Alcyonaria",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Iciligorgia schrammi",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 12,
-        "nickname": "Humpback Whale",
-        "name": "Humpback Whale",
-        "scientific name": "Megaptera novaeangliae",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Mammalia",
-        "Order": "Artiodactyla"
+      "id": 7,
+      "nickname": "Crab",
+      "name": "Atlantic red crab",
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Crustacea",
+      "order": "Decapoda",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Chaceon quinquedens",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 13,
-        "nickname": "Killer Whale",
-        "name": "Killer whale",
-        "scientific name": "Orcinus orca",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Mammalia",
-        "Order": "Cetacea",
-        "Family": "Delphinidae"
+      "id": 8,
+      "nickname": "Dumbo octopus",
+      "name": "Dumbo octopus",
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Cephalopoda",
+      "order": "Octopoda",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Grimpoteuthis umbellata",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 14,
-        "nickname": "Narwhale",
-        "name": "Narwhal",
-        "scientific name": "Monodon monoceros",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Mammalia",
-        "Infraorder": "Cetacea",
-        "Order": "Artiodactyla",
-        "Family": "Monodontidae"
+      "id": 9,
+      "nickname": "Marine Eel",
+      "name": "Green Moray",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Actinopterygii",
+      "order": "Anguilliformes",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Gymnothorax funebris",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 15,
-        "nickname": "Nautilus",
-        "name": "Nautilus",
-        "scientific name": "Monodon monoceros",
-        "kingdom": "Animalia",
-        "Phylum": "Mollusca",
-        "Class": "Cephalopoda",
-        "Order": "Nautilida",
-        "Family": "Nautilidae"
+      "id": 10,
+      "nickname": "Marine Eel",
+      "name": "Green Moray",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Actinopterygii",
+      "order": "Anguilliformes",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Gymnothorax funebris",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 16,
-        "nickname": "Octopus",
-        "name": "Octopus",
-        "scientific name": "Octopoda",
-        "kingdom": "Animalia",
-        "Phylum": "Mollusca",
-        "Class": "Cephalopoda",
-        "Order": "Octopoda"
+      "id": 11,
+      "nickname": "Green Sea Turtle",
+      "name": "Green Sea Turtle",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Reptilia",
+      "order": "Testudines",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Chelonia mydas",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 17,
-        "nickname": "Olive Turtle",
-        "name": "Olive Ridley Turtle",
-        "scientific name": "Lepidochelys olivacea",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Reptilia",
-        "Order": "Testudines"
+      "id": 12,
+      "nickname": "Humpback Whale",
+      "name": "Humpback Whale",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Megaptera novaeangliae",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 18,
-        "nickname": "Oyster",
-        "name": "Oyster",
-        "scientific name": "Argopecten irradians",
-        "kingdom": "Animalia",
-        "Phylum": "Mollusca",
-        "Class": "Bivalvia",
-        "Order": "Pectinida"
+      "id": 13,
+      "nickname": "Killer Whale",
+      "name": "Killer whale",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Cetacea",
+      "Family": "Delphinidae",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Orcinus orca",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 19,
-        "nickname": "Ray",
-        "name": "Sting Ray",
-        "scientific name": "Hypanus americanus",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Chondrichthyes",
-        "Order": "Myliobatiformes"
+      "id": 14,
+      "nickname": "Narwhale",
+      "name": "Narwhal",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "Infraorder": "Cetacea",
+      "order": "Artiodactyla",
+      "Family": "Monodontidae",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Monodon monoceros",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 20,
-        "nickname": "Sea Horse",
-        "name": "Sea Horse",
-        "scientific name": "Hippocampus heptagonus",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Actinopterygii",
-        "Order": "Syngnathiformes"
-    },
-    {   "id": 21,
-        "nickname": "Sea Urchin",
-        "name": "Sea Urchin",
-        "scientific name": "Tripneustes ventricosus",
-        "kingdom": "Animalia",
-        "Phylum": "Echinodermata",
-        "Class": "Echinoidea",
-        "Order": "Arbacioida"
-    },
-    {   "id": 22,
-        "nickname": "Seal",
-        "name": "Seal",
-        "scientific name": "Halichoerus grypus",
-        "kingdom": "Animalia",
-        "Phylum": "Mammalia",
-        "Class": "Pinnipedia",
-        "Order": "Carnivora"
-    },
-
-    {
-        "id": 23,
-        "nickname": "Seaweed",
-        "name": "Seaweed",
-        "scientific name": "Ulva lactuca",
-        "kingdom": "Plantae",
-        "Phylum": "Chlorophyta",
-        "Class": "Ulvophyceae",
-        "Order": "Ulvales"
-        
-    },
-    {
-        "id": 24,
-        "nickname": "White Shark",
-        "name": "Shark",
-        "scientific name": "Carcharodon carcharias",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Chondrichthyes",
-        "Order": "Lamniformes"
+      "id": 15,
+      "nickname": "Nautilus",
+      "name": "Nautilus",
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Cephalopoda",
+      "order": "Nautilida",
+      "Family": "Nautilidae",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Monodon monoceros",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 25,
-        "nickname": "Shrimp",
-        "name": "Shrimp",
-        "scientific name": "Farfantepenaeus brasiliensis",
-        "kingdom": "Animalia",
-        "Phylum": "Arthropoda",
-        "Class": "Malacostraca",
-        "Order": "Decapoda"
+      "id": 16,
+      "nickname": "Octopus",
+      "name": "Octopus",
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Cephalopoda",
+      "order": "Octopoda",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Octopoda",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 26,
-        "nickname": "Squid",
-        "name": "Giant Squid",
-        "scientific name": "Sepioteuthis sepioidea",
-        "kingdom": "Animalia",
-        "Phylum": "Mollusca",
-        "Class": "Cephalopoda",
-        "Order": "Decapodiformes"
+      "id": 17,
+      "nickname": "Olive Turtle",
+      "name": "Olive Ridley Turtle",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Reptilia",
+      "order": "Testudines",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Lepidochelys olivacea",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 27,
-        "nickname": "Starfish",
-        "name": "Sea Star",
-        "scientific name": "Fromia monilis",
-        "kingdom": "Animalia",
-        "Phylum": "Echinodermata",
-        "Class": "Asteroidea",
-        "Order": "Spinulosida"
+      "id": 18,
+      "nickname": "Oyster",
+      "name": "Oyster",
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Bivalvia",
+      "order": "Pectinida",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Argopecten irradians",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 28,
-        "nickname": "Sword Fish",
-        "name": "Sword Fish",
-        "scientific name": "Xiphias gladius",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Actinopterygii",
-        "Order": "Istiophoriformes"
+      "id": 19,
+      "nickname": "Ray",
+      "name": "Sting Ray",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Chondrichthyes",
+      "order": "Myliobatiformes",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Hypanus americanus",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-        "id": 29,
-        "nickname": "Tuna Fish",
-        "name": "Tuna Fish",
-        "scientific name": "Thunnus thynnus",
-        "kingdom": "Animalia",
-        "Phylum": "Chordata",
-        "Class": "Actinopterygii",
-        "Order": "Scombriformes"
+      "id": 20,
+      "nickname": "Sea Horse",
+      "name": "Sea Horse",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Actinopterygii",
+      "order": "Syngnathiformes",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Hippocampus heptagonus",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "nickname": "Sea Urchin",
+      "name": "Sea Urchin",
+      "kingdom": "Animalia",
+      "phylum": "Echinodermata",
+      "class": "Echinoidea",
+      "order": "Arbacioida",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Tripneustes ventricosus",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "nickname": "Seal",
+      "name": "Seal",
+      "kingdom": "Animalia",
+      "phylum": "Mammalia",
+      "class": "Pinnipedia",
+      "order": "Carnivora",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Halichoerus grypus",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "nickname": "Seaweed",
+      "name": "Seaweed",
+      "kingdom": "Plantae",
+      "phylum": "Chlorophyta",
+      "class": "Ulvophyceae",
+      "order": "Ulvales",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Ulva lactuca",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "nickname": "White Shark",
+      "name": "Shark",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Chondrichthyes",
+      "order": "Lamniformes",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Carcharodon carcharias",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "nickname": "Shrimp",
+      "name": "Shrimp",
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Malacostraca",
+      "order": "Decapoda",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Farfantepenaeus brasiliensis",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "nickname": "Squid",
+      "name": "Giant Squid",
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Cephalopoda",
+      "order": "Decapodiformes",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Sepioteuthis sepioidea",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "nickname": "Starfish",
+      "name": "Sea Star",
+      "kingdom": "Animalia",
+      "phylum": "Echinodermata",
+      "class": "Asteroidea",
+      "order": "Spinulosida",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Fromia monilis",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "nickname": "Sword Fish",
+      "name": "Sword Fish",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Actinopterygii",
+      "order": "Istiophoriformes",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Xiphias gladius",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "nickname": "Tuna Fish",
+      "name": "Tuna Fish",
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Actinopterygii",
+      "order": "Scombriformes",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Thunnus thynnus",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "nickname": "Jellyfish",
+      "name": "Jellyfish",
+      "kingdom": "Animalia",
+      "phylum": "Cnidaria",
+      "class": "Scyphozoa",
+      "order": "Semaeostomeae",
+      "icon": "link",
+      "tabs": [
+        {
+          "about": [
+            {
+	            "scientificName": "Pelagia noctiluca",
+              "description": "...",
+              "height": "...",
+              "weight": "..."
+            }
+          ],
+          "breeding": [
+            {
+              "eggCircle": "..."
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "...",
+              "curiositiesImage": "link"
+            }
+          ],
+	        "locationText": "...",
+          "locationImage": "link",
+          "diet": [
+            {
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link",
+              "...": "...",
+              "...Image": "link"
+            }
+          ]
+        }
+      ]
     }
-    {
-        "id": 30,
-        "nickname": "Jellyfish",
-        "name": "Jellyfish",
-        "scientific name": "Pelagia noctiluca",
-        "kingdom": "Animalia",
-        "Phylum": "Cnidaria",
-        "Class": "Scyphozoa",
-        "Order": "Semaeostomeae"
-    }
-]}
+  ]
+}
