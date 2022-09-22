@@ -8,7 +8,7 @@
       "phylum": "Cnidaria",
       "class": "Hexacorallia",
       "order": "Actinaria",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/anemone.png",
+      "icon": "/anemone.png",
       "tabs": [
         {
           "about": [
@@ -26,19 +26,21 @@
           ],
           "curiosities": [
             {
-              "curiositiesText": "Octopuses tend to be solitary, though they do interact with other octopuses at times. Some species of octopuses hunt at night, while others only hunt at dusk and dawn. When scared, octopuses will shoot a dark liquid, sometimes called ink, at the thing that scared them. This will temporarily blind and confuse a potential attacker, giving the octopus time to swim away. The ink can also dull the attacker’s smelling and tasting abilities, according to the Smithsonian article.",
-              "curiositiesImage": "link"
+              "curiositiesText": "Despite their harmless appearance and lack of tooth or claw, sea anemones actually get their nutrition from living things. These may include fish, hermit crabs, or even tiny zooplankton. When the fish swims close, or the crab crawls too close, the sea anemone shoots out a stinging tentacle and injects the prey. The paralyzing venom acts fast to disable the unfortunate victim, who is then pulled into the anemone’s grasp and digested.",
+              "curiositiesImage": "/anemonePct.jpg"
             }
           ],
           "locationText": "Atlantic Ocean",
           "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
           "diet": [
             {
-              "zooplankton": "Zooplankton",
-              "zooplanktonImage": "xxxxx",
-              "phytoplankton": "Phytoplankton",
-              "phytoplanktonImage": "xxxxx"
-            }
+              "item": "Phytoplankton",
+              "itemImg": "/phytoplanktonImg.png"
+          },
+          {
+            "item": "Small Fish",
+            "itemImg": "/atlanticCod.jpg"
+          }
           ]
         }
       ]
@@ -53,7 +55,7 @@
       "class": "Actinopterygii",
       "order": "Perciformes",
       "family": "Pomacanthidae",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/angelfish.png",
+      "icon": "/angelfish.png",
       "tabs": [
         {
           "about": [
@@ -72,19 +74,20 @@
           "curiosities": [
             {
               "curiositiesText": "This species is a protogynous hermaphrodite, the female can change sex to become a male if no male is present.",
-              "curiositiesImage": "xxxxx"
+              "curiositiesImage": "/angelfishPct.jpg"
             }
           ],
 	        "locationText": "Pomacanthus paru are abundant along coral reefs along both sides of the Atlantic. The distribution in the Western Tropical Atlantic ranges from Florida and the Bahamas to Brazil.",
           "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
-          "diet": [
+          "diet":  [
             {
-              "Seaweed": "Seaweed",
-              "SeaweedImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/seaweed.png",
-              "Anemone": "Anemone",
-              "AnemoneImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/anemone.png",
-              
-            }
+              "item": "Sea Weed",
+              "itemImg": "/seaweed.png"
+            },
+            {
+              "item": "Anemone",
+              "itemImg": "/anemone.png"
+          }
           ]
         }
       ]
@@ -96,7 +99,7 @@
       "kingdom": "Animalia",
       "phylum": "Chordata",
       "class": "Actinopterygii",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/atlantic%20cod.png",
+      "icon": "/atlanticCod.png",
       "order": "Gadiformes",
       "tabs": [
         {
@@ -116,20 +119,20 @@
           "curiosities": [
             {
               "curiositiesText": "Atlantic cod are hypothesized to communicate through the production of sound via drumming muscles. Sound production is correlated with mate selection during spawning season. It is hypothesized that the degree to which males are able to produce acoustic sound is positively associated with the overall fitness of the males, with those having larger drumming muscles producing greater sound waves and out-competing others. (Rowe and Hutchings, 2004)",
-              "curiositiesImage": "xxxx"
+              "curiositiesImage": "/atlanticCodPct.png"
             }
           ],
 	        "locationText": "Gadus morhua is commonly known as Atlantic cod and can be found along the eastern and northern coasts of North America, along the coasts of Greenland, and from the Bay of Biscay north to the Arctic Ocean, including the Atlantic waters around Iceland, the North Sea, and the Barents Sea.",
           "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
           "diet": [
             {
-              "zooplankton": "Zooplankton",
-              "zooplanktonImage": "xxxxx",
-              "SmallFish": "SmallFish",
-              "SmallFishImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/atlantic%20cod.png",
-              "Anemone": "Anemone",
-              "AnemoneImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/anemone.png"
-            }
+              "item": "Zooplankton",
+              "itemImg": "/zooplanktonImage.png"
+            },
+            {
+              "item": "Anemone",
+              "itemImg": "/anemone.jpg"
+          }
           ]
         }
       ]
@@ -143,38 +146,40 @@
       "class": "Mammalia",
       "order": "Cetacea",
       "family": "Delphinidae",
-      "icon": "link",
+      "icon": "/AtlanticSpottedDolphin.png",
       "tabs": [
         {
           "about": [
             {
 	            "scientificName": "Stenella frontalis",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+              "description": "The Atlantic spotted dolphin (Stenella frontalis) is a dolphin found in warm temperate and tropical waters of the Atlantic Ocean. Older members of the species have a very distinctive spotted coloration all over their bodies.",
+              "height": "2.26m",
+              "weight": "130kg"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "fetus - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "These dolphins emit about ten different vocalizations as whistles, squawks, barks and buzzes that correspond to different behaviors. In this species whistles are emitted at frequencies between 7 and 16 kHz (Herzing, 1996, Azevedo et al. 2010). ",
+              "curiositiesImage": "/atlanticSpottedDolphinPct.jpg"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "There are two distinct geographical forms of the Atlantic spotted dolphin. One of them is larger, has more spots and inhabit mainly along the continental shelf in warmer waters. The other form is smaller, has lighter spots and can be found in deeper areas and around islands such as the Azores (Jefferson et al. 2015).",
+          "locationImage": "/AtlanticOcean.jpg",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Small Fish",
+              "itemImg": "/atlanticCod.jpg"
+             
+            },
+            {
+              "item": "Anemone",
+              "itemImg": "/anemone.png"
+             
             }
           ]
         }
@@ -188,39 +193,39 @@
       "phylum": "Chordata",
       "class": "Mammalia",
       "order": "Cetacea",
-      "icon": "link",
+      "icon": "/bluewhale.png",
       "tabs": [
         {
           "about": [
             {
 	            "scientificName": "Balaenoptera musculus",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+              "description": "Blue whales have a long body and generally slender shape. Their mottled blue-gray color appears light blue under water—hence their name, the blue whale. The mottling pattern is variable and can be used to identify individuals.",
+              "height": "33m",
+              "weight": "200 ton"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "fetus - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "The blue whale is the largest animal on the planet, weighing as much as 200 tons (approximately 33 elephants). The blue whale has a heart the size of a Volkswagen Beetle. Its stomach can hold one ton of krill and it needs to eat about four tons of krill each day. They are the loudest animals on Earth and are even louder than a jet engine. Their calls reach 188 decibels, while a jet reaches 140 decibels. Their low frequency whistle can be heard for hundreds of miles and is probably used to attract other blue whales.",
+              "curiositiesImage": "/blueWhalePct.jpg"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "Blue whales are found in all oceans except the Arctic. They generally migrate seasonally between summer feeding grounds and winter breeding grounds, but some evidence suggests that individuals in certain areas might not migrate at all. Information about distribution and movement varies with location, and migratory routes are not well known. In general, distribution is driven largely by food availability—they occur in waters where krill are concentrated.",
+          "locationImage": "/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
-            }
+              "item": "Zooplankton",
+              "itemImg": "/zooplanktonImage.png"
+            },
+            {
+              "item": "Small Fish",
+              "itemImg": "/atlanticCod.jpg"
+          }
           ]
         }
       ]
@@ -233,39 +238,39 @@
       "phylum": "Chordata",
       "class": "Actinopterygii",
       "order": "Pomacentridae",
-      "icon": "link",
+      "icon": "/clownfish.png",
       "tabs": [
         {
           "about": [
             {
 	            "scientificName": "Amphiprion ocellaris",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+              "description": "The clownfish can be many different colours, depending on its species, including yellow, orange, red, and black. Most have white details. ",
+              "height": "11cm",
+              "weight": "100g"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "Clownfish communicate by making popping and clicking noises.",
+              "curiositiesImage": "/clownfishPct.png"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "Clownfish are found in warm waters, such as the Red Sea and Pacific Oceans, in sheltered reefs or lagoons, living in anemone. ",
+          "locationImage": "/PacificOcean.jpg",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
-            }
+              "item": "Zooplankton",
+              "itemImg": "/zooplanktonImage.png"
+            },
+            {
+              "item": "Seaweed",
+              "itemImg": "/seaweed.jpg"
+          }
           ]
         }
       ]
