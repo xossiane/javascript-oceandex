@@ -21,7 +21,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "It reproduces by longitudinal fission"
+              "Method": "It reproduces by longitudinal fission"
             }
           ],
           "curiosities": [
@@ -31,15 +31,13 @@
             }
           ],
           "locationText": "Atlantic Ocean",
-          "locationImage": "link",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
           "diet": [
             {
-              "smallFish": "Small fish",
-              "smallFishImage": "link",
-              "clam": "Clam",
-              "clamImage": "link",
-              "crab": "Crab",
-              "crabImage": "link"
+              "zooplankton": "Zooplankton",
+              "zooplanktonImage": "xxxxx",
+              "phytoplankton": "Phytoplankton",
+              "phytoplanktonImage": "xxxxx"
             }
           ]
         }
@@ -53,39 +51,39 @@
       "kingdom": "Animalia",
       "phylum": "Chordata",
       "class": "Actinopterygii",
-      "order": "Cichliformes",
-      "icon": "link",
+      "order": "Perciformes",
+      "family": "Pomacanthidae",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/angelfish.png",
       "tabs": [
         {
           "about": [
             {
-	            "scientificName": "Pterophyllum",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+	            "scientificName": "Pomacanthus paru",
+              "description": "The French angelfish has a laterally compressed body which is almost circular in shape. The head is deep with a short snout ending in a small mouth which contains numerous bristle-like teeth",
+              "height": "13cm",
+              "weight": "28cm - 42cm"
             }
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "This species is a protogynous hermaphrodite, the female can change sex to become a male if no male is present.",
+              "curiositiesImage": "xxxxx"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "Pomacanthus paru are abundant along coral reefs along both sides of the Atlantic. The distribution in the Western Tropical Atlantic ranges from Florida and the Bahamas to Brazil.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "Seaweed": "Seaweed",
+              "SeaweedImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/seaweed.png",
+              "Anemone": "Anemone",
+              "AnemoneImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/anemone.png",
+              
             }
           ]
         }
@@ -98,39 +96,39 @@
       "kingdom": "Animalia",
       "phylum": "Chordata",
       "class": "Actinopterygii",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/atlantic%20cod.png",
       "order": "Gadiformes",
       "tabs": [
         {
           "about": [
             {
 	            "scientificName": "Gadus morhua",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+              "description": "Atlantic cod, Gadus morhua (Linnaeus, 1758), are one of the most popular food fishes in the western world. Distinguished by a distinctive elongated hairlike structure called a “barbel” that hangs from their chin, they also have three dorsal fins, two anal fins, and broom-shaped tails.",
+              "height": "40cm",
+              "weight": "30kg"
             }
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "Atlantic cod are hypothesized to communicate through the production of sound via drumming muscles. Sound production is correlated with mate selection during spawning season. It is hypothesized that the degree to which males are able to produce acoustic sound is positively associated with the overall fitness of the males, with those having larger drumming muscles producing greater sound waves and out-competing others. (Rowe and Hutchings, 2004)",
+              "curiositiesImage": "xxxx"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "Gadus morhua is commonly known as Atlantic cod and can be found along the eastern and northern coasts of North America, along the coasts of Greenland, and from the Bay of Biscay north to the Arctic Ocean, including the Atlantic waters around Iceland, the North Sea, and the Barents Sea.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "zooplankton": "Zooplankton",
+              "zooplanktonImage": "xxxxx",
+              "SmallFish": "SmallFish",
+              "SmallFishImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/atlantic%20cod.png",
+              "Anemone": "Anemone",
+              "AnemoneImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/anemone.png"
             }
           ]
         }
@@ -158,7 +156,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -203,7 +201,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -248,7 +246,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -293,7 +291,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -338,7 +336,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -383,7 +381,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -428,7 +426,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -473,7 +471,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -518,7 +516,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -563,7 +561,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -609,7 +607,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -656,7 +654,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -702,7 +700,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -747,7 +745,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -792,7 +790,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -837,7 +835,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -882,7 +880,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -927,7 +925,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -972,7 +970,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -1017,7 +1015,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -1062,7 +1060,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -1107,7 +1105,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -1152,7 +1150,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -1197,7 +1195,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -1242,7 +1240,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -1287,7 +1285,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -1332,7 +1330,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
@@ -1377,7 +1375,7 @@
           ],
           "breeding": [
             {
-              "eggCircle": "..."
+              "Method": "..."
             }
           ],
           "curiosities": [
