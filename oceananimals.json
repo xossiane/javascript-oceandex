@@ -8,20 +8,20 @@
       "phylum": "Cnidaria",
       "class": "Hexacorallia",
       "order": "Actinaria",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/anemone.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Actinothoe sphyrodeta",
-              "description": "An octopus is a soft-bodied, eight-limbed mollusc of the order Octopoda. It consists of some 300 species and is grouped within the class Cephalopoda with squids, cuttlefish, and nautiloids.",
-              "height": "1cm - 10cm",
-              "weight": "1g - 500kg"
+              "description": "Actinothoe sphyrodeta is a soft, delicate, small anemone. The column is usually short with the base being wider than the column, but the column can also form a tall, neat pillar. The tentacles are translucent white, stout at the base, tapering to fine points, and are irregularly arranged numbering up to 120.",
+              "height": "50mm - 3cm",
+              "weight": "not available"
             }
           ],
           "breeding": [
             {
-              "eggCircle": "egg - larvae - juvenile - adult"
+              "eggCircle": "It reproduces by longitudinal fission"
             }
           ],
           "curiosities": [
