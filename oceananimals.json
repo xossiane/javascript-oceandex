@@ -1142,38 +1142,37 @@
       "phylum": "Arthropoda",
       "class": "Malacostraca",
       "order": "Decapoda",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/shrimp.png",
       "tabs": [
         {
           "about": [
             {
 	            "scientificName": "Farfantepenaeus brasiliensis",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+              "description": "It has ten legs and an elongated abdomen. Face straight and serrated on top with 8 to 11 barbs, bottom only with 2. It is light gray color, being a very frequent species among us",
+              "height": "18cm",
+              "weight": "25g - 33g"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "They are protandric hermaphrodites, beginning life as males and later becoming females. Juveniles mature and breed as males during their first year, and later become and breed as females for the following years. The proportion of shrimp that change sex varies from year to year. High fishing pressures or naturally high mortality rates can induce males to change into females at a younger age, or even completely skip the male stage.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/pinkshrimp.jpeg"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": " Located on the Atlantic Ocean, it has a wide geographical distribution extending from North Carolina (USA) to the north coast of Rio Grande do Sul (Brazil).",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "ZooPlankton",
+              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/planktonspongebob.jpg",
+              "item": "Decomposing organic matter",
+              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/organic-matter.png"
+              
             }
           ]
         }
@@ -1187,38 +1186,36 @@
       "phylum": "Mollusca",
       "class": "Cephalopoda",
       "order": "Decapodiformes",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/squid.png",
       "tabs": [
         {
           "about": [
             {
-	            "scientificName": "Sepioteuthis sepioidea",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+	            "scientificName": "Architeuthis spp",
+              "description": "The giant squid is known to be the second largest invertebrate on Earth, second only to the colossal squid.",
+              "height": "10m - 13m",
+              "weight": "150kg - 275kg"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg -  paralarvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "It can regenerate its tentacles - One of the first specimens of the giant squid was found off the coast of Canada, and it was clear that its tentacles were capable of regenerating. This was confirmed by the fact that the regenerated area looked different from the rest of the normal body.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/tentaculo.jpg"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": " Pacific Ocean and Atlantic Ocean",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg", 
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Deep-sea fish",
+              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/deepseafish.png",
+              "item": "Smaller squids",
+              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/small-squid.jpg"
             }
           ]
         }
@@ -1232,35 +1229,35 @@
       "phylum": "Echinodermata",
       "class": "Asteroidea",
       "order": "Spinulosida",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/starfish.png",
       "tabs": [
         {
           "about": [
             {
 	            "scientificName": "Fromia monilis",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+              "description": "Starfish belong to a large group of marine mammals known as echinoderms. Also known as ‘Sea Stars’, they are usually seen in shallow water",
+              "height": "10cm-30cm",
+              "weight": "500g"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Planktonic larvae, juvenile, adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "Starfish don’t actually have a brain, or even blood! In fact, they use filtered sea water to pump nutrients through their nervous system instead.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/starfish-seastar-isolated-on-white-background.jpg"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "the Indian Ocean and the Pacific Ocean",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
+              "item": "Algae",
+              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/algas-marinhas.png",
+              "item": "...",
               "...Image": "link",
               "...": "...",
               "...Image": "link"
