@@ -567,7 +567,7 @@
           ],
           "breeding": [
             {
-              "method": "fetus - juvenile - adult"
+              "Method": "fetus - juvenile - adult"
             }
           ],
           "curiosities": [
@@ -600,38 +600,40 @@
       "class": "Mammalia",
       "order": "Cetacea",
       "Family": "Delphinidae",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/killerwhale.png",
       "tabs": [
         {
           "about": [
             {
 	            "scientificName": "Orcinus orca",
-              "description": "...",
+              "description": "The orca or killer whale (Orcinus orca) is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member. It is recognizable by its black-and-white patterned body. Orcinus orca is the only recognized extant species in the genus Orcinus, and one of many animal species originally described by Carl Linnaeus in his landmark 1758 10th edition of Systema Naturae. The orca is a highly social species, with a complex system of communication and group hunting. It is the most abundant large predator in its range, and preys on a wide variety of marine mammals, fish, and birds. It has been known to attack baleen whales, including blue whales, and even sperm whales.",
               "height": "...",
-              "weight": "..."
+              "weight": "6 tons",
+              "length":"6-8m"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "fetus - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "Day-to-day orca behaviour generally consists of foraging, travelling, resting and socializing. Orcas frequently engage in surface behaviour such as breaching (jumping completely out of the water) and tail-slapping. These activities may have a variety of purposes, such as courtship, communication, dislodging parasites, or play.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/killerwhalePct.jpg"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "A cosmopolitan species, orcas can be found in all of the world's oceans in a variety of marine environments, from Arctic and Antarctic regions to tropical seas.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Fish",
+              "itemImg": "link"
+            },
+            {
+
+              "item": "Seals",
+              "itemImg": "link"
             }
           ]
         }
@@ -660,7 +662,7 @@
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "fetus - juvenile - adult"
             }
           ],
           "curiosities": [
