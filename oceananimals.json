@@ -36,15 +36,14 @@
             {
               "item": "Phytoplankton",
               "itemImg": "/phytoplanktonImg.png"
-          },
-          {
-            "item": "Small Fish",
-            "itemImg": "/atlanticCod.jpg"
-          }
+            },
+            {
+              "item": "Small Fish",
+              "itemImg": "/atlanticCod.jpg"
+            }
           ]
         }
       ]
-      
     },
     {
       "id": 1,
@@ -60,7 +59,7 @@
         {
           "about": [
             {
-	            "scientificName": "Pomacanthus paru",
+              "scientificName": "Pomacanthus paru",
               "description": "The French angelfish has a laterally compressed body which is almost circular in shape. The head is deep with a short snout ending in a small mouth which contains numerous bristle-like teeth",
               "height": "13cm",
               "weight": "28cm - 42cm"
@@ -77,9 +76,9 @@
               "curiositiesImage": "/angelfishPct.jpg"
             }
           ],
-	        "locationText": "Pomacanthus paru are abundant along coral reefs along both sides of the Atlantic. The distribution in the Western Tropical Atlantic ranges from Florida and the Bahamas to Brazil.",
+          "locationText": "Pomacanthus paru are abundant along coral reefs along both sides of the Atlantic. The distribution in the Western Tropical Atlantic ranges from Florida and the Bahamas to Brazil.",
           "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
-          "diet":  [
+          "diet": [
             {
               "item": "Sea Weed",
               "itemImg": "/seaweed.png"
@@ -87,7 +86,7 @@
             {
               "item": "Anemone",
               "itemImg": "/anemone.png"
-          }
+            }
           ]
         }
       ]
@@ -105,7 +104,7 @@
         {
           "about": [
             {
-	            "scientificName": "Gadus morhua",
+              "scientificName": "Gadus morhua",
               "description": "Atlantic cod, Gadus morhua (Linnaeus, 1758), are one of the most popular food fishes in the western world. Distinguished by a distinctive elongated hairlike structure called a “barbel” that hangs from their chin, they also have three dorsal fins, two anal fins, and broom-shaped tails.",
               "height": "40cm",
               "weight": "30kg"
@@ -122,7 +121,7 @@
               "curiositiesImage": "/atlanticCodPct.png"
             }
           ],
-	        "locationText": "Gadus morhua is commonly known as Atlantic cod and can be found along the eastern and northern coasts of North America, along the coasts of Greenland, and from the Bay of Biscay north to the Arctic Ocean, including the Atlantic waters around Iceland, the North Sea, and the Barents Sea.",
+          "locationText": "Gadus morhua is commonly known as Atlantic cod and can be found along the eastern and northern coasts of North America, along the coasts of Greenland, and from the Bay of Biscay north to the Arctic Ocean, including the Atlantic waters around Iceland, the North Sea, and the Barents Sea.",
           "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
           "diet": [
             {
@@ -132,7 +131,7 @@
             {
               "item": "Anemone",
               "itemImg": "/anemone.jpg"
-          }
+            }
           ]
         }
       ]
@@ -151,7 +150,7 @@
         {
           "about": [
             {
-	            "scientificName": "Stenella frontalis",
+              "scientificName": "Stenella frontalis",
               "description": "The Atlantic spotted dolphin (Stenella frontalis) is a dolphin found in warm temperate and tropical waters of the Atlantic Ocean. Older members of the species have a very distinctive spotted coloration all over their bodies.",
               "height": "2.26m",
               "weight": "130kg"
@@ -168,18 +167,16 @@
               "curiositiesImage": "/atlanticSpottedDolphinPct.jpg"
             }
           ],
-	        "locationText": "There are two distinct geographical forms of the Atlantic spotted dolphin. One of them is larger, has more spots and inhabit mainly along the continental shelf in warmer waters. The other form is smaller, has lighter spots and can be found in deeper areas and around islands such as the Azores (Jefferson et al. 2015).",
+          "locationText": "There are two distinct geographical forms of the Atlantic spotted dolphin. One of them is larger, has more spots and inhabit mainly along the continental shelf in warmer waters. The other form is smaller, has lighter spots and can be found in deeper areas and around islands such as the Azores (Jefferson et al. 2015).",
           "locationImage": "/AtlanticOcean.jpg",
           "diet": [
             {
               "item": "Small Fish",
               "itemImg": "/atlanticCod.jpg"
-             
             },
             {
               "item": "Anemone",
               "itemImg": "/anemone.png"
-             
             }
           ]
         }
@@ -198,7 +195,7 @@
         {
           "about": [
             {
-	            "scientificName": "Balaenoptera musculus",
+              "scientificName": "Balaenoptera musculus",
               "description": "Blue whales have a long body and generally slender shape. Their mottled blue-gray color appears light blue under water—hence their name, the blue whale. The mottling pattern is variable and can be used to identify individuals.",
               "height": "33m",
               "weight": "200 ton"
@@ -215,7 +212,7 @@
               "curiositiesImage": "/blueWhalePct.jpg"
             }
           ],
-	        "locationText": "Blue whales are found in all oceans except the Arctic. They generally migrate seasonally between summer feeding grounds and winter breeding grounds, but some evidence suggests that individuals in certain areas might not migrate at all. Information about distribution and movement varies with location, and migratory routes are not well known. In general, distribution is driven largely by food availability—they occur in waters where krill are concentrated.",
+          "locationText": "Blue whales are found in all oceans except the Arctic. They generally migrate seasonally between summer feeding grounds and winter breeding grounds, but some evidence suggests that individuals in certain areas might not migrate at all. Information about distribution and movement varies with location, and migratory routes are not well known. In general, distribution is driven largely by food availability—they occur in waters where krill are concentrated.",
           "locationImage": "/MapaMundi.webp",
           "diet": [
             {
@@ -225,7 +222,7 @@
             {
               "item": "Small Fish",
               "itemImg": "/atlanticCod.jpg"
-          }
+            }
           ]
         }
       ]
@@ -243,7 +240,7 @@
         {
           "about": [
             {
-	            "scientificName": "Amphiprion ocellaris",
+              "scientificName": "Amphiprion ocellaris",
               "description": "The clownfish can be many different colours, depending on its species, including yellow, orange, red, and black. Most have white details. ",
               "height": "11cm",
               "weight": "100g"
@@ -260,7 +257,7 @@
               "curiositiesImage": "/clownfishPct.png"
             }
           ],
-	        "locationText": "Clownfish are found in warm waters, such as the Red Sea and Pacific Oceans, in sheltered reefs or lagoons, living in anemone. ",
+          "locationText": "Clownfish are found in warm waters, such as the Red Sea and Pacific Oceans, in sheltered reefs or lagoons, living in anemone. ",
           "locationImage": "/PacificOcean.jpg",
           "diet": [
             {
@@ -270,7 +267,7 @@
             {
               "item": "Seaweed",
               "itemImg": "/seaweed.jpg"
-          }
+            }
           ]
         }
       ]
@@ -288,7 +285,7 @@
         {
           "about": [
             {
-	            "scientificName": "Iciligorgia schrammi",
+              "scientificName": "Iciligorgia schrammi",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -305,7 +302,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -328,38 +325,38 @@
       "phylum": "Arthropoda",
       "class": "Crustacea",
       "order": "Decapoda",
-      "icon": "link",
+      "icon": "public/assets/images/crab.png",
       "tabs": [
         {
           "about": [
             {
-	            "scientificName": "Chaceon quinquedens",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+              "scientificName": "Chaceon quinquedens",
+              "description": "Red deep sea crab on the US east coast show distinct sex segregation by depth along the continental slope. Females predominate in depths of 450–700 m, and those in shallow water are predominantly reproductive adults, whereas males predominate at greater depths.",
+              "height": "12.5cm - 17.5cm",
+              "weight": "0,9kg"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "egg - zoea - megalopae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
+              "curiositiesText": "After mating, females carry fertilized eggs on their pleopods for up to 9 months until the larvae are released.",
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+          "locationText": "Atlantic red crab or red crab is a crab that lives in the Atlantic Ocean off the East Coast of the United States and Canada, from North Carolina to Nova Scotia.",
+          "locationImage": "public/assets/images/AtlanticOcean.jpg",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Squid",
+              "itemImg": "public/assets/images/squid.png"
+            },
+            {
+              "item": "Mid-water-fish",
+              "itemImg": ".."
             }
           ]
         }
@@ -378,7 +375,7 @@
         {
           "about": [
             {
-	            "scientificName": "Grimpoteuthis umbellata",
+              "scientificName": "Grimpoteuthis umbellata",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -395,7 +392,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -423,7 +420,7 @@
         {
           "about": [
             {
-	            "scientificName": "Gymnothorax funebris",
+              "scientificName": "Gymnothorax funebris",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -440,7 +437,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -468,7 +465,7 @@
         {
           "about": [
             {
-	            "scientificName": "Gymnothorax funebris",
+              "scientificName": "Gymnothorax funebris",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -485,7 +482,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -513,7 +510,7 @@
         {
           "about": [
             {
-	            "scientificName": "Chelonia mydas",
+              "scientificName": "Chelonia mydas",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -530,7 +527,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -558,7 +555,7 @@
         {
           "about": [
             {
-	            "scientificName": "Megaptera novaeangliae",
+              "scientificName": "Megaptera novaeangliae",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -575,7 +572,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -604,7 +601,7 @@
         {
           "about": [
             {
-	            "scientificName": "Orcinus orca",
+              "scientificName": "Orcinus orca",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -621,7 +618,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -651,7 +648,7 @@
         {
           "about": [
             {
-	            "scientificName": "Monodon monoceros",
+              "scientificName": "Monodon monoceros",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -668,7 +665,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -697,7 +694,7 @@
         {
           "about": [
             {
-	            "scientificName": "Monodon monoceros",
+              "scientificName": "Monodon monoceros",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -714,7 +711,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -742,7 +739,7 @@
         {
           "about": [
             {
-	            "scientificName": "Octopoda",
+              "scientificName": "Octopoda",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -759,7 +756,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -787,7 +784,7 @@
         {
           "about": [
             {
-	            "scientificName": "Lepidochelys olivacea",
+              "scientificName": "Lepidochelys olivacea",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -804,7 +801,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -832,7 +829,7 @@
         {
           "about": [
             {
-	            "scientificName": "Argopecten irradians",
+              "scientificName": "Argopecten irradians",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -849,7 +846,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -877,7 +874,7 @@
         {
           "about": [
             {
-	            "scientificName": "Hypanus americanus",
+              "scientificName": "Hypanus americanus",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -894,7 +891,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -922,7 +919,7 @@
         {
           "about": [
             {
-	            "scientificName": "Hippocampus heptagonus",
+              "scientificName": "Hippocampus heptagonus",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -939,7 +936,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -967,7 +964,7 @@
         {
           "about": [
             {
-	            "scientificName": "Tripneustes ventricosus",
+              "scientificName": "Tripneustes ventricosus",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -984,7 +981,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -1012,7 +1009,7 @@
         {
           "about": [
             {
-	            "scientificName": "Halichoerus grypus",
+              "scientificName": "Halichoerus grypus",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -1029,7 +1026,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -1057,7 +1054,7 @@
         {
           "about": [
             {
-	            "scientificName": "Ulva lactuca",
+              "scientificName": "Ulva lactuca",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -1074,7 +1071,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -1102,7 +1099,7 @@
         {
           "about": [
             {
-	            "scientificName": "Carcharodon carcharias",
+              "scientificName": "Carcharodon carcharias",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -1119,7 +1116,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -1147,7 +1144,7 @@
         {
           "about": [
             {
-	            "scientificName": "Farfantepenaeus brasiliensis",
+              "scientificName": "Farfantepenaeus brasiliensis",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -1164,7 +1161,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -1192,7 +1189,7 @@
         {
           "about": [
             {
-	            "scientificName": "Sepioteuthis sepioidea",
+              "scientificName": "Sepioteuthis sepioidea",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -1209,7 +1206,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -1237,7 +1234,7 @@
         {
           "about": [
             {
-	            "scientificName": "Fromia monilis",
+              "scientificName": "Fromia monilis",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -1254,7 +1251,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -1282,7 +1279,7 @@
         {
           "about": [
             {
-	            "scientificName": "Xiphias gladius",
+              "scientificName": "Xiphias gladius",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -1299,7 +1296,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -1327,7 +1324,7 @@
         {
           "about": [
             {
-	            "scientificName": "Thunnus thynnus",
+              "scientificName": "Thunnus thynnus",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -1344,7 +1341,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
@@ -1372,7 +1369,7 @@
         {
           "about": [
             {
-	            "scientificName": "Pelagia noctiluca",
+              "scientificName": "Pelagia noctiluca",
               "description": "...",
               "height": "...",
               "weight": "..."
@@ -1389,7 +1386,7 @@
               "curiositiesImage": "link"
             }
           ],
-	        "locationText": "...",
+          "locationText": "...",
           "locationImage": "link",
           "diet": [
             {
