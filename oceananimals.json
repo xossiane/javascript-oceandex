@@ -553,7 +553,7 @@
       "phylum": "Chordata",
       "class": "Mammalia",
       "order": "Artiodactyla",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/humpbackwhale.png",
       "tabs": [
         {
           "about": [
