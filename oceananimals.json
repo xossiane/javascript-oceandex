@@ -649,15 +649,16 @@
       "Infraorder": "Cetacea",
       "order": "Artiodactyla",
       "Family": "Monodontidae",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/narwhal.png",
       "tabs": [
         {
           "about": [
             {
 	            "scientificName": "Monodon monoceros",
-              "description": "...",
+              "description": "The narwhal, also known as a narwhale (Monodon monoceros), is a medium-sized toothed whale that possesses a large 'tusk' from a protruding canine tooth. It is the only living species of the genus Monodon and the only species of the family Monodontidae. The narwhal is a stocky whale with a large head and a long, thick, straight tusk.",
               "height": "...",
-              "weight": "..."
+              "weight": "800 to 1,600kg",
+              "length":"3.95 to 5.5m"
             }
           ],
           "breeding": [
@@ -667,20 +668,20 @@
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "The most conspicuous characteristic of the male narwhal is a single long tusk, which is in fact a canine tooth that projects from the left side of the upper jaw, through the lip and forms a left-handed helical spiral. The tusk grows throughout life, reaching a length of about 1.5 to 3.1 m (4.9 to 10.2 ft). It is hollow and weighs around 10 kg (22 lb).",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/narwhalPct.jpg"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "The narwhal lives year-round in the Arctic waters around Greenland, Canada and Russia.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/ArcticOcean.jpg",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Flat Fish",
+              "itemImg": "link"
+            },
+            {
+              "item": "Arctic cod",
+              "itemImg": "link"
             }
           ]
         }
