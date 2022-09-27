@@ -559,32 +559,33 @@
           "about": [
             {
 	            "scientificName": "Megaptera novaeangliae",
-              "description": "...",
+              "description": "The humpback whale (Megaptera novaeangliae) is a species of baleen whale. It is a rorqual; a member of the family Balaenopteridae. The humpback has a distinctive body shape, with long pectoral fins and a knobbly head. It is known for breaching and other distinctive surface behaviors, making it popular with whale watchers. Males produce a complex song typically lasting 4 to 33 minutes.",
               "height": "...",
-              "weight": "..."
+              "weight": "40 tons",
+              "length":"14-17m"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "method": "fetus - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "Humpback whale groups, aside from mothers and calves, typically last for days or weeks at the most. Male humpback whales produce complex songs during the winter breeding season. These vocals range in frequency between 100 Hz to 4 Hz, with harmonics reaching up to 24 kHz or more, and can travel at least 10 km (6.2 mi).",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/3d1a3518edbdc99730387327c0617af95ad2f3d5/public/assets/images/humpbackwhalePct.jpg"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "Found in oceans and seas around the world, humpback whales typically migrate up to 16,000 km (9,900 mi) each year. They feed in polar waters and migrate to tropical or subtropical waters to breed and give birth.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/3d1a3518edbdc99730387327c0617af95ad2f3d5/public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Krill",
+              "itemImg": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/krill.png"
+            },
+            {
+              "item": "Small Fish",
+              "itemImg": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/smallfish.png"
             }
           ]
         }
