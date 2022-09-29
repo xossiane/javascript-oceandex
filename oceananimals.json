@@ -696,38 +696,39 @@
       "class": "Cephalopoda",
       "order": "Nautilida",
       "Family": "Nautilidae",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/nautilus.png",
       "tabs": [
         {
           "about": [
             {
-	            "scientificName": "Monodon monoceros",
-              "description": "...",
+	            "scientificName": "Nautilus macromphalus",
+              "description": "The nautilus is a pelagic marine mollusc of the cephalopod family Nautilidae. The nautilus is the sole extant family of the superfamily Nautilaceae and of its smaller but near equal suborder, Nautilina. The nautilus is a cephalopod mollusc, and is the only living member of the order Nautilida. It is a marine gastropod mollusc in the family Nautilidae.",
               "height": "...",
-              "weight": "..."
+              "weight": " - 12kg",
+              "length": "10cm - 25cm"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - paralarvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "The word nautilus is derived from the Greek word ναυτίλος nautílos 'sailor', it originally referred to a type of octopus of the genus Argonauta, also known as 'paper nautilus', which were thought to use two of their arms as sails.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/nautilusPct.jpg"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "Nautiluses are only found in the Indo-Pacific, from 30° N to 30° S latitude and 90° E to 175° E longitude. They inhabit the deep slopes of coral reefs.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/PacificOcean.jpg",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Lobster",
+              "itemImg": "link"
+            },
+            {
+              "item": "Hermit crabs",
+              "itemImg": "link"
             }
           ]
         }
@@ -741,38 +742,39 @@
       "phylum": "Mollusca",
       "class": "Cephalopoda",
       "order": "Octopoda",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/octopus.png",
       "tabs": [
         {
           "about": [
             {
 	            "scientificName": "Octopoda",
-              "description": "...",
+              "description": "An octopus is a soft-bodied, eight-limbed mollusc of the order Octopoda. It has two eyes and a beak, with a prominent mouth surrounded by tentacles. The body is bilaterally symmetric, with a distinct head, thorax and abdomen. The head and thorax are fused together, and the arms are attached to the thorax. The arms bear suckers, and the mouth is surrounded by a ring of tentacles.",
               "height": "...",
-              "weight": "..."
+              "weight": "<1g - 71kg",
+              "length": "2.5cm - 9m"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "Octopuses appear in mythology as sea monsters like the Kraken of Norway and the Akkorokamui of the Ainu, and probably the Gorgon of ancient Greece. A battle with an octopus appears in Victor Hugo's book Toilers of the Sea, inspiring other works such as Ian Fleming's Octopussy. Octopuses appear in Japanese erotic art, shunga. They are eaten and considered a delicacy by humans in many parts of the world, especially the Mediterranean and the Asian seas.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/octopusPct.jpg"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "Octopuses live in every ocean, and different species have adapted to different marine habitats. Octopuses inhabit various regions of the ocean, including coral reefs, pelagic waters, and the seabed; some live in the intertidal zone and others at abyssal depths.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Crustaceans",
+              "itemImg": "link"
+            },
+            {
+              "item": "Clam",
+              "itemImg": "link"
             }
           ]
         }
@@ -786,38 +788,39 @@
       "phylum": "Chordata",
       "class": "Reptilia",
       "order": "Testudines",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/oliveturtle.png",
       "tabs": [
         {
           "about": [
             {
 	            "scientificName": "Lepidochelys olivacea",
-              "description": "...",
+              "description": "The olive ridley sea turtle, also known commonly as the Pacific ridley sea turtle, is a species of turtle in the family Cheloniidae. The species is the second-smallest and most abundant of all sea turtles found in the world. This turtle and the related Kemp's ridley turtle are best known for their unique synchronised mass nestings called arribadas, where thousands of females come together on the same beach to lay eggs.",
               "height": "...",
-              "weight": "..."
+              "weight": "25kg - 46kg",
+              "length": "- 61cm"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - hatchling - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "Olive ridley turtles exhibit two different nesting behaviours, the most prevalent solitary nesting, but also the behaviour they are best known for, the synchronized mass nesting, termed arribadas. Females return to the same beach from where they hatched, to lay their eggs. They lay their eggs in conical nests about 1.5 ft deep, which they laboriously dig with their hind flippers. In the Indian Ocean, the majority of olive ridleys nest in two or three large assemblies near Gahirmatha in Odisha. The coast of Odisha in India is one of the largest mass nesting sites for the olive ridley, along with the coasts of Mexico and Costa Rica. In 1991, over 600,000 turtles nested along the coast of Odisha in one week. Solitary nesting also occurs along the Coromandel Coast and Sri Lanka, but in scattered locations. However, olive ridleys are considered a rarity in most areas of the Indian Ocean.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/oliveturtlePct.jpg"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "The olive ridle sea turtle is found in warm and tropical waters, primarily in the Pacific and Indian Oceans, but also in the warm waters of the Atlantic Ocean.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Jellyfish",
+              "itemImg": "link"
+            },
+            {
+              "item": "Tunicates",
+              "itemImg": "link"
             }
           ]
         }
@@ -831,38 +834,39 @@
       "phylum": "Mollusca",
       "class": "Bivalvia",
       "order": "Pectinida",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/oyster.png",
       "tabs": [
         {
           "about": [
             {
 	            "scientificName": "Argopecten irradians",
-              "description": "...",
+              "description": "Oyster is the common name for a number of different families of salt-water bivalve molluscs that live in marine or brackish habitats. In some species, the valves are highly calcified, and many are somewhat irregular in shape. Many, but not all oysters are in the superfamily Ostreoidea. Some types of oysters are commonly consumed (cooked or raw), and in some locales are regarded as a delicacy. Some types of pearl oysters are harvested for the pearl produced within the mantle. Windowpane oysters are harvested for their translucent shells, which are used to make various kinds of decorative objects.",
               "height": "...",
-              "weight": "..."
+              "weight": "48 - 64g",
+              "length": "8cm - 40cm"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - trochophore - veliger - pediveliger - early spat - later spat"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "The oyster has a curious way of defending itself. When a parasite invades its body, it releases a substance called mother-of-pearl, which crystallizes on the invader, preventing it from reproducing. After about three years this material turns into a pearl. Its shape depends on the shape of the invader and its color varies depending on the health of the oyster.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/oysterPct.jpg"
             }
           ],
-	        "locationText": "...",
-          "locationImage": "link",
+	        "locationText": "Oysters are found throughout the world’s oceans, usually in shallow waters and in colonies called beds or reefs.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Phytoplankton",
+              "itemImg": "link"
+            },
+            {
+              "item": "Small bits of algae naturally present in the water",
+              "itemImg": "link"
             }
           ]
         }
