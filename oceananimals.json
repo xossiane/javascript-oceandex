@@ -286,32 +286,32 @@
           "about": [
             {
               "scientificName": "Iciligorgia schrammi",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+              "description": "Iciligorgia schrammi, common names deepwater sea fan and black sea fan is a species of gorgonian sea fan in the family Anthothelidae.",
+              "height": "-",
+              "weight": "-"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "-"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
+              "curiositiesText": "Normally grows at depths from 3 to 368m. It lives on vertical walls, standing out perpendicularly, and can also grow in deep water where the water is clear and the current high on slope breaks.",
               "curiositiesImage": "link"
             }
           ],
-          "locationText": "...",
-          "locationImage": "link",
+          "locationText": "It is found in tropical parts of the Atlantic Ocean.",
+          "locationImage": "public/assets/images/AtlanticOcean.jpg",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "-",
+              "itemImg": ""
+            },
+            {
+              "item": "-",
+              "itemImg": ""
             }
           ]
         }
@@ -376,32 +376,32 @@
           "about": [
             {
               "scientificName": "Grimpoteuthis umbellata",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+              "description": "Grimpoteuthis is a genus of pelagic umbrella octopuses known as the dumbo octopuses. There are 17 species recognized in the genus. Prey include crustaceans, bivalves, worms and copepods. The average life span of various Grimpoteuthis species is 3 to 5 years.",
+              "height": "20cm",
+              "weight": "5kg"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
+              "curiositiesText": "The name 'dumbo' originates from their resemblance to the title character of Disney's 1941 film Dumbo, having a prominent ear-like fin which extends from the mantle above each eye.",
               "curiositiesImage": "link"
             }
           ],
-          "locationText": "...",
+          "locationText": "Species of Grimpoteuthis are assumed to have a worldwide distribution, living in the cold, abyssal depths ranging from 1,000 to 7,000 metres.",
           "locationImage": "link",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Crustaceans",
+              "itemImg": ""
+            },
+            {
+              "item": "Bivalves",
+              "itemImg": ".."
             }
           ]
         }
@@ -409,7 +409,7 @@
     },
     {
       "id": 9,
-      "nickname": "Marine Eel",
+      "nickname": "Moray Eel",
       "name": "Green Moray",
       "kingdom": "Animalia",
       "phylum": "Chordata",
@@ -421,32 +421,32 @@
           "about": [
             {
               "scientificName": "Gymnothorax funebris",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+              "description": "Moray eels, or Muraenidae, are a family of eels whose members are found worldwide. There are approximately 200 species in 15 genera which are almost exclusively marine, but several species are regularly seen in brackish water, and a few are found in fresh water.",
+              "height": "1.8m (length)",
+              "weight": "30-36kg"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - Larvae - Glass ell - Elver - Adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
+              "curiositiesText": "Moray eels are carnivorous, and ambush predators. They live a rather sedentary life, waiting in hidden places for prey to pass near them.",
               "curiositiesImage": "link"
             }
           ],
-          "locationText": "...",
-          "locationImage": "link",
+          "locationText": "Moray eels are found worldwide in both deep and shallow waters, but tend to prefer warmer temperatures.",
+          "locationImage": "public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Crabs",
+              "itemImg": ""
+            },
+            {
+              "item": "Octopuses",
+              "itemImg": ".."
             }
           ]
         }
@@ -511,32 +511,32 @@
           "about": [
             {
               "scientificName": "Chelonia mydas",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
+              "description": "The green sea turtle, also known as the green turtle, black (sea) turtle or Pacific green turtle, is a species of large sea turtle of the family Cheloniidae. It is the only species in the genus Chelonia. The common name refers to the usually green fat found beneath its carapace, not to the color of its carapace, which is olive to black.",
+              "height": "83 – 114 cm (length)",
+              "weight": "160kg"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - Hatchlings - Juvenile - Adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
+              "curiositiesText": "Green turtles are considered the “ocean’s lawnmowers” because they eat lots of vegetation and prevent seagrasses from getting too tall and harming other aquatic life.",
               "curiositiesImage": "link"
             }
           ],
-          "locationText": "...",
-          "locationImage": "link",
+          "locationText": "Geographically, green sea turtles are found anywhere globally with warm subtropical and tropical ocean waters.",
+          "locationImage": "public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Seagrass",
+              "itemImg": ""
+            },
+            {
+              "item": "Algae",
+              "itemImg": ".."
             }
           ]
         }
