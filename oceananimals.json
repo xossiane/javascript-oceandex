@@ -550,38 +550,39 @@
       "phylum": "Chordata",
       "class": "Mammalia",
       "order": "Artiodactyla",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/humpbackwhale.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Megaptera novaeangliae",
-              "description": "...",
+              "description": "The humpback whale (Megaptera novaeangliae) is a species of baleen whale. It is a rorqual; a member of the family Balaenopteridae. The humpback has a distinctive body shape, with long pectoral fins and a knobbly head. It is known for breaching and other distinctive surface behaviors, making it popular with whale watchers. Males produce a complex song typically lasting 4 to 33 minutes.",
               "height": "...",
-              "weight": "..."
+              "weight": "40 tons",
+              "length": "14-17m"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "fetus - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "Humpback whale groups, aside from mothers and calves, typically last for days or weeks at the most. Male humpback whales produce complex songs during the winter breeding season. These vocals range in frequency between 100 Hz to 4 Hz, with harmonics reaching up to 24 kHz or more, and can travel at least 10 km (6.2 mi).",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/3d1a3518edbdc99730387327c0617af95ad2f3d5/public/assets/images/humpbackwhalePct.jpg"
             }
           ],
-          "locationText": "...",
-          "locationImage": "link",
+          "locationText": "Found in oceans and seas around the world, humpback whales typically migrate up to 16,000 km (9,900 mi) each year. They feed in polar waters and migrate to tropical or subtropical waters to breed and give birth.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/3d1a3518edbdc99730387327c0617af95ad2f3d5/public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Krill",
+              "itemImg": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/krill.png"
+            },
+            {
+              "item": "Small Fish",
+              "itemImg": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/smallfish.png"
             }
           ]
         }
@@ -596,38 +597,39 @@
       "class": "Mammalia",
       "order": "Cetacea",
       "Family": "Delphinidae",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/killerwhale.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Orcinus orca",
-              "description": "...",
+              "description": "The orca or killer whale (Orcinus orca) is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member. It is recognizable by its black-and-white patterned body. Orcinus orca is the only recognized extant species in the genus Orcinus, and one of many animal species originally described by Carl Linnaeus in his landmark 1758 10th edition of Systema Naturae. The orca is a highly social species, with a complex system of communication and group hunting. It is the most abundant large predator in its range, and preys on a wide variety of marine mammals, fish, and birds. It has been known to attack baleen whales, including blue whales, and even sperm whales.",
               "height": "...",
-              "weight": "..."
+              "weight": "6 tons",
+              "length": "6-8m"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "fetus - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "Day-to-day orca behaviour generally consists of foraging, travelling, resting and socializing. Orcas frequently engage in surface behaviour such as breaching (jumping completely out of the water) and tail-slapping. These activities may have a variety of purposes, such as courtship, communication, dislodging parasites, or play.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/killerwhalePct.jpg"
             }
           ],
-          "locationText": "...",
-          "locationImage": "link",
+          "locationText": "A cosmopolitan species, orcas can be found in all of the world's oceans in a variety of marine environments, from Arctic and Antarctic regions to tropical seas.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Fish",
+              "itemImg": "link"
+            },
+            {
+              "item": "Seals",
+              "itemImg": "link"
             }
           ]
         }
@@ -643,38 +645,39 @@
       "Infraorder": "Cetacea",
       "order": "Artiodactyla",
       "Family": "Monodontidae",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/narwhal.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Monodon monoceros",
-              "description": "...",
+              "description": "The narwhal, also known as a narwhale (Monodon monoceros), is a medium-sized toothed whale that possesses a large 'tusk' from a protruding canine tooth. It is the only living species of the genus Monodon and the only species of the family Monodontidae. The narwhal is a stocky whale with a large head and a long, thick, straight tusk.",
               "height": "...",
-              "weight": "..."
+              "weight": "800 to 1,600kg",
+              "length": "3.95 to 5.5m"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "fetus - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "The most conspicuous characteristic of the male narwhal is a single long tusk, which is in fact a canine tooth that projects from the left side of the upper jaw, through the lip and forms a left-handed helical spiral. The tusk grows throughout life, reaching a length of about 1.5 to 3.1 m (4.9 to 10.2 ft). It is hollow and weighs around 10 kg (22 lb).",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/narwhalPct.jpg"
             }
           ],
-          "locationText": "...",
-          "locationImage": "link",
+          "locationText": "The narwhal lives year-round in the Arctic waters around Greenland, Canada and Russia.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/ArcticOcean.jpg",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Flat Fish",
+              "itemImg": "link"
+            },
+            {
+              "item": "Arctic cod",
+              "itemImg": "link"
             }
           ]
         }
@@ -689,38 +692,39 @@
       "class": "Cephalopoda",
       "order": "Nautilida",
       "Family": "Nautilidae",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/nautilus.png",
       "tabs": [
         {
           "about": [
             {
-              "scientificName": "Monodon monoceros",
-              "description": "...",
+              "scientificName": "Nautilus macromphalus",
+              "description": "The nautilus is a pelagic marine mollusc of the cephalopod family Nautilidae. The nautilus is the sole extant family of the superfamily Nautilaceae and of its smaller but near equal suborder, Nautilina. The nautilus is a cephalopod mollusc, and is the only living member of the order Nautilida. It is a marine gastropod mollusc in the family Nautilidae.",
               "height": "...",
-              "weight": "..."
+              "weight": " - 12kg",
+              "length": "10cm - 25cm"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - paralarvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "The word nautilus is derived from the Greek word ναυτίλος nautílos 'sailor', it originally referred to a type of octopus of the genus Argonauta, also known as 'paper nautilus', which were thought to use two of their arms as sails.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/nautilusPct.jpg"
             }
           ],
-          "locationText": "...",
-          "locationImage": "link",
+          "locationText": "Nautiluses are only found in the Indo-Pacific, from 30° N to 30° S latitude and 90° E to 175° E longitude. They inhabit the deep slopes of coral reefs.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/PacificOcean.jpg",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Lobster",
+              "itemImg": "link"
+            },
+            {
+              "item": "Hermit crabs",
+              "itemImg": "link"
             }
           ]
         }
@@ -734,38 +738,39 @@
       "phylum": "Mollusca",
       "class": "Cephalopoda",
       "order": "Octopoda",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/octopus.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Octopoda",
-              "description": "...",
+              "description": "An octopus is a soft-bodied, eight-limbed mollusc of the order Octopoda. It has two eyes and a beak, with a prominent mouth surrounded by tentacles. The body is bilaterally symmetric, with a distinct head, thorax and abdomen. The head and thorax are fused together, and the arms are attached to the thorax. The arms bear suckers, and the mouth is surrounded by a ring of tentacles.",
               "height": "...",
-              "weight": "..."
+              "weight": "<1g - 71kg",
+              "length": "2.5cm - 9m"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "Octopuses appear in mythology as sea monsters like the Kraken of Norway and the Akkorokamui of the Ainu, and probably the Gorgon of ancient Greece. A battle with an octopus appears in Victor Hugo's book Toilers of the Sea, inspiring other works such as Ian Fleming's Octopussy. Octopuses appear in Japanese erotic art, shunga. They are eaten and considered a delicacy by humans in many parts of the world, especially the Mediterranean and the Asian seas.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/octopusPct.jpg"
             }
           ],
-          "locationText": "...",
-          "locationImage": "link",
+          "locationText": "Octopuses live in every ocean, and different species have adapted to different marine habitats. Octopuses inhabit various regions of the ocean, including coral reefs, pelagic waters, and the seabed; some live in the intertidal zone and others at abyssal depths.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Crustaceans",
+              "itemImg": "link"
+            },
+            {
+              "item": "Clam",
+              "itemImg": "link"
             }
           ]
         }
@@ -779,38 +784,39 @@
       "phylum": "Chordata",
       "class": "Reptilia",
       "order": "Testudines",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/oliveturtle.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Lepidochelys olivacea",
-              "description": "...",
+              "description": "The olive ridley sea turtle, also known commonly as the Pacific ridley sea turtle, is a species of turtle in the family Cheloniidae. The species is the second-smallest and most abundant of all sea turtles found in the world. This turtle and the related Kemp's ridley turtle are best known for their unique synchronised mass nestings called arribadas, where thousands of females come together on the same beach to lay eggs.",
               "height": "...",
-              "weight": "..."
+              "weight": "25kg - 46kg",
+              "length": "- 61cm"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - hatchling - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "Olive ridley turtles exhibit two different nesting behaviours, the most prevalent solitary nesting, but also the behaviour they are best known for, the synchronized mass nesting, termed arribadas. Females return to the same beach from where they hatched, to lay their eggs. They lay their eggs in conical nests about 1.5 ft deep, which they laboriously dig with their hind flippers. In the Indian Ocean, the majority of olive ridleys nest in two or three large assemblies near Gahirmatha in Odisha. The coast of Odisha in India is one of the largest mass nesting sites for the olive ridley, along with the coasts of Mexico and Costa Rica. In 1991, over 600,000 turtles nested along the coast of Odisha in one week. Solitary nesting also occurs along the Coromandel Coast and Sri Lanka, but in scattered locations. However, olive ridleys are considered a rarity in most areas of the Indian Ocean.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/oliveturtlePct.jpg"
             }
           ],
-          "locationText": "...",
-          "locationImage": "link",
+          "locationText": "The olive ridle sea turtle is found in warm and tropical waters, primarily in the Pacific and Indian Oceans, but also in the warm waters of the Atlantic Ocean.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Jellyfish",
+              "itemImg": "link"
+            },
+            {
+              "item": "Tunicates",
+              "itemImg": "link"
             }
           ]
         }
@@ -824,38 +830,39 @@
       "phylum": "Mollusca",
       "class": "Bivalvia",
       "order": "Pectinida",
-      "icon": "link",
+      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/oyster.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Argopecten irradians",
-              "description": "...",
+              "description": "Oyster is the common name for a number of different families of salt-water bivalve molluscs that live in marine or brackish habitats. In some species, the valves are highly calcified, and many are somewhat irregular in shape. Many, but not all oysters are in the superfamily Ostreoidea. Some types of oysters are commonly consumed (cooked or raw), and in some locales are regarded as a delicacy. Some types of pearl oysters are harvested for the pearl produced within the mantle. Windowpane oysters are harvested for their translucent shells, which are used to make various kinds of decorative objects.",
               "height": "...",
-              "weight": "..."
+              "weight": "48 - 64g",
+              "length": "8cm - 40cm"
             }
           ],
           "breeding": [
             {
-              "Method": "..."
+              "Method": "Egg - trochophore - veliger - pediveliger - early spat - later spat"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "...",
-              "curiositiesImage": "link"
+              "curiositiesText": "The oyster has a curious way of defending itself. When a parasite invades its body, it releases a substance called mother-of-pearl, which crystallizes on the invader, preventing it from reproducing. After about three years this material turns into a pearl. Its shape depends on the shape of the invader and its color varies depending on the health of the oyster.",
+              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/oysterPct.jpg"
             }
           ],
-          "locationText": "...",
-          "locationImage": "link",
+          "locationText": "Oysters are found throughout the world’s oceans, usually in shallow waters and in colonies called beds or reefs.",
+          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/MapaMundi.webp",
           "diet": [
             {
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link",
-              "...": "...",
-              "...Image": "link"
+              "item": "Phytoplankton",
+              "itemImg": "link"
+            },
+            {
+              "item": "Small bits of algae naturally present in the water",
+              "itemImg": "link"
             }
           ]
         }
