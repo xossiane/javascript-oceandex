@@ -8,7 +8,7 @@
       "phylum": "Cnidaria",
       "class": "Hexacorallia",
       "order": "Actinaria",
-      "icon": "/anemone.png",
+      "icon": "./public/assets/images/icons/00-anemone.png",
       "tabs": [
         {
           "about": [
@@ -21,25 +21,25 @@
           ],
           "breeding": [
             {
-              "Method": "It reproduces by longitudinal fission"
+              "method": "It reproduces by longitudinal fission"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "Despite their harmless appearance and lack of tooth or claw, sea anemones actually get their nutrition from living things. These may include fish, hermit crabs, or even tiny zooplankton. When the fish swims close, or the crab crawls too close, the sea anemone shoots out a stinging tentacle and injects the prey. The paralyzing venom acts fast to disable the unfortunate victim, who is then pulled into the anemone’s grasp and digested.",
-              "curiosities": "/anemonePct.jpg"
+              "curiositiesText": "Despite their harmless appearance and lack of tooth or claw, sea anemones actually get their nutrition from living things. These may include fish, hermit crabs, or even tiny zooplankton. When the fish swims close, or the crab crawls too close, the sea anemone shoots out a stinging tentacle and injects the prey. The paralyzing venom acts fast to disable the unfortunate victim, who is then pulled into the anemone's grasp and digested.",
+              "curiositiesImage": "./public/assets/images/realAnimals/00-anemone.jpg"
             }
           ],
           "locationText": "Atlantic Ocean",
-          "location": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/s/AtlanticOcean.jpg",
+          "locationImage": "./public/assets/images/oceans/AtlanticOcean.jpg",
           "diet": [
             {
               "item": "Phytoplankton",
-              "itemImg": "/phytoplanktonImg.png"
+              "itemImage": ""
             },
             {
               "item": "Small Fish",
-              "itemImg": "/atlanticCod.jpg"
+              "itemImage": ""
             }
           ]
         }
@@ -54,7 +54,7 @@
       "class": "Actinopterygii",
       "order": "Perciformes",
       "family": "Pomacanthidae",
-      "icon": "/angelfish.png",
+      "icon": "./public/assets/images/icons/01-angelFish.png",
       "tabs": [
         {
           "about": [
@@ -67,25 +67,25 @@
           ],
           "breeding": [
             {
-              "Method": "Egg - larvae - juvenile - adult"
+              "method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "This species is a protogynous hermaphrodite, the female can change sex to become a male if no male is present.",
-              "curiosities": "/angelfishPct.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/00-anemone.jpg"
             }
           ],
           "locationText": "Pomacanthus paru are abundant along coral reefs along both sides of the Atlantic. The distribution in the Western Tropical Atlantic ranges from Florida and the Bahamas to Brazil.",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
+          "locationImage": "./public/assets/images/oceans/AtlanticOcean.jpg",
           "diet": [
             {
-              "item": "Sea Weed",
-              "itemImg": "/seaweed.png"
+              "item": "Seaweed",
+              "itemImage": ""
             },
             {
               "item": "Anemone",
-              "itemImg": "/anemone.png"
+              "itemImage": ""
             }
           ]
         }
@@ -98,7 +98,7 @@
       "kingdom": "Animalia",
       "phylum": "Chordata",
       "class": "Actinopterygii",
-      "icon": "/atlanticCod.png",
+      "icon": "./public/assets/images/icons/02-cod.png",
       "order": "Gadiformes",
       "tabs": [
         {
@@ -112,25 +112,25 @@
           ],
           "breeding": [
             {
-              "Method": "Egg - larvae - juvenile - adult"
+              "method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "Atlantic cod are hypothesized to communicate through the production of sound via drumming muscles. Sound production is correlated with mate selection during spawning season. It is hypothesized that the degree to which males are able to produce acoustic sound is positively associated with the overall fitness of the males, with those having larger drumming muscles producing greater sound waves and out-competing others. (Rowe and Hutchings, 2004)",
-              "curiosities": "/atlanticCodPct.png"
+              "curiositiesImage": "./public/assets/images/realAnimals/00-anemone.png"
             }
           ],
           "locationText": "Gadus morhua is commonly known as Atlantic cod and can be found along the eastern and northern coasts of North America, along the coasts of Greenland, and from the Bay of Biscay north to the Arctic Ocean, including the Atlantic waters around Iceland, the North Sea, and the Barents Sea.",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
+          "locationImage": "./public/assets/images/oceans/AtlanticOcean.jpg",
           "diet": [
             {
               "item": "Zooplankton",
-              "itemImg": "/zooplankton.png"
+              "itemImage": ""
             },
             {
               "item": "Anemone",
-              "itemImg": "/anemone.jpg"
+              "itemImage": ""
             }
           ]
         }
@@ -145,7 +145,7 @@
       "class": "Mammalia",
       "order": "Cetacea",
       "family": "Delphinidae",
-      "icon": "/AtlanticSpottedDolphin.png",
+      "icon": "./public/assets/images/icons/03-dolphin.png",
       "tabs": [
         {
           "about": [
@@ -158,25 +158,25 @@
           ],
           "breeding": [
             {
-              "Method": "fetus - juvenile - adult"
+              "method": "Fetus - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "These dolphins emit about ten different vocalizations as whistles, squawks, barks and buzzes that correspond to different behaviors. In this species whistles are emitted at frequencies between 7 and 16 kHz (Herzing, 1996, Azevedo et al. 2010). ",
-              "curiosities": "/atlanticSpottedDolphinPct.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/03-dolphin.jpg"
             }
           ],
           "locationText": "There are two distinct geographical forms of the Atlantic spotted dolphin. One of them is larger, has more spots and inhabit mainly along the continental shelf in warmer waters. The other form is smaller, has lighter spots and can be found in deeper areas and around islands such as the Azores (Jefferson et al. 2015).",
-          "locationImage": "/AtlanticOcean.jpg",
+          "locationImage": "./public/assets/images/oceans/AtlanticOcean.jpg",
           "diet": [
             {
               "item": "Small Fish",
-              "itemImg": "/atlanticCod.jpg"
+              "itemImage": ""
             },
             {
               "item": "Anemone",
-              "itemImg": "/anemone.png"
+              "itemImage": ""
             }
           ]
         }
@@ -190,7 +190,7 @@
       "phylum": "Chordata",
       "class": "Mammalia",
       "order": "Cetacea",
-      "icon": "/bluewhale.png",
+      "icon": "./public/assets/images/icons/04-blueWhale.png",
       "tabs": [
         {
           "about": [
@@ -203,25 +203,25 @@
           ],
           "breeding": [
             {
-              "Method": "fetus - juvenile - adult"
+              "method": "Fetus - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "The blue whale is the largest animal on the planet, weighing as much as 200 tons (approximately 33 elephants). The blue whale has a heart the size of a Volkswagen Beetle. Its stomach can hold one ton of krill and it needs to eat about four tons of krill each day. They are the loudest animals on Earth and are even louder than a jet engine. Their calls reach 188 decibels, while a jet reaches 140 decibels. Their low frequency whistle can be heard for hundreds of miles and is probably used to attract other blue whales.",
-              "curiosities": "/blueWhalePct.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/04-blueWhale.jpg"
             }
           ],
           "locationText": "Blue whales are found in all oceans except the Arctic. They generally migrate seasonally between summer feeding grounds and winter breeding grounds, but some evidence suggests that individuals in certain areas might not migrate at all. Information about distribution and movement varies with location, and migratory routes are not well known. In general, distribution is driven largely by food availability—they occur in waters where krill are concentrated.",
-          "locationImage": "/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
               "item": "Zooplankton",
-              "itemImg": "/zooplankton.png"
+              "itemImage": ""
             },
             {
               "item": "Small Fish",
-              "itemImg": "/atlanticCod.jpg"
+              "itemImage": ""
             }
           ]
         }
@@ -235,7 +235,7 @@
       "phylum": "Chordata",
       "class": "Actinopterygii",
       "order": "Pomacentridae",
-      "icon": "/clownfish.png",
+      "icon": "./public/assets/images/icons/05-clownFish.png",
       "tabs": [
         {
           "about": [
@@ -248,25 +248,25 @@
           ],
           "breeding": [
             {
-              "Method": "Egg - larvae - juvenile - adult"
+              "method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "Clownfish communicate by making popping and clicking noises.",
-              "curiosities": "/clownfishPct.png"
+              "curiositiesImage": "./public/assets/images/realAnimals/05-clownFish.png"
             }
           ],
           "locationText": "Clownfish are found in warm waters, such as the Red Sea and Pacific Oceans, in sheltered reefs or lagoons, living in anemone. ",
-          "locationImage": "/PacificOcean.jpg",
+          "locationImage": "./public/assets/images/oceans/PacificOcean.jpg",
           "diet": [
             {
               "item": "Zooplankton",
-              "itemImg": "/zooplankton.png"
+              "itemImage": ""
             },
             {
               "item": "Seaweed",
-              "itemImg": "/seaweed.jpg"
+              "itemImage": ""
             }
           ]
         }
@@ -280,7 +280,7 @@
       "phylum": "Cnidaria",
       "class": "Anthozoa",
       "order": "Alcyonaria",
-      "icon": "link",
+      "icon": "./public/assets/images/icons/06-coral.jpg",
       "tabs": [
         {
           "about": [
@@ -293,25 +293,25 @@
           ],
           "breeding": [
             {
-              "Method": "-"
+              "method": ""
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "Normally grows at depths from 3 to 368m. It lives on vertical walls, standing out perpendicularly, and can also grow in deep water where the water is clear and the current high on slope breaks.",
-              "curiositiesImage": "link"
+              "curiositiesImage": "./public/assets/images/realAnimals/06-coral.jpg"
             }
           ],
           "locationText": "It is found in tropical parts of the Atlantic Ocean.",
-          "locationImage": "public/assets/images/AtlanticOcean.jpg",
+          "locationImage": "./public/assets/images/oceans/AtlanticOcean.jpg",
           "diet": [
             {
-              "item": "-",
-              "itemImg": ""
+              "item": "",
+              "itemImage": ""
             },
             {
-              "item": "-",
-              "itemImg": ""
+              "item": "",
+              "itemImage": ""
             }
           ]
         }
@@ -325,7 +325,7 @@
       "phylum": "Arthropoda",
       "class": "Crustacea",
       "order": "Decapoda",
-      "icon": "public/assets/images/crab.png",
+      "icon": "./public/assets/images/icons/07-crab.png",
       "tabs": [
         {
           "about": [
@@ -338,25 +338,25 @@
           ],
           "breeding": [
             {
-              "Method": "egg - zoea - megalopae - juvenile - adult"
+              "method": "Egg - zoea - megalopae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "After mating, females carry fertilized eggs on their pleopods for up to 9 months until the larvae are released.",
-              "curiositiesImage": "link"
+              "curiositiesImage": "./public/assets/images/realAnimals/07-crab.jpg"
             }
           ],
           "locationText": "Atlantic red crab or red crab is a crab that lives in the Atlantic Ocean off the East Coast of the United States and Canada, from North Carolina to Nova Scotia.",
-          "locationImage": "public/assets/images/AtlanticOcean.jpg",
+          "locationImage": "./public/assets/images/oceans/AtlanticOcean.jpg",
           "diet": [
             {
               "item": "Squid",
-              "itemImg": "public/assets/images/squid.png"
+              "itemImage": ""
             },
             {
               "item": "Mid-water-fish",
-              "itemImg": ".."
+              "itemImage": ""
             }
           ]
         }
@@ -370,7 +370,7 @@
       "phylum": "Mollusca",
       "class": "Cephalopoda",
       "order": "Octopoda",
-      "icon": "link",
+      "icon": "./public/assets/images/icons/08-dumboOctopus.png",
       "tabs": [
         {
           "about": [
@@ -383,25 +383,25 @@
           ],
           "breeding": [
             {
-              "Method": "Egg - larvae - juvenile - adult"
+              "method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "The name 'dumbo' originates from their resemblance to the title character of Disney's 1941 film Dumbo, having a prominent ear-like fin which extends from the mantle above each eye.",
-              "curiositiesImage": "link"
+              "curiositiesImage": "./public/assets/images/realAnimals/08-dumboOctopus.jpg"
             }
           ],
-          "locationText": "Species of Grimpoteuthis are assumed to have a worldwide distribution, living in the cold, abyssal depths ranging from 1,000 to 7,000 metres.",
-          "locationImage": "link",
+          "locationText": "Species of Grimpoteuthis are assumed to have a worldwide distribution, living in the cold, abyssal depths ranging from 1,000 to 7,000 metres.",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
               "item": "Crustaceans",
-              "itemImg": ""
+              "itemImage": ""
             },
             {
               "item": "Bivalves",
-              "itemImg": ".."
+              "itemImage": "."
             }
           ]
         }
@@ -415,7 +415,7 @@
       "phylum": "Chordata",
       "class": "Actinopterygii",
       "order": "Anguilliformes",
-      "icon": "link",
+      "icon": "./public/assets/images/icons/09-morayEel.png",
       "tabs": [
         {
           "about": [
@@ -428,25 +428,25 @@
           ],
           "breeding": [
             {
-              "Method": "Egg - Larvae - Glass ell - Elver - Adult"
+              "method": "Egg - larvae - glass ell - elver - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "Moray eels are carnivorous, and ambush predators. They live a rather sedentary life, waiting in hidden places for prey to pass near them.",
-              "curiositiesImage": "link"
+              "curiositiesImage": "./public/assets/images/realAnimals/09-morayEel.jpg"
             }
           ],
           "locationText": "Moray eels are found worldwide in both deep and shallow waters, but tend to prefer warmer temperatures.",
-          "locationImage": "public/assets/images/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
               "item": "Crabs",
-              "itemImg": ""
+              "itemImage": ""
             },
             {
               "item": "Octopuses",
-              "itemImg": ".."
+              "itemImage": ""
             }
           ]
         }
@@ -454,58 +454,13 @@
     },
     {
       "id": 10,
-      "nickname": "Marine Eel",
-      "name": "Green Moray",
-      "kingdom": "Animalia",
-      "phylum": "Chordata",
-      "class": "Actinopterygii",
-      "order": "Anguilliformes",
-      "icon": "link",
-      "tabs": [
-        {
-          "about": [
-            {
-              "scientificName": "Gymnothorax funebris",
-              "description": "...",
-              "height": "...",
-              "weight": "..."
-            }
-          ],
-          "breeding": [
-            {
-              "Method": ""
-            }
-          ],
-          "curiosities": [
-            {
-              "curiositiesText": "",
-              "curiosities": "link"
-            }
-          ],
-          "locationText": "...",
-          "locationImage": "link",
-          "diet": [
-            {
-              "": "",
-              "": "link",
-              "": "",
-              "": "link",
-              "": "",
-              "": "link"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 11,
       "nickname": "Green Sea Turtle",
       "name": "Green Sea Turtle",
       "kingdom": "Animalia",
       "phylum": "Chordata",
       "class": "Reptilia",
       "order": "Testudines",
-      "icon": "link",
+      "icon": "./public/assets/images/icons/10-greenTurtle.png",
       "tabs": [
         {
           "about": [
@@ -518,25 +473,71 @@
           ],
           "breeding": [
             {
-              "Method": "Egg - Hatchlings - Juvenile - Adult"
+              "method": "Egg - hatchlings - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "Green turtles are considered the “ocean’s lawnmowers” because they eat lots of vegetation and prevent seagrasses from getting too tall and harming other aquatic life.",
-              "curiositiesImage": "link"
+              "curiositiesText": "Green turtles are considered the “ocean's lawnmowers” because they eat lots of vegetation and prevent seagrasses from getting too tall and harming other aquatic life.",
+              "curiositiesImage": "./public/assets/images/realAnimals/10-greenTurtle.jpg"
             }
           ],
-          "locationText": "Geographically, green sea turtles are found anywhere globally with warm subtropical and tropical ocean waters.",
-          "locationImage": "public/assets/images/MapaMundi.webp",
+          "locationText": "Geographically, green sea turtles are found anywhere globally with warm subtropical and tropical ocean waters.",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
               "item": "Seagrass",
-              "itemImg": ""
+              "itemImage": ""
             },
             {
               "item": "Algae",
-              "itemImg": ".."
+              "itemImage": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nickname": "Jellyfish",
+      "name": "Jellyfish",
+      "kingdom": "Animalia",
+      "phylum": "Cnidaria",
+      "class": "Scyphozoa",
+      "order": "Semaeostomeae",
+      "icon": "./public/assets/images/icons/11-jellyfish.png",
+      "tabs": [
+        {
+          "about": [
+            {
+              "scientificName": "Pelagia noctiluca",
+              "description": "The jellyfish are mainly free-swimming marine animals with umbrella-shaped bells and trailing tentacles, although a few are anchored to the seabed by stalks rather than being mobile. The bell can pulsate to provide propulsion for highly efficient locomotion. ",
+              "height": "1cm - 40cm",
+              "weight": "20g - 400g"
+            }
+          ],
+          "breeding": [
+            {
+              "method": "Egg - planula - attached planula - polyp - budding polyp - juvenile - adult"
+            }
+          ],
+          "curiosities": [
+            {
+              "curiositiesText": "Jellyfish are the oldest multicellular animals on the planet.Scientists have discovered jellyfish fossil snapshots in rocks believed to be more than 500 million years old. That makes them even older than dinosaurs!",
+              "curiositiesImage": "./public/assets/images/realAnimals/11-jellyfish.jpg"
+            }
+          ],
+          "locationText": "Atlantic Ocean",
+          "locationImage": "./public/assets/images/oceans/AtlanticOcean.jpg",
+          "diet": [
+            {
+              "item": "Zooplankton",
+              "itemImage": ""
+            },
+            {
+              "item": "Crustaceans",
+              "itemImage": ""
+          
             }
           ]
         }
@@ -550,39 +551,38 @@
       "phylum": "Chordata",
       "class": "Mammalia",
       "order": "Artiodactyla",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/humpbackwhale.png",
+      "icon": "./public/assets/images/icons/12-humpbackWhale.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Megaptera novaeangliae",
               "description": "The humpback whale (Megaptera novaeangliae) is a species of baleen whale. It is a rorqual; a member of the family Balaenopteridae. The humpback has a distinctive body shape, with long pectoral fins and a knobbly head. It is known for breaching and other distinctive surface behaviors, making it popular with whale watchers. Males produce a complex song typically lasting 4 to 33 minutes.",
-              "height": "...",
-              "weight": "40 tons",
-              "length": "14-17m"
+              "height": "14m - 17m",
+              "weight": "40 tons"
             }
           ],
           "breeding": [
             {
-              "Method": "fetus - juvenile - adult"
+              "method": "Fetus - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "Humpback whale groups, aside from mothers and calves, typically last for days or weeks at the most. Male humpback whales produce complex songs during the winter breeding season. These vocals range in frequency between 100 Hz to 4 Hz, with harmonics reaching up to 24 kHz or more, and can travel at least 10 km (6.2 mi).",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/3d1a3518edbdc99730387327c0617af95ad2f3d5/public/assets/images/humpbackwhalePct.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/12-humpbackWhale.jpg"
             }
           ],
           "locationText": "Found in oceans and seas around the world, humpback whales typically migrate up to 16,000 km (9,900 mi) each year. They feed in polar waters and migrate to tropical or subtropical waters to breed and give birth.",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/3d1a3518edbdc99730387327c0617af95ad2f3d5/public/assets/images/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
               "item": "Krill",
-              "itemImg": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/krill.png"
+              "itemImage": ""
             },
             {
               "item": "Small Fish",
-              "itemImg": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/smallfish.png"
+              "itemImage": ""
             }
           ]
         }
@@ -596,40 +596,39 @@
       "phylum": "Chordata",
       "class": "Mammalia",
       "order": "Cetacea",
-      "Family": "Delphinidae",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/killerwhale.png",
+      "family": "Delphinidae",
+      "icon": "./public/assets/images/icons/13-killerWhale.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Orcinus orca",
               "description": "The orca or killer whale (Orcinus orca) is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member. It is recognizable by its black-and-white patterned body. Orcinus orca is the only recognized extant species in the genus Orcinus, and one of many animal species originally described by Carl Linnaeus in his landmark 1758 10th edition of Systema Naturae. The orca is a highly social species, with a complex system of communication and group hunting. It is the most abundant large predator in its range, and preys on a wide variety of marine mammals, fish, and birds. It has been known to attack baleen whales, including blue whales, and even sperm whales.",
-              "height": "...",
-              "weight": "6 tons",
-              "length": "6-8m"
+              "height": "6m - 8m",
+              "weight": "6 tons"
             }
           ],
           "breeding": [
             {
-              "Method": "fetus - juvenile - adult"
+              "method": "Fetus - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "Day-to-day orca behaviour generally consists of foraging, travelling, resting and socializing. Orcas frequently engage in surface behaviour such as breaching (jumping completely out of the water) and tail-slapping. These activities may have a variety of purposes, such as courtship, communication, dislodging parasites, or play.",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/killerwhalePct.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/13-killerWhale.jpg"
             }
           ],
           "locationText": "A cosmopolitan species, orcas can be found in all of the world's oceans in a variety of marine environments, from Arctic and Antarctic regions to tropical seas.",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
               "item": "Fish",
-              "itemImg": "link"
+              "itemImage": ""
             },
             {
               "item": "Seals",
-              "itemImg": "link"
+              "itemImage": ""
             }
           ]
         }
@@ -644,40 +643,39 @@
       "class": "Mammalia",
       "Infraorder": "Cetacea",
       "order": "Artiodactyla",
-      "Family": "Monodontidae",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/narwhal.png",
+      "family": "Monodontidae",
+      "icon": "./public/assets/images/icons/14-narwhal.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Monodon monoceros",
               "description": "The narwhal, also known as a narwhale (Monodon monoceros), is a medium-sized toothed whale that possesses a large 'tusk' from a protruding canine tooth. It is the only living species of the genus Monodon and the only species of the family Monodontidae. The narwhal is a stocky whale with a large head and a long, thick, straight tusk.",
-              "height": "...",
-              "weight": "800 to 1,600kg",
-              "length": "3.95 to 5.5m"
+              "height": "3.95 - 5.5m",
+              "weight": "800 - 1,600kg"
             }
           ],
           "breeding": [
             {
-              "Method": "fetus - juvenile - adult"
+              "method": "Fetus - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "The most conspicuous characteristic of the male narwhal is a single long tusk, which is in fact a canine tooth that projects from the left side of the upper jaw, through the lip and forms a left-handed helical spiral. The tusk grows throughout life, reaching a length of about 1.5 to 3.1 m (4.9 to 10.2 ft). It is hollow and weighs around 10 kg (22 lb).",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/narwhalPct.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/14-narwhal.jpg"
             }
           ],
           "locationText": "The narwhal lives year-round in the Arctic waters around Greenland, Canada and Russia.",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/2bff005b96282a4c83206ca5b235d015b9f32a91/public/assets/images/ArcticOcean.jpg",
+          "locationImage": "./public/assets/images/oceans/ArcticOcean.jpg",
           "diet": [
             {
               "item": "Flat Fish",
-              "itemImg": "link"
+              "itemImage": ""
             },
             {
               "item": "Arctic cod",
-              "itemImg": "link"
+              "itemImage": ""
             }
           ]
         }
@@ -691,40 +689,39 @@
       "phylum": "Mollusca",
       "class": "Cephalopoda",
       "order": "Nautilida",
-      "Family": "Nautilidae",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/nautilus.png",
+      "family": "Nautilidae",
+      "icon": "./public/assets/images/icons/15-nautilus.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Nautilus macromphalus",
               "description": "The nautilus is a pelagic marine mollusc of the cephalopod family Nautilidae. The nautilus is the sole extant family of the superfamily Nautilaceae and of its smaller but near equal suborder, Nautilina. The nautilus is a cephalopod mollusc, and is the only living member of the order Nautilida. It is a marine gastropod mollusc in the family Nautilidae.",
-              "height": "...",
-              "weight": " - 12kg",
-              "length": "10cm - 25cm"
+              "height": "10cm - 25cm",
+              "weight": " - 12kg"
             }
           ],
           "breeding": [
             {
-              "Method": "Egg - paralarvae - juvenile - adult"
+              "method": "Egg - paralarvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "The word nautilus is derived from the Greek word ναυτίλος nautílos 'sailor', it originally referred to a type of octopus of the genus Argonauta, also known as 'paper nautilus', which were thought to use two of their arms as sails.",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/nautilusPct.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/15-nautilus.jpg"
             }
           ],
           "locationText": "Nautiluses are only found in the Indo-Pacific, from 30° N to 30° S latitude and 90° E to 175° E longitude. They inhabit the deep slopes of coral reefs.",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/PacificOcean.jpg",
+          "locationImage": "./public/assets/images/oceans/PacificOcean.jpg",
           "diet": [
             {
               "item": "Lobster",
-              "itemImg": "link"
+              "itemImage": ""
             },
             {
               "item": "Hermit crabs",
-              "itemImg": "link"
+              "itemImage": ""
             }
           ]
         }
@@ -738,39 +735,38 @@
       "phylum": "Mollusca",
       "class": "Cephalopoda",
       "order": "Octopoda",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/octopus.png",
+      "icon": "./public/assets/images/icons/16-octopus.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Octopoda",
               "description": "An octopus is a soft-bodied, eight-limbed mollusc of the order Octopoda. It has two eyes and a beak, with a prominent mouth surrounded by tentacles. The body is bilaterally symmetric, with a distinct head, thorax and abdomen. The head and thorax are fused together, and the arms are attached to the thorax. The arms bear suckers, and the mouth is surrounded by a ring of tentacles.",
-              "height": "...",
-              "weight": "<1g - 71kg",
-              "length": "2.5cm - 9m"
+              "height": "2.5cm - 9m",
+              "weight": "<1g - 71kg"
             }
           ],
           "breeding": [
             {
-              "Method": "Egg - larvae - juvenile - adult"
+              "method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "Octopuses appear in mythology as sea monsters like the Kraken of Norway and the Akkorokamui of the Ainu, and probably the Gorgon of ancient Greece. A battle with an octopus appears in Victor Hugo's book Toilers of the Sea, inspiring other works such as Ian Fleming's Octopussy. Octopuses appear in Japanese erotic art, shunga. They are eaten and considered a delicacy by humans in many parts of the world, especially the Mediterranean and the Asian seas.",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/octopusPct.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/16-octopus.jpg"
             }
           ],
           "locationText": "Octopuses live in every ocean, and different species have adapted to different marine habitats. Octopuses inhabit various regions of the ocean, including coral reefs, pelagic waters, and the seabed; some live in the intertidal zone and others at abyssal depths.",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
               "item": "Crustaceans",
-              "itemImg": "link"
+              "itemImage": ""
             },
             {
               "item": "Clam",
-              "itemImg": "link"
+              "itemImage": ""
             }
           ]
         }
@@ -784,39 +780,38 @@
       "phylum": "Chordata",
       "class": "Reptilia",
       "order": "Testudines",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/oliveturtle.png",
+      "icon": "./public/assets/images/icons/17-oliveTurtle.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Lepidochelys olivacea",
               "description": "The olive ridley sea turtle, also known commonly as the Pacific ridley sea turtle, is a species of turtle in the family Cheloniidae. The species is the second-smallest and most abundant of all sea turtles found in the world. This turtle and the related Kemp's ridley turtle are best known for their unique synchronised mass nestings called arribadas, where thousands of females come together on the same beach to lay eggs.",
-              "height": "...",
-              "weight": "25kg - 46kg",
-              "length": "- 61cm"
+              "height": "- 61cm",
+              "weight": "25kg - 46kg"
             }
           ],
           "breeding": [
             {
-              "Method": "Egg - hatchling - juvenile - adult"
+              "method": "Egg - hatchling - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "Olive ridley turtles exhibit two different nesting behaviours, the most prevalent solitary nesting, but also the behaviour they are best known for, the synchronized mass nesting, termed arribadas. Females return to the same beach from where they hatched, to lay their eggs. They lay their eggs in conical nests about 1.5 ft deep, which they laboriously dig with their hind flippers. In the Indian Ocean, the majority of olive ridleys nest in two or three large assemblies near Gahirmatha in Odisha. The coast of Odisha in India is one of the largest mass nesting sites for the olive ridley, along with the coasts of Mexico and Costa Rica. In 1991, over 600,000 turtles nested along the coast of Odisha in one week. Solitary nesting also occurs along the Coromandel Coast and Sri Lanka, but in scattered locations. However, olive ridleys are considered a rarity in most areas of the Indian Ocean.",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/oliveturtlePct.jpg"
+              "curiositiesText": "Olive ridley turtles exhibit two different nesting behaviours, the most prevalent solitary nesting, but also the behaviour they are best known for, the synchronized mass nesting, termed arribadas. Females return to the same beach from where they hatched, to lay their eggs. They lay their eggs in conical nests about 1.5 ft deep, which they laboriously dig with their hind flippers. In the Indian Ocean, the majority of olive ridleys nest in two or three large assemblies near Gahirmatha in Odisha. The coast of Odisha in India is one of the largest mass nesting sites for the olive ridley, along with the coasts of Mexico and Costa Rica.",
+              "curiositiesImage": "./public/assets/images/realAnimals/17-oliveTurtle.jpg"
             }
           ],
           "locationText": "The olive ridle sea turtle is found in warm and tropical waters, primarily in the Pacific and Indian Oceans, but also in the warm waters of the Atlantic Ocean.",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
               "item": "Jellyfish",
-              "itemImg": "link"
+              "itemImage": ""
             },
             {
               "item": "Tunicates",
-              "itemImg": "link"
+              "itemImage": ""
             }
           ]
         }
@@ -830,39 +825,38 @@
       "phylum": "Mollusca",
       "class": "Bivalvia",
       "order": "Pectinida",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/oyster.png",
+      "icon": "./public/assets/images/icons/18-oyster.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Argopecten irradians",
               "description": "Oyster is the common name for a number of different families of salt-water bivalve molluscs that live in marine or brackish habitats. In some species, the valves are highly calcified, and many are somewhat irregular in shape. Many, but not all oysters are in the superfamily Ostreoidea. Some types of oysters are commonly consumed (cooked or raw), and in some locales are regarded as a delicacy. Some types of pearl oysters are harvested for the pearl produced within the mantle. Windowpane oysters are harvested for their translucent shells, which are used to make various kinds of decorative objects.",
-              "height": "...",
-              "weight": "48 - 64g",
-              "length": "8cm - 40cm"
+              "height": "8cm - 40cm",
+              "weight": "48 - 64g"
             }
           ],
           "breeding": [
             {
-              "Method": "Egg - trochophore - veliger - pediveliger - early spat - later spat"
+              "method": "Egg - trochophore - veliger - pediveliger - early spat - later spat"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "The oyster has a curious way of defending itself. When a parasite invades its body, it releases a substance called mother-of-pearl, which crystallizes on the invader, preventing it from reproducing. After about three years this material turns into a pearl. Its shape depends on the shape of the invader and its color varies depending on the health of the oyster.",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/oysterPct.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/18-oyster.jpg"
             }
           ],
-          "locationText": "Oysters are found throughout the world’s oceans, usually in shallow waters and in colonies called beds or reefs.",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/d4859c6615ba1f82b24291df98b15540c26bcabd/public/assets/images/MapaMundi.webp",
+          "locationText": "Oysters are found throughout the world's oceans, usually in shallow waters and in colonies called beds or reefs.",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
               "item": "Phytoplankton",
-              "itemImg": "link"
+              "itemImage": ""
             },
             {
               "item": "Small bits of algae naturally present in the water",
-              "itemImg": "link"
+              "itemImage": ""
             }
           ]
         }
@@ -876,38 +870,38 @@
       "phylum": "Chordata",
       "class": "Chondrichthyes",
       "order": "Myliobatiformes",
-      "icon": "/ray.png",
+      "icon": "./public/assets/images/icons/19-ray.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Hypanus americanus",
               "description": "Stingrays are a group of sea rays, which are cartilaginous fish related to sharks. Stingrays are common in coastal tropical and subtropical marine waters throughout the world",
-              "height": "37-113 cm",
-              "weight": "14-32 kg"
+              "height": "37cm - 113cm",
+              "weight": "14kg - 32kg"
             }
           ],
           "breeding": [
             {
-              "Method": "Freshwater stingrays reproduce through internal fertilization. A male impregnates the female by using a modified pelvic fin as he bites the female's back. The unborn young are ovoviviparous, meaning they are nourished by egg yolk inside the mother's body."
+              "method": "Freshwater stingrays reproduce through internal fertilization. A male impregnates the female by using a modified pelvic fin as he bites the female's back. The unborn young are ovoviviparous, meaning they are nourished by egg yolk inside the mother's body."
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "A shocking 69 different species are capable of producing an electric discharge. Basically, they can shock you! This defense can range anywhere from 8 to 220 volts of power",
-              "curiosities": "/ray2.webp"
+              "curiositiesImage": "./public/assets/images/realAnimals/19-ray.webp"
             }
           ],
           "locationText": "Different species of stingrays have different home ranges. Some species are very cosmopolitan, and live in virtually every ocean worldwide. Other species have very specialized habitats, and live only in one small region or area. They are found in a wide variety of oceans and rivers across the world.",
-          "location": "/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
-              "item": "small bottom-dwelling fishes",
-              "itemImage": "/smallFish.png"
+              "item": "Small Bottom-dwelling Fishes",
+              "itemImage": ""
             },
             {
-              "item": "clam",
-              "itemImage": "/clam.png"
+              "item": "Clam",
+              "itemImage": ""
             }
           ]
         }
@@ -921,7 +915,7 @@
       "phylum": "Chordata",
       "class": "Actinopterygii",
       "order": "Syngnathiformes",
-      "icon": "/seahorse.png",
+      "icon": "./public/assets/images/icons/20-seahorse.png",
       "tabs": [
         {
           "about": [
@@ -934,25 +928,25 @@
           ],
           "breeding": [
             {
-              "Method": "The male seahorse is equipped with a brood pouch on the ventral, or front-facing, side of the tail. When mating, the female seahorse deposits up to 1,500 eggs in the male's pouch. The male carries the eggs for 9 to 45 days until the seahorses emerge fully developed, but very small. The young are then released into the water, and the male often mates again within hours or days during the breeding season"
+              "method": "The male seahorse is equipped with a brood pouch on the ventral, or front-facing, side of the tail. When mating, the female seahorse deposits up to 1,500 eggs in the male's pouch. The male carries the eggs for 9 to 45 days until the seahorses emerge fully developed, but very small. The young are then released into the water, and the male often mates again within hours or days during the breeding season"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "Seahorses are also among only a few other fish species that mate for life",
-              "curiosities": "/SeaHorse2__2_.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/20-seahorse.jpg"
             }
           ],
           "locationText": "Pacific, Atlantic, and Indian Ocean",
-          "location": "/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
-              "item": "small crustaceans",
-              "itemImage": "crustacean.png"
+              "item": "Small crustaceans",
+              "itemImage": ""
             },
             {
-              "item": "krill",
-              "itemImage": "/krill.png"
+              "item": "Krill",
+              "itemImage": ""
             }
           ]
         }
@@ -966,7 +960,7 @@
       "phylum": "Echinodermata",
       "class": "Echinoidea",
       "order": "Arbacioida",
-      "icon": "/seaurchin.png",
+      "icon": "./public/assets/images/icons/21-seaUrchin.png",
       "tabs": [
         {
           "about": [
@@ -974,30 +968,30 @@
               "scientificName": "Tripneustes ventricosus",
               "description": "Sea urchins are spiny, globular echinoderms in the class Echinoidea. About 950 species of sea urchin live on the seabed of every ocean and inhabit every depth zone — from the intertidal seashore down to 5,000 meters (16,000 ft; 2,700 fathoms).Sea urchins move slowly, crawling with tube feet, and also propel themselves with their spines",
               "height": "3 to 10 cm",
-              "weight": "about 1 pound"
+              "weight": "About 1 pound"
             }
           ],
           "breeding": [
             {
-              "Method": "Adults breed by releasing clouds of eggs and sperm that join to become microscopic larvae"
+              "method": "Adults breed by releasing clouds of eggs and sperm that join to become microscopic larvae"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "Sea urchins have a hard outer shell made from calcium carbonate, called a test. But they don’t have any bone structure. The test is made up of small plate segments that enclose the entire sea urchin.",
-              "curiosities": "/seaUrchin2.jpg"
+              "curiositiesText": "Sea urchins have a hard outer shell made from calcium carbonate, called a test. But they don't have any bone structure. The test is made up of small plate segments that enclose the entire sea urchin.",
+              "curiositiesImage": "./public/assets/images/realAnimals/21-seaUrchin.jpg"
             }
           ],
           "locationText": "They live in all 5 oceans",
-          "location": "/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
-              "item": " plankton",
-              "itemImage": "/planktons.png"
+              "item": "Phytoplankton",
+              "itemImage": ""
             },
             {
-              "item": "kelp",
-              "itemImage": "kelp.png"
+              "item": "Kelp",
+              "itemImage": ""
             }
           ]
         }
@@ -1011,38 +1005,38 @@
       "phylum": "Mammalia",
       "class": "Pinnipedia",
       "order": "Carnivora",
-      "icon": "/seal.png",
+      "icon": "./public/assets/images/icons/22-seal.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Halichoerus grypus",
               "description": "Seals are a widely distributed and diverse clade of carnivorous, fin-footed, semiaquatic, mostly marine mammals",
-              "height": "1 to 5 meters",
+              "height": "1 - 5 meters",
               "weight": "45 - 3200kg"
             }
           ],
           "breeding": [
             {
-              "Method": "The females have an egg inside their uteruses, which is protected by fluids. After it is fertilized it forms into a seal pup for about 9-11 months "
+              "method": "The females have an egg inside their uteruses, which is protected by fluids. After it is fertilized it forms into a seal pup for about 9-11 months "
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "Female seals are boasting a higher life expectancy than male seals. Female seals can get up to 30 years old in the wild, while male seals rarely reach the age of 25.",
-              "curiosities": "/seal2.webp"
+              "curiositiesImage": "./public/assets/images/realAnimals/22-seal.webp"
             }
           ],
           "locationText": "Atlantic, Pacific and Artic",
-          "location": "/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
               "item": "Fish",
-              "itemImage": "/orangeFish.png"
+              "itemImage": ""
             },
             {
-              "item": "eel",
-              "itemImage": "/eels.png"
+              "item": "Eel",
+              "itemImage": ""
             }
           ]
         }
@@ -1056,7 +1050,7 @@
       "phylum": "Chlorophyta",
       "class": "Ulvophyceae",
       "order": "Ulvales",
-      "icon": "/seeweed.png",
+      "icon": "./public/assets/images/icons/23-seaweed.png",
       "tabs": [
         {
           "about": [
@@ -1069,21 +1063,21 @@
           ],
           "breeding": [
             {
-              "Method": ""
+              "method": "not available"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "Most of the world’s oxygen comes from seaweed! Researchers say that roughly 70% of the world’s oxygen is produced by sea species including phytoplankton, kelp, and algal plankton. ",
-              "curiosities": "/seaweed2.jpg"
+              "curiositiesText": "Most of the world's oxygen comes from seaweed! Researchers say that roughly 70% of the world's oxygen is produced by sea species including phytoplankton, kelp, and algal plankton. ",
+              "curiositiesImage": "./public/assets/images/realAnimals/23-seaweed.jpg"
             }
           ],
           "locationText": "All the oceans",
-          "location": "/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
-              "item": ""
-           
+              "item": "",
+              "itemImage": ""
             }
           ]
         }
@@ -1097,39 +1091,39 @@
       "phylum": "Chordata",
       "class": "Chondrichthyes",
       "order": "Lamniformes",
-      "icon": "/whiteshark.png",
+      "icon": "./public/assets/images/icons/24-whiteShark.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Carcharodon carcharias",
               "description": "The white shark is is a species of large mackerel shark which can be found in the coastal surface waters of all the major oceans. It is notable for its size, with larger female individuals growing to 6.1 m (20 ft) in length and 1,905–2,268 kg (4,200–5,000 lb) in weight at maturity",
-              "height": "3.4 to 4.0 m",
+              "height": "3.4 - 4.0 m",
               "weight": "1,905 - 2,268 kg "
             }
           ],
           "breeding": [
             {
-              "Method": " Reproduction is viviparous (that is, fertilized eggs are retained within the body). Prior to birth, the young in the womb may feed on undeveloped eggs and possibly their unborn siblings."
+              "method": "Reproduction is viviparous (that is, fertilized eggs are retained within the body). Prior to birth, the young in the womb may feed on undeveloped eggs and possibly their unborn siblings."
             }
           ],
           "curiosities": [
             {
               "curiositiesText": " Great white sharks can swim at speeds of 25 km/hr (16 mph) for short bursts and to depths of 1,200 m (3,900 ft).",
-              "curiosities": "/whiteshark2.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/24-whiteShark.jpg"
             }
           ],
           "locationText": "Great white sharks live in almost all coastal and offshore waters which have water temperature between 12 and 24 °C (54 and 75 °F)",
-          "location": "/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
-              "item": " fish",
-              "itemImg": "whiteshark2.png"
+              "item": " Fish",
+              "itemImage": ""
               
             },
             {
-              "item": " cetaceans ",
-              "itemImg": "cetaceans.png"
+              "item": " Cetaceans",
+              "itemImage": ""
             }
           ]
         }
@@ -1143,7 +1137,7 @@
       "phylum": "Arthropoda",
       "class": "Malacostraca",
       "order": "Decapoda",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/shrimp.png",
+      "icon": "./public/assets/images/icons/25-shrimp.png",
       "tabs": [
         {
           "about": [
@@ -1156,23 +1150,25 @@
           ],
           "breeding": [
             {
-              "Method": "Egg - larvae - juvenile - adult"
+              "method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "They are protandric hermaphrodites, beginning life as males and later becoming females. Juveniles mature and breed as males during their first year, and later become and breed as females for the following years. The proportion of shrimp that change sex varies from year to year. High fishing pressures or naturally high mortality rates can induce males to change into females at a younger age, or even completely skip the male stage.",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/pinkshrimp.jpeg"
+              "curiositiesImage": "./public/assets/images/realAnimals/25-shrimp.jpg"
             }
           ],
           "locationText": " Located on the Atlantic Ocean, it has a wide geographical distribution extending from North Carolina (USA) to the north coast of Rio Grande do Sul (Brazil).",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
+          "locationImage": "./public/assets/images/oceans/AtlanticOcean.jpg",
           "diet": [
             {
-              "item": "ZooPlankton",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/planktonspongebob.jpg",
+              "item": "Zooplankton",
+              "itemImage": ""
+            },
+            {
               "item": "Decomposing organic matter",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/organic-matter.png"
+              "itemImage": ""
             }
           ]
         }
@@ -1186,7 +1182,7 @@
       "phylum": "Mollusca",
       "class": "Cephalopoda",
       "order": "Decapodiformes",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/squid.png",
+      "icon": "./public/assets/images/icons/26-squid.png",
       "tabs": [
         {
           "about": [
@@ -1199,23 +1195,25 @@
           ],
           "breeding": [
             {
-              "Method": "Egg -  paralarvae - juvenile - adult"
+              "method": "Egg -  paralarvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "It can regenerate its tentacles - One of the first specimens of the giant squid was found off the coast of Canada, and it was clear that its tentacles were capable of regenerating. This was confirmed by the fact that the regenerated area looked different from the rest of the normal body.",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/tentaculo.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/26-squid.jpg"
             }
           ],
           "locationText": " Pacific Ocean and Atlantic Ocean",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
+          "locationImage": "./public/assets/images/oceans/AtlanticOcean.jpg",
           "diet": [
             {
               "item": "Deep-sea fish",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/deepseafish.png",
+              "itemImage": ""
+            },
+            {
               "item": "Smaller squids",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/small-squid.jpg"
+              "itemImage": ""
             }
           ]
         }
@@ -1229,38 +1227,34 @@
       "phylum": "Echinodermata",
       "class": "Asteroidea",
       "order": "Spinulosida",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/starfish.png",
+      "icon": "./public/assets/images/icons/27-starfish.png",
       "tabs": [
         {
           "about": [
             {
               "scientificName": "Fromia monilis",
-              "description": "Starfish belong to a large group of marine mammals known as echinoderms. Also known as ‘Sea Stars’, they are usually seen in shallow water",
+              "description": "Starfish belong to a large group of marine mammals known as echinoderms. Also known as 'Sea Stars', they are usually seen in shallow water",
               "height": "10cm - 30cm",
               "weight": "500g"
             }
           ],
           "breeding": [
             {
-              "Method": "Planktonic - larvae - juvenile - adult"
+              "method": "Planktonic - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
-              "curiositiesText": "Starfish don’t actually have a brain, or even blood! In fact, they use filtered sea water to pump nutrients through their nervous system instead.",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/starfish-seastar-isolated-on-white-background.jpg"
+              "curiositiesText": "Starfish don't actually have a brain, or even blood! In fact, they use filtered sea water to pump nutrients through their nervous system instead.",
+              "curiositiesImage": "./public/assets/images/realAnimals/27-starfish.jpg"
             }
           ],
           "locationText": "the Indian Ocean and the Pacific Ocean",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
               "item": "Algae",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/algas-marinhas.png",
-              "item": "...",
-              "ItemImg": "link",
-              "item": "...",
-              "ItemImg": "link"
+              "itemImage": ""
             }
           ]
         }
@@ -1274,7 +1268,7 @@
       "phylum": "Chordata",
       "class": "Actinopterygii",
       "order": "Istiophoriformes",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/swordfish.png",
+      "icon": "./public/assets/images/icons/28-swordFish.png",
       "tabs": [
         {
           "about": [
@@ -1287,25 +1281,25 @@
           ],
           "breeding": [
             {
-              "Method": "Egg - larvae - juvenile - adult"
+              "method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "Swordfish is one of the few fish to lose their scales and teeth as they reach maturity.",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/fowrdfish.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/28-swordFish.jpg"
             }
           ],
           "locationText": "Swordfish can be found in almost every ocean in the world, but prefers those that are tropical or subtropical. However, it is possible to find it in cold waters, provided that the water temperature does not exceed 22 degrees Celsius.",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/MapaMundi.webp",
+          "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
               "item": "Fish",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/angelfish.png",
+              "itemImage": ""
+            },
+            {
               "item": "Squid",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/small-squid.jpg",
-              "item": "Crustacean",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/crustacean.png"
+              "itemImage": ""
             }
           ]
         }
@@ -1319,7 +1313,7 @@
       "phylum": "Chordata",
       "class": "Actinopterygii",
       "order": "Scombriformes",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/tunafish.png",
+      "icon": "./public/assets/images/icons/29-tunaFish.png",
       "tabs": [
         {
           "about": [
@@ -1332,74 +1326,29 @@
           ],
           "breeding": [
             {
-              "Method": "Egg - larvae - juvenile - adult"
+              "method": "Egg - larvae - juvenile - adult"
             }
           ],
           "curiosities": [
             {
               "curiositiesText": "Your sight is the best of all bony fishes. Their eyes, in some of the species, grow up to the size of tennis balls and with them they are able to see in murky or deep and dark waters. They can distinguish objects of 6 or 7 cm. to more than 30 meters.",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/real-tuna.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/29-tunaFish.jpg"
             }
           ],
           "locationText": "Atlantic Ocean",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
+          "locationImage": "./public/assets/images/oceans/AtlanticOcean.jpg",
           "diet": [
             {
               "item": "Smaller fish",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/peixe-palha%C3%A7o.png",
+              "itemImage": ""
+            },
+            {
               "item": "Mollusks",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/mollusks.png",
-              "item": "Crustaceans",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/crustacean.png"
+              "itemImage": ""
             }
           ]
         }
       ]
-    },
-    {
-      "id": 30,
-      "nickname": "Jellyfish",
-      "name": "Jellyfish",
-      "kingdom": "Animalia",
-      "phylum": "Cnidaria",
-      "class": "Scyphozoa",
-      "order": "Semaeostomeae",
-      "icon": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/jellyfish.png",
-      "tabs": [
-        {
-          "about": [
-            {
-              "scientificName": "Pelagia noctiluca",
-              "description": "The jellyfish are mainly free-swimming marine animals with umbrella-shaped bells and trailing tentacles, although a few are anchored to the seabed by stalks rather than being mobile. The bell can pulsate to provide propulsion for highly efficient locomotion. ",
-              "height": "1cm - 40cm",
-              "weight": "20g - 400g"
-            }
-          ],
-          "breeding": [
-            {
-              "Method": "Egg - Planula - Attached planula - Polyp - Budding polyp - Juvenile - Adult"
-            }
-          ],
-          "curiosities": [
-            {
-              "curiositiesText": "Jellyfish are the oldest multicellular animals on the planet.Scientists have discovered jellyfish fossil snapshots in rocks believed to be more than 500 million years old. That makes them even older than dinosaurs!",
-              "curiositiesImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/real-jellyfish.jpg"
-            }
-          ],
-          "locationText": "Atlantic Ocean",
-          "locationImage": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/AtlanticOcean.jpg",
-          "diet": [
-            {
-              "item": "ZooPlankton",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/planktonspongebob.jpg",
-              "item": "Crustaceans",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/crustacean.png",
-              "item": "Fish eggs",
-              "ItemImg": "https://github.com/kellycesario/javascript-oceandex/blob/main/public/assets/images/fisheggs.png"
-            }
-          ]
-        }
-      ]
-    }
+    }  
   ]
 }
