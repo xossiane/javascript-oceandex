@@ -287,13 +287,13 @@
             {
               "scientificName": "Iciligorgia schrammi",
               "description": "Iciligorgia schrammi, common names deepwater sea fan and black sea fan is a species of gorgonian sea fan in the family Anthothelidae.",
-              "height": "",
-              "weight": ""
+              "height": "60 cm",
+              "weight": "-"
             }
           ],
           "breeding": [
             {
-              "method": ""
+              "method": "Eggs - Spawning  - Larvae"
             }
           ],
           "curiosities": [
@@ -1057,13 +1057,13 @@
             {
               "scientificName": "Ulva lactuca",
               "description": "Seaweed, or macroalgae, refers to thousands of species of macroscopic, multicellular, marine algae. The term includes some types of Rhodophyta (red), Phaeophyta (brown) and Chlorophyta (green) macroalgae. Seaweed species such as kelps provide essential nursery habitat for fisheries and other marine species and thus protect food sources; other species, such as planktonic algae, play a vital role in capturing carbon, producing at least 50% of Earth's oxygen.",
-              "height": "",
-              "weight": ""
+              "height": "60cm",
+              "weight": "-"
             }
           ],
           "breeding": [
             {
-              "method": "not available"
+              "method": "spores - maturation - fecundation - plant"
             }
           ],
           "curiosities": [
@@ -1076,8 +1076,8 @@
           "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
-              "item": "",
-              "itemImage": ""
+              "item": "photosynthesis",
+              "itemImage": "./public/assets/images/diet/photosynthesis.jfif"
             }
           ]
         }
@@ -1167,8 +1167,8 @@
               "itemImage": "./public/assets/images/diet/zooplankton.png"
             },
             {
-              "item": "Marine snow",
-              "itemImage": ""
+              "item": "Phytoplankton",
+              "itemImage": "./public/assets/images/diet/phytoplankton.png"
             }
           ]
         }
