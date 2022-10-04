@@ -1251,7 +1251,16 @@
             {
               "item": "Algae",
               "itemImage": "./public/assets/images/diet/algae.png"
+            },
+            {
+              "item": "Mollusks",
+              "itemImage": "./public/assets/images/diet/mollusks.png"
+            },
+            {
+              "item": "Zooplankton",
+              "itemImage": "./public/assets/images/diet/zooplankton.png"
             }
+
           ]
         }
       ]
