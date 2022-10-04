@@ -35,11 +35,11 @@
           "diet": [
             {
               "item": "Phytoplankton",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/phytoplankton2.png"
             },
             {
               "item": "Small Fish",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/cod.png"
             }
           ]
         }
@@ -81,11 +81,11 @@
           "diet": [
             {
               "item": "Seaweed",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/seaweed2.png"
             },
             {
               "item": "Anemone",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/anemone.png"
             }
           ]
         }
@@ -126,11 +126,11 @@
           "diet": [
             {
               "item": "Zooplankton",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/zooplankton.png"
             },
             {
               "item": "Anemone",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/anemone.png"
             }
           ]
         }
@@ -172,11 +172,11 @@
           "diet": [
             {
               "item": "Small Fish",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/cod.png"
             },
             {
               "item": "Anemone",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/anemone.png"
             }
           ]
         }
@@ -217,11 +217,11 @@
           "diet": [
             {
               "item": "Zooplankton",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/zooplankton.png"
             },
             {
               "item": "Small Fish",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/cod.png"
             }
           ]
         }
@@ -262,11 +262,11 @@
           "diet": [
             {
               "item": "Zooplankton",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/zooplankton.png"
             },
             {
               "item": "Seaweed",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/seaweed2.png"
             }
           ]
         }
@@ -287,8 +287,8 @@
             {
               "scientificName": "Iciligorgia schrammi",
               "description": "Iciligorgia schrammi, common names deepwater sea fan and black sea fan is a species of gorgonian sea fan in the family Anthothelidae.",
-              "height": "-",
-              "weight": "-"
+              "height": "",
+              "weight": ""
             }
           ],
           "breeding": [
@@ -352,11 +352,11 @@
           "diet": [
             {
               "item": "Squid",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/smallSquid.png"
             },
             {
               "item": "Shrimp",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/shrimp.png"
             }
           ]
         }
@@ -397,11 +397,11 @@
           "diet": [
             {
               "item": "Crustaceans",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/crustacean.png"
             },
             {
               "item": "Bivalves",
-              "itemImage": "."
+              "itemImage": "./public/assets/images/diet/bibalves.png"
             }
           ]
         }
@@ -442,11 +442,11 @@
           "diet": [
             {
               "item": "Crabs",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/crab.png"
             },
             {
               "item": "Octopuses",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/octopus.png"
             }
           ]
         }
@@ -487,11 +487,11 @@
           "diet": [
             {
               "item": "Seagrass",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/seagrass.png"
             },
             {
               "item": "Algae",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/algae.png"
             }
           ]
         }
@@ -532,11 +532,11 @@
           "diet": [
             {
               "item": "Zooplankton",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/zooplankton.png"
             },
             {
               "item": "Crustaceans",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/crustacean.png"
           
             }
           ]
@@ -578,11 +578,11 @@
           "diet": [
             {
               "item": "Krill",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/krill.png"
             },
             {
               "item": "Small Fish",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/cod.png"
             }
           ]
         }
@@ -624,11 +624,11 @@
           "diet": [
             {
               "item": "Fish",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/flatfish.png"
             },
             {
               "item": "Seals",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/seal.png"
             }
           ]
         }
@@ -671,11 +671,11 @@
           "diet": [
             {
               "item": "Flat Fish",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/flatfish.png"
             },
             {
               "item": "Arctic cod",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/cod.png"
             }
           ]
         }
@@ -717,11 +717,11 @@
           "diet": [
             {
               "item": "Lobster",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/lobster.png"
             },
             {
               "item": "Hermit crabs",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/hermitCrabs.png"
             }
           ]
         }
@@ -762,11 +762,11 @@
           "diet": [
             {
               "item": "Crustaceans",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/crustacean.png"
             },
             {
               "item": "Clam",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/clam.png"
             }
           ]
         }
@@ -807,11 +807,11 @@
           "diet": [
             {
               "item": "Jellyfish",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/jellyfish.png"
             },
             {
-              "item": "Tunicates",
-              "itemImage": ""
+              "item": "Mollusks",
+              "itemImage": "./public/assets/images/diet/mollusks.png"
             }
           ]
         }
@@ -852,11 +852,11 @@
           "diet": [
             {
               "item": "Phytoplankton",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/phytoplankton2.png"
             },
             {
               "item": "Algae",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/algae.png"
             }
           ]
         }
@@ -897,11 +897,11 @@
           "diet": [
             {
               "item": "Small Bottom-dwelling Fishes",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/bottomDwellingFish.png"
             },
             {
               "item": "Clam",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/clam2.png"
             }
           ]
         }
@@ -942,11 +942,11 @@
           "diet": [
             {
               "item": "Small crustaceans",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/crustacean.png"
             },
             {
               "item": "Krill",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/krill.png"
             }
           ]
         }
@@ -987,11 +987,11 @@
           "diet": [
             {
               "item": "Phytoplankton",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/phytoplankton.png"
             },
             {
               "item": "Kelp",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/kelp.png"
             }
           ]
         }
@@ -1032,11 +1032,11 @@
           "diet": [
             {
               "item": "Fish",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/deepseafish.png"
             },
             {
               "item": "Eel",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/morayEel.png"
             }
           ]
         }
@@ -1117,13 +1117,13 @@
           "locationImage": "./public/assets/images/oceans/MapaMundi.webp",
           "diet": [
             {
-              "item": " Fish",
-              "itemImage": ""
+              "item": "Fish",
+              "itemImage": "./public/assets/images/diet/cod.png"
               
             },
             {
-              "item": " Cetaceans",
-              "itemImage": ""
+              "item": "Cetaceans",
+              "itemImage": "./public/assets/images/diet/cetacean.png"
             }
           ]
         }
@@ -1164,7 +1164,7 @@
           "diet": [
             {
               "item": "Zooplankton",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/zooplankton.png"
             },
             {
               "item": "Marine snow",
@@ -1209,11 +1209,11 @@
           "diet": [
             {
               "item": "Deep-sea fish",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/deepseafish.png"
             },
             {
               "item": "Smaller squids",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/smallSquid.png"
             }
           ]
         }
@@ -1254,7 +1254,7 @@
           "diet": [
             {
               "item": "Algae",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/algae.png"
             }
           ]
         }
@@ -1295,11 +1295,11 @@
           "diet": [
             {
               "item": "Fish",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/deepseafish.png"
             },
             {
               "item": "Squid",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/squid.png"
             }
           ]
         }
@@ -1340,11 +1340,11 @@
           "diet": [
             {
               "item": "Smaller fish",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/cod.png"
             },
             {
               "item": "Mollusks",
-              "itemImage": ""
+              "itemImage": "./public/assets/images/diet/mollusks.png"
             }
           ]
         }
