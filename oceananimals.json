@@ -306,12 +306,8 @@
           "locationImage": "./public/assets/images/oceans/AtlanticOcean.jpg",
           "diet": [
             {
-              "item": "",
-              "itemImage": ""
-            },
-            {
-              "item": "",
-              "itemImage": ""
+              "item": "photosynthesis",
+              "itemImage": "./public/assets/images/diet/photosynthesis.jpg"
             }
           ]
         }
@@ -401,7 +397,7 @@
             },
             {
               "item": "Bivalves",
-              "itemImage": "./public/assets/images/diet/bibalves.png"
+              "itemImage": "./public/assets/images/diet/bivalves.png"
             }
           ]
         }
@@ -1077,7 +1073,7 @@
           "diet": [
             {
               "item": "photosynthesis",
-              "itemImage": "./public/assets/images/diet/photosynthesis.jfif"
+              "itemImage": "./public/assets/images/diet/photosynthesis.jpg"
             }
           ]
         }
