@@ -73,7 +73,7 @@
           "curiosities": [
             {
               "curiositiesText": "This species is a protogynous hermaphrodite, the female can change sex to become a male if no male is present.",
-              "curiositiesImage": "./public/assets/images/realAnimals/00-anemone.jpg"
+              "curiositiesImage": "./public/assets/images/realAnimals/01-angelFish.png"
             }
           ],
           "locationText": "Pomacanthus paru are abundant along coral reefs along both sides of the Atlantic. The distribution in the Western Tropical Atlantic ranges from Florida and the Bahamas to Brazil.",
@@ -118,7 +118,7 @@
           "curiosities": [
             {
               "curiositiesText": "Atlantic cod are hypothesized to communicate through the production of sound via drumming muscles. Sound production is correlated with mate selection during spawning season. It is hypothesized that the degree to which males are able to produce acoustic sound is positively associated with the overall fitness of the males, with those having larger drumming muscles producing greater sound waves and out-competing others. (Rowe and Hutchings, 2004)",
-              "curiositiesImage": "./public/assets/images/realAnimals/00-anemone.png"
+              "curiositiesImage": "./public/assets/images/realAnimals/02-cod.jpg"
             }
           ],
           "locationText": "Gadus morhua is commonly known as Atlantic cod and can be found along the eastern and northern coasts of North America, along the coasts of Greenland, and from the Bay of Biscay north to the Arctic Ocean, including the Atlantic waters around Iceland, the North Sea, and the Barents Sea.",
