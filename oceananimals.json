@@ -306,7 +306,7 @@
           "locationImage": "./public/assets/images/oceans/AtlanticOcean.jpg",
           "diet": [
             {
-              "item": "photosynthesis",
+              "item": "Photosynthesis",
               "itemImage": "./public/assets/images/diet/photosynthesis.jpg"
             }
           ]
