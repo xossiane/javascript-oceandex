@@ -1,5 +1,11 @@
+import styles from "./Text.module.scss";
 
-export default function Text({size, color, weight}){
-    
-    return <h1 className="text--large">hello</h1>
+export default function Text({ size, color, weight }) {
+  const classList = [];
+  classList.push(styles[`text--${size}`]);
+  classList.push(styles[`text--${color}`]);
+  classList.push(styles[`text--${weight}`]);
+  console.log(classList.join(" "));
+
+  return <p className={classList.join(" ")}>hello</p>;
 }
