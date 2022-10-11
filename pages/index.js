@@ -1,13 +1,19 @@
 import Arrow from "../components/atoms/Arrow/Arrow";
-import Like from "../components/atoms/Like/Like"
-import Text from "../components/atoms/Text/Text"
+import Heading from "../components/atoms/Heading/Heading";
+import Like from "../components/atoms/Like/Like";
+import Text from "../components/atoms/Text/Text";
 
-
-export default function mainpage(){
-    return <><Arrow white={false}/>
-    <div class="like"><Like liked={false} size={"10"}/>
-    <Text/>
-    </div>
-   
+export default function mainpage() {
+  return (
+    <>
+      <Arrow white={false} />
+      <div style={{ width: "100px" }}>
+        <Like liked={false} size={"1"} />
+        <Text color="black" size="small" />
+        <Heading level="3" size="large" color="white" weight="bold">
+          teste
+        </Heading>
+      </div>
     </>
+  );
 }
