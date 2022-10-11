@@ -3,9 +3,9 @@ import React from "react";
 
 export default function Heading({ size, color, weight, level, children }) {
   const classList = [];
-  classList.push(styles[`text--${size}`]);
-  classList.push(styles[`text--${color}`]);
-  classList.push(styles[`text--${weight}`]);
+  classList.push(styles[`heading--${size}`]);
+  classList.push(styles[`heading--${color}`]);
+  classList.push(styles[`heading--${weight}`]);
   console.log(classList.join(" "));
   {
     /* <h1 className={classList.join(" ")}>hello</h1> */
