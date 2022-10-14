@@ -5,7 +5,6 @@ export default function Text({ size, color, weight }) {
   classList.push(styles[`text--${size}`]);
   classList.push(styles[`text--${color}`]);
   classList.push(styles[`text--${weight}`]);
-  console.log(classList.join(" "));
 
   return <p className={classList.join(" ")}>hello</p>;
 }
