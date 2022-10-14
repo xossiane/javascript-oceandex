@@ -1,7 +1,7 @@
-import Arrow from "../components/atoms/Arrow/Arrow";
-import Heading from "../components/atoms/Heading/Heading";
-import Like from "../components/atoms/Like/Like";
-import Text from "../components/atoms/Text/Text";
+import Arrow from "@atoms/Arrow/Arrow";
+import Heading from "@atoms/Heading/Heading";
+import Like from "@atoms/Like/Like";
+import Text from "@atoms/Text/Text";
 
 export default function mainpage() {
   return (
