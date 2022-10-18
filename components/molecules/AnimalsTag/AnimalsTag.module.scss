@@ -1,0 +1,24 @@
+@use "@styles/variables";
+
+.AnimalsTag{
+    &--text{
+        color:black;
+        z-index: 5;
+        opacity: 30%;
+        
+    }
+    &--bg{
+        z-index: 1;
+        opacity: 50%;
+        margin-bottom: 0.5rem;
+        font-style: italic;
+        text-align: center;
+        background-color: variables.$white; 
+        width: fit-content;
+        border-radius: 3.8rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.12rem;
+        padding-bottom: 0.12rem;
+        
+    }}
