@@ -4,19 +4,15 @@
 /* variables */
 
 * {
-  background-color: variables.$background;
   font-size: 62.5%; /* 1rem =10px; */
-}
-
-html,
-body,
-button,
-input,
-select,
-textarea {
   font-family: "AbeeZee", sans-serif;
 }
-
+ 
+html {
+  
+  background-color: variables.$background;
+}
+/*
 html {
   -webkit-font-smoothing: antialiased;
 
@@ -123,3 +119,4 @@ video {
 
   font-weight: inherit;
 }
+ */
