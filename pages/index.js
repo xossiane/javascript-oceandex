@@ -1,4 +1,5 @@
 import Arrow from "@atoms/Arrow/Arrow";
+import Background from "@atoms/Background";
 import Heading from "@atoms/Heading/Heading";
 import Like from "@atoms/Like/Like";
 import Text from "@atoms/Text/Text";
@@ -15,6 +16,7 @@ export default function mainpage() {
           teste
         </Heading>
         <AnimalsTag></AnimalsTag>
+        <Background></Background>
       </div>
     </>
   );
