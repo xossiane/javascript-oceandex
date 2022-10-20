@@ -1,9 +1,7 @@
 @use "@styles/variables";
-/* fonts: large, medium, small
-size: 14px, 18px, 22px;
- */
 
 .heading {
+  margin: 0;
   &--large {
     font-size: 2.2rem;
   }
@@ -26,5 +24,8 @@ size: 14px, 18px, 22px;
 
   &--bold {
     font-weight: bold;
+  }
+  &--normal {
+    font-weight: normal;
   }
 }
