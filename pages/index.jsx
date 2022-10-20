@@ -19,7 +19,7 @@ export default function mainpage() {
         <Heading level="3" size="large" color="white" weight="bold">
           teste
         </Heading>
-
+        <AnimalsTag>teste</AnimalsTag>
         <div
           style={{
             width: "150px",
