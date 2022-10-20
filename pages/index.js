@@ -16,7 +16,6 @@ export default function mainpage() {
         <Heading level="3" size="large" color="white" weight="bold">
           teste
         </Heading>
-        <Button size="large" color="greenpastel" fontsize="fontmedium">teste</Button>
         <Button size="medium" color="lavander" fontsize="fontsmall"> <Text color="white" size="small">Teste2</Text> </Button>
         <AnimalsTag></AnimalsTag>
         <Background></Background>
