@@ -1,11 +1,13 @@
+import { useEffect, useState } from "react";
 import styles from "./AnimalsCard.module.scss";
-
 import Heading from "@atoms/Heading/Heading";
 import AnimalsTag from "@molecules/AnimalsTag";
 
 export default function AnimalsCard({ name, order, phylum, src }) {
+  const [color, setColor] = useState();
   const randomBackgroundColor = () => {
     const randomNumber = Math.floor(Math.random() * 6);
+
     const color = {
       0: "animalsCard--blue",
       1: "animalsCard--rose",
@@ -17,8 +19,10 @@ export default function AnimalsCard({ name, order, phylum, src }) {
     return color[randomNumber];
   };
 
+  useEffect(() => setColor(randomBackgroundColor()));
+
   return (
-    <div className={`${styles.animalsCard} ${styles[randomBackgroundColor()]}`}>
+    <div className={`${styles.animalsCard} ${styles[color]}`}>
       <div className={styles.animalsCard__name}>
         <Heading level="1" color="white" weight="normal" size="small">
           {name}
