@@ -4,6 +4,7 @@ import Heading from "@atoms/Heading/Heading";
 import Like from "@atoms/Like/Like";
 import Text from "@atoms/Text/Text";
 import AnimalsTag from "@molecules/AnimalsTag";
+import Button from "@atoms/Button/Button";
 
 export default function mainpage() {
   return (
@@ -15,6 +16,8 @@ export default function mainpage() {
         <Heading level="3" size="large" color="white" weight="bold">
           teste
         </Heading>
+        <Button size="large" color="greenpastel" fontsize="fontmedium">teste</Button>
+        <Button size="medium" color="lavander" fontsize="fontsmall"> <Text color="white" size="small">Teste2</Text> </Button>
         <AnimalsTag></AnimalsTag>
         <Background></Background>
       </div>
