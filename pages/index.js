@@ -4,6 +4,8 @@ import Heading from "@atoms/Heading/Heading";
 import Like from "@atoms/Like/Like";
 import Text from "@atoms/Text/Text";
 import AnimalsTag from "@molecules/AnimalsTag";
+import GeneralCuriositiesPage from "@organisms/GeneralCuriositiesPage";
+
 
 export default function mainpage() {
   return (
@@ -16,7 +18,8 @@ export default function mainpage() {
           teste
         </Heading>
         <AnimalsTag></AnimalsTag>
-        <Background></Background>
+        
+        <GeneralCuriositiesPage></GeneralCuriositiesPage>
       </div>
     </>
   );
