@@ -4,6 +4,9 @@ size: 14px, 18px, 22px;
  */
 
 .heading {
+  &--Xlarge{
+    font-size: 3rem;
+  }
   &--large {
     font-size: 2.2rem;
   }
