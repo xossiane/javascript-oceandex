@@ -10,7 +10,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/addon-a11y",
-    "@storybook-addon-html"
+    "@whitespace/storybook-addon-html"
   ],
   "features": {
     storyStoreV7: true,
