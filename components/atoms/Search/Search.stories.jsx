@@ -1,7 +1,7 @@
 import SearchIcon from './Search'
 
 export default {
-    title: "Atom/Search",
+    title: "Atoms/Search",
     component: SearchIcon,
     args: {}
 }
