@@ -11,7 +11,7 @@ function GeneralCuriositiesPage() {
       <img className={styles[`GeneralCuriositiesPage__Header--rectangle`]} src="assets/images/extras/Rectangle.png"></img>
       <header className={styles[`GeneralCuriositiesPage__Header`]}>  
       <Arrow white={true}></Arrow>
-      <Heading level="2" className={styles[`GeneralCuriositiesPage__Content--text`]} size="Xlarge" color="white" style="italic"> General Curiosities </Heading>
+      <Heading level="1" className={styles[`GeneralCuriositiesPage__Content--text`]} size="Xlarge" color="white" style="italic"> General Curiosities </Heading>
       </header>
         <div className={styles[`GeneralCuriositiesPage__Container`]}>
         <GeneralCuriosities></GeneralCuriosities>
