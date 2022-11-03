@@ -3,9 +3,14 @@ import Background from "@atoms/Background";
 import Heading from "@atoms/Heading/Heading";
 import Like from "@atoms/Like/Like";
 import Text from "@atoms/Text/Text";
+import AnimalsCard from "@molecules/AnimalsCard";
+
 import AnimalsTag from "@molecules/AnimalsTag";
 
+import animals from "oceananimals.json";
 export default function mainpage() {
+  const firstAnimal = animals[20];
+
   return (
     <>
       <Arrow white={false} />
@@ -16,7 +21,6 @@ export default function mainpage() {
           teste
         </Heading>
         <AnimalsTag></AnimalsTag>
-        <Background></Background>
       </div>
     </>
   );
