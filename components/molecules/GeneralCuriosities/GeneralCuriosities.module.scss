@@ -28,4 +28,15 @@ margin: 3rem auto auto 3rem;
     justify-content: space-evenly;
     margin: 3rem auto 3rem auto;
     width: 30rem;
+}
+&--button{
+    cursor: pointer;
+    z-index: 5;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
 }}
+
