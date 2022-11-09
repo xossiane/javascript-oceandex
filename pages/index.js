@@ -5,6 +5,7 @@ import Like from "@atoms/Like/Like";
 import Text from "@atoms/Text/Text";
 import AnimalsTag from "@molecules/AnimalsTag";
 import GeneralCuriositiesPage from "@organisms/GeneralCuriositiesPage";
+import OceanWorldWide from "@organisms/OceanWorldwide";
 
 
 export default function mainpage() {
@@ -20,6 +21,7 @@ export default function mainpage() {
         <AnimalsTag></AnimalsTag>
         
         <GeneralCuriositiesPage></GeneralCuriositiesPage>
+        <OceanWorldWide></OceanWorldWide>
       </div>
     </>
   );
