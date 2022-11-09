@@ -6,9 +6,10 @@ import Text from "@atoms/Text/Text";
 import AnimalsTag from "@molecules/AnimalsTag";
 import GeneralCuriositiesPage from "@organisms/GeneralCuriositiesPage";
 import OceanWorldWide from "@organisms/OceanWorldwide";
+import Tabs from "@organisms/Tabs";
 
 
-export default function mainpage() {
+export default function Mainpage() {
   return (
     <>
       <Arrow white={false} />
@@ -22,6 +23,7 @@ export default function mainpage() {
         
         <GeneralCuriositiesPage></GeneralCuriositiesPage>
         <OceanWorldWide></OceanWorldWide>
+        <Tabs></Tabs>
       </div>
     </>
   );
