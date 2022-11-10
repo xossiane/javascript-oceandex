@@ -53,6 +53,7 @@ export default function mainpage() {
           ))}
         </div>
       </div>
+      
     </>
   );
 }
