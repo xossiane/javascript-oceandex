@@ -7,12 +7,11 @@ import AnimalsCard from "@molecules/AnimalsCard";
 
 import AnimalsTag from "@molecules/AnimalsTag";
 import GeneralCuriositiesPage from "@organisms/GeneralCuriositiesPage";
+import OceanWorldWide from "@organisms/OceanWorldwide";
+import Tabs from "@organisms/Tabs";
 
 
-import animals from "oceananimals.json";
-export default function mainpage() {
-  const firstAnimal = animals[20];
-
+export default function Mainpage() {
   return (
     <>
       <Arrow white={false} />
@@ -25,6 +24,8 @@ export default function mainpage() {
         <AnimalsTag></AnimalsTag>
         
         <GeneralCuriositiesPage></GeneralCuriositiesPage>
+        <OceanWorldWide></OceanWorldWide>
+        <Tabs></Tabs>
       </div>
     </>
   );

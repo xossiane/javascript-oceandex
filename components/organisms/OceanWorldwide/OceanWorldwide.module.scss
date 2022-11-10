@@ -1,0 +1,12 @@
+@use "@styles/variables";
+
+.OceanWorldwide{
+    &__container{
+        background-color: variables.$white;
+        width: 37.5rem;
+        margin-top: 3.9rem;
+        z-index: 1;
+        border-top-left-radius: 4.2rem;
+        border-top-right-radius: 4.2rem;
+    }
+}
