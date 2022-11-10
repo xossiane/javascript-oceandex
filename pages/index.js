@@ -7,6 +7,7 @@ import AnimalsTag from "@molecules/AnimalsTag";
 import GeneralCuriositiesPage from "@organisms/GeneralCuriositiesPage";
 import OceanWorldWide from "@organisms/OceanWorldwide";
 
+import Button from "@atoms/Button/Button";
 
 export default function mainpage() {
   return (
@@ -18,6 +19,7 @@ export default function mainpage() {
         <Heading level="3" size="large" color="white" weight="bold">
           teste
         </Heading>
+        <Button size="medium" color="lavander" fontsize="fontsmall"> <Text color="white" size="small">Teste2</Text> </Button>
         <AnimalsTag></AnimalsTag>
         
         <GeneralCuriositiesPage></GeneralCuriositiesPage>
