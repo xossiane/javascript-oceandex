@@ -23,6 +23,8 @@ export default function mainpage() {
         <AnimalsTag></AnimalsTag>
         
         <GeneralCuriositiesPage></GeneralCuriositiesPage>
+
+        <br></br>
         <OceanWorldWide></OceanWorldWide>
       </div>
     </>
