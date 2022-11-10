@@ -1,0 +1,46 @@
+@use "@styles/variables";
+.GeneralCuriositiesPage{
+    &__Container{
+        background-color: variables.$white;
+        width: 37.5rem;
+        margin-top: 3.9rem;
+        z-index: 1;
+        border-top-left-radius: 4.2rem;
+        border-top-right-radius: 4.2rem;
+    }
+    &__Content{
+        background-color: #84BAB9;
+        width: 37.5rem;
+        flex-direction: column;
+        align-content: center;
+        
+        &--text{
+            margin: 5.5rem 4.1rem auto 6.8rem;
+
+        }
+    }
+    &__Header{
+        display: flex;
+        margin: -5rem auto auto 0.2rem;
+        width: 34.6rem;
+        height: 2.5rem;
+        justify-content: space-around;
+        align-items: center;
+        
+        &--rectangle{
+            display: flex;
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__Background{
+        bottom: 0;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        margin-top: -7rem;
+
+    }
+}

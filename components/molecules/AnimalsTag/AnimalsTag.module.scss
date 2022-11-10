@@ -2,12 +2,9 @@
 
 .AnimalsTag{
     &--text{
-        color:black;
+        
         z-index: 5;
         opacity: 30%;
-        
-    }
-    &--bg{
         z-index: 1;
         opacity: 50%;
         margin-bottom: 0.5rem;
@@ -21,4 +18,5 @@
         padding-top: 0.12rem;
         padding-bottom: 0.12rem;
         
-    }}
+    }
+   }

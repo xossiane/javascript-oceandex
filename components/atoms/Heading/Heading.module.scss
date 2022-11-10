@@ -1,7 +1,9 @@
 @use "@styles/variables";
 
 .heading {
-  margin: 0;
+  &--Xlarge{
+    font-size: 3rem;
+  }
   &--large {
     font-size: 2.2rem;
   }
@@ -25,7 +27,7 @@
   &--bold {
     font-weight: bold;
   }
-  &--normal {
-    font-weight: normal;
+  &--italic{
+    font-style: italic;
   }
 }

@@ -9,16 +9,16 @@ function AnimalsTag({ children }) {
   //console.log(animals.map((animal) => animal.id));
   //console.log(animals);
   return (
-    <>
-      <div className={styles[`AnimalsTag--bg`]}>
-        <Text
-          className={styles[`AnimalsTag--text`]}
-          color="black"
-          size="1.2rem"
-          key={animals.id}
-        >
-          {children}
-        </Text>
+  <>
+  
+    
+    
+    	<div className={styles[`AnimalsTag--bg`]}>
+        {animals.map((animal) => (
+          (<Text className={styles[`AnimalsTag--text`]} color="black" size="small" key={animal.id}>{animal.name}</Text>)
+        ))}
+      
+      
       </div>
     </>
   );
