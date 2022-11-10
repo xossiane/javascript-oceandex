@@ -1,10 +1,11 @@
+import OceanWorldWide from "@organisms/OceanWorldwide";
 
 
 export default function MainPage() {
 
   return (
     <>
-  <h1> hi</h1>
+  <OceanWorldWide/>
     </>
   );
 }

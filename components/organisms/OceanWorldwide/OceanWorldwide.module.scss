@@ -16,14 +16,16 @@
     align-items: center;
     justify-content: space-around;
     width: 34rem;
-    &--rectangle{
-      display: flex;
-            position: relative;
-            top: 0;
-            left: 0;
-            
-    }
+    margin-top: -9rem;
+    
    }
+   &--rectangle{
+      display: flex;
+          position: relative;
+          top: 0;
+          left: 0;
+          
+  }
   &__content {
     margin-top: 3rem;
     background-color: variables.$color-000;
