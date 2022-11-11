@@ -1,0 +1,25 @@
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 40rem;
+  background: #f5f5f5;
+  border-radius: 10rem;
+
+  &__box {
+    width:80%;
+    height: 3rem;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 10rem;
+    text-align: center;
+  }
+
+  &__box:placeholder-shown {
+    font-style: italic;
+    font-size: 0.8rem;
+    line-height: 4.2rem;
+    color: #303943;
+    opacity: 0.4;
+  }
+}

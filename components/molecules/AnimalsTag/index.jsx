@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react";
 import Text from "@atoms/Text/Text";
-import oceananimals from "../../../../javascript-oceandex/oceananimals.json"
+import oceananimals from "oceananimals.json";
 import styles from "./AnimalsTag.module.scss";
 
-
-function AnimalsTag(props) {
-    console.log(oceananimals)
-    const animals = oceananimals
-    console.log(animals.map((animal => animal.id)))
-    console.log(animals)
+function AnimalsTag({ children }) {
+  //console.log(oceananimals);
+  const animals = oceananimals;
+  //console.log(animals.map((animal) => animal.id));
+  //console.log(animals);
   return (
   <>
   
@@ -21,20 +20,8 @@ function AnimalsTag(props) {
       
       
       </div>
-
-    
-    
-    
-   
-  
-
- 
-  
-    
     </>
-  )
- 
-  
+  );
 }
 
-export default AnimalsTag
+export default AnimalsTag;
