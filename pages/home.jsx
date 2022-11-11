@@ -8,7 +8,7 @@ function Home() {
     return (
         <div className={styles[`Home`]}>
             <main className={styles[`Home__container`]}>
-                <Heading level="1" size="Xlarge" color="black" weight="bold">
+                <Heading level="1" size="Xlarge" color="grey" weight="italic">
                     What marine creature are you looking for?
                 </Heading>
                 <section className={styles[`Home__content`]}>
