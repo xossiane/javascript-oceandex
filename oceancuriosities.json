@@ -60,10 +60,8 @@
                 "title": "The Pacific Ocean contains the Great Pacific Garbage Patch ",
                 "curiosity": "The garbage patch, which is located in the North Pacific Gyre, is an ever-growing collection of human refuse and marine debris. Gyres are systems of circulating can currents, similar to whirlpools, although much larger. There are five gyres in the oceans, one in the Indian and two in the Atlantic and Pacific Oceans. While the Great Pacific Garbage Patch is not the only garbage patch, it is the biggest and most commonly discussed. ",
                 "curiosityImage": "https://imageio.forbes.com/blogs-images/scottsnowden/files/2019/05/GreatPacificGarbagePatch.jpg?height=438&width=711&fit=bounds"
-            }
-  
-]},
-{
+            }],
+
     "atlantic": [
         {
             "id": 0,
@@ -126,8 +124,8 @@
             "curiosityImage": "https://media.wired.com/photos/59265ad6af95806129f4f27d/master/pass/RTS12T6Ab.jpg"
         }
 
-]},
-{
+],
+
     "indian": [
         {
             "id": 0,
@@ -190,8 +188,8 @@
             "curiosityImage": "https://www.shell.us/energy-and-innovation/energy-from-deepwater/working-with-local-businesses-to-develop-americas-energy-resources/_jcr_content/pagePromo/image.img.960.jpeg/1528965281855/cardamom-subsea-system.jpeg?imwidth=960"
         }
 
-]},
-{
+],
+
     "arctic": [
         {
             "id": 0,
@@ -254,8 +252,8 @@
             "curiosityImage": "https://i.insider.com/5c2119dbd4beaf7fee6f54c1?width=1000&format=jpeg&auto=webp"
         }
 
-]},
-{
+],
+
     "Southern": [
         {
             "id": 0,
