@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./AnimalsCard.module.scss";
 import Heading from "@atoms/Heading/Heading";
-import AnimalsTag from "@molecules/AnimalsTag";
+import AnimalsTag from "@molecules/AnimalsTag/AnimalsTag";
 
 export default function AnimalsCard({ name, order, phylum, src }) {
   const [color, setColor] = useState();
@@ -32,7 +32,7 @@ export default function AnimalsCard({ name, order, phylum, src }) {
         <AnimalsTag>{order}</AnimalsTag>
         <AnimalsTag>{phylum}</AnimalsTag>
       </div>
-      <img className={styles.animalsCard__img} src={src} />
+      <img className={styles.animalsCard__img} src={src} alt="" />
     </div>
   );
 }

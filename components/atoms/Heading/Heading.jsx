@@ -8,7 +8,6 @@ export default function Heading({ size, color, weight, level, style, className, 
   classList.push(styles[`heading--${weight}`]);
   classList.push(styles[`heading--${style}`]);
   
-
   const props = { className: classList.join(" ") };
   return React.createElement("h" + level, props, children);
 }
