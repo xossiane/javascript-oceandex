@@ -1,5 +1,5 @@
 import styles from "../styles/home.module.scss";
-import Background from "@atoms/Background";
+import Background from "@atoms/Background/Background";
 import Heading from "@atoms/Heading/Heading";
 import Button from "@atoms/Button/Button.jsx";
 import Text from "@atoms/Text/Text";
