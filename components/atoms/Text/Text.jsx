@@ -1,8 +1,13 @@
 import styles from "./Text.module.scss";
 
-
-
-export default function Text({ size, color, weight, style, children, className}) {
+export default function Text({
+  size,
+  color,
+  weight,
+  style,
+  children,
+  className,
+}) {
   const classList = [];
   classList.push(styles[`text--${size}`]);
   classList.push(styles[`text--${color}`]);

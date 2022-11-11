@@ -1,4 +1,4 @@
-import Background from "@atoms/Background";
+import Background from "@atoms/Background/Background";
 import React, { useState } from "react";
 import styles from "./OceanWorldwide.module.scss";
 
@@ -11,9 +11,11 @@ function OceanWorldWide() {
   return (
     <>
       <div className={styles[`OceanWorldwide__container`]}>
-      <img className={styles[`OceanWorldwide__header--rectangle`]} src="assets/images/extras/Rectangle.png"></img>
+        <img
+          className={styles[`OceanWorldwide__header--rectangle`]}
+          src="assets/images/extras/Rectangle.png" alt=""
+        />
         <section className={styles[`OceanWorldwide__header`]}>
-        
           <Arrow white={true}></Arrow>
           <Heading
             level="1"
