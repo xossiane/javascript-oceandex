@@ -19,7 +19,9 @@ function GeneralCuriosities() {
         
       ;
      })
-    console.log(animalsID)}
+    console.log(animalsID)} else {
+      setanimalsID(0)
+    }
     
   }
   function handleClickSub(id){
@@ -29,7 +31,9 @@ function GeneralCuriosities() {
           
         ;
        })
-   console.log(animalsID)}
+   console.log(animalsID)} else {
+    setanimalsID(28)
+   }
    
  }
   
