@@ -11,7 +11,8 @@ function OceanButtons() {
     <>
     
       <div className={styles[`OceanWorldwide__container`]}>
-
+<<<<<<<< HEAD:pages/OceanWorldwide/OceanButtons/OceanButtons.jsx
+========
         <img
           className={styles[`OceanWorldwide__header--rectangle`]}
           src="assets/images/extras/Rectangle.png" alt=""
@@ -29,6 +30,7 @@ function OceanButtons() {
             Ocean WorldWide
           </Heading>
         </section>
+>>>>>>>> c651fca78cd10a2ff6ad6d6d7fd2e90473088bcd:components/organisms/OceanWorldwide/OceanWorldwide.jsx
 
         <div className={styles[`OceanWorldwide__content`]}>
           <section className={styles[`OceanWorldwide__buttons`]}>

@@ -1,10 +1,4 @@
-
-import GeneralCuriositiesPage from "./GeneralCuriosities";
-import OceanButtons from "./OceanWorldwide/OceanButtons/OceanButtons";
-import OceanCuriosities from "./OceanWorldwide/OceanCuriosities";
-import OceanWorldwide from "./OceanWorldwide/OceanWorldwide";
-
-
+import OceanWorldWide from "@organisms/OceanWorldwide/OceanWorldwide";
 
 
 export default function MainPage() {
