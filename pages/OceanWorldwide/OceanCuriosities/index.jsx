@@ -3,9 +3,10 @@ import React, { useState } from 'react'
 import styles from "../OceanCuriosities/OceanCuriosities.module.scss"
 import Arrow from '@atoms/Arrow/Arrow'
 import Heading from '@atoms/Heading/Heading'
-import Background from '@atoms/Background'
+
 import oceancuriosities from '../../../../javascript-oceandex/oceancuriosities.json'
 import Text from '@atoms/Text/Text'
+import Background from '@atoms/Background/Background'
 
 
 function OceanCuriosities() {
@@ -104,7 +105,7 @@ function OceanCuriosities() {
         </div>
         
         <section className={styles[`OceanCuriosities__background`]}>
-        <Background/>
+        <Background></Background>
         
         </section>
         </>
