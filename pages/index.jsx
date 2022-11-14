@@ -1,18 +1,21 @@
-import OceanWorldWide from "@organisms/OceanWorldwide/OceanWorldwide";
+
+import GeneralCuriositiesPage from "./GeneralCuriosities";
+import OceanWorldwide from "./OceanWorldwide/OceanWorldwide";
+
 
 
 export default function MainPage() {
 
   return (
     <>
-    <OceanWorldwide></OceanWorldwide>
+
     <br/>
     <br/>
     <br/>
     
     <GeneralCuriositiesPage></GeneralCuriositiesPage>
-
-    <OceanCuriosities></OceanCuriosities>
+    
+    <OceanWorldwide></OceanWorldwide>
     </>
   );
 }

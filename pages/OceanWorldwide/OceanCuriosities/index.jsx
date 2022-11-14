@@ -104,7 +104,7 @@ function OceanCuriosities() {
         </div>
         
         <section className={styles[`OceanCuriosities__background`]}>
-        <Background />
+        <Background/>
         
         </section>
         </>
