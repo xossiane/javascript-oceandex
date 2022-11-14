@@ -1,16 +1,17 @@
 import Arrow from '@atoms/Arrow/Arrow'
-import Background from '@atoms/Background'
+import Background from '@atoms/Background/Background'
 import Button from '@atoms/Button/Button'
 import Heading from '@atoms/Heading/Heading'
-import OceanButtons from 'pages/OceanWorldwide/OceanButtons/OceanButtons'
+import Text from '@atoms/Text/Text'
 import React from 'react'
 import styles from "../OceanWorldwide/OceanWorldWide.module.scss"
 
 export default function OceanWorldwide() {
+  const oceans = ["Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Southern Ocean", "Arctic Ocean" ]
   return (
     <>
     <div className={styles[`OceanWorldwide__container`]}>
-      <img className={styles[`OceanWorldwide__header--rectangle`]} src="assets/images/extras/Rectangle.png"/>
+      <img className={styles[`OceanWorldwide__header--rectangle`]} alt="" src="assets/images/extras/Rectangle.png"/>
         <section className={styles[`OceanWorldwide__header`]}>
         
           <Arrow white={true}></Arrow>
@@ -25,11 +26,17 @@ export default function OceanWorldwide() {
             Ocean WorldWide
           </Heading>
         </section>
-        <OceanButtons></OceanButtons>
-        </div>
+        <div className={styles[`OceanWorldwide__content`]}>
+        <section className={styles[`OceanWorldwide__content--buttons`]}>
+          {oceans.map((ocean) => (<Button size="large" color="color-500"><Text color="white" size="large">{ocean}</Text></Button>))}
+          </section>
         
+        </div>
+        </div>
+      
+
         <section className={styles[`OceanWorldwide__background`]}>
-        <Background />
+        <Background/>
         
         </section>
         </>
