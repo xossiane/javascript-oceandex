@@ -4,7 +4,7 @@ import styles from "../OceanCuriosities/OceanCuriosities.module.scss"
 import Arrow from '@atoms/Arrow/Arrow'
 import Heading from '@atoms/Heading/Heading'
 
-import oceancuriosities from '../../../../javascript-oceandex/oceancuriosities.json'
+import oceancuriosities from '../../../javascript-oceandex/oceancuriosities.json'
 import Text from '@atoms/Text/Text'
 import Background from '@atoms/Background/Background'
 
@@ -46,7 +46,7 @@ function OceanCuriosities() {
       <img className={styles[`OceanCuriosities__header--rectangle`]} alt="ornament" src="assets/images/extras/Rectangle.png"></img>
         <section className={styles[`OceanCuriosities__header`]}>
         
-          <Arrow white={true}></Arrow>
+          <Arrow href="/OceanWorldwide" white={true}></Arrow>
           <Heading
             level="1"
             className={styles[`OceanCuriosities__container--text`]}

@@ -24,7 +24,7 @@ function Home() {
                         </Text>{" "}
                     </Button>
                     <Button
-                        href="/"
+                        href="/GeneralCuriosities"
                         size="medium"
                         color="color-800"
                         fontsize="fontsmall"
@@ -35,7 +35,7 @@ function Home() {
                         </Text>{" "}
                     </Button>
                     <Button
-                        href="/"
+                        href="/OceanWorldwide"
                         size="medium"
                         color="color-500"
                         fontsize="fontsmall"
