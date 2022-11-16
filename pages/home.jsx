@@ -13,7 +13,7 @@ function Home() {
                 </Heading>
                 <section className={styles[`Home__content`]}>
                     <Button
-                        href="/"
+                        href="/Oceandex"
                         size="medium"
                         color="color-400"
                         fontsize="fontsmall"

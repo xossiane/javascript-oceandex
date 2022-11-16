@@ -3,7 +3,7 @@ import Text from "@atoms/Text/Text";
 import oceananimals from "oceananimals.json";
 import styles from "./AnimalsTag.module.scss";
 
-function AnimalsTag({ children }) {
+function AnimalsTag({ label }) {
   //console.log(oceananimals);
   const animals = oceananimals;
   //console.log(animals.map((animal) => animal.id));
@@ -11,16 +11,13 @@ function AnimalsTag({ children }) {
   return (
     <>
       <div className={styles[`AnimalsTag--bg`]}>
-        {animals.map((animal) => (
           <Text
             className={styles[`AnimalsTag--text`]}
             color="black"
             size="small"
-            key={animal.id}
           >
-            {animal.name}
+            {label}
           </Text>
-        ))}
       </div>
     </>
   );

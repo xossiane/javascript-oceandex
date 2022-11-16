@@ -13,20 +13,19 @@ const useContentful = () => {
         content_type: "animal",
         select: "fields",
         //order: "fields.description",
-        //"fields.teste": "true",
+        "fields.teste": "true",
       });
-      console.log(entries);
       const sanitizedEntries = entries.items.map((item) => {
         const ocean = item.fields.ocean.fields; //Está dentro de um array
         const image = item.fields.image.fields;
-        const curiosity = item.fields.curiosity.fields;
+        // const curiosity = item.fields.curiosity.fields;
         const classification = item.fields.classification.fields;
 
         return {
           ...item.fields,
           //ocean,
           classification,
-          curiosity,
+          // curiosity,
           image,
         };
       });
