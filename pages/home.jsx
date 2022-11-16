@@ -13,6 +13,7 @@ function Home() {
                 </Heading>
                 <section className={styles[`Home__content`]}>
                     <Button
+                        href="/"
                         size="medium"
                         color="color-400"
                         fontsize="fontsmall"
@@ -23,6 +24,7 @@ function Home() {
                         </Text>{" "}
                     </Button>
                     <Button
+                        href="/"
                         size="medium"
                         color="color-800"
                         fontsize="fontsmall"
@@ -33,6 +35,7 @@ function Home() {
                         </Text>{" "}
                     </Button>
                     <Button
+                        href="/"
                         size="medium"
                         color="color-500"
                         fontsize="fontsmall"
@@ -43,6 +46,7 @@ function Home() {
                         </Text>{" "}
                     </Button>
                     <Button
+                        href="/"
                         size="medium"
                         color="color-700"
                         fontsize="fontsmall"
@@ -53,6 +57,7 @@ function Home() {
                         </Text>{" "}
                     </Button>
                     <Button
+                        href="/"
                         size="medium"
                         color="color-200"
                         fontsize="fontsmall"
@@ -63,6 +68,7 @@ function Home() {
                         </Text>{" "}
                     </Button>
                     <Button
+                        href="/"
                         size="medium"
                         color="color-300"
                         fontsize="fontsmall"

@@ -32,6 +32,7 @@ function OceanWorldWide() {
         <div className={styles[`OceanWorldwide__content`]}>
           <section className={styles[`OceanWorldwide__buttons`]}>
             <Button
+              href="/home"
               size="medium"
               color="color-500"
               fontsize="fontsmall"
@@ -43,6 +44,7 @@ function OceanWorldWide() {
               </Text>{" "}
             </Button>
             <Button
+              href="/home"
               size="medium"
               color="color-500"
               fontsize="fontsmall"
@@ -54,6 +56,7 @@ function OceanWorldWide() {
               </Text>{" "}
             </Button>
             <Button
+              href="/home"
               size="medium"
               color="color-500"
               fontsize="fontsmall"
@@ -65,6 +68,7 @@ function OceanWorldWide() {
               </Text>{" "}
             </Button>
             <Button
+              href="/home"
               size="medium"
               color="color-500"
               fontsize="fontsmall"
@@ -76,6 +80,7 @@ function OceanWorldWide() {
               </Text>{" "}
             </Button>
             <Button
+              href="/home"
               size="medium"
               color="color-500"
               fontsize="fontsmall"
