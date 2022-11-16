@@ -1,0 +1,41 @@
+@use "@styles/variables";
+
+.Home{  
+  position: relative;
+  background-color: variables.$color-000;
+  width: 100%;
+  height: 100vh;
+  padding: 120px 0 70px;
+
+  &__container {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 72px;
+    z-index: 5;
+  }
+
+  h1 {
+    padding: 10px;
+  }
+
+  &__buttons{
+    display: flex;
+    align-items: center;
+    &--unit{
+        margin: 1rem;
+    } 
+  }
+
+  &__background{
+    position: absolute;    
+    bottom: 0;
+  }
+}
+

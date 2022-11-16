@@ -9,9 +9,16 @@
 }
  
 html {
-  
+  margin: 0;
+  padding: 0;
   background-color: variables.$background;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /*
 html {
   -webkit-font-smoothing: antialiased;
