@@ -28,7 +28,7 @@ export default function OceanWorldwide() {
         </section>
         <div className={styles[`OceanWorldwide__content`]}>
         <section className={styles[`OceanWorldwide__content--buttons`]}>
-          {oceans.map((ocean) => (<Button size="large" color="color-500"><Text color="white" size="large">{ocean}</Text></Button>))}
+          {oceans.map((ocean) => (<Button href="/home" size="large" color="color-500"><Text color="white" size="large">{ocean}</Text></Button>))}
           </section>
         
         </div>
