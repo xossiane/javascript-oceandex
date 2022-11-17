@@ -3,24 +3,12 @@ import Text from "@atoms/Text/Text";
 import oceananimals from "oceananimals.json";
 import styles from "./AnimalsTag.module.scss";
 
-function AnimalsTag({ label }) {
-  //console.log(oceananimals);
-  const animals = oceananimals;
-  //console.log(animals.map((animal) => animal.id));
-  //console.log(animals);
+export default function AnimalsTag({ label }) {
   return (
-    <>
-      <div className={styles[`AnimalsTag--bg`]}>
-          <Text
-            className={styles[`AnimalsTag--text`]}
-            color="black"
-            size="small"
-          >
-            {label}
-          </Text>
-      </div>
-    </>
+    <div>
+      <Text className={styles[`AnimalsTag--text`]} color="white" size="medium">
+        {label}
+      </Text>
+    </div>
   );
 }
-
-export default AnimalsTag;

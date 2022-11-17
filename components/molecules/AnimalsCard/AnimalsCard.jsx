@@ -24,13 +24,13 @@ export default function AnimalsCard({ name, order, phylum, src }) {
   return (
     <div className={`${styles.animalsCard} ${styles[color]}`}>
       <div className={styles.animalsCard__name}>
-        <Heading level="1" color="white" weight="normal" size="small">
+        <Heading level="1" color="white" weight="normal" size="large">
           {name}
         </Heading>
       </div>
       <div className={styles.animalsCard__classification}>
-        <AnimalsTag>{order}</AnimalsTag>
-        <AnimalsTag>{phylum}</AnimalsTag>
+        <AnimalsTag label={order}></AnimalsTag>
+        <AnimalsTag label={phylum}></AnimalsTag>
       </div>
       <img className={styles.animalsCard__img} src={src} alt="" />
     </div>

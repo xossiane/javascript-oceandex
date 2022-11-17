@@ -6,7 +6,6 @@
         width: 100%;
         min-height: 100vh;
         padding-top: 3.9rem;
-        position: relative;
       }
       &__Content {
         background-color: #84bab9;
@@ -31,14 +30,25 @@
           }
       }
       &__Search {
-        width: 85%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 22px auto;
       }
       &__Cards {
         display: grid;
-        grid-template-columns: 140px 140px;
+        grid-template-columns: 1fr;
         grid-gap: 10px 30px;        
         margin: 0 28px;
+
+        @media (min-width: 768px) {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width: 1024px) {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
       }
     
 }
