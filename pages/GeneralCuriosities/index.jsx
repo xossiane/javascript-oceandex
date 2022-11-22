@@ -15,7 +15,7 @@ export default function GeneralCuriositiesPage() {
       />
 
       <header className={styles[`GeneralCuriositiesPage__Header`]}>
-        <Arrow white={true}></Arrow>
+        <Arrow href="/home" white={true}></Arrow>
         <Heading
           level="1"
           className={styles[`GeneralCuriositiesPage__Content--text`]}
