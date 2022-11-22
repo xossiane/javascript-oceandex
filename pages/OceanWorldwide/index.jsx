@@ -23,7 +23,7 @@ export default function OceanWorldwide() {
           src="assets/images/extras/Rectangle.png"
         />
         <section className={styles[`OceanWorldwide__header`]}>
-          <Arrow white={true}></Arrow>
+          <Arrow href="/home" white={true}></Arrow>
           <Heading
             level="1"
             className={styles[`OceanWorldwide__container--text`]}
@@ -38,7 +38,7 @@ export default function OceanWorldwide() {
         <div className={styles[`OceanWorldwide__content`]}>
           <section className={styles[`OceanWorldwide__content--buttons`]}>
             {oceans.map((ocean) => (
-              <Button href="/home" size="large" color="color-500">
+              <Button href="/OceanCuriosities" size="large" color="color-500">
                 <Text color="white" size="large">
                   {ocean}
                 </Text>

@@ -1,7 +1,7 @@
 
 import GeneralCuriositiesPage from "./GeneralCuriosities";
-import OceanCuriosities from "./OceanWorldwide/OceanCuriosities";
-import OceanWorldwide from "./OceanWorldwide/OceanWorldwide";
+import OceanCuriosities from "./OceanCuriosities";
+import OceanWorldwide from "./OceanWorldwide";
 
 
 
