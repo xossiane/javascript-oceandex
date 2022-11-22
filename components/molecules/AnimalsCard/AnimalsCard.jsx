@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import styles from "./AnimalsCard.module.scss";
 import Heading from "@atoms/Heading/Heading";
 import AnimalsTag from "@molecules/AnimalsTag/AnimalsTag";
 
-export default function AnimalsCard({ name, order, phylum, src }) {
+export default function AnimalsCard({ href, name, order, phylum, src }) {
   const [color, setColor] = useState();
   const randomBackgroundColor = () => {
     const randomNumber = Math.floor(Math.random() * 6);
@@ -22,17 +23,19 @@ export default function AnimalsCard({ name, order, phylum, src }) {
   useEffect(() => setColor(randomBackgroundColor()));
 
   return (
-    <div className={`${styles.animalsCard} ${styles[color]}`}>
-      <div className={styles.animalsCard__name}>
-        <Heading level="1" color="white" weight="normal" size="small">
-          {name}
-        </Heading>
+    <Link href={`${href}`}>
+      <div className={`${styles.animalsCard} ${styles[color]}`}>
+        <div className={styles.animalsCard__name}>
+          <Heading level="1" color="white" weight="normal" size="large">
+            {name}
+          </Heading>
+        </div>
+        <div className={styles.animalsCard__classification}>
+          <AnimalsTag label={order}></AnimalsTag>
+          <AnimalsTag label={phylum}></AnimalsTag>
+        </div>
+        <img className={styles.animalsCard__img} src={src} alt="" />
       </div>
-      <div className={styles.animalsCard__classification}>
-        <AnimalsTag>{order}</AnimalsTag>
-        <AnimalsTag>{phylum}</AnimalsTag>
-      </div>
-      <img className={styles.animalsCard__img} src={src} alt="" />
-    </div>
+    </Link>
   );
 }

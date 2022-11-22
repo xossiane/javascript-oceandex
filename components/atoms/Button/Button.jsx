@@ -17,9 +17,7 @@ export default function Button({
 
   return (
     <Link href={`${href}`}>
-      <a href={href} className={`${classList.join(" ")} ${className}`}>
-        {children}
-      </a>
+      <div className={`${classList.join(" ")} ${className}`}>{children}</div>
     </Link>
   );
 }

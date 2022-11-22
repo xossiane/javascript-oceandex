@@ -12,55 +12,51 @@ const useContentful = () => {
       const entries = await client.getEntries({
         content_type: "animal",
         select: "fields",
-        //order: "fields.description",
-        //"fields.teste": "true",
+        "fields.teste": "true",
       });
-      console.log(entries);
-      const sanitizedEntries = entries.items.map((item) => {
-        const ocean = item.fields.ocean.fields; //Está dentro de um array
-        const image = item.fields.image.fields;
-        const curiosity = item.fields.curiosity.fields;
-        const classification = item.fields.classification.fields;
-
-        return {
-          ...item.fields,
-          //ocean,
-          classification,
-          curiosity,
+      const sanitizedAnimal = entries.items.map((item) => {
+        const {
+          name,
+          scientificName,
+          height,
+          weight,
           image,
-        };
-      });
-      return sanitizedEntries;
-    } catch (error) {
-      console.log(`Error fetching content: ${error}`);
-    }
-  };
+          curiosity,
+          classification,
+          description,
+        } = item.fields;
 
-  const getAnimalCuriosities = async () => {
-    try {
-      const entries = await client.getEntries({
-        content_type: "animalCuriosities",
-        select: "fields",
-        //order: "fields.description",
-        //"fields.teste": "false",
-      });
-      //console.log(entries);
-      const sanitizedEntries = entries.items.map((item) => {
-        //const curiosity = item.fields.ocean.fields; //Está dentro de um array
+        const curiosities = curiosity?.fields;
+
+        const classifications = classification?.fields;
+
+        const images = image?.fields;
+
+        const animal = {
+          name,
+          scientificName,
+          height,
+          weight,
+          images,
+          curiosities,
+          classifications,
+          description,
+        };
 
         return {
-          ...item.fields,
-
-          curiosity,
+          animal,
+          curiosities,
         };
       });
-      return sanitizedEntries;
+
+      return sanitizedAnimal;
+      console.log(sanitizedAnimal);
     } catch (error) {
       console.log(`Error fetching content: ${error}`);
     }
   };
 
-  return { getAnimals, getAnimalCuriosities };
+  return { getAnimals };
 };
 
 export default useContentful;
