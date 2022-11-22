@@ -1,12 +1,11 @@
-import React from "react";
 import * as Tabs from "@radix-ui/react-tabs";
 import Mainpage from "../../../pages/index";
 /* import styles from './Tabs.module.css'; */
 
-const TabsDemo = () => (
+export default function TabsDemo () {
   /* NOME DAS TABS */
-  <Tabs.Root className="TabsRoot" defaultValue="tab1">
-    <Tabs.List className="TabsList" aria-label="Manage your account">
+  <Tabs.Root className="TabsRoot" defaultValue="">
+    <Tabs.List className="TabsList" aria-label="">
       <Tabs.Trigger className="TabsTrigger" value="About">
         About
       </Tabs.Trigger>
@@ -46,5 +45,4 @@ const TabsDemo = () => (
       <p className="Text">FOOOOD</p>
     </Tabs.Content>
   </Tabs.Root>
-);
-export default TabsDemo;
+}

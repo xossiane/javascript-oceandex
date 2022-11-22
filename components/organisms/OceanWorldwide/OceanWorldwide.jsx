@@ -7,13 +7,14 @@ import Text from "@atoms/Text/Text";
 import Heading from "@atoms/Heading/Heading";
 import Arrow from "@atoms/Arrow/Arrow";
 
-function OceanWorldWide() {
+export default function OceanWorldWide() {
   return (
     <>
       <div className={styles[`OceanWorldwide__container`]}>
         <img
           className={styles[`OceanWorldwide__header--rectangle`]}
-          src="assets/images/extras/Rectangle.png" alt=""
+          src="assets/images/extras/Rectangle.png"
+          alt=""
         />
         <section className={styles[`OceanWorldwide__header`]}>
           <Arrow white={true}></Arrow>
@@ -101,5 +102,3 @@ function OceanWorldWide() {
     </>
   );
 }
-
-export default OceanWorldWide;

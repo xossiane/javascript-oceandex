@@ -1,10 +1,12 @@
-import styles from './Search.module.scss'
-export default function SearchIcon() {
+import styles from "./Search.module.scss";
+export default function SearchIcon({ size }) {
   return (
     <svg
       viewBox="0 0 19 19"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
       className={styles.icon}
     >
       <path
