@@ -46,6 +46,7 @@ const index = () => {
         {!loading &&
           animal.map((item) => (
             <AnimalsCard
+              href="/"
               name={item.animal.name}
               order={item.animal.classifications.order}
               phylum={item.animal.classifications.phylum}
