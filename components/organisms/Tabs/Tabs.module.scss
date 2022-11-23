@@ -1,0 +1,26 @@
+@use "@styles/variables";
+.TabsRoot{
+    
+    display: flex;
+    width: 60rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    
+}
+
+.TabsList{
+    width: 60rem;
+    height: 12rem;
+    margin-left: 2rem;
+    
+    
+}
+
+.TabsTrigger{
+    position: relative;
+    justify-content: space-between;
+    margin: 1rem;
+    border: 0;
+    padding: 0;
+    background-color: variables.$color-000;
+}

@@ -1,22 +1,25 @@
 import * as Tabs from "@radix-ui/react-tabs";
 import Mainpage from "../../../pages/index";
-/* import styles from './Tabs.module.css'; */
+import styles from './Tabs.module.scss'; 
+import react from "react";
+import Text from "@atoms/Text/Text";
 
-export default function TabsDemo () {
+
+ const TabsDemo = () => (
   /* NOME DAS TABS */
-  <Tabs.Root className="TabsRoot" defaultValue="">
-    <Tabs.List className="TabsList" aria-label="">
-      <Tabs.Trigger className="TabsTrigger" value="About">
-        About
+  <Tabs.Root className={styles[`TabsRoot`]} defaultValue="tab1">
+    <Tabs.List className={styles[`TabsList`]} aria-label="">
+      <Tabs.Trigger className={styles[`TabsTrigger`]} value="About">
+        <Text color="black" size="small">About</Text>
       </Tabs.Trigger>
-      <Tabs.Trigger className="TabsTrigger" value="Curiosities">
-        Curiosities
+      <Tabs.Trigger className={styles[`TabsTrigger`]} value="Curiosities">
+      <Text color="black" size="small">Curiosities</Text>
       </Tabs.Trigger>
-      <Tabs.Trigger className="TabsTrigger" value="Location">
-        Location
+      <Tabs.Trigger className={styles[`TabsTrigger`]} value="Location">
+      <Text color="black" size="small">Location</Text>
       </Tabs.Trigger>
-      <Tabs.Trigger className="TabsTrigger" value="Diet">
-        Diet
+      <Tabs.Trigger className={styles[`TabsTrigger`]} value="Diet">
+      <Text color="black" size="small">Diet</Text>
       </Tabs.Trigger>
     </Tabs.List>
 
@@ -35,7 +38,7 @@ export default function TabsDemo () {
       ></div>
     </Tabs.Content>
     <Tabs.Content className="TabsContent" value="Curiosities">
-      <Mainpage />
+      
       {/* <p className="Text">AQUI SERAO NOSSAS PAGINAS</p> */}
     </Tabs.Content>
     <Tabs.Content className="TabsContent" value="Location">
@@ -45,4 +48,6 @@ export default function TabsDemo () {
       <p className="Text">FOOOOD</p>
     </Tabs.Content>
   </Tabs.Root>
-}
+ )
+
+export default TabsDemo
