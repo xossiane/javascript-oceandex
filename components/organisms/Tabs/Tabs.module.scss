@@ -5,12 +5,12 @@
     width: 60rem;
     margin-left: 3rem;
     margin-top: 2rem;
+    flex-direction: column;
     
 }
 
 .TabsList{
-    width: 60rem;
-    height: 12rem;
+    width: 28rem;
     margin-left: 2rem;
     
     
@@ -23,4 +23,9 @@
     border: 0;
     padding: 0;
     background-color: variables.$color-000;
+}
+
+.TabsContent{
+    display: flex;
+    flex-direction: column;
 }

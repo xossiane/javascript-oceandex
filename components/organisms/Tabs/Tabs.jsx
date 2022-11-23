@@ -25,17 +25,8 @@ import Text from "@atoms/Text/Text";
 
     {/* CONTEUDO DAS TABS */}
 
-    <Tabs.Content className="TabsContent" value="About">
+    <Tabs.Content className={styles[`TabsContent`]} value="About">
       <p className="Text">aqui a gente renderiza o organismo</p>
-
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          marginTop: 20,
-          width: "900px",
-        }}
-      ></div>
     </Tabs.Content>
     <Tabs.Content className="TabsContent" value="Curiosities">
       
