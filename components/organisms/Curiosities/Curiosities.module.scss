@@ -1,0 +1,17 @@
+.Curiosities{
+    &__text{
+        width: 29.6rem;
+        height: 31.9rem ;
+        text-align: justify;
+        line-height: 2.4rem;
+        max-height: 13rem;
+        overflow-y: auto; 
+    }
+    &__img{
+        width: 31.5rem;
+        height: 18.1rem;
+        border-radius: 2.4rem;
+        margin-top: 2rem;
+        position: absolute;
+    }
+}

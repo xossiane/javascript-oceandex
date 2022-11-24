@@ -1,6 +1,5 @@
 import React from "react";
 import Text from "@atoms/Text/Text";
-import oceananimals from "oceananimals.json";
 import styles from "./AnimalsTag.module.scss";
 
 export default function AnimalsTag({ label }) {
