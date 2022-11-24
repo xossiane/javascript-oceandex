@@ -1,8 +1,8 @@
 import Arrow from '@atoms/Arrow/Arrow';
 import Heading from '@atoms/Heading/Heading';
-import Like from '@atoms/Like/Like';
 import AnimalsTag from '@molecules/AnimalsTag/AnimalsTag';
 import TabsDemo from '@organisms/Tabs/Tabs';
+import oceananimals from "oceananimals.json";
 
 import styles from './About.module.scss'
 
