@@ -1,0 +1,83 @@
+@use "@styles/variables";
+.AboutContent{
+    &__Container{
+        &--box{
+            width: 30.8rem;
+            height: 4.3rem;
+            border-radius: 1.4rem;
+            background-color: variables.$color-000;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            align-items: center;
+        }
+        &--text{
+            display: flex;
+            position: absolute;
+            margin-left: 3rem;
+            margin-top: 0.5rem;
+            width: 8rem;
+            opacity: 60%;
+            text-align: center;
+        }
+        &--text2{
+            display: flex;
+            position: absolute;
+            margin-left: 40%;
+            margin-top: 1rem;
+            width: 20rem;
+            text-align: center;
+        }
+        &--about{
+            width: 31.9rem;
+            height: 12.7rem;
+            justify-content: center;
+            text-align: justify;
+            line-height: 2.4rem;
+        }
+        
+    }
+    &__box2{
+        width: 30.8rem;
+            height: 7.3rem;
+            border-radius: 1.4rem;
+            background-color: variables.$color-000;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            align-items: center;
+            &--title{
+                margin-left: 3rem;
+                margin-top: -0.7rem;
+                position: absolute;
+                opacity: 60%;
+                display: flex;
+                width: 25rem;
+                justify-content: space-around;
+            }
+            &--data{
+                display: flex;
+                margin-top: 2.2rem;
+                position: absolute;
+                justify-content: space-around;
+                width: 25rem;
+                margin-left: 3rem;
+            }
+    }
+    &__breeding{
+        &--title{
+            display: flex;
+        }
+        &--label{
+            opacity: 60%;
+            margin-top: -1rem;
+        }
+        &--data{
+            opacity: 0;
+        }
+        &--method{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            justify-content: space-between;
+        }
+        
+    }
+}
+
