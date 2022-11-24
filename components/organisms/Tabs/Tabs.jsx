@@ -3,6 +3,7 @@ import Mainpage from "../../../pages/index";
 import styles from './Tabs.module.scss'; 
 import react from "react";
 import Text from "@atoms/Text/Text";
+import AboutContent from "@organisms/AboutContent/AboutContent";
 
 
  const TabsDemo = () => (
@@ -26,7 +27,7 @@ import Text from "@atoms/Text/Text";
     {/* CONTEUDO DAS TABS */}
 
     <Tabs.Content className={styles[`TabsContent`]} value="About">
-      <p className="Text">aqui a gente renderiza o organismo</p>
+      <AboutContent></AboutContent>
     </Tabs.Content>
     <Tabs.Content className="TabsContent" value="Curiosities">
       
