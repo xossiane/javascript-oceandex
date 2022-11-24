@@ -4,6 +4,8 @@ import styles from './Tabs.module.scss';
 import react from "react";
 import Text from "@atoms/Text/Text";
 import AboutContent from "@organisms/AboutContent/AboutContent";
+import Curiosities from "@organisms/Curiosities";
+import Location from "@organisms/Location/Location";
 
 
  const TabsDemo = () => (
@@ -27,14 +29,13 @@ import AboutContent from "@organisms/AboutContent/AboutContent";
     {/* CONTEUDO DAS TABS */}
 
     <Tabs.Content className={styles[`TabsContent`]} value="About">
-      <AboutContent></AboutContent>
+      <AboutContent/>
     </Tabs.Content>
     <Tabs.Content className="TabsContent" value="Curiosities">
-      
-      {/* <p className="Text">AQUI SERAO NOSSAS PAGINAS</p> */}
+      <Curiosities/>
     </Tabs.Content>
     <Tabs.Content className="TabsContent" value="Location">
-      <p className="Text">THIS IS LOCATION</p>
+      <Location/>
     </Tabs.Content>
     <Tabs.Content className="TabsContent" value="Diet">
       <p className="Text">FOOOOD</p>
