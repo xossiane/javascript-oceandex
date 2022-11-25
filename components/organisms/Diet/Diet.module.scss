@@ -1,0 +1,38 @@
+@use "@styles/variables";
+
+.Diet__Container{
+        
+    }
+
+.Diet__titleTab{
+        margin-bottom:2.5rem;
+        
+    }
+.Diet__hrItem{
+       border:none;
+       height:2px;
+       background-color:#00000042;
+       opacity:40%;
+       width: 45%;
+       margin:0;
+}
+
+.Diet__animalName{
+       color:#000000;
+       opacity: 40%;
+       letter-spacing:0.5px;
+       position:relative;
+       top:6rem; 
+}
+
+.Diet__imgItem{
+      position:relative;
+      left:14rem;
+      bottom:2rem;
+
+}
+
+
+
+
+

@@ -6,6 +6,7 @@ import Text from "@atoms/Text/Text";
 import AboutContent from "@organisms/AboutContent/AboutContent";
 import Curiosities from "@organisms/Curiosities";
 import Location from "@organisms/Location/Location";
+import Diet from "@organisms/Diet/Diet"
 
 
  const TabsDemo = () => (
@@ -38,7 +39,7 @@ import Location from "@organisms/Location/Location";
       <Location/>
     </Tabs.Content>
     <Tabs.Content className="TabsContent" value="Diet">
-      <p className="Text">FOOOOD</p>
+      <Diet/>
     </Tabs.Content>
   </Tabs.Root>
  )
