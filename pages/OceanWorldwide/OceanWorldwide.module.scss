@@ -1,32 +1,37 @@
 @use "@styles/variables";
 
 .OceanWorldwide{
-  &__container {
+    position: relative;
     background-color: variables.$color-500;
-    width: 37.5rem;
-   &--text{
-    display: none;
-   }
-  
-  }
+    width: 100%;
+    height: 100vh;
+    border-top-left-radius: 4.2rem;
+    border-top-right-radius: 4.2rem;
+
+    
   &__header{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin: -5rem auto 4.1rem 0.2rem;
+    width: 100%;
+    height: 2.5rem;
     justify-content: space-around;
-    width: 34rem;
-    margin-top: -9rem;
+    align-items: center;
     
    }
+   &__Arrow {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+
    &--rectangle{
       display: flex;
           
   }
-  &__content{
-    margin-top: 3rem;
+  &__content{    
+    z-index: 100;
     background-color: variables.$color-000;
-    width: 37.5rem;
-    height: 70rem;
+    width: 100%;
     flex-direction: column;
     align-content: center;
     border-top-left-radius: 4.2rem;
@@ -35,35 +40,19 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 38rem;
+      width: 100%;
       height: 54rem;
       justify-content: space-evenly;
+      
     }
+
   
-  }
-  &__buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    margin: 6rem 10rem;
-    z-index: 5;
-    &--unit{
-        margin: 1rem;
-    }
-    
   }
 
   &__background{
-    bottom: 0;
-    display: flex;
-    position: relative;
-    z-index: 1;
-    margin-top: -25.5rem;
-   
-
+    margin-top: -10px;
+  }
 }
  
-}
 
 

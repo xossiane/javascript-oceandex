@@ -14,10 +14,16 @@
   &--medium {
     width: 15.5rem;
     height: 6rem;
+    @media (min-width: 768px) {
+      min-width: 60%;
+    }
   }
   &--large {
     width: 22rem;
     height: 7.3rem;
+    @media (min-width: 768px) {
+      min-width: 60%;
+    }
   }
 
   &--color-100 {

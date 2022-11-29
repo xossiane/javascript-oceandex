@@ -13,9 +13,10 @@ export default function GeneralCuriositiesPage() {
         src="assets/images/extras/Rectangle.png"
         alt=""
       />
-
-      <header className={styles[`GeneralCuriositiesPage__Header`]}>
+      <span className={styles[`GeneralCuriositiesPage__Arrow`]}>
         <Arrow href="/home" white={true}></Arrow>
+      </span>
+      <header className={styles[`GeneralCuriositiesPage__Header`]}>
         <Heading
           level="1"
           className={styles[`GeneralCuriositiesPage__Content--text`]}
@@ -30,7 +31,7 @@ export default function GeneralCuriositiesPage() {
       <div className={styles[`GeneralCuriositiesPage__Container`]}>
         <GeneralCuriosities></GeneralCuriosities>
         <span className={styles[`GeneralCuriositiesPage__Background`]}>
-          <Background></Background>
+          <Background />
         </span>
       </div>
     </div>

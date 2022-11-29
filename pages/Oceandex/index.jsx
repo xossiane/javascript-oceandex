@@ -25,8 +25,10 @@ const index = () => {
 
   return (
     <div className={styles[`Oceandex__Container`]}>
-      <header className={styles[`Oceandex__Header`]}>
+      <span className={styles[`Oceandex__Arrow`]}>
         <Arrow href="/home" white={false}></Arrow>
+      </span>
+      <header className={styles[`Oceandex__Header`]}>
         <Heading
           level="1"
           className={styles[`Oceandex__Content--text`]}

@@ -28,7 +28,7 @@ function GeneralCuriosities() {
 
   return (
     <>
-      <>
+      <section className={styles[`GeneralCuriosities`]}>
         <img
           className={styles[`GeneralCuriosities--Img`]}
           src={animals[animalsID].tabs[0].curiosities[0].curiositiesImage}
@@ -51,10 +51,10 @@ function GeneralCuriosities() {
             {animals[animalsID].phylum} | {animals[animalsID].order}
           </Text>
         </div>
-      </>
+      </section>
       <span className={styles[`GeneralCuriosities--Arrow`]}>
         <button
-          className={styles[`GeneralCuriosities--button`]}
+          className={styles[`GeneralCuriosities--button-left`]}
           onClick={handleClickSub}
         >
           <svg
@@ -87,7 +87,7 @@ function GeneralCuriosities() {
           </svg>
         </button>
         <button
-          className={styles[`GeneralCuriosities--button`]}
+          className={styles[`GeneralCuriosities--button-right`]}
           onClick={handleClickSum}
         >
           <svg

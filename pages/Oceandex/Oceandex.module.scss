@@ -6,6 +6,7 @@
         width: 100%;
         min-height: 100vh;
         padding-top: 3.9rem;
+        position: relative;
       }
       &__Content {
         background-color: #84bab9;
@@ -16,6 +17,12 @@
           margin: 5.5rem 4.1rem auto 6.8rem;
         }
       }
+      &__Arrow {
+        position: absolute;
+        top: 67px;
+        left: 20px;
+      }
+
       &__Header {
         display: flex;
         height: 2.5rem;

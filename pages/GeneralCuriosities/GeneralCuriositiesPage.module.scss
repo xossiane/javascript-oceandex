@@ -2,15 +2,16 @@
 .GeneralCuriositiesPage {
   &__Container {
     background-color: variables.$color-000;
-    width: 37.5rem;
+    width: 100%;
     margin-top: 3.9rem;
-    z-index: 1;
+    z-index: 10;
     border-top-left-radius: 4.2rem;
     border-top-right-radius: 4.2rem;
   }
   &__Content {
     background-color: #84bab9;
-    width: 37.5rem;
+    width: 100%;
+    height: 100vh;
     flex-direction: column;
     align-content: center;
 
@@ -21,7 +22,7 @@
   &__Header {
     display: flex;
     margin: -5rem auto auto 0.2rem;
-    width: 34.6rem;
+    width: 100%;
     height: 2.5rem;
     justify-content: space-around;
     align-items: center;
@@ -29,6 +30,12 @@
     &--rectangle {
       display: flex;
     }
+  }
+
+  &__Arrow {
+    position: absolute;
+    top: 50px;
+    left: 20px;
   }
 
   &__Background {
