@@ -6,17 +6,9 @@ import { useState } from "react";
 
 export default function Input() {
   const [search, setSearch] = useState("");
-  const [animal, setAnimal] = useState([]);
 
-  const handleSubmit = async (e) => {
-    if (search.trim().length === 0) {
-      return;
-    }
-    if (e.key === "Enter") {
-      const data = await animal(search.toLocaleLowerCase());
-      setAnimal(data);
-    }
-  };
+  console.log(search);
+  console.log(search.length);
 
   return (
     <form className={styles.inputContainer}>
@@ -28,7 +20,6 @@ export default function Input() {
         placeholder="Search animal, locations, diet..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        onKeyPress={handleSubmit}
       />
     </form>
   );

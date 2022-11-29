@@ -24,6 +24,7 @@ const useContentful = () => {
           curiosity,
           classification,
           description,
+          slug,
         } = item.fields;
 
         const curiosities = curiosity?.fields;
@@ -41,6 +42,7 @@ const useContentful = () => {
           curiosities,
           classifications,
           description,
+          slug,
         };
 
         return {

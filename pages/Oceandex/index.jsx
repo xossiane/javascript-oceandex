@@ -42,9 +42,23 @@ const index = () => {
     ));
   }
 
-  let showAnimalSearch = animal.filter((item) => item.animal.name === search);
+  function showAnimalSearch() {
+    return animal.filter(
+      (name) => search.includes(animal.name)
+      // <AnimalsCard
+      //   href="/"
+      //   key={item.id}
+      //   name={item.animal.name}
+      //   order={item.animal.classifications.order}
+      //   phylum={item.animal.classifications.phylum}
+      //   src={item.animal.images.file.url}
+      // />
+    );
+  }
 
-  console.log(showAnimalSearch);
+  // let showAnimalSearch = animal.filter((item) => item.animal.name === search);
+
+  console.log(search.length);
 
   return (
     <div className={styles[`Oceandex__Container`]}>
@@ -62,15 +76,19 @@ const index = () => {
         </Heading>
       </header>
       <div className={styles[`Oceandex__Search`]}>
-        <Input value={search} onChange={handleSubmit} aria-label={""} />
+        <Input
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          aria-label={""}
+        />
       </div>
       <section className={styles[`Oceandex__Cards`]}>
         {loading && <p>loading</p>}
-        {search.length <= 2 && !loading && showAnimal()}
+        {!loading && showAnimal()}
       </section>
       <section className={styles[`Oceandex__Cards`]}>
         {loading && <p>loading</p>}
-        {search.length > 2 && !loading && showAnimalSearch}
+        {search.length > 2 && !loading && showAnimalSearch()}
       </section>
     </div>
   );
