@@ -13,8 +13,7 @@
     width: 100%;
     display: flex;
    justify-content: center;
-    
-    
+  
 }
 
 .TabsTrigger{
@@ -24,6 +23,18 @@
     border: 0;
     padding: 0;
     background-color: variables.$color-000;
+
+    &--text:hover {
+        color: #6C79DB;
+        border-bottom: 1px solid #6C79DB;
+        font-weight: bold;
+    }
+    &--text:focus-within {
+        color: #6C79DB;
+        border-bottom: 1px solid #6C79DB;
+        font-weight: bold;
+    }
+ 
 }
 
 .TabsContent{

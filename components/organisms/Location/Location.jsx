@@ -1,9 +1,19 @@
-import styles from "./Location.module.scss"
+import styles from "./Location.module.scss";
+import Text from "@atoms/Text/Text";
 
 export default function Location() {
   return (
-    <article>
-        <img src="assets/images/realAnimals/16-octopus.jpg"  className={styles[`Location__img`]}  alt="animal"></img>
-    </article>
-  )
+    <div className={styles[`Location`]}>
+      <Text color="black" size="medium" className={styles[`Location__title`]}>
+        Atlantic Ocean
+      </Text>
+      <article>
+        <img
+          src="assets/images/realAnimals/16-octopus.jpg"
+          className={styles[`Location__img`]}
+          alt="animal"
+        ></img>
+      </article>
+    </div>
+  );
 }
