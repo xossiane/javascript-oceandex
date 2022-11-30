@@ -14,6 +14,12 @@ const index = () => {
   const { getAnimals } = useContentful();
   const [animal, setAnimal] = useState([]);
   const [loading, setLoading] = useState();
+  const [search, setSearch] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSearch(e.target.value);
+  };
 
   useEffect(() => {
     getAnimals().then((response) => {
@@ -22,6 +28,37 @@ const index = () => {
       setLoading(false);
     });
   }, []);
+
+  function showAnimal() {
+    return animal.map((item) => (
+      <AnimalsCard
+        href="/"
+        key={item.id}
+        name={item.animal.name}
+        order={item.animal.classifications.order}
+        phylum={item.animal.classifications.phylum}
+        src={item.animal.images.file.url}
+      />
+    ));
+  }
+
+  function showAnimalSearch() {
+    return animal.filter(
+      (name) => search.includes(animal.name)
+      // <AnimalsCard
+      //   href="/"
+      //   key={item.id}
+      //   name={item.animal.name}
+      //   order={item.animal.classifications.order}
+      //   phylum={item.animal.classifications.phylum}
+      //   src={item.animal.images.file.url}
+      // />
+    );
+  }
+
+  // let showAnimalSearch = animal.filter((item) => item.animal.name === search);
+
+  console.log(search.length);
 
   return (
     <div className={styles[`Oceandex__Container`]}>
@@ -41,20 +78,19 @@ const index = () => {
         </Heading>
       </header>
       <div className={styles[`Oceandex__Search`]}>
-        <Input />
+        <Input
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          aria-label={""}
+        />
       </div>
       <section className={styles[`Oceandex__Cards`]}>
         {loading && <p>loading</p>}
-        {!loading &&
-          animal.map((item) => (
-            <AnimalsCard
-              href="/"
-              name={item.animal.name}
-              order={item.animal.classifications.order}
-              phylum={item.animal.classifications.phylum}
-              src={item.animal.images.file.url}
-            />
-          ))}
+        {!loading && showAnimal()}
+      </section>
+      <section className={styles[`Oceandex__Cards`]}>
+        {loading && <p>loading</p>}
+        {search.length > 2 && !loading && showAnimalSearch()}
       </section>
     </div>
   );
