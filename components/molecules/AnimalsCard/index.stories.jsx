@@ -1,4 +1,4 @@
-import AnimalsCard from './AnimalsCard'
+import AnimalsCard from '.'
 
 export default {
     title: "Molecules/AnimalsCard",

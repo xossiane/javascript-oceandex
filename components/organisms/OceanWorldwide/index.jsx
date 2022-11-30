@@ -1,11 +1,10 @@
-import Background from "@atoms/Background/Background";
+import Background from "@atoms/Background";
 import React, { useState } from "react";
-import styles from "./OceanWorldwide.module.scss";
-
-import Button from "@atoms/Button/Button.jsx";
-import Text from "@atoms/Text/Text";
-import Heading from "@atoms/Heading/Heading";
-import Arrow from "@atoms/Arrow/Arrow";
+import styles from "./styles.module.scss";
+import Button from "@atoms/Button/index.jsx";
+import Text from "@atoms/Text";
+import Heading from "@atoms/Heading";
+import Arrow from "@atoms/Arrow";
 
 export default function OceanWorldWide() {
   return (

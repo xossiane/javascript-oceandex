@@ -1,5 +1,5 @@
-import Text from "@atoms/Text/Text";
-import styles from "./Curiosities.module.scss";
+import Text from "@atoms/Text";
+import styles from "./styles.module.scss";
 
 export default function Curiosities() {
   return (
@@ -10,16 +10,16 @@ export default function Curiosities() {
         others only hunt at dusk and dawn. When scared, octopuses will shoot a
         dark liquid, sometimes called ink, at the thing that scared them. This
         will temporarily blind and confuse a potential attacker, giving the
-        octopus time to swim away. The ink can also dull the attacker’s smelling
+        octopus time to swim away. The ink can also dull the attacker's smelling
         and tasting abilities, according to the Smithsonian article. This will
         temporarily blind and confuse a potential attacker, giving the octopus
-        time to swim away. The ink can also dull the attacker’s smelling and
+        time to swim away. The ink can also dull the attacker's smelling and
         tasting abilities, according to the Smithsonian article. This will
         temporarily blind and confuse a potential attacker, giving the octopus
-        time to swim away. The ink can also dull the attacker’s smelling and
+        time to swim away. The ink can also dull the attacker's smelling and
         tasting abilities, according to the Smithsonian article. This will
         temporarily blind and confuse a potential attacker, giving the octopus
-        time to swim away. The ink can also dull the attacker’s smelling and
+        time to swim away. The ink can also dull the attacker's smelling and
         tasting abilities, according to the Smithsonian article.
       </Text>
       <img

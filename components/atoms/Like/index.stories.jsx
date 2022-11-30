@@ -1,4 +1,4 @@
-import Like from './Like'
+import Like from '.'
 
 export default {
     title: "Atoms/Like",

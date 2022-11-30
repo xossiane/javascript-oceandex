@@ -1,4 +1,4 @@
-import styles from "./Heading.module.scss";
+import styles from "./styles.module.scss";
 import React from "react";
 
 export default function Heading({

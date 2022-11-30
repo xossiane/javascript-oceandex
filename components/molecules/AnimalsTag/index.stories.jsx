@@ -1,4 +1,4 @@
-import AnimalsTag from './AnimalsTag'
+import AnimalsTag from '.'
 
 export default {
     title: "Molecules/AnimalsTag",

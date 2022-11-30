@@ -1,4 +1,4 @@
-import AboutContent from './AboutContent'
+import AboutContent from '.'
 
 export default {
     title: "organisms/AboutContent",

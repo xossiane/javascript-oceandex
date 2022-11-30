@@ -1,11 +1,9 @@
-import Arrow from "@atoms/Arrow/Arrow";
-import Heading from "@atoms/Heading/Heading";
-import AnimalsTag from "@molecules/AnimalsTag/AnimalsTag";
-import TabsDemo from "@organisms/Tabs/Tabs";
-import Background from "@atoms/Background/Background";
-import oceananimals from "oceananimals.json";
-
-import styles from "./About.module.scss";
+import Arrow from "@atoms/Arrow";
+import Heading from "@atoms/Heading";
+import AnimalsTag from "@molecules/AnimalsTag";
+import TabsDemo from "@organisms/Tabs";
+import Background from "@atoms/Background";
+import styles from "./styles.module.scss";
 
 export default function AboutPage() {
   return (

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-import styles from "../OceanCuriosities/OceanCuriosities.module.scss";
-import Arrow from "@atoms/Arrow/Arrow";
-import Heading from "@atoms/Heading/Heading";
+import styles from "./styles.module.scss";
+import Arrow from "@atoms/Arrow";
+import Heading from "@atoms/Heading";
 
 import oceancuriosities from "../../../javascript-oceandex/oceancuriosities.json";
-import Text from "@atoms/Text/Text";
-import Background from "@atoms/Background/Background";
+import Text from "@atoms/Text";
+import Background from "@atoms/Background";
 
 function OceanCuriosities() {
   const curiosities = oceancuriosities;

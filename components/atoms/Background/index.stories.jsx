@@ -1,4 +1,4 @@
-import Background from './Background'
+import Background from '.'
 
 export default {
     title: "Atoms/Background",

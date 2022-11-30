@@ -1,4 +1,4 @@
-import Curiosities from './Curiosities'
+import Curiosities from '.'
 
 export default {
     title: "Organisms/Curiosities",

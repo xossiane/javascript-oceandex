@@ -1,6 +1,5 @@
-import SearchIcon from "../../atoms/Search/Search";
-import styles from "./Input.module.scss";
-import AnimalsCard from "@molecules/AnimalsCard/AnimalsCard";
+import SearchIcon from "@atoms/Search";
+import styles from "./styles.module.scss";
 
 import { useState } from "react";
 

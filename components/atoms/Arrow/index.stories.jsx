@@ -1,4 +1,4 @@
-import Arrow from './Arrow'
+import Arrow from '.'
 
 export default {
     title: "Atoms/Arrow",

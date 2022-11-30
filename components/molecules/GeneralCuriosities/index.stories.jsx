@@ -1,4 +1,4 @@
-import GeneralCuriosities from './GeneralCuriosities'
+import GeneralCuriosities from '.'
 
 export default {
     title: "Molecules/GeneralCuriosities",

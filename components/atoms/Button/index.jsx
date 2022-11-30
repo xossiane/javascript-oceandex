@@ -1,4 +1,4 @@
-import styles from "./Button.module.scss";
+import styles from "./styles.module.scss";
 import Link from "next/link";
 
 export default function Button({

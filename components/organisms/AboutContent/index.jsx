@@ -1,5 +1,5 @@
-import Text from "@atoms/Text/Text";
-import styles from "./AboutContent.module.scss";
+import Text from "@atoms/Text";
+import styles from "./styles.module.scss";
 
 export default function AboutContent() {
   return (

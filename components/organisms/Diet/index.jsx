@@ -1,5 +1,5 @@
-import styles from "./Diet.module.scss";
-import Text from "@atoms/Text/Text";
+import styles from "./styles.module.scss";
+import Text from "@atoms/Text";
 
 export default function Diet() {
   return (

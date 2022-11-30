@@ -1,8 +1,8 @@
 import styles from "../styles/home.module.scss";
-import Background from "@atoms/Background/Background";
-import Heading from "@atoms/Heading/Heading";
-import Button from "@atoms/Button/Button.jsx";
-import Text from "@atoms/Text/Text";
+import Background from "@atoms/Background";
+import Heading from "@atoms/Heading";
+import Button from "@atoms/Button/index.jsx";
+import Text from "@atoms/Text";
 
 function Home() {
   return (

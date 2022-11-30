@@ -1,12 +1,12 @@
 import * as Tabs from "@radix-ui/react-tabs";
 import Mainpage from "../../../pages/index";
-import styles from "./Tabs.module.scss";
+import styles from "./styles.module.scss";
 import react from "react";
-import Text from "@atoms/Text/Text";
-import AboutContent from "@organisms/AboutContent/AboutContent";
+import Text from "@atoms/Text";
+import AboutContent from "@organisms/AboutContent";
 import Curiosities from "@organisms/Curiosities";
-import Location from "@organisms/Location/Location";
-import Diet from "@organisms/Diet/Diet";
+import Location from "@organisms/Location";
+import Diet from "@organisms/Diet";
 
 const TabsDemo = () => (
   /* NOME DAS TABS */

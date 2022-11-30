@@ -1,4 +1,4 @@
-import styles from "./Text.module.scss";
+import styles from "./styles.module.scss";
 
 export default function Text({
   size,

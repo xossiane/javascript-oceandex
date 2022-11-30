@@ -1,4 +1,4 @@
-import SearchIcon from './Search'
+import SearchIcon from '.'
 
 export default {
     title: "Atoms/Search",

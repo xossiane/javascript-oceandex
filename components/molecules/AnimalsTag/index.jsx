@@ -1,6 +1,6 @@
 import React from "react";
-import Text from "@atoms/Text/Text";
-import styles from "./AnimalsTag.module.scss";
+import Text from "@atoms/Text";
+import styles from "./styles.module.scss";
 
 export default function AnimalsTag({ label }) {
   return (

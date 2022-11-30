@@ -1,9 +1,9 @@
-import GeneralCuriosities from "@molecules/GeneralCuriosities/GeneralCuriosities";
-import styles from "./GeneralCuriositiesPage.module.scss";
+import GeneralCuriosities from "@molecules/GeneralCuriosities";
+import styles from "./styles.module.scss";
 import React from "react";
-import Background from "@atoms/Background/Background";
-import Heading from "@atoms/Heading/Heading";
-import Arrow from "@atoms/Arrow/Arrow";
+import Background from "@atoms/Background";
+import Heading from "@atoms/Heading";
+import Arrow from "@atoms/Arrow";
 
 export default function GeneralCuriositiesPage() {
   return (

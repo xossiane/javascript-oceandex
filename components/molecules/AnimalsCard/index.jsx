@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import styles from "./AnimalsCard.module.scss";
-import Heading from "@atoms/Heading/Heading";
-import AnimalsTag from "@molecules/AnimalsTag/AnimalsTag";
+import styles from "./styles.module.scss";
+import Heading from "@atoms/Heading";
+import AnimalsTag from "@molecules/AnimalsTag";
 
 export default function AnimalsCard({ href, name, order, phylum, src }) {
   const [color, setColor] = useState();

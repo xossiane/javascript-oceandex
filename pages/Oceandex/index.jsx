@@ -1,14 +1,14 @@
-import styles from "./Oceandex.module.scss";
+import styles from "./styles.module.scss";
 
 import { useEffect, useState } from "react";
 
 import useContentful from "../../hooks/useContentful";
 
-import Heading from "@atoms/Heading/Heading";
-import Arrow from "@atoms/Arrow/Arrow";
-import Input from "@molecules/Input/Input";
-import Text from "@atoms/Text/Text";
-import AnimalsCard from "@molecules/AnimalsCard/AnimalsCard";
+import Heading from "@atoms/Heading";
+import Arrow from "@atoms/Arrow";
+import Input from "@molecules/Input";
+import Text from "@atoms/Text";
+import AnimalsCard from "@molecules/AnimalsCard";
 
 const index = () => {
   const { getAnimals } = useContentful();

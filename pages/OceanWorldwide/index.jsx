@@ -1,10 +1,10 @@
-import Arrow from "@atoms/Arrow/Arrow";
-import Background from "@atoms/Background/Background";
-import Button from "@atoms/Button/Button";
-import Heading from "@atoms/Heading/Heading";
-import Text from "@atoms/Text/Text";
+import Arrow from "@atoms/Arrow";
+import Background from "@atoms/Background";
+import Button from "@atoms/Button";
+import Heading from "@atoms/Heading";
+import Text from "@atoms/Text";
 import React from "react";
-import styles from "./OceanWorldwide.module.scss";
+import styles from "./styles.module.scss";
 
 export default function OceanWorldwide() {
   const oceans = [

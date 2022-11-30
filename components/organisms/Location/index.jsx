@@ -1,5 +1,5 @@
-import styles from "./Location.module.scss";
-import Text from "@atoms/Text/Text";
+import styles from "./styles.module.scss";
+import Text from "@atoms/Text";
 
 export default function Location() {
   return (
