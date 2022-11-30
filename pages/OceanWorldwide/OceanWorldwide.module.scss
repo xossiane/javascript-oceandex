@@ -6,7 +6,7 @@
     width: 100%;
     height: 100vh;
     border-top-left-radius: 4.2rem;
-    border-top-right-radius: 4.2rem;
+    border-top-right-radius: 4.2rem;z-index: 10;
 
     
   &__header{
@@ -16,6 +16,7 @@
     height: 2.5rem;
     justify-content: space-around;
     align-items: center;
+    z-index: 100;
     
    }
    &__Arrow {
@@ -32,6 +33,7 @@
     z-index: 100;
     background-color: variables.$color-000;
     width: 100%;
+    height: 100vh;
     flex-direction: column;
     align-content: center;
     border-top-left-radius: 4.2rem;
@@ -44,13 +46,7 @@
       height: 54rem;
       justify-content: space-evenly;
       
-    }
-
-  
-  }
-
-  &__background{
-    margin-top: -10px;
+    }  
   }
 }
  

@@ -1,23 +1,51 @@
 @use "@styles/variables";
-.AboutPage{        
+.AboutPage{  
+    position: relative;
+    background-color: variables.$color-000;   
     width: 100%;
-    height: 500vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 0 !important;
 
     @media (min-width: 768px) {
-        flex-direction: row;
         background-color: variables.$color-000;
+    }
+
+    &__title {
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+            text-align: center;
+            margin: -8rem 0 3rem;
+        }
+    }
+
+    &__Content {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            background-color: variables.$color-000;
+        }
     }
 
     &__Container{
         background-color: variables.$color-400;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        z-index: 5;  
+        position: relative; 
+        margin-top: 10rem;   
 
         @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: center;
             border-radius: 30px;
             width: 40%;
             height: 540px;
-            margin: 130px 20px 0 3%;     
+            margin: 0 20px 0 3%;     
         }
 
     &--bottom{
@@ -31,12 +59,13 @@
         display: flex;
         position: relative;
         overflow-y: scroll;
+        z-index: 10;
 
         @media (min-width: 768px) {
             border-radius: 30px;
             max-width: 55%;
             height: 540px;
-            margin: 130px 3% 0 20px;  
+            margin: 0 3% 0 20px;  
             top: 0; 
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             align-items: center;  
@@ -48,9 +77,20 @@
     display: flex;
     flex-direction: column;
     margin-left: 3rem;
-    top: -7.5rem;
     width: 100%;
-    position: relative;
+    position: absolute;
+    top: 2rem;
+    @media (min-width: 768px) {
+       margin: 0;
+       top: 2rem;
+       right: -2rem;
+    }
+    &--rectangle{
+        width: 100px;
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
     &--dotted{
         position: absolute;
         top: 0;
@@ -61,7 +101,11 @@
     }
     &--info{
         margin-left: 3rem;
-        margin-top: -8rem;
+        margin-top: 1rem;
+        @media (min-width: 768px) {
+            margin-left: 2rem;
+            margin-top: 6rem;
+        }
     }
     &--tag{
         display: flex;
@@ -73,12 +117,19 @@
     &--icon{
         display: flex;
         position: relative;
-        z-index: 5;
+        z-index: 1500;
         width: 30rem;
         height: 25.7rem;
         transform: translateX(0%);
         transform: translateY(7%);
-        margin: 0 auto;
+        margin: 0 auto 5rem;
         
     }
-}}
+}
+&__background {
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+}

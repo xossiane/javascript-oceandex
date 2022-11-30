@@ -3,15 +3,16 @@
   &__Container {
     background-color: variables.$color-000;
     width: 100%;
+    height: 100vh;
     margin-top: 3.9rem;
+    margin-bottom: 5rem;
     z-index: 10;
     border-top-left-radius: 4.2rem;
     border-top-right-radius: 4.2rem;
   }
   &__Content {
-    background-color: #84bab9;
+    background-color: variables.$color-800;
     width: 100%;
-    height: 100vh;
     flex-direction: column;
     align-content: center;
 
@@ -38,11 +39,4 @@
     left: 20px;
   }
 
-  &__Background {
-    bottom: 0;
-    display: flex;
-    position: relative;
-    z-index: 1;
-    margin-top: -7rem;
-  }
 }
