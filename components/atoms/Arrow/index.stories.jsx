@@ -1,9 +1,10 @@
-import Arrow from '.'
+import Arrow from ".";
 
 export default {
-    title: "Atoms/Arrow",
-    component: Arrow,
-    args: {}
-}
+  title: "Atoms/Arrow",
+  args: {},
+};
 
-export const Primary = () => <Arrow primary />;
+export const BlackArrow = () => <Arrow BlackArrow />;
+
+export const WhiteArrow = () => <Arrow WhiteArrow white="true" />;
