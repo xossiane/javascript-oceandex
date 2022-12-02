@@ -24,7 +24,7 @@ function Home() {
             </Text>{" "}
           </Button>
           <Button
-            href="/GeneralCuriosities"
+            href="/Teste"
             size="medium"
             color="color-800"
             fontsize="fontsmall"

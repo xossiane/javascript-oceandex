@@ -1,0 +1,13 @@
+.GeneralCuriosities {
+    position: relative;
+    
+    &__Content {
+        position: absolute;
+        top: 15%;
+        left: calc(50% - 16rem);
+
+        @media (min-width: 768px) {
+            left: calc(50% - 22.5rem);
+        }
+    }
+}

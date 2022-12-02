@@ -36,7 +36,7 @@ const index = () => {
         key={item.id}
         name={item.animal.name}
         order={item.animal.classifications.order}
-        phylum={item.animal.classifications.phylum}
+        // phylum={item.animal.location.content.content.value}
         src={item.animal.images.file.url}
       />
     ));
@@ -59,6 +59,7 @@ const index = () => {
   // let showAnimalSearch = animal.filter((item) => item.animal.name === search);
 
   console.log(search.length);
+  console.log(animal);
 
   return (
     <div className={styles[`Oceandex__Container`]}>

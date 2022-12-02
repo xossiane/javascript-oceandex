@@ -16,11 +16,13 @@ margin-top: 3rem;
     @media (min-width: 768px) {
         width: 45rem;
         height: 45.6rem;
+        
+position: relative;
     }
 
 }
 &--Text{
-    width: 32.1rem;
+    width: 32rem;
     line-height: 2.8rem;
     opacity: 0.6;
     margin: auto;
@@ -62,7 +64,7 @@ margin-top: 3rem;
         @media (min-width: 768px) {
             position: absolute;
             top: 350px;
-            left: 10%;
+            left: -10rem;
         }
     }
 
@@ -79,7 +81,7 @@ margin-top: 3rem;
             @media (min-width: 768px) {
                 position: absolute;
                 top: 350px;
-                right: 10%;
+                right: -10rem;
             }
         }
     }

@@ -16,6 +16,7 @@ const useContentful = () => {
       });
       const sanitizedAnimal = entries.items.map((item) => {
         const {
+          id,
           name,
           scientificName,
           height,
@@ -25,6 +26,7 @@ const useContentful = () => {
           classification,
           description,
           slug,
+          location,
         } = item.fields;
 
         const curiosities = curiosity?.fields;
@@ -34,6 +36,7 @@ const useContentful = () => {
         const images = image?.fields;
 
         const animal = {
+          id,
           name,
           scientificName,
           height,
@@ -43,16 +46,15 @@ const useContentful = () => {
           classifications,
           description,
           slug,
+          location,
         };
 
         return {
           animal,
-          curiosities,
         };
       });
 
       return sanitizedAnimal;
-      console.log(sanitizedAnimal);
     } catch (error) {
       console.log(`Error fetching content: ${error}`);
     }
