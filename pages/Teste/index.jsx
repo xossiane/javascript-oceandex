@@ -1,19 +1,18 @@
 import Container from "@organisms/Container";
 import GeneralCuriosities from "@molecules/GeneralCuriosities";
-
-import styles from "./styles.module.scss";
+import Background from "@atoms/Background";
 
 export default function Teste() {
   return (
-    <div className={styles[`GeneralCuriosities`]}>
+    <div>
       <Container
         href="/home"
         title="General Curiosities"
         backgroundColorHeader="#567A79"
-      />
-      <div className={styles[`GeneralCuriosities__Content`]}>
+      >
         <GeneralCuriosities />
-      </div>
+      </Container>
+      <Background />
     </div>
   );
 }

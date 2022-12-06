@@ -1,10 +1,10 @@
 @use "@styles/variables";
-.GeneralCuriosities{
-    
+.GeneralCuriosities{    
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+z-index: 100;
     
 &--Img{
 border-radius: 2.4rem;
@@ -39,7 +39,7 @@ position: relative;
     text-align: center;
     font-weight: bold;
     @media (min-width: 768px) {
-        margin: 2rem auto 3rem auto;
+        margin: 2rem auto 12rem auto;
     }
     
 }
@@ -60,11 +60,12 @@ position: relative;
     width: auto;
     overflow: visible;
     background: transparent;
+    margin-bottom: 10rem;
 
         @media (min-width: 768px) {
             position: absolute;
             top: 350px;
-            left: -10rem;
+            left: 3rem;
         }
     }
 
@@ -77,11 +78,12 @@ position: relative;
         width: auto;
         overflow: visible;
         background: transparent;
+        margin-bottom: 10rem;
     
             @media (min-width: 768px) {
                 position: absolute;
                 top: 350px;
-                right: -10rem;
+                right: 3rem;
             }
         }
     }

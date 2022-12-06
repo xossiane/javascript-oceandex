@@ -13,7 +13,6 @@
         box-sizing: border-box;
         width: 100%;
         padding: 2rem 0 4rem 0;
-        background-color: red;
     }
 
     &--rectangle {
@@ -35,10 +34,10 @@
         padding: 0 6.5rem;
     }
 
-    &--main {
+    &--article {
         position: relative;
         box-sizing: border-box;
-        background-color: variables.$background;
+        background-color: variables.$color-000;
         max-height: calc(100vh - 10rem);
         width: 100%;
         margin-top: -3.5rem;

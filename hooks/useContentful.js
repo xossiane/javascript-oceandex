@@ -14,6 +14,7 @@ const useContentful = () => {
         select: "fields",
         "fields.teste": "true",
       });
+      const animals = [];
       const sanitizedAnimal = entries.items.map((item) => {
         const {
           id,
@@ -49,18 +50,35 @@ const useContentful = () => {
           location,
         };
 
+        animals.push(animal);
         return {
           animal,
         };
       });
 
-      return sanitizedAnimal;
+      return animals;
     } catch (error) {
       console.log(`Error fetching content: ${error}`);
     }
   };
 
-  return { getAnimals };
+  const getAnimal = async (animal) => {
+    try {
+      const animals = await getAnimals();
+      const newAnimal = animals.find((a) => {
+        return (
+          a.name === animal ||
+          a.classifications.order === animal ||
+          a.classifications.phylum === animal
+        );
+      });
+      return [newAnimal];
+    } catch (error) {
+      console.log(`Error fetching content: ${error}`);
+    }
+  };
+
+  return { getAnimals, getAnimal };
 };
 
 export default useContentful;
