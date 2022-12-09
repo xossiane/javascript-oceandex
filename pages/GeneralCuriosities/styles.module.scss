@@ -3,7 +3,7 @@
   &__Container {
     background-color: variables.$color-000;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     margin-top: 3.9rem;
     margin-bottom: 5rem;
     z-index: 10;
@@ -15,9 +15,15 @@
     width: 100%;
     flex-direction: column;
     align-content: center;
+    height: 100vh;
 
     &--text {
       margin: 5.5rem 4.1rem auto 6.8rem;
+      
+      @media (max-width: variables.$tablet){
+        background-color: variables.$color-000;
+        z-index: 5;
+      }
     }
   }
   &__Header {
@@ -37,6 +43,16 @@
     position: absolute;
     top: 50px;
     left: 20px;
+    @media (min-width: variables.$tablet){
+      position: absolute;
+    }
+  }
+
+  &__Background{
+    display: none;
+    @media (min-width: variables.$tablet){
+      display: flex;
+    }
   }
 
 }

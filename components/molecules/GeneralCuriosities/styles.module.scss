@@ -11,6 +11,7 @@ border-radius: 2.4rem;
 width: 30rem;
 height: 31.2rem;
 margin-top: 3rem;
+z-index: 5;
 
 
     @media (min-width: 768px) {
@@ -19,10 +20,13 @@ margin-top: 3rem;
     }
 
 }
+&--Name{
+    margin-top: 3rem;
+}
 &--Text{
     width: 32.1rem;
     line-height: 2.8rem;
-    opacity: 0.6;
+    opacity: 0.8;
     margin: auto;
     margin: 3rem auto 3rem auto;
     overflow-y: auto;
@@ -30,14 +34,20 @@ margin-top: 3rem;
     
     @media (min-width: 768px) {
         width: 45rem;
+        background-color: variables.$color-000;
+        z-index: 5;
     }
 }
 &--Tag{    
     margin: 2rem auto -3rem auto;
     text-align: center;
     font-weight: bold;
+    background-color: variables.$color-000;
+    z-index: 5;
     @media (min-width: 768px) {
         margin: 2rem auto 3rem auto;
+        background-color: variables.$color-000;
+        position: relative;
     }
     
 }

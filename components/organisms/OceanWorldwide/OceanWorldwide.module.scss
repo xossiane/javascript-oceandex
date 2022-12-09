@@ -6,9 +6,8 @@
     width: 100%;
     height: 100vh;
     border-top-left-radius: 4.2rem;
-    border-top-right-radius: 4.2rem;
-    z-index: 10;
-    
+    border-top-right-radius: 4.2rem;z-index: 10;
+
     
   &__header{
     display: flex;
@@ -34,7 +33,7 @@
     z-index: 100;
     background-color: variables.$color-000;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     flex-direction: column;
     align-content: center;
     border-top-left-radius: 4.2rem;
@@ -43,15 +42,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 5rem;
       width: 100%;
-      height: 70rem;
+      height: 54rem;
       justify-content: space-evenly;
       z-index: 5;
       position: relative;
-      @media (min-width: variables.$tablet) {
-        padding-top: 25rem;
-      }
+      
     }  
   }
 }

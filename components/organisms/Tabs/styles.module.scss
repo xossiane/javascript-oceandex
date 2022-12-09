@@ -10,9 +10,8 @@
 }
 
 .TabsList{
-    width: 100%;
-    display: flex;
-   justify-content: center;
+   display: flex;
+   justify-content: space-around;
   
 }
 
@@ -23,16 +22,19 @@
     border: 0;
     padding: 0;
     background-color: variables.$color-000;
+    opacity: 60%;
 
     &--text:hover {
         color: #6C79DB;
         border-bottom: 1px solid #6C79DB;
         font-weight: bold;
+        opacity: 100%;
     }
     &--text:focus-within {
         color: #6C79DB;
         border-bottom: 1px solid #6C79DB;
         font-weight: bold;
+        opacity: 100%;
     }
  
 }
@@ -40,4 +42,6 @@
 .TabsContent{
     display: flex;
     flex-direction: column;
+    
+    
 }

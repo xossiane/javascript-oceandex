@@ -1,9 +1,10 @@
-import GeneralCuriositiesPage from "./GeneralCuriosities";
+import Home from "./home";
+
 
 export default function MainPage() {
   return (
     <>
-      <GeneralCuriositiesPage></GeneralCuriositiesPage>
+      <Home></Home>
     </>
   );
 }

@@ -1,11 +1,16 @@
+@use "@styles/variables";
 .Background {
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
-  max-height: 90%;
+  max-height: 95%;
   width: 100%;
   z-index: 0;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  opacity: 50%;
+  
+  @media (min-width: variables.$tablet){
+    display: flex;
+    opacity: 15%;
+  }
 }

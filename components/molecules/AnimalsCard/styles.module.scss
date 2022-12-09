@@ -1,3 +1,4 @@
+@use "@styles/variables";
 .animalsCard {
   display: grid;
   grid-template:
@@ -6,8 +7,8 @@
     "classification img" auto
     / 50% 50%;
   // position: relative;
-  width: 95%;
-  height: 250px;
+  
+  
   border-radius: 1rem;
   padding: 0.8rem;
   overflow: hidden;
@@ -33,13 +34,13 @@
     grid-area: img;
     align-self: center;
     object-fit: contain;
-    width: 90%;
-    max-height: 90%;
+    
+    
     max-width: 170px;
     max-height: 170px;
   }
 
-  &--blue {
+/*   &--blue {
     background-color: #7D8EB5;
   }
   &--rose {
@@ -56,5 +57,16 @@
   }
   &--purple {
     background-color: #567A79;
+  } */
+
+  background-color: black;
+  &:nth-child(3n+2){
+    background-color: variables.$color-100;
+  }
+  &:nth-child(3n+1){
+    background-color: variables.$color-200;
+  }
+  &:nth-child(3n){
+    background-color: black;
   }
 }

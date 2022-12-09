@@ -4,6 +4,7 @@ import AnimalsTag from "@molecules/AnimalsTag";
 import TabsDemo from "@organisms/Tabs";
 import Background from "@atoms/Background";
 import styles from "./styles.module.scss";
+import Like from "@atoms/Like";
 
 export default function AboutPage() {
   return (
@@ -21,19 +22,11 @@ export default function AboutPage() {
       </div>
       <div className={styles[`AboutPage__Content`]}>
         <div className={styles[`AboutPage__Container`]}>
-          <img
-            className={styles[`AboutPage__Header--rectangle`]}
-            src="assets/images/extras/Rectangle.png"
-            alt=""
-          />
-          <img
-            className={styles[`AboutPage__Header--dotted`]}
-            src="assets/images/extras/dotted.png"
-            alt=""
-          />
+        
 
           <header className={styles[`AboutPage__Header`]}>
             <Arrow href="/Oceandex" white={true}></Arrow>
+          {/*   <Like className={styles[`AboutPage__Heart`]}></Like> */}
           </header>
           <section className={styles[`AboutPage__Header--info`]}>
             <Heading
@@ -45,8 +38,8 @@ export default function AboutPage() {
               {" "}
               Octopus{" "}
             </Heading>
-            <section className={styles[`AboutPage__Header--tag`]}>
-              <AnimalsTag label={"Octopoda"}></AnimalsTag>{" "}
+            <section className={styles[`AboutPage__tag`]}>
+              <AnimalsTag className={styles[`AboutPage__tag--bg`]} label={"Animalia"}></AnimalsTag>{" "}
               <AnimalsTag label={"Mollusca"}></AnimalsTag>
             </section>
             <img

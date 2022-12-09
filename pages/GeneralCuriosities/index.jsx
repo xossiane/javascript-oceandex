@@ -31,8 +31,8 @@ export default function GeneralCuriositiesPage() {
       <div className={styles[`GeneralCuriositiesPage__Container`]}>
         <GeneralCuriosities></GeneralCuriosities>
       </div>
-      <span>
-        <Background />
+      <span className={styles[`GeneralCuriositiesPage__Background`]}>
+      <Background/>
       </span>
     </div>
   );

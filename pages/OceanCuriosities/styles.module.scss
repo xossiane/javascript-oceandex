@@ -24,10 +24,12 @@
             justify-content: space-evenly;
             margin: -25rem auto 0rem auto;
             width: 30rem;
+            position: relative;
+            
         }
   &__container {
     background-color: variables.$color-500;
-    width: 37.5rem;
+    width: 100vw;
   
   }
   &__header{
@@ -49,8 +51,8 @@
   &__content {
     margin-top: 3rem;
     background-color: variables.$color-000;
-    width: 37.5rem;
-    height: 79rem;
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
     align-content: center;
     border-top-left-radius: 4.2rem;

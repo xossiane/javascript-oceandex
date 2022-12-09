@@ -10,11 +10,15 @@
         text-align: center;
         width: fit-content;
         border-radius: 3.8rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-top: 0.12rem;
-        padding-bottom: 0.12rem;
+        padding-left: 3.9rem;
+        padding-right: 3.9rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
         background-color: rgba(255, 255, 255, 0.2);
         
+    }
+
+    &--mt{
+        background-color: variables.$color-500;
     }
    }

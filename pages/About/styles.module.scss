@@ -28,10 +28,23 @@
             flex-direction: row;
             background-color: variables.$color-000;
         }
+        
     }
+    &__tag{
+        width: 100%;
+        justify-content: space-around;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: row;
+        &--bg{
+        display: flex;
+        
+        margin-right: 4rem;
+        
+    }}
 
     &__Container{
-        background-color: variables.$color-400;
+        background-color: variables.$color-500;
         display: flex;
         flex-direction: column;
         justify-content: center;  
@@ -47,7 +60,7 @@
             height: 540px;
             margin: 0 20px 0 3%;     
         }
-
+        
     &--bottom{
         height: 50vh;
         width: 100%;
@@ -72,45 +85,34 @@
         }
     }
     
+    
 }
+
 &__Header{
-    display: flex;
-    flex-direction: column;
-    margin-left: 3rem;
-    width: 100%;
-    position: absolute;
-    top: 2rem;
+   align-items: center;
+   margin-left: 1.8rem;
     @media (min-width: 768px) {
        margin: 0;
        top: 2rem;
        right: -2rem;
+       display: none;
     }
     &--rectangle{
         width: 100px;
         @media (min-width: 768px) {
             display: none;
         }
-    }
-    &--dotted{
-        position: absolute;
-        top: 0;
-        margin-left: 50%;
-        @media (min-width: 768px) {
-            display: none;
-        }
+    
     }
     &--info{
-        margin-left: 3rem;
-        margin-top: 1rem;
+      margin-left: 1.3rem;
+      margin-right: 1.3rem;
         @media (min-width: 768px) {
             margin-left: 2rem;
             margin-top: 6rem;
         }
     }
-    &--tag{
-        display: flex;
-        margin-top: -1.5rem;
-    }
+    
     &--text{
         margin-top: -2rem;
     }
@@ -121,7 +123,7 @@
         width: 30rem;
         height: 25.7rem;
         transform: translateX(0%);
-        transform: translateY(7%);
+        transform: translateY(8%);
         margin: 0 auto 5rem;
         
     }

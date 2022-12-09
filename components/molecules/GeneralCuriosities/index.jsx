@@ -29,6 +29,14 @@ function GeneralCuriosities() {
   return (
     <>
       <section className={styles[`GeneralCuriosities`]}>
+      <Text
+            size="large"
+            style="bold"
+            
+            className={styles[`GeneralCuriosities--Name`]}
+          >
+            {animals[animalsID].name}
+          </Text>
         <img
           className={styles[`GeneralCuriosities--Img`]}
           src={animals[animalsID].tabs[0].curiosities[0].curiositiesImage}
@@ -44,11 +52,11 @@ function GeneralCuriosities() {
         <div>
           <Text
             size="medium"
-            style="italic"
+            
             className={styles[`GeneralCuriosities--Tag`]}
           >
-            {" "}
-            {animals[animalsID].phylum} | {animals[animalsID].order}
+            {" "}phylum: {" "}
+            {animals[animalsID].phylum} || {" "}order: {" "}{animals[animalsID].order}
           </Text>
         </div>
       </section>

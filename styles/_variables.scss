@@ -1,20 +1,39 @@
-$background: #e5e5e5;
 
+
+/* color variables */
+$color-000: #ffffff;
+$color-100: #FFBFC3;
+$color-200: #E98D90;
+$color-300: #B64760;
+$color-400: #7D8EB5;
+$color-500: #687696;
+$color-600: #ACBBA9;
+$color-700: #6E786B;
+$color-800: #567A79;
+
+
+
+
+
+
+
+$color-pink--light: #FFBFC3;
+$color-pink: #E98D90;
+$color-pink--dark: #B64760;
+
+
+
+
+
+$background: #e5e5e5;
 $black: #000;
 $grey: #303943;
 $fontsmall:14px;
 $fontmedium:24px;
 
 
-$color-000: #ffffff;
-$color-100: #FFBFC3;
-$color-200: #E98D90;
-$color-300: #B64760;
-$color-400: #7D8EB5;
-$color-500: #737185;
-$color-600: #ACBBA9;
-$color-700: #6E786B;
-$color-800: #567A79;
-
+/* breakpoints media query */
+$tablet: 768px;
+$desktop: 1024px;
 
 
