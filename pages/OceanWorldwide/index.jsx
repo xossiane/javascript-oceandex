@@ -1,4 +1,4 @@
-import Arrow from "@atoms/Arrow";
+import Arrow from "@atoms/ArrowLeft";
 import Background from "@atoms/Background";
 import Button from "@atoms/Button";
 import Heading from "@atoms/Heading";
