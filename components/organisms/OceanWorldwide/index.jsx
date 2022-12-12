@@ -13,7 +13,7 @@ export default function OceanWorldWide() {
         <img
           className={styles[`OceanWorldwide__header--rectangle`]}
           src="assets/images/extras/Rectangle.png"
-          alt=""
+          alt="ornament"
         />
         <section className={styles[`OceanWorldwide__header`]}>
           <Arrow white={true}></Arrow>
