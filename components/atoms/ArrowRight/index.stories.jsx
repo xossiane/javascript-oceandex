@@ -2,6 +2,7 @@ import ArrowRight from ".";
 
 export default {
   title: "Atoms/ArrowRight",
+  component: ArrowRight,
   args: {},
 };
 
