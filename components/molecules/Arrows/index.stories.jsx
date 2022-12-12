@@ -2,6 +2,7 @@ import Arrows from ".";
 
 export default {
   title: "Molecules/Arrows",
+  component: Arrows,
   args: {},
 };
 
