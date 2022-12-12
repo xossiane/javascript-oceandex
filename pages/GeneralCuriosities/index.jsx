@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import React from "react";
 import Background from "@atoms/Background";
 import Heading from "@atoms/Heading";
-import Arrow from "@atoms/Arrow";
+import Arrow from "@atoms/ArrowLeft";
 
 export default function GeneralCuriositiesPage() {
   return (
