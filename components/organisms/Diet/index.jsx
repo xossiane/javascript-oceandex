@@ -4,40 +4,40 @@ import Text from "@atoms/Text";
 export default function Diet() {
   return (
     <section className={styles[`Diet__Container`]}>
-      <hr className={styles[`Diet__hrItem`]}></hr>
+      
       <span className={styles[`Diet__imgContainer`]}>
         <Text color="black" size="small" className={styles[`Diet__animalName`]}>
-          Nome do Animal
+          Small Fish
         </Text>
         <img
           className={styles[`Diet__imgItem`]}
-          src="assets/images/diet/algae.png"
-          alt="Alga verde"
-          width={"120rem"}
+          src="assets/images/diet/flatFish.png"
+          alt="Cod"
+          
         ></img>
       </span>
       <hr className={styles[`Diet__hrItem`]}></hr>
       <span className={styles[`Diet__imgContainer`]}>
         <Text color="black" size="small" className={styles[`Diet__animalName`]}>
-          Nome do Animal
+          Clam
         </Text>
         <img
           className={styles[`Diet__imgItem`]}
-          src="assets/images/diet/algae.png"
-          alt="Alga verde"
-          width={"120rem"}
+          src="assets/images/diet/hermitCrabs.png"
+          alt="Clam"
+          
         ></img>
       </span>
       <hr className={styles[`Diet__hrItem`]}></hr>
       <span className={styles[`Diet__imgContainer`]}>
         <Text color="black" size="small" className={styles[`Diet__animalName`]}>
-          Nome do Animal
+          Crab
         </Text>
         <img
           className={styles[`Diet__imgItem`]}
-          src="assets/images/diet/algae.png"
-          alt="Alga verde"
-          width={"120rem"}
+          src="assets/images/diet/crab.png"
+          alt="Crab"
+          
         ></img>
       </span>
       <hr className={styles[`Diet__hrItem`]}></hr>

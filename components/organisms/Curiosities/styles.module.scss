@@ -4,19 +4,21 @@ flex-direction: column;
 
     &__text{
         width: 90%;
-        min-height: 25rem ;
+        /* min-height: 25rem ; */
         text-align: justify;
         line-height: 2.4rem;
-        margin: 1rem auto;
+        margin: 2.2rem auto 3rem auto;
     }
     &__img{
-        width: 30rem;
-        height: 18.1rem;
+        display: flex;
+        width: 34rem;
+        max-height: 20.5rem;
         border-radius: 2.4rem;
-        margin: 2rem auto;
+        margin: 3rem auto;
+        object-fit: cover;
         @media (min-width: 1024px) {
-            width: 45rem;
-            height: 27.1rem;
+            width: 50rem;
+            max-height: 27.3rem;
         }
     }
 }

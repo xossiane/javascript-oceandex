@@ -89,4 +89,11 @@
       justify-content: flex-start;
     }
   }
+  &__tags{
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem auto 2.1rem 0.58rem;
+    
+    
+  }
 }

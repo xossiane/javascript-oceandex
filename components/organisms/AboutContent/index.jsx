@@ -75,7 +75,7 @@ export default function AboutContent() {
         </div>
         
       </section>
-      <section>
+      <section className={styles[`AboutContent__tags`]} >
           <AnimalsTag mt="mt" label="Animalia"/>
           <AnimalsTag mt="mt" label="Mollusca"/>
         </section>

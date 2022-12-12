@@ -31,8 +31,8 @@ export default function AnimalsCard({ href, name, order, phylum, src }) {
           </Heading>
         </div>
         <div className={styles.animalsCard__classification}>
-          <AnimalsTag label={order}></AnimalsTag>
-          <AnimalsTag label={phylum}></AnimalsTag>
+          <AnimalsTag label={order} text="text"></AnimalsTag>
+          <AnimalsTag label={phylum} text="text"></AnimalsTag>
         </div>
         <img className={styles.animalsCard__img} src={src} alt="" />
       </div>
