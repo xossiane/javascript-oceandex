@@ -1,47 +1,45 @@
 @use "@styles/variables";
 
 .Container {
-    box-sizing: border-box;
-    background-color: variables.$color-000;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-areas: "header" "article" "footer";
+  box-sizing: border-box;
+  background-color: variables.$white;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas: "header" "article" "footer";
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(12, 7rem);
+    grid-gap: 1rem;
     align-items: center;
-    justify-content: center;
-    height: 100%;
-    
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(12, 7rem);
+    grid-gap: 4rem;
+  }
+
+  &__header {
     @media (min-width: 1024px) {
-        grid-template-columns: repeat(12, 7rem);
-        grid-gap: 1rem;
-        align-items: center;
+      grid-area: header;
+      grid-column-start: 1;
+      grid-column-end: 12;
+      align-items: center;
+      margin: 0 auto;
     }
+  }
 
-    @media (min-width: 1440px) {
-        grid-template-columns: repeat(12, 7rem);
-        grid-gap: 4rem;
-    }
+  &__article {
+    grid-area: article;
+    margin-top: 14rem;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    align-items: center;
+  }
 
-    &__header {
-        @media (min-width: 1024px) {
-            grid-area: header;
-            grid-column-start: 1;
-            grid-column-end: 12;
-            align-items: center;
-            margin: 0 auto;
-        }
-    }
-
-    &__article {
-        grid-area: article;
-        margin-top: 14rem;
-        grid-column-start: 1;
-            grid-column-end: 12;
-            align-items: center;
-    }
-
-    &__footer {
-        grid-area: footer;
-    }
-
-
+  &__footer {
+    grid-area: footer;
+  }
 }
