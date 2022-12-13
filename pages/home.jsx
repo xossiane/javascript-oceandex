@@ -4,6 +4,7 @@ import Heading from "@atoms/Heading";
 import Button from "@atoms/Button/index.jsx";
 import Text from "@atoms/Text";
 
+
 function Home() {
   return (
     <div className={styles[`Home`]}>
@@ -83,6 +84,7 @@ function Home() {
       <section>
         <Background />
       </section>
+     
     </div>
   );
 }
