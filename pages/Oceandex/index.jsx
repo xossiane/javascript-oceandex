@@ -37,6 +37,8 @@ const index = () => {
         name={item.animal.name}
         order={item.animal.classifications.order}
         phylum={item.animal.classifications.phylum}
+        Class={item.animal.classifications.class}
+        kingdom={item.animal.classifications.kingdom}
         src={item.animal.images.file.url}
       />
     ));

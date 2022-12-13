@@ -1,60 +1,70 @@
 .animalsCard {
-  display: grid;
-  grid-template:
+   display: grid;
+  /*grid-template-columns: 50% 50%;
+   */
+    grid-template:
     "name name" auto
     "classification img" auto
-    "classification img" auto
-    / 50% 50%;
+   //"classification img" auto
+    / 50% 50%; 
   // position: relative;
-  width: 95%;
+  //width: 95%;
   height: 250px;
+  padding-bottom: 3rem;
+  column-gap: 2rem;
+  
+
   border-radius: 1rem;
-  padding: 0.8rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
   overflow: hidden;
   text-decoration: none;
 
   &__name {
     grid-area: name;
     width: fit-content;
-    height: fit-content;
-    margin-left: 0.5rem;
+    //height: fit-content;
+    //margin-left: 0.5rem;
   }
 
   &__classification {
-    grid-area: classification;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
-    margin-top: 0.8rem;
+    //grid-area: classification;
+    //display: flex;
+    //flex-direction: column;
+    //width: 100%;
+    //height: fit-content;
+    //margin-top: 0.8rem;
+    
   }
 
   &__img {
-    grid-area: img;
+     grid-area: img;
     align-self: center;
     object-fit: contain;
+   
     width: 90%;
     max-height: 90%;
     max-width: 170px;
     max-height: 170px;
+  
   }
 
   &--blue {
-    background-color: #7D8EB5;
+    background-color: #7d8eb5;
   }
   &--rose {
     background-color: #737185;
   }
   &--pink {
-    background-color: #E98D90;
+    background-color: #e98d90;
   }
   &--green {
-    background-color: #B64760;
+    background-color: #b64760;
   }
   &--aqua {
-    background-color: #6E786B;
+    background-color: #6e786b;
   }
   &--purple {
-    background-color: #567A79;
+    background-color: #567a79;
   }
 }

@@ -1,7 +1,7 @@
 @use "@styles/variables";
 
 .heading {
-  &--Xlarge{
+  &--Xlarge {
     font-size: 3rem;
   }
   &--large {
@@ -23,11 +23,13 @@
   &--white {
     color: variables.$color-000;
   }
-
+  &--normal {
+    font-weight: normal;
+  }
   &--bold {
     font-weight: bold;
   }
-  &--italic{
+  &--italic {
     font-style: italic;
   }
 }
