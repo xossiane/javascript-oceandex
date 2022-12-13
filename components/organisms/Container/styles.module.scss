@@ -1,49 +1,42 @@
 @use "@styles/variables";
 
 .Container {
-    width: 100%;
-    min-height: 100vh;
-    max-height: auto;
-    margin: 0;
-    padding: 0;
-    position: relative;
-
-    &--header {
-        
-        box-sizing: border-box;
-        width: 100%;
-        padding: 2rem 0 4rem 0;
+    background-color: variables.$color-000;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: "header" "article" "footer";
+    align-items: center;
+    justify-content: center;
+    // width: 100%;
+    height: 100%;
+    // margin: 0;
+    // padding: 0;
+    
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(12, 7rem);
+        grid-gap: 1rem;
     }
 
-    &--rectangle {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
+    @media (min-width: 1440px) {
+        grid-template-columns: repeat(12, 7rem);
+        grid-gap: 4rem;
     }
 
-    &--arrow {
-        position: absolute;
-        top: 3.4rem;
-        left: 2rem;
-        z-index: 10;
+    &__header {
+        @media (min-width: 1024px) {
+            grid-area: header;
+            grid-column-start: 1;
+            grid-column-end: 12;
+            align-items: center;
+        }
     }
 
-    &--title {
-        text-align: center;
-        padding: 0 6.5rem;
+    &__article {
+        grid-area: article;
     }
 
-    &--article {
-        position: relative;
-        box-sizing: border-box;
-        background-color: variables.$color-000;
-        max-height: calc(100vh - 10rem);
-        width: 100%;
-        margin-top: -3.5rem;
-        padding: 2rem;
-        border-top-left-radius: 4.2rem;
-        border-top-right-radius: 4.2rem;
+    &__footer {
+        grid-area: footer;
     }
 
 
