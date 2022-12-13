@@ -4,6 +4,7 @@ const useContentful = () => {
   const client = createClient({
     space: process.env.NEXT_PUBLIC_SPACE,
     accessToken: process.env.NEXT_PUBLIC_ACCESSTOKEN,
+    //host: "preview.contentful.com",
     host: "https://cdn.contentful.com",
   });
 
