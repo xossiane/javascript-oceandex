@@ -13,12 +13,8 @@ const MyApp = ({ Component, pageProps }) => {
           href="/assets/images/favicon-32x32.png"
         />
       </Head>
-      (
-      <>
-        <Component {...pageProps} />
-        <Footer />
-      </>
-      );
+      <Component {...pageProps} />
+      <Footer />;
     </div>
   );
 };
