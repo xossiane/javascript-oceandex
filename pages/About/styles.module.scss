@@ -106,19 +106,33 @@
 
 &__Header{
    align-items: center;
-   margin-left: 1.8rem;
+   display: flex;
+   justify-content: space-between;
+   margin-left: 1.7rem;
+   margin-top: 1rem;
     @media (min-width: 768px) {
        margin: 0;
        top: 2rem;
        right: -2rem;
        display: none;
     }
-    &--rectangle{
-        width: 100px;
+    &--like{
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1.7rem;
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    
+    }
+    &--arrow{
+        width: 3rem;
+        height: 3rem;
+        
+        margin-right: 1.7rem;
         @media (min-width: 768px) {
             display: none;
         }
-    
     }
     &--info{
       margin-left: 1.3rem;

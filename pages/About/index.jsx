@@ -5,6 +5,7 @@ import TabsDemo from "@organisms/Tabs";
 import Background from "@atoms/Background";
 import styles from "./styles.module.scss";
 import Like from "@atoms/Like";
+import ArrowLeft from "@atoms/ArrowLeft";
 
 export default function AboutPage() {
   return (
@@ -25,7 +26,9 @@ export default function AboutPage() {
         
 
           <header className={styles[`AboutPage__Header`]}>
-            <Arrow href="/Oceandex" white={true}></Arrow>
+            <ArrowLeft href="/Oceandex" white={true} className={styles[`AboutPage__Header--arrow`]}/>
+            <Like white={true} className={styles[`AboutPage__Header--like`]}></Like>
+            
           {/*   <Like className={styles[`AboutPage__Heart`]}></Like> */}
           </header>
           <section className={styles[`AboutPage__Header--info`]}>

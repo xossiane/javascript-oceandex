@@ -1,7 +1,9 @@
-export default function Like({ liked = false, size }) {
+export default function Like({ liked = false, size, className }) {
   const color = "#ffffff";
+  const classList = [];
+
   return (
-    <>
+    <div className={`${classList.join(" ")} ${className}`}>
       {liked ? (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path
@@ -26,6 +28,6 @@ export default function Like({ liked = false, size }) {
           />
         </svg>
       )}{" "}
-    </>
+    </div>
   );
 }
