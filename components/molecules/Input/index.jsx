@@ -6,9 +6,6 @@ import { useState } from "react";
 export default function Input() {
   const [search, setSearch] = useState("");
 
-  console.log(search);
-  console.log(search.length);
-
   return (
     <form className={styles.inputContainer}>
       <SearchIcon />
