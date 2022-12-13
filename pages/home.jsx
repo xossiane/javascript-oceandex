@@ -2,7 +2,6 @@ import styles from "../styles/home.module.scss";
 import Background from "@atoms/Background";
 import Heading from "@atoms/Heading";
 import Button from "@atoms/Button/index.jsx";
-import Text from "@atoms/Text";
 
 function Home() {
   return (
@@ -20,66 +19,58 @@ function Home() {
             className={styles[`Home__buttons--unit`]}
             description="Animal’s List"
             img="/assets/images/icons/icon.svg"
-          >
-            <Text color="white" size="small">
-              OceanDex
-            </Text>{" "}
-          </Button>
-          <Button
-            href="/GeneralCuriosities"
-            size="medium"
-            color="color-800"
-            fontsize="fontsmall"
-            className={styles[`Home__buttons--unit`]}
-          >
-            <Text color="white" size="small">
-              General Curiosities
-            </Text>{" "}
-          </Button>
+            title="Ocendex"
+          ></Button>
           <Button
             href="/OceanWorldwide"
             size="medium"
             color="color-500"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
-          >
-            <Text color="white" size="small">
-              Ocean Worldwide
-            </Text>{" "}
-          </Button>
+            description="Ocean's Curiosities"
+            img="/assets/images/icons/oceanworldwide.svg"
+            title="Ocean Worldwide"
+          ></Button>
+          <Button
+            href="/GeneralCuriosities"
+            size="medium"
+            color="color-800"
+            fontsize="fontsmall"
+            className={styles[`Home__buttons--unit`]}
+            description="Animal's Curiosities"
+            img="/assets/images/icons/general.svg"
+            title="Animal's Curiosities"
+          ></Button>
           <Button
             href="/"
             size="medium"
             color="color-700"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
-          >
-            <Text color="white" size="small">
-              Trophic Level
-            </Text>{" "}
-          </Button>
+            title="Trophic Level"
+            description="Food Chain"
+            img="/assets/images/icons/trophic.svg"
+          ></Button>
           <Button
             href="/"
             size="medium"
             color="color-200"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
-          >
-            <Text color="white" size="small">
-              Favorite Animals
-            </Text>{" "}
-          </Button>
+            title="Favorite Animals"
+            description="Selected animals(by heart)"
+            img="/assets/images/icons/favorite.svg"
+          ></Button>
           <Button
             href="/"
             size="medium"
             color="color-300"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
-          >
-            <Text color="white" size="small">
-              Who are you in the oceanDex?
-            </Text>{" "}
-          </Button>
+            title="Who are you in oceanDex"
+            description="Who made this"
+            img="/assets/images/icons/author.svg"
+          ></Button>
         </section>
       </main>
       <section>

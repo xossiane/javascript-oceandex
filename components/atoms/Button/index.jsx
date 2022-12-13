@@ -2,13 +2,14 @@ import styles from "./styles.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import Heading from "@atoms/Heading";
+import Text from "@atoms/Text";
 export default function Button({
   href,
   size,
   color,
   fontsize,
   className,
-  children,
+  title,
   img,
   description,
 }) {
@@ -25,11 +26,11 @@ export default function Button({
   return (
     <>
       <div className={`${deskTopClass.join(" ")}`}>
-        <Heading level="1" color="white">
-          {children}
+        <Heading level="1" color="white" size="Xlarge" weight="normal">
+          {title}
         </Heading>
         <Image src={img} width={196} height={181} alt="" />
-        <p>{description}</p>
+        <Text size="large" color="white" weight="bold">{description}</Text>
         <div className={styles[`button__linktag`]}>
           <Link href={`${href}`}>
             <div className={styles[`button__desktopLink`]}>Read More...</div>
@@ -38,8 +39,14 @@ export default function Button({
       </div>
 
       <Link href={`${href}`}>
-        <div className={`${classList.join(" ")} ${className}`}>{children}</div>
+        <div className={`${classList.join(" ")} ${className}`}>
+          
+          <Heading level="2" color="white" size="small"  >
+            {title}
+          </Heading>
+        </div>
       </Link>
     </>
   );
+  
 }
