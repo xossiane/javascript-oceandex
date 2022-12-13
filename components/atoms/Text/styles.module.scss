@@ -4,16 +4,22 @@ size: 14px, 18px, 22px;
  */
 
 .text {
-  &--Xlarge {
-    font-size: 2.2rem;
+  &--XXLarge {
+    font-size: 3.5rem;
+  }
+  &--XLarge {
+    font-size: 2.8rem;
   }
   &--large {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
   &--medium {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   &--small {
+    font-size: 1.6rem;
+  }
+  &--XSmall {
     font-size: 1.4rem;
   }
 
