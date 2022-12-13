@@ -1,0 +1,7 @@
+@use "@styles/variables";
+
+.card{
+    &--blue{
+        background-color: variables.$color-400;
+    }
+}

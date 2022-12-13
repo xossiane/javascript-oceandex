@@ -18,6 +18,8 @@ function Home() {
             color="color-400"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
+            description="Animal’s List"
+            img="/assets/images/icons/icon.svg"
           >
             <Text color="white" size="small">
               OceanDex
