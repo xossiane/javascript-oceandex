@@ -1,4 +1,9 @@
 .githubIcon {
   width: 2rem;
   height: 2rem;
+
+  @media screen and (min-width: 1440px) {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
 }
