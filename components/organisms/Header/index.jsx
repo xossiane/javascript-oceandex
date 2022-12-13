@@ -9,11 +9,11 @@ export default function Header() {
   return (
     <div>
       <div className={styles[`Header`]}>
-        <div className={styles[`Header__logo`]}>
+        <div>
           <Link href="/">
             <a>
               <img
-                className={styles[`Header__logo-img`]}
+                className={styles[`Header__logo`]}
                 src="assets/images/logo.svg"
                 alt="logo"
               />

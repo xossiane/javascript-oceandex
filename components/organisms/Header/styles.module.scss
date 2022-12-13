@@ -1,6 +1,7 @@
 @use "@styles/variables";
 
 .Header {
+    box-sizing: border-box;
     display: grid;
     grid-area: header;
     grid-template-columns: repeat(4, 7rem);
@@ -8,57 +9,45 @@
     grid-template-areas: logo logo navMobile navMobile;
     height: 7.6rem;
     align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
-    // display: flex;
-    justify-content: space-between;
+    left: 0;
     width: 100%;
     z-index: 1000;
     background-color: variables.$color-000;
     margin: 0 auto;
+    padding: 0 1.75rem;
     
     @media (min-width: 1024px) {
         display: grid;
-        grid-template-columns: 12, 7rem;
+        grid-template-columns: repeat(12, 7rem);
         grid-gap: 1rem; 
         grid-template-areas: "logo logo navDesktop navDesktop navDesktop navDesktop navDesktop navDesktop navDesktop navDesktop navDesktop navDesktop";
         align-items: center;
-        max-width: 1024px;
+        justify-content: center;
         height: 14.2rem;
-        top: 0;
-        left: 0;
-        margin: 0 auto;
     }
 
     @media (min-width: 1440px) {
         display: grid;
-        grid-template-columns: 12, 7rem;
+        grid-template-columns: repeat(12, 7rem);
         grid-gap: 4rem; 
         grid-template-areas: "logo logo navDesktop navDesktop navDesktop navDesktop navDesktop navDesktop navDesktop navDesktop navDesktop navDesktop";
-        height: 14.2rem;        
-        max-width: 1440px;
+        height: 14.2rem;  
     }
 
 
-    &__logo {        
-        position: absolute;
-        top: 0;
-        left: 1.75rem;
+    &__logo {
+        // width: 100%;
         cursor: pointer;
         @media (min-width: 1024px) {
             position: relative;
-            // left: 0;
             grid-area: logo;            
             grid-column-start: 1;
             grid-column-end: 2;
+            width: 13rem;
         }
-
-        &-img {
-            @media (min-width: 1024px){ 
-                width: 13rem;
-            }
-        }
-
     }
 
     &__menuMobile {
@@ -74,7 +63,7 @@
         @media (min-width: 1024px) {
            grid-area: navDesktop;                       
            grid-column-start: 3;
-           grid-column-end: 12;
+           grid-column-end: 13;
            display: block;
         }
     }
