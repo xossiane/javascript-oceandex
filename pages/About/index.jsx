@@ -1,4 +1,4 @@
-import Arrow from "@atoms/Arrow";
+import Arrow from "@atoms/ArrowLeft";
 import Heading from "@atoms/Heading";
 import AnimalsTag from "@molecules/AnimalsTag";
 import TabsDemo from "@organisms/Tabs";
