@@ -27,9 +27,7 @@ export default function AboutPage() {
 
           <header className={styles[`AboutPage__Header`]}>
             <ArrowLeft href="/Oceandex" white={true} className={styles[`AboutPage__Header--arrow`]}/>
-            <Like white={true} className={styles[`AboutPage__Header--like`]}></Like>
-            
-          {/*   <Like className={styles[`AboutPage__Heart`]}></Like> */}
+            <Like white={true} className={styles[`AboutPage__Header--like`]}/>
           </header>
           <section className={styles[`AboutPage__Header--info`]}>
             <Heading
