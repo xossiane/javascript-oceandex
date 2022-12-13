@@ -4,16 +4,16 @@
 /* variables */
 
 * {
-  font-size: 62.5%; /* 1rem =10px; */
   font-family: "AbeeZee", sans-serif;
 }
 *::-webkit-scrollbar {
   // display: none;
 }
- 
+
 html {
   margin: 0;
   padding: 0;
+  font-size: 62.5%; /* 1rem =10px; */
   background-color: variables.$background;
 }
 
