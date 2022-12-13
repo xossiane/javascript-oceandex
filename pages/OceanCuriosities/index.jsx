@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import styles from "./styles.module.scss";
-import Arrow from "@atoms/Arrow";
+import Arrow from "@atoms/ArrowLeft";
 import Heading from "@atoms/Heading";
 
 import oceancuriosities from "../../../javascript-oceandex/oceancuriosities.json";
