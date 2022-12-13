@@ -4,7 +4,7 @@ const useContentful = () => {
   const client = createClient({
     space: process.env.NEXT_PUBLIC_SPACE,
     accessToken: process.env.NEXT_PUBLIC_ACCESSTOKEN,
-    host: "preview.contentful.com",
+    host: "https://cdn.contentful.com",
   });
 
   const getAnimals = async () => {
@@ -12,7 +12,7 @@ const useContentful = () => {
       const animalsList = client.getEntries({
         content_type: "animal",
         select: "fields",
-        "fields.id": "1",
+        //"fields.completeAnimal": "true",
       });
       const sanitizedList = (await animalsList).items.map((item) => {
         const classification = item.fields.classification.fields;
@@ -23,8 +23,9 @@ const useContentful = () => {
           oceanFile:
             item.fields.location.content[1].data.target.fields.file.url,
         };
+        //const location = item.fields.location.content;
 
-        return { ...item.fields, image, location, classification };
+        return { ...item.fields, classification, image, location };
       });
 
       return sanitizedList;
