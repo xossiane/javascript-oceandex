@@ -34,7 +34,7 @@ export default function OceanWorldWide() {
             <Button
               href="/home"
               size="medium"
-              color="color-500"
+              color="purple"
               fontsize="fontsmall"
               className={styles[`OceanWorldwide__buttons--unit`]}
             >
@@ -46,7 +46,7 @@ export default function OceanWorldWide() {
             <Button
               href="/home"
               size="medium"
-              color="color-500"
+              color="purple"
               fontsize="fontsmall"
               className={styles[`OceanWorldwide__buttons--unit`]}
             >
@@ -58,7 +58,7 @@ export default function OceanWorldWide() {
             <Button
               href="/home"
               size="medium"
-              color="color-500"
+              color="purple"
               fontsize="fontsmall"
               className={styles[`OceanWorldwide__buttons--unit`]}
             >
@@ -70,7 +70,7 @@ export default function OceanWorldWide() {
             <Button
               href="/home"
               size="medium"
-              color="color-500"
+              color="purple"
               fontsize="fontsmall"
               className={styles[`OceanWorldwide__buttons--unit`]}
             >
@@ -82,7 +82,7 @@ export default function OceanWorldWide() {
             <Button
               href="/home"
               size="medium"
-              color="color-500"
+              color="purple"
               fontsize="fontsmall"
               className={styles[`OceanWorldwide__buttons--unit`]}
             >

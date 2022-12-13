@@ -1,36 +1,29 @@
 @use "@styles/variables";
 
-.Diet__Container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-        
-    }
+.Diet__Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 .Diet__imgContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
-.Diet__hrItem{
-       border:none;
-       height:2px;
-       background-color:#00000042;
-       opacity:40%;
-       width: 100%;
-       margin:0;
+.Diet__hrItem {
+  border: none;
+  height: 2px;
+  background-color: variables.$black--opacity;
+  opacity: 40%;
+  width: 100%;
+  margin: 0;
 }
 
-.Diet__animalName{
-       color:#000000;
-       opacity: 80%;
-       letter-spacing:0.5px;
+.Diet__animalName {
+  color: variables.$black;
+  opacity: 80%;
+  letter-spacing: 0.5px;
 }
-
-
-
-
-
-

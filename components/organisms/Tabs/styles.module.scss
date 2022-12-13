@@ -1,38 +1,35 @@
 @use "@styles/variables";
-.TabsRoot{
-    
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: 2rem 3rem;
-    flex-direction: column;
-    
+
+.TabsRoot {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 2rem 3rem;
+  flex-direction: column;
 }
 
-.TabsList{
-    width: 100%;
-    display: flex;
-   justify-content: center;
-  
+.TabsList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.TabsTrigger{
-    position: relative;
-    justify-content: space-between;
-    margin: 1rem;
-    border: 0;
-    padding: 0;
-    background-color: variables.$color-000;
+.TabsTrigger {
+  position: relative;
+  justify-content: space-between;
+  margin: 1rem;
+  border: 0;
+  padding: 0;
+  background-color: variables.$white;
 
-    &--text:hover {
-        color: #6C79DB;
-        border-bottom: 1px solid #6C79DB;
-        font-weight: bold;
-    }
- 
+  &--text:hover {
+    color: variables.$blue;
+    border-bottom: 1px solid variables.$blue;
+    font-weight: bold;
+  }
 }
 
-.TabsContent{
-    display: flex;
-    flex-direction: column;
+.TabsContent {
+  display: flex;
+  flex-direction: column;
 }
