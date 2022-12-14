@@ -13,11 +13,23 @@ const useContentful = () => {
       const animalsList = client.getEntries({
         content_type: "animal",
         select: "fields",
-        //"fields.completeAnimal": "true",
+        include: 5,
+        // "fields.completeAnimal": "true",
       });
       const sanitizedList = (await animalsList).items.map((item) => {
         const classification = item.fields.classification.fields;
         const image = item.fields.image.fields.file.url;
+        const dietList = item.fields.dietList?.fields.dietList.map((i) => {
+          return {
+            //...i.fields,
+            id: i.fields.id || "",
+            name: i.fields.name || "",
+            image: i.fields.image.fields.file.url,
+            // Padronizar como completeAnimal
+            completeAnimal:
+              i.fields.completeAnimal || i.fields.complteAnimal || "",
+          };
+        });
         //const curiosity = item.fields.curiosity.fields.description;
         const location = {
           oceanName: item.fields.location.content[0].content[0].value,
@@ -26,7 +38,7 @@ const useContentful = () => {
         };
         //const location = item.fields.location.content;
 
-        return { ...item.fields, classification, image, location };
+        return { ...item.fields, classification, image, location, dietList };
       });
 
       return sanitizedList;
