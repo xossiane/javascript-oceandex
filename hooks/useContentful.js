@@ -12,7 +12,7 @@ const useContentful = () => {
       const entries = await client.getEntries({
         content_type: "animal",
         select: "fields",
-        "fields.complteAnimal": "true",
+        "fields.completeAnimal": "true",
       });
       const animals = [];
       const sanitizedAnimal = entries.items.map((item) => {

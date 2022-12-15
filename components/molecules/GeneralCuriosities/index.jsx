@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import Text from "@atoms/Text";
 import oceananimals from "../../../../javascript-oceandex/oceananimals.json";
+import AnimalsTag from "@molecules/AnimalsTag";
 
 function GeneralCuriosities() {
   const animals = oceananimals;
@@ -42,14 +43,15 @@ function GeneralCuriosities() {
           {animals[animalsID].tabs[0].curiosities[0].curiositiesText}
         </Text>
         <div>
-          <Text
+          <AnimalsTag/>
+          {/* <Text
             size="medium"
             style="italic"
             className={styles[`GeneralCuriosities--Tag`]}
           >
             {" "}
             {animals[animalsID].phylum} | {animals[animalsID].order}
-          </Text>
+          </Text> */}
         </div>
       </section>
       <span className={styles[`GeneralCuriosities--Arrow`]}>
