@@ -1,7 +1,7 @@
 import Footer from '.'
 
 export default {
-    title: "Molecules/Footer",
+    title: "Organisms/Footer",
     component: Footer,
     args: {}
 }
