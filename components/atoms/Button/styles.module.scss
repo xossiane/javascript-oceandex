@@ -23,16 +23,23 @@
   }
   &__desktopLink {
     cursor: pointer;
-    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 13px 60px;
+    border-radius: 38px;
     color: white;
-    z-index: 100;
-    
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: bold;
   }
-&__linktag{
-  background-color: rgba(255, 255, 255, 0.2);
-  
-  width: 200px;
-}
+
+  /*  &__linktag {
+    background-color: rgba(255, 255, 255, 0.2);
+   
+
+    width: 234px;
+    border-radius: 38px;
+  } */
   &__desktop {
     @media (max-width: 1440px) {
       display: none;

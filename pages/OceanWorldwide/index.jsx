@@ -8,11 +8,36 @@ import styles from "./styles.module.scss";
 
 export default function OceanWorldwide() {
   const oceans = [
-    "Atlantic Ocean",
-    "Pacific Ocean",
-    "Indian Ocean",
-    "Southern Ocean",
-    "Arctic Ocean",
+    {
+      title: "Pacific Ocean",
+      img: "/assets/images/icons/pacific.svg",
+      description: "The biggest ocean",
+    },
+    {
+      title: "Atlantic Ocean",
+      img: "/assets/images/icons/atlantic.svg",
+      description: "Sea of the atlas",
+    },
+    {
+      title: "Indian Ocean",
+      img: "/assets/images/icons/indian.svg",
+      description: "Third-largest ocean",
+    },
+    {
+      title: "Southern Ocean",
+      img: "/assets/images/icons/southern.svg",
+      description: "Portions of oceans",
+    },
+    {
+      title: "Arctic Ocean",
+      img: "/assets/images/icons/artic.svg",
+      description: "The smallest ocean",
+    },
+
+    // "Pacific Ocean",
+    // "Indian Ocean",
+    // "Southern Ocean",
+    // "Arctic Ocean",
   ];
   return (
     <div className={styles[`OceanWorldwide`]}>
@@ -40,10 +65,18 @@ export default function OceanWorldwide() {
         <div className={styles[`OceanWorldwide__content`]}>
           <section className={styles[`OceanWorldwide__content--buttons`]}>
             {oceans.map((ocean) => (
-              <Button href="/OceanCuriosities" size="large" color="color-500">
-                <Text color="white" size="large">
+              <Button
+                href="/OceanCuriosities"
+                size="large"
+                color="color-500"
+                title={ocean.title}
+                description={ocean.description}
+                img={ocean.img}
+                className={styles[`OceanWorldwide__buttonUnit`]}
+              >
+                {/*   <Text color="white" size="large">
                   {ocean}
-                </Text>
+                </Text> */}
               </Button>
             ))}
           </section>

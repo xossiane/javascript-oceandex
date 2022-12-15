@@ -19,34 +19,42 @@ export default function Button({
   classList.push(styles[`button--${fontsize}`]);
   classList.push(styles[`button`]);
 
-  const deskTopClass = [];
-  deskTopClass.push(styles[`button--${color}`]);
-  deskTopClass.push(styles[`button__desktop`]);
-
+  const deskTopClasses = [];
+  deskTopClasses.push(styles[`button--${color}`]);
+  deskTopClasses.push(styles[`button__desktop`]);
+ 
+  
   return (
     <>
-      <div className={`${deskTopClass.join(" ")}`}>
-        <Heading level="1" color="white" size="Xlarge" weight="normal">
+      <div className={`${deskTopClasses.join(" ")}`}>
+        <Heading
+          level="1"
+          color="white"
+          size="large"
+          weight="normal"
+          format="uppercase"
+        >
           {title}
         </Heading>
         <Image src={img} width={196} height={181} alt="" />
-        <Text size="large" color="white" weight="bold">{description}</Text>
-        <div className={styles[`button__linktag`]}>
-          <Link href={`${href}`}>
-            <div className={styles[`button__desktopLink`]}>Read More...</div>
-          </Link>
-        </div>
+        <Text size="large" color="white" weight="bold">
+          {description}
+        </Text>
+
+        <Link href={`${href}`}>
+          <a className={styles[`button__desktopLink`]} >
+            Read More...
+          </a>
+        </Link>
       </div>
 
       <Link href={`${href}`}>
         <div className={`${classList.join(" ")} ${className}`}>
-          
-          <Heading level="2" color="white" size="small"  >
+          <Heading level="2" color="white" size="medium" weight="normal">
             {title}
           </Heading>
         </div>
       </Link>
     </>
   );
-  
 }
