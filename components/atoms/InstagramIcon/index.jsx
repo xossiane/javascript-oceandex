@@ -1,9 +1,8 @@
-import Link from "next/link";
 import styles from "./styles.module.scss";
 
 export default function InstagramIcon({ href }) {
   return (
-    <Link href={`${href}`}>
+    <a href={`${href}`} target="_blank">
       <svg
         viewBox="0 0 29 28"
         fill="none"
@@ -28,6 +27,6 @@ export default function InstagramIcon({ href }) {
           fill="black"
         />
       </svg>
-    </Link>
+    </a>
   );
 }
