@@ -4,6 +4,12 @@ size: 14px, 18px, 22px;
  */
 
 .text {
+  &--XXLarge {
+    font-size: 3.5rem;
+  }
+  &--XLarge {
+    font-size: 2.8rem;
+  }
   &--large {
     font-size: 2.2rem;
   }
@@ -11,23 +17,26 @@ size: 14px, 18px, 22px;
     font-size: 1.8rem;
   }
   &--small {
+    font-size: 1.6rem;
+  }
+  &--XSmall {
     font-size: 1.4rem;
   }
 
   &--black {
     color: variables.$black;
   }
-  &--grey {
-    color: variables.$grey;
+  &--darkBlue {
+    color: variables.$darkBlue;
   }
   &--white {
-    color: variables.$color-000;
+    color: variables.$white;
   }
 
   &--bold {
     font-weight: bold;
   }
-  &--italic{
+  &--italic {
     font-style: italic;
   }
 }

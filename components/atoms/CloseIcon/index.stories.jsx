@@ -6,4 +6,6 @@ export default {
   args: {},
 };
 
-export const Close = () => <CloseIcon />;
+export const BlackClose = () => <CloseIcon />;
+export const WhiteClose = () => <CloseIcon WhiteClose white="true" />;
+

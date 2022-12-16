@@ -11,7 +11,7 @@ import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
 
 const index = () => {
-  const { getAnimals } = useContentful();
+  const { getAnimals, getAnimal } = useContentful();
   const [animal, setAnimal] = useState([]);
   const [loading, setLoading] = useState();
   const [search, setSearch] = useState("");
@@ -22,48 +22,42 @@ const index = () => {
   };
 
   useEffect(() => {
-    getAnimals().then((response) => {
-      setLoading(true);
-      setAnimal(response);
-      setLoading(false);
-    });
-  }, []);
+    if (!search) {
+      getAnimals().then((response) => {
+        setLoading(true);
+        setAnimal(response);
+        setLoading(false);
+      });
+    }
+    if (search) {
+      getAnimal(search).then((response) => {
+        setLoading(true);
+        setAnimal(response);
+        setLoading(false);
+      });
+    }
+  }, [search]);
 
   function showAnimal() {
-    return animal.map((item) => (
-      <AnimalsCard
-        href="/"
-        key={item.id}
-        name={item.animal.name}
-        order={item.animal.classifications.order}
-        phylum={item.animal.classifications.phylum}
-        src={item.animal.images.file.url}
-      />
-    ));
-  }
-
-  function showAnimalSearch() {
-    return animal.filter(
-      (name) => search.includes(animal.name)
-      // <AnimalsCard
-      //   href="/"
-      //   key={item.id}
-      //   name={item.animal.name}
-      //   order={item.animal.classifications.order}
-      //   phylum={item.animal.classifications.phylum}
-      //   src={item.animal.images.file.url}
-      // />
+    return animal?.map(
+      (item) =>
+        item && (
+          <AnimalsCard
+            href="/"
+            key={item.id}
+            name={item.name}
+            order={item.classifications.order}
+            phylum={item.classifications.phylum}
+            src={item.images.file.url}
+          />
+        )
     );
   }
-
-  // let showAnimalSearch = animal.filter((item) => item.animal.name === search);
-
-  console.log(search.length);
 
   return (
     <div className={styles[`Oceandex__Container`]}>
       <span className={styles[`Oceandex__Arrow`]}>
-        <Arrow href="/home" white={false}></Arrow>
+        <Arrow href="/" white={false}></Arrow>
       </span>
       <header className={styles[`Oceandex__Header`]}>
         <Heading
@@ -78,19 +72,15 @@ const index = () => {
         </Heading>
       </header>
       <div className={styles[`Oceandex__Search`]}>
-        <Input
+        <input
           value={search}
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={(e) => handleSubmit(e)}
           aria-label={""}
         />
       </div>
       <section className={styles[`Oceandex__Cards`]}>
         {loading && <p>loading</p>}
         {!loading && showAnimal()}
-      </section>
-      <section className={styles[`Oceandex__Cards`]}>
-        {loading && <p>loading</p>}
-        {search.length > 2 && !loading && showAnimalSearch()}
       </section>
     </div>
   );

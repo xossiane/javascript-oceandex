@@ -1,6 +1,4 @@
-.Curiosities{
-display: flex;
-flex-direction: column;
+@use "@styles/variables";
 
     &__text{
         width: 90%;

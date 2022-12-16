@@ -1,0 +1,32 @@
+@use "@styles/variables";
+
+.footerContainer {
+  background-color: variables.$white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-weight: 400;
+  line-height: 0.313em;
+
+  padding-top: 2.813rem;
+  padding-bottom: 2.813rem;
+  z-index: 10;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &__logoParagraph {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+  }
+  &__logo {
+    padding-left: 0.5em;
+  }
+  &__copyParagraph {
+    font-size: 1.6rem;
+  }
+}

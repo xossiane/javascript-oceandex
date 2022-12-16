@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 
 export default function Text({
-  size,
+  size = "medium",
   color,
   weight,
   style,

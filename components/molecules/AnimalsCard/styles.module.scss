@@ -1,4 +1,5 @@
 @use "@styles/variables";
+
 .animalsCard {
   display: grid;
   grid-template:
@@ -40,33 +41,22 @@
     max-height: 170px;
   }
 
-/*   &--blue {
-    background-color: #7D8EB5;
-  }
-  &--rose {
-    background-color: #737185;
-  }
-  &--pink {
-    background-color: #E98D90;
-  }
-  &--green {
-    background-color: #B64760;
-  }
-  &--aqua {
-    background-color: #6E786B;
+  &--blue {
+    background-color: variables.$blue;
   }
   &--purple {
-    background-color: #567A79;
-  } */
-
-  background-color: black;
-  &:nth-child(3n+2){
-    background-color: variables.$color-100;
+    background-color: variables.$purple;
   }
-  &:nth-child(3n+1){
-    background-color: variables.$color-200;
+  &--pink {
+    background-color: variables.$pink;
   }
-  &:nth-child(3n){
-    background-color: black;
+  &--green {
+    background-color: variables.$green;
+  }
+  &--oliveGreen {
+    background-color: variables.$oliveGreen;
+  }
+  &--red {
+    background-color: variables.$red;
   }
 }

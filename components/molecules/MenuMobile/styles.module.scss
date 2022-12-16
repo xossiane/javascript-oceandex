@@ -1,0 +1,59 @@
+@use "@styles/variables";
+
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 1;
+  pointer-events: auto;
+
+  &__openMenu {
+    position: absolute;
+    border: none;
+    background: variables.$white;
+    top: 2rem;
+    right: 0;
+  }
+
+  &__closeMenu {
+    position: absolute;
+    border: none;
+    background: variables.$white;
+    top: 2rem;
+    right: 0;
+  }
+
+  &__li {
+    list-style: none;
+    padding: 3rem 1rem;
+    background: variables.$white;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid variables.$lightGrey;
+  }
+
+  &__list {
+    position: absolute;
+    top: 7.7rem;
+    left: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  &__item {
+    list-style: none;
+    font-size: 2rem;
+    line-height: 1.4rem;
+    color: variables.$black;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__invisible {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
