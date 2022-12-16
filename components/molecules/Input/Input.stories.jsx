@@ -6,4 +6,6 @@ export default {
     args: {}
 }
 
-export const Primary = () => <Input primary aria-label="a" />;
+export const OceanDex = () => <Input OceanDex placeholder="Search for animals, filos..." aria-label="Search for animals, filos..." />;
+
+export const FavoriteAnimals = () => <Input FavoriteAnimals placeholder="Search for your favorite animals" aria-label="Search for your favorite animals" />;
