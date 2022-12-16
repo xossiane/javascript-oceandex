@@ -3,10 +3,12 @@ import Background from "@atoms/Background";
 import Heading from "@atoms/Heading";
 import Button from "@atoms/Button/index.jsx";
 import Text from "@atoms/Text";
+import Container from "@organisms/Container";
 
 export default function MainPage() {
   return (
     <div className={styles[`Home`]}>
+      <Container></Container>
       <main className={styles[`Home__container`]}>
         <Heading level="1" size="Xlarge" color="grey" weight="italic">
           Discover the Ocean
@@ -76,6 +78,7 @@ export default function MainPage() {
         </section>
         </section>
       </main>
+      
     </div>
   );
 }
