@@ -39,8 +39,8 @@ export default function AnimalsCard({
           </Heading>
         </div>
         <div className={styles.animalsCard__classification}>
-          <AnimalsTag label={order}></AnimalsTag>
-          <AnimalsTag label={phylum}></AnimalsTag>
+          <AnimalsTag label={order} text="text"></AnimalsTag>
+          <AnimalsTag label={phylum} text="text"></AnimalsTag>
         {/*   <AnimalsTag label={Class}></AnimalsTag>
           <AnimalsTag label={kingdom}></AnimalsTag> */}
         </div>

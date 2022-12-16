@@ -38,7 +38,11 @@
 
   /*  &__linktag {
     background-color: rgba(255, 255, 255, 0.2);
-   
+     &--small{
+    width: 16rem;
+    height: 7.3rem;
+    text-align: center;
+    
 
     width: 234px;
     border-radius: 38px;
@@ -48,6 +52,7 @@
       display: none;
     }
   }
+  
   &--medium {
     width: 15.5rem;
     height: 6rem;

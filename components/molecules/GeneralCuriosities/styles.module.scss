@@ -1,85 +1,100 @@
 @use "@styles/variables";
+.GeneralCuriosities{
+    
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    
+&--Img{
+border-radius: 2.4rem;
+width: 16.6rem;
+height: 16.6rem;
+margin-top: 3rem;
+z-index: 5;
 
-.GeneralCuriosities {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-
-  &--Img {
-    border-radius: 2.4rem;
-    width: 30rem;
-    height: 31.2rem;
-    margin-top: 3rem;
-
-    @media (min-width: 768px) {
-      width: 45rem;
-      height: 45.6rem;
-
-      position: relative;
+@media (min-width: 768px) {
+    width: 64rem;
+    height: 46.8rem;
+}
+    @media (min-width: 1024px) {
+        width: 84rem;
+        height: 56.8rem;
     }
-  }
-  &--Text {
-    width: 32rem;
+
+}
+&--Name{
+    margin-top: 3rem;
+}
+&--Text{
+    width: 32.1rem;
     line-height: 2.8rem;
-    opacity: 0.6;
+    opacity: 0.8;
     margin: auto;
     margin: 3rem auto 3rem auto;
     overflow-y: auto;
     text-align: justify;
 
     @media (min-width: 768px) {
-      width: 45rem;
+        width: 90%;
+        z-index: 5;
     }
-  }
-  &--Tag {
-    margin: 2rem auto -3rem auto;
-    text-align: center;
-    font-weight: bold;
+    @media (min-width: 1024px) {
+        width: 106rem; 
+        z-index: 5;
+    }
+}
+&--Tag{    
+    display: flex;
+    flex-direction: row;
     @media (min-width: 768px) {
-      margin: 2rem auto 12rem auto;
+        margin: 2rem auto 3rem auto;
+        background-color: variables.$white;
+        position: relative;
+        width: 49.5rem;
+        justify-content: space-evenly;
     }
-  }
-  &--Arrow {
+    
+}
+&--Arrow{
     display: flex;
     justify-content: space-evenly;
     margin: 5rem auto 0rem auto;
-    width: 30rem;
-  }
-  &--button-left {
-    cursor: pointer;
-    z-index: 5;
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    overflow: visible;
-    background: transparent;
-    margin-bottom: 10rem;
-
     @media (min-width: 768px) {
-      position: absolute;
-      top: 350px;
-      left: 3rem;
+        display: flex;
+        position: relative;
     }
-  }
 
-  &--button-right {
-    cursor: pointer;
-    z-index: 5;
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    overflow: visible;
-    background: transparent;
-    margin-bottom: 10rem;
-
-    @media (min-width: 768px) {
-      position: absolute;
-      top: 350px;
-      right: 3rem;
-    }
-  }
+    
 }
+&--button-left{
+    cursor: pointer;
+    z-index: 5;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+
+        @media (min-width: 768px) {
+            position: relative;
+            
+        }
+    }
+
+    &--button-right{
+        cursor: pointer;
+        z-index: 5;
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        overflow: visible;
+        background: transparent;
+    
+            @media (min-width: 768px) {
+                position: relative;
+            }
+        }
+    }
