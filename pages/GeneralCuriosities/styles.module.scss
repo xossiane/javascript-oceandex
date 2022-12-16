@@ -1,10 +1,10 @@
 @use "@styles/variables";
-
 .GeneralCuriositiesPage {
+  
   &__Container {
     background-color: variables.$white;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     margin-top: 3.9rem;
     margin-bottom: 5rem;
     z-index: 10;
@@ -12,31 +12,40 @@
     border-top-right-radius: 4.2rem;
   }
   &__Content {
-    background-color: variables.$green;
-    width: 100%;
-    flex-direction: column;
-    align-content: center;
+    margin-top: 3rem;
 
     &--text {
       margin: 5.5rem 4.1rem auto 6.8rem;
+      
+      @media (max-width: variables.$tablet){
+        background-color: variables.$white;
+        z-index: 5;
+      }
     }
   }
   &__Header {
     display: flex;
-    margin: -5rem auto auto 0.2rem;
     width: 100%;
     height: 2.5rem;
     justify-content: space-around;
     align-items: center;
 
-    &--rectangle {
-      display: flex;
-    }
   }
 
   &__Arrow {
     position: absolute;
     top: 50px;
     left: 20px;
+    @media (min-width: variables.$tablet){
+      position: absolute;
+    }
   }
+
+  &__Background{
+    display: flex;
+    @media (min-width: variables.$tablet){
+      display: flex;
+    }
+  }
+
 }

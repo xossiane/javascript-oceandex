@@ -4,12 +4,12 @@ import Text from "@atoms/Text";
 export default function Location() {
   return (
     <div className={styles[`Location`]}>
-      <Text color="black" size="medium" className={styles[`Location__title`]}>
+      <Text color="black" size="large" className={styles[`Location__title`]}>
         Atlantic Ocean
       </Text>
       <article>
         <img
-          src="assets/images/realAnimals/16-octopus.jpg"
+          src="assets/images/oceans/AtlanticOcean.jpg"
           className={styles[`Location__img`]}
           alt="animal"
         ></img>
