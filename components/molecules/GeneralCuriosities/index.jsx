@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import styles from "./styles.module.scss";
 import Text from "@atoms/Text";
+import { useState } from "react";
 import oceananimals from "../../../../javascript-oceandex/oceananimals.json";
 import AnimalsTag from "@molecules/AnimalsTag";
 import ArrowLeft from "@atoms/ArrowLeft";
