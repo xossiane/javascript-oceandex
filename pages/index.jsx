@@ -55,7 +55,7 @@ export default function MainPage() {
             title="Animal's Curiosities"
           ></Button>
           <Button
-            href="/"
+            href="/TrophicLevel"
             size="medium"
             color="oliveGreen"
             fontsize="fontsmall"
