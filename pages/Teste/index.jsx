@@ -1,18 +1,19 @@
-import Container from "@organisms/Container";
+import React, { useState } from "react";
 import GeneralCuriosities from "@molecules/GeneralCuriosities";
 import Background from "@atoms/Background";
+import MenuMobile from "@molecules/MenuMobile";
+import Header from "@organisms/Header";
+import Container from "@organisms/Container";
+
+import styles from "./styles.module.scss";
 
 export default function Teste() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
   return (
     <div>
-      <Container
-        href="/home"
-        title="General Curiosities"
-        backgroundColorHeader="#567A79"
-      >
+      <Container>
         <GeneralCuriosities />
       </Container>
-      <Background />
     </div>
   );
 }

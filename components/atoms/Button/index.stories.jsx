@@ -1,9 +1,9 @@
-import Button from '.'
+import Button from ".";
 
 export default {
-    title: "Atoms/Button",
-    component: Button,
-    args: {}
-}
+  title: "Atoms/Button",
+  component: Button,
+  args: {},
+};
 
 export const Primary = () => <Button primary />;

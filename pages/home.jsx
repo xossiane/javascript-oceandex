@@ -4,6 +4,7 @@ import Heading from "@atoms/Heading";
 import Button from "@atoms/Button/index.jsx";
 import Text from "@atoms/Text";
 
+
 function Home() {
   return (
     <div className={styles[`Home`]}>
@@ -15,7 +16,7 @@ function Home() {
           <Button
             href="/Oceandex"
             size="medium"
-            color="color-400"
+            color="blue"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
           >
@@ -26,7 +27,7 @@ function Home() {
           <Button
             href="/Teste"
             size="medium"
-            color="color-800"
+            color="green"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
           >
@@ -37,7 +38,7 @@ function Home() {
           <Button
             href="/OceanWorldwide"
             size="medium"
-            color="color-500"
+            color="purple"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
           >
@@ -48,7 +49,7 @@ function Home() {
           <Button
             href="/"
             size="medium"
-            color="color-700"
+            color="oliveGreen"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
           >
@@ -59,7 +60,7 @@ function Home() {
           <Button
             href="/"
             size="medium"
-            color="color-200"
+            color="pink"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
           >
@@ -70,12 +71,12 @@ function Home() {
           <Button
             href="/"
             size="medium"
-            color="color-300"
+            color="red"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
           >
             <Text color="white" size="small">
-              Who are you in the oceanDex?
+             Authors
             </Text>{" "}
           </Button>
         </section>
@@ -83,6 +84,7 @@ function Home() {
       <section>
         <Background />
       </section>
+     
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import Arrow from "@atoms/Arrow";
+import Arrow from "@atoms/ArrowLeft";
 import Background from "@atoms/Background";
 import Button from "@atoms/Button";
 import Heading from "@atoms/Heading";
@@ -40,7 +40,7 @@ export default function OceanWorldwide() {
         <div className={styles[`OceanWorldwide__content`]}>
           <section className={styles[`OceanWorldwide__content--buttons`]}>
             {oceans.map((ocean) => (
-              <Button href="/OceanCuriosities" size="large" color="color-500">
+              <Button href="/OceanCuriosities" size="large" color="purple">
                 <Text color="white" size="large">
                   {ocean}
                 </Text>

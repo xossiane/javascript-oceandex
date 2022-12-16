@@ -1,9 +1,10 @@
-import Like from '.'
+import Like from ".";
 
 export default {
-    title: "Atoms/Like",
-    component: Like,
-    args: {}
-}
+  title: "Atoms/Like",
+  component: Like,
+  args: {},
+};
 
-export const Primary = () => <Like primary />;
+export const BlackHeart = () => <Like BlackHeart />;
+export const WhiteHeart = () => <Like WhiteHeart white="true" />;

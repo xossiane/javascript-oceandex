@@ -1,0 +1,9 @@
+.instagramIcon {
+  width: 1.75rem;
+  height: 1.75rem;
+
+  @media screen and (min-width: 1440px) {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+}

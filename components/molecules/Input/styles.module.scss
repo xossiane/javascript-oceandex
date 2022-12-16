@@ -1,15 +1,17 @@
+@use "@styles/variables";
+
 .inputContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 350px;
-  background: #f5f5f5;
+  background: variables.$offWhite;
   border-radius: 10rem;
 
   &__box {
     width:80%;
     height: 3rem;
-    background: #f5f5f5;
+    background: variables.$offWhite;
     border: none;
     border-radius: 10rem;
     text-align: center;
@@ -19,7 +21,7 @@
     font-style: italic;
     font-size: 0.8rem;
     line-height: 4.2rem;
-    color: #303943;
+    color: variables.$darkBlue;
     opacity: 0.4;
   }
 }
