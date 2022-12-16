@@ -12,7 +12,7 @@ const useContentful = () => {
       const entries = await client.getEntries({
         content_type: "animal",
         select: "fields",
-        "fields.complteAnimal": "true",
+        "fields.completeAnimal": "true",
       });
       const sanitizedAnimal = entries.items.map((item) => {
         const {
@@ -52,7 +52,6 @@ const useContentful = () => {
       });
 
       return sanitizedAnimal;
-      console.log(sanitizedAnimal);
     } catch (error) {
       console.log(`Error fetching content: ${error}`);
     }
