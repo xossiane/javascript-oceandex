@@ -11,7 +11,48 @@
   padding: 10px;
   box-sizing: border-box;
   cursor: pointer;
+  color: white;
+  font-size: 1.8rem;
+ 
+  @media  (min-width: 1440px)  {
+    display: none;
+    &__desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 400px;
+      border-radius: 15px;
+    }
+  }
+  &__desktopLink {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 13px 60px;
+    border-radius: 38px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
 
+  /*  &__linktag {
+    background-color: rgba(255, 255, 255, 0.2);
+     &--small{
+    width: 16rem;
+    height: 7.3rem;
+    text-align: center;
+    
+
+    width: 234px;
+    border-radius: 38px;
+  } */
+  @media (max-width: 1440px){
+    &__desktop{
+      display: none;
+    }
+  }
+  
   &--medium {
     width: 15.5rem;
     height: 6rem;
@@ -46,32 +87,6 @@
   &--pink {
     background-color: variables.$pink;
   }
-
-  // &--color-100 {
-  //   background-color: variables.$color-100;
-  // }
-
-  // &--color-200 {
-  //   background-color: variables.$color-200;
-  // }
-  // &--color-300 {
-  //   background-color: variables.$color-300;
-  // }
-  // &--color-400 {
-  //   background-color: variables.$color-400;
-  // }
-  // &--color-500 {
-  //   background-color: variables.$color-500;
-  // }
-  // &--color-600 {
-  //   background-color: variables.$color-600;
-  // }
-  // &--color-700 {
-  //   background-color: variables.$color-700;
-  // }
-  // &--color-800 {
-  //   background-color: variables.$color-800;
-  // }
 
   &--fontmedium {
     font-size: variables.$fontmedium;

@@ -1,15 +1,20 @@
 @use "@styles/variables";
 .AboutContent {
+    
   &__Container {
+    width: 90%;
+    align-items: center;
+    margin: auto;
     &--box {
       border-radius: 1.4rem;
       background-color: variables.$white;
-      filter: drop-shadow(0px 4px 4px variables.$darkGrey);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
+      align-items: center;
+      justify-content: space-around;
     }
     &--text {
+      width: 20%;
       margin-left: 2rem;
       opacity: 60%;
       text-align: center;
@@ -19,8 +24,8 @@
       text-align: center;
     }
     &--about {
-      width: 95%;
-      min-height: 12.7rem;
+      
+
       justify-content: center;
       text-align: justify;
       line-height: 2.4rem;
@@ -28,35 +33,45 @@
     }
   }
   &__box2 {
-    width: 100%;
-    height: 7.3rem;
+    display: flex;
+    
     border-radius: 1.4rem;
     background-color: variables.$white;
-    filter: drop-shadow(0px 4px 4px variables.$darkGrey);
-    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    align-items: baseline;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
+    
     &--title {
-      margin-left: 3rem;
-      margin-top: -0.7rem;
-      position: absolute;
       opacity: 60%;
       display: flex;
-      width: 25rem;
+      width: 80%;
       justify-content: space-around;
     }
     &--data {
       display: flex;
-      margin-top: 2.2rem;
-      position: absolute;
       justify-content: space-around;
-      width: 25rem;
+      width: 80%;
       margin-left: 3rem;
     }
   }
   &__breeding {
+    display: flex;
+    
+    border-radius: 1.4rem;
+    background-color: variables.$white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 2rem auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
     &--title {
-      margin-top: 2rem;
-      display: flex;
-      justify-content: flex-start;
+        width: fit-content;
+        display: flex;
     }
     &--label {
       opacity: 60%;
@@ -70,8 +85,18 @@
     &--method {
       display: flex;
       flex-direction: row;
-      width: 95%;
       justify-content: flex-start;
     }
+  }
+  &__tags{
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem auto 2.1rem 0.58rem;
+    @media (min-width: 1024px){
+      display: none;
+      
+    }
+    
+    
   }
 }

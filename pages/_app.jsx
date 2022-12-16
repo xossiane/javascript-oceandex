@@ -1,6 +1,7 @@
 import "../styles/globals.scss";
 import Head from "next/head";
-import Footer from "@molecules/Footer";
+import Header from "@organisms/Header";
+import Footer from "@organisms/Footer";
 const MyApp = ({ Component, pageProps }) => {
   return (
     <div>
@@ -13,8 +14,9 @@ const MyApp = ({ Component, pageProps }) => {
           href="/assets/images/favicon-32x32.png"
         />
       </Head>
+      <Header />
       <Component {...pageProps} />
-      <Footer />;
+      <Footer />
     </div>
   );
 };

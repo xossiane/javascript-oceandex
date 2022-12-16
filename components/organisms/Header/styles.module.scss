@@ -7,7 +7,6 @@
   grid-template-columns: repeat(4, 7rem);
   grid-gap: 2rem;
   grid-template-areas: logo logo navMobile navMobile;
-  height: 7.6rem;
   align-items: center;
   justify-content: space-between;
   position: fixed;
@@ -18,6 +17,8 @@
   background-color: variables.$white;
   margin: 0 auto;
   padding: 0 1.75rem;
+  height: 8.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 
   @media (min-width: 1024px) {
     display: grid;
@@ -38,7 +39,6 @@
   }
 
   &__logo {
-    // width: 100%;
     cursor: pointer;
     @media (min-width: 1024px) {
       position: relative;

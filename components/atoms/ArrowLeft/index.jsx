@@ -1,15 +1,17 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
 
-export default function ArrowLeft({ href, white }) {
-  const color = white ? '#ffffff' : '#000000';
+export default function ArrowLeft({ href, white, className }) {
+  const color = white ? "#ffffff" : "#000000";
+  const classList = [];
+
   return (
     <Link href={`${href}`}>
       <svg
         viewBox="0 0 34 28"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className={styles.arrow}
+        className={`${classList.join(" ")} ${className}`}
       >
         <path
           d="M33 14H4.375"

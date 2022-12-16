@@ -13,14 +13,7 @@ export default function Curiosities() {
         octopus time to swim away. The ink can also dull the attacker's smelling
         and tasting abilities, according to the Smithsonian article. This will
         temporarily blind and confuse a potential attacker, giving the octopus
-        time to swim away. The ink can also dull the attacker's smelling and
-        tasting abilities, according to the Smithsonian article. This will
-        temporarily blind and confuse a potential attacker, giving the octopus
-        time to swim away. The ink can also dull the attacker's smelling and
-        tasting abilities, according to the Smithsonian article. This will
-        temporarily blind and confuse a potential attacker, giving the octopus
-        time to swim away. The ink can also dull the attacker's smelling and
-        tasting abilities, according to the Smithsonian article.
+        time to swim away. 
       </Text>
       <img
         src="assets/images/realAnimals/16-octopus.jpg"

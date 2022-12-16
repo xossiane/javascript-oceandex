@@ -11,10 +11,29 @@ import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
 
 const index = () => {
-  const { getAnimals, getAnimal } = useContentful();
+  const { getAnimals, getAnimal, getAuthors, getCuriosities } = useContentful();
   const [animal, setAnimal] = useState([]);
   const [loading, setLoading] = useState();
   const [search, setSearch] = useState("");
+
+  const [animals, setAnimals] = useState();
+  const [curiosities, setCuriosities] = useState();
+  const [authors, setAuthors] = useState();
+  useEffect(() => {
+    getAnimals().then((response) => {
+      setAnimals(response);
+    });
+    getCuriosities().then((response) => {
+      setCuriosities(response);
+    });
+    getAuthors().then((response) => {
+      setAuthors(response);
+    });
+  }, []);
+
+  console.log(authors);
+  console.log(curiosities);
+  console.log(animals);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -37,27 +56,26 @@ const index = () => {
       });
     }
   }, [search]);
-
+  //console.log(animal);
   function showAnimal() {
-    return animal?.map(
-      (item) =>
-        item && (
-          <AnimalsCard
-            href="/"
-            key={item.id}
-            name={item.name}
-            order={item.classifications.order}
-            phylum={item.classifications.phylum}
-            src={item.images.file.url}
-          />
-        )
-    );
+    return animal.map((item) => {
+      return (
+        <AnimalsCard
+          href="/"
+          key={item.id}
+          name={item.name}
+          order={item.classification.order}
+          phylum={item.classification.phylum}
+          src={item.image}
+        />
+      );
+    });
   }
 
   return (
     <div className={styles[`Oceandex__Container`]}>
       <span className={styles[`Oceandex__Arrow`]}>
-        <Arrow href="/home" white={false}></Arrow>
+        <Arrow href="/" white={false}></Arrow>
       </span>
       <header className={styles[`Oceandex__Header`]}>
         <Heading
