@@ -1,6 +1,6 @@
 @use "@styles/variables";
-
 .GeneralCuriositiesPage {
+  
   &__Container {
     background-color: variables.$white;
     width: 100%;
@@ -12,16 +12,13 @@
     border-top-right-radius: 4.2rem;
   }
   &__Content {
-    background-color: variables.$green;
-    width: 100%;
-    flex-direction: column;
-    align-content: center;
+    margin-top: 3rem;
 
     &--text {
       margin: 5.5rem 4.1rem auto 6.8rem;
       
       @media (max-width: variables.$tablet){
-        background-color: variables.$color-000;
+        background-color: variables.$white;
         z-index: 5;
       }
     }
@@ -50,4 +47,5 @@
       display: flex;
     }
   }
+
 }

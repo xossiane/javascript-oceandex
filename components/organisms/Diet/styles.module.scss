@@ -1,29 +1,52 @@
 @use "@styles/variables";
 
-.Diet__Container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
+.Diet__Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+        
+    }
 .Diet__imgContainer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
-.Diet__hrItem {
-  border: none;
-  height: 2px;
-  background-color: variables.$black--opacity;
-  opacity: 40%;
-  width: 100%;
-  margin: 0;
+.Diet__hrItem{
+       border: none;
+       height:0.2rem;
+       background-color:#00000042;
+       opacity:40%;
+       width: 80%;
+       margin:0;
+       @media (min-width: 1024px){
+        width: 80%;
+       }
+       
 }
 
-.Diet__animalName {
-  color: variables.$black;
-  opacity: 80%;
-  letter-spacing: 0.5px;
+.Diet__animalName{
+       color:#000000;
+       opacity: 80%;
+       letter-spacing:0.5px;
 }
+
+.Diet__imgItem{
+    width: 40%;
+    max-width: 10rem;
+    height: 20%;
+    max-height: 20rem;
+    margin: 2rem;
+    @media (min-width: 1024px) {
+    width: 30%;
+    max-width: 20rem;
+    height: 20%;
+    max-height: 15rem;
+    margin:3rem;
+}
+}
+
+

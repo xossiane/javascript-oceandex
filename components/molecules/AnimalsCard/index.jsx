@@ -4,7 +4,15 @@ import styles from "./styles.module.scss";
 import Heading from "@atoms/Heading";
 import AnimalsTag from "@molecules/AnimalsTag";
 
-export default function AnimalsCard({ href, name, order, phylum, src }) {
+export default function AnimalsCard({
+  href,
+  name,
+  order,
+  phylum,
+  Class,
+  kingdom,
+  src,
+}) {
   const [color, setColor] = useState();
   const randomBackgroundColor = () => {
     const randomNumber = Math.floor(Math.random() * 6);
@@ -26,14 +34,17 @@ export default function AnimalsCard({ href, name, order, phylum, src }) {
     <Link href={`${href}`}>
       <div className={`${styles.animalsCard} ${styles[color]}`}>
         <div className={styles.animalsCard__name}>
-          <Heading level="1" color="white" weight="normal" size="large">
+          <Heading level="1" color="white" weight="normal" size="Xlarge">
             {name}
           </Heading>
         </div>
         <div className={styles.animalsCard__classification}>
           <AnimalsTag label={order} text="text"></AnimalsTag>
           <AnimalsTag label={phylum} text="text"></AnimalsTag>
+        {/*   <AnimalsTag label={Class}></AnimalsTag>
+          <AnimalsTag label={kingdom}></AnimalsTag> */}
         </div>
+
         <img className={styles.animalsCard__img} src={src} alt="" />
       </div>
     </Link>
