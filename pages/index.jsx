@@ -64,7 +64,7 @@ export default function MainPage() {
             img="/assets/images/icons/favorite.svg"
           ></Button>
           <Button
-            href="/"
+            href="/Authors"
             size="medium"
             color="red"
             fontsize="fontsmall"

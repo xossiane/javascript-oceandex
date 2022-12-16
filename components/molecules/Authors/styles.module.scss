@@ -1,0 +1,62 @@
+@use "@styles/variables";
+
+.authors {
+  display: grid;
+  grid-template-columns: min-content;
+  grid-column-gap: 1.188rem;
+  grid-row-gap: 0.5rem;
+  justify-items: start;
+  align-items: center;
+
+  &__picture {
+    grid-area: 1 / 1 / 4 / 2;
+    width: 6.625rem;
+    height: 6.625rem;
+    border-radius: 100%;
+  }
+
+  &__name {
+    margin: 0;
+    grid-area: 1 / 2 / 2 / 3;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: variables.$black;
+  }
+
+  &__job {
+    margin: 0;
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 1rem;
+    line-height: 1.188rem;
+  }
+  &__socialMedia {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .authors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+
+    &__picture {
+      width: 16.25rem;
+      height: 16.25rem;
+    }
+
+    &__name {
+      font-size: 1.875rem;
+      line-height: 2.188rem;
+    }
+
+    &__job {
+      margin: 0;
+      font-size: 1.875rem;
+      line-height: 2.188rem;
+    }
+  }
+}
