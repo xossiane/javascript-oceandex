@@ -1,11 +1,10 @@
 import styles from "../styles/home.module.scss";
 
-import Heading from "@atoms/Heading";
-import Button from "@atoms/Button";
-
 import { useEffect, useState } from "react";
 
 import useContentful from "../hooks/useContentful";
+import Heading from "@atoms/Heading";
+import Button from "@atoms/Button";
 
 export default function MainPage() {
   const { getAnimals } = useContentful();
@@ -17,13 +16,14 @@ export default function MainPage() {
       setModel(response);
     });
   }, []);
-  console.log(model);
+  //console.log(model);
   return (
     <div className={styles[`Home`]}>
       <main className={styles[`Home__container`]}>
         <Heading level="1" size="Xlarge" color="grey" weight="italic">
           Discover the Ocean
         </Heading>
+
         <section className={styles[`Home__content`]}>
           <section className={styles[`Home__content`]}>
             <Button

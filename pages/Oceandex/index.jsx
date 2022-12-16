@@ -11,10 +11,29 @@ import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
 
 const index = () => {
-  const { getAnimals, getAnimal } = useContentful();
+  const { getAnimals, getAnimal, getAuthors, getCuriosities } = useContentful();
   const [animal, setAnimal] = useState([]);
   const [loading, setLoading] = useState();
   const [search, setSearch] = useState("");
+
+  const [animals, setAnimals] = useState();
+  const [curiosities, setCuriosities] = useState();
+  const [authors, setAuthors] = useState();
+  useEffect(() => {
+    getAnimals().then((response) => {
+      setAnimals(response);
+    });
+    getCuriosities().then((response) => {
+      setCuriosities(response);
+    });
+    getAuthors().then((response) => {
+      setAuthors(response);
+    });
+  }, []);
+
+  console.log(authors);
+  console.log(curiosities);
+  console.log(animals);
 
   const handleSubmit = (e) => {
     e.preventDefault();
