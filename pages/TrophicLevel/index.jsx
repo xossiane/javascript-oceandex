@@ -10,11 +10,11 @@ import styles from "./styles.module.scss";
 export default function TrophicLevel() {
 
   return (
+  <>
     <Container>
-
       <Text className={styles.title} style="italic" color="darkBlue" size="XLarge">Trophic Level</Text>
       <Text className={styles.paragraph} size="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
-      
+
         <div className={styles.containerCard}>
           <Button
             href="/"
@@ -47,7 +47,20 @@ export default function TrophicLevel() {
             title="Pelagic Ocean"
           ></Button>
         </div>
+        
+        <div className={styles.containerText}>
+          <Text className={styles.containerTitle}>Deep Ocean</Text>
+          <Text size="large" className={styles.containerParagraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+        </div>
 
+        <div className={styles.containerImage}>
+          <img src="/assets/images/foodChain/deepOceanDesktopjpg.jpg" alt="" />
+        </div>
     </Container>
+        <img className={styles.backgroundImage} src="/assets/images/extras/backgroundLarge2.png" alt="" />
+  </>
   );
 }
+{/* <section>
+<Background />
+</section> */}

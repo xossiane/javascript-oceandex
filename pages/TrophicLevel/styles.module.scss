@@ -1,13 +1,6 @@
 @use "@styles/variables";
 
-// .TrophicLevel {
-//   position: relative;
-//   background-color: variables.$purple;
-//   width: 100%;
-//   height: 100vh;
-//   border-top-left-radius: 4.2rem;
-//   border-top-right-radius: 4.2rem;
-//   z-index: 10;
+// background-color: red;
 
 .title {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -25,4 +18,39 @@
   display: flex;
   gap: 40px;
   margin-bottom: 4.6rem;
+}
+
+.containerText {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 57px;
+  margin-bottom: 4.7rem;
+  gap: 102px;
+
+  .containerTitle {
+    font-size: 2.5rem;
+    margin: 0px;
+    width: 433px; //tamanho relativo
+  }
+
+  .containerParagraph {
+    margin: 0px;
+  }
+}
+
+.containerImage {
+  display: flex;
+  justify-content: center;
+
+  img {
+    z-index: 1;
+  }
+}
+
+.backgroundImage {
+  opacity: 0.2;
+  position: absolute;
+  top: 82%;
+  width: 100%;
 }
