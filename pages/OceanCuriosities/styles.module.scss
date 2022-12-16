@@ -1,56 +1,53 @@
 @use "@styles/variables";
 
-.OceanCuriosities {
-  &--Img {
-    border-radius: 2.4rem;
-    width: 30rem;
-    height: 31.2rem;
-    margin: 3rem auto auto 3rem;
-  }
-  &--Text {
-    width: 32.1rem;
-    height: 15rem;
-    line-height: 2.8rem;
-    opacity: 0.6;
+.OceanCuriosities{
+  &__container{
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    margin: 3rem auto auto auto;
-    overflow-y: auto;
-    max-height: 15rem;
-    text-align: justify;
   }
-  &--Arrow {
-    display: flex;
-    justify-content: space-evenly;
-    margin: -25rem auto 0rem auto;
-    width: 30rem;
-  }
-  &__container {
-    background-color: variables.$purple;
-    width: 37.5rem;
-  }
-  &__header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 34rem;
-    margin-top: -9rem;
-  }
-  &--rectangle {
-    display: flex;
-    position: relative;
-    top: 0;
-    left: 0;
+    &--Img{
+        border-radius: 2.4rem;
+        width: 30rem;
+        height: 31.2rem;
+        margin: 3rem auto auto 3rem;
+        
+        }
+        &--Text{
+            width: 32.1rem;
+            height: 15rem;
+            line-height: 2.8rem;
+            opacity: 0.6;
+            margin: auto;
+            margin: 3rem auto auto auto;
+            overflow-y: auto;
+            max-height: 15rem;
+            text-align: justify;
+           }
+        &--Arrow{
+            display: flex;
+            justify-content: space-evenly;
+            margin: -25rem auto 0rem auto;
+            width: 30rem;
+            position: relative;
+            
+        }
+ 
+  &__header{
+   display: flex;
+   
+    
+   }
+   &--rectangle{
+      display: flex;
+          position: relative;
+          top: 0;
+          left: 0;
+          
   }
   &__content {
-    margin-top: 3rem;
-    background-color: variables.$white;
-    width: 37.5rem;
-    height: 79rem;
-    flex-direction: column;
-    align-content: center;
-    border-top-left-radius: 4.2rem;
-    border-top-right-radius: 4.2rem;
+  
+   
   }
   &--button {
     cursor: pointer;

@@ -12,7 +12,7 @@ const TabsDemo = () => (
   /* NOME DAS TABS */
   <Tabs.Root className={styles[`TabsRoot`]} defaultValue="tab1">
     <Tabs.List className={styles[`TabsList`]} aria-label="">
-      <Tabs.Trigger className={styles[`TabsTrigger`]} value="About">
+      <Tabs.Trigger className={styles[`TabsTrigger`]} aria-label="About" value="About">
         <Text
           className={styles[`TabsTrigger--text`]}
           color="black"
