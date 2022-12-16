@@ -1,6 +1,6 @@
 import "../styles/globals.scss";
 import Head from "next/head";
-import Footer from "@molecules/Footer";
+//import Footer from "@organisms/Footer";
 const MyApp = ({ Component, pageProps }) => {
   return (
     <div>
@@ -14,7 +14,6 @@ const MyApp = ({ Component, pageProps }) => {
         />
       </Head>
       <Component {...pageProps} />
-      <Footer />;
     </div>
   );
 };

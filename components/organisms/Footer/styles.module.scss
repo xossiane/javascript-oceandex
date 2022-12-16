@@ -12,16 +12,10 @@
 
   padding-top: 2.813rem;
   padding-bottom: 2.813rem;
-  &__linkedinLogo {
-    cursor: pointer;
-  }
-  &__instaLogo {
-    cursor: pointer;
-  }
+  z-index: 10;
 
   @media (min-width: 768px) {
     flex-direction: row;
-   
   }
 
   &__logoParagraph {

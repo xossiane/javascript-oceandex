@@ -57,7 +57,7 @@ const index = () => {
   return (
     <div className={styles[`Oceandex__Container`]}>
       <span className={styles[`Oceandex__Arrow`]}>
-        <Arrow href="/home" white={false}></Arrow>
+        <Arrow href="/" white={false}></Arrow>
       </span>
       <header className={styles[`Oceandex__Header`]}>
         <Heading
