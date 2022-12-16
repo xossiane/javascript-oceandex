@@ -9,12 +9,8 @@ export default function Footer() {
       <div className={styles[`footerContainer__logoParagraph`]}>
         <p>Connect with us</p>
         <div className={styles[`footerContainer__logo`]}>
-          <LinkedinIcon
-            href="https://www.linkedin.com/company/valtech/" 
-          />
-          <InstagramIcon
-            href="https://www.instagram.com/valtech_brasil/"
-          />
+          <LinkedinIcon href="https://www.linkedin.com/company/valtech/" />
+          <InstagramIcon href="https://www.instagram.com/valtech_brasil/" />
         </div>
       </div>
       <p className={styles[`footerContainer__copyParagraph`]}>

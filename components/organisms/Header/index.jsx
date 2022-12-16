@@ -7,29 +7,27 @@ import MenuDesktop from "@molecules/MenuDesktop";
 export default function Header() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   return (
-    <div>
-      <div className={styles[`Header`]}>
-        <div>
-          <Link href="/">
-            <a>
-              <img
-                className={styles[`Header__logo`]}
-                src="assets/images/logo.svg"
-                alt="logo"
-              />
-            </a>
-          </Link>
-        </div>
-        <div className={styles[`Header__menuMobile`]}>
-          <MenuMobile
-            menuIsVisible={menuIsVisible}
-            setMenuIsVisible={setMenuIsVisible}
-          />
-        </div>
-        <div className={styles[`Header__menuDesktop`]}>
-          <MenuDesktop />
-        </div>
+    <header className={styles[`Header`]}>
+      <div>
+        <Link href="/">
+          <a>
+            <img
+              className={styles[`Header__logo`]}
+              src="assets/images/logo.svg"
+              alt="logo"
+            />
+          </a>
+        </Link>
       </div>
-    </div>
+      <div className={styles[`Header__menuMobile`]}>
+        <MenuMobile
+          menuIsVisible={menuIsVisible}
+          setMenuIsVisible={setMenuIsVisible}
+        />
+      </div>
+      <div className={styles[`Header__menuDesktop`]}>
+        <MenuDesktop />
+      </div>
+    </header>
   );
 }

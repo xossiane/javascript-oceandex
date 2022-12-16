@@ -1,16 +1,15 @@
-import Header from "@organisms/Header";
-import Line from "@atoms/Line";
+// import Header from "@organisms/Header";
+// import Footer from "@organisms/Footer";
 import Background from "@atoms/Background";
 import styles from "./styles.module.scss";
 
 export default function Container({ children }) {
   return (
     <div className={styles[`Container`]}>
-      <Header className={styles[`Container__header`]} />
-      <Line />
+      {/* <Header className={styles[`Container__header`]} /> */}
       <article className={styles[`Container__article`]}>{children}</article>
-      <Background />
-      <Line />
+      {/* <Background /> */}
+      {/* <Footer className={styles[`Container__footer`]} /> */}
     </div>
   );
 }

@@ -8,14 +8,14 @@ export default function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
         className={styles[`Navbar__openMenu`]}
         onClick={() => setMenuIsVisible(true)}
       >
-        <img src="assets/images/hamburger.svg" alt="Menu Hamburger" />
+        <img src="assets/images/menu/hamburger.svg" alt="Menu Hamburger" />
       </button>
       <nav className={`${menuIsVisible ? "" : styles[`Navbar__invisible`]}`}>
         <button
           className={styles[`Navbar__closeMenu`]}
           onClick={() => setMenuIsVisible(false)}
         >
-          <img src="assets/images/close.svg" alt="Close Menu Hamburger" />
+          <img src="assets/images/menu/close.svg" alt="Close Menu Hamburger" />
         </button>
         <ul className={styles[`Navbar__list`]}>
           <li className={styles[`Navbar__li`]}>
