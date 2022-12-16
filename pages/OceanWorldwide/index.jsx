@@ -42,11 +42,7 @@ export default function OceanWorldwide() {
   return (
     <div className={styles[`OceanWorldwide`]}>
       <div className={styles[`OceanWorldwide__container`]}>
-        <img
-          className={styles[`OceanWorldwide__header--rectangle`]}
-          alt=""
-          src="assets/images/extras/Rectangle.png"
-        />
+       
         <span className={styles[`OceanWorldwide__Arrow`]}>
           <Arrow href="/home" white={true}></Arrow>
         </span>
@@ -55,7 +51,7 @@ export default function OceanWorldwide() {
             level="1"
             className={styles[`OceanWorldwide__container--text`]}
             size="Xlarge"
-            color="white"
+            color="black"
             style="italic"
           >
             {" "}

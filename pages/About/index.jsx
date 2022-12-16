@@ -4,6 +4,8 @@ import AnimalsTag from "@molecules/AnimalsTag";
 import TabsDemo from "@organisms/Tabs";
 import Background from "@atoms/Background";
 import styles from "./styles.module.scss";
+import Like from "@atoms/Like";
+import ArrowLeft from "@atoms/ArrowLeft";
 
 export default function AboutPage() {
   return (
@@ -21,19 +23,11 @@ export default function AboutPage() {
       </div>
       <div className={styles[`AboutPage__Content`]}>
         <div className={styles[`AboutPage__Container`]}>
-          <img
-            className={styles[`AboutPage__Header--rectangle`]}
-            src="assets/images/extras/Rectangle.png"
-            alt=""
-          />
-          <img
-            className={styles[`AboutPage__Header--dotted`]}
-            src="assets/images/extras/dotted.png"
-            alt=""
-          />
+        
 
           <header className={styles[`AboutPage__Header`]}>
-            <Arrow href="/Oceandex" white={true}></Arrow>
+            <ArrowLeft href="/Oceandex" white={true} className={styles[`AboutPage__Header--arrow`]}/>
+            <Like white={true} className={styles[`AboutPage__Header--like`]}/>
           </header>
           <section className={styles[`AboutPage__Header--info`]}>
             <Heading
@@ -45,9 +39,13 @@ export default function AboutPage() {
               {" "}
               Octopus{" "}
             </Heading>
-            <section className={styles[`AboutPage__Header--tag`]}>
-              <AnimalsTag label={"Octopoda"}></AnimalsTag>{" "}
-              <AnimalsTag label={"Mollusca"}></AnimalsTag>
+            <section className={styles[`AboutPage__tag`]}>
+              <AnimalsTag className={styles[`AboutPage__tag--bg`]} label={"Animalia"} text="text"></AnimalsTag>{" "}
+              <AnimalsTag label={"Mollusca"} text="text" ></AnimalsTag>
+            </section>
+            <section className={styles[`AboutPage__tag2`]}>
+              <AnimalsTag label={"Animal"} text="text"></AnimalsTag>{" "}
+              <AnimalsTag label={"Molusco"} text="text" ></AnimalsTag>
             </section>
             <img
               src="assets/images/icons/16-octopus.png"

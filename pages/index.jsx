@@ -1,8 +1,5 @@
-import styles from "../styles/home.module.scss";
-import Background from "@atoms/Background";
-import Heading from "@atoms/Heading";
-import Button from "@atoms/Button/index.jsx";
-import Text from "@atoms/Text";
+import Home from "./home";
+
 
 import { useEffect, useState } from "react";
 

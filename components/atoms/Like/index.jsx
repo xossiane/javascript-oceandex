@@ -1,9 +1,10 @@
 import styles from './styles.module.scss';
 
-export default function Like({ liked = false, white }) {
+export default function Like({ liked = false, white, className }) {
   const color = white ? '#ffffff' : '#000000';
+  const classList = [];
   return (
-    <>
+    <div className={`${classList.join(" ")} ${className}`}>
       {liked ? (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path
@@ -26,6 +27,6 @@ export default function Like({ liked = false, white }) {
           />
         </svg>
       )}{" "}
-    </>
+    </div>
   );
 }
