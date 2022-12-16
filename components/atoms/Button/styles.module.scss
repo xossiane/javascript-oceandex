@@ -11,7 +11,10 @@
   padding: 10px;
   box-sizing: border-box;
   cursor: pointer;
-  @media (min-width: 1441px) {
+  color: white;
+  font-size: 1.8rem;
+ 
+  @media  (min-width: 1440px)  {
     display: none;
     &__desktop {
       display: flex;
@@ -40,8 +43,8 @@
     width: 234px;
     border-radius: 38px;
   } */
-  &__desktop {
-    @media (max-width: 1440px) {
+  @media (max-width: 1440px){
+    &__desktop{
       display: none;
     }
   }
@@ -60,30 +63,24 @@
     }
   }
 
-  &--color-100 {
-    background-color: variables.$color-100;
+  &--blue {
+    background-color: variables.$blue;
   }
 
-  &--color-200 {
-    background-color: variables.$color-200;
+  &--purple {
+    background-color: variables.$purple;
   }
-  &--color-300 {
-    background-color: variables.$color-300;
+  &--green {
+    background-color: variables.$green;
   }
-  &--color-400 {
-    background-color: variables.$color-400;
+  &--oliveGreen {
+    background-color: variables.$oliveGreen;
   }
-  &--color-500 {
-    background-color: variables.$color-500;
+  &--red {
+    background-color: variables.$red;
   }
-  &--color-600 {
-    background-color: variables.$color-600;
-  }
-  &--color-700 {
-    background-color: variables.$color-700;
-  }
-  &--color-800 {
-    background-color: variables.$color-800;
+  &--pink {
+    background-color: variables.$pink;
   }
 
   &--fontmedium {

@@ -22,15 +22,14 @@ export default function Button({
   const deskTopClasses = [];
   deskTopClasses.push(styles[`button--${color}`]);
   deskTopClasses.push(styles[`button__desktop`]);
- 
-  
+
   return (
     <>
       <div className={`${deskTopClasses.join(" ")}`}>
         <Heading
           level="1"
           color="white"
-          size="large"
+          size="small"
           weight="normal"
           format="uppercase"
         >
@@ -42,18 +41,12 @@ export default function Button({
         </Text>
 
         <Link href={`${href}`}>
-          <a className={styles[`button__desktopLink`]} >
-            Read More...
-          </a>
+          <a className={styles[`button__desktopLink`]}>Read More...</a>
         </Link>
       </div>
 
       <Link href={`${href}`}>
-        <div className={`${classList.join(" ")} ${className}`}>
-          <Heading level="2" color="white" size="medium" weight="normal">
-            {title}
-          </Heading>
-        </div>
+        <a className={`${classList.join(" ")} ${className}`}>{title}</a>
       </Link>
     </>
   );

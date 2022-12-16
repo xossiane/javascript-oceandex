@@ -1,18 +1,20 @@
 @use "@styles/variables";
 
-.AnimalsTag {
-  &--text {
-    z-index: 5;
-    z-index: 1;
-    margin-bottom: 0.5rem;
-    margin-left: 0.5rem;
-    font-style: italic;
-    font-size: 1.5rem;
-    font-weight: 400;
-    width: fit-content;
-    border-radius: 3.8rem;
-    padding: 0.8rem 1rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    text-align: left;
-  }
-}
+.AnimalsTag{
+    &--text{        
+        z-index: 5;
+        z-index: 1;
+        margin-bottom: 0.5rem;
+        margin-left: 0.5rem;
+        font-style: italic;
+        text-align: center;
+        width: fit-content;
+        border-radius: 3.8rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.12rem;
+        padding-bottom: 0.12rem;
+        background-color: variables.$grey;
+        
+    }
+   }

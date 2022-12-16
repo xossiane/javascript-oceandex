@@ -1,22 +1,24 @@
-.Curiosities{
-display: flex;
-flex-direction: column;
+@use "@styles/variables";
 
-    &__text{
-        width: 90%;
-        min-height: 25rem ;
-        text-align: justify;
-        line-height: 2.4rem;
-        margin: 1rem auto;
+.Curiosities {
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    width: 90%;
+    min-height: 25rem;
+    text-align: justify;
+    line-height: 2.4rem;
+    margin: 1rem auto;
+  }
+  &__img {
+    width: 30rem;
+    height: 18.1rem;
+    border-radius: 2.4rem;
+    margin: 2rem auto;
+    @media (min-width: 1024px) {
+      width: 45rem;
+      height: 27.1rem;
     }
-    &__img{
-        width: 30rem;
-        height: 18.1rem;
-        border-radius: 2.4rem;
-        margin: 2rem auto;
-        @media (min-width: 1024px) {
-            width: 45rem;
-            height: 27.1rem;
-        }
-    }
+  }
 }

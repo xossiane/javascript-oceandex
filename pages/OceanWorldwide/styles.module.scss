@@ -2,7 +2,7 @@
 
 .OceanWorldwide {
   position: relative;
-  background-color: variables.$color-500;
+  background-color: variables.$purple;
   width: 100%;
   min-height: 100vh;
   border-top-left-radius: 4.2rem;
@@ -34,7 +34,7 @@ overflow: hidden;
   &__content {
      display: flex;
     z-index: 100;
-    background-color: variables.$color-000;
+    background-color: variables.$white;
     // width: 1;
   min-height: 100vh;
     //flex-direction: column;

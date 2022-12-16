@@ -74,11 +74,10 @@ function Home() {
         </Heading>
         <div className={styles[`Home__div`]}></div>
         <section className={styles[`Home__content`]}>
-          
           <Button
             href="/Oceandex"
             size="medium"
-            color="color-400"
+            color="blue"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
             description="Animal’s List"
@@ -88,7 +87,7 @@ function Home() {
           <Button
             href="/OceanWorldwide"
             size="medium"
-            color="color-500"
+            color="purple"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
             description="Ocean's Curiosities"
@@ -98,7 +97,7 @@ function Home() {
           <Button
             href="/GeneralCuriosities"
             size="medium"
-            color="color-800"
+            color="green"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
             description="Animal's Curiosities"
@@ -108,7 +107,7 @@ function Home() {
           <Button
             href="/"
             size="medium"
-            color="color-700"
+            color="oliveGreen"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
             title="Trophic Level"
@@ -118,7 +117,7 @@ function Home() {
           <Button
             href="/"
             size="medium"
-            color="color-200"
+            color="pink"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
             title="Favorite Animals"
@@ -128,7 +127,7 @@ function Home() {
           <Button
             href="/"
             size="medium"
-            color="color-300"
+            color="red"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
             title="Who are you in oceanDex"

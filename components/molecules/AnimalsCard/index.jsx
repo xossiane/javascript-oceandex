@@ -19,11 +19,11 @@ export default function AnimalsCard({
 
     const color = {
       0: "animalsCard--blue",
-      1: "animalsCard--rose",
+      1: "animalsCard--purple",
       2: "animalsCard--pink",
       3: "animalsCard--green",
-      4: "animalsCard--aqua",
-      5: "animalsCard--purple",
+      4: "animalsCard--oliveGreen",
+      5: "animalsCard--red",
     };
     return color[randomNumber];
   };

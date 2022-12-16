@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 import Button from "@atoms/Button/index.jsx";
 import Text from "@atoms/Text";
 import Heading from "@atoms/Heading";
-import Arrow from "@atoms/Arrow";
+import Arrow from "@atoms/ArrowLeft";
 
 export default function OceanWorldWide() {
   return (
@@ -34,7 +34,7 @@ export default function OceanWorldWide() {
             <Button
               href="/home"
               size="medium"
-              color="color-500"
+              color="purple"
               fontsize="fontsmall"
               className={styles[`OceanWorldwide__buttons--unit`]}
             >
@@ -46,7 +46,7 @@ export default function OceanWorldWide() {
             <Button
               href="/home"
               size="medium"
-              color="color-500"
+              color="purple"
               fontsize="fontsmall"
               className={styles[`OceanWorldwide__buttons--unit`]}
             >
@@ -58,7 +58,7 @@ export default function OceanWorldWide() {
             <Button
               href="/home"
               size="medium"
-              color="color-500"
+              color="purple"
               fontsize="fontsmall"
               className={styles[`OceanWorldwide__buttons--unit`]}
             >
@@ -70,7 +70,7 @@ export default function OceanWorldWide() {
             <Button
               href="/home"
               size="medium"
-              color="color-500"
+              color="purple"
               fontsize="fontsmall"
               className={styles[`OceanWorldwide__buttons--unit`]}
             >
@@ -82,7 +82,7 @@ export default function OceanWorldWide() {
             <Button
               href="/home"
               size="medium"
-              color="color-500"
+              color="purple"
               fontsize="fontsmall"
               className={styles[`OceanWorldwide__buttons--unit`]}
             >

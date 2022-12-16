@@ -1,4 +1,4 @@
-import Arrow from "@atoms/Arrow";
+import Arrow from "@atoms/ArrowLeft";
 import Background from "@atoms/Background";
 import Button from "@atoms/Button";
 import Heading from "@atoms/Heading";
@@ -68,7 +68,7 @@ export default function OceanWorldwide() {
               <Button
                 href="/OceanCuriosities"
                 size="large"
-                color="color-500"
+                color="purple"
                 title={ocean.title}
                 description={ocean.description}
                 img={ocean.img}

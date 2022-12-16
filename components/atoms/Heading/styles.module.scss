@@ -4,24 +4,30 @@
   &--Xlarge {
     font-size: 3rem;
   }
-  &--large {
+  &--H2 {
     font-size: 2.2rem;
   }
-  &--medium {
-    font-size: 1.8rem;
+
+  @media (min-width: 1024px) {
+    &--H1 {
+      font-size: 4.5rem;
+    }
+    &--H2 {
+      font-size: 4rem;
+    }
   }
   &--small {
-    font-size: 1.4rem;
+    font-size: 2.6rem;
   }
 
   &--black {
     color: variables.$black;
   }
-  &--grey {
-    color: variables.$grey;
+  &--darkBlue {
+    color: variables.$darkBlue;
   }
   &--white {
-    color: variables.$color-000;
+    color: variables.$white;
   }
   &--normal {
     font-weight: normal;
