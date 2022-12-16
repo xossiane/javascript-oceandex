@@ -1,9 +1,8 @@
-import Link from "next/link";
 import styles from "./styles.module.scss";
 
 export default function GithubIcon({ href }) {
   return (
-    <Link href={`${href}`}>
+    <a href={href} target="_blank">
       <svg
         viewBox="0 0 32 32"
         fill="none"
@@ -46,6 +45,6 @@ export default function GithubIcon({ href }) {
           strokeLinejoin="round"
         />
       </svg>
-    </Link>
+      </a>
   );
 }
