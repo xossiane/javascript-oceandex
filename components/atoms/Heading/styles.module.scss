@@ -1,7 +1,7 @@
 @use "@styles/variables";
 
 .heading {
-  &--H1 {
+  &--Xlarge {
     font-size: 3rem;
   }
   &--H2 {
@@ -29,11 +29,16 @@
   &--white {
     color: variables.$white;
   }
-
+  &--normal {
+    font-weight: normal;
+  }
   &--bold {
     font-weight: bold;
   }
   &--italic {
     font-style: italic;
+  }
+  &--uppercase {
+    text-transform: uppercase;
   }
 }

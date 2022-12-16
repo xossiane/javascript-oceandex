@@ -12,72 +12,68 @@ export default function MainPage() {
           Discover the Ocean
         </Heading>
         <section className={styles[`Home__content`]}>
+        <section className={styles[`Home__content`]}>
           <Button
             href="/Oceandex"
             size="medium"
             color="blue"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
-          >
-            <Text color="white" size="small">
-              OceanDex
-            </Text>{" "}
-          </Button>
-          <Button
-            href="/Teste"
-            size="medium"
-            color="green"
-            fontsize="fontsmall"
-            className={styles[`Home__buttons--unit`]}
-          >
-            <Text color="white" size="small">
-              General Curiosities
-            </Text>{" "}
-          </Button>
+            description="Animal’s List"
+            img="/assets/images/icons/icon.svg"
+            title="Oceandex"
+          ></Button>
           <Button
             href="/OceanWorldwide"
             size="medium"
             color="purple"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
-          >
-            <Text color="white" size="small">
-              Ocean Worldwide
-            </Text>{" "}
-          </Button>
+            description="Ocean's Curiosities"
+            img="/assets/images/icons/oceanworldwide.svg"
+            title="Ocean Worldwide"
+          ></Button>
+          <Button
+            href="/GeneralCuriosities"
+            size="medium"
+            color="green"
+            fontsize="fontsmall"
+            className={styles[`Home__buttons--unit`]}
+            description="Animal's Curiosities"
+            img="/assets/images/icons/general.svg"
+            title="Animal's Curiosities"
+          ></Button>
           <Button
             href="/"
             size="medium"
             color="oliveGreen"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
-          >
-            <Text color="white" size="small">
-              Trophic Level
-            </Text>{" "}
-          </Button>
+            title="Trophic Level"
+            description="Food Chain"
+            img="/assets/images/icons/trophic.svg"
+          ></Button>
           <Button
             href="/"
             size="medium"
             color="pink"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
-          >
-            <Text color="white" size="small">
-              Favorite Animals
-            </Text>{" "}
-          </Button>
+            title="Favorite Animals"
+            description="Selected animals(by heart)"
+            img="/assets/images/icons/favorite.svg"
+          ></Button>
           <Button
             href="/"
             size="medium"
             color="red"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
-          >
-            <Text color="white" size="small">
-              Authors
-            </Text>{" "}
-          </Button>
+            title="Who are you in oceanDex"
+            description="Who made this"
+            img="/assets/images/icons/author.svg"
+          ></Button>
+        </section>
         </section>
       </main>
     </div>
