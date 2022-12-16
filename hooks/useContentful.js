@@ -14,6 +14,7 @@ const useContentful = () => {
         content_type: "animal",
         select: "fields",
         include: 5,
+        limit: 5,
         // "fields.completeAnimal": "true",
       });
       const sanitizedList = (await animalsList).items.map((item) => {
@@ -21,13 +22,11 @@ const useContentful = () => {
         const image = item.fields.image.fields.file.url;
         const dietList = item.fields.dietList?.fields.dietList.map((i) => {
           return {
-            //...i.fields,
             id: i.fields.id || "",
             name: i.fields.name || "",
             image: i.fields.image.fields.file.url,
             // Padronizar como completeAnimal
-            completeAnimal:
-              i.fields.completeAnimal || i.fields.complteAnimal || "",
+            completeAnimal: i.fields.completeAnimal || "",
           };
         });
         //const curiosity = item.fields.curiosity.fields.description;
@@ -46,79 +45,61 @@ const useContentful = () => {
       console.log(`Error fetching content: ${error}`);
     }
   };
-  /* const getAnimals = async () => {
+
+  const getAuthors = async () => {
     try {
-      const entries = await client.getEntries({
-        content_type: "animal",
+      const authors = client.getEntries({
+        content_type: "authors",
         select: "fields",
-        //"fields.teste": "true",
+        order: "fields.name",
       });
-      const animals = [];
-      const sanitizedAnimal = entries.items.map((item) => {
-        const {
-          id,
-          name,
-          scientificName,
-          height,
-          weight,
-          image,
-          curiosity,
-          classification,
-          description,
-          slug,
-          location,
-        } = item.fields;
-
-        const curiosities = curiosity?.fields;
-
-        const classifications = classification?.fields;
-
-        const images = image?.fields;
-
-        const animal = {
-          id,
-          name,
-          scientificName,
-          height,
-          weight,
-          images,
-          curiosities,
-          classifications,
-          description,
-          slug,
-          location,
-        };
-
-        animals.push(animal);
-        return {
-          animal,
-        };
+      const sanitizedList = (await authors).items.map((item) => {
+        return { ...item.fields, photo: item.fields.photo.fields.file.url };
       });
 
-      return animals;
+      return sanitizedList;
     } catch (error) {
       console.log(`Error fetching content: ${error}`);
     }
   };
 
-  const getAnimal = async (animal) => {
+  const getCuriosities = async () => {
     try {
-      const animals = await getAnimals();
-      const newAnimal = animals.find((a) => {
-        return (
-          a.name === animal ||
-          a.classifications.order === animal ||
-          a.classifications.phylum === animal
-        );
+      const curiosities = client.getEntries({
+        content_type: "animalCuriosities",
+        //"fields.oceanName": "pacific",
+        select: "fields",
       });
-      return [newAnimal];
+      const sanitizedList = (await curiosities).items.map((item) => {
+        const curiosityType = item.fields.curiosityType;
+        if (curiosityType === "ocean") {
+          return {
+            id: item.fields.id,
+            curiosityType: curiosityType,
+            oceanName: item.fields.oceanName,
+            oceanTitle: item.fields.oceanTitle,
+            description: item.fields.description,
+            image: item.fields.image.fields.file.url,
+          };
+        } else {
+          return {
+            id: item.fields.id,
+            curiosityType: curiosityType,
+            animalName: item.fields.animalName,
+            description: item.fields.description,
+            orderAndPhylum: item.fields.orderAndPhylum,
+            image: item.fields.image.fields.file.url,
+          };
+        }
+      });
+
+      return sanitizedList;
     } catch (error) {
       console.log(`Error fetching content: ${error}`);
     }
   };
 
-  return { getAnimals, getAnimal }; */
-  return { getAnimals };
+  return { getAnimals, getAuthors, getCuriosities };
 };
 
 export default useContentful;
