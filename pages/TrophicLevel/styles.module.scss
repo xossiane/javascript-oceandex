@@ -48,9 +48,14 @@
   }
 }
 
-.backgroundImage {
-  opacity: 0.2;
-  position: absolute;
-  top: 82%;
+.containerBackgroundImage {
+  position: relative;
   width: 100%;
+
+  .backgroundImage {
+    opacity: 0.2;
+    position: absolute;
+    bottom: -90%;
+    width: 100%;
+  }
 }

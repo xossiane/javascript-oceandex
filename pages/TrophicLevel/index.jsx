@@ -57,7 +57,9 @@ export default function TrophicLevel() {
           <img src="/assets/images/foodChain/deepOceanDesktopjpg.jpg" alt="" />
         </div>
     </Container>
+      <div className={styles.containerBackgroundImage}>
         <img className={styles.backgroundImage} src="/assets/images/extras/backgroundLarge2.png" alt="" />
+      </div>
   </>
   );
 }
