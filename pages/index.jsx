@@ -46,7 +46,7 @@ export default function MainPage() {
             </Text>{" "}
           </Button>
           <Button
-            href="/"
+            href="/TrophicLevel"
             size="medium"
             color="oliveGreen"
             fontsize="fontsmall"

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import styles from "./styles.module.scss";
 import Text from "@atoms/Text";
+import { useState } from "react";
 import oceananimals from "../../../../javascript-oceandex/oceananimals.json";
+import styles from "./styles.module.scss";
 
 function GeneralCuriosities() {
   const animals = oceananimals;
