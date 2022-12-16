@@ -14,7 +14,8 @@ const useContentful = () => {
         content_type: "animal",
         select: "fields",
         include: 5,
-        limit: 5,
+        order: "fields.name",
+        //limit: 5,
         // "fields.completeAnimal": "true",
       });
       const sanitizedList = (await animalsList).items.map((item) => {
