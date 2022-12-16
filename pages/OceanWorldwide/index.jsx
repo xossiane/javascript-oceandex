@@ -1,4 +1,4 @@
-import ArrowLeft from "@atoms/ArrowLeft";
+import Arrow from "@atoms/ArrowLeft";
 import Background from "@atoms/Background";
 import Button from "@atoms/Button";
 import Heading from "@atoms/Heading";
@@ -42,8 +42,10 @@ export default function OceanWorldwide() {
   return (
     <div className={styles[`OceanWorldwide`]}>
       <div className={styles[`OceanWorldwide__container`]}>
-        
-      
+       
+        <span className={styles[`OceanWorldwide__Arrow`]}>
+          <Arrow href="/home" white={true}></Arrow>
+        </span>
         <section className={styles[`OceanWorldwide__header`]}>
           <Heading
             level="1"
@@ -61,8 +63,8 @@ export default function OceanWorldwide() {
             {oceans.map((ocean) => (
               <Button
                 href="/OceanCuriosities"
-                size="small"
-                key={ocean} color="blue"
+                size="large"
+                color="purple"
                 title={ocean.title}
                 description={ocean.description}
                 img={ocean.img}
