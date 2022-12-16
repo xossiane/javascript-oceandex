@@ -37,21 +37,20 @@ const index = () => {
       });
     }
   }, [search]);
-
+  //console.log(animal);
   function showAnimal() {
-    return animal?.map(
-      (item) =>
-        item && (
-          <AnimalsCard
-            href="/"
-            key={item.id}
-            name={item.name}
-            order={item.classifications.order}
-            phylum={item.classifications.phylum}
-            src={item.images.file.url}
-          />
-        )
-    );
+    return animal.map((item) => {
+      return (
+        <AnimalsCard
+          href="/"
+          key={item.id}
+          name={item.name}
+          order={item.classification.order}
+          phylum={item.classification.phylum}
+          src={item.image}
+        />
+      );
+    });
   }
 
   return (
