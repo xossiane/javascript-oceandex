@@ -1,5 +1,7 @@
-import Home from "./home";
 
+import styles from '../styles/home.module.scss'
+import Heading from '@atoms/Heading';
+import Button from '@atoms/Button';
 
 import { useEffect, useState } from "react";
 
@@ -18,7 +20,7 @@ export default function MainPage() {
   console.log(model);
   return (
     <div className={styles[`Home`]}>
-      <Container></Container>
+    
       <main className={styles[`Home__container`]}>
         <Heading level="1" size="Xlarge" color="grey" weight="italic">
           Discover the Ocean
