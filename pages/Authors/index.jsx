@@ -4,6 +4,7 @@ import InspiredBy from "@atoms/InspiredBy";
 
 export default function AuthorsPage() {
   return (
+    
     <div className={styles.container}>
       <section className={styles.authorsPage}>
         <AuthorsMolecule

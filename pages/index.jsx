@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import useContentful from "../hooks/useContentful";
 import Heading from '@atoms/Heading';
 import Button from '@atoms/Button';
+import Header from '@organisms/Header';
+import LineTop from '@atoms/Line';
 
 export default function MainPage() {
   const { getAnimals } = useContentful();
@@ -19,6 +21,9 @@ export default function MainPage() {
   }, []);
   console.log(model);
   return (
+    <>
+    <Header/>
+    <LineTop/>
     <div className={styles[`Home`]}>
       <main className={styles[`Home__container`]}>
         <Heading level="1" size="Xlarge" color="grey" weight="italic">
@@ -74,7 +79,7 @@ export default function MainPage() {
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
             title="Favorite Animals"
-            description="Selected animals(by heart)"
+            description="Selected animals (by heart)"
             img="/assets/images/icons/favorite.svg"
           ></Button>
           <Button
@@ -83,7 +88,7 @@ export default function MainPage() {
             color="red"
             fontsize="fontsmall"
             className={styles[`Home__buttons--unit`]}
-            title="Who are you in oceanDex"
+            title="Authors"
             description="Who made this"
             img="/assets/images/icons/author.svg"
           ></Button>
@@ -91,5 +96,6 @@ export default function MainPage() {
         </section>
       </main>
     </div>
+    </>
   );
 }
