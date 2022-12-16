@@ -11,7 +11,12 @@
   padding: 10px;
   box-sizing: border-box;
   cursor: pointer;
-
+  &--small{
+    width: 16rem;
+    height: 7.3rem;
+    text-align: center;
+    
+  }
   &--medium {
     width: 15.5rem;
     height: 6rem;

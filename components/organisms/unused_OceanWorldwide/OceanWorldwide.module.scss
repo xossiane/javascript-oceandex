@@ -1,6 +1,7 @@
 @use "@styles/variables";
 
 .OceanWorldwide{
+  display: none;
     position: relative;
     background-color: variables.$color-500;
     width: 100%;
@@ -26,7 +27,7 @@
   }
 
    &--rectangle{
-      display: flex;
+      display: none;
           
   }
   &__content{    

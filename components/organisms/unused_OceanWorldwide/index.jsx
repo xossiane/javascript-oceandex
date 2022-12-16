@@ -10,22 +10,17 @@ export default function OceanWorldWide() {
   return (
     <>
       <div className={styles[`OceanWorldwide__container`]}>
-        <img
-          className={styles[`OceanWorldwide__header--rectangle`]}
-          src="assets/images/extras/Rectangle.png"
-          alt="ornament"
-        />
         <section className={styles[`OceanWorldwide__header`]}>
           <Arrow white={true}></Arrow>
           <Heading
             level="1"
             className={styles[`OceanWorldwide__container--text`]}
             size="Xlarge"
-            color="white"
+            color="black"
             style="italic"
           >
             {" "}
-            Ocean WorldWide
+            Ocean AAA
           </Heading>
         </section>
 
