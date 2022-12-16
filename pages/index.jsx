@@ -68,7 +68,7 @@ export default function MainPage() {
             </Text>{" "}
           </Button>
           <Button
-            href="/"
+            href="/Authors"
             size="medium"
             color="red"
             fontsize="fontsmall"
