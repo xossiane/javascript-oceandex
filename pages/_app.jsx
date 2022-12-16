@@ -1,6 +1,6 @@
 import "../styles/globals.scss";
 import Head from "next/head";
-import Footer from "@organisms/Footer";
+//import Footer from "@organisms/Footer";
 const MyApp = ({ Component, pageProps }) => {
   return (
     <div>
