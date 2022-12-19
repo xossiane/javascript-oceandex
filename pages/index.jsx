@@ -8,6 +8,7 @@ import Heading from '@atoms/Heading';
 import Button from '@atoms/Button';
 import Header from '@organisms/Header';
 import LineTop from '@atoms/Line';
+import Hero from '@organisms/Hero';
 
 export default function MainPage() {
   const { getAnimals } = useContentful();
@@ -25,10 +26,13 @@ export default function MainPage() {
     <Header/>
     <LineTop/>
     <div className={styles[`Home`]}>
+      
       <main className={styles[`Home__container`]}>
         <Heading level="1" size="Xlarge" color="grey" weight="italic">
           Discover the Ocean
         </Heading>
+
+        <Hero></Hero>
         
         <section className={styles[`Home__content`]}>
         <section className={styles[`Home__content`]}>
