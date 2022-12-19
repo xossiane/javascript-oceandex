@@ -6,7 +6,7 @@ import useContentful from "../hooks/useContentful";
 import Heading from "@atoms/Heading";
 
 import Card from "@molecules/Card";
-import Btn from "@molecules/Button";
+import Button from "@molecules/Button";
 import btnCardIndex from "../data/btnCardIndex.json";
 
 export default function MainPage() {
@@ -31,7 +31,7 @@ export default function MainPage() {
           <section className={styles[`Home__content`]}>
             {btnCardIndex.map((element) => (
               <>
-                <Btn
+                <Button
                   color={element.color}
                   className={styles[`Home__buttons--unit`]}
                   href={element.href}
