@@ -3,8 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Heading from "@atoms/Heading";
 import Text from "@atoms/Text";
-export default function Button({ href, color, title, img, description }) {
-  
+export default function Card({ href, color, title, img, description }) {
   const classList = [];
   classList.push(styles[`card--${color}`]);
   classList.push(styles[`card`]);
