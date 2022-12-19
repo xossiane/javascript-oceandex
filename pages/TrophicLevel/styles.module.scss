@@ -7,7 +7,7 @@
     text-align: center;
     -webkit-text-stroke: 0.5px black;
 
-    @media screen and (max-width: 426px) {
+    @media (max-width: 1023px) {
       filter: none;
       font-size: 1.8rem;
       margin-top: 0.6rem;
@@ -18,21 +18,23 @@
     text-align: left;
     margin-bottom: 4.6rem;
 
-    @media screen and (max-width: 426px) {
+    @media (max-width: 1023px) {
       display: none;
     }
   }
 
   &__ContainerCard {
     display: flex;
+    justify-content: center;
     gap: 2.5rem;
+
     margin-bottom: 4.6rem;
 
-    @media screen and (max-width: 426px) {
+    @media (max-width: 1023px) {
       align-items: center;
       display: flex;
-      gap: 0.9rem;
       flex-direction: column;
+      gap: 0.9rem;
       margin-bottom: 2.2rem;
     }
   }
@@ -46,7 +48,7 @@
     gap: 6.3rem;
 
 
-    @media screen and (max-width: 426px) {
+    @media (max-width: 1023px) {
       display: none;
     }
 
@@ -64,7 +66,7 @@
   &__ContainerMobile {
     display: none;
 
-    @media screen and (max-width: 426px) {
+    @media (max-width: 1023px) {
       display: flex;
       flex-direction: column;
 
@@ -90,7 +92,7 @@
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width: 426px) {
+    @media (max-width: 1023px) {
       display: none;
     }
 
@@ -113,7 +115,7 @@
       bottom: -90%;
       width: 100%;
 
-      @media screen and (max-width: 426px) {
+      @media (max-width: 1023px) {
         display: none;
       }
     }
@@ -121,7 +123,7 @@
     &__BackgroundImageMobile {
       display: none;
 
-      @media screen and (max-width: 426px) {
+      @media (max-width: 1023px) {
         bottom: -90%;
         display: block;
         position: absolute;

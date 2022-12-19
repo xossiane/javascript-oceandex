@@ -16,8 +16,6 @@ export default function Button({
   classList.push(styles[`button--${fontsize}`]);
   classList.push(styles[`button`]);
 
- 
-
   return (
     <Link href={`${href}`}>
       <a className={`${classList.join(" ")} ${className}`}>{title}</a>

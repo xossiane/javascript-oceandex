@@ -26,13 +26,16 @@
   &--medium {
     width: 15.5rem;
     height: 6rem;
+
     @media (min-width: 768px) {
       min-width: 60%;
     }
   }
+
   &--large {
     width: 22rem;
     height: 7.3rem;
+
     @media (min-width: 768px) {
       min-width: 60%;
     }
@@ -45,15 +48,19 @@
   &--purple {
     background-color: variables.$purple;
   }
+
   &--green {
     background-color: variables.$green;
   }
+
   &--oliveGreen {
     background-color: variables.$oliveGreen;
   }
+
   &--red {
     background-color: variables.$red;
   }
+
   &--pink {
     background-color: variables.$pink;
   }

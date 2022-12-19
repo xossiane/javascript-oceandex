@@ -2,8 +2,9 @@
 // import Background from "@atoms/Background";
 // import Button from "@atoms/Button";
 // import Heading from "@atoms/Heading";
-import Button from "@atoms/Button";
 import Text from "@atoms/Text";
+import Button from "@molecules/Button";
+import Card from "@molecules/Card";
 import Container from "@organisms/Container";
 import styles from "./styles.module.scss";
 
@@ -16,36 +17,48 @@ export default function TrophicLevel() {
       <Text className={styles[`TrophicLevel__Paragraph`]} size="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
 
         <div className={styles[`TrophicLevel__ContainerCard`]}>
-          <Button
+          <Card
             href="/"
-            size="medium"
             color="oliveGreen"
-            fontsize="fontsmall"
-            className={styles[`Home__buttons--unit`]}
+            title="Deep Ocean"
             description="Below 200 meters"
             img="/assets/images/icons/deep_ocean.svg"
-            title="Deep Ocean"
-          ></Button>
-          <Button
+          />
+          <Card
             href="/"
-            size="medium"
             color="oliveGreen"
-            fontsize="fontsmall"
-            className={styles[`Home__buttons--unit`]}
             description="Coldest waters"
             img="/assets/images/icons/artic_ocean.svg"
             title="Arctic Ocean"
-          ></Button>
-          <Button 
+          />
+          <Card
             href="/"
-            size="medium"
             color="oliveGreen"
-            fontsize="fontsmall"
-            className={styles[`Home__buttons--unit`]}
             description="Where light meets water"
             img="/assets/images/icons/pelagic_ocean.svg"
             title="Pelagic Ocean"
-          ></Button>
+          />
+          <Button
+            href="/"
+            color="oliveGreen"
+            title="Deep Ocean"
+            description="Below 200 meters"
+            img="/assets/images/icons/deep_ocean.svg"
+          />
+          <Button
+            href="/"
+            color="oliveGreen"
+            description="Coldest waters"
+            img="/assets/images/icons/artic_ocean.svg"
+            title="Arctic Ocean"
+          />
+          <Button
+            href="/"
+            color="oliveGreen"
+            description="Where light meets water"
+            img="/assets/images/icons/pelagic_ocean.svg"
+            title="Pelagic Ocean"
+          />
         </div>
         
         <div className={styles[`TrophicLevel__ContainerText`]}>
