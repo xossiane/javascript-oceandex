@@ -1,0 +1,57 @@
+[
+    {
+      "color": "blue",
+      "href": "/oceandex",
+      "description": "Animal's list",
+      "img": "/assets/images/icons/icon.svg",
+      "title": "Oceandex",
+      "fontsize":"fontsmall",
+      "size": "medium"
+    },
+    {
+      "color": "purple",
+      "href": "/OceanWorldwide",
+      "description": "Ocean's Curiosities",
+      "img": "/assets/images/icons/oceanworldwide.svg",
+      "title": "Ocean Worldwide",
+      "fontsize":"fontsmall",
+      "size": "medium"
+    },
+    {
+      "color": "green",
+      "href": "/GeneralCuriosities",
+      "description": "imal's Curiosities",
+      "img": "/assets/images/icons/general.svg",
+      "title": "Animal's Curiosities",
+      "fontsize":"fontsmall",
+      "size": "medium"
+    },
+    {
+      "color": "oliveGreen",
+      "href": "/TrophicLevel",
+      "description": "Food Chain",
+      "img": "/assets/images/icons/trophic.svg",
+      "title": "Trophic Level",
+      "fontsize":"fontsmall",
+      "size": "medium"
+    },
+    {
+      "color": "pink",
+      "href": "/",
+      "description": "Selected animals(by heart)",
+      "img": "/assets/images/icons/favorite.svg",
+      "title": "Favorite Animals",
+      "fontsize":"fontsmall",
+      "size": "medium"
+    },
+    {
+      "color": "red",
+      "href": "/Authors",
+      "description": "Who made this",
+      "img": "/assets/images/icons/author.svg",
+      "title": "Authors",
+      "fontsize":"fontsmall",
+      "size": "medium"
+    }
+  ]
+  
