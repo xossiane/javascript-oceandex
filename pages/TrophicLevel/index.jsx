@@ -24,7 +24,7 @@ export default function TrophicLevel() {
             className={styles[`Home__buttons--unit`]}
             description="Below 200 meters"
             img="/assets/images/icons/deep_ocean.svg"
-            title="Ocean Worldwide"
+            title="Deep Ocean"
           ></Button>
           <Button
             href="/"
@@ -49,8 +49,20 @@ export default function TrophicLevel() {
         </div>
         
         <div className={styles.containerText}>
-          <Text className={styles.containerTitle}>Deep Ocean</Text>
-          <Text size="large" className={styles.containerParagraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+          <Text className={styles.containerText__Title}>Deep Ocean</Text>
+          <Text size="large" className={styles.containerText__Paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+        </div>
+
+        <div className={styles.containerMobile}>
+          <Text className={styles.containerMobile__Title}>Deep Sea</Text>
+          <img src="/assets/images/foodChain/deepOceanMobile.png" alt="" />
+          <Text className={styles.containerMobile__Paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+          <Text className={styles.containerMobile__Title}>Arctic Ocean</Text>
+          <img src="/assets/images/foodChain/arcticOceanMobile.png" alt="" />
+          <Text className={styles.containerMobile__Paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+          <Text className={styles.containerMobile__Title}>Pelagic Ocean</Text>
+          <img src="/assets/images/foodChain/pelagicOceanMobile.png" alt="" />
+          <Text className={styles.containerMobile__Paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
         </div>
 
         <div className={styles.containerImage}>
@@ -58,7 +70,8 @@ export default function TrophicLevel() {
         </div>
     </Container>
       <div className={styles.containerBackgroundImage}>
-        <img className={styles.backgroundImage} src="/assets/images/extras/backgroundLarge2.png" alt="" />
+        <img className={styles.containerBackgroundImage__backgroundImage} src="/assets/images/extras/backgroundLarge2.png" alt="" />
+        <img className={styles.containerBackgroundImage__backgroundImageMobile} src="/assets/images/extras/background.png" alt="" />
       </div>
   </>
   );
