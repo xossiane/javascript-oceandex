@@ -6,9 +6,12 @@ import Text from "@atoms/Text";
 import Button from "@molecules/Button";
 import Card from "@molecules/Card";
 import Container from "@organisms/Container";
+import { useState } from "react";
 import styles from "./styles.module.scss";
 
 export default function TrophicLevel() {
+
+  const [selected, setSelected] = useState('Deep Ocean'); 
 
   return (
   <>
@@ -19,24 +22,30 @@ export default function TrophicLevel() {
         <div className={styles[`TrophicLevel__ContainerCard`]}>
           <Card
             href="/"
-            color="oliveGreen"
             title="Deep Ocean"
+            color="oliveGreen"
             description="Below 200 meters"
+            onClick={() => setSelected("Deep Ocean")}
             img="/assets/images/icons/deep_ocean.svg"
+            state={selected}
           />
           <Card
             href="/"
+            title="Arctic Ocean"
             color="oliveGreen"
             description="Coldest waters"
+            onClick={() => setSelected("Arctic Ocean")}
             img="/assets/images/icons/artic_ocean.svg"
-            title="Arctic Ocean"
+            state={selected}
           />
           <Card
             href="/"
+            title="Pelagic Ocean"
             color="oliveGreen"
             description="Where light meets water"
+            onClick={() => setSelected("Pelagic Ocean")}
             img="/assets/images/icons/pelagic_ocean.svg"
-            title="Pelagic Ocean"
+            state={selected}
           />
           <Button
             href="/"
@@ -79,7 +88,9 @@ export default function TrophicLevel() {
         </div>
 
         <div className={styles[`TrophicLevel__ContainerImage`]}>
-          <img src="/assets/images/foodChain/deepOceanDesktopjpg.jpg" alt="" />
+          {selected === 'Deep Ocean' && <img src="/assets/images/foodChain/deepOceanDesktopjpg.jpg" alt="" />}
+          {selected === 'Arctic Ocean' && <img src="/assets/images/foodChain/arcticOceanDesktop.png" alt="" />}
+          {selected === 'Pelagic Ocean' && <img src="/assets/images/foodChain/pelagicOceanDesktop.png" alt="" />}
         </div>
     </Container>
       <div className={styles[`TrophicLevel__ContainerBackgroundImage`]}>

@@ -11,6 +11,22 @@
     border-radius: 15px;
   }
 
+  &__relative {
+    position: relative;
+
+    &--selected {
+      border: 8px solid #B64760;
+      border-radius: 20px;
+      height: 100%;
+      left: -11px;
+      padding: 3px;
+      position: absolute;
+      top: -11px;
+      width: 100%;
+    }
+  }
+
+
   &__Link {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.2);
