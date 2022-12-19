@@ -39,21 +39,18 @@ function OceanCuriosities() {
     <>
       <>
         <div className={styles[`OceanCuriosities__container`]}>
-         
-
           <section className={styles[`OceanCuriosities__content`]}>
-          <section className={styles[`OceanCuriosities__header`]}>
-            <Heading
-              level="1"
-              className={styles[`OceanCuriosities__container--text`]}
-              size="Xlarge"
-              color="black"
-              style="italic"
-            >
-              {" "}
-              Atlantic Ocean
-            </Heading>
-          </section>
+            <section className={styles[`OceanCuriosities__header`]}>
+              <Heading
+                level="1"
+                className={styles[`OceanCuriosities__container--text`]}
+                color="black"
+                style="italic"
+              >
+                {" "}
+                Atlantic Ocean
+              </Heading>
+            </section>
             <>
               <img
                 className={styles[`OceanCuriosities--Img`]}

@@ -42,7 +42,6 @@ export default function OceanWorldwide() {
   return (
     <div className={styles[`OceanWorldwide`]}>
       <div className={styles[`OceanWorldwide__container`]}>
-       
         <span className={styles[`OceanWorldwide__Arrow`]}>
           <Arrow href="/home" white={true}></Arrow>
         </span>
@@ -50,7 +49,6 @@ export default function OceanWorldwide() {
           <Heading
             level="1"
             className={styles[`OceanWorldwide__container--text`]}
-            size="Xlarge"
             color="black"
             style="italic"
           >
