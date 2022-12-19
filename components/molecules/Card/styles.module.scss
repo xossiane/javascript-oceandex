@@ -14,6 +14,7 @@
   &__relative {
     position: relative;
 
+
     &--selected {
       border: 8px solid #B64760;
       border-radius: 20px;
@@ -23,6 +24,11 @@
       position: absolute;
       top: -11px;
       width: 100%;
+
+
+      @media (max-width: 1439.9px) {
+        display: none;
+      }
     }
   }
 
