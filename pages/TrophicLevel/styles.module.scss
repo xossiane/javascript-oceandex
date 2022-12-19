@@ -1,136 +1,135 @@
 @use "@styles/variables";
 
-.title {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  margin: 4.6rem 0rem;
-  text-align: center;
-  -webkit-text-stroke: 0.5px black;
-}
+.TrophicLevel {
+  &__Title {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 4.6rem 0rem;
+    text-align: center;
+    -webkit-text-stroke: 0.5px black;
 
-.paragraph {
-  text-align: left;
-  margin-bottom: 4.6rem;
-}
-
-.containerCard {
-  display: flex;
-  gap: 40px;
-  margin-bottom: 4.6rem;
-}
-
-.containerText {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 57px;
-  margin-bottom: 4.7rem;
-  gap: 102px;
-
-  .containerText__Title {
-    font-size: 2.5rem;
-    margin: 0px;
-    width: 433px; //tamanho relativo
+    @media screen and (max-width: 426px) {
+      filter: none;
+      font-size: 1.8rem;
+      margin-top: 0.6rem;
+    }
   }
 
-  .containerText__Paragraph {
-    margin: 0px;
-  }
-}
+  &__Paragraph {
+    text-align: left;
+    margin-bottom: 4.6rem;
 
-.containerMobile {
-  display: none;
-}
-
-.containerImage {
-  display: flex;
-  justify-content: center;
-
-
-
-
-  img {
-    border-radius: 3.2rem;
-    z-index: 1;
-  }
-}
-
-.containerBackgroundImage {
-  position: relative;
-  width: 100%;
-
-  .containerBackgroundImage__backgroundImage {
-    opacity: 0.2;
-    position: absolute;
-    bottom: -90%;
-    width: 100%;
+    @media screen and (max-width: 426px) {
+      display: none;
+    }
   }
 
-  .containerBackgroundImage__backgroundImageMobile {
-    display: none;
-  }
-}
+  &__ContainerCard {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 4.6rem;
 
-
-@media screen and (max-width: 426px) {
-  .title {
-    filter: none;
-    font-size: 1.8rem;
-    margin-top: 0.6rem;
-  }
-
-  .containerImage {
-    display: none;
+    @media screen and (max-width: 426px) {
+      align-items: center;
+      display: flex;
+      gap: 0.9rem;
+      flex-direction: column;
+      margin-bottom: 2.2rem;
+    }
   }
 
-  .paragraph {
-    display: none;
-  }
-
-  .containerCard {
+  &__ContainerText {
     align-items: center;
     display: flex;
-    gap: 0.9rem;
-    flex-direction: column;
-    margin-bottom: 2.2rem;
-  }
+    justify-content: space-between;
+    margin: 0 3.5rem;
+    margin-bottom: 4.7rem;
+    gap: 6.3rem;
 
-  .containerText {
-    display: none;
-  }
 
-  .containerMobile {
-    display: flex;
-    flex-direction: column;
-
-    .containerMobile__Title {
-      font-size: 1.3rem;
-      text-align: center;
-    }
-
-    .containerMobile__Paragraph {
-      font-size: 1.1rem;
-      margin-bottom: 4.2rem;
-
-      &:last-child {
-        margin-bottom: 13.1rem;
-      }
-    }
-  }
-
-  .containerBackgroundImage {
-
-    .containerBackgroundImage__backgroundImage {
+    @media screen and (max-width: 426px) {
       display: none;
     }
 
-    .containerBackgroundImage__backgroundImageMobile {
-      bottom: -90%;
-      display: block;
+    &__Title {
+      font-size: 2.5rem;
+      margin: 0px;
+      width: 433px; //tamanho relativo
+    }
+
+    &__Paragraph {
+      margin: 0px;
+    }
+  }
+
+  &__ContainerMobile {
+    display: none;
+
+    @media screen and (max-width: 426px) {
+      display: flex;
+      flex-direction: column;
+
+      &__Title {
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      &__Paragraph {
+        font-size: 1.1rem;
+        margin-bottom: 4.2rem;
+
+        &:last-child {
+          margin-bottom: 13.1rem;
+        }
+      }
+    }
+
+
+  }
+
+  &__ContainerImage {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 426px) {
+      display: none;
+    }
+
+
+    img {
+      border-radius: 3.2rem;
+      z-index: 1;
+    }
+  }
+
+  &__ContainerBackgroundImage {
+    position: relative;
+    width: 100%;
+
+
+
+    &__BackgroundImage {
+      opacity: 0.2;
       position: absolute;
+      bottom: -90%;
       width: 100%;
 
-      img {
-        border-radius: 0.23rem;
+      @media screen and (max-width: 426px) {
+        display: none;
+      }
+    }
+
+    &__BackgroundImageMobile {
+      display: none;
+
+      @media screen and (max-width: 426px) {
+        bottom: -90%;
+        display: block;
+        position: absolute;
+        width: 100%;
+
+        img {
+          border-radius: 0.23rem;
+        }
       }
     }
   }

@@ -1,5 +1,5 @@
-import styles from "./styles.module.scss";
 import Link from "next/link";
+import styles from "./styles.module.scss";
 
 export default function MenuDesktop() {
   return (
@@ -21,7 +21,7 @@ export default function MenuDesktop() {
           </Link>
         </li>
         <li className={styles[`NavbarDesktop__li`]}>
-          <Link href="/Oceandex">
+          <Link href="/TrophicLevel">
             <a className={styles[`NavbarDesktop__item`]}>Trophic Level</a>
           </Link>
         </li>

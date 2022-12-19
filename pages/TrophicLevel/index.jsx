@@ -12,10 +12,10 @@ export default function TrophicLevel() {
   return (
   <>
     <Container>
-      <Text className={styles.title} style="italic" color="darkBlue" size="XLarge">Trophic Level</Text>
-      <Text className={styles.paragraph} size="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+      <Text className={styles[`TrophicLevel__Title`]} style="italic" color="darkBlue" size="XLarge">Trophic Level</Text>
+      <Text className={styles[`TrophicLevel__Paragraph`]} size="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
 
-        <div className={styles.containerCard}>
+        <div className={styles[`TrophicLevel__ContainerCard`]}>
           <Button
             href="/"
             size="medium"
@@ -48,30 +48,30 @@ export default function TrophicLevel() {
           ></Button>
         </div>
         
-        <div className={styles.containerText}>
-          <Text className={styles.containerText__Title}>Deep Ocean</Text>
-          <Text size="large" className={styles.containerText__Paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+        <div className={styles[`TrophicLevel__ContainerText`]}>
+          <Text className={styles[`TrophicLevel__ContainerText__Title`]}>Deep Ocean</Text>
+          <Text size="large" className={styles[`TrophicLevel__ContainerText__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
         </div>
 
-        <div className={styles.containerMobile}>
-          <Text className={styles.containerMobile__Title}>Deep Sea</Text>
+        <div className={styles[`TrophicLevel__ContainerMobile`]}>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Title`]}>Deep Sea</Text>
           <img src="/assets/images/foodChain/deepOceanMobile.png" alt="" />
-          <Text className={styles.containerMobile__Paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
-          <Text className={styles.containerMobile__Title}>Arctic Ocean</Text>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Title`]}>Arctic Ocean</Text>
           <img src="/assets/images/foodChain/arcticOceanMobile.png" alt="" />
-          <Text className={styles.containerMobile__Paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
-          <Text className={styles.containerMobile__Title}>Pelagic Ocean</Text>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Title`]}>Pelagic Ocean</Text>
           <img src="/assets/images/foodChain/pelagicOceanMobile.png" alt="" />
-          <Text className={styles.containerMobile__Paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
         </div>
 
-        <div className={styles.containerImage}>
+        <div className={styles[`TrophicLevel__ContainerImage`]}>
           <img src="/assets/images/foodChain/deepOceanDesktopjpg.jpg" alt="" />
         </div>
     </Container>
-      <div className={styles.containerBackgroundImage}>
-        <img className={styles.containerBackgroundImage__backgroundImage} src="/assets/images/extras/backgroundLarge2.png" alt="" />
-        <img className={styles.containerBackgroundImage__backgroundImageMobile} src="/assets/images/extras/background.png" alt="" />
+      <div className={styles[`TrophicLevel__ContainerBackgroundImage`]}>
+        <img className={styles[`TrophicLevel__ContainerBackgroundImage__BackgroundImage`]} src="/assets/images/extras/backgroundLarge2.png" alt="" />
+        <img className={styles[`TrophicLevel__ContainerBackgroundImage__BackgroundImageMobile`]} src="/assets/images/extras/background.png" alt="" />
       </div>
   </>
   );
