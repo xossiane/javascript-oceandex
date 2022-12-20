@@ -1,30 +1,39 @@
 @use "@styles/variables";
 
-.button {
-  border-radius: 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: none;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  color: white;
-  font-size: 1.8rem;
- 
-  @media  (min-width: 1440px)  {
-    display: none;
-    &__desktop {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 400px;
-      border-radius: 15px;
+.card {
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border-radius: 15px;
+  }
+
+  &__relative {
+    position: relative;
+
+
+    &--selected {
+      border: 8px solid #B64760;
+      border-radius: 20px;
+      height: 100%;
+      left: -11px;
+      padding: 3px;
+      position: absolute;
+      top: -11px;
+      width: 100%;
+
+
+      @media (max-width: 1439.9px) {
+        display: none;
+      }
     }
   }
-  &__desktopLink {
+
+
+  &__Link {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.2);
     padding: 13px 60px;
@@ -36,33 +45,19 @@
     font-weight: bold;
   }
 
-  /*  &__linktag {
-    background-color: rgba(255, 255, 255, 0.2);
-     &--small{
-    width: 16rem;
-    height: 7.3rem;
-    text-align: center;
-    
-
-    width: 234px;
-    border-radius: 38px;
-  } */
-  @media (max-width: 1440px){
-    &__desktop{
-      display: none;
-    }
-  }
-  
   &--medium {
     width: 15.5rem;
     height: 6rem;
+
     @media (min-width: 768px) {
       min-width: 60%;
     }
   }
+
   &--large {
     width: 22rem;
     height: 7.3rem;
+
     @media (min-width: 768px) {
       min-width: 60%;
     }
@@ -75,15 +70,19 @@
   &--purple {
     background-color: variables.$purple;
   }
+
   &--green {
     background-color: variables.$green;
   }
+
   &--oliveGreen {
     background-color: variables.$oliveGreen;
   }
+
   &--red {
     background-color: variables.$red;
   }
+
   &--pink {
     background-color: variables.$pink;
   }

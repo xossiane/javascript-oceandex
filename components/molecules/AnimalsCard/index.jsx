@@ -34,14 +34,14 @@ export default function AnimalsCard({
     <Link href={`${href}`}>
       <div className={`${styles.animalsCard} ${styles[color]}`}>
         <div className={styles.animalsCard__name}>
-          <Heading level="1" color="white" weight="normal" size="Xlarge">
+          <Heading level="2" color="white" weight="normal" size="small">
             {name}
           </Heading>
         </div>
         <div className={styles.animalsCard__classification}>
           <AnimalsTag label={order} text="text"></AnimalsTag>
           <AnimalsTag label={phylum} text="text"></AnimalsTag>
-        {/*   <AnimalsTag label={Class}></AnimalsTag>
+          {/*   <AnimalsTag label={Class}></AnimalsTag>
           <AnimalsTag label={kingdom}></AnimalsTag> */}
         </div>
 
