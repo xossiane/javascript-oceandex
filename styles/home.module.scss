@@ -1,0 +1,69 @@
+@use "@styles/variables";
+
+.Home {
+  position: relative;
+  background-color: variables.$white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 70px;
+
+  
+  // &__div {
+  //   height: 400px;
+  //   width: 400px;
+  //   background-color: black;
+  //   z-index: 2000;
+  // }
+  &__container {
+    padding: 0 12px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    //max-width: 1281px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 72px;
+    z-index: 5;
+    width: 100%;
+    max-width: 1281px;
+
+    @media (min-width: 1440px) {
+      //display: flex;
+      //grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+      gap: 39px;
+
+      //justify-items: center;
+
+      //  flex-basis: calc((100% - (n - 1) rem)/n)
+    }
+  }
+
+  h1 {
+    padding: 10px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    &--unit {
+      margin: 1rem;
+    }
+  }
+
+  &__background {
+   position: absolute;
+    bottom: 0;
+  }
+}

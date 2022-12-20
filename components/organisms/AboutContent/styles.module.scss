@@ -1,0 +1,102 @@
+@use "@styles/variables";
+.AboutContent {
+    
+  &__Container {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    &--box {
+      border-radius: 1.4rem;
+      background-color: variables.$white;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &--text {
+      width: 20%;
+      margin-left: 2rem;
+      opacity: 60%;
+      text-align: center;
+    }
+    &--text2 {
+      margin-left: 2rem;
+      text-align: center;
+    }
+    &--about {
+      
+
+      justify-content: center;
+      text-align: justify;
+      line-height: 2.4rem;
+      margin: 2rem 1.5rem 2rem 1rem;
+    }
+  }
+  &__box2 {
+    display: flex;
+    
+    border-radius: 1.4rem;
+    background-color: variables.$white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    align-items: baseline;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
+    
+    &--title {
+      opacity: 60%;
+      display: flex;
+      width: 80%;
+      justify-content: space-around;
+    }
+    &--data {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      margin-left: 3rem;
+    }
+  }
+  &__breeding {
+    display: flex;
+    
+    border-radius: 1.4rem;
+    background-color: variables.$white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 2rem auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    &--title {
+        width: fit-content;
+        display: flex;
+    }
+    &--label {
+      opacity: 60%;
+      margin-top: -1rem;
+    }
+    &--data {
+      opacity: 1;
+      margin-top: -1rem;
+      margin-left: 2rem;
+    }
+    &--method {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+  &__tags{
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem auto 2.1rem 0.58rem;
+    @media (min-width: 1024px){
+      display: none;
+      
+    }
+    
+    
+  }
+}

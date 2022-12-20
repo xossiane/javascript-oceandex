@@ -1,9 +1,11 @@
-import React from 'react'
+import styles from "./styles.module.scss";
 
-function Background() {
+export default function Background() {
   return (
-    <img src="assets/images/extras/background.png"/>
-  )
+    <img
+      className={styles[`background`]}
+      src="/assets/images/extras/backgroundLarge2.png"
+      alt=""
+    />
+  );
 }
-
-export default Background

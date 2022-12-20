@@ -1,0 +1,39 @@
+@use "@styles/variables";
+
+@mixin inputText {
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  color: variables.$darkBlue;
+  opacity: 0.4;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.41rem 0;
+  max-width: 340px;
+  background: variables.$offWhite;
+  border-radius: 10rem;
+  &:focus {
+    outline: variables.$black solid 2px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 700px;
+    padding: 0.69rem 0;
+  }
+
+  &__box {
+    width: 80%;
+    background: variables.$offWhite;
+    border: none;
+    @include inputText;
+  }
+
+  &__box:placeholder-shown {
+    @include inputText;
+  }
+}

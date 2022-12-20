@@ -1,0 +1,14 @@
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  z-index: 0;
+  position: fixed;
+  bottom: 10rem;
+  opacity: 50%;
+
+  @media (min-width: 768px) {
+    opacity: 15%;
+  }
+}

@@ -1,0 +1,139 @@
+@use "@styles/variables";
+
+.TrophicLevel {
+  &__Title {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 4.6rem 0rem;
+    text-align: center;
+    -webkit-text-stroke: 0.5px black;
+
+    @media (max-width: 1023px) {
+      filter: none;
+      font-size: 1.8rem;
+      margin-top: 0.6rem;
+    }
+  }
+
+  &__Paragraph {
+    text-align: left;
+    margin-bottom: 4.6rem;
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+
+  &__ContainerCard {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+
+    margin-bottom: 4.6rem;
+
+    @media (max-width: 1023px) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  &__ContainerText {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3.5rem;
+    margin-bottom: 4.7rem;
+    gap: 6.3rem;
+
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
+
+    &__Title {
+      font-size: 2.5rem;
+      margin: 0px;
+      width: 433px; //tamanho relativo
+    }
+
+    &__Paragraph {
+      margin: 0px;
+    }
+  }
+
+  &__ContainerMobile {
+    display: none;
+
+    @media (max-width: 1023px) {
+      display: flex;
+      flex-direction: column;
+
+      &__Title {
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      &__Paragraph {
+        font-size: 1.1rem;
+        margin-bottom: 4.2rem;
+
+        &:last-child {
+          margin-bottom: 13.1rem;
+        }
+      }
+    }
+
+
+  }
+
+  &__ContainerImage {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
+
+
+    img {
+      border-radius: 3.2rem;
+      z-index: 1;
+    }
+  }
+
+  &__ContainerBackgroundImage {
+    position: relative;
+    width: 100%;
+
+
+
+    &__BackgroundImage {
+      opacity: 0.2;
+      position: absolute;
+      bottom: -90%;
+      width: 100%;
+
+      @media (max-width: 1023px) {
+        display: none;
+      }
+    }
+
+    &__BackgroundImageMobile {
+      display: none;
+
+      @media (max-width: 1023px) {
+        bottom: -90%;
+        display: block;
+        position: absolute;
+        width: 100%;
+
+        img {
+          border-radius: 0.23rem;
+        }
+      }
+    }
+  }
+
+}

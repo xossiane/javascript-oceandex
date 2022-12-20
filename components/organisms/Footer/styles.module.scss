@@ -1,0 +1,71 @@
+@use "@styles/variables";
+
+.footerContainer {
+  background-color: variables.$white;
+  
+  border-top: 1px solid #000;
+  box-sizing: border-box;
+  display: grid;
+  grid-area: footer;
+  grid-template-columns: repeat(4, 7rem);
+  grid-gap: 2rem;
+  grid-template-areas: "logoParagraph logoParagraph logoParagraph logoParagraph" "copyParagraph copyParagraph copyParagraph copyParagraph";
+  height: 8.6rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 400; 
+  line-height: 0.313em;
+  z-index: 900;
+  z-index: 10;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  width: 100%;
+  border-top: 1px solid #000;
+  
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(12, 7rem);
+    grid-gap: 1rem;
+    grid-template-areas: "logoParagraph logoParagraph logoParagraph logoParagraph logoParagraph logoParagraph copyParagraph copyParagraph copyParagraph copyParagraph copyParagraph copyParagraph";
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    padding-bottom: 0;
+    height: 14rem;
+  }
+
+  @media (min-width: 1440px) {
+    grid-gap: 4rem;
+  }
+
+  &__logoParagraph {
+    padding: 5rem 0 0 0;
+    grid-area: logoParagraph;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    @media (min-width: 1024px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__logo {
+    padding-left: 0.5em;
+  }
+  &__copyParagraph {
+    padding: 0 0 5rem 0;
+    grid-area: copyParagraph;
+    font-size: 1.6rem;
+    text-align: center;
+    @media (min-width: 1024px) {
+      text-align: right;
+      padding: 0;
+    }
+  }
+}
+
+
