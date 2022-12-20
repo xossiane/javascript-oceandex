@@ -1,5 +1,5 @@
-import styles from "./styles.module.scss";
 import Link from "next/link";
+import styles from "./styles.module.scss";
 
 export default function MenuDesktop() {
   return (
