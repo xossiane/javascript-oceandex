@@ -24,7 +24,7 @@ export default function MainPage() {
       setModel(response);
     });
   }, []);
-  //console.log(model);
+  console.log(model);
   return (
     <>
     <Header/>
@@ -62,6 +62,7 @@ export default function MainPage() {
           </section>
         </section>
       </main>
+      
     </div>
     </>
   );
