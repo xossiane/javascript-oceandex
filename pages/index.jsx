@@ -1,25 +1,19 @@
 import styles from "../styles/home.module.scss";
 
-import { useEffect, useState } from "react";
-
-import useContentful from "../hooks/useContentful";
 import Heading from "@atoms/Heading";
 import Button from "@atoms/Button";
+import GlobalSvg from "@atoms/GlobalSvg";
+import Arrow from "@atoms/Arrow";
 
 export default function MainPage() {
-  const { getAnimals } = useContentful();
-  const [model, setModel] = useState();
-  const [loading, setLoading] = useState();
-
-  useEffect(() => {
-    getAnimals().then((response) => {
-      setModel(response);
-    });
-  }, []);
-  //console.log(model);
   return (
     <div className={styles[`Home`]}>
       <main className={styles[`Home__container`]}>
+        <GlobalSvg iconPath="/assets/images/Like-Button.svg" color="black" />
+        <GlobalSvg>
+          <Arrow direction="right"></Arrow>
+        </GlobalSvg>
+
         <Heading level="1" color="grey" weight="italic">
           Discover the Ocean
         </Heading>

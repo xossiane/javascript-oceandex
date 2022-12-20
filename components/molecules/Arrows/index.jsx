@@ -1,13 +1,12 @@
 import styles from "./styles.module.scss";
 
-import ArrowLeft from "@atoms/ArrowLeft";
-import ArrowRight from "@atoms/ArrowRight";
+import Arrow from "@atoms/Arrow";
 
 export default function Arrows() {
   return (
     <article class={styles.arrows}>
-      <ArrowLeft />
-      <ArrowRight />
+      <Arrow direction="left" />
+      <Arrow direction="right" />
     </article>
   );
 }

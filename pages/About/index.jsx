@@ -1,11 +1,10 @@
-import Arrow from "@atoms/ArrowLeft";
+import Arrow from "@atoms/Arrow";
 import Heading from "@atoms/Heading";
 import AnimalsTag from "@molecules/AnimalsTag";
 import TabsDemo from "@organisms/Tabs";
 import Background from "@atoms/Background";
 import styles from "./styles.module.scss";
 import Like from "@atoms/Like";
-import ArrowLeft from "@atoms/ArrowLeft";
 
 export default function AboutPage() {
   return (
@@ -23,9 +22,10 @@ export default function AboutPage() {
       <div className={styles[`AboutPage__Content`]}>
         <div className={styles[`AboutPage__Container`]}>
           <header className={styles[`AboutPage__Header`]}>
-            <ArrowLeft
+            <Arrow
+              direction="left"
               href="/Oceandex"
-              white={true}
+              white
               className={styles[`AboutPage__Header--arrow`]}
             />
             <Like white={true} className={styles[`AboutPage__Header--like`]} />

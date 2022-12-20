@@ -1,0 +1,22 @@
+.arrow {
+  cursor: pointer;
+  width: 3.3rem;
+  height: 2.7rem;
+
+  &--right {
+    transform: rotate(90deg);
+  }
+  &--left {
+    transform: rotate(-90deg);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 6.438rem;
+    height: 5.438rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 10.3rem;
+    height: 8.7rem;
+  }
+}

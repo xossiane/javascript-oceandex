@@ -2,8 +2,8 @@ import Text from "@atoms/Text";
 import { useState } from "react";
 import oceananimals from "../../../../javascript-oceandex/oceananimals.json";
 import AnimalsTag from "@molecules/AnimalsTag";
-import ArrowLeft from "@atoms/ArrowLeft";
-import ArrowRight from "@atoms/ArrowRight";
+import Arrow from "@atoms/Arrow";
+import styles from "./styles.module.scss";
 
 function GeneralCuriosities() {
   const animals = oceananimals;
@@ -31,15 +31,14 @@ function GeneralCuriosities() {
   return (
     <>
       <section className={styles[`GeneralCuriosities`]}>
-      <Text
+        <Text
           size="large"
           style="bold"
           className={styles[`GeneralCuriosities--Name`]}
         >
           {animals[animalsID].name}
         </Text>
-      <div className={styles[`GeneralCuriosities--Tag`]}>
-     
+        <div className={styles[`GeneralCuriosities--Tag`]}>
           <AnimalsTag label={animals[animalsID].kingdom} mt="mt" />
           <AnimalsTag label={animals[animalsID].order} mt="mt" />
         </div>
@@ -50,44 +49,25 @@ function GeneralCuriosities() {
         >
           {animals[animalsID].tabs[0].curiosities[0].curiositiesText}
         </Text>
-      
+
         <img
           className={styles[`GeneralCuriosities--Img`]}
           src={animals[animalsID].tabs[0].curiosities[0].curiositiesImage}
           key={animals[animalsID].id}
         />
-        
-        
       </section>
       <span className={styles[`GeneralCuriosities--Arrow`]}>
         <button
           className={styles[`GeneralCuriosities--button-left`]}
           onClick={handleClickSub}
         >
-          <svg
-            width="57"
-            height="55"
-            viewBox="0 0 57 55"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <ArrowLeft white={false}/>
-          </svg>
+          <Arrow direction="left" />
         </button>
         <button
           className={styles[`GeneralCuriosities--button-right`]}
           onClick={handleClickSum}
         >
-          <svg
-            width="57"
-            height="55"
-            viewBox="0 0 57 55"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            
-            <ArrowRight white={false}/>
-          </svg>
+          <Arrow direction="right" />
         </button>
       </span>
     </>

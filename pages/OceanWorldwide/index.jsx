@@ -1,4 +1,4 @@
-import Arrow from "@atoms/ArrowLeft";
+import Arrow from "@atoms/Arrow";
 import Background from "@atoms/Background";
 import Button from "@atoms/Button";
 import Heading from "@atoms/Heading";
@@ -43,7 +43,7 @@ export default function OceanWorldwide() {
     <div className={styles[`OceanWorldwide`]}>
       <div className={styles[`OceanWorldwide__container`]}>
         <span className={styles[`OceanWorldwide__Arrow`]}>
-          <Arrow href="/home" white={true}></Arrow>
+          <Arrow direction="left" href="/" />
         </span>
         <section className={styles[`OceanWorldwide__header`]}>
           <Heading

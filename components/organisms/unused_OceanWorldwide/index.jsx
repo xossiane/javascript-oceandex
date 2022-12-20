@@ -4,14 +4,14 @@ import styles from "./styles.module.scss";
 import Button from "@atoms/Button/index.jsx";
 import Text from "@atoms/Text";
 import Heading from "@atoms/Heading";
-import Arrow from "@atoms/ArrowLeft";
+import Arrow from "@atoms/Arrow";
 
 export default function OceanWorldWide() {
   return (
     <>
       <div className={styles[`OceanWorldwide__container`]}>
         <section className={styles[`OceanWorldwide__header`]}>
-          <Arrow white={true}></Arrow>
+          <Arrow white={false} />
           <Heading
             level="1"
             className={styles[`OceanWorldwide__container--text`]}
