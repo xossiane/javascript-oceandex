@@ -24,7 +24,7 @@
   }
   &__content {
      display: flex;
-    z-index: 100;
+    //z-index: 100;
     background-color: variables.$white;
     // width: 1;
   min-height: 100vh;
@@ -41,7 +41,7 @@
       width: 100%;
       position: relative;
       //min-height: 100vh;
-      z-index: 1000;
+      z-index: 100;
       gap: 30px;
     
       

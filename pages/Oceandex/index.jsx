@@ -81,12 +81,10 @@ const index = () => {
         <Heading
           level="1"
           className={styles[`Oceandex__Content--text`]}
-          size="Xlarge"
           color="grey"
           style="italic"
         >
-          {" "}
-          OceanDex{" "}
+          OceanDex
         </Heading>
       </header>
       <div className={styles[`Oceandex__Search`]}>

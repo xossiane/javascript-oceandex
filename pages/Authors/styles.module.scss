@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .authorsPage {
   display: flex;
   flex-direction: column;
@@ -20,10 +21,9 @@
     grid-column-gap: 2.063rem;
     grid-row-gap: 1.5rem;
   }
+
   @media screen and (min-width: 1024px) {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 4.063rem;
     grid-row-gap: 2.938rem;
   }

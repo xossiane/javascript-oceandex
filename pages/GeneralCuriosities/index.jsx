@@ -7,12 +7,10 @@ import Heading from "@atoms/Heading";
 export default function GeneralCuriositiesPage() {
   return (
     <div className={styles[`GeneralCuriositiesPage__Content`]}>
-      
       <header className={styles[`GeneralCuriositiesPage__Header`]}>
         <Heading
           level="1"
           className={styles[`GeneralCuriositiesPage__Content--text`]}
-          size="Xlarge"
           color="black"
           style="italic"
         >
@@ -24,7 +22,7 @@ export default function GeneralCuriositiesPage() {
         <GeneralCuriosities></GeneralCuriosities>
       </div>
       <span className={styles[`GeneralCuriositiesPage__Background`]}>
-      <Background/>
+        <Background />
       </span>
     </div>
   );

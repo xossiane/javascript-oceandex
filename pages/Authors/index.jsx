@@ -1,10 +1,15 @@
 import styles from "./styles.module.scss";
 import AuthorsMolecule from "@molecules/Authors";
 import InspiredBy from "@atoms/InspiredBy";
+import Heading from "@atoms/Heading";
 
 export default function AuthorsPage() {
   return (
     <div className={styles.container}>
+      <Heading level="1" size="H1" color="black" style="italic">
+        {" "}
+        Authors{" "}
+      </Heading>
       <section className={styles.authorsPage}>
         <AuthorsMolecule
           picture="https://media.licdn.com/dms/image/C4D03AQFlehRIQxbKxQ/profile-displayphoto-shrink_200_200/0/1565819647932?e=1676505600&v=beta&t=Jo11ZQ6x9n4Frln-1VZN2-MeA_JuTGt9g2FBFf3C0w4"
