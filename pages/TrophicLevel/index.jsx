@@ -2,7 +2,7 @@
 // import Background from "@atoms/Background";
 // import Button from "@atoms/Button";
 // import Heading from "@atoms/Heading";
-import Button from "@atoms/Button";
+import Button from "@molecules/Button";
 import Text from "@atoms/Text";
 import Container from "@organisms/Container";
 import styles from "./styles.module.scss";
