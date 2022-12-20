@@ -6,6 +6,7 @@ import useContentful from "../../hooks/useContentful";
 
 import Arrow from "@atoms/ArrowLeft";
 import Heading from "@atoms/Heading";
+import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
 import Input from "@molecules/Input";
 
@@ -55,9 +56,11 @@ const index = () => {
       });
     }
   }, [search]);
-  //console.log(animal);
+
   function showAnimal() {
     return animal.map((item) => {
+      console.log('teste')
+      console.log(item)
       return (
         <AnimalsCard
           href="/"
@@ -78,19 +81,19 @@ const index = () => {
       </span>
       <header className={styles[`Oceandex__Header`]}>
         <Heading
-          level="1"
-          className={styles[`Oceandex__Content--text`]}
-          size="Xlarge"
-          color="grey"
+          className={styles[`Oceandex__Content`]}
           style="italic"
         >
-          {" "}
-          OceanDex{" "}
+          <Text
+          className={styles[`Oceandex__Content--text`]}
+          size="XLarge"
+          >Favorite Animals</Text>
         </Heading>
       </header>
       <div className={styles[`Oceandex__Search`]}>
-        <Input FavoriteAnimals placeholder="Search for your favorite animals" aria-label="Search for your favorite animals" />;
+        <Input FavoriteAnimals page="FavoriteAnimals" placeholder="Search for your favorite animals" aria-label="Search for your favorite animals" />
       </div>
+      
       <section className={styles[`Oceandex__Cards`]}>
         {loading && <p>loading</p>}
         {!loading && showAnimal()}
