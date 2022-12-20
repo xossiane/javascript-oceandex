@@ -1,13 +1,14 @@
 @use "@styles/variables";
 
 .heading {
-  &--Xlarge {
+  &--H1 {
     font-size: 3rem;
   }
   &--H2 {
     font-size: 2.2rem;
   }
 
+  //Responsive
   @media (min-width: 1024px) {
     &--H1 {
       font-size: 4.5rem;
@@ -16,10 +17,17 @@
       font-size: 4rem;
     }
   }
+
+  //Size modifiers
   &--small {
     font-size: 2.6rem;
   }
+  /*
+  &--Xlarge {
+    font-size: 3rem;
+  } */
 
+  //Colors
   &--black {
     color: variables.$black;
   }
@@ -29,6 +37,8 @@
   &--white {
     color: variables.$white;
   }
+
+  //Weight
   &--normal {
     font-weight: normal;
   }
@@ -38,6 +48,7 @@
   &--italic {
     font-style: italic;
   }
+
   &--uppercase {
     text-transform: uppercase;
   }

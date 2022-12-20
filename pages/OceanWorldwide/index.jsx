@@ -55,7 +55,6 @@ export default function OceanWorldwide() {
           <Heading
             level="1"
             className={styles[`OceanWorldwide__container--text`]}
-            size="Xlarge"
             color="black"
             style="italic"
           >
