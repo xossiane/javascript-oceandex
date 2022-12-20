@@ -41,7 +41,7 @@ export default function MainPage() {
         <section className={styles[`Home__content`]}>
           <section className={styles[`Home__content`]}>
             {btnCardIndex.map((element) => (
-              <>
+              <div key={element.title}>
                 <Button
                   color={element.color}
                   className={styles[`Home__buttons--unit`]}
@@ -57,7 +57,7 @@ export default function MainPage() {
                   img={element.img}
                   description={element.description}
                 />
-              </>
+              </div>
             ))}
           </section>
         </section>

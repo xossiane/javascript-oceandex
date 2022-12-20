@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 export default function MenuDesktop() {
   return (
-    <nav lassName={styles[`NavbarDesktop`]}>
+    <nav className={styles[`NavbarDesktop`]}>
       <ul className={styles[`NavbarDesktop__list`]}>
         <li className={styles[`NavbarDesktop__li`]}>
           <Link href="/Oceandex">
