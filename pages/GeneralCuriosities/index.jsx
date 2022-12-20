@@ -3,9 +3,14 @@ import styles from "./styles.module.scss";
 import React from "react";
 import Background from "@atoms/Background";
 import Heading from "@atoms/Heading";
+import Header from "@organisms/Header";
+import LineTop from "@atoms/Line";
 
 export default function GeneralCuriositiesPage() {
   return (
+    <>
+    <Header/>
+    <LineTop/>
     <div className={styles[`GeneralCuriositiesPage__Content`]}>
       <header className={styles[`GeneralCuriositiesPage__Header`]}>
         <Heading
@@ -15,7 +20,7 @@ export default function GeneralCuriositiesPage() {
           style="italic"
         >
           {" "}
-          General Curiosities{" "}
+          Animal's Curiosities{" "}
         </Heading>
       </header>
       <div className={styles[`GeneralCuriositiesPage__Container`]}>
@@ -25,5 +30,6 @@ export default function GeneralCuriositiesPage() {
         <Background />
       </span>
     </div>
+    </>
   );
 }

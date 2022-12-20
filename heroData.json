@@ -1,0 +1,32 @@
+[{
+    "id": 0,
+    "img": "/assets/images/realAnimals/06-coral.jpg",
+    "title": "Did you know that...",
+    "desc": "Normally grows at depths from 3 to 368m. It lives on vertical walls, standing out perpendicularly, and can also grow in deep water where the water is clear and the current high on slope breaks.",
+    "categ": "Animal's Curiosities",
+    "miniIcon": "/assets/images/designIcons/animalscuriosities.png"
+},
+{
+    "id": 1,
+    "img": "/assets/images/realAnimals/05-clownFish.png",
+    "title": "Did you know that...",
+    "desc": "The clownfish can be many different colours, depending on its species, including yellow, orange, red, and black. Most have white details. ",
+    "categ": "OceanDex",
+    "miniIcon": "/assets/images/designIcons/oceandex.png"
+},
+{
+    "id": 2,
+    "img": "/assets/images/realAnimals/23-seaweed.jpg",
+    "title": "Did you know that...",
+    "desc": "The ocean is shrinking around one inch every year. This is due to the effects of plate tectonics under the water. It’s occurring around three sides of the basin, while at the same time, the Atlantic Ocean is growing by the same amount every year.",
+    "categ": "Ocean Worldwide",
+    "miniIcon": "/assets/images/designIcons/oceanww.png"
+},
+{
+    "id": 3,
+    "img": "/assets/images/realAnimals/30-zooplankton.webp",
+    "title": "Did you know that...",
+    "desc": "The zooplankton community is an important element of the aquatic food chain. These organisms serve as an intermediary species in the food chain, transferring energy from planktonic algae (primary producers) to the larger invertebrate predators and fish who in turn feed on them.",
+    "categ": "Trophic Level",
+    "miniIcon": "/assets/images/designIcons/trophiclevel.png"
+}]

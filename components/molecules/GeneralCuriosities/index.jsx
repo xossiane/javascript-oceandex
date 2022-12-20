@@ -4,6 +4,7 @@ import oceananimals from "../../../../javascript-oceandex/oceananimals.json";
 import AnimalsTag from "@molecules/AnimalsTag";
 import ArrowLeft from "@atoms/ArrowLeft";
 import ArrowRight from "@atoms/ArrowRight";
+import styles from './styles.module.scss'
 
 function GeneralCuriosities() {
   const animals = oceananimals;

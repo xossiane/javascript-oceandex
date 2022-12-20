@@ -3,7 +3,9 @@ import Background from "@atoms/Background";
 import Button from "@molecules/Button";
 import Card from "@molecules/Card";
 import Heading from "@atoms/Heading";
+import LineTop from "@atoms/Line";
 import Text from "@atoms/Text";
+import Header from "@organisms/Header";
 import React from "react";
 import styles from "./styles.module.scss";
 
@@ -46,6 +48,9 @@ export default function OceanWorldwide() {
     // "Arctic Ocean",
   ];
   return (
+    <>
+    <Header/>
+    <LineTop/>
     <div className={styles[`OceanWorldwide`]}>
       <div className={styles[`OceanWorldwide__container`]}>
         <span className={styles[`OceanWorldwide__Arrow`]}>
@@ -91,5 +96,6 @@ export default function OceanWorldwide() {
         <Background />
       </section>
     </div>
+    </>
   );
 }
