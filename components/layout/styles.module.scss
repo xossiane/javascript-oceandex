@@ -1,5 +1,12 @@
 .content{
-    @media (min-width: 720px){
-        margin-top: 200px;
+    box-sizing: border-box;
+    margin: 4rem auto 20rem;
+
+    @media (min-width: 1024px){
+        margin: 21.7rem auto 25.4rem;
+        max-width: 90rem;
+    }
+    @media (min-width: 1440px){
+        max-width: 128rem;
     }
 }

@@ -38,14 +38,15 @@ export default function AnimalsCard({
             {name}
           </Heading>
         </div>
-        <div className={styles.animalsCard__classification}>
-          <AnimalsTag label={order} text="text"></AnimalsTag>
-          <AnimalsTag label={phylum} text="text"></AnimalsTag>
-          {/*   <AnimalsTag label={Class}></AnimalsTag>
-          <AnimalsTag label={kingdom}></AnimalsTag> */}
+        <div className={styles.animalsCard__details}>
+          <div className={styles.animalsCard__classification}>
+            <AnimalsTag label={order} text="text"></AnimalsTag>
+            <AnimalsTag label={phylum} text="text"></AnimalsTag>
+            <AnimalsTag label={Class} text="text"></AnimalsTag>
+            <AnimalsTag label={kingdom} text="text"></AnimalsTag>
+          </div>
+          <img className={styles.animalsCard__img} src={src} alt="" />
         </div>
-
-        <img className={styles.animalsCard__img} src={src} alt="" />
       </div>
     </Link>
   );
