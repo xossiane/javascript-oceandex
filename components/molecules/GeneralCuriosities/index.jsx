@@ -1,6 +1,6 @@
 import Text from "@atoms/Text";
 import { useState } from "react";
-import oceananimals from "../../../../javascript-oceandex/oceananimals.json";
+import oceananimals from "json/generalCuriosities.json";
 import AnimalsTag from "@molecules/AnimalsTag";
 import ArrowLeft from "@atoms/ArrowLeft";
 import ArrowRight from "@atoms/ArrowRight";
