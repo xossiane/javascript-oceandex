@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 import useContentful from "../../hooks/useContentful";
 
@@ -10,29 +10,33 @@ import Input from "@molecules/Input";
 import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
 
-const index = () => {
+const index = ({data}) => {
   const { getAnimals, getAnimal, getAuthors, getCuriosities } = useContentful();
-  const [animal, setAnimal] = useState([]);
+ // const [animal, setAnimal] = useState([]);
   const [loading, setLoading] = useState();
   const [search, setSearch] = useState("");
+ 
 
-  const [animals, setAnimals] = useState();
+  const [animals, setAnimals] = useState([]);
   const [curiosities, setCuriosities] = useState();
-  const [authors, setAuthors] = useState();
+ // const [authors, setAuthors] = useState();
   useEffect(() => {
+    setLoading(true);
     getAnimals().then((response) => {
       setAnimals(response);
+      setLoading(false)
     });
-    getCuriosities().then((response) => {
+  
+  /*   getCuriosities().then((response) => {
       setCuriosities(response);
-    });
-    getAuthors().then((response) => {
+    }); */
+    /* getAuthors().then((response) => {
       setAuthors(response);
-    });
+    }); */
   }, []);
 
-  console.log(authors);
-  console.log(curiosities);
+  //console.log(authors);
+  //console.log(curiosities);
   console.log(animals);
 
   const handleSubmit = (e) => {
@@ -40,25 +44,10 @@ const index = () => {
     setSearch(e.target.value);
   };
 
-  useEffect(() => {
-    if (!search) {
-      getAnimals().then((response) => {
-        setLoading(true);
-        setAnimal(response);
-        setLoading(false);
-      });
-    }
-    if (search) {
-      getAnimal(search).then((response) => {
-        setLoading(true);
-        setAnimal(response);
-        setLoading(false);
-      });
-    }
-  }, [search]);
   //console.log(animal);
   function showAnimal() {
-    return animal.map((item) => {
+    const filteredAnimals = animals.filter((item) => item.name.toLowerCase().includes(search.toLocaleLowerCase()) /* || item.scientificName.toLowerCase().includes(search) */ || item.classification.order.toLowerCase().includes(search.toLocaleLowerCase()) || item.classification.phylum.toLowerCase().includes(search.toLocaleLowerCase()) )
+    return filteredAnimals.map((item) => {
       return (
         <AnimalsCard
           href="/"
@@ -85,14 +74,13 @@ const index = () => {
           color="grey"
           style="italic"
         >
-          {" "}
-          OceanDex{" "}
+          OceanDex
         </Heading>
       </header>
       <div className={styles[`Oceandex__Search`]}>
-        <input
+        <Input
           value={search}
-          onChange={(e) => handleSubmit(e)}
+          onChange={handleSubmit}
           aria-label={""}
         />
       </div>
