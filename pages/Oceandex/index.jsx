@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 import useContentful from "../../hooks/useContentful";
 
@@ -10,6 +10,7 @@ import AnimalsCard from "@molecules/AnimalsCard";
 import Header from "@organisms/Header";
 import LineTop from "@atoms/Line";
 import Input from "@molecules/Input";
+import Text from "@atoms/Text";
 
 const index = ({ data }) => {
   const { getAnimals, getAnimal, getAuthors, getCuriosities } = useContentful();
@@ -20,13 +21,12 @@ const index = ({ data }) => {
   const [animals, setAnimals] = useState([]);
   const [curiosities, setCuriosities] = useState();
   // const [authors, setAuthors] = useState();
-  useEffect(() => {
+  useEffect(async () => {
     setLoading(true);
 
-    getAnimals().then((response) => {
-      setAnimals(response);
-      setLoading(false);
-    });
+    const response = await getAnimals();
+    setAnimals(response);
+    setLoading(false);
 
     /*   getCuriosities().then((response) => {
       setCuriosities(response);
@@ -49,39 +49,39 @@ const index = ({ data }) => {
   };
 
   //console.log(animal);
-  // function showAnimal() {
-  //   const filteredAnimals = animals.filter(
-  //     (item) =>
-  //       item.name
-  //         .toLowerCase()
-  //         .includes(
-  //           search.toLocaleLowerCase()
-  //         ) /* || item.scientificName.toLowerCase().includes(search) */ ||
-  //       item.classification.order
-  //         .toLowerCase()
-  //         .includes(search.toLocaleLowerCase()) ||
-  //       item.classification.phylum
-  //         .toLowerCase()
-  //         .includes(search.toLocaleLowerCase())
-  //   );
+  function showAnimal() {
+    const filteredAnimals = animals.filter(
+      (item) =>
+        item.name
+          .toLowerCase()
+          .includes(
+            search.toLocaleLowerCase()
+          ) /* || item.scientificName.toLowerCase().includes(search) */ ||
+        item.classification.order
+          .toLowerCase()
+          .includes(search.toLocaleLowerCase()) ||
+        item.classification.phylum
+          .toLowerCase()
+          .includes(search.toLocaleLowerCase())
+    );
 
-  //   if (filteredAnimals.length === 0 && search !== "") {
-  //     return <Text weight="bold">No results Found</Text>;
-  //   } else {
-  //     return filteredAnimals.map((item) => {
-  //       return (
-  //         <AnimalsCard
-  //           href="/"
-  //           key={item.id}
-  //           name={item.name}
-  //           order={item.classification.order}
-  //           phylum={item.classification.phylum}
-  //           src={item.image}
-  //         />
-  //       );
-  //     });
-  //   }
-  // }
+    if (filteredAnimals.length === 0 && search !== "") {
+      return <Text weight="bold">No results Found</Text>;
+    } else {
+      return filteredAnimals.map((item) => {
+        return (
+          <AnimalsCard
+            href="/"
+            key={item.id}
+            name={item.name}
+            order={item.classification.order}
+            phylum={item.classification.phylum}
+            src={item.image}
+          />
+        );
+      });
+    }
+  }
 
   return (
     <>
@@ -110,8 +110,8 @@ const index = ({ data }) => {
         /> */}
         </div>
         <section className={styles[`Oceandex__Cards`]}>
-          {/* {loading && <p>loading</p>}
-          {!loading && showAnimal()} */}
+          {loading && <p>loading</p>}
+          {!loading && showAnimal()}
         </section>
       </div>
     </>
