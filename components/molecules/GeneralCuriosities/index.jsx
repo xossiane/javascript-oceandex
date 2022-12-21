@@ -1,9 +1,10 @@
 import Text from "@atoms/Text";
 import { useState } from "react";
-import oceananimals from "../../../../javascript-oceandex/oceananimals.json";
+import oceananimals from "json/generalCuriosities.json";
 import AnimalsTag from "@molecules/AnimalsTag";
 import ArrowLeft from "@atoms/ArrowLeft";
 import ArrowRight from "@atoms/ArrowRight";
+import styles from './styles.module.scss'
 
 function GeneralCuriosities() {
   const animals = oceananimals;
@@ -50,14 +51,17 @@ function GeneralCuriosities() {
         >
           {animals[animalsID].tabs[0].curiosities[0].curiositiesText}
         </Text>
-      
-        <img
-          className={styles[`GeneralCuriosities--Img`]}
-          src={animals[animalsID].tabs[0].curiosities[0].curiositiesImage}
-          key={animals[animalsID].id}
-        />
-        
-        
+        <div>
+          <AnimalsTag/>
+          {/* <Text
+            size="medium"
+            style="italic"
+            className={styles[`GeneralCuriosities--Tag`]}
+          >
+            {" "}
+            {animals[animalsID].phylum} | {animals[animalsID].order}
+          </Text> */}
+        </div>
       </section>
       <span className={styles[`GeneralCuriosities--Arrow`]}>
         <button

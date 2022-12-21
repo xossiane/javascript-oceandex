@@ -1,14 +1,15 @@
 import styles from "./styles.module.scss";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 
 import useContentful from "../../hooks/useContentful";
 
 import Heading from "@atoms/Heading";
 import Arrow from "@atoms/ArrowLeft";
-import Input from "@molecules/Input";
-import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
+import Header from "@organisms/Header";
+import LineTop from "@atoms/Line";
+import Input from "@molecules/Input";
 
 const index = ({ data }) => {
   const { getAnimals, getAnimal, getAuthors, getCuriosities } = useContentful();
@@ -19,12 +20,13 @@ const index = ({ data }) => {
   const [animals, setAnimals] = useState([]);
   const [curiosities, setCuriosities] = useState();
   // const [authors, setAuthors] = useState();
-  useEffect(async () => {
+  useEffect(() => {
     setLoading(true);
 
-    const response = await getAnimals();
-    setAnimals(response);
-    setLoading(false);
+    getAnimals().then((response) => {
+      setAnimals(response);
+      setLoading(false);
+    });
 
     /*   getCuriosities().then((response) => {
       setCuriosities(response);
@@ -47,64 +49,72 @@ const index = ({ data }) => {
   };
 
   //console.log(animal);
-  function showAnimal() {
-    const filteredAnimals = animals.filter(
-      (item) =>
-        item.name
-          .toLowerCase()
-          .includes(
-            search.toLocaleLowerCase()
-          ) /* || item.scientificName.toLowerCase().includes(search) */ ||
-        item.classification.order
-          .toLowerCase()
-          .includes(search.toLocaleLowerCase()) ||
-        item.classification.phylum
-          .toLowerCase()
-          .includes(search.toLocaleLowerCase())
-    );
+  // function showAnimal() {
+  //   const filteredAnimals = animals.filter(
+  //     (item) =>
+  //       item.name
+  //         .toLowerCase()
+  //         .includes(
+  //           search.toLocaleLowerCase()
+  //         ) /* || item.scientificName.toLowerCase().includes(search) */ ||
+  //       item.classification.order
+  //         .toLowerCase()
+  //         .includes(search.toLocaleLowerCase()) ||
+  //       item.classification.phylum
+  //         .toLowerCase()
+  //         .includes(search.toLocaleLowerCase())
+  //   );
 
-    if (filteredAnimals.length === 0 && search !== "") {
-      return <Text weight="bold">No results Found</Text>;
-    } else {
-      return filteredAnimals.map((item) => {
-        return (
-          <AnimalsCard
-            href="/"
-            key={item.id}
-            name={item.name}
-            order={item.classification.order}
-            phylum={item.classification.phylum}
-            src={item.image}
-          />
-        );
-      });
-    }
-  }
+  //   if (filteredAnimals.length === 0 && search !== "") {
+  //     return <Text weight="bold">No results Found</Text>;
+  //   } else {
+  //     return filteredAnimals.map((item) => {
+  //       return (
+  //         <AnimalsCard
+  //           href="/"
+  //           key={item.id}
+  //           name={item.name}
+  //           order={item.classification.order}
+  //           phylum={item.classification.phylum}
+  //           src={item.image}
+  //         />
+  //       );
+  //     });
+  //   }
+  // }
 
   return (
-    <div className={styles[`Oceandex__Container`]}>
-      <span className={styles[`Oceandex__Arrow`]}>
-        <Arrow href="/" white={false}></Arrow>
-      </span>
-      <header className={styles[`Oceandex__Header`]}>
-        <Heading
-          level="1"
-          className={styles[`Oceandex__Content--text`]}
-          size="Xlarge"
-          color="grey"
-          style="italic"
-        >
-          OceanDex
-        </Heading>
-      </header>
-      <div className={styles[`Oceandex__Search`]}>
-        <Input value={search} onChange={handleSubmit} aria-label={""} />
+    <>
+      <Header />
+      <LineTop />
+      <div className={styles[`Oceandex__Container`]}>
+        <span className={styles[`Oceandex__Arrow`]}>
+          <Arrow href="/" white={false}></Arrow>
+        </span>
+        <header className={styles[`Oceandex__Header`]}>
+          <Heading
+            level="1"
+            className={styles[`Oceandex__Content--text`]}
+            color="grey"
+            style="italic"
+          >
+            What marine creature are you looking for?
+          </Heading>
+        </header>
+        <div className={styles[`Oceandex__Search`]}>
+          <Input value={search} onChange={handleSubmit} aria-label={""} />
+          {/* <input
+          value={search}
+          onChange={(e) => handleSubmit(e)}
+          aria-label={""}
+        /> */}
+        </div>
+        <section className={styles[`Oceandex__Cards`]}>
+          {/* {loading && <p>loading</p>}
+          {!loading && showAnimal()} */}
+        </section>
       </div>
-      <section className={styles[`Oceandex__Cards`]}>
-        {loading && <p>loading</p>}
-        {!loading && showAnimal()}
-      </section>
-    </div>
+    </>
   );
 };
 

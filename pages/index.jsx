@@ -1,13 +1,18 @@
-import styles from "../styles/home.module.scss";
+import styles from '../styles/home.module.scss'
+
 
 import { useEffect, useState } from "react";
 
 import useContentful from "../hooks/useContentful";
-import Heading from "@atoms/Heading";
+import Heading from '@atoms/Heading';
+import Button from '@molecules/Button';
+import Header from '@organisms/Header';
+import LineTop from '@atoms/Line';
+import Hero from '@organisms/Hero';
+import Card from '@molecules/Card';
 
-import Card from "@molecules/Card";
-import Button from "@molecules/Button";
-import btnCardIndex from "../data/btnCardIndex.json";
+import btnCardIndex from '../data/btnCardIndex.json'
+
 
 export default function MainPage() {
   const { getAnimals } = useContentful();
@@ -19,18 +24,24 @@ export default function MainPage() {
       setModel(response);
     });
   }, []);
-  //console.log(model);
+  console.log(model);
   return (
+    <>
+    <Header/>
+    <LineTop/>
     <div className={styles[`Home`]}>
+      
       <main className={styles[`Home__container`]}>
-        <Heading level="1" size="Xlarge" color="grey" weight="italic">
+        <Heading level="1" color="grey" weight="italic">
           Discover the Ocean
         </Heading>
 
+        <Hero></Hero>
+        
         <section className={styles[`Home__content`]}>
           <section className={styles[`Home__content`]}>
             {btnCardIndex.map((element) => (
-              <>
+              <div key={element.title}>
                 <Button
                   color={element.color}
                   className={styles[`Home__buttons--unit`]}
@@ -46,11 +57,13 @@ export default function MainPage() {
                   img={element.img}
                   description={element.description}
                 />
-              </>
+              </div>
             ))}
           </section>
         </section>
       </main>
+      
     </div>
+    </>
   );
 }
