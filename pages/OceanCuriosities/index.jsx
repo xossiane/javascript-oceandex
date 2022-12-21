@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
 import styles from "./styles.module.scss";
-import Arrow from "@atoms/ArrowLeft";
 import Heading from "@atoms/Heading";
 
-import oceancuriosities from "../../../javascript-oceandex/oceancuriosities.json";
+import oceancuriosities from "json/oceanCuriosities.json";
 import Text from "@atoms/Text";
 import Background from "@atoms/Background";
 
@@ -39,21 +38,18 @@ function OceanCuriosities() {
     <>
       <>
         <div className={styles[`OceanCuriosities__container`]}>
-         
-
           <section className={styles[`OceanCuriosities__content`]}>
-          <section className={styles[`OceanCuriosities__header`]}>
-            <Heading
-              level="1"
-              className={styles[`OceanCuriosities__container--text`]}
-              size="Xlarge"
-              color="black"
-              style="italic"
-            >
-              {" "}
-              Atlantic Ocean
-            </Heading>
-          </section>
+            <section className={styles[`OceanCuriosities__header`]}>
+              <Heading
+                level="1"
+                className={styles[`OceanCuriosities__container--text`]}
+                color="black"
+                style="italic"
+              >
+                {" "}
+                Atlantic Ocean
+              </Heading>
+            </section>
             <>
               <img
                 className={styles[`OceanCuriosities--Img`]}

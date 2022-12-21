@@ -15,11 +15,9 @@ export default function OceanWorldWide() {
           <Heading
             level="1"
             className={styles[`OceanWorldwide__container--text`]}
-            size="Xlarge"
             color="black"
             style="italic"
           >
-            {" "}
             Ocean AAA
           </Heading>
         </section>
