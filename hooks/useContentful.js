@@ -16,7 +16,7 @@ const useContentful = () => {
         include: 5,
         order: "fields.name",
         //limit: 5,
-        // "fields.completeAnimal": "true",
+        "fields.completeAnimal": "true",
       });
       const sanitizedList = (await animalsList).items.map((item) => {
         const classification = item.fields.classification.fields;

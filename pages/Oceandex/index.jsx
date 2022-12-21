@@ -5,9 +5,7 @@ import { useEffect, useState } from "react";
 import useContentful from "../../hooks/useContentful";
 
 import Heading from "@atoms/Heading";
-import Arrow from "@atoms/ArrowLeft";
 import Input from "@molecules/Input";
-import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
 
 const index = () => {
@@ -56,7 +54,7 @@ const index = () => {
       });
     }
   }, [search]);
-  //console.log(animal);
+  // console.log(animal);
   function showAnimal() {
     return animal.map((item) => {
       return (
@@ -76,21 +74,19 @@ const index = () => {
 
   return (
     <div className={styles[`Oceandex__Container`]}>
-      <span className={styles[`Oceandex__Arrow`]}>
-        <Arrow href="/" white={false}></Arrow>
-      </span>
-      <header className={styles[`Oceandex__Header`]}>
+      <div className={styles[`Oceandex__Header`]}>
         <Heading
           level="1"
           className={styles[`Oceandex__Content--text`]}
           size="Xlarge"
           color="grey"
           style="italic"
+          weight="normal"
         >
           {" "}
           What marine creature are you looking for?{" "}
         </Heading>
-      </header>
+      </div>
       <div className={styles[`Oceandex__Search`]}>
         <input
           value={search}

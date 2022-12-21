@@ -11,15 +11,17 @@ export default function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
         onClick={() => setMenuIsVisible(true)}
       >
         <MenuIcon alt="Menu Hamburger"></MenuIcon>
-        
       </button>
-      <nav className={`${menuIsVisible ? "" : styles[`Navbar__invisible`]}`}>
+      <nav
+        className={`${menuIsVisible ? "" : styles[`Navbar__invisible`]}`}
+        role="navigation"
+        aria-label="main navigation"
+      >
         <button
           className={styles[`Navbar__closeMenu`]}
           onClick={() => setMenuIsVisible(false)}
         >
           <CLoseIcon alt="Close Menu Hamburger"></CLoseIcon>
-         
         </button>
         <ul className={styles[`Navbar__list`]}>
           <li className={styles[`Navbar__li`]}>

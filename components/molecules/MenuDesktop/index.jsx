@@ -3,7 +3,11 @@ import styles from "./styles.module.scss";
 
 export default function MenuDesktop() {
   return (
-    <nav className={styles[`NavbarDesktop`]}>
+    <nav
+      className={styles[`NavbarDesktop`]}
+      role="navigation"
+      aria-label="main navigation"
+    >
       <ul className={styles[`NavbarDesktop__list`]}>
         <li className={styles[`NavbarDesktop__li`]}>
           <Link href="/Oceandex">
@@ -12,7 +16,9 @@ export default function MenuDesktop() {
         </li>
         <li className={styles[`NavbarDesktop__li`]}>
           <Link href="/GeneralCuriosities">
-            <a className={styles[`NavbarDesktop__item`]}>Animal's Curiosities</a>
+            <a className={styles[`NavbarDesktop__item`]}>
+              Animal's Curiosities
+            </a>
           </Link>
         </li>
         <li className={styles[`NavbarDesktop__li`]}>
