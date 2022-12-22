@@ -1,0 +1,67 @@
+@use "@styles/variables";
+
+.FavoriteAnimals {
+  &__Container {
+    background-color: variables.$white;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 3.9rem;
+    position: relative;
+    margin-top: 12rem;
+  }
+
+  &__Content {
+    flex-direction: column;
+    align-content: center;
+
+    &--text {
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  &__Arrow {
+    position: absolute;
+    top: 67px;
+    left: 20px;
+  }
+
+  &__Header {
+    display: flex;
+    height: 2.5rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+
+    & a {
+      position: absolute;
+      top: 67px;
+      left: 28px;
+    }
+  }
+
+  &__Search {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 22px auto;
+    width: 100%;
+
+  }
+
+  &__Cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px 30px;
+    margin: 0 28px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+}

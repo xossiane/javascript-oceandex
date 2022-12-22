@@ -12,7 +12,7 @@ function GeneralCuriosities() {
   //construindo a quantidade de IDs
 
   function handleClickSum(id) {
-    if (animalsID <= 28) {
+    if (animalsID <= 27) {
       setanimalsID((previous) => {
         return previous + 1;
       });
@@ -27,6 +27,7 @@ function GeneralCuriosities() {
       console.log(animalsID);
     }
   }
+  console.log(animals);
 
   return (
     <>

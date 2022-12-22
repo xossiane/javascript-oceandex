@@ -1,54 +1,56 @@
 @use "@styles/variables";
 
 .animalsCard {
-   display: grid;
-  /*grid-template-columns: 50% 50%;
-   */
-    grid-template:
-    "name name" auto
-    "classification img" auto
-   //"classification img" auto
-    / 50% 50%; 
-  // position: relative;
-  //width: 95%;
-  height: 250px;
-  padding-bottom: 3rem;
-  column-gap: 2rem;
-  
-
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 282px;
   border-radius: 1rem;
+  padding-bottom: 3rem;
   padding-right: 3rem;
   padding-left: 3rem;
-  overflow: hidden;
-  text-decoration: none;
+
+  @media (min-width: 1024px) {
+    width: 400px;
+    height: 311px;
+  }
 
   &__name {
-    grid-area: name;
-    width: fit-content;
-    //height: fit-content;
-    //margin-left: 0.5rem;
+    line-height: 2.5rem;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    h2 {
+      line-height: 2.5rem;
+      padding: 3rem 0 1.5rem 0;
+      margin: 0;
+    }
+  }
+
+  &__details {
+    display: grid;
+    grid-template: "classification img" / 1fr 1fr; 
+    grid-gap: 2rem;
+    margin: 0;
+    padding: 0;
   }
 
   &__classification {
-    //grid-area: classification;
-    //display: flex;
-    //flex-direction: column;
-    //width: 100%;
-    //height: fit-content;
-    //margin-top: 0.8rem;
-    
+    grid-area: classification;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
   }
 
   &__img {
-     grid-area: img;
+    grid-area: img;
     align-self: center;
-    object-fit: contain;
-   
-    width: 90%;
-    max-height: 90%;
+    object-fit: contain;  
+    width: 100%; 
     max-width: 170px;
-    max-height: 170px;
-  
+    max-height: 170px;  
   }
 
   &--blue {

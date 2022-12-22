@@ -14,7 +14,11 @@ export default function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
           alt="Open menu"
         />
       </button>
-      <nav className={`${menuIsVisible ? "" : styles[`Navbar__invisible`]}`}>
+      <nav
+        className={`${menuIsVisible ? "" : styles[`Navbar__invisible`]}`}
+        role="navigation"
+        aria-label="main navigation"
+      >
         <button
           className={styles[`Navbar__closeMenu`]}
           onClick={() => setMenuIsVisible(false)}

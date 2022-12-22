@@ -3,8 +3,8 @@ import styles from "./styles.module.scss";
 import { useState } from "react";
 import GlobalSvg from "@atoms/GlobalSvg";
 
-export default function Input({ placeholder, onChange, search}) {
-  //const [search, setSearch] = useState("");
+export default function Input({ placeholder, page, value, onChange }) {
+  const [search, setSearch] = useState("");
 
   return (
     <form className={styles.inputContainer}>
