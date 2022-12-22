@@ -10,9 +10,13 @@ import Diet from "@organisms/Diet";
 
 const TabsDemo = () => (
   /* NOME DAS TABS */
-  <Tabs.Root className={styles[`TabsRoot`]} defaultValue="tab1">
+  <Tabs.Root className={styles[`TabsRoot`]} defaultValue="About">
     <Tabs.List className={styles[`TabsList`]} aria-label="">
-      <Tabs.Trigger className={styles[`TabsTrigger`]} aria-label="About" value="About">
+      <Tabs.Trigger
+        className={styles[`TabsTrigger`]}
+        aria-label="About"
+        value="About"
+      >
         <Text
           className={styles[`TabsTrigger--text`]}
           color="black"

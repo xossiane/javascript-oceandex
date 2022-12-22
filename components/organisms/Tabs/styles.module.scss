@@ -3,15 +3,20 @@
 .TabsRoot {
   display: flex;
   width: 100%;
-  height: 100%;
-  margin: 2rem 3rem;
   flex-direction: column;
+  position: relative;
 }
 
 .TabsList {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+
+  @media (min-width: 1024px) {
+    position: fixed;
+    top: 30px;
+  }
 }
 
 .TabsTrigger {
@@ -21,6 +26,8 @@
   border: 0;
   padding: 0;
   background-color: variables.$white;
+
+  
 
   &--text:hover {
     color: variables.$blue;
@@ -32,4 +39,7 @@
 .TabsContent {
   display: flex;
   flex-direction: column;
+  @media (min-width: 1024px) {
+    margin-top: 11rem;
+  }
 }

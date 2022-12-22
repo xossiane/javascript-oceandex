@@ -5,7 +5,7 @@ import { useEffect, useState, useCallback } from "react";
 import useContentful from "../../hooks/useContentful";
 
 import Heading from "@atoms/Heading";
-import Input from "@molecules/Input";
+// import Arrow from "@atoms/Arrow";
 import AnimalsCard from "@molecules/AnimalsCard";
 import Input from "@molecules/Input";
 import Text from "@atoms/Text";
@@ -46,22 +46,6 @@ const index = ({ data }) => {
     }
   };
 
-  useEffect(() => {
-    if (!search) {
-      getAnimals().then((response) => {
-        setLoading(true);
-        setAnimal(response);
-        setLoading(false);
-      });
-    }
-    if (search) {
-      getAnimal(search).then((response) => {
-        setLoading(true);
-        setAnimal(response);
-        setLoading(false);
-      });
-    }
-  }, [search]);
   //console.log(animal);
   function showAnimal() {
     const filteredAnimals = animals.filter(
@@ -85,11 +69,13 @@ const index = ({ data }) => {
       return filteredAnimals.map((item) => {
         return (
           <AnimalsCard
-            href="/"
+            href="/About"
             key={item.id}
             name={item.name}
             order={item.classification.order}
             phylum={item.classification.phylum}
+            Class={item.classification.class}
+            kingdom={item.classification.kingdom}
             src={item.image}
           />
         );
@@ -100,9 +86,6 @@ const index = ({ data }) => {
   return (
     <>
       <div className={styles[`Oceandex__Container`]}>
-        <span className={styles[`Oceandex__Arrow`]}>
-          <Arrow href="/" white={false}></Arrow>
-        </span>
         <header className={styles[`Oceandex__Header`]}>
           <Heading
             level="1"
@@ -110,16 +93,16 @@ const index = ({ data }) => {
             color="grey"
             style="italic"
           >
-            What marine creature are you looking for?
+            {" "}
+            What marine creature are you looking for?{" "}
           </Heading>
         </header>
         <div className={styles[`Oceandex__Search`]}>
-          <Input value={search} onChange={handleSubmit} aria-label={""} />
-          {/* <input
-          value={search}
-          onChange={(e) => handleSubmit(e)}
-          aria-label={""}
-        /> */}
+          <Input
+            value={search}
+            onChange={(e) => handleSubmit(e)}
+            aria-label={""}
+          />
         </div>
         <section className={styles[`Oceandex__Cards`]}>
           {loading && <p>loading</p>}
