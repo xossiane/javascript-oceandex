@@ -12,18 +12,13 @@ import Input from "@molecules/Input";
 const index = () => {
   // const { getAnimals, getAnimal, getAuthors, getCuriosities } = useContentful();
   const [animal, setAnimal] = useState([]);
+  const [searchAnimal, setSearchAnimal] = useState([]);
   const [loading, setLoading] = useState();
   const [search, setSearch] = useState("");
   useEffect(() => {
 
    
   }, []);
-
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSearch(e.target.value);
-  };
 
   useEffect(() => {
     if (!search) {
@@ -78,88 +73,92 @@ const index = () => {
         }
         localStorage.setItem(1,JSON.stringify(obj))
         obj = {
-          "id": 9,
-          "nickname": "Moray Eel",
-          "name": "Green Moray",
+          "id": 11,
+          "nickname": "Jellyfish",
+          "name": "Jellyfish",
           "kingdom": "Animalia",
-          "phylum": "Chordata",
-          "class": "Actinopterygii",
-          "order": "Anguilliformes",
-          "icon": "assets/images/icons/09-morayEel.png",
-          "image": "//images.ctfassets.net/zrxg7ng9qct2/1zjWF0adY6C0B6VZe9RvAt/f527a6bb7d6c1588ab1199bf362828c1/01-angelFish.png",
+          "phylum": "Cnidaria",
+          "class": "Scyphozoa",
+          "order": "Semaeostomeae",
+          "icon": "assets/images/icons/11-jellyfish.png",
+          "image":"//images.ctfassets.net/zrxg7ng9qct2/5J7gXBdokCfHrQTggwFZlk/9b5aed522b7acf75d79fa21b906d126f/clownfish.png",
           "tabs": [
             {
               "about": [
                 {
-                  "scientificName": "Gymnothorax funebris",
-                  "description": "Moray eels, or Muraenidae, are a family of eels whose members are found worldwide. There are approximately 200 species in 15 genera which are almost exclusively marine, but several species are regularly seen in brackish water, and a few are found in fresh water.",
-                  "height": "1.8m (length)",
-                  "weight": "30-36kg"
+                  "scientificName": "Pelagia noctiluca",
+                  "description": "The jellyfish are mainly free-swimming marine animals with umbrella-shaped bells and trailing tentacles, although a few are anchored to the seabed by stalks rather than being mobile. The bell can pulsate to provide propulsion for highly efficient locomotion. ",
+                  "height": "1cm - 40cm",
+                  "weight": "20g - 400g"
                 }
               ],
               "breeding": [
                 {
-                  "method": "Egg - larvae - glass ell - elver - adult"
+                  "method": "Egg - planula - attached planula - polyp - budding polyp - juvenile - adult"
                 }
               ],
               "curiosities": [
                 {
-                  "curiositiesText": "Moray eels are carnivorous, and ambush predators. They live a rather sedentary life, waiting in hidden places for prey to pass near them.",
-                  "curiositiesImage": "assets/images/realAnimals/09-morayEel.jpg"
+                  "curiositiesText": "Jellyfish are the oldest multicellular animals on the planet.Scientists have discovered jellyfish fossil snapshots in rocks believed to be more than 500 million years old. That makes them even older than dinosaurs!",
+                  "curiositiesImage": "assets/images/realAnimals/11-jellyfish.jpg"
                 }
               ],
-              "locationText": "Moray eels are found worldwide in both deep and shallow waters, but tend to prefer warmer temperatures.",
-              "locationImage": "assets/images/oceans/MapaMundi.webp",
+              "locationText": "Atlantic Ocean",
+              "locationImage": "assets/images/oceans/AtlanticOcean.jpg",
               "diet": [
                 {
-                  "item": "Crabs",
-                  "itemImage": "assets/images/diet/crab.png"
+                  "item": "Zooplankton",
+                  "itemImage": "assets/images/diet/zooplankton.png"
                 },
                 {
-                  "item": "Octopuses",
-                  "itemImage": "assets/images/diet/octopus.png"
+                  "item": "Crustaceans",
+                  "itemImage": "assets/images/diet/crustacean.png"
+              
                 }
               ]
             }
           ]
         }
         localStorage.setItem(2,JSON.stringify(obj))
-      
-
+       
         let size = localStorage.length
 
-        for (let index = 0; index < size; index++) {
+        for (let index = 1; index <= size; index++) {
 
           let animal = localStorage.getItem(index)
           let chave = localStorage.key(index)
           chave = Number.parseInt(chave)
-          let isNumber = !isNaN(chave)
+          let isNumber = Number.isInteger(chave)
+          
 
           
           if(isNumber){
-          console.log(animal)
           animal = JSON.parse(animal)
-          console.log(animal)
           array.push(animal)
         }
           
         }
-
-
         setAnimal(array)
         setLoading(false);
-        
       }
     
     if (search) {
         setLoading(true);
-        // setAnimal(response);
+        let length = search.length
+        let newArray = animal.filter((e)=>{
+          console.log(search)
+          console.log((e.name).substring(0, [length]))
+          return search.substring(0, [length]).toLowerCase() === e.name.substring(0, [length]).toLowerCase()
+
+        })
+        console.log(newArray)
+        setSearchAnimal(newArray);
         setLoading(false);
     }
   }, [search]);
 
   function showAnimal() {
-    return animal.map((item) => {
+    {return !search ? animal.map((item) => {
       return (
         <AnimalsCard
         href="/"
@@ -172,34 +171,51 @@ const index = () => {
         src={item.image}
         />
       );
-    });
+    }) :
+    searchAnimal.map((item) => {
+      return (
+        <AnimalsCard
+        href="/"
+        key={item.id}
+        name={item.name}
+        order={item.order}
+        phylum={item.phylum}
+        Class={item.class}
+        kingdom={item.kingdom}
+        src={item.image}
+        />
+      );
+    }) 
+    }
   }
-
+  
   return (
-    <div className={styles[`Oceandex__Container`]}>
-      <span className={styles[`Oceandex__Arrow`]}>
+    <>
+    <div className={styles[`FavoriteAnimals__Container`]}>
+      <span className={styles[`FavoriteAnimals__Arrow`]}>
         <Arrow href="/" white={false}></Arrow>
       </span>
-      <header className={styles[`Oceandex__Header`]}>
+      <header className={styles[`FavoriteAnimals__Header`]}>
         <Heading
-          className={styles[`Oceandex__Content`]}
+          className={styles[`FavoriteAnimals__Content`]}
           style="italic"
         >
           <Text
-          className={styles[`Oceandex__Content--text`]}
+          className={styles[`FavoriteAnimals__Content--text`]}
           size="XLarge"
           >Favorite Animals</Text>
         </Heading>
       </header>
-      <div className={styles[`Oceandex__Search`]}>
-        <Input FavoriteAnimals page="FavoriteAnimals" placeholder="Search for your favorite animals" aria-label="Search for your favorite animals" />
+      <div className={styles[`FavoriteAnimals__Search`]}>
+        <Input FavoriteAnimals value={search} onChange={(e) => setSearch(e.target.value)} page="FavoriteAnimals" placeholder="Search for your favorite animals" aria-label="Search for your favorite animals" />
       </div>
       
-      <section className={styles[`Oceandex__Cards`]}>
+      <section className={styles[`FavoriteAnimals__Cards`]}>
         {loading && <p>loading</p>}
         {!loading && showAnimal()}
       </section>
     </div>
+    </>
   );
 };
 
