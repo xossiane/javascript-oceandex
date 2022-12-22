@@ -3,8 +3,8 @@ import styles from "./styles.module.scss";
 import { useState } from "react";
 import GlobalSvg from "@atoms/GlobalSvg";
 
-export default function Input({ placeholder }) {
-  const [search, setSearch] = useState("");
+export default function Input({ placeholder, onChange, search}) {
+  //const [search, setSearch] = useState("");
 
   return (
     <form className={styles.inputContainer}>
@@ -15,7 +15,7 @@ export default function Input({ placeholder }) {
         aria-label={placeholder}
         placeholder={placeholder}
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={onChange}
       />
     </form>
   );

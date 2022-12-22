@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 import Arrow from "@atoms/Arrow";
 import Heading from "@atoms/Heading";
 
-import oceancuriosities from "../../../javascript-oceandex/oceancuriosities.json";
+import oceancuriosities from "json/oceanCuriosities.json";
 import Text from "@atoms/Text";
 import Background from "@atoms/Background";
 
