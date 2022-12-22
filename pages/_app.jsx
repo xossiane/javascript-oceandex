@@ -2,7 +2,7 @@ import "../styles/globals.scss";
 import Head from "next/head";
 import Header from "@organisms/Header";
 import Footer from "@organisms/Footer";
-import Layout from "components/layout";
+import Layout from "layout";
 const MyApp = ({ Component, pageProps }) => {
   return (
     <div>
