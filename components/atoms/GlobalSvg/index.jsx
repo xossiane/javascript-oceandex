@@ -3,20 +3,27 @@ import styles from "./styles.module.scss";
 export default function GlobalSvg({
   iconPath,
   external = false,
-  link = "",
-  color,
-  children,
+  href = "#",
+  color = "",
 }) {
   const classList = [];
   classList.push(styles[`svgIcon--${color}`]);
-  classList.push(styles[`svgIcon--${color}`]);
 
-  if (!external) {
+  if (!external && href !== "#") {
     return (
-      <Link href="/">
-        <img src={iconPath} className={classList.join(" ")} />
+      <Link href={`${href}`} className={styles.iconContainer}>
+        <a>
+          <img src={iconPath} className={classList.join(" ")} />
+        </a>
       </Link>
     );
+  } else if (external && href !== "#") {
+    return (
+      <a href={`${href}`} target="_blank" className={styles.iconContainer}>
+        <img src={iconPath} className={classList.join(" ")} />
+      </a>
+    );
+  } else if (href === "#") {
+    return <img src={iconPath} className={classList.join(" ")} />;
   }
-  return <img src={iconPath} className={classList.join(" ")} />;
 }

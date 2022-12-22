@@ -70,6 +70,7 @@ const useContentful = () => {
         content_type: "animalCuriosities",
         //"fields.oceanName": "pacific",
         select: "fields",
+        order: "fields.id",
       });
       const sanitizedList = (await curiosities).items.map((item) => {
         const curiosityType = item.fields.curiosityType;

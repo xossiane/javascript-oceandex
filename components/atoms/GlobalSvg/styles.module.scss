@@ -7,6 +7,11 @@
       brightness(84%) contrast(92%);
   }
   &--white {
-    fill: #fff;
   }
+}
+
+.iconContainer {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
 }

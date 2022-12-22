@@ -2,18 +2,12 @@ import styles from "../styles/home.module.scss";
 
 import Heading from "@atoms/Heading";
 import Button from "@atoms/Button";
-import GlobalSvg from "@atoms/GlobalSvg";
-import Arrow from "@atoms/Arrow";
+import Footer from "@organisms/Footer";
 
 export default function MainPage() {
   return (
     <div className={styles[`Home`]}>
       <main className={styles[`Home__container`]}>
-        <GlobalSvg iconPath="/assets/images/Like-Button.svg" color="black" />
-        <GlobalSvg>
-          <Arrow direction="right"></Arrow>
-        </GlobalSvg>
-
         <Heading level="1" color="grey" weight="italic">
           Discover the Ocean
         </Heading>
@@ -83,6 +77,7 @@ export default function MainPage() {
           </section>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

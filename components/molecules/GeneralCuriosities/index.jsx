@@ -56,20 +56,11 @@ function GeneralCuriosities() {
           key={animals[animalsID].id}
         />
       </section>
-      <span className={styles[`GeneralCuriosities--Arrow`]}>
-        <button
-          className={styles[`GeneralCuriosities--button-left`]}
-          onClick={handleClickSub}
-        >
-          <Arrow direction="left" />
-        </button>
-        <button
-          className={styles[`GeneralCuriosities--button-right`]}
-          onClick={handleClickSum}
-        >
-          <Arrow direction="right" />
-        </button>
-      </span>
+      <div className={styles[`GeneralCuriosities--Arrow`]}>
+        <Arrow direction="left" onClick={handleClickSub} />
+
+        <Arrow direction="right" onClick={handleClickSum} />
+      </div>
     </>
   );
 }
