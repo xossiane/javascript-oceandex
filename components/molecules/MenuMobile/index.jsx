@@ -37,8 +37,8 @@ export default function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
             </Link>
           </li>
           <li className={styles[`Navbar__li`]}>
-            <Link href="/OceanWorldwide">
-              <a className={styles[`Navbar__item`]}>Ocean WorldWide</a>
+            <Link href="/OceanCuriosities">
+              <a className={styles[`Navbar__item`]}>Ocean Curiosities</a>
             </Link>
           </li>
           <li className={styles[`Navbar__li`]}>
