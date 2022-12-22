@@ -19,7 +19,7 @@ export default function AnimalsCard({
       chooseColor = "animalsCard--blue";
     } else if (phylum === "Chordata") {
       chooseColor = "animalsCard--purple";
-    } else if (phylum === "Arthropoda ") {
+    } else if (phylum === "Arthropoda") {
       chooseColor = "animalsCard--pink";
     } else if (phylum === "Mollusca") {
       chooseColor = "animalsCard--green";

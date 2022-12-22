@@ -69,11 +69,13 @@ const index = ({ data }) => {
       return filteredAnimals.map((item) => {
         return (
           <AnimalsCard
-            href="/"
+            href="/About"
             key={item.id}
             name={item.name}
             order={item.classification.order}
             phylum={item.classification.phylum}
+            Class={item.classification.class}
+            kingdom={item.classification.kingdom}
             src={item.image}
           />
         );
@@ -94,17 +96,17 @@ const index = ({ data }) => {
             color="grey"
             style="italic"
           >
-            What marine creature are you looking for?
+            {" "}
+            What marine creature are you looking for?{" "}
           </Heading>
         </header>
 
         <div className={styles[`Oceandex__Search`]}>
-          <Input value={search} onChange={handleSubmit} aria-label={""} />
-          {/* <input
-          value={search}
-          onChange={(e) => handleSubmit(e)}
-          aria-label={""}
-        /> */}
+          <Input
+            value={search}
+            onChange={(e) => handleSubmit(e)}
+            aria-label={""}
+          />
         </div>
         <section className={styles[`Oceandex__Cards`]}>
           {loading && <p>loading</p>}
