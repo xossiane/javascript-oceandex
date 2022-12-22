@@ -5,10 +5,8 @@ import { useEffect, useState, useCallback } from "react";
 import useContentful from "../../hooks/useContentful";
 
 import Heading from "@atoms/Heading";
-import Arrow from "@atoms/ArrowLeft";
+import Input from "@molecules/Input";
 import AnimalsCard from "@molecules/AnimalsCard";
-import Header from "@organisms/Header";
-import LineTop from "@atoms/Line";
 import Input from "@molecules/Input";
 import Text from "@atoms/Text";
 
@@ -48,6 +46,22 @@ const index = ({ data }) => {
     }
   };
 
+  useEffect(() => {
+    if (!search) {
+      getAnimals().then((response) => {
+        setLoading(true);
+        setAnimal(response);
+        setLoading(false);
+      });
+    }
+    if (search) {
+      getAnimal(search).then((response) => {
+        setLoading(true);
+        setAnimal(response);
+        setLoading(false);
+      });
+    }
+  }, [search]);
   //console.log(animal);
   function showAnimal() {
     const filteredAnimals = animals.filter(
@@ -85,8 +99,6 @@ const index = ({ data }) => {
 
   return (
     <>
-      <Header />
-      <LineTop />
       <div className={styles[`Oceandex__Container`]}>
         <span className={styles[`Oceandex__Arrow`]}>
           <Arrow href="/" white={false}></Arrow>

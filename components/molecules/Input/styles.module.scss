@@ -8,6 +8,7 @@
   line-height: 1.25rem;
   color: variables.$darkBlue;
   opacity: 0.4;
+  width: 100%;
 }
 
 .inputContainer {
@@ -18,12 +19,48 @@
   max-width: 340px;
   background: variables.$offWhite;
   border-radius: 10rem;
+
   &:focus {
     outline: variables.$black solid 2px;
   }
+
   @media screen and (min-width: 1024px) {
     max-width: 700px;
     padding: 0.69rem 0;
+  }
+
+  &__box {
+    width: 80%;
+    background: variables.$offWhite;
+    border: none;
+    @include inputText;
+  }
+
+  &__box:placeholder-shown {
+    @include inputText;
+  }
+}
+
+.inputContainerFavoriteAnimal {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 0.41rem 0;
+  margin-bottom: 23px;
+  max-width: 340px;
+  background: variables.$offWhite;
+  border-radius: 10rem;
+
+
+  &:focus {
+    outline: variables.$black solid 2px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 700px;
+    padding: 0.69rem 0;
+    width: 100%;
+    padding-left: 1.2rem;
   }
 
   &__box {

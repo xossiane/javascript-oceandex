@@ -1,6 +1,6 @@
 import Header from "@organisms/Header";
 import Footer from "@organisms/Footer";
-import styles from "./styles.module.scss"
+import styles from "./styles.module.scss";
 
 import React from "react";
 

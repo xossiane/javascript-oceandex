@@ -14,21 +14,24 @@ export default function AnimalsCard({
   src,
 }) {
   const [color, setColor] = useState();
-  const randomBackgroundColor = () => {
-    const randomNumber = Math.floor(Math.random() * 6);
-
-    const color = {
-      0: "animalsCard--blue",
-      1: "animalsCard--purple",
-      2: "animalsCard--pink",
-      3: "animalsCard--green",
-      4: "animalsCard--oliveGreen",
-      5: "animalsCard--red",
-    };
-    return color[randomNumber];
+  const chooseColor = () => {
+    if (phylum === "Cnidaria") {
+      chooseColor = "animalsCard--blue";
+    } else if (phylum === "Chordata") {
+      chooseColor = "animalsCard--purple";
+    } else if (phylum === "Arthropoda ") {
+      chooseColor = "animalsCard--pink";
+    } else if (phylum === "Mollusca") {
+      chooseColor = "animalsCard--green";
+    } else if (phylum === "Echinodermata") {
+      chooseColor = "animalsCard--oliveGreen";
+    } else {
+      chooseColor = "animalsCard--red";
+    }
+    return chooseColor;
   };
 
-  useEffect(() => setColor(randomBackgroundColor()));
+  useEffect(() => setColor(chooseColor()));
 
   return (
     <Link href={`${href}`}>
@@ -38,14 +41,15 @@ export default function AnimalsCard({
             {name}
           </Heading>
         </div>
-        <div className={styles.animalsCard__classification}>
-          <AnimalsTag label={order} text="text"></AnimalsTag>
-          <AnimalsTag label={phylum} text="text"></AnimalsTag>
-          {/*   <AnimalsTag label={Class}></AnimalsTag>
-          <AnimalsTag label={kingdom}></AnimalsTag> */}
+        <div className={styles.animalsCard__details}>
+          <div className={styles.animalsCard__classification}>
+            <AnimalsTag label={order} text="text"></AnimalsTag>
+            <AnimalsTag label={phylum} text="text"></AnimalsTag>
+            <AnimalsTag label={Class} text="text"></AnimalsTag>
+            <AnimalsTag label={kingdom} text="text"></AnimalsTag>
+          </div>
+          <img className={styles.animalsCard__img} src={src} alt="" />
         </div>
-
-        <img className={styles.animalsCard__img} src={src} alt="" />
       </div>
     </Link>
   );
