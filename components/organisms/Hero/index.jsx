@@ -8,14 +8,14 @@ export default function Hero() {
   const totalItem = data.length;
   const [currentItem, setCurrentItem] = useState(0);
 
-    useEffect(() => {
+   useEffect(() => {
     const time = setTimeout(() => {
       if (totalItem - 1 === currentItem) {
         setCurrentItem(0);
       } else {
         setCurrentItem(currentItem + 1);
       }
-    }, 5000);
+    }, 1000);
     () => {
       time.clearTimeOut();
     };
@@ -23,8 +23,8 @@ export default function Hero() {
 
   return (
     <section className={styles[`Hero`]} >
-      <HeroInfo data={data} currentItem={currentItem} />
-      <div className={styles[`Hero__container`]}>
+      <HeroInfo data={data} currentItem={currentItem}/>
+      <div className={styles[`Hero__container`]} >
         {data.map((item) => {
           return (
             <span

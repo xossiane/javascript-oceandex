@@ -6,6 +6,7 @@ import ArrowLeft from "@atoms/ArrowLeft";
 import ArrowRight from "@atoms/ArrowRight";
 import styles from './styles.module.scss'
 
+
 function GeneralCuriosities() {
   const animals = oceananimals;
   const [animalsID, setanimalsID] = useState(0);
@@ -13,7 +14,7 @@ function GeneralCuriosities() {
   //construindo a quantidade de IDs
 
   function handleClickSum(id) {
-    if (animalsID <= 28) {
+    if (animalsID <= 27) {
       setanimalsID((previous) => {
         return previous + 1;
       });
@@ -28,6 +29,7 @@ function GeneralCuriosities() {
       console.log(animalsID);
     }
   }
+  console.log(animals)
 
   return (
     <>
@@ -62,7 +64,19 @@ function GeneralCuriosities() {
             {animals[animalsID].phylum} | {animals[animalsID].order}
           </Text> */}
         </div>
-      </section>
+      </section>'
+      <div>
+        
+        <img className={styles[`GeneralCuriosities--Img`]}
+        src={animals[animalsID].tabs[0].curiosities[0].curiositiesImage}
+        key={animals[animalsID]}
+        >
+
+        </img>
+        
+
+      </div>
+      
       <span className={styles[`GeneralCuriosities--Arrow`]}>
         <button
           className={styles[`GeneralCuriosities--button-left`]}

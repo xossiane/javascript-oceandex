@@ -5,7 +5,7 @@ import CLoseIcon from "@atoms/CloseIcon";
 
 export default function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
   return (
-    <div isVisible={menuIsVisible} className={styles[`Navbar`]}>
+    <div className={styles[`Navbar`]}>
       <button
         className={styles[`Navbar__openMenu`]}
         onClick={() => setMenuIsVisible(true)}
