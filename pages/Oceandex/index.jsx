@@ -8,6 +8,7 @@ import Heading from "@atoms/Heading";
 import Arrow from "@atoms/Arrow";
 import Input from "@molecules/Input";
 import Text from "@atoms/Text";
+import AnimalsCard from "@molecules/AnimalsCard";
 
 const index = ({ data }) => {
   const { getAnimals, getAnimal, getAuthors, getCuriosities } = useContentful();

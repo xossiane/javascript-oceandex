@@ -5,6 +5,7 @@ export default function GlobalSvg({
   external = false,
   href = "#",
   color = "",
+  alt,
 }) {
   const classList = [];
   classList.push(styles[`svgIcon--${color}`]);
@@ -13,17 +14,17 @@ export default function GlobalSvg({
     return (
       <Link href={`${href}`} className={styles.iconContainer}>
         <a>
-          <img src={iconPath} className={classList.join(" ")} />
+          <img src={iconPath} className={classList.join(" ")} alt={alt} />
         </a>
       </Link>
     );
   } else if (external && href !== "#") {
     return (
       <a href={`${href}`} target="_blank" className={styles.iconContainer}>
-        <img src={iconPath} className={classList.join(" ")} />
+        <img src={iconPath} className={classList.join(" ")} alt={alt} />
       </a>
     );
   } else if (href === "#") {
-    return <img src={iconPath} className={classList.join(" ")} />;
+    return <img src={iconPath} className={classList.join(" ")} alt={alt} />;
   }
 }

@@ -1,8 +1,13 @@
 import styles from "../styles/home.module.scss";
 
 import Heading from "@atoms/Heading";
-import Button from "@atoms/Button";
-import Footer from "@organisms/Footer";
+import Button from "@molecules/Button";
+import useContentful from "hooks/useContentful";
+import { useEffect, useState } from "react";
+import Hero from "@organisms/Hero";
+useContentful;
+import btnCardIndex from "../data/btnCardIndex.json";
+import Card from "@molecules/Card";
 
 export default function MainPage() {
   const { getAnimals } = useContentful();
@@ -17,8 +22,6 @@ export default function MainPage() {
   console.log(model);
   return (
     <>
-      <Header />
-      <LineTop />
       <div className={styles[`Home`]}>
         <main className={styles[`Home__container`]}>
           <Heading level="1" color="grey" weight="italic">

@@ -1,25 +1,25 @@
 import styles from "./styles.module.scss";
 import Link from "next/link";
-import MenuIcon from "@atoms/MenuIcon";
-import CLoseIcon from "@atoms/CloseIcon";
+import GlobalSvg from "@atoms/GlobalSvg";
 
 export default function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
   return (
-    <div isVisible={menuIsVisible} className={styles[`Navbar`]}>
+    <div className={styles[`Navbar`]}>
       <button
         className={styles[`Navbar__openMenu`]}
         onClick={() => setMenuIsVisible(true)}
       >
-        <MenuIcon alt="Menu Hamburger"></MenuIcon>
-        
+        <GlobalSvg
+          iconPath="/assets/images/svg/Hamburger.svg"
+          alt="Open menu"
+        />
       </button>
       <nav className={`${menuIsVisible ? "" : styles[`Navbar__invisible`]}`}>
         <button
           className={styles[`Navbar__closeMenu`]}
           onClick={() => setMenuIsVisible(false)}
         >
-          <CLoseIcon alt="Close Menu Hamburger"></CLoseIcon>
-         
+          <GlobalSvg iconPath="/assets/images/svg/Close.svg" alt="Close Menu" />
         </button>
         <ul className={styles[`Navbar__list`]}>
           <li className={styles[`Navbar__li`]}>
