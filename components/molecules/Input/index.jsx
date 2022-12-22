@@ -14,7 +14,7 @@ export default function Input({ placeholder, page, value, onChange }) {
         type="search"
         aria-label={placeholder}
         placeholder={placeholder}
-        value={search}
+       // value={search}
         onChange={onChange}
       />
     </form>
