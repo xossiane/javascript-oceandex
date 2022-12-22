@@ -40,14 +40,10 @@ export default function AboutPage() {
               Octopus{" "}
             </Heading>
             <section className={styles[`AboutPage__tag`]}>
-              <AnimalsTag
-                className={styles[`AboutPage__tag--bg`]}
-                label={"Animalia"}
-                text="text"
-              ></AnimalsTag>{" "}
+              <AnimalsTag label={"Animalia"} text="text"></AnimalsTag>{" "}
               <AnimalsTag label={"Mollusca"} text="text"></AnimalsTag>
             </section>
-            <section className={styles[`AboutPage__tag2`]}>
+            <section className={styles[`AboutPage__tag--bottom`]}>
               <AnimalsTag label={"Animal"} text="text"></AnimalsTag>{" "}
               <AnimalsTag label={"Molusco"} text="text"></AnimalsTag>
             </section>

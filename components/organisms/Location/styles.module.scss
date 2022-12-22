@@ -4,17 +4,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    &__title{
-        margin-top: 3rem;
-    }
     &__img{
         display: flex;
         width: 34rem;
-        max-height: 20.5rem;
+        max-height: 20rem;
         border-radius: 2.4rem;
-        margin: 3rem auto;
+        margin: 0 auto;
         object-fit: cover;
-        @media (min-width: 1024px) {
+        @media (min-width: 1440px) {
             width: 50rem;
             max-height: 27.3rem;
         }
