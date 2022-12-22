@@ -9,7 +9,6 @@ import Arrow from "@atoms/Arrow";
 import Input from "@molecules/Input";
 import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
-import GlobalSvg from "@atoms/GlobalSvg";
 
 const index = () => {
   const { getAnimals, getAnimal, getAuthors, getCuriosities } = useContentful();
