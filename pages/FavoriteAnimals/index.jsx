@@ -3,7 +3,6 @@ import styles from "./styles.module.scss";
 import { useEffect, useState } from "react";
 
 
-import Arrow from "@atoms/Arrow";
 import Heading from "@atoms/Heading";
 import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
@@ -192,9 +191,7 @@ const index = () => {
   return (
     <>
     <div className={styles[`FavoriteAnimals__Container`]}>
-      <span className={styles[`FavoriteAnimals__Arrow`]}>
-        <Arrow direction="left" href="/" white={false} />
-      </span>
+ 
       <header className={styles[`FavoriteAnimals__Header`]}>
         <Heading
           className={styles[`FavoriteAnimals__Content`]}

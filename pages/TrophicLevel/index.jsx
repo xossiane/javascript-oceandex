@@ -93,10 +93,6 @@ export default function TrophicLevel() {
           {selected === 'Pelagic Ocean' && <img src="/assets/images/foodChain/pelagicOceanDesktop.png" alt="" />}
         </div>
     </Container>
-      <div className={styles[`TrophicLevel__ContainerBackgroundImage`]}>
-        <img className={styles[`TrophicLevel__ContainerBackgroundImage__BackgroundImage`]} src="/assets/images/extras/backgroundLarge2.png" alt="" />
-        <img className={styles[`TrophicLevel__ContainerBackgroundImage__BackgroundImageMobile`]} src="/assets/images/extras/background.png" alt="" />
-      </div>
   </>
   );
 }
