@@ -52,6 +52,7 @@
   &__Cards {
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
     grid-gap: 10px 30px;
     margin: 0 28px;
 
