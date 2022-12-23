@@ -13,6 +13,7 @@
 }
 
 .Background {
+
     &__ContainerBackgroundImage {
         position: relative;
         width: 100%;
@@ -22,6 +23,7 @@
             position: absolute;
             bottom: -90%;
             width: 100%;
+            z-index: 0;
 
             @media (max-width: 1023px) {
                 display: none;

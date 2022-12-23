@@ -2,12 +2,12 @@
 
 .FavoriteAnimals {
   &__Container {
-    background-color: variables.$white;
     width: 100%;
     min-height: 100vh;
     padding-top: 3.9rem;
     position: relative;
     margin-top: 12rem;
+    z-index: 1;
   }
 
   &__Content {
