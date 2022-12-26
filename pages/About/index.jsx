@@ -5,6 +5,7 @@ import TabsDemo from "@organisms/Tabs";
 import Background from "@atoms/Background";
 import styles from "./styles.module.scss";
 import Like from "@atoms/Like";
+import { internalMutate } from "swr/_internal";
 
 export default function AboutPage() {
   return (
@@ -48,7 +49,7 @@ export default function AboutPage() {
             <img
               src="assets/images/icons/16-octopus.png"
               className={styles[`AboutPage__Header--icon`]}
-              alt={"Animal icon"}
+              alt="Animal"
             ></img>
           </section>
         </div>
