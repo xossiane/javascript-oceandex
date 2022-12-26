@@ -59,7 +59,6 @@ function GeneralCuriosities() {
       </section>
       <div className={styles[`GeneralCuriosities--Arrow`]}>
         <Arrow direction="left" onClick={handleClickSub} />
-
         <Arrow direction="right" onClick={handleClickSum} />
       </div>
     </>

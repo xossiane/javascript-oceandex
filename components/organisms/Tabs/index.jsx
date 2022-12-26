@@ -56,18 +56,20 @@ const TabsDemo = () => (
 
     {/* CONTEUDO DAS TABS */}
 
-    <Tabs.Content className={styles[`TabsContent`]} value="About">
-      <AboutContent />
-    </Tabs.Content>
-    <Tabs.Content className="TabsContent" value="Curiosities">
-      <Curiosities />
-    </Tabs.Content>
-    <Tabs.Content className="TabsContent" value="Location">
-      <Location />
-    </Tabs.Content>
-    <Tabs.Content className="TabsContent" value="Diet">
-      <Diet />
-    </Tabs.Content>
+    <div className={styles[`TabsBottom`]}>
+      <Tabs.Content className={styles[`TabsContent`]} value="About">
+        <AboutContent />
+      </Tabs.Content>
+      <Tabs.Content className="TabsContent" value="Curiosities">
+        <Curiosities />
+      </Tabs.Content>
+      <Tabs.Content className="TabsContent" value="Location">
+        <Location />
+      </Tabs.Content>
+      <Tabs.Content className="TabsContent" value="Diet">
+        <Diet />
+      </Tabs.Content>
+    </div>
   </Tabs.Root>
 );
 

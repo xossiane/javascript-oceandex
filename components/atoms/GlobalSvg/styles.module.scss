@@ -1,17 +1,17 @@
 .svgIcon {
-  //Medidas Figma: 42x42 (mobile) | 60x60 (desktop)
-  width: 2.625rem;
-  height: 2.625rem;
+  //Figma measurements: 42x42 (mobile) | 60x60 (desktop)
+  width: 4.2rem;
+  height: 4.2rem;
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
-    width: 3.188rem;
-    height: 3.188rem;
+    width: 5.1rem;
+    height: 5.1rem;
   }
 
   @media screen and (min-width: 1024px) {
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   &--black {
@@ -19,5 +19,6 @@
       brightness(84%) contrast(92%);
   }
   &--white {
+    filter: invert(100%);
   }
 }
