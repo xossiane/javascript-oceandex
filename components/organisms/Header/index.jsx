@@ -8,7 +8,7 @@ export default function Header() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   return (
     <header className={styles[`Header`]}>
-      <div>
+      <div className={styles[`Header__internal`]}>
         <Link href="/">
           <a>
             <img
@@ -18,15 +18,15 @@ export default function Header() {
             />
           </a>
         </Link>
-      </div>
-      <div className={styles[`Header__menuMobile`]}>
-        <MenuMobile
-          menuIsVisible={menuIsVisible}
-          setMenuIsVisible={setMenuIsVisible}
-        />
-      </div>
-      <div className={styles[`Header__menuDesktop`]}>
-        <MenuDesktop />
+        <div className={styles[`Header__menuMobile`]}>
+          <MenuMobile
+            menuIsVisible={menuIsVisible}
+            setMenuIsVisible={setMenuIsVisible}
+          />
+        </div>
+        <div className={styles[`Header__menuDesktop`]}>
+          <MenuDesktop />
+        </div>
       </div>
     </header>
   );
