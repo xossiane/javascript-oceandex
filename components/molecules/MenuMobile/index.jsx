@@ -32,7 +32,7 @@ export default function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
             </Link>
           </li>
           <li className={styles[`Navbar__li`]}>
-            <Link href="/GeneralCuriosities">
+            <Link href="/AnimalsCuriosities">
               <a className={styles[`Navbar__item`]}>Animal's Curiosities</a>
             </Link>
           </li>

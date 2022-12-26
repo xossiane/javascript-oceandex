@@ -1,12 +1,12 @@
 @use "@styles/variables";
-.GeneralCuriosities{
+.AnimalsCuriosities{
     
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
     
-&--Img{
+&__Img{
 border-radius: 2.4rem;
 width: 16.6rem;
 height: 16.6rem;
@@ -26,7 +26,7 @@ z-index: 5;
 &--Name{
     margin-top: 3rem;
 }
-&--Text{
+&__Text{
     width: 32.1rem;
     line-height: 2.8rem;
     opacity: 0.8;
@@ -44,7 +44,7 @@ z-index: 5;
         z-index: 5;
     }
 }
-&--Tag{    
+&__Tag{    
     display: flex;
     flex-direction: row;
     @media (min-width: 768px) {
@@ -56,7 +56,7 @@ z-index: 5;
     }
     
 }
-&--Arrow{
+&__Arrow{
     display: flex;
     justify-content: space-evenly;
     margin: 5rem auto 0rem auto;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GeneralCuriosities from "@molecules/GeneralCuriosities";
+import animalsCuriosities from "@molecules/animalsCuriosities";
 import Background from "@atoms/Background";
 import MenuMobile from "@molecules/MenuMobile";
 import Header from "@organisms/Header";
@@ -14,7 +14,7 @@ export default function Teste() {
     <div>
       <Container>
         <AboutContent />
-        <GeneralCuriosities />
+        <animalsCuriosities />
       </Container>
     </div>
   );

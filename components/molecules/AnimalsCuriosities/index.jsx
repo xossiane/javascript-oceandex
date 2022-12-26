@@ -1,11 +1,11 @@
 import Text from "@atoms/Text";
 import { useState } from "react";
-import oceananimals from "../../../json/generalCuriosities.json";
+import oceananimals from "../../../json/animalsCuriosities.json";
 import AnimalsTag from "@molecules/AnimalsTag";
 import Arrow from "@atoms/Arrow";
 import styles from "./styles.module.scss";
 
-function GeneralCuriosities() {
+function AnimalsCuriosities() {
   const animals = oceananimals;
   const [animalsID, setanimalsID] = useState(0);
 
@@ -31,20 +31,19 @@ function GeneralCuriosities() {
 
   return (
     <>
-      <section className={styles[`GeneralCuriosities`]}>
+      <section className={styles[`AnimalsCuriosities`]}>
         <Text
           size="large"
           style="bold"
-          className={styles[`GeneralCuriosities--Name`]}
         >
           {animals[animalsID].name}
         </Text>
-        <div className={styles[`GeneralCuriosities--Tag`]}>
+        <div className={styles[`AnimalsCuriosities__Tag`]}>
           <AnimalsTag label={animals[animalsID].kingdom} mt="mt" />
           <AnimalsTag label={animals[animalsID].order} mt="mt" />
         </div>
         <Text
-          className={styles[`GeneralCuriosities--Text`]}
+          className={styles[`AnimalsCuriosities__Text`]}
           color="black"
           size="small"
         >
@@ -52,12 +51,12 @@ function GeneralCuriosities() {
         </Text>
 
         <img
-          className={styles[`GeneralCuriosities--Img`]}
+          className={styles[`AnimalsCuriosities__Img`]}
           src={animals[animalsID].tabs[0].curiosities[0].curiositiesImage}
           key={animals[animalsID].id}
         />
       </section>
-      <div className={styles[`GeneralCuriosities--Arrow`]}>
+      <div className={styles[`AnimalsCuriosities__Arrow`]}>
         <Arrow direction="left" onClick={handleClickSub} />
         <Arrow direction="right" onClick={handleClickSum} />
       </div>
@@ -65,4 +64,4 @@ function GeneralCuriosities() {
   );
 }
 
-export default GeneralCuriosities;
+export default AnimalsCuriosities;
