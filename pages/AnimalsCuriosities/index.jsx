@@ -22,9 +22,7 @@ export default function AnimalsCuriositiesPage() {
         <div className={styles[`AnimalsCuriositiesPage__Container`]}>
           <AnimalsCuriosities></AnimalsCuriosities>
         </div>
-        <span className={styles[`AnimalsCuriositiesPage__Background`]}>
-          <Background />
-        </span>
+       
       </div>
     </>
   );

@@ -58,8 +58,10 @@ z-index: 5;
 }
 &__Arrow{
     display: flex;
+    position: relative;
     justify-content: space-evenly;
     margin: 5rem auto 0rem auto;
+    z-index: 99;
     @media (min-width: 768px) {
         display: flex;
         position: relative;
