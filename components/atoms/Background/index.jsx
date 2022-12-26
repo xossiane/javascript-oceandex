@@ -5,7 +5,7 @@ export default function Background() {
     <img
       className={styles[`background`]}
       src="/assets/images/extras/backgroundLarge2.png"
-      alt=""
+      alt="Background:Corals sea"
     />
   );
 }

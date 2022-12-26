@@ -50,7 +50,7 @@ export default function AboutPage() {
             <img
               src="assets/images/icons/16-octopus.png"
               className={styles[`AboutPage__Header--icon`]}
-              alt="animal icon"
+              alt={"Animal icon"}
             ></img>
           </section>
         </div>

@@ -14,7 +14,7 @@ export default function Header() {
             <img
               className={styles[`Header__logo`]}
               src="assets/images/logo.svg"
-              alt="logo"
+              alt="Oceandex"
             />
           </a>
         </Link>
