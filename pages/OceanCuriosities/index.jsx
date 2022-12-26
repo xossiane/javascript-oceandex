@@ -49,7 +49,7 @@ export default function OceanWorldwide() {
   };
   return (
     <>
-      <Header />
+      
       <div className={styles[`OceanWorldwide`]}>
         <div className={styles[`OceanWorldwide__container`]}>
           <span className={styles[`OceanWorldwide__Arrow`]}>
@@ -70,6 +70,7 @@ export default function OceanWorldwide() {
             <section className={styles[`OceanWorldwide__content--buttons`]}>
               {oceans.map((ocean) => (
                 <>
+                
                   <Button
                     href={`/OceanCuriosities/${removeSpaces(ocean.title)}`}
                     size="large"
@@ -85,6 +86,8 @@ export default function OceanWorldwide() {
                     title={ocean.title}
                     img={ocean.img}
                     description={ocean.description}
+                    className={styles[`OceanWorldwide__CardUnit`]}
+
                   />
                 </>
               ))}
