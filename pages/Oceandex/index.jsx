@@ -1,9 +1,6 @@
 import styles from "./styles.module.scss";
-
 import { useEffect, useState, useCallback } from "react";
-
 import useContentful from "../../hooks/useContentful";
-
 import Heading from "@atoms/Heading";
 import Arrow from "@atoms/Arrow";
 import Input from "@molecules/Input";

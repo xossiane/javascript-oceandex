@@ -1,17 +1,24 @@
 .svgIcon {
-  height: 32px;
-  width: 32px;
+  //Figma measurements: 42x42 (mobile) | 60x60 (desktop)
+  width: 2.625rem;
+  height: 2.625rem;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 3.188rem;
+    height: 3.188rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
 
   &--black {
     filter: invert(64%) sepia(0%) saturate(2919%) hue-rotate(7deg)
       brightness(84%) contrast(92%);
   }
   &--white {
+    filter: invert(100%);
   }
-}
-
-.iconContainer {
-  height: 32px;
-  width: 32px;
-  cursor: pointer;
 }

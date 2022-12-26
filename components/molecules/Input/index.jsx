@@ -8,7 +8,7 @@ export default function Input({ placeholder, onChange }) {
 
   return (
     <form className={styles.inputContainer}>
-      <GlobalSvg filePath="public/assets/images/svg/SearchIcon.svg" />
+      <GlobalSvg iconPath="public/assets/images/svg/SearchIcon.svg" />
       <input
         className={styles.inputContainer__box}
         type="search"

@@ -1,6 +1,6 @@
 import Text from "@atoms/Text";
 import { useState } from "react";
-import oceananimals from "json/generalCuriosities.json";
+import oceananimals from "../../../json/generalCuriosities.json";
 import AnimalsTag from "@molecules/AnimalsTag";
 import Arrow from "@atoms/Arrow";
 import styles from "./styles.module.scss";
@@ -59,7 +59,6 @@ function GeneralCuriosities() {
       </section>
       <div className={styles[`GeneralCuriosities--Arrow`]}>
         <Arrow direction="left" onClick={handleClickSub} />
-
         <Arrow direction="right" onClick={handleClickSum} />
       </div>
     </>
