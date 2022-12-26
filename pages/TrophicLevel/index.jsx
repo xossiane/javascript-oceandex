@@ -10,14 +10,25 @@ import { useState } from "react";
 import styles from "./styles.module.scss";
 
 export default function TrophicLevel() {
-
-  const [selected, setSelected] = useState('Deep Ocean'); 
+  const [selected, setSelected] = useState("Deep Ocean");
 
   return (
-  <>
-    <Container>
-      <Text className={styles[`TrophicLevel__Title`]} style="italic" color="darkBlue" size="XLarge">Trophic Level</Text>
-      <Text className={styles[`TrophicLevel__Paragraph`]} size="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+    <>
+      <Container>
+        <Text
+          className={styles[`TrophicLevel__Title`]}
+          style="italic"
+          color="darkBlue"
+          size="XLarge"
+        >
+          Trophic Level
+        </Text>
+        <Text className={styles[`TrophicLevel__Paragraph`]} size="large">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis
+          justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse
+          ut eleifend justo, id consequat ex.
+        </Text>
 
         <div className={styles[`TrophicLevel__ContainerCard`]}>
           <Card
@@ -69,10 +80,20 @@ export default function TrophicLevel() {
             title="Pelagic Ocean"
           />
         </div>
-        
+
         <div className={styles[`TrophicLevel__ContainerText`]}>
-          <Text className={styles[`TrophicLevel__ContainerText__Title`]}>Deep Ocean</Text>
-          <Text size="large" className={styles[`TrophicLevel__ContainerText__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+          <Text className={styles[`TrophicLevel__ContainerText__Title`]}>
+            Deep Ocean
+          </Text>
+          <Text
+            size="large"
+            className={styles[`TrophicLevel__ContainerText__Paragraph`]}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            libero metus, fermentum et ex eu, vestibulum placerat enim. Ut
+            turpis justo, lacinia non justo egestas, pretium vehicula lectus.
+            Suspendisse ut eleifend justo, id consequat ex.
+          </Text>
         </div>
 
         <div className={styles[`TrophicLevel__ContainerMobile`]}>
@@ -92,14 +113,12 @@ export default function TrophicLevel() {
           {selected === 'Arctic Ocean' && <img src="/assets/images/foodChain/arcticOceanDesktop.png" alt="Arctic Ocean" />}
           {selected === 'Pelagic Ocean' && <img src="/assets/images/foodChain/pelagicOceanDesktop.png" alt="Pelagic ocean" />}
         </div>
-    </Container>
-      <div className={styles[`TrophicLevel__ContainerBackgroundImage`]}>
-        <img className={styles[`TrophicLevel__ContainerBackgroundImage__BackgroundImage`]} src="/assets/images/extras/backgroundLarge2.png" alt="Background: Coral sea" />
-        <img className={styles[`TrophicLevel__ContainerBackgroundImage__BackgroundImageMobile`]} src="/assets/images/extras/background.png" alt="Background mobile: Coral sea" />
-      </div>
-  </>
+      </Container>
+    </>
   );
 }
-{/* <section>
+{
+  /* <section>
 <Background />
-</section> */}
+</section> */
+}

@@ -10,24 +10,22 @@ export default function AboutPage() {
   return (
     <div className={styles[`AboutPage`]}>
       <div className={styles[`AboutPage__title`]}>
-        <Heading
+        {/* <Heading
           level="1"
           className={styles[`AboutPage__Header--text`]}
           color="black"
         >
           {" "}
           Octopus{" "}
-        </Heading>
+        </Heading> */}
       </div>
       <div className={styles[`AboutPage__Content`]}>
         <div className={styles[`AboutPage__Container`]}>
           <header className={styles[`AboutPage__Header`]}>
-            <Arrow
-              direction="left"
-              href="/Oceandex"
-              white
-              className={styles[`AboutPage__Header--arrow`]}
-            />
+            <div className={styles[`AboutPage__Header--arrow`]}>
+              {" "}
+              <Arrow direction="left" href="/Oceandex" white />
+            </div>
             <Like white={true} className={styles[`AboutPage__Header--like`]} />
           </header>
           <section className={styles[`AboutPage__Header--info`]}>
@@ -41,11 +39,11 @@ export default function AboutPage() {
             </Heading>
             <section className={styles[`AboutPage__tag`]}>
               <AnimalsTag label={"Animalia"} text="text"></AnimalsTag>{" "}
-              <AnimalsTag label={"Mollusca"} text="text"></AnimalsTag>
+              <AnimalsTag label={"Chordata"} text="text"></AnimalsTag>
             </section>
             <section className={styles[`AboutPage__tag--bottom`]}>
-              <AnimalsTag label={"Animal"} text="text"></AnimalsTag>{" "}
-              <AnimalsTag label={"Molusco"} text="text"></AnimalsTag>
+              <AnimalsTag label={"Actinopterygii"} text="text"></AnimalsTag>{" "}
+              <AnimalsTag label={"Syngnathiformes"} text="text"></AnimalsTag>
             </section>
             <img
               src="assets/images/icons/16-octopus.png"
@@ -58,9 +56,6 @@ export default function AboutPage() {
           <TabsDemo></TabsDemo>
         </div>
       </div>
-      <section className={styles[`AboutPage__background`]}>
-        <Background />
-      </section>
     </div>
   );
 }

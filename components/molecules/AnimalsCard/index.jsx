@@ -14,7 +14,7 @@ export default function AnimalsCard({
   src,
 }) {
   const [color, setColor] = useState();
-  const chooseColor = () => {
+  let chooseColor = () => {
     if (phylum === "Cnidaria") {
       chooseColor = "animalsCard--blue";
     } else if (phylum === "Chordata") {

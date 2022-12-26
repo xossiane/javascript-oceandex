@@ -3,11 +3,18 @@ import Text from "@atoms/Text";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles.module.scss";
-export default function Card({ href, color, title, img, description, onClick, state }) {
+export default function Card({
+  href,
+  color,
+  title,
+  img,
+  description,
+  onClick,
+  state,
+}) {
   const classList = [];
   classList.push(styles[`card--${color}`]);
   classList.push(styles[`card`]);
-  
 
   return (
     <div className={styles[`card__relative`]}>
@@ -28,11 +35,10 @@ export default function Card({ href, color, title, img, description, onClick, st
             {description}
           </Text>
 
-          <Link href={`${href}`}>
-            <a className={styles[`card__Link`]}>Read More...</a>
-          </Link>
-        </div>
-    
+        <Link href={`${href}`}>
+          <a className={styles[`card__Link`]}>Read More...</a>
+        </Link>
+      </div>
     </div>
   );
 }

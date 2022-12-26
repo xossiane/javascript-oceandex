@@ -3,50 +3,48 @@
 .Diet__Container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
-        
-    }
+    margin: 2rem 2.5rem;
+    @media (min-width: 600px){
+        margin: 2rem 10rem;   
+    } 
+    @media (min-width: 1024px){
+        margin: 2rem 2.5rem;   
+    } 
+    @media (min-width: 1440px){
+        margin: 2rem 10rem;   
+    }        
+}
 .Diet__imgContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
 .Diet__hrItem{
        border: none;
-       height:0.2rem;
+       height: 0.2rem;
        background-color:#00000042;
-       opacity:40%;
-       width: 80%;
-       margin:0;
-       @media (min-width: 1024px){
-        width: 80%;
-       }
+       opacity: 40%;
+       width: 100%;
+       margin: 0;
+       
        
 }
 
 .Diet__animalName{
-       color:#000000;
-       opacity: 80%;
-       letter-spacing:0.5px;
+       color: variables.$darkBlue;
+       line-height: 1.6rem;
+       @media (min-width: 1024px){
+        font-size: 2.4rem;
+       }
 }
 
 .Diet__imgItem{
-    width: 40%;
-    max-width: 10rem;
-    height: 20%;
-    max-height: 20rem;
+    height: 8.5rem;
+    object-fit: cover;
     margin: 2rem;
-    @media (min-width: 1024px) {
-    width: 30%;
-    max-width: 20rem;
-    height: 20%;
-    max-height: 15rem;
-    margin:3rem;
-}
 }
 
 
