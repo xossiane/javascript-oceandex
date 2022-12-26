@@ -127,10 +127,10 @@ const index = () => {
           let chave = localStorage.key(index)
           chave = Number.parseInt(chave)
           let isNumber = Number.isInteger(chave)
-          if(isNumber){
+          if(isNumber && animal !== null){
           animal = JSON.parse(animal)
           array.push(animal)
-        }
+          }
         }
         setAnimal(array)
         setLoading(false);
