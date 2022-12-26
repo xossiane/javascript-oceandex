@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-
 import styles from "./styles.module.scss";
 import Arrow from "@atoms/Arrow";
 import Heading from "@atoms/Heading";
-
 import oceancuriosities from "json/oceanCuriosities.json";
 import Text from "@atoms/Text";
-import Background from "@atoms/Background";
 
 function OceanCuriosities() {
   const curiosities = oceancuriosities;
   const [curiositiesID, setcuriositiesID] = useState(0);
   const router = useRouter();
   const { ocean } = router.query;
+  const oceansSubtitles = [
+    { subtitle: "The biggest ocean" },
+    { subtitle: "Sea of Atlas" },
+    { subtitle: "Third-largest ocean" },
+    { subtitle: "Portions of oceans" },
+    { subtitle: "The smallest ocean" },
+  ];
 
   //construindo a quantidade de IDs
 
@@ -41,12 +45,11 @@ function OceanCuriosities() {
   return (
     <>
       <>
-        <div className={styles[`OceanCuriosities__container`]}>
-          <section className={styles[`OceanCuriosities__content`]}>
-            <section className={styles[`OceanCuriosities__header`]}>
+        <div className={styles[`OceanCuriosities__Container`]}>
+          <section className={styles[`OceanCuriosities__Content`]}>
+            <section className={styles[`OceanCuriosities__Header`]}>
               <Heading
                 level="1"
-                className={styles[`OceanCuriosities__container--text`]}
                 color="black"
                 style="italic"
               >
@@ -54,31 +57,35 @@ function OceanCuriosities() {
                 {ocean}
               </Heading>
             </section>
+
             <>
-              <img
-                className={styles[`OceanCuriosities--Img`]}
-                src={curiosities[0].indian[curiositiesID].curiosityImage}
-                key={curiosities[curiositiesID]}
-              />
+              {
+                oceansSubtitles.map((oceans) => (
+                  <Heading level="2" color="black" size="small" weight="normal">
+                    {oceans.subtitle}
+                  </Heading>
+                ))[0]
+              }
               <Text
-                className={styles[`OceanCuriosities--Text`]}
+                className={styles[`OceanCuriosities__Text`]}
                 color="black"
                 size="small"
               >
                 {curiosities[0].indian[curiositiesID].curiosity}
               </Text>
-              <div></div>
+              <img
+                className={styles[`OceanCuriosities__Img`]}
+                src={curiosities[0].indian[curiositiesID].curiosityImage}
+                key={curiosities[curiositiesID]}
+              />
             </>
           </section>
 
-          <div className={styles[`OceanCuriosities--Arrow`]}>
-            <Arrow direction="left" />
-            <Arrow direction="right" />
+          <div className={styles[`OceanCuriosities__Arrow`]}>
+            <Arrow direction="left" onClick={handleClickSub} />
+            <Arrow direction="right" onClick={handleClickSum} />
           </div>
         </div>
-        <section>
-          <Background />
-        </section>
       </>
     </>
   );
