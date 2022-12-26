@@ -172,6 +172,7 @@ const index = () => {
                 Class={item.class}
                 kingdom={item.kingdom}
                 src={item.image}
+                alt={item.name}
               />
             );
           })
@@ -186,6 +187,7 @@ const index = () => {
                 Class={item.class}
                 kingdom={item.kingdom}
                 src={item.image}
+                alt={item.name}
               />
             );
           });
@@ -219,7 +221,7 @@ const index = () => {
           />
         </div>
 
-        <section className={styles[`FavoriteAnimals__Cards`]}>
+        <section className={styles[`FavoriteAnimals__Cards`]} tabIndex={"1"}>
           {loading && <p>loading</p>}
           {!loading && showAnimal()}
         </section>

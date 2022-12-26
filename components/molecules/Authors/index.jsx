@@ -9,7 +9,7 @@ export default function AuthorsMolecule({
   githubLink,
 }) {
   return (
-    <article className={styles.authors} tabIndex={"0"}>
+    <article className={styles.authors}>
       <img src={picture} alt={name} className={styles.authors__picture} />
       <p className={styles.authors__name}> {name} </p>
       <p className={styles.authors__job}>{job} </p>
