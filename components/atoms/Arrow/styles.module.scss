@@ -1,13 +1,13 @@
 .arrow {
-  //Medidas Figma: 33x27 (mobile) | 103x87 (desktop)
+  //Figma measurements: 33x27 (mobile) | 103x87 (desktop)
   cursor: pointer;
   width: 2.063rem;
   height: 1.688rem;
-
+ 
   &--right {
     transform: rotate(90deg);
   }
-  
+
   &--left {
     transform: rotate(-90deg);
   }

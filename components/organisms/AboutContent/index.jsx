@@ -27,7 +27,8 @@ export default function AboutContent() {
           {" "}
           An octopus is a soft-bodied, eight-limbed mollusc of the order
           Octopoda. It consists of some 300 species and is grouped within the
-          class Cephalopoda with squids, cuttlefish, and nautiloids.</Text>
+          class Cephalopoda with squids, cuttlefish, and nautiloids.
+        </Text>
       </section>
       <section className={styles[`AboutContent__box2`]}>
         <div className={styles[`AboutContent__box2--title`]}>
@@ -73,12 +74,11 @@ export default function AboutContent() {
             Egg - larvae - juvenile - adult
           </Text>
         </div>
-        
       </section>
-      <section className={styles[`AboutContent__tags`]} >
-          <AnimalsTag mt="mt" label="Animalia"/>
-          <AnimalsTag mt="mt" label="Mollusca"/>
-        </section>
+      <section className={styles[`AboutContent__tags`]}>
+        <AnimalsTag mt="mt" label="Animalia" />
+        <AnimalsTag mt="mt" label="Mollusca" />
+      </section>
     </div>
   );
 }
