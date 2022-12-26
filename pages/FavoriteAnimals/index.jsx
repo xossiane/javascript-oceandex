@@ -122,23 +122,16 @@ const index = () => {
        
         let size = localStorage.length
 
-        for (let index = 0; index < size; index++) {
-
-          let animal = localStorage.getItem(index+1)
+        for (let index = 1; index <= size; index++) {
+          let animal = localStorage.getItem(index)
           let chave = localStorage.key(index)
           chave = Number.parseInt(chave)
           let isNumber = Number.isInteger(chave)
-          
-          
-          
           if(isNumber){
-            
           animal = JSON.parse(animal)
           array.push(animal)
         }
-          
         }
-        
         setAnimal(array)
         setLoading(false);
       }
