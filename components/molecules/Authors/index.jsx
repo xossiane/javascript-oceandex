@@ -10,7 +10,7 @@ export default function AuthorsMolecule({
 }) {
   return (
     <article className={styles.authors}>
-      <img src={picture} alt={name} className={styles.authors__picture} />
+      <img src={picture} alt={name} className={styles.authors__picture} loading="lazy" />
       <p className={styles.authors__name}> {name} </p>
       <p className={styles.authors__job}>{job} </p>
       <div className={styles.authors__socialMedia}>

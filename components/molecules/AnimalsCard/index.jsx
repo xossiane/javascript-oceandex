@@ -48,7 +48,7 @@ export default function AnimalsCard({
             <AnimalsTag label={Class} text="text"></AnimalsTag>
             <AnimalsTag label={kingdom} text="text"></AnimalsTag>
           </div>
-          <img className={styles.animalsCard__img} src={src} alt={name} loading={"lazy"}/>
+          <img className={styles.animalsCard__img} src={src} alt={name} loading="lazy"/>
         </div>
       </div>
     </Link>

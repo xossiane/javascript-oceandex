@@ -70,6 +70,7 @@ const index = ({ data }) => {
             Class={item.classification.class}
             kingdom={item.classification.kingdom}
             src={item.image}
+            loading="lazy"
           />
         );
       });

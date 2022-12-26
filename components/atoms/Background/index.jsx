@@ -6,6 +6,7 @@ export default function Background() {
       className={styles[`background`]}
       src="/assets/images/extras/backgroundLarge2.png"
       alt="Background:Corals sea"
+      
     />
   );
 }

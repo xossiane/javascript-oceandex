@@ -39,6 +39,7 @@ export default function TrophicLevel() {
             onClick={() => setSelected("Deep Ocean")}
             img="/assets/images/icons/deep_ocean.svg"
             state={selected}
+            loading="lazy"
           />
           <Card
             href="/"
@@ -48,6 +49,7 @@ export default function TrophicLevel() {
             onClick={() => setSelected("Arctic Ocean")}
             img="/assets/images/icons/artic_ocean.svg"
             state={selected}
+            loading="lazy"
           />
           <Card
             href="/"
@@ -57,6 +59,7 @@ export default function TrophicLevel() {
             onClick={() => setSelected("Pelagic Ocean")}
             img="/assets/images/icons/pelagic_ocean.svg"
             state={selected}
+            loading="lazy"
           />
           <Button
             href="/"
@@ -64,6 +67,7 @@ export default function TrophicLevel() {
             title="Deep Ocean"
             description="Below 200 meters"
             img="/assets/images/icons/deep_ocean.svg"
+            loading="lazy"
           />
           <Button
             href="/"
@@ -71,6 +75,7 @@ export default function TrophicLevel() {
             description="Coldest waters"
             img="/assets/images/icons/artic_ocean.svg"
             title="Arctic Ocean"
+            loading="lazy"
           />
           <Button
             href="/"
@@ -78,6 +83,7 @@ export default function TrophicLevel() {
             description="Where light meets water"
             img="/assets/images/icons/pelagic_ocean.svg"
             title="Pelagic Ocean"
+            loading="lazy"
           />
         </div>
 

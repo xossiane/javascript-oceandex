@@ -27,8 +27,8 @@ export default function Curiosities() {
       <img
         src="assets/images/realAnimals/16-octopus.jpg"
         className={styles[`Curiosities__img`]}
-        alt={"Animal"}
-        
+        alt="Animal"
+        loading="lazy"
       ></img>
     </div>
   );
