@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   &__picture {
     width: 6.625rem;
     height: 6.625rem;
@@ -12,7 +13,7 @@
   }
 
   &__text {
-    margin-bottom: 1.25rem;
+    margin: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 1.5rem;
@@ -43,7 +44,6 @@
     }
 
     &__name {
-      margin: 0;
       font-size: 1.875rem;
       line-height: 2.188rem;
     }
