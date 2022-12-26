@@ -14,19 +14,19 @@ export default function GlobalSvg({
     return (
       <Link href={`${href}`}>
         <a>
-          <img src={iconPath} className={classList.join(" ")} alt={alt} />
+          <img src={iconPath} className={classList.join(" ")} alt={alt} tabIndex="0"/>
         </a>
       </Link>
     );
   } else if (external && href !== "#") {
     return (
       <a href={`${href}`} target="_blank">
-        <img src={iconPath} className={classList.join(" ")} alt={alt} />
+        <img src={iconPath} className={classList.join(" ")} alt={alt} tabIndex="0" />
       </a>
     );
   } else if (href === "#") {
     return (
-      <img src={iconPath} className={classList.join(" ")} alt={alt} />
+      <img src={iconPath} className={classList.join(" ")} alt={alt} tabIndex="0" />
     );
   }
 }
