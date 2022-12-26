@@ -7,6 +7,7 @@ import Text from "@atoms/Text";
 import Header from "@organisms/Header";
 import React from "react";
 import styles from "./styles.module.scss";
+import { useRouter } from "next/router";
 
 export default function OceanWorldwide() {
   const oceans = [
@@ -47,6 +48,7 @@ export default function OceanWorldwide() {
     // "Arctic Ocean",
   ];
 
+  
   const removeSpaces = (str) => {
     const string = str.replace(/\s/g, "");
     const lowerCase = string.charAt(0).toLowerCase() + string.slice(1);
