@@ -199,7 +199,7 @@ const index = () => {
             style="italic"
           >
             <Text
-              className={styles[`FavoriteAnimals__Content--text`]}
+              className={styles[`FavoriteAnimals__Text`]}
               size="XLarge"
             >
               Favorite Animals
