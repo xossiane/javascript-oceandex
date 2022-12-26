@@ -9,7 +9,7 @@ export default function AuthorsMolecule({
   githubLink,
 }) {
   return (
-    <article className={styles.authors}>
+    <article className={styles.authors} tabIndex={"0"}>
       <img src={picture} alt={name} className={styles.authors__picture} />
       <p className={styles.authors__name}> {name} </p>
       <p className={styles.authors__job}>{job} </p>
@@ -17,14 +17,14 @@ export default function AuthorsMolecule({
         <GlobalSvg
           href={linkedinLink}
           tabIndex={"0"}
-          alt={"Redirect to Linkedin"}
+          alt={"Redirect to author's  Linkedin"}
           external
           iconPath="/assets/images/svg/LinkedinLogo.svg"
         />
         <GlobalSvg
           href={githubLink}
           tabIndex={"0"}
-          alt={"Redirect to Github"}
+          alt={"Redirect to author's Github"}
           external
           iconPath="/assets/images/svg/GithubLogo.svg"
         />
