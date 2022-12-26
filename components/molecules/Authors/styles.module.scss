@@ -7,10 +7,10 @@
     "img job job"
     "img socialMedia socialMedia";
   grid-column-gap: 1.188rem;
-  grid-row-gap: 3rem;
   justify-items: start;
   align-items: center;
   width: 340px;
+  margin: 1.5rem 0;
 
   &__picture {
     grid-area: img;
