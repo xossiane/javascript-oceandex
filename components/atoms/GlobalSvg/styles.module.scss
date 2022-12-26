@@ -1,5 +1,5 @@
 .svgIcon {
-  //Medidas Figma: 42x42 (mobile) | 60x60 (desktop)
+  //Figma measurements: 42x42 (mobile) | 60x60 (desktop)
   width: 2.625rem;
   height: 2.625rem;
   cursor: pointer;
@@ -19,5 +19,6 @@
       brightness(84%) contrast(92%);
   }
   &--white {
+    filter: invert(100%);
   }
 }
