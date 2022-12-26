@@ -22,8 +22,8 @@ export default function MenuDesktop() {
           </Link>
         </li>
         <li className={styles[`NavbarDesktop__li`]}>
-          <Link href="/OceanWorldwide">
-            <a className={styles[`NavbarDesktop__item`]}>Ocean WorldWide</a>
+          <Link href="/OceanCuriosities">
+            <a className={styles[`NavbarDesktop__item`]}>Ocean Curiosities</a>
           </Link>
         </li>
         <li className={styles[`NavbarDesktop__li`]}>

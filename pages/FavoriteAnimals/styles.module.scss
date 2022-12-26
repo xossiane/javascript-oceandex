@@ -2,12 +2,12 @@
 
 .FavoriteAnimals {
   &__Container {
-    background-color: variables.$white;
     width: 100%;
     min-height: 100vh;
     padding-top: 3.9rem;
     position: relative;
     margin-top: 12rem;
+    z-index: 1;
   }
 
   &__Content {
@@ -52,6 +52,7 @@
   &__Cards {
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
     grid-gap: 10px 30px;
     margin: 0 28px;
 
@@ -63,5 +64,4 @@
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
-
 }

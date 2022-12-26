@@ -3,7 +3,6 @@ import styles from "./styles.module.scss";
 import { useEffect, useState } from "react";
 
 
-import Arrow from "@atoms/ArrowLeft";
 import Heading from "@atoms/Heading";
 import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
@@ -123,21 +122,23 @@ const index = () => {
        
         let size = localStorage.length
 
-        for (let index = 1; index <= size; index++) {
+        for (let index = 0; index < size; index++) {
 
-          let animal = localStorage.getItem(index)
+          let animal = localStorage.getItem(index+1)
           let chave = localStorage.key(index)
           chave = Number.parseInt(chave)
           let isNumber = Number.isInteger(chave)
           
-
+          
           
           if(isNumber){
+            
           animal = JSON.parse(animal)
           array.push(animal)
         }
           
         }
+        
         setAnimal(array)
         setLoading(false);
       }
@@ -151,7 +152,6 @@ const index = () => {
           return search.substring(0, [length]).toLowerCase() === e.name.substring(0, [length]).toLowerCase()
 
         })
-        console.log(newArray)
         setSearchAnimal(newArray);
         setLoading(false);
     }
@@ -192,9 +192,7 @@ const index = () => {
   return (
     <>
     <div className={styles[`FavoriteAnimals__Container`]}>
-      <span className={styles[`FavoriteAnimals__Arrow`]}>
-        <Arrow href="/" white={false}></Arrow>
-      </span>
+ 
       <header className={styles[`FavoriteAnimals__Header`]}>
         <Heading
           className={styles[`FavoriteAnimals__Content`]}
