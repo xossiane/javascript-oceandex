@@ -62,7 +62,6 @@ export default function OceanWorldwide() {
               color="black"
               style="italic"
             >
-              {" "}
               Ocean Curiosities
             </Heading>
           </section>
@@ -81,7 +80,7 @@ export default function OceanWorldwide() {
                   />
                   <Card
                     color="purple"
-                    href={ocean.href}
+                    href={`/OceanCuriosities/${removeSpaces(ocean.title)}`}
                     title={ocean.title}
                     img={ocean.img}
                     description={ocean.description}
