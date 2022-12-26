@@ -124,14 +124,15 @@ const index = () => {
 
         for (let index = 1; index <= size; index++) {
           let animal = localStorage.getItem(index)
-          let chave = localStorage.key(index)
-          chave = Number.parseInt(chave)
-          let isNumber = Number.isInteger(chave)
-          if(isNumber && animal !== null){
           animal = JSON.parse(animal)
-          array.push(animal)
+          let id = animal?.id
+          let chave = Number.parseInt(id)
+          let isNumber = Number.isInteger(chave)
+          if(isNumber && (animal !== null) && (id !== null)){
+            array.push(animal)
           }
         }
+        
         setAnimal(array)
         setLoading(false);
       }
