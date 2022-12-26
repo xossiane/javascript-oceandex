@@ -15,19 +15,16 @@ const index = ({ data }) => {
   const [animals, setAnimals] = useState([]);
   const [curiosities, setCuriosities] = useState();
   // const [authors, setAuthors] = useState();
-  useEffect(async () => {
-    setLoading(true);
 
-    const response = await getAnimals();
-    setAnimals(response);
-    setLoading(false);
+  useEffect(() => {
+    async function fetchAnimals() {
+      setLoading(true);
 
-    /*   getCuriosities().then((response) => {
-      setCuriosities(response);
-    }); */
-    /* getAuthors().then((response) => {
-      setAuthors(response);
-    }); */
+      const response = await getAnimals();
+      setAnimals(response);
+      setLoading(false);
+    }
+    fetchAnimals();
   }, []);
 
   //console.log(authors);
