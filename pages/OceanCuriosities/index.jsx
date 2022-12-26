@@ -14,26 +14,31 @@ export default function OceanWorldwide() {
       title: "Pacific Ocean",
       img: "/assets/images/icons/pacific.svg",
       description: "The biggest ocean",
+      icon: "/assets/images/designIcons/ocean1.png"
     },
     {
       title: "Atlantic Ocean",
       img: "/assets/images/icons/atlantic.svg",
       description: "Sea of the atlas",
+      icon: "/assets/images/designIcons/ocean2.png"
     },
     {
       title: "Indian Ocean",
       img: "/assets/images/icons/indian.svg",
       description: "Third-largest ocean",
+      icon: "/assets/images/designIcons/ocean3.png"
     },
     {
       title: "Southern Ocean",
       img: "/assets/images/icons/southern.svg",
       description: "Portions of oceans",
+      icon: "/assets/images/designIcons/ocean4.png"
     },
     {
       title: "Arctic Ocean",
       img: "/assets/images/icons/artic.svg",
       description: "The smallest ocean",
+      icon: "/assets/images/designIcons/ocean6.png"
     },
 
     // "Pacific Ocean",
@@ -78,25 +83,24 @@ export default function OceanWorldwide() {
                     title={ocean.title}
                     description={ocean.description}
                     img={ocean.img}
-                    className={styles[`OceanWorldwide__buttonUnit`]}
-                  />
+                    icon={ocean.icon}
+                    className={styles[`OceanWorldwide__buttonUnit`]}> </Button>
+                  
                   <Card
                     color="purple"
                     href={ocean.href}
                     title={ocean.title}
                     img={ocean.img}
                     description={ocean.description}
-                    className={styles[`OceanWorldwide__CardUnit`]}
+                    className={styles[`OceanWorldwide__cardUnit`]}></Card>
 
-                  />
+                  
                 </>
               ))}
             </section>
           </div>
         </div>
-        <section className={styles[`OceanWorldwide__background`]}>
-          <Background />
-        </section>
+        
       </div>
     </>
   );
