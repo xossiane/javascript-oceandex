@@ -44,19 +44,20 @@
     gap: 1.25rem;
 
     &__picture {
-      width: 16.25rem;
-      height: 16.25rem;
+      height: 26rem;
     }
 
     &__name {
-      font-size: 1.8rem;
-      line-height: 2.188rem;
+      font-size: 3rem;
+      margin-top: 2rem;
     }
 
     &__job {
-      margin: 0;
-      font-size: 1.875rem;
-      line-height: 2.188rem;
+      margin-top: 2rem;
+      font-size: 3rem;
+    }
+    &__socialMedia {
+      margin-top: 2rem;
     }
   }
 }
@@ -79,12 +80,12 @@
 
   @media screen and (min-width: 1024px) {
     &__text {
-      font-size: 2rem;
-      line-height: 2.188rem;
+      font-size: 3rem;
+      margin-bottom: 2rem;
     }
 
     &__name {
-      font-size: 1.8rem;
+      font-size: 2.5rem;
     }
   }
 }
