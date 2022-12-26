@@ -8,7 +8,11 @@ export default function AnimalsTag({ label, mt, text, className }) {
   classList.push(styles[`AnimalsTag--${text}`]);
   return (
     <div>
-      <Text className={`${classList.join(" ")} ${className}`} color="white" size="medium">
+      <Text
+        className={`${classList.join(" ")} ${className}`}
+        color="white"
+        size="medium"
+      >
         {label}
       </Text>
     </div>

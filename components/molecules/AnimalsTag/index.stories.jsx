@@ -1,9 +1,9 @@
-import AnimalsTag from '.'
+import AnimalsTag from ".";
 
 export default {
-    title: "Molecules/AnimalsTag",
-    component: AnimalsTag,
-    args: {}
-}
+  title: "Molecules/AnimalsTag",
+  component: AnimalsTag,
+  args: {},
+};
 
-export const Primary = () => <AnimalsTag primary />;
+export const Primary = () => <AnimalsTag primary label="Turtle" text="text" />;

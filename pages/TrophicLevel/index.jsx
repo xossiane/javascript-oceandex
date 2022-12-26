@@ -10,14 +10,25 @@ import { useState } from "react";
 import styles from "./styles.module.scss";
 
 export default function TrophicLevel() {
-
-  const [selected, setSelected] = useState('Deep Ocean'); 
+  const [selected, setSelected] = useState("Deep Ocean");
 
   return (
-  <>
-    <Container>
-      <Text className={styles[`TrophicLevel__Title`]} style="italic" color="darkBlue" size="XLarge">Trophic Level</Text>
-      <Text className={styles[`TrophicLevel__Paragraph`]} size="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+    <>
+      <Container>
+        <Text
+          className={styles[`TrophicLevel__Title`]}
+          style="italic"
+          color="darkBlue"
+          size="XLarge"
+        >
+          Trophic Level
+        </Text>
+        <Text className={styles[`TrophicLevel__Paragraph`]} size="large">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis
+          justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse
+          ut eleifend justo, id consequat ex.
+        </Text>
 
         <div className={styles[`TrophicLevel__ContainerCard`]}>
           <Card
@@ -69,33 +80,78 @@ export default function TrophicLevel() {
             title="Pelagic Ocean"
           />
         </div>
-        
+
         <div className={styles[`TrophicLevel__ContainerText`]}>
-          <Text className={styles[`TrophicLevel__ContainerText__Title`]}>Deep Ocean</Text>
-          <Text size="large" className={styles[`TrophicLevel__ContainerText__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+          <Text className={styles[`TrophicLevel__ContainerText__Title`]}>
+            Deep Ocean
+          </Text>
+          <Text
+            size="large"
+            className={styles[`TrophicLevel__ContainerText__Paragraph`]}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            libero metus, fermentum et ex eu, vestibulum placerat enim. Ut
+            turpis justo, lacinia non justo egestas, pretium vehicula lectus.
+            Suspendisse ut eleifend justo, id consequat ex.
+          </Text>
         </div>
 
         <div className={styles[`TrophicLevel__ContainerMobile`]}>
-          <Text className={styles[`TrophicLevel__ContainerMobile__Title`]}>Deep Sea</Text>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Title`]}>
+            Deep Sea
+          </Text>
           <img src="/assets/images/foodChain/deepOceanMobile.png" alt="" />
-          <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
-          <Text className={styles[`TrophicLevel__ContainerMobile__Title`]}>Arctic Ocean</Text>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            libero metus, fermentum et ex eu, vestibulum placerat enim. Ut
+            turpis justo, lacinia non justo egestas, pretium vehicula lectus.
+            Suspendisse ut eleifend justo, id consequat ex.
+          </Text>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Title`]}>
+            Arctic Ocean
+          </Text>
           <img src="/assets/images/foodChain/arcticOceanMobile.png" alt="" />
-          <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
-          <Text className={styles[`TrophicLevel__ContainerMobile__Title`]}>Pelagic Ocean</Text>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            libero metus, fermentum et ex eu, vestibulum placerat enim. Ut
+            turpis justo, lacinia non justo egestas, pretium vehicula lectus.
+            Suspendisse ut eleifend justo, id consequat ex.
+          </Text>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Title`]}>
+            Pelagic Ocean
+          </Text>
           <img src="/assets/images/foodChain/pelagicOceanMobile.png" alt="" />
-          <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            libero metus, fermentum et ex eu, vestibulum placerat enim. Ut
+            turpis justo, lacinia non justo egestas, pretium vehicula lectus.
+            Suspendisse ut eleifend justo, id consequat ex.
+          </Text>
         </div>
 
         <div className={styles[`TrophicLevel__ContainerImage`]}>
-          {selected === 'Deep Ocean' && <img src="/assets/images/foodChain/deepOceanDesktopjpg.jpg" alt="" />}
-          {selected === 'Arctic Ocean' && <img src="/assets/images/foodChain/arcticOceanDesktop.png" alt="" />}
-          {selected === 'Pelagic Ocean' && <img src="/assets/images/foodChain/pelagicOceanDesktop.png" alt="" />}
+          {selected === "Deep Ocean" && (
+            <img
+              src="/assets/images/foodChain/deepOceanDesktopjpg.jpg"
+              alt=""
+            />
+          )}
+          {selected === "Arctic Ocean" && (
+            <img src="/assets/images/foodChain/arcticOceanDesktop.png" alt="" />
+          )}
+          {selected === "Pelagic Ocean" && (
+            <img
+              src="/assets/images/foodChain/pelagicOceanDesktop.png"
+              alt=""
+            />
+          )}
         </div>
-    </Container>
-  </>
+      </Container>
+    </>
   );
 }
-{/* <section>
+{
+  /* <section>
 <Background />
-</section> */}
+</section> */
+}
