@@ -23,7 +23,7 @@ export default function GeneralCuriositiesPage() {
           <GeneralCuriosities></GeneralCuriosities>
         </div>
         <span className={styles[`GeneralCuriositiesPage__Background`]}>
-          <Background />
+          {/*<Background />*/}
         </span>
       </div>
     </>

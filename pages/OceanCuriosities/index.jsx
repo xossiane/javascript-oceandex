@@ -94,7 +94,7 @@ export default function OceanWorldwide() {
           </div>
         </div>
         <section className={styles[`OceanWorldwide__background`]}>
-          <Background />
+         {/*<Background />*/} 
         </section>
       </div>
     </>
