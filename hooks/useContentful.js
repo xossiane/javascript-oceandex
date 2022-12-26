@@ -26,7 +26,6 @@ const useContentful = () => {
             id: i.fields.id || "",
             name: i.fields.name || "",
             image: i.fields.image.fields.file.url,
-            // Padronizar como completeAnimal
             completeAnimal: i.fields.completeAnimal || "",
           };
         });
@@ -36,7 +35,6 @@ const useContentful = () => {
           oceanFile:
             item.fields.location.content[1].data.target.fields.file.url,
         };
-        //const location = item.fields.location.content;
 
         return { ...item.fields, classification, image, location, dietList };
       });

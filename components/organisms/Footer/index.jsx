@@ -5,7 +5,8 @@ export default function Footer() {
   return (
     <footer className={styles[`footerContainer`]}>
       <p className={styles[`footerContainer__copyParagraph`]}>
-        <span>&copy;</span> 2022 Oceandex. All rights reserved.
+        Made with 🐋 <br className={styles[`footerContainer__br`]}></br>by the
+        OceanDex Team
       </p>
     </footer>
   );
