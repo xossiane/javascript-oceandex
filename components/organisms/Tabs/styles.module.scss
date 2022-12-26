@@ -14,8 +14,12 @@
   align-items: flex-start;
 
   @media (min-width: 1024px) {
+    box-sizing: border-box;
     position: fixed;
-    top: 30px;
+    top: 0;
+    background-color: variables.$white;
+    padding: 3rem;
+    border-radius: 3rem;
   }
 }
 
@@ -36,10 +40,17 @@
   }
 }
 
+.TabsBottom {
+  @media (min-width: 1024px) {
+    overflow-y: scroll;
+  }
+}
+
 .TabsContent {
   display: flex;
   flex-direction: column;
   @media (min-width: 1024px) {
     margin-top: 11rem;
+    
   }
 }
