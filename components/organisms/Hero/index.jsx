@@ -44,8 +44,7 @@ console.log(time)
       }
     }, 1000)}
       role="hero"
-      aria-label="illustrative images and informations"
-      tabIndex={0}>
+      aria-label="illustrative images and informations">
       <HeroInfo data={data} currentItem={currentItem}/>
       <div className={styles[`Hero__container`]} >
         {data.map((item) => {
@@ -56,7 +55,7 @@ console.log(time)
                 currentItem === item.id
                   ? `${styles['Hero__dots']} ${styles['Hero__dots--active']}` :  `${styles['Hero__dots']}`
               }
-              
+              tabIndex={0} 
             >
             
               {" "}
