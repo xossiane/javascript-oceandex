@@ -9,6 +9,7 @@ export default function Button({
   className,
   title,
   img,
+  icon
 }) {
   const classList = [];
   classList.push(styles[`button--${size}`]);
@@ -18,7 +19,10 @@ export default function Button({
 
   return (
     <Link href={`${href}`}>
+      <>
       <a className={`${classList.join(" ")} ${className}`}>{title}</a>
+      <img className={styles[`button__icon`]} src={icon} alt="ocean"/>
+      </>
     </Link>
   );
 }

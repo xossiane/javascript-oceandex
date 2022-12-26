@@ -31,7 +31,21 @@
       min-width: 60%;
     }
   }
-
+&__icon{
+  width: 6.7rem;
+  height: 6.4rem;
+  position: relative;
+  display: flex;
+  top: -7rem;
+  left: -10rem;
+  flex-direction: column;
+  @media (min-width: 768px) {
+   display: flex;
+  }
+  @media (min-width: 1024px) {
+    display: none;
+   }
+}
   &--blue {
     background-color: variables.$blue;
   }

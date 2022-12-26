@@ -3,7 +3,7 @@ import Text from "@atoms/Text";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles.module.scss";
-export default function Card({ href, color, title, img, description, onClick, state }) {
+export default function Card({ href, color, title, img, description, onClick, state, className }) {
   const classList = [];
   classList.push(styles[`card--${color}`]);
   classList.push(styles[`card`]);
@@ -13,7 +13,7 @@ export default function Card({ href, color, title, img, description, onClick, st
     <div className={styles[`card__relative`]}>
       <div className={` ${title === state ? styles[`card__relative--selected`] : ''}`}>
       </div>
-        <div onClick={onClick} className={`${classList.join(" ")}`}>
+        <div onClick={onClick} className={`${classList.join(" ")} ${className}` }>
           <Heading
             level="1"
             color="white"
