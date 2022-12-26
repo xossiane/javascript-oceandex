@@ -8,7 +8,7 @@ export default function Hero() {
   const totalItem = data.length;
   const [currentItem, setCurrentItem] = useState(0);
 
-   useEffect(() => {
+  useEffect(() => {
     const time = setTimeout(() => {
       if (totalItem - 1 === currentItem) {
         setCurrentItem(0);
@@ -19,19 +19,20 @@ export default function Hero() {
     () => {
       time.clearTimeOut();
     };
-  }, [currentItem]);  
+  }, [currentItem]);
 
   return (
-    <section className={styles[`Hero`]} >
-      <HeroInfo data={data} currentItem={currentItem}/>
-      <div className={styles[`Hero__container`]} >
+    <section className={styles[`Hero`]}>
+      <HeroInfo data={data} currentItem={currentItem} />
+      <div className={styles[`Hero__container`]}>
         {data.map((item) => {
           return (
             <span
               key={item.id}
               className={
                 currentItem === item.id
-                  ? `${styles['Hero__dots']} ${styles['Hero__dots--active']}` :  `${styles['Hero__dots']}`
+                  ? `${styles["Hero__dots"]} ${styles["Hero__dots--active"]}`
+                  : `${styles["Hero__dots"]}`
               }
             >
               {" "}
