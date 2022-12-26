@@ -21,11 +21,13 @@ export default function AuthorsMolecule({
             <GlobalSvg
               href={linkedinLink}
               external
+              alt="LinkedIn Logo"
               iconPath="/assets/images/svg/LinkedinLogo.svg"
             />
             <GlobalSvg
               href={githubLink}
               external
+              alt="GitHub Logo"
               iconPath="/assets/images/svg/GithubLogo.svg"
             />
           </div>
@@ -44,11 +46,13 @@ export default function AuthorsMolecule({
             <GlobalSvg
               href={githubLink}
               external
+              alt="Figma Logo"
               iconPath="/assets/images/svg/FigmaLogo.svg"
             />
             <GlobalSvg
               href={linkedinLink}
               external
+              alt="Designer's website"
               iconPath="/assets/images/svg/Briefcase.svg"
             />
           </div>
