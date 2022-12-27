@@ -7,40 +7,48 @@ export default function Hero() {
   const data = heroData;
   const totalItem = data.length;
   const [currentItem, setCurrentItem] = useState(0);
-  const [time, setTime] = useState();
+  const [mouse, setMouse] = useState(false);
   const handleFocus = (e) => {
     clearInterval(time);
   };
 
   useEffect(() => {
-    const time = setTimeout(() => {
-      if (totalItem - 1 === currentItem) {
+    console.log(mouse)
+  if(mouse === false){
+    console.log('entrou')
+    setTimeout(()=>{
+      if(currentItem === totalItem-1){
         setCurrentItem(0);
-      } else {
+      }else{
         setCurrentItem(currentItem + 1);
       }
-    }, 1000);
-    () => {
-      time.clearTimeOut();
-    };
-    setTime(time);
-  }, [currentItem]);
-
-  console.log(time);
+    }, 4000);
+  }else{
+    setCurrentItem(currentItem);
+  }
+  }, [currentItem,mouse])
 
   return (
     <section
       className={styles[`Hero`]}
-      onFocus={handleFocus()}
-      onMouseLeave={() =>
-        setTimeout(() => {
-          if (totalItem - 1 === currentItem) {
-            setCurrentItem(0);
-          } else {
-            setCurrentItem(currentItem + 1);
-          }
-        }, 1000)
-      }
+      // onFocus={handleFocus()}
+      // onMouseLeave={() =>
+      //   setTimeout(() => {
+      //     if (totalItem - 1 === currentItem) {
+      //       setCurrentItem(0);
+      //     } else {
+      //       setCurrentItem(currentItem + 1);
+      //     }
+      //   }, 1000)
+      // }
+      onMouseEnter={()=>{
+        console.log("onMouseEnter");
+        setMouse(true)
+      }}
+      onMouseLeave={()=>{
+        console.log("onMouseLeave");
+        setMouse(false)
+      }}
       role="hero"
       aria-label="illustrative images and informations"
     >
