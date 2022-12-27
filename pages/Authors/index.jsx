@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 export default function AuthorsPage() {
   const { getAuthors } = useContentful();
   const [loading, setLoading] = useState();
-
   const [authors, setAuthors] = useState([]);
 
   useEffect(() => {
@@ -18,7 +17,6 @@ export default function AuthorsPage() {
     }
     fetchAuthors();
   }, []);
-  console.log(authors);
 
   return (
     <div className={styles.container}>
