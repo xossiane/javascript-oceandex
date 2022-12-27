@@ -2,7 +2,6 @@ import styles from "./styles.module.scss";
 import { useEffect, useState, useCallback } from "react";
 import useContentful from "../../hooks/useContentful";
 import Heading from "@atoms/Heading";
-import Arrow from "@atoms/Arrow";
 import Input from "@molecules/Input";
 import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
@@ -16,19 +15,16 @@ const index = ({ data }) => {
   const [animals, setAnimals] = useState([]);
   const [curiosities, setCuriosities] = useState();
   // const [authors, setAuthors] = useState();
-  useEffect(async () => {
-    setLoading(true);
 
-    const response = await getAnimals();
-    setAnimals(response);
-    setLoading(false);
+  useEffect(() => {
+    async function fetchAnimals() {
+      setLoading(true);
 
-    /*   getCuriosities().then((response) => {
-      setCuriosities(response);
-    }); */
-    /* getAuthors().then((response) => {
-      setAuthors(response);
-    }); */
+      const response = await getAnimals();
+      setAnimals(response);
+      setLoading(false);
+    }
+    fetchAnimals();
   }, []);
 
   //console.log(authors);
@@ -83,9 +79,6 @@ const index = ({ data }) => {
   return (
     <>
       <div className={styles[`Oceandex__Container`]}>
-        <span className={styles[`Oceandex__Arrow`]}>
-          <Arrow direction="left" href="/" white={false} />
-        </span>
         <header className={styles[`Oceandex__Header`]}>
           <Heading
             level="1"

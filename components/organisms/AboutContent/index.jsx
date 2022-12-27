@@ -52,12 +52,10 @@ export default function AboutContent() {
           </Text>{" "}
         </div>
       </section>
+      <div className={styles[`AboutContent__title`]}>
+        <Text color="darkBlue">Breeding</Text>
+      </div>
       <section className={styles[`AboutContent__breeding`]}>
-        <div className={styles[`AboutContent__breeding--title`]}>
-          <Text color="black" size="medium">
-            Breeding
-          </Text>
-        </div>
         <div className={styles[`AboutContent__breeding--method`]}>
           <Text
             color="black"

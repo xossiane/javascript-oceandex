@@ -1,8 +1,8 @@
 .arrow {
   //Figma measurements: 33x27 (mobile) | 103x87 (desktop)
   cursor: pointer;
-  width: 2.063rem;
-  height: 1.688rem;
+  width: 3.3rem;
+  height: 2.7rem;
  
   &--right {
     transform: rotate(90deg);
@@ -18,7 +18,7 @@
   }
 
   @media screen and (min-width: 1440px) {
-    width: 6.438rem;
-    height: 5.438rem;
+    width: 10.3rem;
+    height: 8.7rem;
   }
 }
