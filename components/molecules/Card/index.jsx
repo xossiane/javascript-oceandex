@@ -11,30 +11,34 @@ export default function Button({ href, color, title, img, description, onClick, 
   
 
   return (
-    <div className={styles[`card__relative`]}>
-      <div className={` ${title === state ? styles[`card__relative--selected`] : ''}`}>
-      </div>
-        <div onClick={onClick} className={`${classList.join(" ")}`}>
-          <Heading
-            level="1"
-            color="white"
-            size="small"
-            weight="normal"
-            format="uppercase"
-          >
-            {title}
-          </Heading>
-          <Image src={img} width={196} height={181} alt="" />
-          <Text size="large" color="white" weight="bold">
-            {description}
-          </Text>
-
-          <Link href={`${href}`}>
-            <a className={styles[`card__Link`]}>Read More...</a>
-          </Link>
+    <button onClick={onClick} className={styles[`button`]}>
+      <div className={styles[`card__relative`]}>
+        <div className={` ${title === state ? styles[`card__relative--selected`] : ''}`}>
         </div>
-    
-    </div>
+          <div  className={`${classList.join(" ")}`}>
+            <Heading
+              level="1"
+              color="white"
+              size="small"
+              weight="normal"
+              format="uppercase"
+            >
+              {title}
+            </Heading>
+            <Image src={img} width={196} height={181} alt="" />
+            <Text size="large" color="white" weight="bold">
+              {description}
+            </Text>
+
+            {
+            href[0] !== "#" ?
+              <Link href={`${href}`}>
+                <a className={styles[`card__Link`]}>Read More...</a>
+              </Link> : <a className={styles[`card__Link`]}>Read More...</a>
+            }
+          </div>
+      </div>
+    </button>
   );
 }
 
