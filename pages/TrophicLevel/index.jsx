@@ -82,8 +82,10 @@ export default function TrophicLevel() {
         </div>
 
         <div className={styles[`TrophicLevel__ContainerText`]}>
-          <Text className={styles[`TrophicLevel__ContainerText__Title`]}>Deep Ocean</Text>
-          <Text size="large" className={styles[`TrophicLevel__ContainerText__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+          {selected === 'Deep Ocean' && <Text className={styles[`TrophicLevel__ContainerText__Title`]}>Deep Ocean</Text>}
+          {selected === 'Arctic Ocean' && <Text className={styles[`TrophicLevel__ContainerText__Title`]}>Arctic Ocean</Text>}
+          {selected === 'Pelagic Ocean' && <Text className={styles[`TrophicLevel__ContainerText__Title`]}>Pelagic Ocean</Text>}
+          <Text id="Text" size="large" className={styles[`TrophicLevel__ContainerText__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
         </div>
 
         <div className={styles[`TrophicLevel__ContainerMobile`]}>
