@@ -5,7 +5,13 @@ import AnimalsTag from "@molecules/AnimalsTag";
 import Arrow from "@atoms/Arrow";
 import styles from "./styles.module.scss";
 
-function GeneralCuriosities() {
+function GeneralCuriosities({
+  animalName,
+  phylum,
+  order,
+  curiosityText,
+  curiosityImage,
+}) {
   const animals = oceananimals;
   const [animalsID, setanimalsID] = useState(0);
 
@@ -27,40 +33,31 @@ function GeneralCuriosities() {
       console.log(animalsID);
     }
   }
-  console.log(animals);
+  //console.log(animals);
 
   return (
     <>
       <section className={styles[`GeneralCuriosities`]}>
-        <Text
-          size="large"
-          style="bold"
-          className={styles[`GeneralCuriosities--Name`]}
-        >
-          {animals[animalsID].name}
+        <Text size="large" style="bold">
+          {animalName}
         </Text>
         <div className={styles[`GeneralCuriosities--Tag`]}>
-          <AnimalsTag label={animals[animalsID].kingdom} mt="mt" />
-          <AnimalsTag label={animals[animalsID].order} mt="mt" />
+          <AnimalsTag label={phylum} mt="mt" />
+          <AnimalsTag label={order} mt="mt" />
         </div>
         <Text
           className={styles[`GeneralCuriosities--Text`]}
           color="black"
           size="small"
         >
-          {animals[animalsID].tabs[0].curiosities[0].curiositiesText}
+          {curiosityText}
         </Text>
 
         <img
           className={styles[`GeneralCuriosities--Img`]}
-          src={animals[animalsID].tabs[0].curiosities[0].curiositiesImage}
-          key={animals[animalsID].id}
+          src={curiosityImage}
         />
       </section>
-      <div className={styles[`GeneralCuriosities--Arrow`]}>
-        <Arrow direction="left" onClick={handleClickSub} />
-        <Arrow direction="right" onClick={handleClickSum} />
-      </div>
     </>
   );
 }

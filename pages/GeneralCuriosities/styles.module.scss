@@ -1,8 +1,7 @@
 @use "@styles/variables";
 .GeneralCuriositiesPage {
-  
   &__Container {
-    background-color: variables.$white;
+    //background-color: variables.$white;
     width: 100%;
     height: 150vh;
     margin-top: 3.9rem;
@@ -16,8 +15,8 @@
 
     &--text {
       margin: 5.5rem 4.1rem auto 6.8rem;
-      
-      @media (max-width: variables.$tablet){
+
+      @media (max-width: variables.$tablet) {
         background-color: variables.$white;
         z-index: 5;
       }
@@ -29,23 +28,22 @@
     height: 2.5rem;
     justify-content: space-around;
     align-items: center;
-
   }
 
-  &__Arrow {
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    @media (min-width: variables.$tablet){
-      position: absolute;
+  &__arrow {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem auto 0rem auto;
+    @media (min-width: 768px) {
+      display: flex;
+      position: relative;
     }
   }
 
-  &__Background{
+  &__Background {
     display: flex;
-    @media (min-width: variables.$tablet){
+    @media (min-width: variables.$tablet) {
       display: flex;
     }
   }
-
 }
