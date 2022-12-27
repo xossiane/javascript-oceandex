@@ -14,6 +14,7 @@
   align-items: flex-start;
 
   @media (min-width: 1024px) {
+    width: calc(100% - 7px);
     box-sizing: border-box;
     position: fixed;
     top: 0;

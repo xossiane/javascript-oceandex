@@ -9,16 +9,6 @@ import Like from "@atoms/Like";
 export default function AboutPage() {
   return (
     <div className={styles[`AboutPage`]}>
-      <div className={styles[`AboutPage__title`]}>
-        {/* <Heading
-          level="1"
-          className={styles[`AboutPage__Header--text`]}
-          color="black"
-        >
-          {" "}
-          Octopus{" "}
-        </Heading> */}
-      </div>
       <div className={styles[`AboutPage__Content`]}>
         <div className={styles[`AboutPage__Container`]}>
           <header className={styles[`AboutPage__Header`]}>
@@ -38,12 +28,20 @@ export default function AboutPage() {
               Octopus{" "}
             </Heading>
             <section className={styles[`AboutPage__tag`]}>
-              <AnimalsTag label={"Animalia"} text="text"></AnimalsTag>{" "}
-              <AnimalsTag label={"Chordata"} text="text"></AnimalsTag>
+              <AnimalsTag mw="mw" label={"Animalia"} text="text"></AnimalsTag>{" "}
+              <AnimalsTag mw="mw" label={"Chordata"} text="text"></AnimalsTag>
             </section>
             <section className={styles[`AboutPage__tag--bottom`]}>
-              <AnimalsTag label={"Actinopterygii"} text="text"></AnimalsTag>{" "}
-              <AnimalsTag label={"Syngnathiformes"} text="text"></AnimalsTag>
+              <AnimalsTag
+                mw="mw"
+                label={"Actinopterygii"}
+                text="text"
+              ></AnimalsTag>{" "}
+              <AnimalsTag
+                mw="mw"
+                label={"Syngnathiformes"}
+                text="text"
+              ></AnimalsTag>
             </section>
             <img
               src="assets/images/icons/16-octopus.png"

@@ -2,9 +2,8 @@
 .AboutContent {
     
   &__Container {
-    width: 90%;
     align-items: center;
-    margin: auto;
+    margin: 0 2rem;
     &--box {
       border-radius: 1.4rem;
       background-color: variables.$white;
