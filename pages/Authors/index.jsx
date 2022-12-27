@@ -1,6 +1,5 @@
 import styles from "./styles.module.scss";
 import AuthorsMolecule from "@molecules/Authors";
-import InspiredBy from "@atoms/InspiredBy";
 import Heading from "@atoms/Heading";
 import useContentful from "../../hooks/useContentful";
 import { useEffect, useState } from "react";
