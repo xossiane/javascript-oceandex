@@ -6,4 +6,6 @@ export default {
     args: {}
 }
 
-export const Primary = () => <Background primary />;
+export const Mobile = () => <Background mobile />;
+
+export const Desktop = () => <Background desktop />;
