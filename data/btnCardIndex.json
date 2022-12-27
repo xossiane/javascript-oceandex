@@ -20,7 +20,7 @@
     {
       "color": "green",
       "href": "/animalsCuriosities",
-      "description": "imal's Curiosities",
+      "description": "Animal's Curiosities",
       "img": "/assets/images/icons/general.svg",
       "title": "Animal's Curiosities",
       "fontsize":"fontsmall",
@@ -37,7 +37,7 @@
     },
     {
       "color": "pink",
-      "href": "/",
+      "href": "/FavoriteAnimals",
       "description": "Selected animals(by heart)",
       "img": "/assets/images/icons/favorite.svg",
       "title": "Favorite Animals",

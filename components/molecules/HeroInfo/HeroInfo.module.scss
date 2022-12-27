@@ -14,14 +14,12 @@
   background: variables.$darkBlue;
   margin: 0 auto;
   border-radius: 50px;
-  
-  
-
   @media screen {
     @media (min-width: 700px) {
       width: fit-content;
+      
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 1440px) {
       display: flex;
       align-content: space-between;
       flex-direction: column;
@@ -58,19 +56,30 @@
     transform: rotate(270deg);
     border-radius: 0px 50px 50px 0px;
     margin-top: 0;
-    @media screen {
       @media (min-width:700px){
         margin-top: -2rem;
         width: 40rem;
         height: 40rem;
+        border-radius: 0px 50px 50px 0px;
+        
+        
       }
       @media (min-width: 1024px) {
         width: 660px;
         height: 42.7rem;
         transform: rotate(0);
-        margin-top: 0px;
+        margin-top: 151.65px;
+        border-radius: 0px 0px 50px 50px;
       }
-    }
+
+      @media (min-width: 1440px) {
+        width: 660px;
+        height: 42.7rem;
+        transform: rotate(0);
+        margin-top: 0px;
+        border-radius: 0px 50px 50px 0px;
+      }
+    
   }
 
 
@@ -96,6 +105,7 @@
         left: -85%;
         top: 8%;
       }
+      
     }
 
     &__icon {
@@ -119,7 +129,6 @@
     @media screen {
       @media (min-width: 1024px) {
         margin-left: 50px;
-
         order: 1;
       }
     }
@@ -135,6 +144,15 @@
       margin-top: 30.6px;
       @media screen {
         @media (min-width: 1024px) {
+          width: 520px;
+          height: 154px;
+          font-size: 5rem;
+          line-height: 77px;
+          letter-spacing: -0.04em;
+          margin-top: 10.4px;
+          text-align: left;
+        }
+        @media (min-width: 1440px) {
           width: 520px;
           height: 154px;
           font-size: 5rem;

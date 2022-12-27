@@ -1,12 +1,7 @@
 
 @use "@styles/variables";
 .Hero {
-  margin-bottom: 10rem;
-  display: none;
-  @media screen {
-  
-  }
-
+  margin-bottom: 5rem;
   &__container {
     display: flex;
     justify-content: center;
