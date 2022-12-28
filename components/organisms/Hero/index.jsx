@@ -13,9 +13,7 @@ export default function Hero() {
   };
 
   useEffect(() => {
-    console.log(mouse)
   if(mouse === false){
-    console.log('entrou')
     setTimeout(()=>{
       if(currentItem === totalItem-1){
         setCurrentItem(0);
