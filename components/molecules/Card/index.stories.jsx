@@ -6,12 +6,12 @@ export default {
   args: {},
 };
 
-export const CardA = () => (
+export const CardExample = () => (
   <Card
-    CardA
-    title="Pelagic Ocean"
-    color="oliveGreen"
-    description="Where light meets water"
-    img="/assets/images/icons/pelagic_ocean.svg"
+    href="#Text"
+    title="Ocean title"
+    color="purple"
+    description="Card description"
+    img=""
   />
 );

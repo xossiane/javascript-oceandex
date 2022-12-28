@@ -6,4 +6,4 @@ export default {
   args: {},
 };
 
-export const Primary = () => <HeroInfo primary />;
+export const HeroInformation = () => <HeroInfo  />;

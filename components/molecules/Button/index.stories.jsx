@@ -3,27 +3,24 @@ import Button from ".";
 export default {
   title: "Molecules/Button",
   component: Button,
-  args: {},
 };
 
-export const BlueButton = () => (
-  <Button BlueButton color="blue" title="OceanDex" />
-);
+export const BlueButton = () => <Button color="blue" title="OceanDex" />;
 
 export const GreenButton = () => (
-  <Button GreenButton color="green" title="Animals Curiosities" />
+  <Button color="green" title="Animals Curiosities" />
 );
 
 export const PurpleButton = () => (
-  <Button PurpleButton color="purple" title="Ocean Curiosities" />
+  <Button color="purple" title="Ocean Curiosities" />
 );
 
 export const OliveGreenButton = () => (
-  <Button OliveGreenButton color="oliveGreen" title="Trophic Level" />
+  <Button color="oliveGreen" title="Trophic Level" />
 );
 
 export const PinkButton = () => (
-  <Button PinkButton color="pink" title="Favorite Animals" />
+  <Button color="pink" title="Favorite Animals" />
 );
 
-export const RedButton = () => <Button RedButton color="red" title="Authors" />;
+export const RedButton = () => <Button color="red" title="Authors" />;

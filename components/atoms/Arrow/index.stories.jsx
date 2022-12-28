@@ -6,10 +6,14 @@ export default {
   args: {},
 };
 
-export const Left = () => <Arrow Left direction="left" />;
+export const Left = () => <Arrow direction="left" />;
 
-export const Right = () => <Arrow Right direction="right" />;
+export const Right = () => <Arrow direction="right" />;
 
-export const Up = () => <Arrow Up />;
+export const Up = () => <Arrow />;
 
-export const UpWhite = () => <Arrow UpWhite white />;
+export const UpWhite = () => <Arrow white />;
+
+UpWhite.parameters = {
+  backgrounds: { default: "dark-mode" },
+};
