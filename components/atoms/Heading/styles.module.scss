@@ -1,6 +1,9 @@
 @use "@styles/variables";
 
 .heading {
+  font-weight: 400;
+  font-style: italic;
+
   &--H1 {
     font-size: 3rem;
   }
@@ -22,10 +25,6 @@
   &--small {
     font-size: 2.6rem;
   }
-  /*
-  &--Xlarge {
-    font-size: 3rem;
-  } */
 
   //Colors
   &--black {
@@ -36,17 +35,6 @@
   }
   &--white {
     color: variables.$white;
-  }
-
-  //Weight
-  &--normal {
-    font-weight: normal;
-  }
-  &--bold {
-    font-weight: bold;
-  }
-  &--italic {
-    font-style: italic;
   }
 
   &--uppercase {

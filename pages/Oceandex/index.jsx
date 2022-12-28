@@ -2,7 +2,6 @@ import styles from "./styles.module.scss";
 import { useEffect, useState } from "react";
 import useContentful from "../../hooks/useContentful";
 import Heading from "@atoms/Heading";
-import Arrow from "@atoms/Arrow";
 import Input from "@molecules/Input";
 
 import FilterCArd from "@molecules/FilterCard";
@@ -16,13 +15,18 @@ const index = () => {
   const [loading, setLoading] = useState();
 
   const [animals, setAnimals] = useState([]);
+  const [curiosities, setCuriosities] = useState();
+  // const [authors, setAuthors] = useState();
 
-  useEffect(async () => {
-    setLoading(true);
+  useEffect(() => {
+    async function fetchAnimals() {
+      setLoading(true);
 
-    const response = await getAnimals();
-    setAnimals(response);
-    setLoading(false);
+      const response = await getAnimals();
+      setAnimals(response);
+      setLoading(false);
+    }
+    fetchAnimals();
   }, []);
 
   console.log(animals);
@@ -38,9 +42,6 @@ const index = () => {
   return (
     <>
       <div className={styles[`Oceandex__Container`]}>
-        <span className={styles[`Oceandex__Arrow`]}>
-          <Arrow direction="left" href="/" white={false} />
-        </span>
         <header className={styles[`Oceandex__Header`]}>
           <Heading
             level="1"

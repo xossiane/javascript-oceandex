@@ -1,14 +1,33 @@
-.background {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  z-index: 0;
-  position: fixed;
-  bottom: 10rem;
-  opacity: 50%;
+.Background {
+  &__ContainerBackgroundImage {
+    position: relative;
+    width: 100%;
 
-  @media (min-width: 768px) {
-    opacity: 15%;
+    &__BackgroundImage {
+      opacity: 0.2;
+      position: absolute;
+      bottom: -90%;
+      width: 100%;
+      z-index: -1;
+
+      @media (max-width: 1023px) {
+        display: none;
+      }
+    }
+
+    &__BackgroundImageMobile {
+      display: none;
+
+      @media (max-width: 1023px) {
+        bottom: -90%;
+        display: block;
+        position: absolute;
+        width: 100%;
+
+        img {
+          border-radius: 0.23rem;
+        }
+      }
+    }
   }
 }
