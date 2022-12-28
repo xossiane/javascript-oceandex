@@ -8,24 +8,18 @@ export default function Hero() {
   const totalItem = data.length;
   const [currentItem, setCurrentItem] = useState(0);
   const [mouse, setMouse] = useState(false);
-  const handleFocus = (e) => {
-    clearTimeout(time);
-  };
 
-  const keepGoing = () => {
+  const timer = setTimeout(()=>{
+    if(currentItem === totalItem-1){
+      setCurrentItem(0);
+    }else{
+      setCurrentItem(currentItem + 1);
+    }
+  }, 1000);
+  
   useEffect(() => {
-  if(mouse === false){
-    setTimeout(()=>{
-      if(currentItem === totalItem-1){
-        setCurrentItem(0);
-      }else{
-        setCurrentItem(currentItem + 1);
-      }
-    }, 4000);
-  }else{
-    setCurrentItem(currentItem);
-  }
-  }, [currentItem,mouse])}
+   timer
+  }, [currentItem])
 
   return (
     <section
@@ -41,12 +35,17 @@ export default function Hero() {
       //   }, 1000)
       // }
       onMouseEnter={()=>{
-        console.log("onMouseEnter");
-        setMouse(true)
+        clearInterval(timer);
+      
       }}
       onMouseLeave={()=>{
-        console.log("onMouseLeave");
-        setMouse(false)
+        setTimeout(()=>{
+          if(currentItem === totalItem-1){
+            setCurrentItem(0);
+          }else{
+            setCurrentItem(currentItem + 1);
+          }
+        }, 1000);
       }}
       role="hero"
       aria-label="illustrative images and informations"
