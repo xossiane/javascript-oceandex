@@ -90,9 +90,9 @@ export default function TrophicLevel() {
         </div>
 
         <div className={styles[`TrophicLevel__ContainerImage`]}>
-          {selected === 'Deep Ocean' && <img src="/assets/images/foodChain/deepOceanDesktopjpg.jpg" alt="" />}
-          {selected === 'Arctic Ocean' && <img src="/assets/images/foodChain/arcticOceanDesktop.png" alt="" />}
-          {selected === 'Pelagic Ocean' && <img src="/assets/images/foodChain/pelagicOceanDesktop.png" alt="" />}
+          {selected === 'Deep Ocean' && <img src="/assets/images/foodChain/DeepOcean.png" alt="" />}
+          {selected === 'Arctic Ocean' && <img src="/assets/images/foodChain/ArticOcean.png" alt="" />}
+          {selected === 'Pelagic Ocean' && <img src="/assets/images/foodChain/PelagicOcean.png" alt="" />}
         </div>
     </Container>
   </>
