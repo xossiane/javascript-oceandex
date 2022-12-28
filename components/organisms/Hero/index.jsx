@@ -8,10 +8,12 @@ export default function Hero() {
   const totalItem = data.length;
   const [currentItem, setCurrentItem] = useState(0);
   const [time, setTime] = useState();
+
   const handleFocus = (e) => {
-    clearInterval(time);
+    clearTimeout(time);
   };
 
+  const keepGoing = () => {
   useEffect(() => {
     const time = setTimeout(() => {
       if (totalItem - 1 === currentItem) {
@@ -25,22 +27,13 @@ export default function Hero() {
     };
     setTime(time);
   }, [currentItem]);
-
-  console.log(time);
+}
+ 
 
   return (
     <section
       className={styles[`Hero`]}
-      onFocus={handleFocus()}
-      onMouseLeave={() =>
-        setTimeout(() => {
-          if (totalItem - 1 === currentItem) {
-            setCurrentItem(0);
-          } else {
-            setCurrentItem(currentItem + 1);
-          }
-        }, 1000)
-      }
+      onMouseLeave={keepGoing()}
       role="hero"
       aria-label="illustrative images and informations"
     >
