@@ -6,13 +6,13 @@ import Heading from "@atoms/Heading";
 import Arrow from "@atoms/Arrow";
 import useContentful from "hooks/useContentful";
 
-export default function GeneralCuriositiesPage() {
+export default function GeneralCuriositiesPage({ animalsCuriosities }) {
   const { getCuriosities } = useContentful();
   const [loading, setLoading] = useState();
 
-  const [animalsCuriosities, setAnimalsCuriosities] = useState([]);
+  //const [animalsCuriosities, setAnimalsCuriosities] = useState([]);
 
-  useEffect(() => {
+  /* useEffect(() => {
     setLoading(true);
     async function fetchCuriosities() {
       const response = await getCuriosities("animal");
@@ -20,8 +20,10 @@ export default function GeneralCuriositiesPage() {
     }
     fetchCuriosities();
     setLoading(false);
-  }, []);
-  const animalsListLength = animalsCuriosities.length - 1;
+  }, []); */
+  const testeAnimals = animalsCuriosities;
+  console.log(testeAnimals);
+  const animalsListLength = testeAnimals.length - 1;
   const [curiositiesID, setcuriositiesID] = useState(0);
 
   //construindo a quantidade de IDs
@@ -46,9 +48,9 @@ export default function GeneralCuriositiesPage() {
       setcuriositiesID(animalsListLength);
     }
   }
-  if (!loading) {
-    console.log(animalsCuriosities[0].animalName);
-  }
+
+  console.log(animalsCuriosities[curiositiesID].animalName);
+
   console.log("length " + animalsListLength);
   console.log("id " + curiositiesID);
 
@@ -62,17 +64,11 @@ export default function GeneralCuriositiesPage() {
         </header>
         <div className={styles[`GeneralCuriositiesPage__Container`]}>
           <GeneralCuriosities
-          /*  animalName={animalsCuriosities[curiositiesID].animalName || "teste"}
-            order={
-              animalsCuriosities[curiositiesID].orderAndPhylum[0] || "teste"
-            }
-            phylum={
-              animalsCuriosities[curiositiesID].orderAndPhylum[1] || "teste"
-            }
-            curiosityText={
-              animalsCuriosities[curiositiesID].description || "teste"
-            }
-            curiosityImage={animalsCuriosities[curiositiesID].image || "teste"} */
+            animalName={animalsCuriosities[curiositiesID].animalName}
+            order={animalsCuriosities[curiositiesID].orderAndPhylum[0]}
+            phylum={animalsCuriosities[curiositiesID].orderAndPhylum[1]}
+            curiosityText={animalsCuriosities[curiositiesID].description}
+            curiosityImage={animalsCuriosities[curiositiesID].image}
           ></GeneralCuriosities>
         </div>
         <div className={styles[`GeneralCuriositiesPage__arrow`]}>
@@ -84,4 +80,15 @@ export default function GeneralCuriositiesPage() {
       </div>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const { getCuriosities } = useContentful();
+
+  const animalsCuriosities = await getCuriosities("animal");
+  return {
+    props: {
+      animalsCuriosities,
+    },
+  };
 }
