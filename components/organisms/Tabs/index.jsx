@@ -8,7 +8,10 @@ import Curiosities from "@organisms/Curiosities";
 import Location from "@organisms/Location";
 import Diet from "@organisms/Diet";
 
-const TabsDemo = () => (
+const TabsDemo = () => {
+  
+  
+  return (
   /* NOME DAS TABS */
   <Tabs.Root className={styles[`TabsRoot`]} defaultValue="About">
     <Tabs.List className={styles[`TabsList`]} aria-label="">
@@ -71,6 +74,6 @@ const TabsDemo = () => (
       </Tabs.Content>
     </div>
   </Tabs.Root>
-);
+)};
 
 export default TabsDemo;

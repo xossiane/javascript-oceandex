@@ -31,7 +31,7 @@ function FilterCard({ animals }) {
     return filteredAnimals.map((item) => {
       return (
         <AnimalsCard
-          href="/About"
+          href={`/Oceandex/${item.name}`}
           key={item.id}
           name={item.name}
           order={item.classification.order}
