@@ -94,6 +94,7 @@ const index = ({ data }) => {
         <div className={styles[`Oceandex__Search`]}>
           <Input
             value={search}
+            placeholder={"Search for animals, filos..."}
             onChange={(e) => handleSubmit(e)}
             aria-label={""}
           />

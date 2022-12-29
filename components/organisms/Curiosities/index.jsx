@@ -24,7 +24,7 @@ export default function Curiosities() {
         attacker, giving the octopus time to swim away.
       </Text>
       <img
-        src="assets/images/realAnimals/16-octopus.jpg"
+        src="../assets/images/realAnimals/16-octopus.jpg"
         className={styles[`Curiosities__img`]}
         alt="animal"
       ></img>

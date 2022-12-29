@@ -13,7 +13,7 @@ export default function Header() {
           <a>
             <img
               className={styles[`Header__logo`]}
-              src="assets/images/logo.svg"
+              src="../assets/images/logo.svg"
               alt="logo"
             />
           </a>

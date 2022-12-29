@@ -3,7 +3,7 @@ import Heading from "@atoms/Heading";
 import AnimalsTag from "@molecules/AnimalsTag";
 import TabsDemo from "@organisms/Tabs";
 import Background from "@atoms/Background";
-import styles from "./styles.module.scss";
+import styles from "./aboutstyles.module.scss";
 import Like from "@atoms/Like";
 
 export default function AboutPage() {
@@ -44,7 +44,7 @@ export default function AboutPage() {
               ></AnimalsTag>
             </section>
             <img
-              src="assets/images/icons/16-octopus.png"
+              src="../assets/images/icons/16-octopus.png"
               className={styles[`AboutPage__Header--icon`]}
               alt="animal icon"
             ></img>

@@ -9,7 +9,7 @@ export default function Location() {
       </Text>
       <article>
         <img
-          src="assets/images/oceans/AtlanticOcean.jpg"
+          src="../assets/images/oceans/AtlanticOcean.jpg"
           className={styles[`Location__img`]}
           alt="animal"
         ></img>

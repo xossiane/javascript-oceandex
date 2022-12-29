@@ -2,7 +2,7 @@
 
 .Oceandex {
   &__Container {
-    background-color: variables.$white;
+    background-color: transparent;
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -47,6 +47,7 @@
   }
 
   &__Cards {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 3rem;

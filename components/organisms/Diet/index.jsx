@@ -10,7 +10,7 @@ export default function Diet() {
         </Text>
         <img
           className={styles[`Diet__imgItem`]}
-          src="assets/images/diet/flatFish.png"
+          src="../assets/images/diet/flatFish.png"
           alt="Cod"
         ></img>
       </span>
@@ -21,7 +21,7 @@ export default function Diet() {
         </Text>
         <img
           className={styles[`Diet__imgItem`]}
-          src="assets/images/diet/hermitCrabs.png"
+          src="../assets/images/diet/hermitCrabs.png"
           alt="Clam"
         ></img>
       </span>
@@ -32,7 +32,7 @@ export default function Diet() {
         </Text>
         <img
           className={styles[`Diet__imgItem`]}
-          src="assets/images/diet/crab.png"
+          src="../assets/images/diet/crab.png"
           alt="Crab"
         ></img>
       </span>
