@@ -15,6 +15,7 @@
 
   @media (min-width: 1024px) {
     height: 14.2rem;
+    position: relative;
   }
 
   &__internal {
@@ -25,10 +26,10 @@
     width: 100%;
     @media (min-width: 1024px) {
       margin: 0 auto;      
-      max-width: 90rem;
+      width: 90rem;
     }
     @media (min-width: 1440px) {      
-      max-width: 128rem;
+      width: 128rem;
     }
   }
 
@@ -41,15 +42,12 @@
 
   &__menuMobile {
     margin: 0;
-    @media (min-width: 1024px) {
-      display: none;
-    }
   }
 
-  &__menuDesktop {
-    display: none;
-    @media (min-width: 1024px) {
-      display: block;
-    }
+  // &__menuDesktop {
+  //   display: none;
+  //   @media (min-width: 1024px) {
+  //     display: block;
+  //   }
   }
-}
+

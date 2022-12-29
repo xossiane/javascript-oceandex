@@ -9,6 +9,18 @@
   z-index: 100;
   opacity: 1;
   pointer-events: auto;
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+      display: block;
+    }
+    @media (min-width: 1440px) {
+      width: 109rem;
+      padding-left: 6rem;
+    }
 
   &__openMenu {
     position: absolute;
@@ -16,6 +28,9 @@
     background: variables.$white;
     top: 2rem;
     right: 0;
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
 
   &__closeMenu {
@@ -24,6 +39,9 @@
     background: variables.$white;
     top: 2rem;
     right: 0;
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
 
   &__li {
@@ -33,6 +51,12 @@
     width: 100%;
     height: 100%;
     border-bottom: 1px solid variables.$lightGrey;
+    @media (min-width: 1024px) {
+      display: block;
+      list-style: none;
+      max-width: 140px;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -41,6 +65,17 @@
     left: 0;
     padding: 0;
     width: 100%;
+    @media (min-width: 1024px) {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0; 
+    }
+      @media (min-width: 1440px) {
+        width: 109rem;
+      }
   }
 
   &__item {
@@ -50,6 +85,15 @@
     color: variables.$black;
     cursor: pointer;
     text-decoration: none;
+      @media (min-width: 1024px) {
+        display: block;
+        text-decoration: none;
+        color: variables.$black;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        cursor: pointer;
+        justify-content: space-between;
+      }
   }
 
   &__invisible {
@@ -57,3 +101,58 @@
     pointer-events: none;
   }
 }
+
+// .NavbarDesktop {
+//   display: none;
+  // @media (min-width: 1024px) {
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // text-align: center;
+  // padding: 0;
+  // display: block;
+
+//   @media (min-width: 1440px) {
+//     width: 109rem;
+//     padding-left: 6rem;
+//   }
+
+//   &__li {
+//     display: none;
+//   @media (min-width: 1024px) {
+//     display: block;
+//     list-style: none;
+//     max-width: 140px;
+//     text-align: center;
+//   }
+// }
+
+//   &__list {
+//     display: none;
+//   @media (min-width: 1024px) {
+//     display: block;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 0;
+//     @media (min-width: 1440px) {
+//       width: 109rem;
+//     }
+//   }
+// }
+
+//   &__item {
+//     display: none;
+//   @media (min-width: 1024px) {
+//     display: block;
+//     text-decoration: none;
+//     color: variables.$black;
+//     font-size: 1.8rem;
+//     line-height: 2rem;
+//     cursor: pointer;
+//     justify-content: space-between;
+//   }
+// }
+// }
+// }

@@ -2,10 +2,11 @@ import styles from "./styles.module.scss";
 import React, { useState } from "react";
 import Link from "next/link";
 import MenuMobile from "@molecules/MenuMobile";
-import MenuDesktop from "@molecules/MenuDesktop";
+// import MenuDesktop from "@molecules/MenuDesktop";
 
 export default function Header() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
+
   return (
     <header className={styles[`Header`]}>
       <div className={styles[`Header__internal`]}>
@@ -24,9 +25,9 @@ export default function Header() {
             setMenuIsVisible={setMenuIsVisible}
           />
         </div>
-        <div className={styles[`Header__menuDesktop`]}>
+        {/* <div className={styles[`Header__menuDesktop`]}>
           <MenuDesktop />
-        </div>
+        </div> */}
       </div>
     </header>
   );
