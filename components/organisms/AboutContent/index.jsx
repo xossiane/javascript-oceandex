@@ -1,11 +1,11 @@
 import Text from "@atoms/Text";
 import AnimalsTag from "@molecules/AnimalsTag";
 import styles from "./styles.module.scss";
-import useFetchData from "../../../store/useFetchData";
 
-export default function AboutContent() {
-  const data = useFetchData((state) => state.data);
-  console.log(data);
+
+export default function AboutContent({data}) {
+  
+  
   if (data) {
     return (
       <div className={styles[`AboutContent__Container`]}>

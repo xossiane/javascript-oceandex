@@ -7,73 +7,76 @@ import AboutContent from "@organisms/AboutContent";
 import Curiosities from "@organisms/Curiosities";
 import Location from "@organisms/Location";
 import Diet from "@organisms/Diet";
+import useFetchData from "../../../store/useFetchData";
+
 
 const TabsDemo = () => {
-  
-  
+  const data = useFetchData((state) => state.data);
+
   return (
-  /* NOME DAS TABS */
-  <Tabs.Root className={styles[`TabsRoot`]} defaultValue="About">
-    <Tabs.List className={styles[`TabsList`]} aria-label="">
-      <Tabs.Trigger
-        className={styles[`TabsTrigger`]}
-        aria-label="About"
-        value="About"
-      >
-        <Text
-          className={styles[`TabsTrigger--text`]}
-          color="black"
-          size="small"
+    /* NOME DAS TABS */
+    <Tabs.Root className={styles[`TabsRoot`]} defaultValue="About">
+      <Tabs.List className={styles[`TabsList`]} aria-label="">
+        <Tabs.Trigger
+          className={styles[`TabsTrigger`]}
+          aria-label="About"
+          value="About"
         >
-          About
-        </Text>
-      </Tabs.Trigger>
-      <Tabs.Trigger className={styles[`TabsTrigger`]} value="Curiosities">
-        <Text
-          className={styles[`TabsTrigger--text`]}
-          color="black"
-          size="small"
-        >
-          Curiosities
-        </Text>
-      </Tabs.Trigger>
-      <Tabs.Trigger className={styles[`TabsTrigger`]} value="Location">
-        <Text
-          className={styles[`TabsTrigger--text`]}
-          color="black"
-          size="small"
-        >
-          Location
-        </Text>
-      </Tabs.Trigger>
-      <Tabs.Trigger className={styles[`TabsTrigger`]} value="Diet">
-        <Text
-          className={styles[`TabsTrigger--text`]}
-          color="black"
-          size="small"
-        >
-          Diet
-        </Text>
-      </Tabs.Trigger>
-    </Tabs.List>
+          <Text
+            className={styles[`TabsTrigger--text`]}
+            color="black"
+            size="small"
+          >
+            About
+          </Text>
+        </Tabs.Trigger>
+        <Tabs.Trigger className={styles[`TabsTrigger`]} value="Curiosities">
+          <Text
+            className={styles[`TabsTrigger--text`]}
+            color="black"
+            size="small"
+          >
+            Curiosities
+          </Text>
+        </Tabs.Trigger>
+        <Tabs.Trigger className={styles[`TabsTrigger`]} value="Location">
+          <Text
+            className={styles[`TabsTrigger--text`]}
+            color="black"
+            size="small"
+          >
+            Location
+          </Text>
+        </Tabs.Trigger>
+        <Tabs.Trigger className={styles[`TabsTrigger`]} value="Diet">
+          <Text
+            className={styles[`TabsTrigger--text`]}
+            color="black"
+            size="small"
+          >
+            Diet
+          </Text>
+        </Tabs.Trigger>
+      </Tabs.List>
 
-    {/* CONTEUDO DAS TABS */}
+      {/* CONTEUDO DAS TABS */}
 
-    <div className={styles[`TabsBottom`]}>
-      <Tabs.Content className={styles[`TabsContent`]} value="About">
-        <AboutContent />
-      </Tabs.Content>
-      <Tabs.Content className="TabsContent" value="Curiosities">
-        <Curiosities />
-      </Tabs.Content>
-      <Tabs.Content className="TabsContent" value="Location">
-        <Location />
-      </Tabs.Content>
-      <Tabs.Content className="TabsContent" value="Diet">
-        <Diet />
-      </Tabs.Content>
-    </div>
-  </Tabs.Root>
-)};
+      <div className={styles[`TabsBottom`]}>
+        <Tabs.Content className={styles[`TabsContent`]} value="About">
+          <AboutContent  data={data}/>
+        </Tabs.Content>
+        <Tabs.Content className="TabsContent" value="Curiosities">
+          <Curiosities data={data} />
+        </Tabs.Content>
+        <Tabs.Content className="TabsContent" value="Location">
+          <Location data={data} />
+        </Tabs.Content>
+        <Tabs.Content className="TabsContent" value="Diet">
+          <Diet  data={data}/>
+        </Tabs.Content>
+      </div>
+    </Tabs.Root>
+  );
+};
 
 export default TabsDemo;
