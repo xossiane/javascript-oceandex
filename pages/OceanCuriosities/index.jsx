@@ -5,8 +5,9 @@ import Card from "@molecules/Card";
 import Heading from "@atoms/Heading";
 import Text from "@atoms/Text";
 import Header from "@organisms/Header";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
+import useContentful from "../../hooks/useContentful";
 import { useRouter } from "next/router";
 
 export default function OceanWorldwide() {
@@ -41,11 +42,6 @@ export default function OceanWorldwide() {
       description: "The smallest ocean",
       icon: "/assets/images/designIcons/ocean6.png"
     },
-
-    // "Pacific Ocean",
-    // "Indian Ocean",
-    // "Southern Ocean",
-    // "Arctic Ocean",
   ];
 
   
@@ -54,9 +50,9 @@ export default function OceanWorldwide() {
     const lowerCase = string.charAt(0).toLowerCase() + string.slice(1);
     return lowerCase;
   };
+
   return (
     <>
-      
       <div className={styles[`OceanWorldwide`]}>
         <div className={styles[`OceanWorldwide__container`]}>
           <span className={styles[`OceanWorldwide__Arrow`]}>
@@ -76,7 +72,6 @@ export default function OceanWorldwide() {
             <section className={styles[`OceanWorldwide__content--buttons`]}>
               {oceans.map((ocean) => (
                 <>
-                
                   <Button
                     href={`/OceanCuriosities/${removeSpaces(ocean.title)}`}
                     size="large"

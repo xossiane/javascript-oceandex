@@ -35,7 +35,7 @@ export default function AnimalsCard({
 
   return (
     <Link href={`${href}`}>
-      <div className={`${styles.animalsCard} ${styles[color]}`}>
+      <div className={`${styles.animalsCard} ${styles[color]}`} tabIndex={"0"}>
         <div className={styles.animalsCard__name}>
           <Heading level="2" color="white" weight="normal" size="small">
             {name}
@@ -48,7 +48,7 @@ export default function AnimalsCard({
             <AnimalsTag label={Class} text="text"></AnimalsTag>
             <AnimalsTag label={kingdom} text="text"></AnimalsTag>
           </div>
-          <img className={styles.animalsCard__img} src={src} alt="" />
+          <img className={styles.animalsCard__img} src={src} alt={name} loading="lazy"/>
         </div>
       </div>
     </Link>

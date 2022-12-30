@@ -6,4 +6,4 @@ export default {
     args: {}
 }
 
-export const Primary = () => <MenuMobile primary />;
+export const Nav = () => <MenuMobile  />;

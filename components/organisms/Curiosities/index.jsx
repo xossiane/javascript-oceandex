@@ -1,4 +1,6 @@
 import Text from "@atoms/Text";
+import AnimalsCard from "@molecules/AnimalsCard";
+import { internalMutate } from "swr/_internal";
 import styles from "./styles.module.scss";
 
 export default function Curiosities() {
@@ -24,9 +26,10 @@ export default function Curiosities() {
         attacker, giving the octopus time to swim away.
       </Text>
       <img
-        src="assets/images/realAnimals/16-octopus.jpg"
+        src="../assets/images/realAnimals/16-octopus.jpg"
         className={styles[`Curiosities__img`]}
-        alt="animal"
+        alt="Animal"
+        loading="lazy"
       ></img>
     </div>
   );

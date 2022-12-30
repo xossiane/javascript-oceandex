@@ -1,32 +1,26 @@
 import styles from "./styles.module.scss";
 import React, { useState } from "react";
 import Link from "next/link";
-import MenuMobile from "@molecules/MenuMobile";
-import MenuDesktop from "@molecules/MenuDesktop";
+import Nav from "@molecules/Nav";
 
 export default function Header() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
+
   return (
     <header className={styles[`Header`]}>
-      <div>
+      <div className={styles[`Header__internal`]}>
         <Link href="/">
           <a>
             <img
               className={styles[`Header__logo`]}
-              src="assets/images/logo.svg"
-              alt="logo"
+              src="../assets/images/logo.svg"
+              alt="go back to home screen page"
             />
           </a>
         </Link>
-      </div>
-      <div className={styles[`Header__menuMobile`]}>
-        <MenuMobile
-          menuIsVisible={menuIsVisible}
-          setMenuIsVisible={setMenuIsVisible}
-        />
-      </div>
-      <div className={styles[`Header__menuDesktop`]}>
-        <MenuDesktop />
+        <div className={styles[`Header__nav`]}>
+          <Nav />
+        </div>
       </div>
     </header>
   );
