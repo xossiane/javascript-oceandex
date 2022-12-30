@@ -1,16 +1,18 @@
 import styles from "./styles.module.scss";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 import useContentful from "../../hooks/useContentful";
 import Heading from "@atoms/Heading";
 import Input from "@molecules/Input";
-import Text from "@atoms/Text";
-import AnimalsCard from "@molecules/AnimalsCard";
 
-const index = ({ data }) => {
-  const { getAnimals, getAnimal, getAuthors, getCuriosities } = useContentful();
-  // const [animal, setAnimal] = useState([]);
+import FilterCArd from "@molecules/FilterCard";
+import useFecthInput from "../../store/useFetchInput";
+
+const index = () => {
+  const { getAnimals } = useContentful();
+
+  const setData = useFecthInput((state) => state.setSearch);
+
   const [loading, setLoading] = useState();
-  const [search, setSearch] = useState("");
 
   const [animals, setAnimals] = useState([]);
   const [curiosities, setCuriosities] = useState();
@@ -27,15 +29,13 @@ const index = ({ data }) => {
     fetchAnimals();
   }, []);
 
-  //console.log(authors);
-  //console.log(curiosities);
   console.log(animals);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const value = e.target.value;
     if (value.length === 0 || value.length > 2) {
-      setSearch(value);
+      setData(value);
     }
   };
 
@@ -93,15 +93,11 @@ const index = ({ data }) => {
         </header>
 
         <div className={styles[`Oceandex__Search`]}>
-          <Input
-            value={search}
-            onChange={(e) => handleSubmit(e)}
-            aria-label={""}
-          />
+          <Input onChange={(e) => handleSubmit(e)} aria-label={""} />
         </div>
         <section className={styles[`Oceandex__Cards`]}>
           {loading && <p>loading</p>}
-          {!loading && showAnimal()}
+          {!loading && <FilterCArd animals={animals} />}
         </section>
       </div>
     </>

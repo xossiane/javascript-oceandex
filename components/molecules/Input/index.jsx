@@ -1,5 +1,4 @@
 import styles from "./styles.module.scss";
-
 import GlobalSvg from "@atoms/GlobalSvg";
 import { useState } from "react";
 

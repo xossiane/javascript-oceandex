@@ -7,6 +7,7 @@ export default function Text({
   style,
   children,
   className,
+  id
 }) {
   const classList = [];
   classList.push(styles[`text--${size}`]);
@@ -14,5 +15,5 @@ export default function Text({
   classList.push(styles[`text--${weight}`]);
   classList.push(styles[`text--${style}`]);
 
-  return <p className={`${classList.join(" ")} ${className}`}>{children}</p>;
+  return <p id={id} className={`${classList.join(" ")} ${className}`}>{children}</p>;
 }

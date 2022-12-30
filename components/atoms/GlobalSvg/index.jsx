@@ -7,7 +7,7 @@ export default function GlobalSvg({
   color = "",
   alt = "",
 }) {
-  const classList = [];
+  const classList = [styles.svgIcon];
   classList.push(styles[`svgIcon--${color}`]);
 
   if (!external && href !== "#") {

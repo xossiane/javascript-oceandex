@@ -35,11 +35,15 @@ export default function Card({
             {description}
           </Text>
 
-        <Link href={`${href}`}>
-          <a className={styles[`card__Link`]}>Read More...</a>
-        </Link>
+            {
+            href[0] !== "#" ?
+              <Link href={`${href}`}>
+                <a className={styles[`card__Link`]}>Read More...</a>
+              </Link> : <a className={styles[`card__Link`]}>Read More...</a>
+            }
+          </div>
       </div>
-    </div>
+    </button>
   );
 }
 

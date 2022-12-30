@@ -6,4 +6,4 @@ export default {
     args: {}
 }
 
-export const Primary = () => <Curiosities primary />;
+export const TabCuriosities = () => <Curiosities  />;

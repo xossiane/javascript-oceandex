@@ -3,27 +3,15 @@ import Button from ".";
 export default {
   title: "Molecules/Button",
   component: Button,
-  args: {},
+  args: {
+    title: "Label",
+  },
+  argTypes: {
+    color: {
+      control: "inline-radio",
+      options: ["blue", "purple", "green", "oliveGreen", "red", "pink"],
+    },
+  },
 };
 
-export const BlueButton = () => (
-  <Button BlueButton color="blue" title="OceanDex" />
-);
-
-export const GreenButton = () => (
-  <Button GreenButton color="green" title="Animals Curiosities" />
-);
-
-export const PurpleButton = () => (
-  <Button PurpleButton color="purple" title="Ocean Curiosities" />
-);
-
-export const OliveGreenButton = () => (
-  <Button OliveGreenButton color="oliveGreen" title="Trophic Level" />
-);
-
-export const PinkButton = () => (
-  <Button PinkButton color="pink" title="Favorite Animals" />
-);
-
-export const RedButton = () => <Button RedButton color="red" title="Authors" />;
+export const Default = {};
