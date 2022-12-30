@@ -77,7 +77,7 @@ function OceanCuriosities() {
           </div>
         </div>
         <section>
-          <Background />
+         {/*<Background />*/} 
         </section>
       </>
     </>

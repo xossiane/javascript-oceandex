@@ -12,6 +12,7 @@ export default function Diet() {
           className={styles[`Diet__imgItem`]}
           src="../assets/images/diet/flatFish.png"
           alt="Cod"
+          loading="lazy"
         ></img>
       </span>
       <hr className={styles[`Diet__hrItem`]}></hr>
@@ -23,6 +24,7 @@ export default function Diet() {
           className={styles[`Diet__imgItem`]}
           src="../assets/images/diet/hermitCrabs.png"
           alt="Clam"
+          loading="lazy"
         ></img>
       </span>
       <hr className={styles[`Diet__hrItem`]}></hr>
@@ -34,6 +36,7 @@ export default function Diet() {
           className={styles[`Diet__imgItem`]}
           src="../assets/images/diet/crab.png"
           alt="Crab"
+          loading="lazy"
         ></img>
       </span>
       <hr className={styles[`Diet__hrItem`]}></hr>

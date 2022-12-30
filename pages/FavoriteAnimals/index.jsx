@@ -2,6 +2,8 @@ import styles from "./styles.module.scss";
 
 import { useEffect, useState } from "react";
 
+
+import Arrow from "@atoms/Arrow";
 import Heading from "@atoms/Heading";
 import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
@@ -170,6 +172,7 @@ const index = () => {
                 Class={item.class}
                 kingdom={item.kingdom}
                 src={item.image}
+                alt={item.name}
               />
             );
           })
@@ -184,6 +187,7 @@ const index = () => {
                 Class={item.class}
                 kingdom={item.kingdom}
                 src={item.image}
+                alt={item.name}
               />
             );
           });
@@ -199,7 +203,7 @@ const index = () => {
             style="italic"
           >
             <Text
-              className={styles[`FavoriteAnimals__Content--text`]}
+              className={styles[`FavoriteAnimals__Text`]}
               size="XLarge"
             >
               Favorite Animals
@@ -217,7 +221,7 @@ const index = () => {
           />
         </div>
 
-        <section className={styles[`FavoriteAnimals__Cards`]}>
+        <section className={styles[`FavoriteAnimals__Cards`]} tabIndex={"1"}>
           {loading && <p>loading</p>}
           {!loading && showAnimal()}
         </section>

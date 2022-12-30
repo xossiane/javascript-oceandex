@@ -1,64 +1,103 @@
 @use "@styles/variables";
 @use "styles/mixins.scss";
 
-.card {
-  display: none;
+.button {
+  background-color: transparent;
+  border: none;
 
-  @media (min-width: 1440px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    border-radius: 15px;
-  }
+  .card {
+    display: none;
 
-  &__relative {
-    position: relative;
+    @media (min-width: 1440px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 400px;
+      border-radius: 15px;
+    }
 
-    &--selected {
-      border: 8px solid #b64760;
-      border-radius: 20px;
-      height: 100%;
-      left: -11px;
-      padding: 3px;
-      position: absolute;
-      top: -11px;
-      width: 100%;
+    &__relative {
+      position: relative;
 
-      @media (max-width: 1439.9px) {
-        display: none;
+
+      &--selected {
+        border: 8px solid #B64760;
+        border-radius: 20px;
+        height: 100%;
+        left: -11px;
+        padding: 3px;
+        position: absolute;
+        top: -11px;
+        width: 100%;
+
+
+        @media (max-width: 1439.9px) {
+          display: none;
+        }
       }
     }
-  }
 
-  &__Link {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 13px 60px;
-    border-radius: 38px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    font-weight: bold;
-  }
 
-  &--medium {
-    width: 15.5rem;
-    height: 6rem;
+    &__Link {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 13px 60px;
+      border-radius: 38px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
 
-    @media (min-width: 768px) {
-      min-width: 60%;
+    &--medium {
+      width: 15.5rem;
+      height: 6rem;
+
+      @media (min-width: 768px) {
+        min-width: 60%;
+      }
+    }
+
+    &--large {
+      width: 22rem;
+      height: 7.3rem;
+
+      @media (min-width: 768px) {
+        min-width: 60%;
+      }
+    }
+
+    &--blue {
+      background-color: variables.$blue;
+    }
+
+    &--purple {
+      background-color: variables.$purple;
+    }
+
+    &--green {
+      background-color: variables.$green;
+    }
+
+    &--oliveGreen {
+      background-color: variables.$oliveGreen;
+    }
+
+    &--red {
+      background-color: variables.$red;
+    }
+
+    &--pink {
+      background-color: variables.$pink;
+    }
+
+    &--fontmedium {
+      font-size: variables.$fontmedium;
+    }
+
+    &--fontsmall {
+      font-size: variables.$fontsmall;
     }
   }
-
-  &--large {
-    width: 22rem;
-    height: 7.3rem;
-
-    @media (min-width: 768px) {
-      min-width: 60%;
-    }
-  }
-@include mixins.bg_cardColor
 }

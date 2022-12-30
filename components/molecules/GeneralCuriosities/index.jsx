@@ -55,7 +55,7 @@ function GeneralCuriosities() {
           className={styles[`GeneralCuriosities--Img`]}
           src={animals[animalsID].tabs[0].curiosities[0].curiositiesImage}
           key={animals[animalsID].id}
-        />
+         loading="lazy"/>
       </section>
       <div className={styles[`GeneralCuriosities--Arrow`]}>
         <Arrow direction="left" onClick={handleClickSub} />
