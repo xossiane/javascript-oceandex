@@ -191,15 +191,11 @@ export default function FavoriteAnimalsPage() {
       <div className={styles[`FavoriteAnimals__Container`]}>
         <header className={styles[`FavoriteAnimals__Header`]}>
           <Heading
-            className={styles[`FavoriteAnimals__Content`]}
+            level="1"
             style="italic"
+            color="black"
           >
-            <Text
-              className={styles[`FavoriteAnimals__Text`]}
-              size="XLarge"
-            >
               Favorite Animals
-            </Text>
           </Heading>
         </header>
         <div className={styles[`FavoriteAnimals__Search`]}>
