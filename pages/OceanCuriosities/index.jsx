@@ -36,11 +36,6 @@ export default function OceanWorldwide() {
       img: "/assets/images/icons/artic.svg",
       description: "The smallest ocean",
     },
-
-    // "Pacific Ocean",
-    // "Indian Ocean",
-    // "Southern Ocean",
-    // "Arctic Ocean",
   ];
 
   const removeSpaces = (str) => {
@@ -48,20 +43,6 @@ export default function OceanWorldwide() {
     const lowerCase = string.charAt(0).toLowerCase() + string.slice(1);
     return lowerCase;
   };
-
-  const { getCuriosities } = useContentful();
-  const [loading, setLoading] = useState();
-
-  const [oceanCuriosities, setOceanCuriosities] = useState([]);
-
-  useEffect(() => {
-    async function fetchCuriosities() {
-      const response = await getCuriosities("ocean");
-      setOceanCuriosities(response);
-    }
-    fetchCuriosities();
-  }, []);
-  //console.log(oceanCuriosities);
 
   return (
     <>
