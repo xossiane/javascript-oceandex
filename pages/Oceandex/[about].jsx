@@ -63,12 +63,12 @@ export default function AboutPage() {
                 {data.name}
               </Heading>
               <section className={styles[`AboutPage__tag`]}>
-                <AnimalsTag label={data.classification.kingdom} text="text"></AnimalsTag>{" "}
-                <AnimalsTag label={data.classification.phylum} text="text"></AnimalsTag>
+                <AnimalsTag mw="mw" label={data.classification.kingdom} text="text"></AnimalsTag>{" "}
+                <AnimalsTag mw="mw"label={data.classification.phylum} text="text"></AnimalsTag>
               </section>
               <section className={styles[`AboutPage__tag--bottom`]}>
-                <AnimalsTag label={data.classification.class} text="text"></AnimalsTag>{" "}
-                <AnimalsTag label={data.classification.order} text="text"></AnimalsTag>
+                <AnimalsTag mw="mw"label={data.classification.class} text="text"></AnimalsTag>{" "}
+                <AnimalsTag mw="mw"label={data.classification.order} text="text"></AnimalsTag>
               </section>
               <img
                 src={data.image}
@@ -84,4 +84,7 @@ export default function AboutPage() {
       </div>
     );
   }
+
+
+
 }

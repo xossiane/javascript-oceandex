@@ -15,7 +15,6 @@ export default function Card({
   const classList = [];
   classList.push(styles[`card--${color}`]);
   classList.push(styles[`card`]);
-
   return (
     <button onClick={onClick} className={styles[`button`]}>
       <div className={styles[`card__relative`]}>
@@ -35,7 +34,6 @@ export default function Card({
             <Text size="large" color="white" weight="bold">
               {description}
             </Text>
-
             {
             href[0] !== "#" ?
               <Link href={`${href}`}>
@@ -47,5 +45,4 @@ export default function Card({
     </button>
   );
 }
-
 // ${title === state ? styles[`card__relative--selected`] : ''}

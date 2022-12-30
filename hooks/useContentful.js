@@ -62,11 +62,12 @@ const useContentful = () => {
     }
   };
 
-  const getCuriosities = async () => {
+  const getCuriosities = async (curiosityType = "", oceanName = "") => {
     try {
       const curiosities = client.getEntries({
         content_type: "animalCuriosities",
-        //"fields.oceanName": "pacific",
+        "fields.curiosityType": curiosityType,
+        "fields.oceanName": oceanName,
         select: "fields",
         order: "fields.id",
       });

@@ -1,0 +1,73 @@
+@use "@styles/variables";
+
+.OceanCuriosities{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__Container{
+    margin: auto;
+    
+    
+  }
+  &__Img{
+    border-radius: 2.4rem;
+    width: 16.6rem;
+    height: 16.6rem;
+    margin-top: 3rem;
+    z-index: 5;
+    margin-bottom: 3rem;
+    
+    @media (min-width: 768px) {
+        width: 54rem;
+        height: 36.8rem;
+    }
+        @media (min-width: 1024px) {
+            width: 84rem;
+            height: 56.8rem;
+        }
+       
+    
+    }
+       
+        &__Arrow{
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            min-width:15.9rem ;
+            z-index: 5;
+            
+        }
+        &__Text{
+          width: 32.1rem;
+          line-height: 2.8rem;
+          margin: auto;
+          margin: 3rem auto auto auto;
+          text-align: justify;
+          @media (min-width: 768px) {
+            width: 50.7rem;
+            height: 16.4rem;
+            margin: 3rem auto auto auto;
+        }
+        @media (min-width: 1024px) {
+          width: 84rem;
+          height: 16.4rem;
+          margin: 3rem auto auto auto;
+      }
+         }
+  &__Header{
+   display: flex;
+   
+    
+   }
+ 
+  &__Content {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+ 
+}

@@ -13,11 +13,6 @@
     width: 6rem;
     height: 6rem;
   }
-
-  &--black {
-    filter: invert(64%) sepia(0%) saturate(2919%) hue-rotate(7deg)
-      brightness(84%) contrast(92%);
-  }
   &--white {
     filter: invert(100%);
   }

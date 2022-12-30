@@ -1,49 +1,54 @@
 import HeroInfo from "@molecules/HeroInfo";
 import { useEffect, useState } from "react";
-import heroData from "../../../heroData.json";
-import styles from "./Hero.module.scss";
+import heroData from "../../../data/heroData.json"
+import styles from "./styles.module.scss";
 
 export default function Hero() {
   const data = heroData;
   const totalItem = data.length;
   const [currentItem, setCurrentItem] = useState(0);
-  const [time, setTime] = useState();
-  const handleFocus = (e) => {
-    clearInterval(time);
-  };
+  const [mouse, setMouse] = useState(false);
 
+  const timer = setTimeout(()=>{
+    if(currentItem === totalItem-1){
+      setCurrentItem(0);
+    }else{
+      setCurrentItem(currentItem + 1);
+    }
+  }, 1000);
+  
   useEffect(() => {
-    const time = setTimeout(() => {
-      if (totalItem - 1 === currentItem) {
-        setCurrentItem(0);
-      } else {
-        setCurrentItem(currentItem + 1);
-      }
-    }, 1000);
-    () => {
-      time.clearTimeOut();
-    };
-    setTime(time);
-  }, [currentItem]);
-
-  console.log(time);
+   timer
+  }, [currentItem])
 
   return (
     <section
       className={styles[`Hero`]}
-      onFocus={handleFocus()}
-      onMouseLeave={() =>
-        setTimeout(() => {
-          if (totalItem - 1 === currentItem) {
+      // onFocus={handleFocus()}
+      // onMouseLeave={() =>
+      //   setTimeout(() => {
+      //     if (totalItem - 1 === currentItem) {
+      //       setCurrentItem(0);
+      //     } else {
+      //       setCurrentItem(currentItem + 1);
+      //     }
+      //   }, 1000)
+      // }
+      onMouseEnter={()=>{
+        clearInterval(timer);
+      
+      }}
+      onMouseLeave={()=>{
+        setTimeout(()=>{
+          if(currentItem === totalItem-1){
             setCurrentItem(0);
-          } else {
+          }else{
             setCurrentItem(currentItem + 1);
           }
-        }, 1000)
-      }
+        }, 1000);
+      }}
       role="hero"
       aria-label="illustrative images and informations"
-      tabIndex={0}
     >
       <HeroInfo data={data} currentItem={currentItem} />
       <div className={styles[`Hero__container`]}>
@@ -56,6 +61,7 @@ export default function Hero() {
                   ? `${styles["Hero__dots"]} ${styles["Hero__dots--active"]}`
                   : `${styles["Hero__dots"]}`
               }
+              tabIndex={0} 
             >
               {" "}
             </span>
