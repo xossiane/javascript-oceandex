@@ -10,13 +10,14 @@ import Text from "@atoms/Text";
 import Background from "@atoms/Background";
 import useContentful from "hooks/useContentful";
 
-function OceanCuriosities() {
+import oceanNames from "../../../data/oceanNames.json";
+
+function OceanCuriosities({ oceanCuriosities }) {
   const curiosities = oceancuriosities;
   const router = useRouter();
   const { ocean } = router.query;
 
-  //construindo a quantidade de IDs
-
+  console.log(oceanNames);
   const defineOcean = () => {
     const oceans = {
       pacificOcean: "pacific",
@@ -27,13 +28,17 @@ function OceanCuriosities() {
     };
     return oceans[ocean];
   };
-
+  const oceans = oceanNames;
+  console.log(oceans);
   const { getCuriosities } = useContentful();
   const [loading, setLoading] = useState();
+  /* const testeOcean = oceanCuriosities;
+  consolelog(testeOcean); 
+  const oceanListLength = oceanCuriosities.length - 1;
+  */
+  // const [oceanCuriosities, setOceanCuriosities] = useState([]);
 
-  const [oceanCuriosities, setOceanCuriosities] = useState([]);
-
-  useEffect(() => {
+  /* useEffect(() => {
     setLoading(true);
     async function fetchCuriosities() {
       const response = await getCuriosities("ocean", defineOcean());
@@ -41,8 +46,8 @@ function OceanCuriosities() {
     }
     fetchCuriosities();
     setLoading(false);
-  }, [ocean]);
-  const oceanListLength = oceanCuriosities.length - 1;
+  }, [ocean]); */
+
   //console.log(oceanListLength);
 
   const [curiositiesID, setcuriositiesID] = useState(0);
@@ -67,10 +72,10 @@ function OceanCuriosities() {
       setcuriositiesID(oceanListLength);
     }
   }
-  console.log(ocean);
+  /* console.log(ocean);
   console.log(defineOcean());
-  console.log(oceanCuriosities);
-  console.log("Length " + oceanListLength);
+  console.log(oceanCuriosities); */
+  //console.log("Length " + oceanListLength);
   console.log("ID " + curiositiesID);
 
   return (
@@ -83,7 +88,7 @@ function OceanCuriosities() {
             color="black"
             style="italic"
           >
-            {!loading ? oceanCuriosities[curiositiesID].oceanName : "Loading"}
+            {/* {!loading ? oceanCuriosities[curiositiesID].oceanName : "Loading"} */}
           </Heading>
         </section>
         <>
@@ -117,3 +122,39 @@ function OceanCuriosities() {
 }
 
 export default OceanCuriosities;
+
+export async function getStaticPaths() {
+  const oceans = oceanNames;
+
+  const paths = oceans.map((ocean) => {
+    return {
+      params: { ocean: ocean.ocean },
+    };
+  });
+
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps() {
+  const { getCuriosities } = useContentful();
+  const router = useRouter();
+  const { ocean } = router.query;
+
+  const defineOcean = () => {
+    const oceans = {
+      pacificOcean: "pacific",
+      atlanticOcean: "atlantic",
+      indianOcean: "indian",
+      southernOcean: "southern",
+      arcticOcean: "arctic",
+    };
+    return oceans[ocean];
+  };
+
+  const oceanCuriosities = await getCuriosities("ocean", defineOcean());
+  return {
+    props: {
+      oceanCuriosities,
+    },
+  };
+}
