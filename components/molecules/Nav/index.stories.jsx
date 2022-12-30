@@ -1,9 +1,9 @@
 import Nav from ".";
 
 export default {
-  title: "organisms/Nav",
+  title: "molecules/Nav",
   component: Nav,
   args: {},
 };
 
-export const Primary = () => <Nav primary />;
+export const Navigation = () => <Navigation  />;

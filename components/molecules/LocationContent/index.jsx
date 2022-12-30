@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import Text from "@atoms/Text";
 
-export default function Location() {
+export default function LocationContent() {
   return (
     <div className={styles[`Location`]}>
       <Text color="black" size="large" className={styles[`Location__title`]}>

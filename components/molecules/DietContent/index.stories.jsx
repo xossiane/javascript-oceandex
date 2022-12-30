@@ -1,9 +1,9 @@
-import Diet from '.'
+import DietContent from '.'
 
 export default {
-    title: "organisms/Diet",
-    component: Diet,
+    title: "molecules/Diet",
+    component: DietContent,
     args: {}
 }
 
-export const TabDiet = () => <Diet  />;
+export const Diet = () => <DietContent  />;

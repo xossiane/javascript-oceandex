@@ -38,7 +38,7 @@
     {
       "color": "pink",
       "href": "/favorite-animals",
-      "description": "Selected animals(by heart)",
+      "description": "Selected animals (by heart)",
       "img": "/assets/images/icons/favorite.svg",
       "title": "Favorite Animals",
       "fontsize":"fontsmall",

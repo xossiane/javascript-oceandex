@@ -1,9 +1,9 @@
-import GeneralCuriositiesPage from ".";
+import AnimalsCuriositiesPage from ".";
 
 export default {
-  title: "Pages/GeneralCuriosities",
-  component: GeneralCuriositiesPage,
+  title: "pages/AnimalsCuriosities",
+  component: AnimalsCuriositiesPage,
   args: {},
 };
 
-export const GeneralCuriosities = () => <GeneralCuriositiesPage />;
+export const AnimalsCuriosities = () => <AnimalsCuriositiesPage />;

@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import Text from "@atoms/Text";
 
-export default function Diet() {
+export default function DietContent() {
   return (
     <section className={styles[`Diet__Container`]}>
       <span className={styles[`Diet__imgContainer`]}>

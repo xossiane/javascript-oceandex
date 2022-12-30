@@ -1,9 +1,9 @@
-import Curiosities from '.'
+import CuriositiesContent from '.'
 
 export default {
-    title: "Organisms/Curiosities",
-    component: Curiosities,
+    title: "molecules/Curiosities",
+    component: CuriositiesContent,
     args: {}
 }
 
-export const TabCuriosities = () => <Curiosities  />;
+export const Curiosities = () => <CuriositiesContent  />;

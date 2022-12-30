@@ -3,7 +3,7 @@ import AnimalsCard from "@molecules/AnimalsCard";
 import { internalMutate } from "swr/_internal";
 import styles from "./styles.module.scss";
 
-export default function Curiosities() {
+export default function CuriositiesContent() {
   return (
     <div className={styles[`Curiosities`]}>
       <Text color="black" size="medium" className={styles[`Curiosities__text`]}>
