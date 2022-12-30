@@ -15,8 +15,6 @@ const index = () => {
   const [searchAnimal, setSearchAnimal] = useState([]);
   const [loading, setLoading] = useState();
   const [search, setSearch] = useState("");
-  useEffect(() => {}, []);
-
   useEffect(() => {
     if (!search) {
         let array = []
@@ -134,9 +132,9 @@ const index = () => {
 
       setAnimal(array);
       setLoading(false);
-    }
+  
 
-    if (search) {
+    if(search) {
       setLoading(true);
       let length = search.length;
       let newArray = animal.filter((e) => {
@@ -150,7 +148,7 @@ const index = () => {
       setSearchAnimal(newArray);
       setLoading(false);
     }
-  }, [search]);
+  }, [search])
 
   function showAnimal() {
     {
@@ -222,6 +220,6 @@ const index = () => {
       </div>
     </>
   );
-};
+}
 
 export default index;
