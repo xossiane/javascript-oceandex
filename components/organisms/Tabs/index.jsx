@@ -3,10 +3,10 @@ import Mainpage from "../../../pages/index";
 import styles from "./styles.module.scss";
 import react from "react";
 import Text from "@atoms/Text";
-import AboutContent from "@organisms/AboutContent";
-import Curiosities from "@organisms/Curiosities";
-import Location from "@organisms/Location";
-import Diet from "@organisms/Diet";
+import AboutContent from "@molecules/AboutContent";
+import CuriositiesContent from "@molecules/CuriositiesContent";
+import LocationContent from "@molecules/LocationContent";
+import DietContent from "@molecules/DietContent";
 
 const TabsDemo = () => (
   /* NOME DAS TABS */
@@ -61,13 +61,13 @@ const TabsDemo = () => (
         <AboutContent />
       </Tabs.Content>
       <Tabs.Content className="TabsContent" value="Curiosities" aria-label="Curiosities">
-        <Curiosities />
+        <CuriositiesContent />
       </Tabs.Content>
       <Tabs.Content className="TabsContent" value="Location" aria-label="Location">
-        <Location />
+        <LocationContent />
       </Tabs.Content>
       <Tabs.Content className="TabsContent" value="Diet" aria-label="Diet">
-        <Diet />
+        <DietContent />
       </Tabs.Content>
     </div>
   </Tabs.Root>

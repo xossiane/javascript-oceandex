@@ -15,7 +15,7 @@ export default function AboutPage() {
           <header className={styles[`AboutPage__Header`]}>
             <div className={styles[`AboutPage__Header--arrow`]}>
               {" "}
-              <Arrow direction="left" href="/Oceandex" white />
+              <Arrow direction="left" href="/oceandex" white />
             </div>
             <Like white={true} className={styles[`AboutPage__Header--like`]} />
           </header>

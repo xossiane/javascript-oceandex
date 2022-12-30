@@ -21,7 +21,7 @@ export default function Nav() {
         <div className={styles[`Nav__menu`]}>
           <ul className={styles[`Nav__menuList`]}>
             <li className={styles[`Nav__menuLi`]}>
-              <Link href="/Oceandex">
+              <Link href="/oceandex">
                 <a className={styles[`Nav__menuItem`]}>OceanDex</a>
               </Link>
             </li>
@@ -36,17 +36,17 @@ export default function Nav() {
               </Link>
             </li>
             <li className={styles[`Nav__menuLi`]}>
-              <Link href="/TrophicLevel">
+              <Link href="/trophic-level">
                 <a className={styles[`Nav__menuItem`]}>Trophic Level</a>
               </Link>
             </li>
             <li className={styles[`Nav__menuLi`]}>
-              <Link href="/Oceandex">
+              <Link href="/favorite-animals">
                 <a className={styles[`Nav__menuItem`]}>Favorite Animals</a>
               </Link>
             </li>
             <li className={styles[`Nav__menuLi`]}>
-              <Link href="/Authors">
+              <Link href="/authors">
                 <a className={styles[`Nav__menuItem`]}>Authors</a>
               </Link>
             </li>
@@ -74,7 +74,7 @@ export default function Nav() {
                   />
                 </button>
                 <li className={styles[`Nav__menuLi`]}>
-                  <Link href="/Oceandex">
+                  <Link href="/oceandex">
                     <a className={styles[`Nav__menuItem`]}>OceanDex</a>
                   </Link>
                 </li>
@@ -91,17 +91,17 @@ export default function Nav() {
                   </Link>
                 </li>
                 <li className={styles[`Nav__menuLi`]}>
-                  <Link href="/TrophicLevel">
+                  <Link href="/trophic-level">
                     <a className={styles[`Nav__menuItem`]}>Trophic Level</a>
                   </Link>
                 </li>
                 <li className={styles[`Nav__menuLi`]}>
-                  <Link href="/Oceandex">
+                  <Link href="/favorite-animals">
                     <a className={styles[`Nav__menuItem`]}>Favorite Animals</a>
                   </Link>
                 </li>
                 <li className={styles[`Nav__menuLi`]}>
-                  <Link href="/Authors">
+                  <Link href="/authors">
                     <a className={styles[`Nav__menuItem`]}>Authors</a>
                   </Link>
                 </li>

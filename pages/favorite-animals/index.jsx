@@ -9,14 +9,12 @@ import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
 import Input from "@molecules/Input";
 
-const index = () => {
+export default function FavoriteAnimalsPage() {
   // const { getAnimals, getAnimal, getAuthors, getCuriosities } = useContentful();
   const [animal, setAnimal] = useState([]);
   const [searchAnimal, setSearchAnimal] = useState([]);
   const [loading, setLoading] = useState();
   const [search, setSearch] = useState("");
-  useEffect(() => {}, []);
-
   useEffect(() => {
     if (!search) {
         let array = []
@@ -130,13 +128,13 @@ const index = () => {
             array.push(animal)
           }
         }
-      }
+      
 
-      setAnimal(array);
+      setAnimal(array); 
       setLoading(false);
-    }
+      }  
 
-    if (search) {
+    if(search) {
       setLoading(true);
       let length = search.length;
       let newArray = animal.filter((e) => {
@@ -150,7 +148,7 @@ const index = () => {
       setSearchAnimal(newArray);
       setLoading(false);
     }
-  }, [search]);
+  }, [search])
 
   function showAnimal() {
     {
@@ -222,6 +220,6 @@ const index = () => {
       </div>
     </>
   );
-};
+}
 
-export default index;
+

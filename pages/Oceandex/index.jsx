@@ -3,11 +3,10 @@ import { useEffect, useState } from "react";
 import useContentful from "../../hooks/useContentful";
 import Heading from "@atoms/Heading";
 import Input from "@molecules/Input";
-
 import FilterCArd from "@molecules/FilterCard";
 import useFecthInput from "../../store/useFetchInput";
 
-const index = () => {
+export default function OceanDexPage(){
   const { getAnimals } = useContentful();
 
   const setData = useFecthInput((state) => state.setSearch);
@@ -109,4 +108,4 @@ const index = () => {
   );
 };
 
-export default index;
+

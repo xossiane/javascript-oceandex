@@ -1,7 +1,7 @@
 import HeroInfo from "@molecules/HeroInfo";
 import { useEffect, useState } from "react";
-import heroData from "../../../heroData.json";
-import styles from "./Hero.module.scss";
+import heroData from "../../../data/heroData.json"
+import styles from "./styles.module.scss";
 
 export default function Hero() {
   const data = heroData;

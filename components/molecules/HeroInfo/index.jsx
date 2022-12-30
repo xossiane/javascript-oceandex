@@ -1,5 +1,5 @@
-import styles from "./HeroInfo.module.scss";
-import heroData from "../../../heroData.json";
+import styles from "./styles.module.scss";
+import heroData from "../../../data/heroData.json";
 import Text from "@atoms/Text";
 
 export default function HeroInfo(props) {

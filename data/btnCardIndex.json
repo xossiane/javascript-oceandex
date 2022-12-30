@@ -1,7 +1,7 @@
 [
     {
       "color": "blue",
-      "href": "/Oceandex",
+      "href": "/oceandex",
       "description": "Animal's list",
       "img": "/assets/images/icons/icon.svg",
       "title": "Oceandex",
@@ -28,7 +28,7 @@
     },
     {
       "color": "oliveGreen",
-      "href": "/TrophicLevel",
+      "href": "/trophic-level",
       "description": "Food Chain",
       "img": "/assets/images/icons/trophic.svg",
       "title": "Trophic Level",
@@ -37,7 +37,7 @@
     },
     {
       "color": "pink",
-      "href": "/FavoriteAnimals",
+      "href": "/favorite-animals",
       "description": "Selected animals(by heart)",
       "img": "/assets/images/icons/favorite.svg",
       "title": "Favorite Animals",
@@ -46,7 +46,7 @@
     },
     {
       "color": "red",
-      "href": "/Authors",
+      "href": "/authors",
       "description": "Who made this",
       "img": "/assets/images/icons/author.svg",
       "title": "Authors",

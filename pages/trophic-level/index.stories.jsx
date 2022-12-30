@@ -1,7 +1,7 @@
 import TrophicLevel from ".";
 
 export default {
-  title: "Pages/TrophicLevel",
+  title: "Pages/trophic-level",
   component: TrophicLevel,
   args: {},
 };

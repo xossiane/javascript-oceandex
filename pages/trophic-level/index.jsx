@@ -5,16 +5,16 @@
 import Text from "@atoms/Text";
 import Button from "@molecules/Button";
 import Card from "@molecules/Card";
-import Container from "@organisms/Container";
+
 import { useState } from "react";
 import styles from "./styles.module.scss";
 
-export default function TrophicLevel() {
+export default function TrophicLevelPage() {
   const [selected, setSelected] = useState("Deep Ocean");
 
   return (
     <>
-      <Container>
+      
         <Text
           className={styles[`TrophicLevel__Title`]}
           style="italic"
@@ -111,7 +111,7 @@ export default function TrophicLevel() {
           {selected === 'Arctic Ocean' && <img src="/assets/images/foodChain/arcticOceanDesktop.png" alt="Arctic Ocean" />}
           {selected === 'Pelagic Ocean' && <img src="/assets/images/foodChain/pelagicOceanDesktop.png" alt="Pelagic ocean" />}
         </div>
-    </Container>
+    
   </>
   );
 }
