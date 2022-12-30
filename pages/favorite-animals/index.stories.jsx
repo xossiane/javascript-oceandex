@@ -1,9 +1,9 @@
-import AboutPage from ".";
+import FavoriteAnimalsPage from ".";
 
 export default {
-  title: "Pages/About",
-  component: AboutPage,
+  title: "pages/FavoriteAnimals",
+  component: FavoriteAnimalsPage,
   args: {},
 };
 
-export const About = () => <AboutPage />;
+export const FavoriteAnimals = () => <FavoriteAnimalsPage />;

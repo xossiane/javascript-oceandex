@@ -6,22 +6,26 @@ export default function Diet({ data }) {
     return (
       <section className={styles[`Diet__Container`]}>
         {data.dietList.map((element) => (
-          <span key={element.name} className={styles[`Diet__imgContainer`]}>
-            <Text
-              color="black"
-              size="small"
-              className={styles[`Diet__animalName`]}
-            >
-              {element.name}
-            </Text>
-            <img
-              className={styles[`Diet__imgItem`]}
-              src={element.image}
-              alt={element.name}
-            ></img>
-          </span>
+          <>
+            <span key={element.name} className={styles[`Diet__imgContainer`]}>
+              <Text
+                color="black"
+                size="small"
+                className={styles[`Diet__animalName`]}
+              >
+                {element.name}
+              </Text>
+              <img
+                className={styles[`Diet__imgItem`]}
+                src={element.image}
+                alt={element.name}
+                loading="lazy"
+              ></img>
+            </span>
+            <hr className={styles[`Diet__hrItem`]}></hr>
+          </>
         ))}
-        <hr className={styles[`Diet__hrItem`]}></hr>
+     
         {/*  <span className={styles[`Diet__imgContainer`]}>
           <Text
             color="black"

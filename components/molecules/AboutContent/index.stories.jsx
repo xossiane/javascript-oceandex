@@ -1,9 +1,9 @@
 import AboutContent from '.'
 
 export default {
-    title: "organisms/AboutContent",
+    title: "molecules/About",
     component: AboutContent,
     args: {}
 }
 
-export const TabAbout = () => <AboutContent />;
+export const About = () => <AboutContent />;

@@ -1,7 +1,7 @@
 // import Arrow from "@atoms/ArrowLeft";
 // import Background from "@atoms/Background";
 // import Button from "@atoms/Button";
-// import Heading from "@atoms/Heading";
+import Heading from "@atoms/Heading";
 import Text from "@atoms/Text";
 import Button from "@molecules/Button";
 import Card from "@molecules/Card";
@@ -14,15 +14,13 @@ export default function TrophicLevelPage() {
 
   return (
     <>
-      
-        <Text
-          className={styles[`TrophicLevel__Title`]}
+        <Heading
           style="italic"
-          color="darkBlue"
-          size="XLarge"
+          color="black"
+          level="1"
         >
           Trophic Level
-        </Text>
+        </Heading>
         <Text className={styles[`TrophicLevel__Paragraph`]} size="large">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis
@@ -107,9 +105,9 @@ export default function TrophicLevelPage() {
         </div>
 
         <div className={styles[`TrophicLevel__ContainerImage`]}>
-          {selected === 'Deep Ocean' && <img src="/assets/images/foodChain/deepOceanDesktopjpg.jpg" alt="Deep ocean" />}
-          {selected === 'Arctic Ocean' && <img src="/assets/images/foodChain/arcticOceanDesktop.png" alt="Arctic Ocean" />}
-          {selected === 'Pelagic Ocean' && <img src="/assets/images/foodChain/pelagicOceanDesktop.png" alt="Pelagic ocean" />}
+          {selected === 'Deep Ocean' && <img src="/assets/images/foodChain/DeepOcean.png" alt="Deep ocean" />}
+          {selected === 'Arctic Ocean' && <img src="/assets/images/foodChain/ArticOcean.png" alt="Arctic Ocean" />}
+          {selected === 'Pelagic Ocean' && <img src="/assets/images/foodChain/PelagicOcean.png" alt="Pelagic ocean" />}
         </div>
     
   </>

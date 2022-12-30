@@ -1,9 +1,9 @@
-import TrophicLevel from ".";
+import TrophicLevelPage from ".";
 
 export default {
-  title: "Pages/trophic-level",
-  component: TrophicLevel,
+  title: "pages/TrophicLevel",
+  component: TrophicLevelPage,
   args: {},
 };
 
-export const TrophicLevelP = () => <TrophicLevel />;
+export const TrophicLevel = () => <TrophicLevelPage />;

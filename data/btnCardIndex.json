@@ -10,7 +10,7 @@
     },
     {
       "color": "purple",
-      "href": "/OceanWorldwide",
+      "href": "/ocean-curiosities",
       "description": "Ocean's Curiosities",
       "img": "/assets/images/icons/oceanworldwide.svg",
       "title": "Ocean Worldwide",
@@ -19,7 +19,7 @@
     },
     {
       "color": "green",
-      "href": "/animalsCuriosities",
+      "href": "/animals-curiosities",
       "description": "Animal's Curiosities",
       "img": "/assets/images/icons/general.svg",
       "title": "Animal's Curiosities",
@@ -38,7 +38,7 @@
     {
       "color": "pink",
       "href": "/favorite-animals",
-      "description": "Selected animals(by heart)",
+      "description": "Selected animals (by heart)",
       "img": "/assets/images/icons/favorite.svg",
       "title": "Favorite Animals",
       "fontsize":"fontsmall",

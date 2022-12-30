@@ -1,9 +1,9 @@
-import Location from '.'
+import LocationContent from '.'
 
 export default {
-    title: "organisms/Location",
-    component: Location,
+    title: "molecules/Location",
+    component: LocationContent,
     args: {}
 }
 
-export const TabLocation = () => <Location />;
+export const Location = () => <LocationContent />;

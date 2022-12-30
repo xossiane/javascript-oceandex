@@ -1,7 +1,7 @@
 import AuthorsPage from ".";
 
 export default {
-  title: "Pages/authors",
+  title: "pages/authors",
   component: AuthorsPage,
   args: {},
 };
