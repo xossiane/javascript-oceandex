@@ -1,11 +1,11 @@
 @use "@styles/variables";
 
-.footerContainer {
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: variables.$white;  
-  border-top: 1px solid rgba(0, 0, 0, 0.6);
+  border-top: 1px solid variables.$blackBorder;
   box-sizing: border-box;
   height: 8.6rem;
   font-weight: 400; 
@@ -15,10 +15,18 @@
   @media (min-width: 1024px) {
     width: 100%;
     height: 14rem;
-    
+  }
+
+  &__image {
+    width: 1.8rem;
+    height: 1.8rem;
+    @media (min-width: 1024px) {
+      width: 5rem;
+      height: 5rem;
+    }
   }
   
-  &__copyParagraph {
+  &__copyright {
     font-size: 1.4rem;
     line-height: 1.8rem;
     text-align: center;
@@ -27,7 +35,7 @@
     }
   }
 
-  &__br {
+  &__break {
     @media (min-width: 1024px) {
       display: none;
     }
