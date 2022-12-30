@@ -15,6 +15,8 @@
 
   @media (min-width: 1024px) {
     height: 14.2rem;
+    position: relative;
+    padding: 0;
   }
 
   &__internal {
@@ -25,10 +27,11 @@
     width: 100%;
     @media (min-width: 1024px) {
       margin: 0 auto;      
-      max-width: 90rem;
+      width: 90rem;
+      height: 14.2rem;
     }
     @media (min-width: 1440px) {      
-      max-width: 128rem;
+      width: 128rem;
     }
   }
 
@@ -39,17 +42,14 @@
     }
   }
 
-  &__menuMobile {
-    margin: 0;
+  &__nav {
     @media (min-width: 1024px) {
-      display: none;
+      width: 70rem;
+    }
+    @media (min-width: 1024px) {
+      width: 110rem;
     }
   }
 
-  &__menuDesktop {
-    display: none;
-    @media (min-width: 1024px) {
-      display: block;
-    }
   }
-}
+
