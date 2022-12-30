@@ -1,48 +1,13 @@
 .content {
-    box-sizing: border-box;
-    margin: 4rem auto 20rem;
+  box-sizing: border-box;
+  margin: 11.7rem auto 20rem;
 
-    @media (min-width: 1024px) {
-        margin: 21.7rem auto 25.4rem;
-        max-width: 90rem;
-    }
+  @media (min-width: 1024px) {
+    margin: 21.7rem auto 25.4rem;
+    max-width: 90rem;
+  }
 
-    @media (min-width: 1440px) {
-        max-width: 128rem;
-    }
-}
-
-.Background {
-
-    &__ContainerBackgroundImage {
-        position: relative;
-        width: 100%;
-
-        &__BackgroundImage {
-            opacity: 0.2;
-            position: absolute;
-            bottom: -90%;
-            width: 100%;
-            z-index: 0;
-
-            @media (max-width: 1023px) {
-                display: none;
-            }
-        }
-
-        &__BackgroundImageMobile {
-            display: none;
-
-            @media (max-width: 1023px) {
-                bottom: -90%;
-                display: block;
-                position: absolute;
-                width: 100%;
-
-                img {
-                    border-radius: 0.23rem;
-                }
-            }
-        }
-    }
+  @media (min-width: 1440px) {
+    max-width: 128rem;
+  }
 }

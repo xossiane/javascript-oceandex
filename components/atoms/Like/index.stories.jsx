@@ -6,5 +6,9 @@ export default {
   args: {},
 };
 
-export const BlackHeart = () => <Like BlackHeart />;
-export const WhiteHeart = () => <Like WhiteHeart white="true" />;
+export const BlackHeart = () => <Like />;
+export const WhiteHeart = () => <Like white="true" />;
+
+WhiteHeart.parameters = {
+  backgrounds: { default: "dark-mode" },
+};

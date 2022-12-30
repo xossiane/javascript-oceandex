@@ -15,22 +15,25 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.41rem 0;
-  max-width: 340px;
+  width: 34rem;
+  height: 5.1rem;
   background: variables.$offWhite;
   border-radius: 10rem;
+  box-sizing: border-box;
+  padding: 0 2.5rem;
 
   &:focus {
     outline: variables.$black solid 2px;
   }
 
-  @media screen and (min-width: 1024px) {
-    max-width: 700px;
-    padding: 0.69rem 0;
+  @media (min-width: 1024px) {
+    width: 70rem;
+    height: 5.4rem;
   }
 
   &__box {
     width: 80%;
+    margin-left: 1rem;
     background: variables.$offWhite;
     border: none;
     @include inputText;
@@ -38,6 +41,7 @@
 
   &__box:placeholder-shown {
     @include inputText;
+    font-size: 1.8rem;
   }
 }
 

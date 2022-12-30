@@ -1,8 +1,8 @@
 @use "@styles/variables";
+@use "styles/mixins.scss";
 
 .button {
   border-radius: 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
   text-decoration: none;
   display: flex;
@@ -31,32 +31,5 @@
       min-width: 60%;
     }
   }
-
-  &--blue {
-    background-color: variables.$blue;
-  }
-
-  &--purple {
-    background-color: variables.$purple;
-  }
-  &--green {
-    background-color: variables.$green;
-  }
-  &--oliveGreen {
-    background-color: variables.$oliveGreen;
-  }
-  &--red {
-    background-color: variables.$red;
-  }
-  &--pink {
-    background-color: variables.$pink;
-  }
-
-  &--fontmedium {
-    font-size: variables.$fontmedium;
-  }
-
-  &--fontsmall {
-    font-size: variables.$fontsmall;
-  }
+  @include mixins.bg_cardColor
 }

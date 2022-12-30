@@ -1,6 +1,6 @@
 import Text from "@atoms/Text";
 import { useState } from "react";
-import oceananimals from "json/generalCuriosities.json";
+import oceananimals from "../../../json/generalCuriosities.json";
 import AnimalsTag from "@molecules/AnimalsTag";
 import Arrow from "@atoms/Arrow";
 import styles from "./styles.module.scss";
@@ -55,11 +55,10 @@ function GeneralCuriosities() {
           className={styles[`GeneralCuriosities--Img`]}
           src={animals[animalsID].tabs[0].curiosities[0].curiositiesImage}
           key={animals[animalsID].id}
-        />
+         loading="lazy"/>
       </section>
       <div className={styles[`GeneralCuriosities--Arrow`]}>
         <Arrow direction="left" onClick={handleClickSub} />
-
         <Arrow direction="right" onClick={handleClickSum} />
       </div>
     </>

@@ -11,7 +11,7 @@ export default function GeneralCuriositiesPage() {
         <header className={styles[`GeneralCuriositiesPage__Header`]}>
           <Heading
             level="1"
-            className={styles[`GeneralCuriositiesPage__Content--text`]}
+            className={styles[`GeneralCuriositiesPage__Text`]}
             color="black"
             style="italic"
           >
@@ -23,7 +23,7 @@ export default function GeneralCuriositiesPage() {
           <GeneralCuriosities></GeneralCuriosities>
         </div>
         <span className={styles[`GeneralCuriositiesPage__Background`]}>
-          <Background />
+          {/*<Background />*/}
         </span>
       </div>
     </>

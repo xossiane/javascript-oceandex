@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import { useEffect, useState } from "react";
 
 
+import Arrow from "@atoms/Arrow";
 import Heading from "@atoms/Heading";
 import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
@@ -14,10 +15,7 @@ const index = () => {
   const [searchAnimal, setSearchAnimal] = useState([]);
   const [loading, setLoading] = useState();
   const [search, setSearch] = useState("");
-  useEffect(() => {
-
-   
-  }, []);
+  useEffect(() => {}, []);
 
   useEffect(() => {
     if (!search) {
@@ -132,81 +130,96 @@ const index = () => {
             array.push(animal)
           }
         }
-        
-        setAnimal(array)
-        setLoading(false);
       }
-    
-    if (search) {
-        setLoading(true);
-        let length = search.length
-        let newArray = animal.filter((e)=>{
-          console.log(search)
-          console.log((e.name).substring(0, [length]))
-          return search.substring(0, [length]).toLowerCase() === e.name.substring(0, [length]).toLowerCase()
 
-        })
-        setSearchAnimal(newArray);
-        setLoading(false);
+      setAnimal(array);
+      setLoading(false);
+    }
+
+    if (search) {
+      setLoading(true);
+      let length = search.length;
+      let newArray = animal.filter((e) => {
+        console.log(search);
+        console.log(e.name.substring(0, [length]));
+        return (
+          search.substring(0, [length]).toLowerCase() ===
+          e.name.substring(0, [length]).toLowerCase()
+        );
+      });
+      setSearchAnimal(newArray);
+      setLoading(false);
     }
   }, [search]);
 
   function showAnimal() {
-    {return !search ? animal.map((item) => {
-      return (
-        <AnimalsCard
-        href="/"
-        key={item.id}
-        name={item.name}
-        order={item.order}
-        phylum={item.phylum}
-        Class={item.class}
-        kingdom={item.kingdom}
-        src={item.image}
-        />
-      );
-    }) :
-    searchAnimal.map((item) => {
-      return (
-        <AnimalsCard
-        href="/"
-        key={item.id}
-        name={item.name}
-        order={item.order}
-        phylum={item.phylum}
-        Class={item.class}
-        kingdom={item.kingdom}
-        src={item.image}
-        />
-      );
-    }) 
+    {
+      return !search
+        ? animal.map((item) => {
+            return (
+              <AnimalsCard
+                href="/"
+                key={item.id}
+                name={item.name}
+                order={item.order}
+                phylum={item.phylum}
+                Class={item.class}
+                kingdom={item.kingdom}
+                src={item.image}
+                alt={item.name}
+              />
+            );
+          })
+        : searchAnimal.map((item) => {
+            return (
+              <AnimalsCard
+                href="/"
+                key={item.id}
+                name={item.name}
+                order={item.order}
+                phylum={item.phylum}
+                Class={item.class}
+                kingdom={item.kingdom}
+                src={item.image}
+                alt={item.name}
+              />
+            );
+          });
     }
   }
-  
+
   return (
     <>
-    <div className={styles[`FavoriteAnimals__Container`]}>
- 
-      <header className={styles[`FavoriteAnimals__Header`]}>
-        <Heading
-          className={styles[`FavoriteAnimals__Content`]}
-          style="italic"
-        >
-          <Text
-          className={styles[`FavoriteAnimals__Content--text`]}
-          size="XLarge"
-          >Favorite Animals</Text>
-        </Heading>
-      </header>
-      <div className={styles[`FavoriteAnimals__Search`]}>
-        <Input FavoriteAnimals value={search} onChange={(e) => setSearch(e.target.value)} page="FavoriteAnimals" placeholder="Search for your favorite animals" aria-label="Search for your favorite animals" />
+      <div className={styles[`FavoriteAnimals__Container`]}>
+        <header className={styles[`FavoriteAnimals__Header`]}>
+          <Heading
+            className={styles[`FavoriteAnimals__Content`]}
+            style="italic"
+          >
+            <Text
+              className={styles[`FavoriteAnimals__Text`]}
+              size="XLarge"
+            >
+              Favorite Animals
+            </Text>
+          </Heading>
+        </header>
+        <div className={styles[`FavoriteAnimals__Search`]}>
+          <Input
+            FavoriteAnimals
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            page="FavoriteAnimals"
+            placeholder="Search for your favorite animals"
+            aria-label="Search for your favorite animals"
+          />
+        </div>
+
+        <section className={styles[`FavoriteAnimals__Cards`]} tabIndex={"1"}>
+          {loading && <p>loading</p>}
+          {!loading && showAnimal()}
+        </section>
       </div>
-      
-      <section className={styles[`FavoriteAnimals__Cards`]}>
-        {loading && <p>loading</p>}
-        {!loading && showAnimal()}
-      </section>
-    </div>
     </>
   );
 };

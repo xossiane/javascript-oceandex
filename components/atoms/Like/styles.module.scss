@@ -1,8 +1,10 @@
 .like {
- 
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
 
-  // @media screen and (min-width: 1440px) {
-  //   width: 2.25rem;
-  //   height: 0.875rem;
-  // }
+  @media screen and (min-width: 1024px) {
+    width: 3rem;
+    height: 3rem;
+  }
 }

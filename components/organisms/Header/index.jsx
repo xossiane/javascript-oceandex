@@ -8,25 +8,25 @@ export default function Header() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   return (
     <header className={styles[`Header`]}>
-      <div>
+      <div className={styles[`Header__internal`]}>
         <Link href="/">
           <a>
             <img
               className={styles[`Header__logo`]}
-              src="assets/images/logo.svg"
+              src="../assets/images/logo.svg"
               alt="logo"
             />
           </a>
         </Link>
-      </div>
-      <div className={styles[`Header__menuMobile`]}>
-        <MenuMobile
-          menuIsVisible={menuIsVisible}
-          setMenuIsVisible={setMenuIsVisible}
-        />
-      </div>
-      <div className={styles[`Header__menuDesktop`]}>
-        <MenuDesktop />
+        <div className={styles[`Header__menuMobile`]}>
+          <MenuMobile
+            menuIsVisible={menuIsVisible}
+            setMenuIsVisible={setMenuIsVisible}
+          />
+        </div>
+        <div className={styles[`Header__menuDesktop`]}>
+          <MenuDesktop />
+        </div>
       </div>
     </header>
   );

@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./styles.module.scss";
-
 export default function Footer() {
   return (
-    <footer className={styles[`footerContainer`]}>
-      <p className={styles[`footerContainer__copyParagraph`]}>
-        <span>&copy;</span> 2022 Oceandex. All rights reserved.
+    <footer className={styles[`footer`]}>
+      <p className={styles[`footer__copyright`]}>
+        Made with <img className={styles[`footer__image`]} src="/assets/images/footer/whale-lov.png" alt="love"/> <br className={styles[`footer__break`]}></br>by the
+        OceanDex Team
       </p>
     </footer>
   );

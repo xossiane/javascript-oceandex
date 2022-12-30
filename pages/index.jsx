@@ -2,7 +2,7 @@ import styles from "../styles/home.module.scss";
 
 import Heading from "@atoms/Heading";
 import Button from "@molecules/Button";
-import useContentful from "hooks/useContentful";
+import useContentful from "../hooks/useContentful";
 import { useEffect, useState } from "react";
 import Hero from "@organisms/Hero";
 useContentful;

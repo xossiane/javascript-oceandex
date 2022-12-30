@@ -1,48 +1,41 @@
 import styles from "./styles.module.scss";
-
-import { useEffect, useState, useCallback } from "react";
-
+import { useEffect, useState } from "react";
 import useContentful from "../../hooks/useContentful";
-
 import Heading from "@atoms/Heading";
-import Arrow from "@atoms/Arrow";
 import Input from "@molecules/Input";
-import Text from "@atoms/Text";
-import AnimalsCard from "@molecules/AnimalsCard";
 
-const index = ({ data }) => {
-  const { getAnimals, getAnimal, getAuthors, getCuriosities } = useContentful();
-  // const [animal, setAnimal] = useState([]);
+import FilterCArd from "@molecules/FilterCard";
+import useFecthInput from "../../store/useFetchInput";
+
+const index = () => {
+  const { getAnimals } = useContentful();
+
+  const setData = useFecthInput((state) => state.setSearch);
+
   const [loading, setLoading] = useState();
-  const [search, setSearch] = useState("");
 
   const [animals, setAnimals] = useState([]);
   const [curiosities, setCuriosities] = useState();
   // const [authors, setAuthors] = useState();
-  useEffect(async () => {
-    setLoading(true);
 
-    const response = await getAnimals();
-    setAnimals(response);
-    setLoading(false);
+  useEffect(() => {
+    async function fetchAnimals() {
+      setLoading(true);
 
-    /*   getCuriosities().then((response) => {
-      setCuriosities(response);
-    }); */
-    /* getAuthors().then((response) => {
-      setAuthors(response);
-    }); */
+      const response = await getAnimals();
+      setAnimals(response);
+      setLoading(false);
+    }
+    fetchAnimals();
   }, []);
 
-  //console.log(authors);
-  //console.log(curiosities);
   console.log(animals);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const value = e.target.value;
     if (value.length === 0 || value.length > 2) {
-      setSearch(value);
+      setData(value);
     }
   };
 
@@ -77,6 +70,7 @@ const index = ({ data }) => {
             Class={item.classification.class}
             kingdom={item.classification.kingdom}
             src={item.image}
+            loading="lazy"
           />
         );
       });
@@ -86,9 +80,6 @@ const index = ({ data }) => {
   return (
     <>
       <div className={styles[`Oceandex__Container`]}>
-        <span className={styles[`Oceandex__Arrow`]}>
-          <Arrow direction="left" href="/" white={false} />
-        </span>
         <header className={styles[`Oceandex__Header`]}>
           <Heading
             level="1"
@@ -104,13 +95,14 @@ const index = ({ data }) => {
         <div className={styles[`Oceandex__Search`]}>
           <Input
             value={search}
+            placeholder={"Search for animals, filos..."}
             onChange={(e) => handleSubmit(e)}
             aria-label={""}
           />
         </div>
         <section className={styles[`Oceandex__Cards`]}>
           {loading && <p>loading</p>}
-          {!loading && showAnimal()}
+          {!loading && <FilterCArd animals={animals} />}
         </section>
       </div>
     </>

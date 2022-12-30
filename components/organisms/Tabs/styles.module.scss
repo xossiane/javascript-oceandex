@@ -12,10 +12,13 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
   @media (min-width: 1024px) {
+    box-sizing: border-box;
     position: fixed;
-    top: 30px;
+    top: 0;
+    background-color: variables.$white;
+    padding: 3rem;
+    border-radius: 3rem;
   }
 }
 
@@ -25,14 +28,27 @@
   margin: 1rem;
   border: 0;
   padding: 0;
-  background-color: variables.$white;
-
-  
+  background-color: variables.$white; 
+  @media (min-width: 1024px) {
+    margin: 1rem 1.5rem -1rem;
+  } 
+  @media (min-width: 1440px) {
+    margin: 1rem 3rem -1rem;
+  }
 
   &--text:hover {
+    box-sizing: border-box;
     color: variables.$blue;
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid variables.$blue;
     font-weight: bold;
+  }
+}
+
+.TabsBottom {
+  border-radius: 3rem;
+  @media (min-width: 1024px) {
+    overflow-y: scroll;
   }
 }
 

@@ -7,6 +7,11 @@
   text-align: center;
   padding: 0;
 
+  @media (min-width: 1440px) {
+    width: 109rem;
+    padding-left: 6rem;
+  }
+
   &__li {
     list-style: none;
     max-width: 140px;
@@ -19,6 +24,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    @media (min-width: 1440px) {
+      width: 112rem;
+    }
   }
 
   &__item {
@@ -30,3 +38,4 @@
     justify-content: space-between;
   }
 }
+

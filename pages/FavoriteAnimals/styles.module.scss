@@ -13,16 +13,14 @@
   &__Content {
     flex-direction: column;
     align-content: center;
-
-    &--text {
-      margin-bottom: 2.8rem;
-    }
   }
-
+  &__Text {
+    margin-bottom: 2.8rem;
+  }
   &__Arrow {
     position: absolute;
-    top: 6.7rem;
-    left: 2rem;
+    top: 67px;
+    left: 20px;
   }
 
   &__Header {
@@ -30,31 +28,29 @@
     height: 2.5rem;
     justify-content: space-around;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 40px;
 
     & a {
       position: absolute;
-      top: 6.7rem;
-      left: 2.8rem;
+      top: 67px;
+      left: 28px;
     }
   }
 
   &__Search {
-
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2.2rem auto;
+    margin: 22px auto;
     width: 100%;
-
   }
 
   &__Cards {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    grid-gap: 1rem 3rem;
-    margin: 0 2.8rem;
+    grid-gap: 10px 30px;
+    margin: 0 28px;
 
     @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr;

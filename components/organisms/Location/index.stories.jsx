@@ -6,4 +6,4 @@ export default {
     args: {}
 }
 
-export const Primary = () => <Location primary />;
+export const TabLocation = () => <Location />;

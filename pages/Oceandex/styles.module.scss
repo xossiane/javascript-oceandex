@@ -1,65 +1,70 @@
 @use "@styles/variables";
 
 .Oceandex {
-    &__Container {
-        background-color: variables.$white;
-        width: 100%;
-        min-height: 100vh;
-        position: relative;
+  &__Container {
+    background-color: transparent;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
 
-        @media (min-width: 768px) {
-          max-width: 71rem;
-          margin: 0 auto;
-        }
-
-        @media (min-width: 1024px) {
-          max-width: 84rem;
-          margin: 0 auto;
-        }
-
-        @media (min-width: 1440px) {
-          max-width: 128rem;
-        }
-      }
-      &__Content {
-        background-color: #84bab9;
-        flex-direction: column;
-        align-content: center;
-    
-        &--text {
-          margin: 5.5rem 4.1rem auto 6.8rem;
-        }
-      }
-
-      &__Header {
-        margin: 0 auto;
-        padding: 0 3rem;
-        text-align: center;
-      }
-      &__Search {        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 22px auto;
-      }
-      &__Cards {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        align-items: center;
-
-        @media (min-width: 768px) {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-gap: 3rem;
-        }
-
-        @media (min-width: 1024px) {
-          grid-gap: 4rem;
-        }
-
-        @media (min-width: 1440px) {
-          grid-template-columns: 1fr 1fr 1fr;
-        }
-      }
+    @media (min-width: 768px) {
+      max-width: 71rem;
+      margin: 0 auto;
     }
+
+    @media (min-width: 1024px) {
+      max-width: 84rem;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 1440px) {
+      max-width: 128rem;
+    }
+  }
+
+  &__Content {
+    background-color: #84bab9;
+    flex-direction: column;
+    align-content: center;
+
+    &--text {
+      margin: 5.5rem 4.1rem auto 6.8rem;
+    }
+  }
+
+  &__Header {
+    margin: 0 auto;
+    padding: 0 3rem;
+    text-align: center;
+  }
+
+  &__Search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 22px auto;
+  }
+
+  &__Cards {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3rem;
+    }
+
+    @media (min-width: 1024px) {
+      grid-gap: 4rem;
+    }
+
+    @media (min-width: 1440px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

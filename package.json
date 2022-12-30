@@ -12,12 +12,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
-    "@storybook/addon-actions": "^6.5.14",
-    "@storybook/addon-essentials": "^6.5.14",
-    "@storybook/addon-interactions": "^6.5.14",
-    "@storybook/builder-webpack5": "^6.5.14",
-    "@storybook/manager-webpack5": "^6.5.14",
-    "@storybook/react": "^6.5.14",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "@storybook/manager-webpack5": "^6.5.15",
+    "@storybook/react": "^6.5.15",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.2.5",
     "sass": "^1.55.0",
@@ -26,12 +26,13 @@
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.0.1",
-    "@storybook/addon-a11y": "^6.5.14",
+    "@storybook/addon-a11y": "^6.5.15",
     "contentful": "^9.2.9",
     "jsconfig-paths-webpack-plugin": "^0.1.3",
     "next": "^12.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "swr": "^2.0.0"
+    "swr": "^2.0.0",
+    "zustand": "^4.1.5"
   }
 }

@@ -6,4 +6,4 @@ export default {
     args: {}
 }
 
-export const Primary = () => <Diet primary />;
+export const TabDiet = () => <Diet  />;

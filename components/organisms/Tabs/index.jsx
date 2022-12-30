@@ -11,7 +11,7 @@ import Diet from "@organisms/Diet";
 const TabsDemo = () => (
   /* NOME DAS TABS */
   <Tabs.Root className={styles[`TabsRoot`]} defaultValue="About">
-    <Tabs.List className={styles[`TabsList`]} aria-label="">
+    <Tabs.List className={styles[`TabsList`]} aria-label="About">
       <Tabs.Trigger
         className={styles[`TabsTrigger`]}
         aria-label="About"
@@ -25,7 +25,7 @@ const TabsDemo = () => (
           About
         </Text>
       </Tabs.Trigger>
-      <Tabs.Trigger className={styles[`TabsTrigger`]} value="Curiosities">
+      <Tabs.Trigger className={styles[`TabsTrigger`]} value="Curiosities" aria-label="Curiosities">
         <Text
           className={styles[`TabsTrigger--text`]}
           color="black"
@@ -34,7 +34,7 @@ const TabsDemo = () => (
           Curiosities
         </Text>
       </Tabs.Trigger>
-      <Tabs.Trigger className={styles[`TabsTrigger`]} value="Location">
+      <Tabs.Trigger className={styles[`TabsTrigger`]} value="Location" aria-label="Location" >
         <Text
           className={styles[`TabsTrigger--text`]}
           color="black"
@@ -43,7 +43,7 @@ const TabsDemo = () => (
           Location
         </Text>
       </Tabs.Trigger>
-      <Tabs.Trigger className={styles[`TabsTrigger`]} value="Diet">
+      <Tabs.Trigger className={styles[`TabsTrigger`]} value="Diet" aria-label="Diet">
         <Text
           className={styles[`TabsTrigger--text`]}
           color="black"
@@ -56,18 +56,20 @@ const TabsDemo = () => (
 
     {/* CONTEUDO DAS TABS */}
 
-    <Tabs.Content className={styles[`TabsContent`]} value="About">
-      <AboutContent />
-    </Tabs.Content>
-    <Tabs.Content className="TabsContent" value="Curiosities">
-      <Curiosities />
-    </Tabs.Content>
-    <Tabs.Content className="TabsContent" value="Location">
-      <Location />
-    </Tabs.Content>
-    <Tabs.Content className="TabsContent" value="Diet">
-      <Diet />
-    </Tabs.Content>
+    <div className={styles[`TabsBottom`]}>
+      <Tabs.Content className={styles[`TabsContent`]} value="About" aria-label="About">
+        <AboutContent />
+      </Tabs.Content>
+      <Tabs.Content className="TabsContent" value="Curiosities" aria-label="Curiosities">
+        <Curiosities />
+      </Tabs.Content>
+      <Tabs.Content className="TabsContent" value="Location" aria-label="Location">
+        <Location />
+      </Tabs.Content>
+      <Tabs.Content className="TabsContent" value="Diet" aria-label="Diet">
+        <Diet />
+      </Tabs.Content>
+    </div>
   </Tabs.Root>
 );
 

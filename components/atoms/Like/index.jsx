@@ -1,7 +1,7 @@
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 
 export default function Like({ liked = false, white, className }) {
-  const color = white ? '#ffffff' : '#000000';
+  const color = white ? "#ffffff" : "#000000";
   const classList = [];
   return (
     <div className={`${classList.join(" ")} ${className}`}>
