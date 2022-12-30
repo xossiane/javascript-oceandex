@@ -5,7 +5,7 @@ import Button from "@molecules/Button";
 import useContentful from "../hooks/useContentful";
 import { useEffect, useState } from "react";
 import Hero from "@organisms/Hero";
-useContentful;
+
 import btnCardIndex from "../data/btnCardIndex.json";
 import Card from "@molecules/Card";
 

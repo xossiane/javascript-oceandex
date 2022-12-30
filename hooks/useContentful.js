@@ -13,7 +13,7 @@ const useContentful = () => {
       const animalsList = client.getEntries({
         content_type: "animal",
         select: "fields",
-        include: 5,
+        include: 6,
         order: "fields.name",
         //limit: 5,
         "fields.completeAnimal": "true",

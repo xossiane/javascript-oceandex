@@ -7,8 +7,12 @@ import AboutContent from "@molecules/AboutContent";
 import CuriositiesContent from "@molecules/CuriositiesContent";
 import LocationContent from "@molecules/LocationContent";
 import DietContent from "@molecules/DietContent";
+import useFetchData from "../../../store/useFetchData";
 
-const TabsDemo = () => (
+const TabsDemo = () => {
+  const data = useFetchData((state) => state.data);
+  
+  return (
   /* NOME DAS TABS */
   <Tabs.Root className={styles[`TabsRoot`]} defaultValue="About">
     <Tabs.List className={styles[`TabsList`]} aria-label="About">
@@ -57,20 +61,20 @@ const TabsDemo = () => (
     {/* CONTEUDO DAS TABS */}
 
     <div className={styles[`TabsBottom`]}>
-      <Tabs.Content className={styles[`TabsContent`]} value="About" aria-label="About">
-        <AboutContent />
+      <Tabs.Content className={styles[`TabsContent`]} value="About"  aria-label="About">
+        <AboutContent data={data} />
       </Tabs.Content>
       <Tabs.Content className="TabsContent" value="Curiosities" aria-label="Curiosities">
-        <CuriositiesContent />
+        <CuriositiesContent data={data} />
       </Tabs.Content>
       <Tabs.Content className="TabsContent" value="Location" aria-label="Location">
-        <LocationContent />
+        <LocationContent data={data} />
       </Tabs.Content>
       <Tabs.Content className="TabsContent" value="Diet" aria-label="Diet">
-        <DietContent />
+        <DietContent data={data} />
       </Tabs.Content>
     </div>
   </Tabs.Root>
-);
+)};
 
 export default TabsDemo;
