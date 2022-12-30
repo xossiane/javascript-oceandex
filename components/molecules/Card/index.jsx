@@ -17,24 +17,23 @@ export default function Card({
   classList.push(styles[`card`]);
 
   return (
-    <button onClick={onClick} className={styles[`button`]}>
-      <div className={styles[`card__relative`]}>
-        <div className={` ${title === state ? styles[`card__relative--selected`] : ''}`}>
-        </div>
-          <div  className={`${classList.join(" ")}`}>
-            <Heading
-              level="1"
-              color="white"
-              size="small"
-              weight="normal"
-              format="uppercase"
-            >
-              {title}
-            </Heading>
-            <Image src={img} width={196} height={181} alt="" />
-            <Text size="large" color="white" weight="bold">
-              {description}
-            </Text>
+    <div className={styles[`card__relative`]}>
+      <div className={` ${title === state ? styles[`card__relative--selected`] : ''}`}>
+      </div>
+        <div onClick={onClick} className={`${classList.join(" ")}`}>
+          <Heading
+            level="1"
+            color="white"
+            size="small"
+            weight="normal"
+            format="uppercase"
+          >
+            {title}
+          </Heading>
+          <Image src={img} width={196} height={181} alt={title}/>
+          <Text size="large" color="white" weight="bold">
+            {description}
+          </Text>
 
             {
             href[0] !== "#" ?

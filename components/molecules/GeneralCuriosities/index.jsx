@@ -55,8 +55,9 @@ function GeneralCuriosities({
 
         <img
           className={styles[`GeneralCuriosities--Img`]}
-          src={curiosityImage}
-        />
+          src={animals[animalsID].tabs[0].curiosities[0].curiositiesImage}
+          key={animals[animalsID].id}
+         loading="lazy"/>
       </section>
     </>
   );

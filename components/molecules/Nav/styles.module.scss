@@ -1,0 +1,126 @@
+@use "@styles/variables";
+
+.Nav {
+  box-sizing: border-box;
+  background-color: variables.$white;
+  margin: 0 auto;
+  padding: 0 1.75rem;
+  height: 8.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+
+  @media (min-width: 1024px) {
+    width: 100%;
+    height: 14.2rem;
+    position: relative;
+    padding: 0;
+  }
+
+    &__internal {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      @media (min-width: 1024px) {
+        margin: 0 auto;  
+        height: 14.2rem;
+        padding: 0;
+        margin-left: 6rem;
+      }
+    }
+
+    &__logo {
+      cursor: pointer;
+      @media (min-width: 1024px) {
+        width: 13rem;
+      }
+    }
+
+    &__menuList {
+        display: none;
+        @media (min-width: 1024px) {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0; 
+          width: 71rem;
+        }
+        @media (min-width: 1440px) {
+          width: 109rem;
+        }
+
+        &--mobile {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          margin-top: 8.6rem;
+          padding: 0;
+          @media (min-width: 1024px) {
+            display: none;
+          }
+        }
+    }
+  &__menuLi {
+    list-style: none;
+    padding: 3rem 1rem;
+    background: variables.$white;
+    width: 100%;
+    border-bottom: 1px solid variables.$lightGrey;
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      max-width: 140px;
+      text-align: center;
+      border-bottom: none;
+      @media (min-width: 1440px) {
+        // margin-left: 3rem;
+        max-width: 110px;
+      }
+    }
+  }
+
+  &__menuItem {
+    list-style: none;
+    font-size: 2rem;
+    line-height: 1.4rem;
+    color: variables.$black;
+    cursor: pointer;
+    text-decoration: none;
+    @media (min-width: 1024px) {
+      display: block;
+      text-decoration: none;
+      color: variables.$black;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      cursor: pointer;
+      justify-content: space-between;
+    }
+  }
+
+  &__openMenu{
+    position: absolute;
+    border: none;
+    background: variables.$white;
+    top: -7rem;
+    right: 0;
+    transition: 5s ease-in-out;
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__closeMenu{
+    position: absolute;
+    border: none;
+    background: variables.$white;
+    top: -7rem;
+    right: 0;
+    transition: 0.5s ease-in-out;
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+}

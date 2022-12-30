@@ -6,4 +6,4 @@ export default {
     args: {}
 }
 
-export const Primary = () => <GeneralCuriosities primary />;
+export const AnimalsCuriosities = () => <GeneralCuriosities />;

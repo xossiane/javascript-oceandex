@@ -6,4 +6,4 @@ export default {
     args: {}
 }
 
-export const Primary = () => <MenuDesktop primary />;
+export const Nav = () => <MenuDesktop  />;

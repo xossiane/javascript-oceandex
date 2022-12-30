@@ -13,12 +13,10 @@
   &__Content {
     flex-direction: column;
     align-content: center;
-
-    &--text {
-      margin-bottom: 2.8rem;
-    }
   }
-
+  &__Text {
+    margin-bottom: 2.8rem;
+  }
   &__Arrow {
     position: absolute;
     top: 67px;

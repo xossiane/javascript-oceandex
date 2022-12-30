@@ -12,14 +12,13 @@
   }
   &__Content {
     margin-top: 3rem;
-
-    &--text {
-      margin: 5.5rem 4.1rem auto 6.8rem;
-
-      @media (max-width: variables.$tablet) {
-        background-color: variables.$white;
-        z-index: 5;
-      }
+  }
+  &__Text {
+    margin: 5.5rem 4.1rem auto 6.8rem;
+    
+    @media (max-width: variables.$tablet){
+      background-color: variables.$white;
+      z-index: 5;
     }
   }
   &__Header {
