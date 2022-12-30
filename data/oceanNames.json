@@ -1,0 +1,7 @@
+[
+  { "ocean": "pacificOcean" },
+  { "ocean": "atlanticOcean" },
+  { "ocean": "indianOcean" },
+  { "ocean": "southernOcean" },
+  { "ocean": "arcticOcean" }
+]
