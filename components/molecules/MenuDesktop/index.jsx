@@ -15,14 +15,14 @@ export default function MenuDesktop() {
           </Link>
         </li>
         <li className={styles[`NavbarDesktop__li`]}>
-          <Link href="/AnimalsCuriosities">
+          <Link href="/animals-curiosities">
             <a className={styles[`NavbarDesktop__item`]}>
               Animal's Curiosities
             </a>
           </Link>
         </li>
         <li className={styles[`NavbarDesktop__li`]}>
-          <Link href="/OceanCuriosities">
+          <Link href="/ocean-curiosities">
             <a className={styles[`NavbarDesktop__item`]}>Ocean Curiosities</a>
           </Link>
         </li>

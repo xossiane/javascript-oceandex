@@ -26,12 +26,12 @@ export default function Nav() {
               </Link>
             </li>
             <li className={styles[`Nav__menuLi`]}>
-              <Link href="/GeneralCuriosities">
+              <Link href="/animals-curiosities">
                 <a className={styles[`Nav__menuItem`]}>Animal's Curiosities</a>
               </Link>
             </li>
             <li className={styles[`Nav__menuLi`]}>
-              <Link href="/OceanCuriosities">
+              <Link href="/ocean-curiosities">
                 <a className={styles[`Nav__menuItem`]}>Ocean Curiosities</a>
               </Link>
             </li>
@@ -79,14 +79,14 @@ export default function Nav() {
                   </Link>
                 </li>
                 <li className={styles[`Nav__menuLi`]}>
-                  <Link href="/GeneralCuriosities">
+                  <Link href="/animals-curiosities">
                     <a className={styles[`Nav__menuItem`]}>
                       Animal's Curiosities
                     </a>
                   </Link>
                 </li>
                 <li className={styles[`Nav__menuLi`]}>
-                  <Link href="/OceanCuriosities">
+                  <Link href="/ocean-curiosities">
                     <a className={styles[`Nav__menuItem`]}>Ocean Curiosities</a>
                   </Link>
                 </li>

@@ -46,7 +46,7 @@ export default function MenuMobile({
               </Link>
             </li>
             <li className={styles[`Navbar__li`]}>
-              <Link href="/OceanCuriosities">
+              <Link href="/ocean-curiosities">
                 <a className={styles[`Navbar__item`]}>Ocean Curiosities</a>
               </Link>
             </li>
@@ -86,7 +86,7 @@ export default function MenuMobile({
             </Link>
           </li>
           <li className={styles[`NavbarDesktop__li`]}>
-            <Link href="/OceanCuriosities">
+            <Link href="/ocean-curiosities">
               <a className={styles[`NavbarDesktop__item`]}>Ocean Curiosities</a>
             </Link>
           </li>
