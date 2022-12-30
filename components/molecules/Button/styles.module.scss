@@ -40,12 +40,11 @@
   top: -7rem;
   left: -10rem;
   flex-direction: column;
-  
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-   
-  }
-
+ 
   @media (min-width: 1024px){
+    display: flex;
+  }
+  @media (min-width: 1440px){
     display: none;
   }
   
