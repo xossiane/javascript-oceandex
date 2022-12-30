@@ -9,7 +9,7 @@ import useFecthInput from "../../../store/useFetchInput";
 
 //console.log(animal);
 function FilterCard({ animals }) {
-    const search = useFecthInput(state => state.search)
+  const search = useFecthInput((state) => state.search);
   const filteredAnimals = animals.filter(
     (item) =>
       item.name
@@ -17,12 +17,8 @@ function FilterCard({ animals }) {
         .includes(
           search.toLowerCase()
         ) /* || item.scientificName.toLowerCase().includes(search) */ ||
-      item.classification.order
-        .toLowerCase()
-        .includes(search.toLowerCase()) ||
-      item.classification.phylum
-        .toLowerCase()
-        .includes(search.toLowerCase())
+      item.classification.order.toLowerCase().includes(search.toLowerCase()) ||
+      item.classification.phylum.toLowerCase().includes(search.toLowerCase())
   );
 
   if (filteredAnimals.length === 0 && search !== "") {
