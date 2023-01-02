@@ -29,6 +29,7 @@ export default function AboutPage() {
     const hadLiked = () =>{
         console.log(data)
         let array = localStorage.getItem('oceandex');
+        if(array !== null){
         array = JSON.parse(array)
         let had = array.findIndex((animal)=>{
           return animal.name === router.query.about
@@ -37,6 +38,7 @@ export default function AboutPage() {
         if(had !== -1){
           setLiked(true)
         }
+      }
     }
     hadLiked()
     fetchAnimals();
