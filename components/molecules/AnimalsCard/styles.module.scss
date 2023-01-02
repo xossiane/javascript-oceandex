@@ -5,17 +5,13 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 340px;
-  height: 282px;
+  width: 100%;
+  height: 100%;
   border-radius: 1rem;
   padding-bottom: 3rem;
   padding-right: 3rem;
   padding-left: 3rem;
-
-  @media (min-width: 1024px) {
-    width: 400px;
-    height: 311px;
-  }
+  cursor: pointer;
 
   &__name {
     line-height: 2.5rem;
@@ -31,7 +27,7 @@
 
   &__details {
     display: grid;
-    grid-template: "classification img" / 1fr 1fr; 
+    grid-template: "classification img" / 1fr 1fr;
     grid-gap: 2rem;
     margin: 0;
     padding: 0;
@@ -48,10 +44,10 @@
   &__img {
     grid-area: img;
     align-self: center;
-    object-fit: contain;  
-    width: 100%; 
+    object-fit: contain;
+    width: 100%;
     max-width: 170px;
-    max-height: 170px;  
+    max-height: 170px;
   }
-  @include mixins.bg_cardColor
+  @include mixins.bg_cardColor;
 }

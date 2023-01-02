@@ -20,40 +20,40 @@ export default function MainPage() {
   }, []);
   console.log(model);
   return (
-    <>
-      <div className={styles[`Home`]}>
-        <main className={styles[`Home__container`]}>
-          <Heading level="1" color="grey" weight="italic">
-            Discover the Ocean
-          </Heading>
+    <div className={styles[`Home`]}>
+      <main className={styles[`Home__container`]}>
+        <Heading level="1" color="grey" weight="italic">
+          Discover the Ocean
+        </Heading>
 
-          <Hero></Hero>
+        <Hero></Hero>
 
-          <section className={styles[`Home__content`]}>
-            <section className={styles[`Home__content`]}>
-              {btnCardIndex.map((element) => (
-                <div key={element.title}>
-                  <Button
-                    color={element.color}
-                    className={styles[`Home__buttons--unit`]}
-                    href={element.href}
-                    title={element.title}
-                    size={element.size}
-                    fontsize={element.fontsize}
-                  />
-                  <Card
-                    color={element.color}
-                    href={element.href}
-                    title={element.title}
-                    img={element.img}
-                    description={element.description}
-                  />
-                </div>
-              ))}
-            </section>
-          </section>
-        </main>
-      </div>
-    </>
+        <div className={styles[`Home__content`]}>
+          {btnCardIndex.map((element) => (
+            <Button
+              color={element.color}
+              className={styles[`Home__buttons--unit`]}
+              href={element.href}
+              title={element.title}
+              size={element.size}
+              fontsize={element.fontsize}
+              key={element.title + "Btn"}
+            />
+          ))}
+          <div className={styles[`Home__content`]}>
+            {btnCardIndex.map((element) => (
+              <Card
+                color={element.color}
+                href={element.href}
+                title={element.title}
+                img={element.img}
+                description={element.description}
+                key={element.title + "Card"}
+              />
+            ))}
+          </div>
+        </div>
+      </main>
+    </div>
   );
 }

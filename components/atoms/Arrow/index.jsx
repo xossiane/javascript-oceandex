@@ -1,14 +1,14 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
 
-export default function Arrow({ href = "/", white, direction }) {
+export default function Arrow({ href = "", white, direction, handleClick }) {
   const color = white ? "#ffffff" : "#000000";
   const classList = [styles.arrow];
   classList.push(styles[`arrow--${direction}`]);
 
   return (
     <Link href={`${href}`}>
-      <a>
+      <a onClick={handleClick}>
         <svg
           viewBox="0 0 27 34"
           fill="none"

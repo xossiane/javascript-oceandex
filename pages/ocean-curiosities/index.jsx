@@ -3,7 +3,8 @@ import Button from "@molecules/Button";
 import Card from "@molecules/Card";
 import Heading from "@atoms/Heading";
 import styles from "./styles.module.scss";
-
+import { useEffect, useState } from "react";
+import useOceanPage from "store/useOceanPage";
 
 export default function OceanWorldwide() {
   const oceans = [
@@ -45,55 +46,55 @@ export default function OceanWorldwide() {
     return lowerCase;
   };
 
-  return (
-    <>
-      <div className={styles[`OceanWorldwide`]}>
-        <div className={styles[`OceanWorldwide__container`]}>
-          <span className={styles[`OceanWorldwide__arrow`]}>
-            <Arrow direction="left" href="/" />
-          </span>
-          <section className={styles[`OceanWorldwide__header`]}>
-            <Heading
-              level="1"
-              color="black"
-              style="italic"
-            >
-              Ocean Curiosities
-            </Heading>
-          </section>
-          <div className={styles[`OceanWorldwide__content`]}>
-            <section className={styles[`OceanWorldwide__buttons`]}>
-              {oceans.map((ocean) => (
-                <>
-                  <Button
-                    href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
-                    size="large"
-                    color="purple"
-                    title={ocean.title}
-                    description={ocean.description}
-                    img={ocean.img}
-                    icon={ocean.icon}
-                    className={styles[`OceanWorldwide__buttonUnit`]}
-                    key={ocean.id}
-                  >
-                    {" "}
-                  </Button>
+  const [oceanPage, setOceanPage] = useState();
+  const setOcean = useOceanPage((state) => state.setPage);
+  useEffect(() => {
+    setOcean(oceanPage);
+  }, [oceanPage]);
 
-                  <Card
-                    color="purple"
-                    href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
-                    title={ocean.title}
-                    img={ocean.img}
-                    description={ocean.description}
-                    className={styles[`OceanWorldwide__cardUnit`]}
-                    key={ocean.id}
-                  ></Card>
-                </>
-              ))}
-            </section>
-          </div>
+  return (
+    <div className={styles[`OceanWorldwide`]}>
+      <div className={styles[`OceanWorldwide__container`]}>
+        <span className={styles[`OceanWorldwide__arrow`]}>
+          <Arrow direction="left" href="/" />
+        </span>
+        <section className={styles[`OceanWorldwide__header`]}>
+          <Heading level="1" color="black" style="italic">
+            Ocean Curiosities
+          </Heading>
+        </section>
+        <div className={styles[`OceanWorldwide__content`]}>
+          <section className={styles[`OceanWorldwide__buttons`]}>
+            {oceans.map((ocean) => (
+              <Button
+                href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
+                size="large"
+                color="purple"
+                title={ocean.title}
+                description={ocean.description}
+                img={ocean.img}
+                icon={ocean.icon}
+                handleClick={() => {
+                  setOceanPage(removeSpaces(ocean.title));
+                }}
+                key={ocean.id}
+                className={styles[`OceanWorldwide__buttonUnit`]}
+              ></Button>
+            ))}
+            {oceans.map((ocean) => (
+              <Card
+                color="purple"
+                href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
+                title={ocean.title}
+                img={ocean.img}
+                description={ocean.description}
+                className={styles[`OceanWorldwide__cardUnit`]}
+                key={ocean.id}
+              ></Card>
+            ))}
+          </section>
         </div>
       </div>
-    </>
+    </div>
   );
 }

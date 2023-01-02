@@ -8,7 +8,6 @@
   justify-content: center;
   margin-bottom: 70px;
 
-  
   // &__div {
   //   height: 400px;
   //   width: 400px;
@@ -36,10 +35,10 @@
     max-width: 1281px;
 
     @media (min-width: 1440px) {
-      //display: flex;
-      //grid-template-columns: repeat(3, 1fr);
-      align-items: center;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* align-items: center;
+      justify-content: center; */
       gap: 39px;
 
       //justify-items: center;
@@ -59,9 +58,30 @@
       margin: 1rem;
     }
   }
+  &__buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    z-index: 5;
+    width: 100%;
+    max-width: 1281px;
 
+    @media (min-width: 1440px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* align-items: center;
+      justify-content: center; */
+      gap: 39px;
+
+      //justify-items: center;
+
+      //  flex-basis: calc((100% - (n - 1) rem)/n)
+    }
+  }
   &__background {
-   position: absolute;
+    position: absolute;
     bottom: 0;
   }
 }

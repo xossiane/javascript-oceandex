@@ -1,45 +1,14 @@
 @use "@styles/variables";
 .AnimalsCuriositiesPage {
-  
-  &__Container {
-    
-    width: 100%;
-    margin-top: 3.9rem;
-    margin-bottom: 5rem;
-    z-index: 10;
-    border-top-left-radius: 4.2rem;
-    border-top-right-radius: 4.2rem;
-  }
-  &__Content {
-    margin-top: 3rem;
-
-    &--text {
-      margin: 5.5rem 4.1rem auto 6.8rem;
-      
-      @media (max-width: variables.$tablet){
-        background-color: variables.$white;
-        z-index: 5;
-      }
-    }
-  }
-  &__Header {
+  &__arrow {
     display: flex;
-    width: 100%;
-    height: 2.5rem;
-    justify-content: space-around;
-    align-items: center;
-
-  }
-
-  &__Arrow {
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    @media (min-width: variables.$tablet){
-      position: absolute;
+    position: relative;
+    justify-content: space-evenly;
+    margin: 5rem auto 0rem auto;
+    z-index: 99;
+    @media (min-width: 768px) {
+      display: flex;
+      position: relative;
     }
   }
-
-  
-
 }
