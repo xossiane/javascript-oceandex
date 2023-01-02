@@ -6,7 +6,7 @@ import Input from "@molecules/Input";
 import FilterCArd from "@molecules/FilterCard";
 import useFecthInput from "../../store/useFetchInput";
 
-export default function OceanDexPage(){
+export default function OceanDexPage() {
   const { getAnimals } = useContentful();
 
   const setData = useFecthInput((state) => state.setSearch);
@@ -39,42 +39,6 @@ export default function OceanDexPage(){
   };
 
   //console.log(animal);
-  function showAnimal() {
-    const filteredAnimals = animals.filter(
-      (item) =>
-        item.name
-          .toLowerCase()
-          .includes(
-            search.toLocaleLowerCase()
-          ) /* || item.scientificName.toLowerCase().includes(search) */ ||
-        item.classification.order
-          .toLowerCase()
-          .includes(search.toLocaleLowerCase()) ||
-        item.classification.phylum
-          .toLowerCase()
-          .includes(search.toLocaleLowerCase())
-    );
-
-    if (filteredAnimals.length === 0 && search !== "") {
-      return <Text weight="bold">No results Found</Text>;
-    } else {
-      return filteredAnimals.map((item) => {
-        return (
-          <AnimalsCard
-            href="/About"
-            key={item.id}
-            name={item.name}
-            order={item.classification.order}
-            phylum={item.classification.phylum}
-            Class={item.classification.class}
-            kingdom={item.classification.kingdom}
-            src={item.image}
-            loading="lazy"
-          />
-        );
-      });
-    }
-  }
 
   return (
     <>
@@ -106,6 +70,4 @@ export default function OceanDexPage(){
       </div>
     </>
   );
-};
-
-
+}

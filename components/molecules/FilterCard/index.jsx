@@ -2,22 +2,17 @@ import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
 import useFecthInput from "../../../store/useFetchInput";
 
-// const [animal, setAnimal] = useState([]);
-
-//console.log(authors);
-//console.log(curiosities);
-
 //console.log(animal);
 function FilterCard({ animals }) {
   const search = useFecthInput((state) => state.search);
   const filteredAnimals = animals.filter(
     (item) =>
-      item.name
-        .toLowerCase()
-        .includes(
-          search.toLowerCase()
-        ) /* || item.scientificName.toLowerCase().includes(search) */ ||
+      item.name.toLowerCase().includes(search.toLowerCase()) ||
+      item.classification.class.toLowerCase().includes(search.toLowerCase()) ||
       item.classification.order.toLowerCase().includes(search.toLowerCase()) ||
+      item.classification.kingdom
+        .toLowerCase()
+        .includes(search.toLowerCase()) ||
       item.classification.phylum.toLowerCase().includes(search.toLowerCase())
   );
 
