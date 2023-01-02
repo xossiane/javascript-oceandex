@@ -14,6 +14,7 @@ export default function AnimalsCuriositiesPage() {
             className={styles[`AnimalsCuriositiesPage__Content--text`]}
             color="black"
             style="italic"
+            pageTitle= {true}
           >
             {" "}
             Animal's Curiosities{" "}

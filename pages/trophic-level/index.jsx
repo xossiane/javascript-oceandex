@@ -17,6 +17,7 @@ export default function TrophicLevelPage() {
           style="italic"
           color="black"
           level="1"
+          pageTitle = {true}
         >
           Trophic Level
         </Heading>

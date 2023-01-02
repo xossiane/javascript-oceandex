@@ -57,6 +57,7 @@ export default function OceanWorldwide() {
               level="1"
               color="black"
               style="italic"
+              pageTitle = {true}
             >
               Ocean Curiosities
             </Heading>

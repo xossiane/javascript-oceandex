@@ -85,6 +85,7 @@ export default function OceanDexPage() {
             className={styles[`Oceandex__Content--text`]}
             color="grey"
             style="italic"
+            pageTitle={true}
           >
             {" "}
             What marine creature are you looking for?{" "}
