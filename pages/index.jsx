@@ -2,12 +2,14 @@ import styles from "../styles/home.module.scss";
 
 import Heading from "@atoms/Heading";
 import Button from "@molecules/Button";
-import useContentful from "../hooks/useContentful";
+import Card from "@molecules/Card";
+import Hero from "@organisms/Hero";
 import { useEffect, useState } from "react";
 import Hero from "@organisms/Hero";
 
 import btnCardIndex from "../data/btnCardIndex.json";
-import Card from "@molecules/Card";
+import useContentful from "../hooks/useContentful";
+useContentful;
 
 export default function MainPage() {
   const { getAnimals } = useContentful();

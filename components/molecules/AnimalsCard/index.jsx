@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import Link from "next/link";
-import styles from "./styles.module.scss";
 import Heading from "@atoms/Heading";
 import AnimalsTag from "@molecules/AnimalsTag";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import styles from "./styles.module.scss";
 
 export default function AnimalsCard({
   href,
@@ -12,6 +12,7 @@ export default function AnimalsCard({
   Class,
   kingdom,
   src,
+  onClick
 }) {
   const [color, setColor] = useState();
   let chooseColor = () => {
@@ -35,7 +36,7 @@ export default function AnimalsCard({
 
   return (
     <Link href={`${href}`}>
-      <div className={`${styles.animalsCard} ${styles[color]}`} tabIndex={"0"}>
+      <div onClick={onClick} className={`${styles.animalsCard} ${styles[color]}`} tabIndex={"0"}>
         <div className={styles.animalsCard__name}>
           <Heading level="2" color="white" weight="normal" size="small">
             {name}
