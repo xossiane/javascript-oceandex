@@ -40,7 +40,7 @@ export default function FavoriteAnimalsPage() {
 
   function showAnimal() {
     {
-      return !search
+      return (!search && animal != null)
         ? animal.map((item) => {
             return (
               <AnimalsCard
