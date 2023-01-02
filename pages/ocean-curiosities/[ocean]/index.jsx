@@ -2,22 +2,22 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 import styles from "./styles.module.scss";
-import Arrow from "@atoms/Arrow";
 import Heading from "@atoms/Heading";
 
-import oceancuriosities from "../../../data/oceanCuriosities.json";
 import Text from "@atoms/Text";
-import Background from "@atoms/Background";
+import oceanNames from "../../../data/oceanNames";
 import useContentful from "hooks/useContentful";
+import Arrow from "@atoms/Arrow";
+import useOceanPage from "store/useOceanPage";
 
-import oceanNames from "../../../data/oceanNames.json";
+function OceanCuriosities({ params }) {
+  const { getCuriosities } = useContentful();
+  console.log(params);
+  const [curiositiesID, setcuriositiesID] = useState(0);
+  const [allOceanCuriosities, setallOceanCuriosities] = useState([]);
+  const [loading, setLoading] = useState();
+  const [oceanName, setOceanName] = useState([]);
 
-function OceanCuriosities({ oceanCuriosities }) {
-  const curiosities = oceancuriosities;
-  const router = useRouter();
-  const { ocean } = router.query;
-
-  console.log(oceanNames);
   const defineOcean = () => {
     const oceans = {
       pacificOcean: "pacific",
@@ -26,31 +26,25 @@ function OceanCuriosities({ oceanCuriosities }) {
       southernOcean: "southern",
       arcticOcean: "arctic",
     };
-    return oceans[ocean];
+    return oceans[oceanName];
   };
-  const oceans = oceanNames;
-  console.log(oceans);
-  const { getCuriosities } = useContentful();
-  const [loading, setLoading] = useState();
-  /* const testeOcean = oceanCuriosities;
-  consolelog(testeOcean); 
-  const oceanListLength = oceanCuriosities.length - 1;
-  */
-  // const [oceanCuriosities, setOceanCuriosities] = useState([]);
 
-  /* useEffect(() => {
-    setLoading(true);
+  useEffect(() => {
+    /* setLoading(true);
+    const ocean = JSON.parse(localStorage.getItem("oceanName"));
+    if (ocean) {
+      setOceanName(ocean);
+    } */
+
     async function fetchCuriosities() {
-      const response = await getCuriosities("ocean", defineOcean());
-      setOceanCuriosities(response);
+      const curiosity = await getCuriosities("ocean");
+      setallOceanCuriosities(curiosity);
     }
     fetchCuriosities();
     setLoading(false);
-  }, [ocean]); */
+  }, [oceanName]);
 
-  //console.log(oceanListLength);
-
-  const [curiositiesID, setcuriositiesID] = useState(0);
+  const oceanListLength = allOceanCuriosities.length - 1;
 
   function handleClickSum() {
     if (curiositiesID < oceanListLength) {
@@ -72,11 +66,10 @@ function OceanCuriosities({ oceanCuriosities }) {
       setcuriositiesID(oceanListLength);
     }
   }
-  /* console.log(ocean);
-  console.log(defineOcean());
-  console.log(oceanCuriosities); */
-  //console.log("Length " + oceanListLength);
-  console.log("ID " + curiositiesID);
+  /* console.log(oceanName);
+  console.log(allOceanCuriosities);
+  console.log("Length " + oceanListLength);
+  console.log("ID " + curiositiesID); */
 
   return (
     <div className={styles[`OceanCuriosities__container`]}>
@@ -88,34 +81,29 @@ function OceanCuriosities({ oceanCuriosities }) {
             color="black"
             style="italic"
           >
-            {/* {!loading ? oceanCuriosities[curiositiesID].oceanName : "Loading"} */}
+            Pacific Ocean
           </Heading>
         </section>
-        <>
-          <img
-            className={styles[`OceanCuriosities--Img`]}
-            //src={oceanCuriosities[curiositiesID].image}
-          />
-          <Text
-            className={styles[`OceanCuriosities--Text`]}
-            color="black"
-            size="small"
-          >
-            {/* {oceanCuriosities[curiositiesID].description} */}
-          </Text>
-          <div></div>
-        </>
+        <img
+          className={styles[`OceanCuriosities--Img`]}
+          src="/assets/images/oceans/PacificOcean.jpg"
+        />
+        <Text
+          className={styles[`OceanCuriosities--Text`]}
+          color="black"
+          size="small"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis
+          justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse
+          ut eleifend justo, id consequat ex.
+        </Text>
+        <div></div>
       </section>
 
       <div className={styles[`OceanCuriosities--Arrow`]}>
-        {/* <Arrow direction="left" />
-        <Arrow direction="right" /> */}
-        <span onClick={handleClickSub}>
-          <p>antes</p>
-        </span>
-        <span onClick={handleClickSum}>
-          <p>depois</p>
-        </span>
+        <Arrow href="" direction="left" handleClick={handleClickSub} />
+        <Arrow href="" direction="right" handleClick={handleClickSum} />
       </div>
     </div>
   );
@@ -125,8 +113,9 @@ export default OceanCuriosities;
 
 export async function getStaticPaths() {
   const oceans = oceanNames;
-
   const paths = oceans.map((ocean) => {
+    //console.log(ocean);
+
     return {
       params: { ocean: ocean.ocean },
     };
@@ -135,12 +124,16 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export async function getStaticProps() {
-  const { getCuriosities } = useContentful();
-  const router = useRouter();
-  const { ocean } = router.query;
+export async function getStaticProps({ params }) {
+  console.log(params);
+  /*  if (ocean) {
+    setOceanName(ocean);
+  }
+  console.log(oceanName); */
+  //const ocean = router;
+  //console.log(ocean);
 
-  const defineOcean = () => {
+  /* const defineOcean = () => {
     const oceans = {
       pacificOcean: "pacific",
       atlanticOcean: "atlantic",
@@ -150,11 +143,14 @@ export async function getStaticProps() {
     };
     return oceans[ocean];
   };
+  console.log(defineOcean());
 
   const oceanCuriosities = await getCuriosities("ocean", defineOcean());
+  const teste = "aaa"; 
+*/
   return {
     props: {
-      oceanCuriosities,
+      params: params.ocean,
     },
   };
 }

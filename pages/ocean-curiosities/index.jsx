@@ -1,14 +1,10 @@
 import Arrow from "@atoms/Arrow";
-import Background from "@atoms/Background";
 import Button from "@molecules/Button";
 import Card from "@molecules/Card";
 import Heading from "@atoms/Heading";
-import Text from "@atoms/Text";
-import Header from "@organisms/Header";
-import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
-import useContentful from "../../hooks/useContentful";
-import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import useOceanPage from "store/useOceanPage";
 
 export default function OceanWorldwide() {
   const oceans = [
@@ -50,54 +46,59 @@ export default function OceanWorldwide() {
     return lowerCase;
   };
 
-  return (
-    <>
-      <div className={styles[`OceanWorldwide`]}>
-        <div className={styles[`OceanWorldwide__container`]}>
-          <span className={styles[`OceanWorldwide__Arrow`]}>
-            <Arrow direction="left" href="/" />
-          </span>
-          <section className={styles[`OceanWorldwide__header`]}>
-            <Heading
-              level="1"
-              className={styles[`OceanWorldwide__container--text`]}
-              color="black"
-              style="italic"
-            >
-              Ocean Curiosities
-            </Heading>
-          </section>
-          <div className={styles[`OceanWorldwide__content`]}>
-            <section className={styles[`OceanWorldwide__content--buttons`]}>
-              {oceans.map((ocean) => (
-                <>
-                  <Button
-                    href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
-                    size="large"
-                    color="purple"
-                    title={ocean.title}
-                    description={ocean.description}
-                    img={ocean.img}
-                    icon={ocean.icon}
-                    className={styles[`OceanWorldwide__buttonUnit`]}
-                  >
-                    {" "}
-                  </Button>
+  const [oceanPage, setOceanPage] = useState();
+  const setOcean = useOceanPage((state) => state.setPage);
+  useEffect(() => {
+    localStorage.setItem("oceanName", JSON.stringify(oceanPage));
+    setOcean(oceanPage);
+  }, [oceanPage]);
 
-                  <Card
-                    color="purple"
-                    href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
-                    title={ocean.title}
-                    img={ocean.img}
-                    description={ocean.description}
-                    className={styles[`OceanWorldwide__cardUnit`]}
-                  ></Card>
-                </>
-              ))}
-            </section>
-          </div>
+  return (
+    <div className={styles[`OceanWorldwide`]}>
+      <div className={styles[`OceanWorldwide__container`]}>
+        <span className={styles[`OceanWorldwide__Arrow`]}>
+          <Arrow direction="left" href="/" />
+        </span>
+        <section className={styles[`OceanWorldwide__header`]}>
+          <Heading
+            level="1"
+            className={styles[`OceanWorldwide__container--text`]}
+            color="black"
+            style="italic"
+          >
+            Ocean Curiosities
+          </Heading>
+        </section>
+        <div className={styles[`OceanWorldwide__content`]}>
+          <section className={styles[`OceanWorldwide__content--buttons`]}>
+            {oceans.map((ocean) => (
+              <Button
+                href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
+                size="large"
+                color="purple"
+                title={ocean.title}
+                description={ocean.description}
+                img={ocean.img}
+                icon={ocean.icon}
+                handleClick={() => {
+                  setOceanPage(removeSpaces(ocean.title));
+                }}
+                className={styles[`OceanWorldwide__buttonUnit`]}
+              ></Button>
+            ))}
+            {oceans.map((ocean) => (
+              <Card
+                color="purple"
+                href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
+                title={ocean.title}
+                img={ocean.img}
+                description={ocean.description}
+                className={styles[`OceanWorldwide__cardUnit`]}
+              ></Card>
+            ))}
+          </section>
         </div>
       </div>
-    </>
+    </div>
   );
 }
