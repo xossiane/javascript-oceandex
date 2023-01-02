@@ -2,6 +2,8 @@
   &__ContainerBackgroundImage {
     position: relative;
     width: 100%;
+    z-index: -1;
+
     &__BackgroundImage {
       opacity: 0.2;
       position: absolute;
