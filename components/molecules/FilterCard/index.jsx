@@ -40,7 +40,7 @@ function FilterCard({ animals }) {
     return filteredAnimals.map((item) => {
       return (
         <AnimalsCard
-          href="/favorite-animals"
+          href={`oceandex/${item.name}`}
           onClick={()=>likeAnimal(item)}
           key={item.id}
           name={item.name}
