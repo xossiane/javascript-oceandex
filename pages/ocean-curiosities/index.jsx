@@ -14,31 +14,31 @@ export default function OceanWorldwide() {
   const oceans = [
     {
       title: "Pacific Ocean",
-      img: "/assets/images/icons/pacific.svg",
+      img: "/assets/svg/cardIcons/pacific.svg",
       description: "The biggest ocean",
       icon: "/assets/images/designIcons/ocean1.png",
     },
     {
       title: "Atlantic Ocean",
-      img: "/assets/images/icons/atlantic.svg",
+      img: "/assets/svg/cardIcons/atlantic.svg",
       description: "Sea of the atlas",
       icon: "/assets/images/designIcons/ocean2.png",
     },
     {
       title: "Indian Ocean",
-      img: "/assets/images/icons/indian.svg",
+      img: "/assets/svg/cardIcons/indian.svg",
       description: "Third-largest ocean",
       icon: "/assets/images/designIcons/ocean3.png",
     },
     {
       title: "Southern Ocean",
-      img: "/assets/images/icons/southern.svg",
+      img: "/assets/svg/cardIcons/southern.svg",
       description: "Portions of oceans",
       icon: "/assets/images/designIcons/ocean4.png",
     },
     {
       title: "Arctic Ocean",
-      img: "/assets/images/icons/artic.svg",
+      img: "/assets/svg/cardIcons/artic.svg",
       description: "The smallest ocean",
       icon: "/assets/images/designIcons/ocean6.png",
     },

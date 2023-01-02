@@ -1,5 +1,5 @@
 import AnimalsCard from ".";
-import jellyfish from "../../../public/assets/images/icons/11-jellyfish.png";
+import jellyfish from "../../../public/assets/images/storybook/jellyfish.png";
 
 export default {
   title: "Molecules/AnimalsCard",

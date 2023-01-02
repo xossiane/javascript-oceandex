@@ -1,6 +1,3 @@
-// import Arrow from "@atoms/ArrowLeft";
-// import Background from "@atoms/Background";
-// import Button from "@atoms/Button";
 import Heading from "@atoms/Heading";
 import Text from "@atoms/Text";
 import Button from "@molecules/Button";
@@ -35,7 +32,7 @@ export default function TrophicLevelPage() {
             color="oliveGreen"
             description="Below 200 meters"
             onClick={() => setSelected("Deep Ocean")}
-            img="/assets/images/icons/deep_ocean.svg"
+            img="/assets/svg/cardIcons/deep_ocean.svg"
             state={selected}
             loading="lazy"
           />
@@ -45,7 +42,7 @@ export default function TrophicLevelPage() {
             color="oliveGreen"
             description="Coldest waters"
             onClick={() => setSelected("Arctic Ocean")}
-            img="/assets/images/icons/artic_ocean.svg"
+            img="/assets/svg/cardIcons/artic_ocean.svg"
             state={selected}
             loading="lazy"
           />
@@ -55,7 +52,7 @@ export default function TrophicLevelPage() {
             color="oliveGreen"
             description="Where light meets water"
             onClick={() => setSelected("Pelagic Ocean")}
-            img="/assets/images/icons/pelagic_ocean.svg"
+            img="/assets/svg/cardIcons/pelagic_ocean.svg"
             state={selected}
             loading="lazy"
           />
@@ -64,14 +61,14 @@ export default function TrophicLevelPage() {
             color="oliveGreen"
             title="Deep Ocean"
             description="Below 200 meters"
-            img="/assets/images/icons/deep_ocean.svg"
+            img="/assets/svg/cardIcons/deep_ocean.svg"
             loading="lazy"
           />
           <Button
             href=""
             color="oliveGreen"
             description="Coldest waters"
-            img="/assets/images/icons/artic_ocean.svg"
+            img="/assets/svg/cardIcons/artic_ocean.svg"
             title="Arctic Ocean"
             loading="lazy"
           />
@@ -79,7 +76,7 @@ export default function TrophicLevelPage() {
             href=""
             color="oliveGreen"
             description="Where light meets water"
-            img="/assets/images/icons/pelagic_ocean.svg"
+            img="/assets/svg/cardIcons/pelagic_ocean.svg"
             title="Pelagic Ocean"
             loading="lazy"
           />

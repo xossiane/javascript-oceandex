@@ -58,7 +58,7 @@ export default function Nav() {
                 onClick={() => setShowMenu(false)}
               >
                 <GlobalSvg
-                  iconPath="/assets/images/svg/Hamburger.svg"
+                  iconPath="/assets/svg/icons/Menu.svg"
                   alt="Open menu"
                 />
               </button>
@@ -69,7 +69,7 @@ export default function Nav() {
                   onClick={() => setShowMenu(true)}
                 >
                   <GlobalSvg
-                    iconPath="/assets/images/svg/Close.svg"
+                    iconPath="/assets/svg/icons/Close.svg"
                     alt="Close Menu"
                   />
                 </button>

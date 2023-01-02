@@ -1,11 +1,11 @@
 import GlobalSvg from ".";
-import menuIcon from '../../../public/assets/images/svg/Hamburger.svg';
-import closeIcon from '../../../public/assets/images/svg/Close.svg';
-import searchIcon from '../../../public/assets/images/svg/SearchIcon.svg';
-import instagramLogo from '../../../public/assets/images/svg/InstagramLogo.svg';
-import linkedinLogo from '../../../public/assets/images/svg/LinkedinLogo.svg';
-import githubLogo from '../../../public/assets/images/svg/GithubLogo.svg';
-import figmaLogo from '../../../public/assets/images/svg/FigmaLogo.svg';
+import menuIcon from '../../../public/assets/svg/icons/Menu.svg';
+import closeIcon from '../../../public/assets/svg/icons/Close.svg';
+import searchIcon from '../../../public/assets/svg/icons/SearchIcon.svg';
+import instagramLogo from '../../../public/assets/svg/icons/InstagramLogo.svg';
+import linkedinLogo from '../../../public/assets/svg/icons/LinkedinLogo.svg';
+import githubLogo from '../../../public/assets/svg/icons/GithubLogo.svg';
+import figmaLogo from '../../../public/assets/svg/icons/FigmaLogo.svg';
 
 export default {
   title: "Atoms/GlobalSvg",

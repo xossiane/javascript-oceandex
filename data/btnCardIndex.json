@@ -3,7 +3,7 @@
       "color": "blue",
       "href": "/oceandex",
       "description": "Animal's list",
-      "img": "/assets/images/icons/icon.svg",
+      "img": "/assets/svg/cardIcons/icon.svg",
       "title": "Oceandex",
       "fontsize":"fontsmall",
       "size": "medium"
@@ -12,7 +12,7 @@
       "color": "purple",
       "href": "/ocean-curiosities",
       "description": "Ocean's Curiosities",
-      "img": "/assets/images/icons/oceanworldwide.svg",
+      "img": "/assets/svg/cardIcons/oceanworldwide.svg",
       "title": "Ocean Worldwide",
       "fontsize":"fontsmall",
       "size": "medium"
@@ -21,7 +21,7 @@
       "color": "green",
       "href": "/animals-curiosities",
       "description": "Animal's Curiosities",
-      "img": "/assets/images/icons/general.svg",
+      "img": "/assets/svg/cardIcons/general.svg",
       "title": "Animal's Curiosities",
       "fontsize":"fontsmall",
       "size": "medium"
@@ -30,7 +30,7 @@
       "color": "oliveGreen",
       "href": "/trophic-level",
       "description": "Food Chain",
-      "img": "/assets/images/icons/trophic.svg",
+      "img": "/assets/svg/cardIcons/trophic.svg",
       "title": "Trophic Level",
       "fontsize":"fontsmall",
       "size": "medium"
@@ -39,7 +39,7 @@
       "color": "pink",
       "href": "/favorite-animals",
       "description": "Selected animals (by heart)",
-      "img": "/assets/images/icons/favorite.svg",
+      "img": "/assets/svg/cardIcons/favorite.svg",
       "title": "Favorite Animals",
       "fontsize":"fontsmall",
       "size": "medium"
@@ -48,7 +48,7 @@
       "color": "red",
       "href": "/authors",
       "description": "Who made this",
-      "img": "/assets/images/icons/author.svg",
+      "img": "/assets/svg/cardIcons/author.svg",
       "title": "Authors",
       "fontsize":"fontsmall",
       "size": "medium"

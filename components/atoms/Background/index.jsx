@@ -6,14 +6,14 @@ export default function Background() {
         className={
           styles[`Background__ContainerBackgroundImage__BackgroundImage`]
         }
-        src="/assets/images/extras/backgroundLarge2.png"
+        src="/assets/images/background/backgroundLarge2.png"
         alt=""
       />
       <img
         className={
           styles[`Background__ContainerBackgroundImage__BackgroundImageMobile`]
         }
-        src="/assets/images/extras/background.png"
+        src="/assets/images/background/background.png"
         alt=""
       />
     </div>

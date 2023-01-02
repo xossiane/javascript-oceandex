@@ -19,14 +19,14 @@ export default function AuthorsMolecule({
           tabIndex={"0"}
           alt={"Redirect to author's  Linkedin"}
           external
-          iconPath="/assets/images/svg/LinkedinLogo.svg"
+          iconPath="/assets/svg/icons/LinkedinLogo.svg"
         />
         <GlobalSvg
           href={githubLink}
           tabIndex={"0"}
           alt={"Redirect to author's Github"}
           external
-          iconPath="/assets/images/svg/GithubLogo.svg"
+          iconPath="/assets/svg/icons/GithubLogo.svg"
         />
       </div>
     </article>

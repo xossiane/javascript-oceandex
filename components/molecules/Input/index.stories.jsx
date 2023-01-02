@@ -1,5 +1,4 @@
 import Input from ".";
-import searchIcon from "../../../public/assets/images/svg/SearchIcon.svg";
 
 export default {
   title: "Molecules/Input",
