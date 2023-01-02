@@ -6,4 +6,4 @@ export default {
     args: {}
 }
 
-export const Curiosities = () => <CuriositiesContent  />;
+export const Default = {};

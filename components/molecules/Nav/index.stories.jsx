@@ -6,4 +6,4 @@ export default {
   args: {},
 };
 
-export const Navigation = () => <Navigation  />;
+export const Default = {};

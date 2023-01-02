@@ -3,14 +3,19 @@ import AnimalsTag from ".";
 export default {
   title: "Molecules/AnimalsTag",
   component: AnimalsTag,
-  args: {},
+  args: {
+    label: "Crab",
+    text: "text",
+  },
+  argTypes: {
+    label: {
+      control: "radio",
+      options: ["Crab", "Dumbo octopus", "Green Sea Turtle"],
+    },
+  },
   parameters: {
     backgrounds: { default: "dark-mode" },
   },
 };
 
-export const SmallTag = () => <AnimalsTag label="Crab" text="text" />;
-export const MediumTag = () => <AnimalsTag label="Dumbo octopus" text="text" />;
-export const LargeTag = () => (
-  <AnimalsTag label="Green Sea Turtle" text="text" />
-);
+export const Default = {};

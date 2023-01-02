@@ -6,4 +6,4 @@ export default {
     args: {}
 }
 
-export const HeroComponent = () => <Hero />;
+export const Default = {};

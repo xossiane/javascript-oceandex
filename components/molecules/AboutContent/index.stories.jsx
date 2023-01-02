@@ -6,4 +6,4 @@ export default {
     args: {}
 }
 
-export const About = () => <AboutContent />;
+export const Default = {};
