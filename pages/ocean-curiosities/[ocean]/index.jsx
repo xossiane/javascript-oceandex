@@ -69,42 +69,39 @@ function OceanCuriosities({ oceanCuriosities }) {
   //console.log("Length " + oceanListLength);
   console.log("ID " + curiositiesID);
   return (
-    <div className={styles[`OceanCuriosities__container`]}>
-      <section className={styles[`OceanCuriosities__content`]}>
-        <section className={styles[`OceanCuriosities__header`]}>
+    <div className={styles[`OceanCuriosities`]}>
+      <section className={styles[`OceanCuriosities__Content`]}>
+        <section className={styles[`OceanCuriosities__Header`]}>
           <Heading
             level="1"
-            className={styles[`OceanCuriosities__container--text`]}
+            className={styles[`OceanCuriosities__Text`]}
             color="black"
             style="italic"
           >
-            {/* {!loading ? oceanCuriosities[curiositiesID].oceanName : "Loading"} */}
+            Pacific Ocean
           </Heading>
         </section>
         <>
           <img
-            className={styles[`OceanCuriosities--Img`]}
-            //src={oceanCuriosities[curiositiesID].image}
+            className={styles[`OceanCuriosities__Img`]}
+            src="/assets/images/oceans/PacificOcean.jpg"
           />
           <Text
-            className={styles[`OceanCuriosities--Text`]}
+            className={styles[`OceanCuriosities__Text`]}
             color="black"
             size="small"
           >
-            {/* {oceanCuriosities[curiositiesID].description} */}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            libero metus, fermentum et ex eu, vestibulum placerat enim. Ut
+            turpis justo, lacinia non justo egestas, pretium vehicula lectus.
+            Suspendisse ut eleifend justo, id consequat ex.
           </Text>
           <div></div>
         </>
       </section>
-      <div className={styles[`OceanCuriosities--Arrow`]}>
-        {/* <Arrow direction="left" />
-        <Arrow direction="right" /> */}
-        <span onClick={handleClickSub}>
-          <p>antes</p>
-        </span>
-        <span onClick={handleClickSum}>
-          <p>depois</p>
-        </span>
+      <div className={styles[`OceanCuriosities__Arrow`]}>
+        <Arrow href="" direction="left" handleClick={handleClickSub} />
+        <Arrow href="" direction="right" handleClick={handleClickSum} />
       </div>
     </div>
   );
