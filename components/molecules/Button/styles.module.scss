@@ -15,7 +15,7 @@
   color: white;
   font-size: 1.8rem;
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     display: none;
   }
   &--medium {
@@ -40,10 +40,6 @@
   top: -7rem;
   left: -10rem;
   flex-direction: column;
-  
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-   
-  }
 
   @media (min-width: 1024px){
     display: none;

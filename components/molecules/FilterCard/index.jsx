@@ -16,13 +16,32 @@ function FilterCard({ animals }) {
       item.classification.phylum.toLowerCase().includes(search.toLowerCase())
   );
 
+  const likeAnimal = (item) => {
+    let array = localStorage.getItem('oceandex')
+      if(array === null){
+        array = []
+        array.push(item)
+        let animal = JSON.stringify(array)
+        localStorage.setItem('oceandex',animal)
+      }else{
+        array = JSON.parse(array)
+        let findItem = array.findIndex(itemArray => itemArray.id === item.id)
+        if(findItem === -1){
+          array.push(item)
+          let animal = JSON.stringify(array)
+          localStorage.setItem('oceandex',animal)
+        }
+      }
+  }
+
   if (filteredAnimals.length === 0 && search !== "") {
     return <Text weight="bold">No results Found</Text>;
   } else {
     return filteredAnimals.map((item) => {
       return (
         <AnimalsCard
-          href={`/oceandex/${item.name}`}
+          href={`oceandex/${item.name}`}
+          onClick={()=>likeAnimal(item)}
           key={item.id}
           name={item.name}
           order={item.classification.order}
