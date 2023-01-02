@@ -21,7 +21,7 @@ export default function Button({
   classList.push(styles[`button`]);
 
   const Router = useRouter()
-  console.log(Router.query)
+  
 
   return (
     <Link href={`${href}`}>
