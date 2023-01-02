@@ -8,7 +8,6 @@
   * [Tools and Technologies Used](#tools-and-technologies-used)
   * [Contributing People](#contributing-people)
   * [Developers](#developers)
-  * [License](#license)
 
 ## Project Description
 
@@ -63,6 +62,3 @@ Bruno Freitas <br />
 [@Kelly Cesário](https://github.com/kellycesario) <br />
 [@Matthew Nascimento](https://github.com/xMattRx) <br />
 [@Natanael Silva](https://github.com/natanael-silv) <br />
-
-
-## License 
