@@ -1,4 +1,4 @@
-// import Arrow from "@atoms/ArrowLeft";
+import Arrow from "@atoms/Arrow";
 // import Background from "@atoms/Background";
 // import Button from "@atoms/Button";
 import Heading from "@atoms/Heading";
@@ -13,16 +13,25 @@ export default function TrophicLevelPage() {
 
   return (
     <>
-        <Heading
-          style="italic"
-          color="black"
-          level="1"
-        >
-          Trophic Level
-        </Heading>
-        <Text className={styles[`TrophicLevel__Paragraph`]} size="large">
-        Based on the source of their nutrition or food, organisms occupy a specific place in the food chain known as their trophic level. Primary producers comprise the first trophic level, followed by primary consumers (herbivores), secondary consumers (carnivores are feeding on herbivores), etc. Food webs are the complex networks through which energy and materials move in an environment, from microbes all the way through to predators. They are often studied and modelled in terms of the flow of energy between different organisms. Marine food webs include all animals living in the sea, from phytoplankton, bacteria and small shrimp-like animals in the water, to animals living on the sea bed like sponges and corals, to fish, squid, whales, seals and seabirds.
-        </Text>
+      <div className={styles[`TrophicLevel__Arrow`]}>
+        <Arrow href="#content" direction="top" />
+      </div>
+      <Heading id="content" style="italic" color="black" level="1">
+        Trophic Level
+      </Heading>
+      <Text className={styles[`TrophicLevel__Paragraph`]} size="large">
+        Based on the source of their nutrition or food, organisms occupy a
+        specific place in the food chain known as their trophic level. Primary
+        producers comprise the first trophic level, followed by primary
+        consumers (herbivores), secondary consumers (carnivores are feeding on
+        herbivores), etc. Food webs are the complex networks through which
+        energy and materials move in an environment, from microbes all the way
+        through to predators. They are often studied and modelled in terms of
+        the flow of energy between different organisms. Marine food webs include
+        all animals living in the sea, from phytoplankton, bacteria and small
+        shrimp-like animals in the water, to animals living on the sea bed like
+        sponges and corals, to fish, squid, whales, seals and seabirds.
+      </Text>
 
       <div className={styles[`TrophicLevel__ContainerCard`]}>
         <Card
