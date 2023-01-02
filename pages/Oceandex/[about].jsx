@@ -45,7 +45,6 @@ export default function AboutPage() {
   }, [router.query.about]);
 
 
-
   const likeAnimal = (item) => {
     let array = localStorage.getItem('oceandex')
     if(liked === false){
@@ -77,11 +76,6 @@ export default function AboutPage() {
 
   const data = useFetchData((state) => state.data);
   
-  useEffect(()=>{
-    data && console.log(data)
-  },[])
-
-
   if (data) {
     return (
       <div className={styles[`AboutPage`]}>
