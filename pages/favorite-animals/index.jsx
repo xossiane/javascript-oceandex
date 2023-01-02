@@ -17,14 +17,14 @@ export default function FavoriteAnimalsPage() {
   useEffect(() => {
     if (!search) {
         let array = []
+        let arrayKey = []
         
         setLoading(true);
        
         let size = localStorage.length
-        
-       
 
         for (let index = 0; index <= size; index++) {
+
           let animal = localStorage.getItem(localStorage.key(index))
           console.log(animal)
           try{
@@ -32,13 +32,19 @@ export default function FavoriteAnimalsPage() {
           }catch(e){
           }
           let id = localStorage.key(index)
+          arrayKey.push(id)
           let key = Number.parseInt(id)
+          
           let isNumber = Number.isInteger(key)
           if(isNumber && (animal !== null) && (id !== null) && (typeof(animal) === 'object')){
             array.push(animal)
           }
         }
       
+      if(arrayKey.includes('oceandex') === false){
+        localStorage.clear()
+        localStorage.setItem('oceandex', true)
+      }
       
       setAnimal(array);
       setLoading(false);
