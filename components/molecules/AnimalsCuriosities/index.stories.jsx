@@ -1,9 +1,9 @@
-import animalsCuriosities from '.'
+import AnimalsCuriosities from '.'
 
 export default {
-    title: "Molecules/animalsCuriosities",
-    component: animalsCuriosities,
+    title: "Molecules/AnimalsCuriosities",
+    component: AnimalsCuriosities,
     args: {}
 }
 
-export const Primary = () => <animalsCuriosities primary />;
+export const Default = {};

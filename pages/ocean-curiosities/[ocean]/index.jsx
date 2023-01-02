@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-
 import styles from "./styles.module.scss";
 import Heading from "@atoms/Heading";
 
@@ -72,45 +71,44 @@ function OceanCuriosities({ params }) {
   console.log("ID " + curiositiesID); */
 
   return (
-    <div className={styles[`OceanCuriosities__container`]}>
-      <section className={styles[`OceanCuriosities__content`]}>
-        <section className={styles[`OceanCuriosities__header`]}>
+    <div className={styles[`OceanCuriosities`]}>
+      <section className={styles[`OceanCuriosities__Content`]}>
+        <section className={styles[`OceanCuriosities__Header`]}>
           <Heading
             level="1"
-            className={styles[`OceanCuriosities__container--text`]}
+            className={styles[`OceanCuriosities__Text`]}
             color="black"
             style="italic"
           >
             Pacific Ocean
           </Heading>
         </section>
-        <img
-          className={styles[`OceanCuriosities--Img`]}
-          src="/assets/images/oceans/PacificOcean.jpg"
-        />
-        <Text
-          className={styles[`OceanCuriosities--Text`]}
-          color="black"
-          size="small"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis
-          justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse
-          ut eleifend justo, id consequat ex.
-        </Text>
-        <div></div>
+        <>
+          <img
+            className={styles[`OceanCuriosities__Img`]}
+            src="/assets/images/oceans/PacificOcean.jpg"
+          />
+          <Text
+            className={styles[`OceanCuriosities__Text`]}
+            color="black"
+            size="small"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            libero metus, fermentum et ex eu, vestibulum placerat enim. Ut
+            turpis justo, lacinia non justo egestas, pretium vehicula lectus.
+            Suspendisse ut eleifend justo, id consequat ex.
+          </Text>
+          <div></div>
+        </>
       </section>
-
-      <div className={styles[`OceanCuriosities--Arrow`]}>
+      <div className={styles[`OceanCuriosities__Arrow`]}>
         <Arrow href="" direction="left" handleClick={handleClickSub} />
         <Arrow href="" direction="right" handleClick={handleClickSum} />
       </div>
     </div>
   );
 }
-
 export default OceanCuriosities;
-
 export async function getStaticPaths() {
   const oceans = oceanNames;
   const paths = oceans.map((ocean) => {
@@ -120,7 +118,6 @@ export async function getStaticPaths() {
       params: { ocean: ocean.ocean },
     };
   });
-
   return { paths, fallback: false };
 }
 

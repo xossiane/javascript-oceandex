@@ -6,4 +6,4 @@ export default {
     args: {}
 }
 
-export const Location = () => <LocationContent />;
+export const Default = {};

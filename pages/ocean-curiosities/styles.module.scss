@@ -9,60 +9,43 @@
     z-index: 100;
     margin-bottom: 2rem;
   }
-  &__Arrow {
+  &__arrow {
     position: absolute;
     top: 5rem;
     left: 2rem;
   }
 
-  &--rectangle {
-    display: flex;
-  }
   &__buttonUnit {
     margin-left: 1rem;
-    @media (min-width: 1024px) {
-    }
   }
   &__content {
     display: flex;
-    //z-index: 100;
-
-    // width: 1;
-    min-height: 70vh;
-    //flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    &--buttons {
-      display: flex;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    position: relative;
+    z-index: 100;
+    row-gap: 20px;
+    @media (min-width: 700px) {
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-width: 100%;
-      position: relative;
-      //min-height: 100vh;
-      row-gap: 3.4rem;
-      @media (min-width: 700px) {
-        flex-direction: column;
-      }
+    }
 
-      @media (min-width: 1440px) {
-        //display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        //align-items: center;
-        // justify-content: center;
-        padding-top: 10rem;
-        max-width: 128rem;
-      }
-
-      // padding-top: 300px;
-      //height: 54rem;
+    @media (min-width: 1440px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 128rem;
+      gap: 2rem;
     }
   }
   &__cardUnit {
     display: none;
-    @media (min-width: 1024px) {
+    @media (width: 1024px) {
       display: flex;
       flex-direction: column;
       align-items: center;

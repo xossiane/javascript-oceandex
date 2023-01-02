@@ -6,4 +6,4 @@ export default {
   args: {},
 };
 
-export const DefaultLayout = () => <Layout />;
+export const Default = {};

@@ -56,21 +56,16 @@ export default function OceanWorldwide() {
   return (
     <div className={styles[`OceanWorldwide`]}>
       <div className={styles[`OceanWorldwide__container`]}>
-        <span className={styles[`OceanWorldwide__Arrow`]}>
+        <span className={styles[`OceanWorldwide__arrow`]}>
           <Arrow direction="left" href="/" />
         </span>
         <section className={styles[`OceanWorldwide__header`]}>
-          <Heading
-            level="1"
-            className={styles[`OceanWorldwide__container--text`]}
-            color="black"
-            style="italic"
-          >
+          <Heading level="1" color="black" style="italic">
             Ocean Curiosities
           </Heading>
         </section>
         <div className={styles[`OceanWorldwide__content`]}>
-          <section className={styles[`OceanWorldwide__content--buttons`]}>
+          <section className={styles[`OceanWorldwide__buttons`]}>
             {oceans.map((ocean) => (
               <Button
                 href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
@@ -83,6 +78,7 @@ export default function OceanWorldwide() {
                 handleClick={() => {
                   setOceanPage(removeSpaces(ocean.title));
                 }}
+                key={ocean.id}
                 className={styles[`OceanWorldwide__buttonUnit`]}
               ></Button>
             ))}
@@ -94,6 +90,7 @@ export default function OceanWorldwide() {
                 img={ocean.img}
                 description={ocean.description}
                 className={styles[`OceanWorldwide__cardUnit`]}
+                key={ocean.id}
               ></Card>
             ))}
           </section>

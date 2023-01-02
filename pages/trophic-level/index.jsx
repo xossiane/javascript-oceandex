@@ -5,13 +5,13 @@ import Heading from "@atoms/Heading";
 import Text from "@atoms/Text";
 import Button from "@molecules/Button";
 import Card from "@molecules/Card";
-
 import { useState } from "react";
 import styles from "./styles.module.scss";
 
+
 export default function TrophicLevelPage() {
   const [selected, setSelected] = useState("Deep Ocean");
-
+ 
   return (
     <>
         <Heading
@@ -22,13 +22,11 @@ export default function TrophicLevelPage() {
           Trophic Level
         </Heading>
         <Text className={styles[`TrophicLevel__Paragraph`]} size="large">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis
-          justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse
-          ut eleifend justo, id consequat ex.
+        Based on the source of their nutrition or food, organisms occupy a specific place in the food chain known as their trophic level. Primary producers comprise the first trophic level, followed by primary consumers (herbivores), secondary consumers (carnivores are feeding on herbivores), etc. Food webs are the complex networks through which energy and materials move in an environment, from microbes all the way through to predators. They are often studied and modelled in terms of the flow of energy between different organisms. Marine food webs include all animals living in the sea, from phytoplankton, bacteria and small shrimp-like animals in the water, to animals living on the sea bed like sponges and corals, to fish, squid, whales, seals and seabirds.
         </Text>
 
         <div className={styles[`TrophicLevel__ContainerCard`]}>
+          
           <Card
             href="#Text"
             title="Deep Ocean"
@@ -89,13 +87,15 @@ export default function TrophicLevelPage() {
           {selected === 'Deep Ocean' && <Text className={styles[`TrophicLevel__ContainerText__Title`]}>Deep Ocean</Text>}
           {selected === 'Arctic Ocean' && <Text className={styles[`TrophicLevel__ContainerText__Title`]}>Arctic Ocean</Text>}
           {selected === 'Pelagic Ocean' && <Text className={styles[`TrophicLevel__ContainerText__Title`]}>Pelagic Ocean</Text>}
-          <Text id="Text" size="large" className={styles[`TrophicLevel__ContainerText__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+          {selected === 'Deep Ocean' && <Text id="Text" size="large" className={styles[`TrophicLevel__ContainerText__Paragraph`]}>With no sunlight, photosynthesis cannot occur below 200 metres in the Twilight Zone. There are no plants here to fulfil the role of nutrient producers. There is only marine snow, bringing down the leftovers from above. It might be enough to sustain an abundance of detrivores, or small filter feeders like sponges, but this alone is not enough to support a complex biological community. Pelagic wanderers can go for very long periods of time without feeding. Their slowed metabolisms are a useful adaptation down here where nutrients are scarce. Even so, wanderers cannot rely entirely on residual nutrients brought to them from vents and seeps. They must become opportunistic feeders, and be able to take advantage of any kind of food they come across.</Text>}
+          {selected === 'Arctic Ocean' && <Text id="Text" size="large" className={styles[`TrophicLevel__ContainerText__Paragraph`]}>The Arctic food web is unique in there is not an abundance of typical plants to serve as primary producers. Instead, primary produces in the Arctic come in the form of algae and phytoplankton. Phytoplankton are small floating plants that are often microscopic in size. While they may not appear like typical plants with leaves, roots, and fruits, they still contain chlorophyll and engage in photosynthesis. Thus, phytoplankton in the Arctic are actively converting solar energy into chemical energy. Phytoplankton are not restricted to the Arctic either and are found in many ocean food webs.</Text>} 
+          {selected === 'Pelagic Ocean' && <Text id="Text" size="large" className={styles[`TrophicLevel__ContainerText__Paragraph`]}>The open ocean is often called the pelagic zone. The pelagic zone is sometimes thought of as a cylinder or column of water that goes from the surface of the sea to near the bottom. Plants and animals that live in this column are called pelagic animals and pelagic plants. Animals that eat phytoplankton are called herbivores. The most common ocean herbivore is zooplankton. Zooplankton are also microscopic but exist in huge numbers in the ocean. Another ocean herbivore is krill. Krill is like a tiny shrimp about 5cm long. They eat mostly phytoplankton and sometimes zooplankton. Krill are a very important food for many larger animals such as fish, birds and whales.</Text>} 
         </div>
 
         <div className={styles[`TrophicLevel__ContainerMobile`]}>
           <Text className={styles[`TrophicLevel__ContainerMobile__Title`]}>Deep Sea</Text>
           <img src="/assets/images/foodChain/deepOceanMobile.png" alt="Deep sea" />
-          <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
+          <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>With no sunlight, photosynthesis cannot occur below 200 metres in the Twilight Zone. There are no plants here to fulfil the role of nutrient producers. There is only marine snow, bringing down the leftovers from above. It might be enough to sustain an abundance of detrivores, or small filter feeders like sponges, but this alone is not enough to support a complex biological community. Pelagic wanderers can go for very long periods of time without feeding. Their slowed metabolisms are a useful adaptation down here where nutrients are scarce. Even so, wanderers cannot rely entirely on residual nutrients brought to them from vents and seeps. They must become opportunistic feeders, and be able to take advantage of any kind of food they come across.</Text>
           <Text className={styles[`TrophicLevel__ContainerMobile__Title`]}>Arctic Ocean</Text>
           <img src="/assets/images/foodChain/arcticOceanMobile.png" alt="Arctic ocean" />
           <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero metus, fermentum et ex eu, vestibulum placerat enim. Ut turpis justo, lacinia non justo egestas, pretium vehicula lectus. Suspendisse ut eleifend justo, id consequat ex.</Text>
@@ -105,9 +105,9 @@ export default function TrophicLevelPage() {
         </div>
 
         <div className={styles[`TrophicLevel__ContainerImage`]}>
-          {selected === 'Deep Ocean' && <img src="/assets/images/foodChain/DeepOcean.png" alt="Deep ocean" />}
-          {selected === 'Arctic Ocean' && <img src="/assets/images/foodChain/ArticOcean.png" alt="Arctic Ocean" />}
-          {selected === 'Pelagic Ocean' && <img src="/assets/images/foodChain/PelagicOcean.png" alt="Pelagic ocean" />}
+          {selected === 'Deep Ocean' && <img src="/assets/images/foodChain/deepOceanDesktop.png" alt="Deep ocean" />}
+          {selected === 'Arctic Ocean' && <img src="/assets/images/foodChain/arcticOceanDesktop.png" alt="Arctic Ocean" />}
+          {selected === 'Pelagic Ocean' && <img src="/assets/images/foodChain/pelagicOceanDesktop.png" alt="Pelagic ocean" />}
         </div>
     
   </>
