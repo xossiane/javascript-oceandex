@@ -2,8 +2,6 @@ import styles from "./styles.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-
-
 export default function Button({
   href,
   size,
@@ -12,7 +10,8 @@ export default function Button({
   className,
   title,
   img,
-  icon
+  icon,
+  handleClick,
 }) {
   const classList = [];
   classList.push(styles[`button--${size}`]);
@@ -20,19 +19,18 @@ export default function Button({
   classList.push(styles[`button--${fontsize}`]);
   classList.push(styles[`button`]);
 
-  const Router = useRouter()
-  console.log(Router.query)
-
+  const Router = useRouter();
   return (
     <Link href={`${href}`}>
-      <>
-      <a className={`${classList.join(" ")} ${className}`}>{title}</a>
-      {
-        Router.pathname === "/" ? null : <img className={styles[`button__icon`]} src={icon} alt="ocean"/>
-
-      }
-      
-      </>
+      <a
+        className={`${classList.join(" ")} ${className}`}
+        onClick={handleClick}
+      >
+        {title}
+        {Router.pathname === "/" ? null : (
+          <img className={styles[`button__icon`]} src={icon} alt="ocean" />
+        )}
+      </a>
     </Link>
   );
 }
