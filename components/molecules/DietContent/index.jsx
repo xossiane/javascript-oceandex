@@ -1,13 +1,26 @@
+import { useRouter } from "next/router";
+
 import styles from "./styles.module.scss";
 import Text from "@atoms/Text";
 
 export default function Diet({ data }) {
+  const router = useRouter();
+
   if (data) {
+    function handleClick(animal) {
+if(animal.completeAnimal){
+  router.push(`/oceandex/${animal.name}`)
+}
+    }
     return (
       <section className={styles[`Diet__Container`]}>
         {data.dietList.map((element) => (
           <>
-            <span key={element.name} className={styles[`Diet__imgContainer`]}>
+            <span
+              key={element.name}
+              className={styles[`Diet__imgContainer`]}
+              onClick={() => handleClick(element)}
+            >
               <Text
                 color="black"
                 size="small"
@@ -25,37 +38,6 @@ export default function Diet({ data }) {
             <hr className={styles[`Diet__hrItem`]}></hr>
           </>
         ))}
-     
-        {/*  <span className={styles[`Diet__imgContainer`]}>
-          <Text
-            color="black"
-            size="small"
-            className={styles[`Diet__animalName`]}
-          >
-            Clam
-          </Text>
-          <img
-            className={styles[`Diet__imgItem`]}
-            src="assets/images/diet/hermitCrabs.png"
-            alt="Clam"
-          ></img>
-        </span>
-        <hr className={styles[`Diet__hrItem`]}></hr>
-        <span className={styles[`Diet__imgContainer`]}>
-          <Text
-            color="black"
-            size="small"
-            className={styles[`Diet__animalName`]}
-          >
-            Crab
-          </Text>
-          <img
-            className={styles[`Diet__imgItem`]}
-            src="assets/images/diet/crab.png"
-            alt="Crab"
-          ></img>
-        </span>
-        <hr className={styles[`Diet__hrItem`]}></hr> */}
       </section>
     );
   }
