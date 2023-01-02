@@ -161,12 +161,12 @@ export default function TrophicLevelPage() {
           id="deepOcean"
           className={styles[`TrophicLevel__ContainerMobile__Title`]}
         >
-          Deep Sea
+          Deep Ocean
         </Text>
         <img
           className={styles[`TrophicLevel__ContainerMobile__Image`]}
           src="/assets/images/foodChain/deepOceanMobile.png"
-          alt="Deep sea"
+          alt="Deep ocean"
         />
         <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>
           With no sunlight, photosynthesis cannot occur below 200 metres in the
