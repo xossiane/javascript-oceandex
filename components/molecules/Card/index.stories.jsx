@@ -1,5 +1,5 @@
 import Card from ".";
-import jellyfish from "../../../public/assets/images/icons/11-jellyfish.png";
+import ocean from "../../../public/assets/images/designIcons/ocean1.png"
 
 export default {
   title: "Molecules/Card",
@@ -9,7 +9,7 @@ export default {
     title: "OceanDex",
     color: "blue",
     description: "Animal's List",
-    src: jellyfish,
+    img: {ocean},
   },
   argTypes: {
     color: {

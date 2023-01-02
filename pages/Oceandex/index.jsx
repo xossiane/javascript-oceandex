@@ -39,42 +39,6 @@ export default function OceanDexPage() {
   };
 
   //console.log(animal);
-  function showAnimal() {
-    const filteredAnimals = animals.filter(
-      (item) =>
-        item.name
-          .toLowerCase()
-          .includes(
-            search.toLocaleLowerCase()
-          ) /* || item.scientificName.toLowerCase().includes(search) */ ||
-        item.classification.order
-          .toLowerCase()
-          .includes(search.toLocaleLowerCase()) ||
-        item.classification.phylum
-          .toLowerCase()
-          .includes(search.toLocaleLowerCase())
-    );
-
-    if (filteredAnimals.length === 0 && search !== "") {
-      return <Text weight="bold">No results Found</Text>;
-    } else {
-      return filteredAnimals.map((item) => {
-        return (
-          <AnimalsCard
-            href="/"
-            key={item.id}
-            name={item.name}
-            order={item.classification.order}
-            phylum={item.classification.phylum}
-            Class={item.classification.class}
-            kingdom={item.classification.kingdom}
-            src={item.image}
-            loading="lazy"
-          />
-        );
-      });
-    }
-  }
 
   return (
     <>
