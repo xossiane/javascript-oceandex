@@ -1,6 +1,6 @@
 import HeroInfo from "@molecules/HeroInfo";
 import { useEffect, useState } from "react";
-import heroData from "../../../data/heroData.json"
+import heroData from "../../../data/heroData.json";
 import styles from "./styles.module.scss";
 
 export default function Hero() {
@@ -9,21 +9,21 @@ export default function Hero() {
   const [currentItem, setCurrentItem] = useState(0);
   const [mouse, setMouse] = useState(false);
 
-  const timer = setTimeout(()=>{
-    if(currentItem === totalItem-1){
+  const timer = setTimeout(() => {
+    if (currentItem === totalItem - 1) {
       setCurrentItem(0);
-    }else{
+    } else {
       setCurrentItem(currentItem + 1);
     }
   }, 1000);
-  
+
   useEffect(() => {
-   timer
-  }, [currentItem])
+    timer;
+  }, [currentItem]);
 
   return (
     <section
-      className={styles[`Hero`]}
+      className={styles[`hero`]}
       // onFocus={handleFocus()}
       // onMouseLeave={() =>
       //   setTimeout(() => {
@@ -34,15 +34,14 @@ export default function Hero() {
       //     }
       //   }, 1000)
       // }
-      onMouseEnter={()=>{
+      onMouseEnter={() => {
         clearInterval(timer);
-      
       }}
-      onMouseLeave={()=>{
-        setTimeout(()=>{
-          if(currentItem === totalItem-1){
+      onMouseLeave={() => {
+        setTimeout(() => {
+          if (currentItem === totalItem - 1) {
             setCurrentItem(0);
-          }else{
+          } else {
             setCurrentItem(currentItem + 1);
           }
         }, 1000);
@@ -51,17 +50,17 @@ export default function Hero() {
       aria-label="illustrative images and informations"
     >
       <HeroInfo data={data} currentItem={currentItem} />
-      <div className={styles[`Hero__container`]}>
+      <div className={styles[`hero__container`]}>
         {data.map((item) => {
           return (
             <span
               key={item.id}
               className={
                 currentItem === item.id
-                  ? `${styles["Hero__dots"]} ${styles["Hero__dots--active"]}`
-                  : `${styles["Hero__dots"]}`
+                  ? `${styles["hero__dots"]} ${styles["hero__dots--active"]}`
+                  : `${styles["hero__dots"]}`
               }
-              tabIndex={0} 
+              tabIndex={0}
             >
               {" "}
             </span>

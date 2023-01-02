@@ -1,8 +1,8 @@
-import Tabs from ".";
+import TabsComponent from ".";
 
 export default {
   title: "Organisms/Tabs",
-  component: Tabs,
+  component: TabsComponent,
   args: {},
 };
 

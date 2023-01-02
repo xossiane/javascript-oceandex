@@ -9,20 +9,19 @@ import LocationContent from "@molecules/LocationContent";
 import DietContent from "@molecules/DietContent";
 import useFetchData from "../../../store/useFetchData";
 
-const TabsDemo = () => {
+const TabsComponent = () => {
   const data = useFetchData((state) => state.data);
 
   return (
-    /* NOME DAS TABS */
-    <Tabs.Root className={styles[`TabsRoot`]} defaultValue="About">
-      <Tabs.List className={styles[`TabsList`]} aria-label="About">
+    <Tabs.Root className={styles[`tabs__root`]} defaultValue="About">
+      <Tabs.List className={styles[`tabs__list`]} aria-label="About">
         <Tabs.Trigger
-          className={styles[`TabsTrigger`]}
+          className={styles[`tabs__trigger`]}
           aria-label="About"
           value="About"
         >
           <Text
-            className={styles[`TabsTrigger--text`]}
+            className={styles[`tabs__trigger--text`]}
             color="black"
             size="small"
           >
@@ -30,12 +29,12 @@ const TabsDemo = () => {
           </Text>
         </Tabs.Trigger>
         <Tabs.Trigger
-          className={styles[`TabsTrigger`]}
+          className={styles[`tabs__trigger`]}
           value="Curiosities"
           aria-label="Curiosities"
         >
           <Text
-            className={styles[`TabsTrigger--text`]}
+            className={styles[`tabs__trigger--text`]}
             color="black"
             size="small"
           >
@@ -43,12 +42,12 @@ const TabsDemo = () => {
           </Text>
         </Tabs.Trigger>
         <Tabs.Trigger
-          className={styles[`TabsTrigger`]}
+          className={styles[`tabs__trigger`]}
           value="Location"
           aria-label="Location"
         >
           <Text
-            className={styles[`TabsTrigger--text`]}
+            className={styles[`tabs__trigger--text`]}
             color="black"
             size="small"
           >
@@ -56,12 +55,12 @@ const TabsDemo = () => {
           </Text>
         </Tabs.Trigger>
         <Tabs.Trigger
-          className={styles[`TabsTrigger`]}
+          className={styles[`tabs__trigger`]}
           value="Diet"
           aria-label="Diet"
         >
           <Text
-            className={styles[`TabsTrigger--text`]}
+            className={styles[`tabs__trigger--text`]}
             color="black"
             size="small"
           >
@@ -70,31 +69,29 @@ const TabsDemo = () => {
         </Tabs.Trigger>
       </Tabs.List>
 
-      {/* CONTEUDO DAS TABS */}
-
-      <div className={styles[`TabsBottom`]}>
+      <div className={styles[`tabs__bottom`]}>
         <Tabs.Content
-          className={styles[`TabsContent`]}
+          className={styles[`tabs__content`]}
           value="About"
           aria-label="About"
         >
           <AboutContent data={data} />
         </Tabs.Content>
         <Tabs.Content
-          className="TabsContent"
+          className="tabs__content"
           value="Curiosities"
           aria-label="Curiosities"
         >
           <CuriositiesContent data={data} />
         </Tabs.Content>
         <Tabs.Content
-          className="TabsContent"
+          className="tabs__content"
           value="Location"
           aria-label="Location"
         >
           <LocationContent data={data} />
         </Tabs.Content>
-        <Tabs.Content className="TabsContent" value="Diet" aria-label="Diet">
+        <Tabs.Content className="tabs__content" value="Diet" aria-label="Diet">
           <DietContent data={data} />
         </Tabs.Content>
       </div>
@@ -102,4 +99,4 @@ const TabsDemo = () => {
   );
 };
 
-export default TabsDemo;
+export default TabsComponent;

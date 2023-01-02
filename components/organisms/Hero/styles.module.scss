@@ -1,12 +1,13 @@
-
 @use "@styles/variables";
-.Hero {
+.hero {
   margin-bottom: 5rem;
+
   &__container {
     display: flex;
     justify-content: center;
     margin-top: 10px;
   }
+
   &__dots {
     display: inline-block;
     width: 5rem;
@@ -18,7 +19,6 @@
 
     &:not(:last-child) {
       margin-right: 3.5rem;
-      
     }
 
     &--active {
