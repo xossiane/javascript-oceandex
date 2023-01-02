@@ -1,12 +1,9 @@
 import styles from "../styles/home.module.scss";
-
 import Heading from "@atoms/Heading";
 import Button from "@molecules/Button";
 import Card from "@molecules/Card";
 import Hero from "@organisms/Hero";
 import { useEffect, useState } from "react";
-import Hero from "@organisms/Hero";
-
 import btnCardIndex from "../data/btnCardIndex.json";
 import useContentful from "../hooks/useContentful";
 useContentful;
