@@ -23,7 +23,7 @@ export default function MainPage() {
     <>
       <div className={styles[`Home`]}>
         <main className={styles[`Home__container`]}>
-          <Heading level="1" color="grey" weight="italic">
+          <Heading level="1" color="black" weight="italic">
             Discover the Ocean
           </Heading>
 
