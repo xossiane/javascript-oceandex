@@ -1,7 +1,7 @@
 import AuthorsMolecule from ".";
 
 export default {
-  title: "Molecules/authors",
+  title: "Molecules/Authors",
   component: AuthorsMolecule,
   args: {},
 };

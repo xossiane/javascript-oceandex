@@ -6,4 +6,4 @@ export default {
   args: {},
 };
 
-export const TabsComponent = () => <Tabs />;
+export const Default = {};

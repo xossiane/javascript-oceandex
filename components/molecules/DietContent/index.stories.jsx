@@ -6,4 +6,4 @@ export default {
     args: {}
 }
 
-export const Diet = () => <DietContent  />;
+export const Default = {};
