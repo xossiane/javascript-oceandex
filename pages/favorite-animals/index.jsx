@@ -16,36 +16,8 @@ export default function FavoriteAnimalsPage() {
   const [search, setSearch] = useState("");
   useEffect(() => {
     if (!search) {
-        let array = []
-        let arrayKey = []
-        
-        setLoading(true);
-       
-        let size = localStorage.length
-
-        for (let index = 0; index <= size; index++) {
-
-          let animal = localStorage.getItem(localStorage.key(index))
-          /* console.log(animal) */
-          try{
-            animal = JSON.parse(animal)
-          }catch(e){
-          }
-          let id = localStorage.key(index)
-          arrayKey.push(id)
-          let key = Number.parseInt(id)
-          
-          let isNumber = Number.isInteger(key)
-          if(isNumber && (animal !== null) && (id !== null) && (typeof(animal) === 'object')){
-            array.push(animal)
-          }
-        }
-      
-      if(arrayKey.includes('oceandex') === false){
-        localStorage.clear()
-        localStorage.setItem('oceandex', true)
-      }
-      
+        let array = localStorage.getItem('oceandex')
+        array = JSON.parse(array)
       setAnimal(array);
       setLoading(false);
       }  

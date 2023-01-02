@@ -26,18 +26,21 @@ function FilterCard({ animals }) {
   );
 
   const likeAnimal = (item) => {
-    let arrayKeys = [];
-    let size = localStorage.length
-    
-    for (let index = 0; index <= size; index++) {
-      arrayKeys.push(localStorage.key(index))
-    }
-    let hadKey = arrayKeys.includes(item.id)
-      console.log(arrayKeys)
-    if(!hadKey) {
-      let saveItem = JSON.stringify(item)
-      localStorage.setItem(item.id, saveItem)
-    }
+    let array = localStorage.getItem('oceandex')
+      if(array === null){
+        array = []
+        array.push(item)
+        let animal = JSON.stringify(array)
+        localStorage.setItem('oceandex',animal)
+      }else{
+        array = JSON.parse(array)
+        let findItem = array.findIndex(itemArray => itemArray.id === item.id)
+        if(findItem === -1){
+          array.push(item)
+          let animal = JSON.stringify(array)
+          localStorage.setItem('oceandex',animal)
+        }
+      }
   }
 
   if (filteredAnimals.length === 0 && search !== "") {
