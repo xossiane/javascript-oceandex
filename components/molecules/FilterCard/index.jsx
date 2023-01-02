@@ -25,13 +25,29 @@ function FilterCard({ animals }) {
         .includes(search.toLowerCase())
   );
 
+  const likeAnimal = (item) => {
+    let arrayKeys = [];
+    let size = localStorage.length
+    
+    for (let index = 0; index <= size; index++) {
+      arrayKeys.push(localStorage.key(index))
+    }
+    let hadKey = arrayKeys.includes(item.id)
+      console.log(arrayKeys)
+    if(!hadKey) {
+      let saveItem = JSON.stringify(item)
+      localStorage.setItem(item.id, saveItem)
+    }
+  }
+
   if (filteredAnimals.length === 0 && search !== "") {
     return <Text weight="bold">No results Found</Text>;
   } else {
     return filteredAnimals.map((item) => {
       return (
         <AnimalsCard
-          href="/About"
+          href="/favorite-animals"
+          onClick={()=>likeAnimal(item)}
           key={item.id}
           name={item.name}
           order={item.classification.order}

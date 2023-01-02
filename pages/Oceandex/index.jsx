@@ -1,10 +1,10 @@
-import styles from "./styles.module.scss";
+import Heading from "@atoms/Heading";
+import FilterCArd from "@molecules/FilterCard";
+import Input from "@molecules/Input";
 import { useEffect, useState } from "react";
 import useContentful from "../../hooks/useContentful";
-import Heading from "@atoms/Heading";
-import Input from "@molecules/Input";
-import FilterCArd from "@molecules/FilterCard";
 import useFecthInput from "../../store/useFetchInput";
+import styles from "./styles.module.scss";
 
 export default function OceanDexPage(){
   const { getAnimals } = useContentful();
@@ -61,7 +61,7 @@ export default function OceanDexPage(){
       return filteredAnimals.map((item) => {
         return (
           <AnimalsCard
-            href="/About"
+            href="/"
             key={item.id}
             name={item.name}
             order={item.classification.order}
