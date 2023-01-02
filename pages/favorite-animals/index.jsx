@@ -26,7 +26,7 @@ export default function FavoriteAnimalsPage() {
 
         for (let index = 0; index <= size; index++) {
           let animal = localStorage.getItem(localStorage.key(index))
-          console.log(animal)
+          /* console.log(animal) */
           try{
             animal = JSON.parse(animal)
           }catch(e){
@@ -39,7 +39,7 @@ export default function FavoriteAnimalsPage() {
           }
         }
       
-      
+      console.log(array)
       setAnimal(array);
       setLoading(false);
       }  

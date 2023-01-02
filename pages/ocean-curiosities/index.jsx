@@ -80,6 +80,7 @@ export default function OceanWorldwide() {
                     img={ocean.img}
                     icon={ocean.icon}
                     className={styles[`OceanWorldwide__buttonUnit`]}
+                    key={ocean.id}
                   >
                     {" "}
                   </Button>
@@ -91,6 +92,7 @@ export default function OceanWorldwide() {
                     img={ocean.img}
                     description={ocean.description}
                     className={styles[`OceanWorldwide__cardUnit`]}
+                    key={ocean.id}
                   ></Card>
                 </>
               ))}
