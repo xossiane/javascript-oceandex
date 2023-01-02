@@ -1,14 +1,9 @@
 import Arrow from "@atoms/Arrow";
-import Background from "@atoms/Background";
 import Button from "@molecules/Button";
 import Card from "@molecules/Card";
 import Heading from "@atoms/Heading";
-import Text from "@atoms/Text";
-import Header from "@organisms/Header";
-import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
-import useContentful from "../../hooks/useContentful";
-import { useRouter } from "next/router";
+
 
 export default function OceanWorldwide() {
   const oceans = [
@@ -54,13 +49,12 @@ export default function OceanWorldwide() {
     <>
       <div className={styles[`OceanWorldwide`]}>
         <div className={styles[`OceanWorldwide__container`]}>
-          <span className={styles[`OceanWorldwide__Arrow`]}>
+          <span className={styles[`OceanWorldwide__arrow`]}>
             <Arrow direction="left" href="/" />
           </span>
           <section className={styles[`OceanWorldwide__header`]}>
             <Heading
               level="1"
-              className={styles[`OceanWorldwide__container--text`]}
               color="black"
               style="italic"
             >
@@ -68,7 +62,7 @@ export default function OceanWorldwide() {
             </Heading>
           </section>
           <div className={styles[`OceanWorldwide__content`]}>
-            <section className={styles[`OceanWorldwide__content--buttons`]}>
+            <section className={styles[`OceanWorldwide__buttons`]}>
               {oceans.map((ocean) => (
                 <>
                   <Button

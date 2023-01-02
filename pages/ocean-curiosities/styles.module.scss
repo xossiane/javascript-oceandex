@@ -9,26 +9,22 @@
     z-index: 100;
     margin-bottom: 2rem;
   }
-  &__Arrow {
+  &__arrow {
     position: absolute;
     top: 5rem;
     left: 2rem;
   }
 
-  &--rectangle {
-    display: flex;
-  }
   &__buttonUnit{
     margin-left: 1rem;
    
   }
   &__content {
     display: flex;
-    min-height: 70vh;
     align-items: center;
     justify-content: center;
-    
-    &--buttons {
+    }
+    &__buttons {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -43,11 +39,8 @@
       @media (min-width: 1440px) {
        flex-direction: row;
         flex-wrap: wrap;
-        padding-top: 10rem;
         max-width: 128rem;
         gap: 2rem;
-    }
-
     }
   }
 &__cardUnit{
