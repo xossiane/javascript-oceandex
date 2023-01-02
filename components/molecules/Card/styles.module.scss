@@ -8,7 +8,7 @@
   .card {
     display: none;
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1024px) {
       display: flex;
       flex-direction: column;
       align-items: center;
