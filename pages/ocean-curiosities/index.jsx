@@ -3,7 +3,8 @@ import Button from "@molecules/Button";
 import Card from "@molecules/Card";
 import Heading from "@atoms/Heading";
 import styles from "./styles.module.scss";
-
+import { useEffect, useState } from "react";
+import useOceanPage from "store/useOceanPage";
 
 export default function OceanWorldwide() {
   const oceans = [
@@ -44,6 +45,12 @@ export default function OceanWorldwide() {
     const lowerCase = string.charAt(0).toLowerCase() + string.slice(1);
     return lowerCase;
   };
+
+  const [oceanPage, setOceanPage] = useState();
+  const setOcean = useOceanPage((state) => state.setPage);
+  useEffect(() => {
+    setOcean(oceanPage);
+  }, [oceanPage]);
 
   return (
     <>

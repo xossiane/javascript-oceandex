@@ -3,10 +3,8 @@
 .Oceandex {
   &__Container {
     background-color: transparent;
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    z-index: 1;
+    width: 95%;
+    margin: 0 auto;
 
     @media (min-width: 768px) {
       max-width: 71rem;
@@ -47,15 +45,16 @@
   }
 
   &__Cards {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 34rem;
     gap: 3rem;
     align-items: center;
+    width: 100%;
+    justify-content: center;
 
     @media (min-width: 768px) {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 3rem;
     }
 
@@ -64,7 +63,7 @@
     }
 
     @media (min-width: 1440px) {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

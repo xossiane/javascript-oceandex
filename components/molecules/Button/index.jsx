@@ -11,6 +11,7 @@ export default function Button({
   title,
   img,
   icon,
+  handleClick,
 }) {
   const classList = [];
   classList.push(styles[`button--${size}`]);
@@ -23,13 +24,15 @@ export default function Button({
 
   return href[0] !== "#" ? (
     <Link href={`${href}`}>
-      <>
-        <a className={`${classList.join(" ")} ${className}`}>{title}</a>
-        {Router.pathname === "/" ||
-        Router.pathname === "/trophic-level" ? null : (
+      <a
+        className={`${classList.join(" ")} ${className}`}
+        onClick={handleClick}
+      >
+        {title}
+        {Router.pathname === "/" ? null : (
           <img className={styles[`button__icon`]} src={icon} alt="ocean" />
         )}
-      </>
+      </a>
     </Link>
   ) : (
     <a href={`${href}`} className={`${classList.join(" ")} ${className}`}>

@@ -3,7 +3,7 @@
   cursor: pointer;
   width: 3.3rem;
   height: 2.7rem;
- 
+
   &--right {
     transform: rotate(90deg);
   }
@@ -12,12 +12,12 @@
     transform: rotate(-90deg);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 700px) {
     width: 4.375rem;
     height: 3.75rem;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1024px) {
     width: 10.3rem;
     height: 8.7rem;
   }
