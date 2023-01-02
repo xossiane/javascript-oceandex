@@ -49,7 +49,6 @@ export default function OceanWorldwide() {
   const [oceanPage, setOceanPage] = useState();
   const setOcean = useOceanPage((state) => state.setPage);
   useEffect(() => {
-    localStorage.setItem("oceanName", JSON.stringify(oceanPage));
     setOcean(oceanPage);
   }, [oceanPage]);
 
