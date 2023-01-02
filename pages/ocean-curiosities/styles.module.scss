@@ -31,12 +31,12 @@
     min-width: 100%;
     position: relative;
     z-index: 100;
-    row-gap: 20px;
+    row-gap: 25px;
     @media (min-width: 700px) {
       flex-direction: column;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1024px) {
       flex-direction: row;
       flex-wrap: wrap;
       max-width: 128rem;

@@ -2,6 +2,16 @@
 
 .TrophicLevel {
 
+  &__Arrow {
+    position: fixed;
+    bottom: 4.1rem;
+    right: 2.8rem;
+    z-index: 100;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
 
   &__Title {
     margin: 4.6rem 0rem;
@@ -23,19 +33,25 @@
   }
 
   &__ContainerCard {
+    
+    align-items: center;
     display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    z-index: 10;
-    margin-bottom: 4.6rem;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-bottom: 0;
 
-
-    @media (max-width: 1023px) {
-      align-items: center;
+    @media (min-width: 1024px) {
       display: flex;
-      flex-direction: column;
-      gap: 0.9rem;
-      margin-bottom: 2.2rem;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 2.5rem;
+      z-index: 10;
+      margin-bottom: 4.6rem;
+    }
+
+    @media (max-width: 1440px) {
+      flex-wrap: wrap;
     }
   }
 
@@ -64,26 +80,47 @@
   }
 
   &__ContainerMobile {
-    display: none;
-
-    @media (max-width: 1023px) {
       display: flex;
       flex-direction: column;
 
+      &__Scroll {
+        height: 8rem;
+      }
+
       &__Title {
-        font-size: 1.3rem;
+        font-size: 2.2rem;
+        line-height: 2.8rem;
         text-align: center;
+        padding-top: 10rem;
+      }
+
+      &__Image {
+        width: 35rem;
+        margin: 0 auto;
+        @media (min-width: 768px) {
+          width: 40rem;
+        }
       }
 
       &__Paragraph {
-        font-size: 1.1rem;
-        margin-bottom: 4.2rem;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin: 3rem 2rem 0;
+        color: variables.$darkBlue;
+        z-index: 1;
+        @media (min-width: 768px) {
+          margin: 3rem 5rem 0;
+        }
 
         &:last-child {
           margin-bottom: 13.1rem;
         }
       }
-    }
+
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    
 
 
   }

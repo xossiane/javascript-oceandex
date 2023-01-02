@@ -129,6 +129,11 @@
             margin-left: 2rem;
             margin-top: 6rem;
         }
+
+        & h1 {            
+            text-align: left;
+            max-width: 26.5rem;
+        }
     }    
     &--text{
         margin-top: -2rem;
@@ -141,7 +146,8 @@
         height: 25.7rem;
         transform: translateX(0%);
         transform: translateY(8%);
-        margin: 0 auto 5rem;        
+        margin: 0 auto 5rem; 
+        object-fit: scale-down;       
     }
 }
 }

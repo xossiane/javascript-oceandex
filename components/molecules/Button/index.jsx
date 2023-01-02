@@ -20,7 +20,9 @@ export default function Button({
   classList.push(styles[`button`]);
 
   const Router = useRouter();
-  return (
+  console.log(Router.query);
+
+  return href[0] !== "#" ? (
     <Link href={`${href}`}>
       <a
         className={`${classList.join(" ")} ${className}`}
@@ -32,5 +34,9 @@ export default function Button({
         )}
       </a>
     </Link>
+  ) : (
+    <a href={`${href}`} className={`${classList.join(" ")} ${className}`}>
+      {title}
+    </a>
   );
 }
