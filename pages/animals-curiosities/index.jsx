@@ -9,7 +9,8 @@ export default function AnimalsCuriositiesPage({ curiosity }) {
   const [curiositiesID, setcuriositiesID] = useState(0);
   const animalsListLength = curiosity.length - 1;
 
-  function handleClickSum() {
+  function handleClickSum(e) {
+    e.preventDefault();
     if (curiositiesID < animalsListLength) {
       setcuriositiesID((previous) => {
         return previous + 1;
@@ -19,7 +20,8 @@ export default function AnimalsCuriositiesPage({ curiosity }) {
       setcuriositiesID(0);
     }
   }
-  function handleClickSub() {
+  function handleClickSub(e) {
+    e.preventDefault();
     if (curiositiesID > 0) {
       setcuriositiesID((previous) => {
         return previous - 1;
@@ -32,7 +34,7 @@ export default function AnimalsCuriositiesPage({ curiosity }) {
   //console.log(animalsCuriosities[curiositiesID]);
   return (
     <div>
-      <Heading level="1" color="black" style="italic">
+      <Heading level="1" color="black" style="italic" pageTitle={true}>
         Animal's Curiosities
       </Heading>
       <AnimalsCuriosities

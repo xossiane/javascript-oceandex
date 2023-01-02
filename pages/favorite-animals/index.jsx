@@ -82,6 +82,7 @@ export default function FavoriteAnimalsPage() {
             level="1"
             style="italic"
             color="black"
+            pageTitle={true}
           >
               Favorite Animals
           </Heading>

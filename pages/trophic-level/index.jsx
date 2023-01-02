@@ -16,7 +16,8 @@ export default function TrophicLevelPage() {
       <div className={styles[`TrophicLevel__Arrow`]}>
         <Arrow href="#content" direction="top" />
       </div>
-      <Heading id="content" style="italic" color="black" level="1">
+      <Heading id="content" style="italic" color="black" level="1" pageTitle = {true}
+>
         Trophic Level
       </Heading>
       <Text className={styles[`TrophicLevel__Paragraph`]} size="large">

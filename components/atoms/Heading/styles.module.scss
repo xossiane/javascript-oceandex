@@ -4,6 +4,7 @@
   font-weight: 400;
   font-style: italic;
   text-align: center;
+  
 
   &--H1 {
     font-size: 3rem;
@@ -24,6 +25,16 @@
     }
   }
 
+  &--pageTitle{
+    margin:4rem 0;
+    @media (min-width: 1024px) {
+      margin: 5.5rem 0;
+      }
+    @media (min-width: 1440px) {
+      margin:7.5rem 0;
+    }
+  }
+
   &--black {
     color: variables.$black;
   }
@@ -37,4 +48,7 @@
   &--uppercase {
     text-transform: uppercase;
   }
+ 
 }
+
+

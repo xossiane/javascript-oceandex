@@ -19,7 +19,7 @@ export default function AuthorsPage() {
 
   return (
     <div className={styles.container}>
-      <Heading level="1" size="H1" color="black" style="italic">
+      <Heading level="1" size="H1" color="black" style="italic" pageTitle={true}>
         Authors
       </Heading>
 

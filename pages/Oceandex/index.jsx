@@ -72,18 +72,19 @@ export default function OceanDexPage() {
   }
 
   return (
-    <div className={styles[`Oceandex__Container`]}>
-      <header className={styles[`Oceandex__Header`]}>
-        <Heading
-          level="1"
-          className={styles[`Oceandex__Content--text`]}
-          color="grey"
-          style="italic"
-        >
-          {" "}
-          What marine creature are you looking for?{" "}
-        </Heading>
-      </header>
+      <div className={styles[`Oceandex__Container`]}>
+        <header className={styles[`Oceandex__Header`]}>
+          <Heading
+            level="1"
+            className={styles[`Oceandex__Content--text`]}
+            color="grey"
+            style="italic"
+            pageTitle={true}
+          >
+            {" "}
+            What marine creature are you looking for?{" "}
+          </Heading>
+        </header>
 
       <div className={styles[`Oceandex__Search`]}>
         <Input

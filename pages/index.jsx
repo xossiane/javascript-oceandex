@@ -20,11 +20,11 @@ export default function MainPage() {
   }, []);
   console.log(model);
   return (
-    <div className={styles[`Home`]}>
-      <main className={styles[`Home__container`]}>
-        <Heading level="1" color="grey" weight="italic">
-          Discover the Ocean
-        </Heading>
+      <div className={styles[`Home`]}>
+        <main className={styles[`Home__container`]}>
+          <Heading level="1" color="black" weight="italic" pageTitle={true}>
+            Discover the Ocean
+          </Heading>
 
         <Hero></Hero>
 

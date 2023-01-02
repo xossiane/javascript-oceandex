@@ -4,9 +4,7 @@
   &__Container {
     width: 100%;
     min-height: 100vh;
-    padding-top: 3.9rem;
     position: relative;
-    margin-top: 12rem;
     z-index: 1;
   }
 
@@ -25,10 +23,10 @@
 
   &__Header {
     display: flex;
-    height: 2.5rem;
+    //height: 2.5rem;
     justify-content: space-around;
     align-items: center;
-    margin-top: 40px;
+    //margin-top: 40px;
 
     & a {
       position: absolute;
