@@ -1,6 +1,6 @@
 import Background from ".";
-import backgroundMobile from "../../../public/assets/images/extras/background.png";
-import backgroundDesktop from "../../../public/assets/images/extras/backgroundLarge2.png";
+import backgroundMobile from "../../../public/assets/images/background/background.png";
+import backgroundDesktop from "../../../public/assets/images/background/backgroundLarge2.png";
 
 export default {
   title: "Atoms/Background",
