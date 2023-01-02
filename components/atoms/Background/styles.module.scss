@@ -1,29 +1,27 @@
-.Background {
-  &__ContainerBackgroundImage {
-    position: relative;
+.background {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+
+  &--desktop {
+    opacity: 0.2;
+    position: absolute;
+    bottom: -90%;
     width: 100%;
     z-index: -1;
-
-    &__BackgroundImage {
-      opacity: 0.2;
-      position: absolute;
-      bottom: -90%;
-      width: 100%;
-      z-index: -1;
-      @media (max-width: 1023px) {
-        display: none;
-      }
-    }
-    &__BackgroundImageMobile {
+    @media (max-width: 1023px) {
       display: none;
-      @media (max-width: 1023px) {
-        bottom: -90%;
-        display: block;
-        position: absolute;
-        width: 100%;
-        img {
-          border-radius: 0.23rem;
-        }
+    }
+  }
+  &--mobile {
+    display: none;
+    @media (max-width: 1023px) {
+      bottom: -90%;
+      display: block;
+      position: absolute;
+      width: 100%;
+      img {
+        border-radius: 0.23rem;
       }
     }
   }

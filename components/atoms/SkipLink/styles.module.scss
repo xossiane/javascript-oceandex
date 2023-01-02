@@ -1,21 +1,21 @@
 @use "@styles/variables";
 .skipLink {
-    color: variables.$black;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 1rem;
-    left: calc(50% - 6rem);
-    z-index: 1001;
-    box-sizing: border-box;
-    padding: 0.2rem 0.5rem;
-    opacity: 0;
+  color: variables.$black;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  left: calc(50% - 6rem);
+  z-index: 1001;
+  box-sizing: border-box;
+  padding: 0.2rem 0.5rem;
+  opacity: 0;
 
-    &:focus {
-      opacity: 1;
-      background-color: variables.$darkBlue;
-      margin: 0;
-      border: 1px solid variables.$darkBlue;
-      color: variables.$white;
-      font-weight: 700;
-    }
+  &:focus {
+    opacity: 1;
+    background-color: variables.$darkBlue;
+    margin: 0;
+    border: 1px solid variables.$darkBlue;
+    color: variables.$white;
+    font-weight: 700;
   }
+}

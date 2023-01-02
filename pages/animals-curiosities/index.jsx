@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import React, { useState } from "react";
 import Heading from "@atoms/Heading";
 import Arrow from "@atoms/Arrow";
-import useContentful from "hooks/useContentful";
+import useContentful from "../../hooks/useContentful";
 
 export default function AnimalsCuriositiesPage({ curiosity }) {
   const [curiositiesID, setcuriositiesID] = useState(0);

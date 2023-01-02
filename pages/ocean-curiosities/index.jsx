@@ -4,7 +4,7 @@ import Card from "@molecules/Card";
 import Heading from "@atoms/Heading";
 import styles from "./styles.module.scss";
 import { useEffect, useState } from "react";
-import useOceanPage from "store/useOceanPage";
+import useOceanPage from "../../store/useOceanPage";
 
 export default function OceanWorldwide() {
   const oceans = [
