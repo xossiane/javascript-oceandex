@@ -41,8 +41,8 @@ export default function OceanWorldwide() {
   ];
 
   const removeSpaces = (str) => {
-    const string = str.replace(/\s/g, "");
-    const lowerCase = string.charAt(0).toLowerCase() + string.slice(1);
+    const string = str.replace(/\s/g, "-");
+    const lowerCase = string.toLowerCase();
     return lowerCase;
   };
 
@@ -60,12 +60,7 @@ export default function OceanWorldwide() {
             <Arrow direction="left" href="/" />
           </span>
           <section className={styles[`OceanWorldwide__header`]}>
-            <Heading
-              level="1"
-              color="black"
-              style="italic"
-              pageTitle = {true}
-            >
+            <Heading level="1" color="black" style="italic" pageTitle={true}>
               Ocean Curiosities
             </Heading>
           </section>

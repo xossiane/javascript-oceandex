@@ -48,7 +48,7 @@ function OceanCuriosities({ oceanCuriosities, oceanName }) {
             color="black"
             style="italic"
           >
-            {oceanName}
+            {oceanName + " Ocean"}
           </Heading>
         </section>
 
@@ -89,11 +89,11 @@ export async function getStaticProps({ params }) {
 
   const defineOcean = () => {
     const oceans = {
-      pacificOcean: "pacific",
-      atlanticOcean: "atlantic",
-      indianOcean: "indian",
-      southernOcean: "southern",
-      arcticOcean: "arctic",
+      "pacific-ocean": "pacific",
+      "atlantic-ocean": "atlantic",
+      "indian-ocean": "indian",
+      "southern-ocean": "southern",
+      "arctic-ocean": "arctic",
     };
     return oceans[params.ocean];
   };
@@ -103,7 +103,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       oceanCuriosities,
-      oceanName: params.ocean,
+      oceanName: defineOcean(),
     },
   };
 }
