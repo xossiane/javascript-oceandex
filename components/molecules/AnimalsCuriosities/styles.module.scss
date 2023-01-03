@@ -9,8 +9,8 @@
 
   &__image {
     border-radius: 2.4rem;
-    width: 100%;
-    height: auto;
+    width: 26.6rem;
+    height: 26.6rem;
     margin-top: 3rem;
     z-index: 5;
 
@@ -34,5 +34,9 @@
       width: 49.5rem;
       justify-content: space-evenly;
     }
+  }
+
+  &__text{
+    width: 80%;
   }
 }
