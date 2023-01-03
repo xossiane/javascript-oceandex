@@ -1,6 +1,6 @@
 import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
-import { internalMutate } from "swr/_internal";
+/* import { internalMutate } from "swr/_internal"; */
 import styles from "./styles.module.scss";
 
 export default function Curiosities({ data }) {

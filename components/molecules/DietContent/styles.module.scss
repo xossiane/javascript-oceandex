@@ -20,7 +20,19 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-  }
+      @media (min-width: 1024px){
+        width: 34rem;  
+    } 
+    @media (min-width: 1440px){
+        width: 50rem;   
+    }        
+}
+       @media (min-width: 1024px){
+        width: 34rem;  
+    } 
+    @media (min-width: 1440px){
+        width: 50rem;   
+    }
 
   &__animalName {
     color: variables.$darkBlue;

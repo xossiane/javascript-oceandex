@@ -40,8 +40,8 @@ export default function OceanWorldwide() {
   ];
 
   const removeSpaces = (str) => {
-    const string = str.replace(/\s/g, "");
-    const lowerCase = string.charAt(0).toLowerCase() + string.slice(1);
+    const string = str.replace(/\s/g, "-");
+    const lowerCase = string.toLowerCase();
     return lowerCase;
   };
 

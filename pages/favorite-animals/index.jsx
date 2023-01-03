@@ -24,15 +24,23 @@ export default function FavoriteAnimalsPage() {
       let newArray = animal.filter((e) => {
         console.log(search);
         console.log(e.name.substring(0, [length]));
+        const searchLower = search.substring(0, [length]).toLowerCase();
         return (
-          search.substring(0, [length]).toLowerCase() ===
-          e.name.substring(0, [length]).toLowerCase()
+          searchLower === e.name.substring(0, [length]).toLowerCase() ||
+          searchLower ===
+            e.classification.class.substring(0, [length]).toLowerCase() ||
+          searchLower ===
+            e.classification.order.substring(0, [length]).toLowerCase() ||
+          searchLower ===
+            e.classification.kingdom.substring(0, [length]).toLowerCase() ||
+          searchLower ===
+            e.classification.phylum.substring(0, [length]).toLowerCase()
         );
       });
       setSearchAnimal(newArray);
       setLoading(false);
     }
-  }, [search]);
+  }, [search]);;
 
   function showAnimal() {
     {
@@ -40,7 +48,7 @@ export default function FavoriteAnimalsPage() {
         ? animal.map((item) => {
             return (
               <AnimalsCard
-                href="/"
+                href={`/oceandex/${item.name}`}
                 key={item.id}
                 name={item.name}
                 order={item.classification.order}

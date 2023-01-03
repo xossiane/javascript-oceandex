@@ -1,7 +1,7 @@
 [
-  { "ocean": "pacificOcean" },
-  { "ocean": "atlanticOcean" },
-  { "ocean": "indianOcean" },
-  { "ocean": "southernOcean" },
-  { "ocean": "arcticOcean" }
+  { "ocean": "pacific-ocean" },
+  { "ocean": "atlantic-ocean" },
+  { "ocean": "indian-ocean" },
+  { "ocean": "southern-ocean" },
+  { "ocean": "arctic-ocean" }
 ]

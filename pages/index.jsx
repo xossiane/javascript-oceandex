@@ -3,22 +3,9 @@ import Heading from "@atoms/Heading";
 import Button from "@molecules/Button";
 import Card from "@molecules/Card";
 import Hero from "@organisms/Hero";
-import { useEffect, useState } from "react";
 import btnCardIndex from "../data/btnCardIndex.json";
-import useContentful from "../hooks/useContentful";
-useContentful;
 
 export default function MainPage() {
-  const { getAnimals } = useContentful();
-  const [model, setModel] = useState();
-  const [loading, setLoading] = useState();
-
-  useEffect(() => {
-    getAnimals().then((response) => {
-      setModel(response);
-    });
-  }, []);
-  console.log(model);
   return (
     <main className={styles[`home`]}>
       <Heading level="1" color="black" weight="italic" pageTitle={true}>
