@@ -50,6 +50,7 @@ function OceanCuriosities({ oceanCuriosities, oceanName }) {
         />
         <Text
           color="darkBlue"
+          className={styles[`oceanCuriosities__text`]}
         >
           {oceanCuriosities[curiositiesID].description}
         </Text>
