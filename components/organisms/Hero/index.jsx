@@ -15,7 +15,7 @@ export default function Hero() {
     } else {
       setCurrentItem(currentItem + 1);
     }
-  }, 1000);
+  }, 3000);
 
   useEffect(() => {
     timer;
