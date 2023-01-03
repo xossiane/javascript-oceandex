@@ -4,11 +4,11 @@ import styles from "./styles.module.scss";
 
 export default function AnimalsTag({ label, mt, mw, text, className }) {
   const classList = [];
-  classList.push(styles[`AnimalsTag--${mt}`]);
-  classList.push(styles[`AnimalsTag--${mw}`]);
-  classList.push(styles[`AnimalsTag--${text}`]);
+  classList.push(styles[`animalsTag--${mt}`]);
+  classList.push(styles[`animalsTag--${mw}`]);
+  classList.push(styles[`animalsTag--${text}`]);
   return (
-    <div className={styles[`AnimalsTag`]}>
+    <div className={styles[`animalsTag`]}>
       <Text
         className={`${classList.join(" ")} ${className}`}
         color="white"

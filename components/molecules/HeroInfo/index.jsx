@@ -11,7 +11,12 @@ export default function HeroInfo(props) {
       {newHero.map((dado) => (
         <div key={dado.id} className={styles[`Hero`]}>
           <div className={styles[`Hero__header`]}>
-            <img className={styles[`Hero__mainCourse`]} src={dado.img} alt={dado.alt} tabIndex="0"/>
+            <img
+              className={styles[`Hero__mainCourse`]}
+              src={dado.img}
+              alt={dado.alt}
+              tabIndex="0"
+            />
 
             <div className={styles[`Hero__topContainer`]}>
               <img

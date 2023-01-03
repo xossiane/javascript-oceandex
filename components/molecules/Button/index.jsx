@@ -20,7 +20,6 @@ export default function Button({
   classList.push(styles[`button`]);
 
   const Router = useRouter();
-  console.log(Router.query);
 
   return href[0] !== "#" ? (
     <Link href={`${href}`}>

@@ -7,8 +7,8 @@ export default function Nav() {
   const [showMenu, setShowMenu] = useState(true);
 
   return (
-    <nav className={styles[`Nav`]}>
-      <div className={styles[`Nav__internal`]}>
+    <nav className={styles[`nav`]}>
+      <div className={styles[`nav__internal`]}>
         {/* <Link href="/">
           <a>
             <img
@@ -18,43 +18,43 @@ export default function Nav() {
             />
           </a>
         </Link> */}
-        <div className={styles[`Nav__menu`]}>
-          <ul className={styles[`Nav__menuList`]}>
-            <li className={styles[`Nav__menuLi`]}>
+        <div className={styles[`nav__menu`]}>
+          <ul className={styles[`nav__list`]}>
+            <li className={styles[`nav__item`]}>
               <Link href="/oceandex">
-                <a className={styles[`Nav__menuItem`]}>OceanDex</a>
+                <a className={styles[`nav__link`]}>OceanDex</a>
               </Link>
             </li>
-            <li className={styles[`Nav__menuLi`]}>
+            <li className={styles[`nav__item`]}>
               <Link href="/animals-curiosities">
-                <a className={styles[`Nav__menuItem`]}>Animal's Curiosities</a>
+                <a className={styles[`nav__link`]}>Animal's Curiosities</a>
               </Link>
             </li>
-            <li className={styles[`Nav__menuLi`]}>
+            <li className={styles[`nav__item`]}>
               <Link href="/ocean-curiosities">
-                <a className={styles[`Nav__menuItem`]}>Ocean Curiosities</a>
+                <a className={styles[`nav__link`]}>Ocean Curiosities</a>
               </Link>
             </li>
-            <li className={styles[`Nav__menuLi`]}>
+            <li className={styles[`nav__item`]}>
               <Link href="/trophic-level">
-                <a className={styles[`Nav__menuItem`]}>Trophic Level</a>
+                <a className={styles[`nav__link`]}>Trophic Level</a>
               </Link>
             </li>
-            <li className={styles[`Nav__menuLi`]}>
+            <li className={styles[`nav__item`]}>
               <Link href="/favorite-animals">
-                <a className={styles[`Nav__menuItem`]}>Favorite Animals</a>
+                <a className={styles[`nav__link`]}>Favorite Animals</a>
               </Link>
             </li>
-            <li className={styles[`Nav__menuLi`]}>
+            <li className={styles[`nav__item`]}>
               <Link href="/authors">
-                <a className={styles[`Nav__menuItem`]}>Authors</a>
+                <a className={styles[`nav__link`]}>Authors</a>
               </Link>
             </li>
           </ul>
-          <ul className={styles[`Nav__menuList--mobile`]}>
+          <ul className={styles[`nav__list--mobile`]}>
             {showMenu ? (
               <button
-                className={styles[`Nav__openMenu`]}
+                className={styles[`nav__open`]}
                 onClick={() => setShowMenu(false)}
               >
                 <GlobalSvg
@@ -65,7 +65,7 @@ export default function Nav() {
             ) : (
               <>
                 <button
-                  className={styles[`Nav__closeMenu`]}
+                  className={styles[`nav__close`]}
                   onClick={() => setShowMenu(true)}
                 >
                   <GlobalSvg
@@ -73,36 +73,36 @@ export default function Nav() {
                     alt="Close Menu"
                   />
                 </button>
-                <li className={styles[`Nav__menuLi`]}>
+                <li className={styles[`nav__item`]}>
                   <Link href="/oceandex">
-                    <a className={styles[`Nav__menuItem`]}>OceanDex</a>
+                    <a className={styles[`nav__link`]}>OceanDex</a>
                   </Link>
                 </li>
-                <li className={styles[`Nav__menuLi`]}>
+                <li className={styles[`nav__item`]}>
                   <Link href="/animals-curiosities">
-                    <a className={styles[`Nav__menuItem`]}>
+                    <a className={styles[`nav__link`]}>
                       Animal's Curiosities
                     </a>
                   </Link>
                 </li>
-                <li className={styles[`Nav__menuLi`]}>
+                <li className={styles[`nav__item`]}>
                   <Link href="/ocean-curiosities">
-                    <a className={styles[`Nav__menuItem`]}>Ocean Curiosities</a>
+                    <a className={styles[`nav__link`]}>Ocean Curiosities</a>
                   </Link>
                 </li>
-                <li className={styles[`Nav__menuLi`]}>
+                <li className={styles[`nav__item`]}>
                   <Link href="/trophic-level">
-                    <a className={styles[`Nav__menuItem`]}>Trophic Level</a>
+                    <a className={styles[`nav__link`]}>Trophic Level</a>
                   </Link>
                 </li>
-                <li className={styles[`Nav__menuLi`]}>
+                <li className={styles[`nav__item`]}>
                   <Link href="/favorite-animals">
-                    <a className={styles[`Nav__menuItem`]}>Favorite Animals</a>
+                    <a className={styles[`nav__link`]}>Favorite Animals</a>
                   </Link>
                 </li>
-                <li className={styles[`Nav__menuLi`]}>
+                <li className={styles[`nav__item`]}>
                   <Link href="/authors">
-                    <a className={styles[`Nav__menuItem`]}>Authors</a>
+                    <a className={styles[`nav__link`]}>Authors</a>
                   </Link>
                 </li>
               </>

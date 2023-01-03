@@ -1,6 +1,6 @@
 @use "@styles/variables";
 
-.Nav {
+.nav {
   box-sizing: border-box;
   background-color: variables.$white;
   margin: 0 auto;
@@ -15,54 +15,54 @@
     padding: 0;
   }
 
-    &__internal {
-      box-sizing: border-box;
+  &__internal {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    @media (min-width: 1024px) {
+      margin: 0 auto;
+      height: 14.2rem;
+      padding: 0;
+      margin-left: 6rem;
+    }
+  }
+
+  // &__logo {
+  //   cursor: pointer;
+  //   @media (min-width: 1024px) {
+  //     width: 13rem;
+  //   }
+  // }
+
+  &__list {
+    display: none;
+    @media (min-width: 1024px) {
       display: flex;
-      align-items: center;
+      flex-direction: row;
       justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      width: 71rem;
+    }
+    @media (min-width: 1440px) {
+      width: 109rem;
+    }
+
+    &--mobile {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
+      margin-top: 8.6rem;
+      padding: 0;
       @media (min-width: 1024px) {
-        margin: 0 auto;  
-        height: 14.2rem;
-        padding: 0;
-        margin-left: 6rem;
-      }
-    }
-
-    &__logo {
-      cursor: pointer;
-      @media (min-width: 1024px) {
-        width: 13rem;
-      }
-    }
-
-    &__menuList {
         display: none;
-        @media (min-width: 1024px) {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          padding: 0; 
-          width: 71rem;
-        }
-        @media (min-width: 1440px) {
-          width: 109rem;
-        }
-
-        &--mobile {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          margin-top: 8.6rem;
-          padding: 0;
-          @media (min-width: 1024px) {
-            display: none;
-          }
-        }
+      }
     }
-  &__menuLi {
+  }
+  &__item {
     list-style: none;
     padding: 3rem 1rem;
     background: variables.$white;
@@ -81,7 +81,7 @@
     }
   }
 
-  &__menuItem {
+  &__link {
     list-style: none;
     font-size: 2rem;
     line-height: 1.4rem;
@@ -99,7 +99,7 @@
     }
   }
 
-  &__openMenu{
+  &__open {
     position: absolute;
     border: none;
     background: variables.$white;
@@ -111,7 +111,7 @@
     }
   }
 
-  &__closeMenu{
+  &__close {
     position: absolute;
     border: none;
     background: variables.$white;

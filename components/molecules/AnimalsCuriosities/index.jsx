@@ -1,11 +1,10 @@
-import Text from "@atoms/Text";
 import { useState } from "react";
-import AnimalsTag from "@molecules/AnimalsTag";
-import Arrow from "@atoms/Arrow";
-import styles from "./styles.module.scss";
+import Text from "@atoms/Text";
 import Heading from "@atoms/Heading";
+import AnimalsTag from "@molecules/AnimalsTag";
+import styles from "./styles.module.scss";
 
-function AnimalsCuriosities({
+export default function AnimalsCuriosities({
   animalsCuriosities,
   animalName,
   order,
@@ -14,25 +13,22 @@ function AnimalsCuriosities({
   curiosityImage,
 }) {
   return (
-    <div className={styles[`AnimalsCuriosities`]}>
+    <div className={styles[`animalsCuriosities`]}>
       <Heading level="2" style="">
         {animalName}
       </Heading>
-      <div className={styles[`AnimalsCuriosities__Tag`]}>
+      <div className={styles[`animalsCuriosities__tag`]}>
         <AnimalsTag label={phylum} mt="mt" />
         <AnimalsTag label={order} mt="mt" />
       </div>
-      <Text
-        className={styles[`AnimalsCuriosities__Text`]}
-        color="black"
-        size="medium"
-      >
+      <Text color="black" size="medium">
         {curiosityText}
       </Text>
-
-      <img className={styles[`AnimalsCuriosities__Img`]} src={curiosityImage} />
+      <img
+        className={styles[`animalsCuriosities__image`]}
+        src={curiosityImage}
+        alt="animal in its habitat"
+      />
     </div>
   );
 }
-
-export default AnimalsCuriosities;

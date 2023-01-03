@@ -1,5 +1,5 @@
 @use "@styles/variables";
-.AnimalsCuriosities {
+.animalsCuriosities {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +7,7 @@
   width: 95%;
   margin: 0 auto;
 
-  &__Img {
+  &__image {
     border-radius: 2.4rem;
     width: 100%;
     height: auto;
@@ -23,56 +23,16 @@
       height: 56.8rem;
     }
   }
-  &--Name {
-    margin-top: 3rem;
-  }
-  &__Text {
-    line-height: 2.8rem;
-    opacity: 0.8;
-    margin: auto;
-    margin: 3rem auto 3rem auto;
-    overflow-y: auto;
-    text-align: left;
-  }
-  &__Tag {
+
+  &__tag {
     display: flex;
     flex-direction: row;
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       margin: 2rem auto 3rem auto;
       background-color: variables.$white;
       position: relative;
       width: 49.5rem;
       justify-content: space-evenly;
-    }
-  }
-
-  &--button-left {
-    cursor: pointer;
-    z-index: 5;
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    overflow: visible;
-    background: transparent;
-
-    @media (min-width: 768px) {
-      position: relative;
-    }
-  }
-
-  &--button-right {
-    cursor: pointer;
-    z-index: 5;
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    overflow: visible;
-    background: transparent;
-
-    @media (min-width: 768px) {
-      position: relative;
     }
   }
 }
