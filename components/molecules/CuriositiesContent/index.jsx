@@ -1,6 +1,6 @@
 import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
-import { internalMutate } from "swr/_internal";
+/* import { internalMutate } from "swr/_internal"; */
 import styles from "./styles.module.scss";
 
 export default function Curiosities({ data }) {
@@ -11,9 +11,8 @@ export default function Curiosities({ data }) {
           color="black"
           size="medium"
           className={styles[`Curiosities__text`]}
-         
         >
-       {data.curiosity.fields.description}
+          {data.curiosity.fields.description}
         </Text>
         <img
           src={data.curiosity.fields.image.fields.file.url}
