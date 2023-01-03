@@ -21,7 +21,7 @@ export default function AnimalsCuriosities({
         <AnimalsTag label={phylum} mt="mt" />
         <AnimalsTag label={order} mt="mt" />
       </div>
-      <Text color="black" size="medium">
+      <Text color="black" size="medium" className={styles[`animalsCuriosities__text`]}>
         {curiosityText}
       </Text>
       <img

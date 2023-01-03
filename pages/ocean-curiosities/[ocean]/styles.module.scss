@@ -16,8 +16,8 @@
 
   &__image {
     border-radius: 2.4rem;
-    width: 16.6rem;
-    height: 16.6rem;
+    width: 26.6rem;
+    height: 26.6rem;
     margin-top: 3rem;
     z-index: 5;
     margin-bottom: 3rem;
@@ -31,14 +31,29 @@
       height: 56.8rem;
     }
   }
+  
 
   &__arrows {
     display: flex;
     justify-content: space-evenly;
     position: relative;
     min-width: 15.9rem;
+    padding-bottom: 15rem;
+    @media (min-width: 615px) {
+      padding-bottom: 20rem;
+    }
+    @media (min-width: 798px) {
+      padding-bottom: 35rem;
+    }
     @media (min-width: 1024px) {
       width: 39.2rem;
+    }
+  }
+
+  &__text{
+    width: 80%;
+    @media (min-width: 1024px) {
+      width: 90%;
     }
   }
 }
