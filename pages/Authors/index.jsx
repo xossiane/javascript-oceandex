@@ -18,12 +18,12 @@ export default function AuthorsPage() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <section className={styles[`authorsPageContainer`]}>
       <Heading level="1" size="H1" color="black" style="italic" pageTitle={true}>
         Authors
       </Heading>
 
-      <section className={styles.authorsPage}>
+      <article className={styles[`authorsPage`]}>
         {authors.map((author) => {
           if (author.job === "Front End Developer")
             return (
@@ -37,9 +37,9 @@ export default function AuthorsPage() {
               />
             );
         })}
-      </section>
+      </article>
 
-      <section>
+      <article>
         {authors.map((author) => {
           if (author.job !== "Front End Developer")
             return (
@@ -53,7 +53,7 @@ export default function AuthorsPage() {
               />
             );
         })}
-      </section>
-    </div>
+      </article>
+    </section>
   );
 }

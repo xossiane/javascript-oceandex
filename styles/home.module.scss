@@ -1,87 +1,30 @@
 @use "@styles/variables";
 
-.Home {
+.home {
   position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 70px;
-
-  // &__div {
-  //   height: 400px;
-  //   width: 400px;
-  //   background-color: black;
-  //   z-index: 2000;
-  // }
-  &__container {
-    padding: 0 1.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    //max-width: 1281px;
-  }
 
   &__content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
-    z-index: 5;
-    width: 100%;
-    max-width: 1281px;
+    row-gap: 2rem;
+    column-gap: 1.5rem;
 
-    @media (min-width: 1440px) {
+    @media screen and (min-width: 1024px) {
+      row-gap: 3.5rem;
+      column-gap: 2.5rem;
+    }
+
+    @media screen and (min-width: 1440px) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      /* align-items: center;
-      justify-content: center; */
-      gap: 39px;
-
-      //justify-items: center;
-
-      //  flex-basis: calc((100% - (n - 1) rem)/n)
+      row-gap: 5rem;
+      column-gap: 4rem;
     }
-  }
-
-  h1 {
-    padding: 10px;
-  }
-
-  &__buttons {
-    display: flex;
-    align-items: center;
-    &--unit {
-      margin: 1rem;
-    }
-  }
-  &__buttonsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-    z-index: 5;
-    width: 100%;
-    max-width: 1281px;
-
-    @media (min-width: 1440px) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      /* align-items: center;
-      justify-content: center; */
-      gap: 39px;
-
-      //justify-items: center;
-
-      //  flex-basis: calc((100% - (n - 1) rem)/n)
-    }
-  }
-  &__background {
-    position: absolute;
-    bottom: 0;
   }
 }

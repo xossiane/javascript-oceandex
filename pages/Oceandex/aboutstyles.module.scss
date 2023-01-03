@@ -11,13 +11,6 @@
         background-color: variables.$white;
     }
 
-    &__title {
-        display: none;
-        @media (min-width: 1024px) {
-            display: block;
-            text-align: center;
-        }
-    }
 
     &__Content {
         margin-top: -13.1rem;

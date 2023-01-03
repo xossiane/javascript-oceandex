@@ -51,7 +51,7 @@ export default function OceanDexPage() {
     );
 
     if (filteredAnimals.length === 0 && search !== "") {
-      return <Text weight="bold">No results Found</Text>;
+      return <Text weight="bold">No results found</Text>;
     } else {
       return filteredAnimals.map((item) => {
         return (
@@ -72,21 +72,18 @@ export default function OceanDexPage() {
   }
 
   return (
-      <div className={styles[`Oceandex__Container`]}>
-        <header className={styles[`Oceandex__Header`]}>
-          <Heading
-            level="1"
-            className={styles[`Oceandex__Content--text`]}
-            color="grey"
-            style="italic"
-            pageTitle={true}
-          >
-            {" "}
-            What marine creature are you looking for?{" "}
-          </Heading>
-        </header>
+    <section className={styles[`oceandex`]}>
+        <Heading
+          level="1"
+          color="black"
+          style="italic"
+          pageTitle={true}
+        >
+          {" "}
+          What marine creature are you looking for?{" "}
+        </Heading>
 
-      <div className={styles[`Oceandex__Search`]}>
+      <div className={styles[`oceandex__search`]}>
         <Input
           /* value={search} */
           placeholder={"Search for animals, filos..."}
@@ -94,10 +91,10 @@ export default function OceanDexPage() {
           aria-label={""}
         />
       </div>
-      <section className={styles[`Oceandex__Cards`]}>
+      <section className={styles[`oceandex__cards`]}>
         {loading && <p>loading</p>}
         {!loading && <FilterCArd animals={animals} />}
       </section>
-    </div>
+    </section>
   );
 }

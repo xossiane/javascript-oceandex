@@ -3,7 +3,7 @@ import useContentful from "../../hooks/useContentful";
 import Arrow from "@atoms/Arrow";
 import Heading from "@atoms/Heading";
 import AnimalsTag from "@molecules/AnimalsTag";
-import TabsDemo from "@organisms/Tabs";
+import TabsComponent from "@organisms/Tabs";
 import Background from "@atoms/Background";
 import styles from "./aboutstyles.module.scss";
 import Like from "@atoms/Like";
@@ -32,16 +32,6 @@ export default function AboutPage() {
   if (data) {
     return (
       <div className={styles[`AboutPage`]}>
-        <div className={styles[`AboutPage__title`]}>
-          {/* <Heading
-          level="1"
-          className={styles[`AboutPage__Header--text`]}
-          color="black"
-        >
-          {" "}
-          Octopus{" "}
-        </Heading> */}
-        </div>
         <div className={styles[`AboutPage__Content`]}>
           <div className={styles[`AboutPage__Container`]}>
             <header className={styles[`AboutPage__Header`]}>
@@ -63,12 +53,28 @@ export default function AboutPage() {
                 {data.name}
               </Heading>
               <section className={styles[`AboutPage__tag`]}>
-                <AnimalsTag mw="mw" label={data.classification.kingdom} text="text"></AnimalsTag>{" "}
-                <AnimalsTag mw="mw"label={data.classification.phylum} text="text"></AnimalsTag>
+                <AnimalsTag
+                  mw="mw"
+                  label={data.classification.kingdom}
+                  text="text"
+                />
+                <AnimalsTag
+                  mw="mw"
+                  label={data.classification.phylum}
+                  text="text"
+                />
               </section>
               <section className={styles[`AboutPage__tag--bottom`]}>
-                <AnimalsTag mw="mw"label={data.classification.class} text="text"></AnimalsTag>{" "}
-                <AnimalsTag mw="mw"label={data.classification.order} text="text"></AnimalsTag>
+                <AnimalsTag
+                  mw="mw"
+                  label={data.classification.class}
+                  text="text"
+                />
+                <AnimalsTag
+                  mw="mw"
+                  label={data.classification.order}
+                  text="text"
+                />
               </section>
               <img
                 src={data.image}
@@ -78,13 +84,10 @@ export default function AboutPage() {
             </section>
           </div>
           <div className={styles[`AboutPage__Container--bottom`]}>
-            <TabsDemo></TabsDemo>
+            <TabsComponent />
           </div>
         </div>
       </div>
     );
   }
-
-
-
 }

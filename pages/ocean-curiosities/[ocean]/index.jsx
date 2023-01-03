@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./styles.module.scss";
 import Heading from "@atoms/Heading";
-
 import Text from "@atoms/Text";
 import oceanNames from "../../../data/oceanNames";
 import useContentful from "hooks/useContentful";
@@ -39,37 +38,31 @@ function OceanCuriosities({ oceanCuriosities, oceanName }) {
   }
 
   return (
-    <div className={styles[`OceanCuriosities`]}>
-      <section className={styles[`OceanCuriosities__Content`]}>
-        <section className={styles[`OceanCuriosities__Header`]}>
+    <section className={styles[`oceanCuriosities`]}>
+      <article className={styles[`oceanCuriosities__content`]}>
           <Heading
             level="1"
-            className={styles[`OceanCuriosities__Text`]}
             color="black"
             style="italic"
           >
             {oceanName}
           </Heading>
-        </section>
 
         <img
-          className={styles[`OceanCuriosities__Img`]}
+          className={styles[`oceanCuriosities__image`]}
           src={oceanCuriosities[curiositiesID].image}
         />
         <Text
-          className={styles[`OceanCuriosities__Text`]}
-          color="black"
-          size="small"
+          color="darkBlue"
         >
           {oceanCuriosities[curiositiesID].description}
         </Text>
-        <div></div>
-      </section>
-      <div className={styles[`OceanCuriosities__Arrow`]}>
+      </article>
+      <article className={styles[`oceanCuriosities__arrows`]}>
         <Arrow direction="left" handleClick={handleClickSub} />
         <Arrow direction="right" handleClick={handleClickSum} />
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }
 export default OceanCuriosities;

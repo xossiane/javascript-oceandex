@@ -31,8 +31,8 @@
     min-width: 100%;
     position: relative;
     z-index: 100;
-    row-gap: 25px;
-    @media (min-width: 700px) {
+    row-gap: 1.5rem;
+    @media (min-width: 768px) {
       flex-direction: column;
     }
 
