@@ -111,7 +111,7 @@ export default function trophicLevelPage() {
           <Text
             id="Text"
             size="large"
-            className={styles[`trophicLevel__containerTextParagraph--mobile`]}
+            className={styles[`trophicLevel__containerTextParagraph`]}
           >
             With no sunlight, photosynthesis cannot occur below 200 metres in
             the Twilight Zone. There are no plants here to fulfil the role of
@@ -131,7 +131,7 @@ export default function trophicLevelPage() {
           <Text
             id="Text"
             size="large"
-            className={styles[`trophicLevel__containerTextParagraph--mobile`]}
+            className={styles[`trophicLevel__containerTextParagraph`]}
           >
             The Arctic food web is unique in there is not an abundance of
             typical plants to serve as primary producers. Instead, primary
@@ -149,7 +149,7 @@ export default function trophicLevelPage() {
           <Text
             id="Text"
             size="large"
-            className={styles[`trophicLevel__containerTextParagraph--mobile`]}
+            className={styles[`trophicLevel__containerTextParagraph`]}
           >
             The open ocean is often called the pelagic zone. The pelagic zone is
             sometimes thought of as a cylinder or column of water that goes from
