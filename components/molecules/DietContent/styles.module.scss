@@ -20,6 +20,12 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    @media (min-width: 1024px){
+        width: 34rem;  
+    } 
+    @media (min-width: 1440px){
+        width: 50rem;   
+    }        
 }
 
 .Diet__hrItem{
@@ -29,6 +35,12 @@
        opacity: 40%;
        width: 100%;
        margin: 0;
+       @media (min-width: 1024px){
+        width: 34rem;  
+    } 
+    @media (min-width: 1440px){
+        width: 50rem;   
+    }
        
        
 }

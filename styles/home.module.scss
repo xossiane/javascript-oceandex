@@ -33,13 +33,17 @@
     z-index: 5;
     width: 100%;
     max-width: 1281px;
+    @media (min-width: 1024px) {
+      gap: 2rem;
+    }
 
     @media (min-width: 1440px) {
       display: grid;
+      gap: 4rem;
+
       grid-template-columns: repeat(3, 1fr);
       /* align-items: center;
       justify-content: center; */
-      gap: 39px;
 
       //justify-items: center;
 
