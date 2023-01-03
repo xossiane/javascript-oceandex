@@ -22,8 +22,6 @@ export default function FavoriteAnimalsPage() {
       setLoading(true);
       let length = search.length;
       let newArray = animal.filter((e) => {
-        console.log(search);
-        console.log(e.name.substring(0, [length]));
         const searchLower = search.substring(0, [length]).toLowerCase();
         return (
           searchLower === e.name.substring(0, [length]).toLowerCase() ||
@@ -92,7 +90,7 @@ export default function FavoriteAnimalsPage() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             page="FavoriteAnimals"
-            placeholder="Search for your favorite animals"
+            placeholder="Search your ♥ animals"
             aria-label="Search for your favorite animals"
           />
         </div>

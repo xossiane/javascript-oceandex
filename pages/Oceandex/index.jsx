@@ -24,8 +24,6 @@ export default function OceanDexPage() {
     fetchAnimals();
   }, []);
 
-  console.log(animals);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const value = e.target.value;

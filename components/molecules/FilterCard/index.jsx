@@ -2,7 +2,6 @@ import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
 import useFecthInput from "../../../store/useFetchInput";
 
-//console.log(animal);
 function FilterCard({ animals }) {
   const search = useFecthInput((state) => state.search);
   const filteredAnimals = animals.filter(
@@ -15,8 +14,6 @@ function FilterCard({ animals }) {
         .includes(search.toLowerCase()) ||
       item.classification.phylum.toLowerCase().includes(search.toLowerCase())
   );
-
-
 
   if (filteredAnimals.length === 0 && search !== "") {
     return <Text weight="bold">No results Found</Text>;

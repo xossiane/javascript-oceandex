@@ -34,7 +34,7 @@ export default function Diet({ data }) {
                 loading="lazy"
               ></img>
             </span>
-            <hr className={styles[`diet__hr`]}></hr>
+            <hr key={element.name + "hr"} className={styles[`diet__hr`]}></hr>
           </>
         ))}
       </section>

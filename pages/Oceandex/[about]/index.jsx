@@ -1,19 +1,16 @@
 import { useRouter } from "next/router";
-import useContentful from "../../hooks/useContentful";
+import useContentful from "../../../hooks/useContentful";
 import Arrow from "@atoms/Arrow";
 import Heading from "@atoms/Heading";
 import AnimalsTag from "@molecules/AnimalsTag";
 import TabsComponent from "@organisms/Tabs";
-import Background from "@atoms/Background";
-import styles from "./aboutstyles.module.scss";
+import styles from "./styles.module.scss";
 import Like from "@atoms/Like";
 import { useEffect, useState } from "react";
-import useFetchData from "../../store/useFetchData";
+import useFetchData from "../../../store/useFetchData";
 
 export default function AboutPage() {
   const router = useRouter();
-  console.log(router.query);
-
   const { getAnimals } = useContentful();
   const setData = useFetchData((state) => state.setData);
   const [liked, setLiked] = useState(false)
@@ -28,14 +25,12 @@ export default function AboutPage() {
       setData(findAnimal);
     }
     const hadLiked = () =>{
-        console.log(data)
         let array = localStorage.getItem('oceandex');
         if(array !== null){
         array = JSON.parse(array)
         let had = array.findIndex((animal)=>{
           return animal.name === router.query.about
         })
-        console.log(had)
         if(had !== -1){
           setLiked(true)
         }
@@ -86,7 +81,7 @@ export default function AboutPage() {
             <header className={styles[`AboutPage__Header`]}>
               <div className={styles[`AboutPage__Header--arrow`]}>
                 {" "}
-                <Arrow direction="left" href="/Oceandex" white />
+                <Arrow direction="left" href="/oceandex" white />
               </div>
               <Like
                 onClick={()=>{likeAnimal(data)}}

@@ -8,7 +8,6 @@ import useContentful from "hooks/useContentful";
 import Arrow from "@atoms/Arrow";
 
 function OceanCuriosities({ oceanCuriosities, oceanName }) {
-  console.log(oceanCuriosities);
   const [curiositiesID, setcuriositiesID] = useState(0);
   const [allOceanCuriosities, setallOceanCuriosities] = useState([]);
 
@@ -19,7 +18,6 @@ function OceanCuriosities({ oceanCuriosities, oceanName }) {
       setcuriositiesID((previous) => {
         return previous + 1;
       });
-      console.log(curiositiesID);
     } else {
       setcuriositiesID(0);
     }
@@ -30,7 +28,6 @@ function OceanCuriosities({ oceanCuriosities, oceanName }) {
       setcuriositiesID((previous) => {
         return previous - 1;
       });
-      console.log(curiositiesID);
     } else {
       setcuriositiesID(oceanListLength);
     }
