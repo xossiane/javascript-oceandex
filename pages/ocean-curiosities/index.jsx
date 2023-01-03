@@ -46,7 +46,6 @@ export default function OceanWorldwide() {
   };
 
   return (
-    <>
         <section className={styles[`oceanWorldwide__container`]}>
           <div className={styles[`oceanWorldwide__arrow`]}>
             <Arrow direction="left" href="/" />
@@ -93,7 +92,5 @@ export default function OceanWorldwide() {
             </section>
           </main>
         </section>
-     
-    </>
   );
 }

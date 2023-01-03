@@ -12,7 +12,7 @@ export default function trophicLevelPage() {
   const [selected, setSelected] = useState("Deep Ocean");
 
   return (
-    <>
+    <section>
       <div className={styles[`trophicLevel__Arrow`]}>
         <Arrow href="#content" direction="top" />
       </div>
@@ -255,6 +255,6 @@ export default function trophicLevelPage() {
           />
         )}
       </div>
-    </>
+    </section>
   );
 }
