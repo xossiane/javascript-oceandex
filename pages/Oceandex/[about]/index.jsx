@@ -13,8 +13,7 @@ export default function AboutPage() {
   const router = useRouter();
   const { getAnimals } = useContentful();
   const setData = useFetchData((state) => state.setData);
-  const [liked, setLiked] = useState(false)
-
+  const [liked, setLiked] = useState(false);
 
   useEffect(() => {
     async function fetchAnimals() {
@@ -24,81 +23,81 @@ export default function AboutPage() {
       );
       setData(findAnimal);
     }
-    const hadLiked = () =>{
-        let array = localStorage.getItem('oceandex');
-        if(array !== null){
-        array = JSON.parse(array)
-        let had = array.findIndex((animal)=>{
-          return animal.name === router.query.about
-        })
-        if(had !== -1){
-          setLiked(true)
+    const hadLiked = () => {
+      let array = localStorage.getItem("oceandex");
+      if (array !== null) {
+        array = JSON.parse(array);
+        let had = array.findIndex((animal) => {
+          return animal.name === router.query.about;
+        });
+        if (had !== -1) {
+          setLiked(true);
         }
       }
-    }
-    hadLiked()
+    };
+    hadLiked();
     fetchAnimals();
   }, [router.query.about]);
 
-
   const likeAnimal = (item) => {
-    let array = localStorage.getItem('oceandex')
-    if(liked === false){
-      if(array === null){
-        array = []
-        array.push(item)
-        let animal = JSON.stringify(array)
-        localStorage.setItem('oceandex',animal)
-      }else{
-        array = JSON.parse(array)
-        let findItem = array.findIndex(itemArray => itemArray.id === item.id)
-        if(findItem === -1){
-          array.push(item)
-          let animal = JSON.stringify(array)
-          localStorage.setItem('oceandex',animal)
+    let array = localStorage.getItem("oceandex");
+    if (liked === false) {
+      if (array === null) {
+        array = [];
+        array.push(item);
+        let animal = JSON.stringify(array);
+        localStorage.setItem("oceandex", animal);
+      } else {
+        array = JSON.parse(array);
+        let findItem = array.findIndex((itemArray) => itemArray.id === item.id);
+        if (findItem === -1) {
+          array.push(item);
+          let animal = JSON.stringify(array);
+          localStorage.setItem("oceandex", animal);
         }
       }
-    }else{
-      array = JSON.parse(array)
-      let index = array.findIndex((element)=>{
-        return element.name === router.query.about
-      })
-      array.splice(index, 1)
-      array = JSON.stringify(array)
-      localStorage.setItem('oceandex',array)
+    } else {
+      array = JSON.parse(array);
+      let index = array.findIndex((element) => {
+        return element.name === router.query.about;
+      });
+      array.splice(index, 1);
+      array = JSON.stringify(array);
+      localStorage.setItem("oceandex", array);
     }
-    setLiked(!liked)
-  }
+    setLiked(!liked);
+  };
 
   const data = useFetchData((state) => state.data);
-  
-  if (data) {
 
+  if (data) {
     return (
-      <div className={styles[`AboutPage`]}>
-        <div className={styles[`AboutPage__Content`]}>
-          <div className={styles[`AboutPage__Container`]}>
-            <header className={styles[`AboutPage__Header`]}>
-              <div className={styles[`AboutPage__Header--arrow`]}>
+      <div className={styles[`aboutPage`]}>
+        <div className={styles[`aboutPage__content`]}>
+          <div className={styles[`aboutPage__container`]}>
+            <header className={styles[`aboutPage__header`]}>
+              <div className={styles[`aboutPage__header--arrow`]}>
                 {" "}
                 <Arrow direction="left" href="/oceandex" white />
               </div>
               <Like
-                onClick={()=>{likeAnimal(data)}}
+                onClick={() => {
+                  likeAnimal(data);
+                }}
                 white={true}
                 liked={liked}
-                className={styles[`AboutPage__Header--like`]}
+                className={styles[`aboutPage__header--like`]}
               />
             </header>
-            <section className={styles[`AboutPage__Header--info`]}>
+            <section className={styles[`aboutPage__header--info`]}>
               <Heading
                 level="1"
-                className={styles[`AboutPage__Header--text`]}
+                className={styles[`aboutPage__header--text`]}
                 color="white"
               >
                 {data.name}
               </Heading>
-              <section className={styles[`AboutPage__tag`]}>
+              <section className={styles[`aboutPage__tag`]}>
                 <AnimalsTag
                   mw="mw"
                   label={data.classification.kingdom}
@@ -110,7 +109,7 @@ export default function AboutPage() {
                   text="text"
                 />
               </section>
-              <section className={styles[`AboutPage__tag--bottom`]}>
+              <section className={styles[`aboutPage__tag--bottom`]}>
                 <AnimalsTag
                   mw="mw"
                   label={data.classification.class}
@@ -124,12 +123,12 @@ export default function AboutPage() {
               </section>
               <img
                 src={data.image}
-                className={styles[`AboutPage__Header--icon`]}
+                className={styles[`aboutPage__header--icon`]}
                 alt={data.name}
               ></img>
             </section>
           </div>
-          <div className={styles[`AboutPage__Container--bottom`]}>
+          <div className={styles[`aboutPage__container--bottom`]}>
             <TabsComponent />
           </div>
         </div>
