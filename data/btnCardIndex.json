@@ -2,7 +2,7 @@
     {
       "color": "blue",
       "href": "/oceandex",
-      "description": "Animal's list",
+      "description": "Animal's List",
       "img": "/assets/images/icons/icon.svg",
       "title": "Oceandex",
       "fontsize":"fontsmall",
@@ -38,7 +38,7 @@
     {
       "color": "pink",
       "href": "/favorite-animals",
-      "description": "Selected animals (by heart)",
+      "description": "Selected Animals (by heart)",
       "img": "/assets/images/icons/favorite.svg",
       "title": "Favorite Animals",
       "fontsize":"fontsmall",
@@ -47,7 +47,7 @@
     {
       "color": "red",
       "href": "/authors",
-      "description": "Who made this",
+      "description": "Who Made This",
       "img": "/assets/images/icons/author.svg",
       "title": "Authors",
       "fontsize":"fontsmall",
