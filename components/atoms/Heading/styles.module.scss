@@ -4,15 +4,16 @@
   font-weight: 400;
   font-style: italic;
   text-align: center;
-  
-
+  &::first-letter {
+    text-transform: capitalize;
+  }
   &--H1 {
     font-size: 3rem;
   }
   &--H2 {
     font-size: 2.2rem;
   }
-  
+
   @media (min-width: 1024px) {
     &--H1 {
       font-size: 4.5rem;
@@ -25,13 +26,13 @@
     }
   }
 
-  &--pageTitle{
-    margin:4rem 0;
+  &--pageTitle {
+    margin: 4rem 0;
     @media (min-width: 1024px) {
       margin: 5.5rem 0;
-      }
+    }
     @media (min-width: 1440px) {
-      margin:7.5rem 0;
+      margin: 7.5rem 0;
     }
   }
 
@@ -48,7 +49,4 @@
   &--uppercase {
     text-transform: uppercase;
   }
- 
 }
-
-
