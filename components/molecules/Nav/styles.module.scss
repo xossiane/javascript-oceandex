@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding: 0 1.75rem;
   height: 8.6rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.6);
 
   @media (min-width: 1024px) {
     width: 100%;
@@ -66,17 +66,17 @@
     list-style: none;
     padding: 3rem 1rem;
     background: variables.$white;
-    border-bottom: 1px solid variables.$lightGrey;
+    border-bottom: 0.1rem solid variables.$lightGrey;
     @media (min-width: 1024px) {
       display: flex;
       justify-content: space-between;
       list-style: none;
-      max-width: 140px;
+      max-width: 14rem;
       text-align: center;
       border-bottom: none;
       @media (min-width: 1440px) {
         // margin-left: 3rem;
-        max-width: 110px;
+        max-width: 11rem;
       }
     }
   }

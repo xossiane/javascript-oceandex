@@ -13,21 +13,21 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 400px;
-      border-radius: 15px;
+      width: 40rem;
+      border-radius: 1.5rem;
     }
 
     &__relative {
       position: relative;
 
       &--selected {
-        border: 8px solid variables.$red;
+        border: 0.8rem solid variables.$red;
         border-radius: 2rem;
         height: 100%;
-        left: -11px;
-        padding: 3px;
+        left: -1.1rem;
+        padding: 0.3rem;
         position: absolute;
-        top: -11px;
+        top: -1.1rem;
         width: 100%;
 
         @media (max-width: 1439.9px) {
@@ -39,12 +39,12 @@
     &__link {
       cursor: pointer;
       background-color: variables.$grey;
-      padding: 13px 60px;
-      border-radius: 38px;
+      padding: 1.3rem 6rem;
+      border-radius: 3.8rem;
       color: variables.$white;
       text-decoration: none;
       font-size: 1.8rem;
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
       font-weight: bold;
     }
 

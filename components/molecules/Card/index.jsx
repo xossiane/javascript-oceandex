@@ -25,7 +25,7 @@ export default function Card({
         ></div>
         <div className={`${classList.join(" ")}`}>
           <Heading
-            level="1"
+            level="2"
             color="white"
             size="small"
             weight="normal"

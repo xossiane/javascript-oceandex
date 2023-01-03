@@ -1,29 +1,29 @@
 @use "@styles/variables";
-.Curiosities{
-    &__text{
-      box-sizing: border-box;
-        text-align: left;
-        line-height: 2.4rem;
-        margin: 0 3.2rem;
-        @media (min-width: 768px) {
-          margin: 2.2rem 6.2rem;
-        }   
-        @media (min-width: 1024px) {
-          width: 34rem;
-          margin: 2.2rem auto;
-        }
-        @media (min-width: 1440px) {
-          width: 50rem;
-        }
+.curiosities {
+  &__text {
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 2.4rem;
+    margin: 0 3.2rem;
+    @media (min-width: 768px) {
+      margin: 2.2rem 6.2rem;
     }
-    &__img{
-        display: flex;
-        width: 34rem;
-        border-radius: 2.4rem;
-        margin: 3rem auto;
-        object-fit: cover;
-        @media (min-width: 1440px) {
-            width: 50rem;
-        }
+    @media (min-width: 1024px) {
+      width: 34rem;
+      margin: 2.2rem auto;
+    }
+    @media (min-width: 1440px) {
+      width: 50rem;
     }
   }
+  &__image {
+    display: flex;
+    width: 34rem;
+    border-radius: 2.4rem;
+    margin: 3rem auto;
+    object-fit: cover;
+    @media (min-width: 1440px) {
+      width: 50rem;
+    }
+  }
+}

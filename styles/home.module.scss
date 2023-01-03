@@ -1,12 +1,10 @@
 @use "@styles/variables";
-
 .home {
   position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   &__content {
     display: flex;
     flex-wrap: wrap;
@@ -14,12 +12,10 @@
     justify-content: center;
     row-gap: 2rem;
     column-gap: 1.5rem;
-
     @media screen and (min-width: 1024px) {
       row-gap: 3.5rem;
       column-gap: 2.5rem;
     }
-
     @media screen and (min-width: 1440px) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
