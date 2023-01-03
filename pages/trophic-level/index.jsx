@@ -8,19 +8,19 @@ import Card from "@molecules/Card";
 import { useState } from "react";
 import styles from "./styles.module.scss";
 
-export default function TrophicLevelPage() {
+export default function trophicLevelPage() {
   const [selected, setSelected] = useState("Deep Ocean");
 
   return (
     <>
-      <div className={styles[`TrophicLevel__Arrow`]}>
+      <div className={styles[`trophicLevel__Arrow`]}>
         <Arrow href="#content" direction="top" />
       </div>
       <Heading id="content" style="italic" color="black" level="1" pageTitle = {true}
 >
         Trophic Level
       </Heading>
-      <Text className={styles[`TrophicLevel__Paragraph`]} size="large">
+      <Text className={styles[`trophicLevel__Paragraph`]} size="large">
         Based on the source of their nutrition or food, organisms occupy a
         specific place in the food chain known as their trophic level. Primary
         producers comprise the first trophic level, followed by primary
@@ -34,7 +34,7 @@ export default function TrophicLevelPage() {
         sponges and corals, to fish, squid, whales, seals and seabirds.
       </Text>
 
-      <div className={styles[`TrophicLevel__ContainerCard`]}>
+      <div className={styles[`trophicLevel__containerCard`]}>
         <Card
           href="#Text"
           title="Deep Ocean"
@@ -91,19 +91,19 @@ export default function TrophicLevelPage() {
         />
       </div>
 
-      <div className={styles[`TrophicLevel__ContainerText`]}>
+      <div className={styles[`trophicLevel__containerText`]}>
         {selected === "Deep Ocean" && (
-          <Text className={styles[`TrophicLevel__ContainerText__Title`]}>
+          <Text className={styles[`trophicLevel__containerTextTitle`]}>
             Deep Ocean
           </Text>
         )}
         {selected === "Arctic Ocean" && (
-          <Text className={styles[`TrophicLevel__ContainerText__Title`]}>
+          <Text className={styles[`trophicLevel__containerTextTitle`]}>
             Arctic Ocean
           </Text>
         )}
         {selected === "Pelagic Ocean" && (
-          <Text className={styles[`TrophicLevel__ContainerText__Title`]}>
+          <Text className={styles[`trophicLevel__containerTextTitle`]}>
             Pelagic Ocean
           </Text>
         )}
@@ -111,7 +111,7 @@ export default function TrophicLevelPage() {
           <Text
             id="Text"
             size="large"
-            className={styles[`TrophicLevel__ContainerText__Paragraph`]}
+            className={styles[`trophicLevel__containerTextParagraph`]}
           >
             With no sunlight, photosynthesis cannot occur below 200 metres in
             the Twilight Zone. There are no plants here to fulfil the role of
@@ -131,7 +131,7 @@ export default function TrophicLevelPage() {
           <Text
             id="Text"
             size="large"
-            className={styles[`TrophicLevel__ContainerText__Paragraph`]}
+            className={styles[`trophicLevel__containerTextParagraph`]}
           >
             The Arctic food web is unique in there is not an abundance of
             typical plants to serve as primary producers. Instead, primary
@@ -149,7 +149,7 @@ export default function TrophicLevelPage() {
           <Text
             id="Text"
             size="large"
-            className={styles[`TrophicLevel__ContainerText__Paragraph`]}
+            className={styles[`trophicLevel__containerTextParagraph`]}
           >
             The open ocean is often called the pelagic zone. The pelagic zone is
             sometimes thought of as a cylinder or column of water that goes from
@@ -166,19 +166,19 @@ export default function TrophicLevelPage() {
         )}
       </div>
 
-      <div className={styles[`TrophicLevel__ContainerMobile`]}>
+      <div className={styles[`trophicLevel__containerText--mobile`]}>
         <Text
           id="deepOcean"
-          className={styles[`TrophicLevel__ContainerMobile__Title`]}
+          className={styles[`trophicLevel__containerTextTitle--mobile`]}
         >
           Deep Ocean
         </Text>
         <img
-          className={styles[`TrophicLevel__ContainerMobile__Image`]}
+          className={styles[`trophicLevel__containerTextImage`]}
           src="/assets/images/foodChain/deepOceanMobile.png"
           alt="Deep ocean"
         />
-        <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>
+        <Text className={styles[`trophicLevel__containerTextParagraph--mobile`]}>
           With no sunlight, photosynthesis cannot occur below 200 metres in the
           Twilight Zone. There are no plants here to fulfil the role of nutrient
           producers. There is only marine snow, bringing down the leftovers from
@@ -193,16 +193,16 @@ export default function TrophicLevelPage() {
         </Text>
         <Text
           id="arcticOcean"
-          className={styles[`TrophicLevel__ContainerMobile__Title`]}
+          className={styles[`trophicLevel__containerTextTitle--mobile`]}
         >
           Arctic Ocean
         </Text>
         <img
-          className={styles[`TrophicLevel__ContainerMobile__Image`]}
+          className={styles[`trophicLevel__containerTextImage`]}
           src="/assets/images/foodChain/arcticOceanMobile.png"
           alt="Arctic ocean"
         />
-        <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>
+        <Text className={styles[`trophicLevel__containerTextParagraph--mobile`]}>
           The Arctic food web is unique in there is not an abundance of typical
           plants to serve as primary producers. Instead, primary produces in the
           Arctic come in the form of algae and phytoplankton. Phytoplankton are
@@ -215,16 +215,16 @@ export default function TrophicLevelPage() {
         </Text>
         <Text
           id="pelagicOcean"
-          className={styles[`TrophicLevel__ContainerMobile__Title`]}
+          className={styles[`trophicLevel__containerTextTitle--mobile`]}
         >
           Pelagic Ocean
         </Text>
         <img
-          className={styles[`TrophicLevel__ContainerMobile__Image`]}
+          className={styles[`trophicLevel__containerTextImage`]}
           src="/assets/images/foodChain/pelagicOceanMobile.png"
           alt="Pelagic Ocean"
         />
-        <Text className={styles[`TrophicLevel__ContainerMobile__Paragraph`]}>
+        <Text className={styles[`trophicLevel__containerTextParagraph--mobile`]}>
           The open ocean is often called the pelagic zone. The pelagic zone is
           sometimes thought of as a cylinder or column of water that goes from
           the surface of the sea to near the bottom. Plants and animals that
@@ -238,7 +238,7 @@ export default function TrophicLevelPage() {
         </Text>
       </div>
 
-      <div className={styles[`TrophicLevel__ContainerImage`]}>
+      <div className={styles[`trophicLevel__containerImage`]}>
         {selected === "Deep Ocean" && (
           <img src="/assets/images/foodChain/deepOcean.png" alt="Deep ocean" />
         )}

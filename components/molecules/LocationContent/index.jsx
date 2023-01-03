@@ -4,15 +4,15 @@ import Text from "@atoms/Text";
 export default function Location({ data }) {
   if (data) {
     return (
-      <div className={styles[`Location`]}>
-        <Text color="black" size="large" className={styles[`Location__title`]}>
+      <div className={styles[`location`]}>
+        <Text color="black" size="large" className={styles[`location__title`]}>
           {data.location.oceanName}
         </Text>
         <article>
           <img
             src={data.location.oceanFile}
-            className={styles[`Location__img`]}
-            alt="animal"
+            className={styles[`location__image`]}
+            alt="ocean (or oceans) in which the animal is most often found"
           ></img>
         </article>
       </div>

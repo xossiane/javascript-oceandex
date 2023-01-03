@@ -1,9 +1,9 @@
-import AnimalsCuriosities from "@molecules/AnimalsCuriosities";
 import styles from "./styles.module.scss";
 import React, { useState } from "react";
+import useContentful from "../../hooks/useContentful";
 import Heading from "@atoms/Heading";
 import Arrow from "@atoms/Arrow";
-import useContentful from "hooks/useContentful";
+import AnimalsCuriosities from "@molecules/AnimalsCuriosities";
 
 export default function AnimalsCuriositiesPage({ curiosity }) {
   const [curiositiesID, setcuriositiesID] = useState(0);
@@ -15,7 +15,6 @@ export default function AnimalsCuriositiesPage({ curiosity }) {
       setcuriositiesID((previous) => {
         return previous + 1;
       });
-      //console.log(curiositiesID);
     } else {
       setcuriositiesID(0);
     }
@@ -26,14 +25,12 @@ export default function AnimalsCuriositiesPage({ curiosity }) {
       setcuriositiesID((previous) => {
         return previous - 1;
       });
-      //console.log(curiositiesID);
     } else {
       setcuriositiesID(animalsListLength);
     }
   }
-  //console.log(animalsCuriosities[curiositiesID]);
   return (
-    <div>
+    <section className={[`animalsCuriositiesPage`]}>
       <Heading level="1" color="black" style="italic" pageTitle={true}>
         Animal's Curiosities
       </Heading>
@@ -44,19 +41,16 @@ export default function AnimalsCuriositiesPage({ curiosity }) {
         curiosityText={curiosity[curiositiesID].description}
         curiosityImage={curiosity[curiositiesID].image}
       />
-      <div className={styles[`AnimalsCuriositiesPage__arrow`]}>
+      <div className={styles[`animalsCuriositiesPage__arrows`]}>
         <Arrow direction="left" handleClick={handleClickSub} />
         <Arrow direction="right" handleClick={handleClickSum} />
       </div>
-    </div>
+    </section>
   );
 }
 export async function getStaticProps() {
   const { getCuriosities } = useContentful();
-
   const curiosity = await getCuriosities("animal");
-
-  console.log(curiosity);
   return {
     props: {
       curiosity,

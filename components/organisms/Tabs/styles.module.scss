@@ -1,13 +1,13 @@
 @use "@styles/variables";
 
-.TabsRoot {
+.tabs__root {
   display: flex;
   width: 100%;
   flex-direction: column;
   position: relative;
 }
 
-.TabsList {
+.tabs__list {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -26,42 +26,40 @@
   }
 }
 
-.TabsTrigger
-{
+.tabs__trigger {
   position: relative;
   justify-content: space-between;
   margin: 1rem;
   border: 0;
   padding: 0;
-  background-color: variables.$white; 
+  background-color: variables.$white;
   color: variables.$darkBlue;
   opacity: 0.4;
 
-  
   @media (min-width: 1024px) {
     margin: 1rem 1.5rem -1rem;
-  } 
+  }
   @media (min-width: 1440px) {
     margin: 1rem 3rem -1rem;
   }
 
-  &[data-state="active"]{
+  &[data-state="active"] {
     box-sizing: border-box;
     color: variables.$blue;
     padding-bottom: 1.6rem;
-    border-bottom: 2px solid variables.$blue;
+    border-bottom: 0.2rem solid variables.$blue;
     opacity: 1;
   }
 }
 
-.TabsBottom {
+.tabs__bottom {
   border-radius: 3rem;
   @media (min-width: 1024px) {
     overflow-y: scroll;
   }
 }
 
-.TabsContent {
+.tabs__content {
   display: flex;
   flex-direction: column;
   @media (min-width: 1024px) {

@@ -7,18 +7,18 @@ export default function Header() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
 
   return (
-    <header className={styles[`Header`]}>
-      <div className={styles[`Header__internal`]}>
+    <header className={styles[`header`]}>
+      <div className={styles[`header__internal`]}>
         <Link href="/">
           <a>
             <img
-              className={styles[`Header__logo`]}
+              className={styles[`header__logo`]}
               src="../assets/images/logo.svg"
-              alt="go back to home screen page"
+              alt="go back to homescreen page"
             />
           </a>
         </Link>
-        <div className={styles[`Header__nav`]}>
+        <div className={styles[`header__nav`]}>
           <Nav />
         </div>
       </div>

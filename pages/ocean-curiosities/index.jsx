@@ -4,7 +4,6 @@ import Card from "@molecules/Card";
 import Heading from "@atoms/Heading";
 import styles from "./styles.module.scss";
 import { useEffect, useState } from "react";
-import useOceanPage from "store/useOceanPage";
 
 export default function OceanWorldwide() {
   const oceans = [
@@ -46,26 +45,24 @@ export default function OceanWorldwide() {
     return lowerCase;
   };
 
-  const [oceanPage, setOceanPage] = useState();
-  const setOcean = useOceanPage((state) => state.setPage);
-  useEffect(() => {
-    setOcean(oceanPage);
-  }, [oceanPage]);
-
   return (
     <>
-      <div className={styles[`OceanWorldwide`]}>
-        <div className={styles[`OceanWorldwide__container`]}>
-          <span className={styles[`OceanWorldwide__arrow`]}>
+        <section className={styles[`oceanWorldwide__container`]}>
+          <div className={styles[`oceanWorldwide__arrow`]}>
             <Arrow direction="left" href="/" />
-          </span>
-          <section className={styles[`OceanWorldwide__header`]}>
-            <Heading level="1" color="black" style="italic" pageTitle={true}>
+          </div>
+          <header className={styles[`oceanWorldwide__header`]}>
+            <Heading
+              level="1"
+              color="black"
+              style="italic"
+              pageTitle = {true}
+            >
               Ocean Curiosities
             </Heading>
-          </section>
-          <div className={styles[`OceanWorldwide__content`]}>
-            <section className={styles[`OceanWorldwide__buttons`]}>
+          </header>
+          <main className={styles[`oceanWorldwide__content`]}>
+            <section className={styles[`oceanWorldwide__buttons`]}>
               {oceans.map((ocean) => (
                 <>
                   <Button
@@ -76,7 +73,7 @@ export default function OceanWorldwide() {
                     description={ocean.description}
                     img={ocean.img}
                     icon={ocean.icon}
-                    className={styles[`OceanWorldwide__buttonUnit`]}
+                    className={styles[`oceanWorldwide__buttonUnit`]}
                     key={ocean.id}
                   >
                     {" "}
@@ -88,15 +85,15 @@ export default function OceanWorldwide() {
                     title={ocean.title}
                     img={ocean.img}
                     description={ocean.description}
-                    className={styles[`OceanWorldwide__cardUnit`]}
+                    className={styles[`oceanWorldwide__cardUnit`]}
                     key={ocean.id}
                   ></Card>
                 </>
               ))}
             </section>
-          </div>
-        </div>
-      </div>
+          </main>
+        </section>
+     
     </>
   );
 }

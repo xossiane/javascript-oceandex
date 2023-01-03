@@ -4,77 +4,50 @@
   font-style: normal;
   text-align: left;
   font-weight: 400;
-  font-size: 1.125rem;
   line-height: 1.25rem;
   color: variables.$darkBlue;
-  opacity: 0.4;
-  width: 100%;
-}
+  opacity: 0.8;
+  font-size: 1.8rem;
+    @media screen and (min-width: 768px) {
+      font-size: 2.2rem;
+    }
+    @media screen and (min-width: 1024px) {
+      font-size: 2.6rem;
+    }}
 
-.inputContainer {
+.form {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 34rem;
-  height: 5.1rem;
   background: variables.$offWhite;
   border-radius: 10rem;
   box-sizing: border-box;
+  width: 34rem;
+  height: 5.1rem;
   padding: 0 2.5rem;
+  margin-bottom: 2.8rem;
+  // max-width: 34rem;
+  // padding: 0.3rem 7rem;
 
-  &:focus {
-    outline: variables.$black solid 2px;
+  @media screen and (min-width: 768px) {
+    width: 50rem;
+    height: 5.1rem;
+    margin-bottom: 4rem;
+    gap: 1.5rem;
   }
 
   @media (min-width: 1024px) {
     width: 70rem;
-    height: 5.4rem;
+    height: 6.4rem;
+    margin-bottom: 7.5rem;
+    gap: 2rem;
   }
 
-  &__box {
-    width: 80%;
-    margin-left: 1rem;
+  &__input {
+    @include inputText;
+    width: 90%;
+    height: 100%;
     background: variables.$offWhite;
     border: none;
-    @include inputText;
-  }
-
-  &__box:placeholder-shown {
-    @include inputText;
-    font-size: 1.8rem;
-  }
-}
-
-.inputContainerFavoriteAnimal {
-  display: flex;
-  gap: 0.6rem;
-  align-items: center;
-  padding: 0.41rem 0;
-  margin-bottom: 23px;
-  max-width: 340px;
-  background: variables.$offWhite;
-  border-radius: 10rem;
-
-
-  &:focus {
-    outline: variables.$black solid 2px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    max-width: 700px;
-    padding: 0.69rem 0;
-    width: 100%;
-    padding-left: 1.2rem;
-  }
-
-  &__box {
-    width: 80%;
-    background: variables.$offWhite;
-    border: none;
-    @include inputText;
-  }
-
-  &__box:placeholder-shown {
-    @include inputText;
   }
 }

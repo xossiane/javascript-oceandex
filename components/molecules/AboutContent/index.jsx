@@ -5,72 +5,72 @@ import styles from "./styles.module.scss";
 export default function AboutContent({ data }) {
   if (data) {
     return (
-      <div className={styles[`AboutContent__Container`]}>
-        <div className={styles[`AboutContent__Container--box`]}>
+      <section className={styles[`aboutContent`]}>
+        <article className={styles[`aboutContent__container`]}>
           <Text
-            color="black"
+            color="darkBlue"
             size="small"
-            className={styles[`AboutContent__Container--text`]}
+            className={styles[`aboutContent--text`]}
           >
             scientific name
           </Text>
-          <Text
-            className={styles[`AboutContent__Container--text2`]}
-            color="black"
-            size="small"
-          >
+          <Text color="black" size="small" style="italic">
             {data.scientificName}
           </Text>
-        </div>
-        <section className={styles[`AboutContent__Container--about`]}>
-          <Text color="black" size="small">
+        </article>
+        <article className={styles[`aboutContent__paragraph`]}>
+          <Text color="darkBlue">
             {data.description.content[0].content[0].value}
           </Text>
-        </section>
-        <section className={styles[`AboutContent__box2`]}>
-          <div className={styles[`AboutContent__box2--title`]}>
-            <Text color="black" size="small">
+        </article>
+        <article className={styles[`aboutContent__container`]}>
+          <div>
+            <Text
+              color="darkBlue"
+              size="small"
+              className={styles[`aboutContent--text`]}
+            >
               Height
             </Text>
             <Text color="black" size="small">
-              Weight
+              {data.height}
             </Text>
           </div>
-          <div className={styles[`AboutContent__box2--data`]}>
-            <Text color="black" size="small">
-              {data.height}
+          <div>
+            <Text
+              color="darkBlue"
+              size="small"
+              className={styles[`aboutContent--text`]}
+            >
+              Weight
             </Text>
             <Text color="black" size="small">
               {data.weight}
             </Text>
           </div>
-        </section>
-        <div className={styles[`AboutContent__title`]}>
+        </article>
+        <article className={styles[`aboutContent__title`]}>
           <Text color="darkBlue">Breeding</Text>
-        </div>
-        <section className={styles[`AboutContent__breeding`]}>
-          <div className={styles[`AboutContent__breeding--method`]}>
+        </article>
+        <article className={styles[`aboutContent__container`]}>
+          <div>
             <Text
-              color="black"
+              color="darkBlue"
               size="small"
-              className={styles[`AboutContent__breeding--label`]}
+              className={styles[`aboutContent--text`]}
             >
               Method
             </Text>
-            <Text
-              color="black"
-              size="small"
-              className={styles[`AboutContent__breeding--data`]}
-            >
+            <Text color="black" size="small" style="italic">
               {data.method}
             </Text>
           </div>
-        </section>
-        <section className={styles[`AboutContent__tags`]}>
+        </article>
+        <article className={styles[`aboutContent__tags`]}>
           <AnimalsTag mt="mt" label="Animalia" />
           <AnimalsTag mt="mt" label="Mollusca" />
-        </section>
-      </div>
+        </article>
+      </section>
     );
   }
 }

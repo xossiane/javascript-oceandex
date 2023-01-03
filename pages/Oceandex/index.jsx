@@ -34,24 +34,56 @@ export default function OceanDexPage() {
     }
   };
 
+  function showAnimal() {
+    const filteredAnimals = animals.filter(
+      (item) =>
+        item.name
+          .toLowerCase()
+          .includes(
+            search.toLocaleLowerCase()
+          ) /* || item.scientificName.toLowerCase().includes(search) */ ||
+        item.classification.order
+          .toLowerCase()
+          .includes(search.toLocaleLowerCase()) ||
+        item.classification.phylum
+          .toLowerCase()
+          .includes(search.toLocaleLowerCase())
+    );
 
+    if (filteredAnimals.length === 0 && search !== "") {
+      return <Text weight="bold">No results found</Text>;
+    } else {
+      return filteredAnimals.map((item) => {
+        return (
+          <AnimalsCard
+            href="/"
+            key={item.id}
+            name={item.name}
+            order={item.classification.order}
+            phylum={item.classification.phylum}
+            Class={item.classification.class}
+            kingdom={item.classification.kingdom}
+            src={item.image}
+            loading="lazy"
+          />
+        );
+      });
+    }
+  }
 
   return (
-      <div className={styles[`Oceandex__Container`]}>
-        <header className={styles[`Oceandex__Header`]}>
-          <Heading
-            level="1"
-            className={styles[`Oceandex__Content--text`]}
-            color="grey"
-            style="italic"
-            pageTitle={true}
-          >
-            {" "}
-            What marine creature are you looking for?{" "}
-          </Heading>
-        </header>
+    <section className={styles[`oceandex`]}>
+        <Heading
+          level="1"
+          color="black"
+          style="italic"
+          pageTitle={true}
+        >
+          {" "}
+          What marine creature are you looking for?{" "}
+        </Heading>
 
-      <div className={styles[`Oceandex__Search`]}>
+      <div className={styles[`oceandex__search`]}>
         <Input
           /* value={search} */
           placeholder={"Search for animals, filos..."}
@@ -59,10 +91,10 @@ export default function OceanDexPage() {
           aria-label={""}
         />
       </div>
-      <section className={styles[`Oceandex__Cards`]}>
+      <section className={styles[`oceandex__cards`]}>
         {loading && <p>loading</p>}
         {!loading && <FilterCArd animals={animals} />}
       </section>
-    </div>
+    </section>
   );
 }

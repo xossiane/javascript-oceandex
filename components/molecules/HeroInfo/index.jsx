@@ -7,34 +7,39 @@ export default function HeroInfo(props) {
   const newHero = props.data.slice(props.currentItem, props.currentItem + 1);
 
   return (
-    <div className={styles[`sliderHero`]}>
+    <div className={styles[`heroInfo__container`]}>
       {newHero.map((dado) => (
-        <div key={dado.id} className={styles[`Hero`]}>
-          <div className={styles[`Hero__header`]}>
-            <img className={styles[`Hero__mainCourse`]} src={dado.img} alt={dado.alt} tabIndex="0"/>
+        <div key={dado.id} className={styles[`heroInfo`]}>
+          <div className={styles[`heroInfo__header`]}>
+            <img
+              className={styles[`heroInfo__img`]}
+              src={dado.img}
+              alt={dado.alt}
+              tabIndex="0"
+            />
 
-            <div className={styles[`Hero__topContainer`]}>
+            <div className={styles[`heroInfo__topContainer`]}>
               <img
-                className={styles[`Hero__topContainer__icon`]}
+                className={styles[`heroInfo__icon`]}
                 src={dado.miniIcon}
               />
               <Text
                 size="small"
                 weight="bold"
-                className={styles[`Hero__topContainer__title`]}
+                
               >
                 {dado.categ}{" "}
               </Text>
             </div>
           </div>
 
-          <div className={styles[`Hero__botContainer`]} alt={dado.desc}>
-            <h2 className={styles[`Hero__botContainer__title`]}>
+          <div className={styles[`heroInfo__botContainer`]} alt={dado.desc}>
+            <h2 className={styles[`heroInfo__title`]}>
               {dado.title}
             </h2>
             <Text
               size="large"
-              className={styles[`Hero__botContainer__description`]}
+              className={styles[`heroInfo__description`]}
             >
               {dado.desc}
             </Text>

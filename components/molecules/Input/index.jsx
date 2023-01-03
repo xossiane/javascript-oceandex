@@ -6,10 +6,10 @@ export default function Input({ placeholder, onChange }) {
   const [search, setSearch] = useState("");
 
   return (
-    <form className={styles.inputContainer}>
+    <form className={styles[`form`]}>
       <GlobalSvg iconPath="/assets/images/svg/SearchIcon.svg" />
       <input
-        className={styles.inputContainer__box}
+        className={styles[`form__input`]}
         type="search"
         aria-label={placeholder}
         placeholder={placeholder}

@@ -20,7 +20,6 @@ export default function Button({
   classList.push(styles[`button`]);
 
   const Router = useRouter();
-  console.log(Router.query);
 
   return href[0] !== "#" ? (
     <Link href={`${href}`}>
@@ -30,7 +29,7 @@ export default function Button({
       >
         {title}
         {Router.pathname === "/" ? null : (
-          <img className={styles[`button__icon`]} src={icon} alt="ocean" />
+          <img className={styles[`button__icon`]} src={icon} alt="" />
         )}
       </a>
     </Link>

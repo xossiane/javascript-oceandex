@@ -4,11 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: variables.$white;  
-  border-top: 1px solid variables.$blackBorder;
+  background-color: variables.$white;
+  border-top: 0.1rem solid variables.$blackBorder;
   box-sizing: border-box;
   height: 8.6rem;
-  font-weight: 400; 
+  font-weight: 400;
   line-height: 0.313em;
   z-index: 10;
   width: 100%;
@@ -25,7 +25,7 @@
       height: 5rem;
     }
   }
-  
+
   &__copyright {
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -41,5 +41,3 @@
     }
   }
 }
-
-

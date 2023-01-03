@@ -1,12 +1,25 @@
 @use "@styles/variables";
 
-.FavoriteAnimals {
-  &__Container {
+.favoriteAnimals {
+ 
     width: 100%;
     min-height: 100vh;
     position: relative;
     z-index: 1;
-  }
+    @media (min-width: 768px) {
+      max-width: 71rem;
+      margin: 0 auto;
+    }
+  
+    @media (min-width: 1024px) {
+      max-width: 84rem;
+      margin: 0 auto;
+    }
+  
+    @media (min-width: 1440px) {
+      max-width: 128rem;
+    }
+  
 
   &__Content {
     flex-direction: column;
@@ -45,17 +58,24 @@
 
   &__Cards {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    grid-gap: 10px 30px;
-    margin: 0 28px;
-
+    grid-template-columns: 34rem;
+    gap: 3rem;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    
     @media (min-width: 768px) {
-      grid-template-columns: 1fr 1fr;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem;
     }
 
     @media (min-width: 1024px) {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 4rem;
+    }
+
+    @media (min-width: 1440px) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

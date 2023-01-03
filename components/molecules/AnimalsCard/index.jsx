@@ -12,7 +12,7 @@ export default function AnimalsCard({
   Class,
   kingdom,
   src,
-  onClick
+  onClick,
 }) {
   const [color, setColor] = useState();
   let chooseColor = () => {
@@ -36,20 +36,27 @@ export default function AnimalsCard({
 
   return (
     <Link href={`${href}`}>
-      <div onClick={onClick} className={`${styles.animalsCard} ${styles[color]}`} tabIndex={"0"}>
-        <div className={styles.animalsCard__name}>
+      <div
+        onClick={onClick}
+        className={`${styles.animalsCard} ${styles[color]}`}
+        tabIndex={"0"}
+      >
           <Heading level="2" color="white" weight="normal" size="small">
             {name}
           </Heading>
-        </div>
         <div className={styles.animalsCard__details}>
           <div className={styles.animalsCard__classification}>
-            <AnimalsTag label={order} text="text"></AnimalsTag>
-            <AnimalsTag label={phylum} text="text"></AnimalsTag>
-            <AnimalsTag label={Class} text="text"></AnimalsTag>
-            <AnimalsTag label={kingdom} text="text"></AnimalsTag>
+            <AnimalsTag label={order} text="text" />
+            <AnimalsTag label={phylum} text="text" />
+            <AnimalsTag label={Class} text="text" />
+            <AnimalsTag label={kingdom} text="text" />
           </div>
-          <img className={styles.animalsCard__img} src={src} alt={name} loading="lazy"/>
+          <img
+            className={styles.animalsCard__image}
+            src={src}
+            alt={name}
+            loading="lazy"
+          />
         </div>
       </div>
     </Link>

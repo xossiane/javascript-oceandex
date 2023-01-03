@@ -2,14 +2,14 @@
 @use "styles/mixins.scss";
 
 .button {
-  border-radius: 15px;
+  border-radius: 1.5rem;
   position: relative;
   border: none;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 1rem;
   box-sizing: border-box;
   cursor: pointer;
   color: white;
@@ -37,13 +37,11 @@
     height: 6.4rem;
     position: absolute;
     display: flex;
-    bottom: -0.5rem;
     left: -4rem;
     flex-direction: column;
 
     @media screen and (min-width: 700px) {
       bottom: 0.5rem;
-
       left: calc(100% * 0.2);
     }
   }

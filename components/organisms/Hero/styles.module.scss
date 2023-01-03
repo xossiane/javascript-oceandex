@@ -1,29 +1,38 @@
-
 @use "@styles/variables";
-.Hero {
+.hero {
   margin-bottom: 5rem;
+
   &__container {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 1rem;
   }
+
   &__dots {
+    width: 3rem;
+    height: 3rem;
     display: inline-block;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    border: 2px solid variables.$grey;
-    margin-top: 4.1rem;
-    background-color: grey;
-
-    &:not(:last-child) {
-      margin-right: 3.5rem;
       
-    }
+      border-radius: 50%;
+      border: 0.2rem solid variables.$grey;
+      margin-top: 4.1rem;
+      background-color: grey;
 
-    &--active {
-      background-color: variables.$darkBlue;
-      border: 2px solid variables.$darkBlue;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      &--active {
+        background-color: variables.$darkBlue;
+        border: 0.2rem solid variables.$darkBlue;
+      }
+    @media (min-width: 420px) {
+      width: 5rem;
+      height: 5rem;
+      &:not(:last-child) {
+        margin-right: 3.5rem;
+      }
     }
+    
   }
 }

@@ -1,9 +1,6 @@
 import styles from "./styles.module.scss";
-
 import { useEffect, useState } from "react";
-
 import Heading from "@atoms/Heading";
-import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
 import Input from "@molecules/Input";
 
@@ -43,7 +40,7 @@ export default function FavoriteAnimalsPage() {
       setSearchAnimal(newArray);
       setLoading(false);
     }
-  }, [search]);
+  }, [search]);;
 
   function showAnimal() {
     {
@@ -83,13 +80,13 @@ export default function FavoriteAnimalsPage() {
 
   return (
     <>
-      <div className={styles[`FavoriteAnimals__Container`]}>
-        <header className={styles[`FavoriteAnimals__Header`]}>
+      <div className={styles[`favoriteAnimals`]}>
+        <header className={styles[`favoriteAnimals__Header`]}>
           <Heading level="1" style="italic" color="black" pageTitle={true}>
             Favorite Animals
           </Heading>
         </header>
-        <div className={styles[`FavoriteAnimals__Search`]}>
+        <div className={styles[`favoriteAnimals__Search`]}>
           <Input
             FavoriteAnimals
             value={search}
@@ -100,7 +97,7 @@ export default function FavoriteAnimalsPage() {
           />
         </div>
 
-        <section className={styles[`FavoriteAnimals__Cards`]} tabIndex={"1"}>
+        <section className={styles[`favoriteAnimals__Cards`]} tabIndex={"1"}>
           {loading && <p>loading</p>}
           {!loading && showAnimal()}
         </section>
