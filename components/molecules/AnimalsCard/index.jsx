@@ -41,11 +41,9 @@ export default function AnimalsCard({
         className={`${styles.animalsCard} ${styles[color]}`}
         tabIndex={"0"}
       >
-        <div className={styles.animalsCard__name}>
           <Heading level="2" color="white" weight="normal" size="small">
             {name}
           </Heading>
-        </div>
         <div className={styles.animalsCard__details}>
           <div className={styles.animalsCard__classification}>
             <AnimalsTag label={order} text="text" />
@@ -54,7 +52,7 @@ export default function AnimalsCard({
             <AnimalsTag label={kingdom} text="text" />
           </div>
           <img
-            className={styles.animalsCard__img}
+            className={styles.animalsCard__image}
             src={src}
             alt={name}
             loading="lazy"

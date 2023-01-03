@@ -1,50 +1,47 @@
 @use "@styles/variables";
 
-.Diet__Container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.diet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 2.5rem;
+  @media (min-width: 600px) {
+    margin: 2rem 10rem;
+  }
+  @media (min-width: 1024px) {
     margin: 2rem 2.5rem;
-    @media (min-width: 600px){
-        margin: 2rem 10rem;   
-    } 
-    @media (min-width: 1024px){
-        margin: 2rem 2.5rem;   
-    } 
-    @media (min-width: 1440px){
-        margin: 2rem 10rem;   
-    }        
-}
-.Diet__imgContainer {
+  }
+  @media (min-width: 1440px) {
+    margin: 2rem 10rem;
+  }
+
+  &__image {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
+  }
 
-.Diet__hrItem{
-       border: none;
-       height: 0.2rem;
-       background-color:#00000042;
-       opacity: 40%;
-       width: 100%;
-       margin: 0;
-       
-       
-}
+  &__animalName {
+    color: variables.$darkBlue;
+    line-height: 1.6rem;
+    @media (min-width: 1024px) {
+      font-size: 2.4rem;
+    }
+  }
 
-.Diet__animalName{
-       color: variables.$darkBlue;
-       line-height: 1.6rem;
-       @media (min-width: 1024px){
-        font-size: 2.4rem;
-       }
-}
-
-.Diet__imgItem{
+  &__imageItem {
     height: 8.5rem;
     object-fit: cover;
     margin: 2rem;
+  }
+
+  &__hr {
+    border: none;
+    height: 0.2rem;
+    background-color: variables.$blackBorder;
+    opacity: 40%;
+    width: 100%;
+    margin: 0;
+  }
 }
-
-

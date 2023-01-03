@@ -5,7 +5,7 @@
   &__container {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 1rem;
   }
 
   &__dots {
@@ -13,7 +13,7 @@
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    border: 2px solid variables.$grey;
+    border: 0.2rem solid variables.$grey;
     margin-top: 4.1rem;
     background-color: grey;
 
@@ -23,7 +23,7 @@
 
     &--active {
       background-color: variables.$darkBlue;
-      border: 2px solid variables.$darkBlue;
+      border: 0.2rem solid variables.$darkBlue;
     }
   }
 }
