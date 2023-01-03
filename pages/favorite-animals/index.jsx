@@ -2,7 +2,6 @@ import styles from "./styles.module.scss";
 
 import { useEffect, useState } from "react";
 
-
 import Heading from "@atoms/Heading";
 import Text from "@atoms/Text";
 import AnimalsCard from "@molecules/AnimalsCard";
@@ -16,31 +15,39 @@ export default function FavoriteAnimalsPage() {
   const [search, setSearch] = useState("");
   useEffect(() => {
     if (!search) {
-        let array = localStorage.getItem('oceandex')
-        array = JSON.parse(array)
+      let array = localStorage.getItem("oceandex");
+      array = JSON.parse(array);
       setAnimal(array);
       setLoading(false);
-      }  
+    }
 
-    if(search) {
+    if (search) {
       setLoading(true);
       let length = search.length;
       let newArray = animal.filter((e) => {
         console.log(search);
         console.log(e.name.substring(0, [length]));
+        const searchLower = search.substring(0, [length]).toLowerCase();
         return (
-          search.substring(0, [length]).toLowerCase() ===
-          e.name.substring(0, [length]).toLowerCase()
+          searchLower === e.name.substring(0, [length]).toLowerCase() ||
+          searchLower ===
+            e.classification.class.substring(0, [length]).toLowerCase() ||
+          searchLower ===
+            e.classification.order.substring(0, [length]).toLowerCase() ||
+          searchLower ===
+            e.classification.kingdom.substring(0, [length]).toLowerCase() ||
+          searchLower ===
+            e.classification.phylum.substring(0, [length]).toLowerCase()
         );
       });
       setSearchAnimal(newArray);
       setLoading(false);
     }
-  }, [search])
+  }, [search]);
 
   function showAnimal() {
     {
-      return (!search && animal != null)
+      return !search && animal != null
         ? animal.map((item) => {
             return (
               <AnimalsCard
@@ -59,16 +66,16 @@ export default function FavoriteAnimalsPage() {
         : searchAnimal.map((item) => {
             return (
               <AnimalsCard
-              href="/"
-              key={item.id}
-              name={item.name}
-              order={item.classification.order}
-              phylum={item.classification.phylum}
-              Class={item.classification.class}
-              kingdom={item.classification.kingdom}
-              src={item.image}
-              alt={item.name}
-            />
+                href="/"
+                key={item.id}
+                name={item.name}
+                order={item.classification.order}
+                phylum={item.classification.phylum}
+                Class={item.classification.class}
+                kingdom={item.classification.kingdom}
+                src={item.image}
+                alt={item.name}
+              />
             );
           });
     }
@@ -78,13 +85,8 @@ export default function FavoriteAnimalsPage() {
     <>
       <div className={styles[`FavoriteAnimals__Container`]}>
         <header className={styles[`FavoriteAnimals__Header`]}>
-          <Heading
-            level="1"
-            style="italic"
-            color="black"
-            pageTitle={true}
-          >
-              Favorite Animals
+          <Heading level="1" style="italic" color="black" pageTitle={true}>
+            Favorite Animals
           </Heading>
         </header>
         <div className={styles[`FavoriteAnimals__Search`]}>
@@ -106,5 +108,3 @@ export default function FavoriteAnimalsPage() {
     </>
   );
 }
-
-
