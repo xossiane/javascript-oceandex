@@ -79,7 +79,7 @@ export default function AboutPage() {
               <img
                 src={data.image}
                 className={styles[`AboutPage__Header--icon`]}
-                alt="animal icon"
+                alt={data.name}
               ></img>
             </section>
           </div>

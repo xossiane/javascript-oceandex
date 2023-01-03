@@ -33,7 +33,7 @@ export default function Card({
           >
             {title}
           </Heading>
-          <Image src={img} width={196} height={181} alt="" />
+          <Image src={img} width={196} height={181} alt={title} />
           <Text size="large" color="white" weight="bold">
             {description}
           </Text>

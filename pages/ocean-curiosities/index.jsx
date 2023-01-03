@@ -4,7 +4,6 @@ import Card from "@molecules/Card";
 import Heading from "@atoms/Heading";
 import styles from "./styles.module.scss";
 import { useEffect, useState } from "react";
-import useOceanPage from "../../store/useOceanPage";
 
 export default function OceanWorldwide() {
   const oceans = [
@@ -46,15 +45,8 @@ export default function OceanWorldwide() {
     return lowerCase;
   };
 
-  const [oceanPage, setOceanPage] = useState();
-  const setOcean = useOceanPage((state) => state.setPage);
-  useEffect(() => {
-    setOcean(oceanPage);
-  }, [oceanPage]);
-
   return (
     <>
-      
         <section className={styles[`oceanWorldwide__container`]}>
           <div className={styles[`oceanWorldwide__arrow`]}>
             <Arrow direction="left" href="/" />
