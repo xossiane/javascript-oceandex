@@ -30,6 +30,7 @@ export default function AboutPage() {
   }, [router.query.about]);
   const data = useFetchData((state) => state.data);
   if (data) {
+
     return (
       <div className={styles[`AboutPage`]}>
         <div className={styles[`AboutPage__title`]}>

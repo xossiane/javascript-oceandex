@@ -44,7 +44,7 @@ export default function FavoriteAnimalsPage() {
         ? animal.map((item) => {
             return (
               <AnimalsCard
-                href="/"
+                href={`/oceandex/${item.name}`}
                 key={item.id}
                 name={item.name}
                 order={item.classification.order}
