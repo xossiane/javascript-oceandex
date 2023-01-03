@@ -19,7 +19,13 @@ export default function AuthorsPage() {
 
   return (
     <section className={styles[`authorsPageContainer`]}>
-      <Heading level="1" size="H1" color="black" style="italic" pageTitle={true}>
+      <Heading
+        level="1"
+        size="H1"
+        color="black"
+        style="italic"
+        pageTitle={true}
+      >
         Authors
       </Heading>
 
