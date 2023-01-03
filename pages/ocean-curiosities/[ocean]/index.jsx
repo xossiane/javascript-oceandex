@@ -6,7 +6,6 @@ import Text from "@atoms/Text";
 import oceanNames from "../../../data/oceanNames";
 import useContentful from "hooks/useContentful";
 import Arrow from "@atoms/Arrow";
-import useOceanPage from "store/useOceanPage";
 
 function OceanCuriosities({ oceanCuriosities, oceanName }) {
   console.log(oceanCuriosities);
