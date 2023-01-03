@@ -22,7 +22,7 @@ export default function AuthorsMolecule({
         <GlobalSvg
           href={linkedinLink}
           tabIndex={"0"}
-          alt={"Redirect to author's  Linkedin"}
+          alt={"Redirect to author's Linkedin"}
           external
           iconPath="/assets/images/svg/LinkedinLogo.svg"
         />

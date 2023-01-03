@@ -14,7 +14,7 @@ export default function Header() {
             <img
               className={styles[`header__logo`]}
               src="../assets/images/logo.svg"
-              alt="go back to home screen page"
+              alt="go back to homescreen page"
             />
           </a>
         </Link>

@@ -17,7 +17,7 @@ export default function Curiosities({ data }) {
         <img
           src={data.curiosity.fields.image.fields.file.url}
           className={styles[`curiosities__image`]}
-          alt="animal"
+          alt="animal in its habitat"
           loading="lazy"
         ></img>
       </div>

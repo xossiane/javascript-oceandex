@@ -14,7 +14,7 @@ export default function Nav() {
             <img
               className={styles[`Nav__logo`]}
               src="../assets/images/logo.svg"
-              alt="logo"
+              alt=""
             />
           </a>
         </Link> */}
