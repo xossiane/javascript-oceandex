@@ -1,6 +1,10 @@
 @use "@styles/variables";
-
-.Hero {
+.heroInfo__container {
+  overflow: hidden;
+  display: flex;
+  
+}
+.heroInfo {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -46,7 +50,7 @@
     }
   }
 
-  &__mainCourse {
+  &__img {
     width: 40rem;
     height: 40rem;
     transform: rotate(270deg);
@@ -102,19 +106,18 @@
         top: 8%;
       }
       
-    }
-
-    &__icon {
-      width: 21.73px;
-      height: 21.73px;
-    }
-    &__title {
-      margin-left: 10px;
-      width: fit-content;
-      line-height: 15px;
-      letter-spacing: -0.02em;
-      color: black;
-    }
+    } 
+  }
+  &__icon {
+    width: 21.73px;
+    height: 21.73px;
+  } 
+  &__title {
+    margin-left: 10px;
+    width: fit-content;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+    color: black;
   }
 
   &__botContainer {
@@ -129,60 +132,60 @@
       }
     }
 
-    &__title {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 3.5rem;
-      line-height: 31px;
-      text-align: center;
-      width: fit-content;
-      color: variables.$white;
-      margin-top: 30.6px;
-      @media screen {
-        @media (min-width: 1024px) {
-          width: 520px;
-          height: 154px;
-          font-size: 5rem;
-          line-height: 77px;
-          letter-spacing: -0.04em;
-          margin-top: 10.4px;
-          text-align: left;
-        }
-        @media (min-width: 1440px) {
-          width: 520px;
-          height: 154px;
-          font-size: 5rem;
-          line-height: 77px;
-          letter-spacing: -0.04em;
-          margin-top: 105px;
-          text-align: left;
-        }
+   
+
+    
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 31px;
+    text-align: center;
+    width: fit-content;
+    color: variables.$white;
+    margin-top: 30.6px;
+    @media screen {
+      @media (min-width: 1024px) {
+        width: 520px;
+        height: 154px;
+        font-size: 5rem;
+        line-height: 77px;
+        letter-spacing: -0.04em;
+        margin-top: 10.4px;
+        text-align: left;
       }
-    }
-
-    &__description {
-      width: 341px;
-      height: 66px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 28px;
-      text-align: center;
-      color: variables.$white;
-      margin-top: -10px;
-
-      @media screen {
-        @media (min-width: 1024px) {
-          width: 520px;
-          height: 56px;
-          text-align: left;
-          margin-top: -95px;
-        }
+      @media (min-width: 1440px) {
+        width: 520px;
+        height: 154px;
+        font-size: 5rem;
+        line-height: 77px;
+        letter-spacing: -0.04em;
+        margin-top: 105px;
+        text-align: left;
       }
     }
   }
+  &__description {
+    width: 341px;
+    height: 66px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: variables.$white;
+    margin-top: -10px;
 
-
-
+    @media screen {
+      @media (min-width: 1024px) {
+        width: 520px;
+        height: 56px;
+        text-align: left;
+        margin-top: -95px;
+      }
+    }
+  }
   }
   
  
