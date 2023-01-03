@@ -77,14 +77,11 @@ export default function FavoriteAnimalsPage() {
   }
 
   return (
-    <>
-      <div className={styles[`favoriteAnimals`]}>
-        <header className={styles[`favoriteAnimals__Header`]}>
+      <section className={styles[`favoriteAnimals`]}>
           <Heading level="1" style="italic" color="black" pageTitle={true}>
             Favorite Animals
           </Heading>
-        </header>
-        <div className={styles[`favoriteAnimals__Search`]}>
+        <article className={styles[`favoriteAnimals__search`]}>
           <Input
             FavoriteAnimals
             value={search}
@@ -93,13 +90,12 @@ export default function FavoriteAnimalsPage() {
             placeholder="Search your ♥ animals"
             aria-label="Search for your favorite animals"
           />
-        </div>
+        </article>
 
-        <section className={styles[`favoriteAnimals__Cards`]} tabIndex={"1"}>
+        <article className={styles[`favoriteAnimals__cards`]} tabIndex={"1"}>
           {loading && <p>loading</p>}
           {!loading && showAnimal()}
-        </section>
-      </div>
-    </>
+        </article>
+      </section>
   );
 }
