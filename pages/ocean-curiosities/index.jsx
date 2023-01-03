@@ -1,4 +1,3 @@
-import Arrow from "@atoms/Arrow";
 import Button from "@molecules/Button";
 import Card from "@molecules/Card";
 import Heading from "@atoms/Heading";
@@ -46,51 +45,43 @@ export default function OceanWorldwide() {
   };
 
   return (
-        <section className={styles[`oceanWorldwide__container`]}>
-          <div className={styles[`oceanWorldwide__arrow`]}>
-            <Arrow direction="left" href="/" />
-          </div>
-          <header className={styles[`oceanWorldwide__header`]}>
-            <Heading
-              level="1"
-              color="black"
-              style="italic"
-              pageTitle = {true}
-            >
-              Ocean Curiosities
-            </Heading>
-          </header>
-          <main className={styles[`oceanWorldwide__content`]}>
-            <section className={styles[`oceanWorldwide__buttons`]}>
-              {oceans.map((ocean) => (
-                <>
-                  <Button
-                    href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
-                    size="large"
-                    color="purple"
-                    title={ocean.title}
-                    description={ocean.description}
-                    img={ocean.img}
-                    icon={ocean.icon}
-                    className={styles[`oceanWorldwide__buttonUnit`]}
-                    key={ocean.id}
-                  >
-                    {" "}
-                  </Button>
+    <section className={styles[`oceanWorldwide__container`]}>
+      <header className={styles[`oceanWorldwide__header`]}>
+        <Heading level="1" color="black" style="italic" pageTitle={true}>
+          Ocean Curiosities
+        </Heading>
+      </header>
+      <main className={styles[`oceanWorldwide__content`]}>
+        <section className={styles[`oceanWorldwide__buttons`]}>
+          {oceans.map((ocean) => (
+            <>
+              <Button
+                href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
+                size="large"
+                color="purple"
+                title={ocean.title}
+                description={ocean.description}
+                img={ocean.img}
+                icon={ocean.icon}
+                className={styles[`oceanWorldwide__buttonUnit`]}
+                key={ocean.id}
+              >
+                {" "}
+              </Button>
 
-                  <Card
-                    color="purple"
-                    href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
-                    title={ocean.title}
-                    img={ocean.img}
-                    description={ocean.description}
-                    className={styles[`oceanWorldwide__cardUnit`]}
-                    key={ocean.id}
-                  ></Card>
-                </>
-              ))}
-            </section>
-          </main>
+              <Card
+                color="purple"
+                href={`/ocean-curiosities/${removeSpaces(ocean.title)}`}
+                title={ocean.title}
+                img={ocean.img}
+                description={ocean.description}
+                className={styles[`oceanWorldwide__cardUnit`]}
+                key={ocean.id}
+              ></Card>
+            </>
+          ))}
         </section>
+      </main>
+    </section>
   );
 }
