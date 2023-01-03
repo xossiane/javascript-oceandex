@@ -77,6 +77,7 @@ export default function AboutPage() {
   const data = useFetchData((state) => state.data);
   
   if (data) {
+
     return (
       <div className={styles[`AboutPage`]}>
         <div className={styles[`AboutPage__title`]}>
