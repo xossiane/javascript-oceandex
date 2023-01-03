@@ -1,7 +1,7 @@
 @use "@styles/variables";
 
 .aboutContent {
-  margin: 2rem 1.5rem 2rem 1rem;
+  margin: 2rem auto;
 
   &__container {
     display: flex;
@@ -10,6 +10,15 @@
     border-radius: 1.4rem;
     background-color: variables.$white;
     filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.25));
+    margin: 0 2rem;
+
+    @media (min-width: 1024px) {
+      width: 34rem;
+      margin-left: 0 auto;
+    }
+    @media (min-width: 1440px) {
+      width: 50rem;
+    }
   }
 
   &--text {
@@ -23,9 +32,15 @@
     text-align: left;
     line-height: 2.4rem;
     padding: 0.5rem;
+    margin: 2.2rem 2rem;
     @media screen and (min-width: 1024px) {
       font-size: 2.8rem !important;
       line-height: 3rem;
+      width: 34rem;
+      margin: 2.2rem auto;
+    }
+    @media (min-width: 1440px) {
+      width: 50rem;
     }
   }
 

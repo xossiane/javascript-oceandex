@@ -28,10 +28,12 @@
     }        
 }
        @media (min-width: 1024px){
-        width: 34rem;  
+        width: 34rem; 
+        
+        margin: 0 auto;  
     } 
     @media (min-width: 1440px){
-        width: 50rem;   
+        width: 50rem;  
     }
 
   &__animalName {
@@ -45,7 +47,7 @@
   &__imageItem {
     height: 8.5rem;
     object-fit: cover;
-    margin: 2rem;
+    margin: 2rem 0;
   }
 
   &__hr {
