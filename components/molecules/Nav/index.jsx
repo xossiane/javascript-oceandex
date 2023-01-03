@@ -75,34 +75,62 @@ export default function Nav() {
                 </button>
                 <li className={styles[`Nav__menuLi`]}>
                   <Link href="/oceandex">
-                    <a className={styles[`Nav__menuItem`]}>OceanDex</a>
+                    <a
+                      className={styles[`Nav__menuItem`]}
+                      onClick={() => setShowMenu(true)}
+                    >
+                      OceanDex
+                    </a>
                   </Link>
                 </li>
                 <li className={styles[`Nav__menuLi`]}>
                   <Link href="/animals-curiosities">
-                    <a className={styles[`Nav__menuItem`]}>
+                    <a
+                      className={styles[`Nav__menuItem`]}
+                      onClick={() => setShowMenu(true)}
+                    >
                       Animal's Curiosities
                     </a>
                   </Link>
                 </li>
                 <li className={styles[`Nav__menuLi`]}>
                   <Link href="/ocean-curiosities">
-                    <a className={styles[`Nav__menuItem`]}>Ocean Curiosities</a>
+                    <a
+                      className={styles[`Nav__menuItem`]}
+                      onClick={() => setShowMenu(true)}
+                    >
+                      Ocean Curiosities
+                    </a>
                   </Link>
                 </li>
                 <li className={styles[`Nav__menuLi`]}>
                   <Link href="/trophic-level">
-                    <a className={styles[`Nav__menuItem`]}>Trophic Level</a>
+                    <a
+                      className={styles[`Nav__menuItem`]}
+                      onClick={() => setShowMenu(true)}
+                    >
+                      Trophic Level
+                    </a>
                   </Link>
                 </li>
                 <li className={styles[`Nav__menuLi`]}>
                   <Link href="/favorite-animals">
-                    <a className={styles[`Nav__menuItem`]}>Favorite Animals</a>
+                    <a
+                      className={styles[`Nav__menuItem`]}
+                      onClick={() => setShowMenu(true)}
+                    >
+                      Favorite Animals
+                    </a>
                   </Link>
                 </li>
                 <li className={styles[`Nav__menuLi`]}>
                   <Link href="/authors">
-                    <a className={styles[`Nav__menuItem`]}>Authors</a>
+                    <a
+                      className={styles[`Nav__menuItem`]}
+                      onClick={() => setShowMenu(true)}
+                    >
+                      Authors
+                    </a>
                   </Link>
                 </li>
               </>
