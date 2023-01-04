@@ -16,7 +16,7 @@ export const OceanDex = () => (
 
 export const FavoriteAnimals = () => (
   <Input
-    placeholder="Search for your favorite animals"
+    placeholder="Search for your ♥ animals"
     aria-label="Search for your favorite animals"
   />
 );

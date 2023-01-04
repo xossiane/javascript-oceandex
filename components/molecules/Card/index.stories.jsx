@@ -1,5 +1,4 @@
 import Card from ".";
-import ocean from "../../../public/assets/images/designIcons/ocean1.png"
 
 export default {
   title: "Molecules/Card",
@@ -9,14 +8,14 @@ export default {
     title: "OceanDex",
     color: "blue",
     description: "Animal's List",
-    img: {ocean},
+    img: "/assets/images/icons/pacific.svg"
   },
   argTypes: {
     color: {
       control: "inline-radio",
       options: ["blue", "purple", "green", "oliveGreen", "red", "pink"],
     },
-    src: {
+    img: {
       table: {
         disable: true,
       },
