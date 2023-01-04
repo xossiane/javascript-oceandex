@@ -1,148 +1,148 @@
 @use "@styles/variables";
-.AboutPage{  
-    position: relative;
-    background-color: variables.$white;   
-    width: 100%;
-    height: auto;
+.aboutPage {
+  position: relative;
+  background-color: variables.$white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3rem;
+  @media (min-width: 1024px) {
+    background-color: variables.$white;
+    padding-top: 10.4rem;
+  }
+
+  &__content {
+    margin-top: -13.1rem;
+    @media (min-width: 1024px) {
+      margin-top: -10rem;
+      display: flex;
+      flex-direction: row;
+      background-color: variables.$white;
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: flex-end;
+    }
+  }
+
+  &__tag {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__tag--bottom {
+    display: none;
+    @media (min-width: 1024px) {
+      min-width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &__container {
+    box-sizing: border-box;
+    background-color: variables.$blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 3rem;
+    z-index: 5;
+    position: relative;
+    margin-top: 10rem;
     @media (min-width: 1024px) {
-        background-color: variables.$white;
-        padding-top: 10.4rem;
+      flex-direction: row;
+      justify-content: center;
+      border-radius: 30px;
+      min-width: 41rem;
+      height: 70rem;
+    }
+    @media (min-width: 1440px) {
+      min-width: 51rem;
     }
 
-
-    &__Content {
-        margin-top: -13.1rem;
-        @media (min-width: 1024px) {
-            margin-top: -10rem;
-            display: flex;
-            flex-direction: row;
-            background-color: variables.$white;
-            width: 100%;
-            justify-content: space-evenly;
-            align-items: flex-end;
-        }        
+    &--bottom {
+      width: 100%;
+      background-color: variables.$white;
+      border-top-left-radius: 4.2rem;
+      border-top-right-radius: 4.2rem;
+      top: -3rem;
+      display: flex;
+      position: relative;
+      z-index: 10;
+      @media (min-width: 1024px) {
+        border-radius: 3rem;
+        height: 70rem;
+        margin-left: 2rem;
+        top: 0;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
     }
-    &__tag{
-        min-width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1.7rem;
+    margin-top: 1rem;
+    @media (min-width: 1024px) {
+      margin: 0;
+      top: 2rem;
+      right: -2rem;
+      display: flex;
+      flex-direction: column;
     }
-
-    &__tag--bottom {
+    &--like {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 1.7rem;
+      @media (min-width: 1024px) {
+        position: absolute;
+        top: 11.1rem;
+        left: 31.6rem;
+      }
+      @media (min-width: 1440px) {
+        position: absolute;
+        top: 11.1rem;
+        left: 41.6rem;
+      }
+    }
+    &--arrow {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 1.7rem;
+      @media (min-width: 1024px) {
         display: none;
-        @media (min-width: 1024px) {
-            min-width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
+      }
     }
-
-    &__Container{
-        box-sizing: border-box;
-        background-color: variables.$blue;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;  
-        z-index: 5;  
-        position: relative; 
-        margin-top: 10rem;   
-        @media (min-width: 1024px) {
-            flex-direction: row;
-            justify-content: center;
-            border-radius: 30px;
-            min-width: 41rem;            
-            height: 70rem;       
-        }
-        @media (min-width: 1440px) {
-            min-width: 51rem;       
-        }
-             
-    &--bottom{
-        width: 100%;
-        background-color: variables.$white;
-        border-top-left-radius: 4.2rem;
-        border-top-right-radius: 4.2rem;
-        top: -3rem;
-        display: flex;
-        position: relative;
-        z-index: 10;
-        @media (min-width: 1024px) {
-            border-radius: 3rem;
-            height: 70rem;
-            margin-left: 2rem;  
-            top: 0; 
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        }
-    }        
-}
-&__Header{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   margin-left: 1.7rem;
-   margin-top: 1rem;   
-    @media (min-width: 1024px) {
-       margin: 0;
-       top: 2rem;
-       right: -2rem;
-       display: flex;
-       flex-direction: column;       
-    }
-    &--like{
-        width: 3rem;
-        height: 3rem;
-        margin-right: 1.7rem;
-        @media (min-width: 1024px) {
-            position: absolute;
-            top: 11.1rem;
-            left: 31.6rem;
-        }
-        @media (min-width: 1440px) {
-            position: absolute;
-            top: 11.1rem;
-            left: 41.6rem;
-        }    
-    }
-    &--arrow{
-        width: 3rem;
-        height: 3rem;
-        margin-right: 1.7rem;
-        @media (min-width: 1024px) {
-            display: none;
-          }
-    }
-    &--info{
+    &--info {
       margin-left: 1.3rem;
       margin-right: 1.3rem;
-        @media (min-width: 768px) {
-            margin-left: 2rem;
-            margin-top: 6rem;
-        }
+      @media (min-width: 768px) {
+        margin-left: 2rem;
+        margin-top: 6rem;
+      }
 
-        & h1 {            
-            text-align: left;
-            max-width: 26.5rem;
-        }
-    }    
-    &--text{
-        margin-top: -2rem;
+      & h1 {
+        text-align: left;
+        max-width: 26.5rem;
+      }
     }
-    &--icon{
-        display: flex;
-        position: relative;
-        z-index: 1500;
-        width: 30rem;
-        height: 25.7rem;
-        transform: translateX(0%);
-        transform: translateY(8%);
-        margin: 0 auto 5rem; 
-        object-fit: scale-down;       
+    &--text {
+      margin-top: -2rem;
     }
-}
+    &--icon {
+      display: flex;
+      position: relative;
+      z-index: 1500;
+      width: 30rem;
+      height: 25.7rem;
+      transform: translateX(0%);
+      transform: translateY(8%);
+      margin: 0 auto 5rem;
+      object-fit: scale-down;
+    }
+  }
 }

@@ -2,7 +2,7 @@
 
 .header {
   box-sizing: border-box;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -15,7 +15,7 @@
 
   @media (min-width: 1024px) {
     height: 14.2rem;
-    position: relative;
+    position: fixed;
     padding: 0;
   }
 
