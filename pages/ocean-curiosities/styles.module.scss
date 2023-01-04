@@ -2,13 +2,14 @@
 
 .oceanWorldwide {
   &__header {
-    display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     z-index: 100;
     margin-bottom: 2rem;
+    
   }
+
   &__arrow {
     position: absolute;
     top: 5rem;
@@ -61,3 +62,5 @@
     }
   }
 }
+
+
