@@ -12,7 +12,7 @@ export default function AuthorsMolecule({
     <>
       {job === "Designer" ? (
         <article className={styles[`inspiredBy`]}>
-          <p className={styles[`inspiredBy__text`]}>Inspired by:</p>
+          <p className={styles[`inspiredBy__text`]}>Design Inspired By:</p>
           <img
             src={picture}
             alt={name}

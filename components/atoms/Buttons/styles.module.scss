@@ -1,0 +1,49 @@
+@use "@styles/variables";
+@use "styles/mixins.scss";
+
+.button {
+  border-radius: 1.5rem;
+  position: relative;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: white;
+  font-size: 1.8rem;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+  &--medium {
+    width: 15.5rem;
+    height: 6rem;
+    @media (min-width: 700px) {
+      min-width: 60%;
+    }
+  }
+  &--large {
+    width: 22rem;
+    height: 7.3rem;
+    @media (min-width: 700px) {
+      min-width: 80%;
+    }
+  }
+  &__icon {
+    width: 6.7rem;
+    height: 6.4rem;
+    position: absolute;
+    display: flex;
+    left: -4rem;
+    flex-direction: column;
+
+    @media screen and (min-width: 700px) {
+      bottom: 0.5rem;
+      left: calc(100% * 0.2);
+    }
+  }
+  @include mixins.bg_cardColor;
+}
