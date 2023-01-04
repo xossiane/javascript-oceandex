@@ -240,7 +240,7 @@ export default function trophicLevelPage() {
 
       <div className={styles[`trophicLevel__containerImage`]}>
         {selected === "Deep Ocean" && (
-          <img src="/assets/images/foodChain/deepOcean.png" alt="Deep ocean" />
+          <img src="/assets/images/foodChain/DeepOcean.png" alt="Deep ocean" />
         )}
         {selected === "Arctic Ocean" && (
           <img
@@ -250,7 +250,7 @@ export default function trophicLevelPage() {
         )}
         {selected === "Pelagic Ocean" && (
           <img
-            src="/assets/images/foodChain/pelagicOcean.png"
+            src="/assets/images/foodChain/PelagicOcean.png"
             alt="Pelagic ocean"
           />
         )}
