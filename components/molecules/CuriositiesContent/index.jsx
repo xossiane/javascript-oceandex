@@ -8,7 +8,7 @@ export default function Curiosities({ data }) {
     return (
       <div className={styles[`curiosities`]}>
         <Text
-          color="black"
+          color="darkBlue"
           size="medium"
           className={styles[`curiosities__text`]}
         >

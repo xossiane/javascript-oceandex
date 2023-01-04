@@ -5,7 +5,7 @@ export default function Location({ data }) {
   if (data) {
     return (
       <div className={styles[`location`]}>
-        <Text color="black" size="large" className={styles[`location__title`]}>
+        <Text color="darkBlue" size="medium" className={styles[`location__title`]}>
           {data.location.oceanName}
         </Text>
         <article>
