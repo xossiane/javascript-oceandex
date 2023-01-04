@@ -36,22 +36,17 @@ function OceanCuriosities({ oceanCuriosities, oceanName }) {
   return (
     <section className={styles[`oceanCuriosities`]}>
       <article className={styles[`oceanCuriosities__content`]}>
-          <Heading
-            level="1"
-            color="black"
-            style="italic"
-          >
-            {oceanName + " Ocean"}
-          </Heading>
-
+        <Heading level="1" color="black" style="italic">
+          {oceanName + " Ocean"}
+        </Heading>
+        <Heading level="2" color="darkBlue" style="italic">
+          {oceanCuriosities[curiositiesID].oceanTitle}
+        </Heading>
         <img
           className={styles[`oceanCuriosities__image`]}
           src={oceanCuriosities[curiositiesID].image}
         />
-        <Text
-          color="darkBlue"
-          className={styles[`oceanCuriosities__text`]}
-        >
+        <Text color="darkBlue" className={styles[`oceanCuriosities__text`]}>
           {oceanCuriosities[curiositiesID].description}
         </Text>
       </article>
