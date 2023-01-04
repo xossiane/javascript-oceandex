@@ -1,10 +1,11 @@
-import Button from ".";
+import Buttons from ".";
 
 export default {
-  title: "Molecules/Button",
-  component: Button,
+  title: "Atoms/Button",
+  component: Buttons,
   args: {
     title: "Label",
+    color: "blue"
   },
   argTypes: {
     color: {
