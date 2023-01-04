@@ -2,13 +2,17 @@
 
 .oceanWorldwide {
   &__header {
+    display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     z-index: 100;
+    margin-bottom: 2rem;
   }
-  & h1 {
-    margin: 0 0 5.5rem;
+  &__arrow {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
   }
 
   &__buttonUnit {
@@ -32,11 +36,17 @@
       flex-direction: column;
     }
 
+    @media (min-width: 1440px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-width: 144rem;
+      gap: 4rem;
+    }
     @media (min-width: 1024px) {
       flex-direction: row;
       flex-wrap: wrap;
       max-width: 128rem;
-      gap: 2rem;
+      gap: 4rem;
     }
   }
   &__cardUnit {
