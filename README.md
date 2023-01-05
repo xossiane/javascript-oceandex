@@ -50,8 +50,8 @@ State-management:
 
 ## Contributing People
 
-Gilmar Santana <br />
-Bruno Freitas <br />
+[@Gilmar Santana](https://github.com/hubGil) <br />
+[@Bruno Freitas](https://github.com/brunosfreitas) <br />
 
 ## Developers
 
