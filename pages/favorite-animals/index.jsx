@@ -1,8 +1,8 @@
-import styles from "./styles.module.scss";
-import { useEffect, useState } from "react";
 import Heading from "@atoms/Heading";
 import AnimalsCard from "@molecules/AnimalsCard";
 import Input from "@molecules/Input";
+import { useEffect, useState } from "react";
+import styles from "./styles.module.scss";
 
 export default function FavoriteAnimalsPage() {
   // const { getAnimals, getAnimal, getAuthors, getCuriosities } = useContentful();
@@ -21,7 +21,9 @@ export default function FavoriteAnimalsPage() {
     if (search) {
       setLoading(true);
       let length = search.length;
-      let newArray = animal.filter((e) => {
+      let newArray;
+      if(animal !== null){
+      newArray = animal.filter((e) => {
         const searchLower = search.substring(0, [length]).toLowerCase();
         return (
           searchLower === e.name.substring(0, [length]).toLowerCase() ||
@@ -35,6 +37,7 @@ export default function FavoriteAnimalsPage() {
             e.classification.phylum.substring(0, [length]).toLowerCase()
         );
       });
+    }
       setSearchAnimal(newArray);
       setLoading(false);
     }
@@ -58,7 +61,7 @@ export default function FavoriteAnimalsPage() {
               />
             );
           })
-        : searchAnimal.map((item) => {
+        : searchAnimal?.map((item) => {
             return (
               <AnimalsCard
                 href="/"
