@@ -1,11 +1,15 @@
 import "../styles/globals.scss";
 import Head from "next/head";
-import Header from "@organisms/Header";
-import Footer from "@organisms/Footer";
+import { GoogleAnalytics } from 'nextjs-google-analytics'
 import Layout from "layout";
+//this is for google analytics
+const GID = process.env.NEXT_PUBLIC_GID
+
+
 const MyApp = ({ Component, pageProps }) => {
   return (
     <div>
+      <GoogleAnalytics gaMeasurementId={GID} trackPageViews />
       <Head>
         <title>Oceandex</title>
         <link
